@@ -206,6 +206,12 @@ ARCHIVE_CATEGORIES = [
     ('subject:education AND language:English AND mediatype:movies',  "\U0001f393 آموزش - عمومی"),
     ('subject:mathematics AND language:English AND mediatype:movies', "\U0001f393 آموزش - ریاضی"),
     ('subject:science AND language:English AND mediatype:movies',     "\U0001f393 آموزش - علوم"),
+    # ─── TED Talks ───────────────────────────────────────────────────────────
+    ('collection:ted_talks AND mediatype:movies',                     "\U0001f3a4 TED Talks"),
+    ('subject:"TED talk" AND mediatype:movies',                       "\U0001f3a4 TED Talks"),
+    ('creator:"TED Conferences" AND mediatype:movies',                "\U0001f3a4 TED Talks"),
+    ('subject:TEDx AND mediatype:movies',                             "\U0001f3a4 TEDx Talks"),
+    ('collection:tedx_talks AND mediatype:movies',                    "\U0001f3a4 TEDx Talks"),
 ]
 
 
