@@ -94,7 +94,7 @@ def fetch_aljazeera_vod(days=7, workers=15):
         result = get_entry(vid_id)
         if result:
             title, thumb, mp4 = result
-            extinf = (f'#EXTINF:-1 group-title="\U0001f4f9 الجزیره VOD"'
+            extinf = (f'#EXTINF:-1 group-title="\U0001f4f0 خبر"'
                       f' tvg-logo="{thumb}",{title}')
             entries.append((extinf, mp4))
     return entries
