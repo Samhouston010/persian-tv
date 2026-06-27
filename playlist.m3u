@@ -234,7 +234,7 @@ https://ncdn.telewebion.ir/taban/live/playlist.m3u8
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/iran/iran-international-ir.png",Iran International
 https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-world-news-uk.png",BBC World News
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/qatar/al-jazeera-english-qa.png",Al Jazeera English
@@ -258,23 +258,26 @@ https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/iran/press-tv-ir.png",Press TV
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/france-24-fr.png",France 24 English
-https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.dw.com/images/icons/favicon-540x540.png",DW English
+https://i.mjh.nz/.r/dw-news.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/france-24-fr.png",France 24 Arabic
-https://static.france24.com/live/F24_AR_LO_HLS/live_web.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/dw-de.png",DW English
-https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/euronews-int.png",Euronews English
-https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/china/cgtn-cn.png",CGTN English
-https://news.cgtn.com/resource/live/english/cgtn-news.m3u8
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://images.pluto.tv/channels/5ca1da6c593a5d78f0e7edce/colorLogoPNG.png",Euronews English
+https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/russia/rt-ru.png",RT International
 https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD8000016N_20260609T043642SQUARE.png",CNN
+https://jmp2.uk/stvp-GBBD8000016N
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://images.pluto.tv/channels/55b285cd2665de274553d66f/colorLogoPNG.png",Sky News
+https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD4000058T_20260623T013446SQUARE.png",WION
+https://jmp2.uk/stvp-INBD4000058T
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://images.pluto.tv/channels/54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png",Bloomberg TV+
+https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/082fbecf381141dba12086fa562ec642/dffa6782-5ee2-4e48-a79a-a53695371b1f_thumb_001_HD.jpg",آتش‌سوزی در جنگل‌ها و مراتع زاگرس همچنان ادامه دارد
 https://daq1pvcuhj77l.cloudfront.net/1/082fbecf381141dba12086fa562ec642/hls/dffa6782-5ee2-4e48-a79a-a53695371b1f.m3u8

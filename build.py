@@ -41,21 +41,22 @@ def _ch(name, logo, stream):
 _L = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries"
 
 NEWS_CHANNELS = [
-    _ch("Iran International",   _L+"/iran/iran-international-ir.png",           "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
-    _ch("BBC World News",        _L+"/united-kingdom/bbc-world-news-uk.png",     "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8"),
-    _ch("Al Jazeera English",    _L+"/qatar/al-jazeera-english-qa.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
-    _ch("Al Jazeera Arabic",     _L+"/qatar/al-jazeera-qa.png",                  "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
-    _ch("Sky News Arabia",       _L+"/united-arab-emirates/sky-news-arabia-ae.png", "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
-    _ch("Al Arabiya English",    _L+"/saudi-arabia/al-arabiya-sa.png",           "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
-    _ch("Al Arabiya Al Hadath",  _L+"/saudi-arabia/al-arabiya-sa.png",           "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
-    _ch("Al Mayadeen",           _L+"/lebanon/al-mayadeen-lb.png",               "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8"),
-    _ch("Press TV",              _L+"/iran/press-tv-ir.png",                     "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"),
-    _ch("France 24 English",     _L+"/france/france-24-fr.png",                  "https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8"),
-    _ch("France 24 Arabic",      _L+"/france/france-24-fr.png",                  "https://static.france24.com/live/F24_AR_LO_HLS/live_web.m3u8"),
-    _ch("DW English",            _L+"/germany/dw-de.png",                        "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"),
-    _ch("Euronews English",      _L+"/international/euronews-int.png",           "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"),
-    _ch("CGTN English",          _L+"/china/cgtn-cn.png",                        "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8"),
-    _ch("RT International",      _L+"/russia/rt-ru.png",                         "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8"),
+    _ch("Iran International",  _L+"/iran/iran-international-ir.png",                                                                          "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
+    _ch("BBC World News",      "http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png", "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8"),
+    _ch("Al Jazeera English",  _L+"/qatar/al-jazeera-english-qa.png",                                                                         "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
+    _ch("Al Jazeera Arabic",   _L+"/qatar/al-jazeera-qa.png",                                                                                  "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
+    _ch("Sky News Arabia",     _L+"/united-arab-emirates/sky-news-arabia-ae.png",                                                              "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
+    _ch("Al Arabiya English",  _L+"/saudi-arabia/al-arabiya-sa.png",                                                                           "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
+    _ch("Al Arabiya Al Hadath",_L+"/saudi-arabia/al-arabiya-sa.png",                                                                           "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
+    _ch("Al Mayadeen",         _L+"/lebanon/al-mayadeen-lb.png",                                                                               "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8"),
+    _ch("Press TV",            _L+"/iran/press-tv-ir.png",                                                                                     "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"),
+    _ch("DW English",          "https://www.dw.com/images/icons/favicon-540x540.png",                                                          "https://i.mjh.nz/.r/dw-news.m3u8"),
+    _ch("Euronews English",    "https://images.pluto.tv/channels/5ca1da6c593a5d78f0e7edce/colorLogoPNG.png",                                   "https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8"),
+    _ch("RT International",    _L+"/russia/rt-ru.png",                                                                                         "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8"),
+    _ch("CNN",                 "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD8000016N_20260609T043642SQUARE.png", "https://jmp2.uk/stvp-GBBD8000016N"),
+    _ch("Sky News",            "https://images.pluto.tv/channels/55b285cd2665de274553d66f/colorLogoPNG.png",                                   "https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8"),
+    _ch("WION",                "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/INBD4000058T_20260623T013446SQUARE.png", "https://jmp2.uk/stvp-INBD4000058T"),
+    _ch("Bloomberg TV+",       "https://images.pluto.tv/channels/54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png",                     "https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8"),
 ]
 
 
