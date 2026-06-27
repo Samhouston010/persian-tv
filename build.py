@@ -1,54 +1,7 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, re, subprocess, sys, urllib.request, xml.etree.ElementTree as ET
+import gzip, re, urllib.request, xml.etree.ElementTree as ET
 
 IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
-
-# YouTube channels: (channel_id, display_name, group_emoji)
-YOUTUBE_CHANNELS = [
-    ("UCeBoFG76S36uI1rSUj98YzA", "کوچه",    "🎬"),
-    ("UCsp47TGwJXhHoT3p36z7ZDQ", "Pouyan NR","🎬"),
-]
-
-
-def fetch_youtube_vod(channel_id, name, emoji, max_videos=15):
-    rss_url = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
-    try:
-        req = urllib.request.Request(rss_url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=15) as r:
-            tree = ET.fromstring(r.read())
-    except Exception as e:
-        print(f"  RSS failed for {name}: {e}", flush=True)
-        return []
-
-    NS = {"atom": "http://www.w3.org/2005/Atom",
-          "yt":   "http://www.youtube.com/xml/schemas/2015",
-          "media":"http://search.yahoo.com/mrss/"}
-    entries = tree.findall("atom:entry", NS)[:max_videos]
-
-    results = []
-    group = f"{emoji} {name}"
-    for entry in entries:
-        vid   = entry.findtext("yt:videoId", "", NS)
-        title = entry.findtext("atom:title", "", NS)
-        thumb = entry.find(".//media:thumbnail", NS)
-        thumb_url = thumb.get("url", "") if thumb is not None else f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
-        yt_url = f"https://www.youtube.com/watch?v={vid}"
-        try:
-            result = subprocess.run(
-                [sys.executable, "-m", "yt_dlp", "-f", "best[height<=720]/best",
-                 "--get-url", "--no-warnings", "--quiet", yt_url],
-                capture_output=True, text=True, timeout=30
-            )
-            stream_url = result.stdout.strip().splitlines()[0] if result.stdout.strip() else ""
-        except Exception:
-            stream_url = ""
-        if stream_url:
-            extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{thumb_url}",{title}'
-            results.append((extinf, stream_url))
-            print(f"  + {title[:50]}", flush=True)
-        else:
-            print(f"  - skip (no url): {title[:50]}", flush=True)
-    return results
 
 
 def fetch_iranintl_vod():
@@ -170,13 +123,6 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
-    for ch_id, ch_name, ch_emoji in YOUTUBE_CHANNELS:
-        print(f"YouTube {ch_name} ...", flush=True)
-        yt_entries = fetch_youtube_vod(ch_id, ch_name, ch_emoji)
-        for extinf, stream in yt_entries:
-            out.append(extinf); out.append(stream); out.append("")
-        total += len(yt_entries)
-        print(f"YouTube {ch_name}: {len(yt_entries)} videos", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
