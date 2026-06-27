@@ -63,15 +63,15 @@ def fetch_aljazeera_vod(days=7, workers=15):
                 with urllib.request.urlopen(req, timeout=15) as r:
                     data = json.loads(r.read())
                 title = data.get("name", "").strip()
-                # permanent Akamai MP4 (no expiry token)
-                mp4 = next(
+                # HLS from Brightcove (token expires ~6h — playlist rebuilt every 4h)
+                hls = next(
                     (s["src"] for s in data.get("sources", [])
-                     if "akamaized" in s.get("src", "") and s.get("src", "").startswith("https")),
+                     if s.get("src", "").startswith("https") and "m3u8" in s.get("src", "")),
                     None)
-                if not mp4:
+                if not hls:
                     return None
                 thumb = data.get("thumbnail", "")
-                return title, thumb, mp4
+                return title, thumb, hls
             except urllib.error.HTTPError:
                 return None
             except Exception:
