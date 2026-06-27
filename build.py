@@ -16,6 +16,10 @@ EPG_SOURCES = [
 GROUP_RE = re.compile(r'group-title="[^"]*"')
 
 NEWS_CHANNELS = [
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IranIntl_Logo.png/320px-IranIntl_Logo.png\",Iran International",
+     "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/BBC_World_News_2022.svg/320px-BBC_World_News_2022.svg.png\",BBC World News",
+     "https://cdn-7.pishow.tv/live/429/master.m3u8"),
     ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/320px-Al_Jazeera_English_logo.svg.png\",Al Jazeera English",
      "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/ar/thumb/1/10/AlJazeera.svg/320px-AlJazeera.svg.png\",Al Jazeera Arabic",
