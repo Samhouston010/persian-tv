@@ -1,6 +1,24 @@
 """Build Persiana + Telewebion combined playlist."""
 import gzip, re, urllib.request, xml.etree.ElementTree as ET
 
+IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
+
+
+def fetch_iranintl_vod():
+    req = urllib.request.Request(IRAN_INTL_SITEMAP, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=20) as r:
+        xml = r.read().decode("utf-8", errors="ignore")
+    # ponytail: regex is fine here, sitemap is structured, no need for XML parser
+    titles = re.findall(r"<video:title>(.*?)</video:title>", xml)
+    thumbs = re.findall(r"<video:thumbnail_loc>(.*?)</video:thumbnail_loc>", xml)
+    videos = re.findall(r"<video:content_loc>(.*?)</video:content_loc>", xml)
+    entries = []
+    for title, thumb, url in zip(titles, thumbs, videos):
+        url720 = url.replace("_240p.mp4", "_720p.mp4")
+        extinf = f'#EXTINF:-1 group-title="\U0001f4f9 ایران اینترنشنال VOD" tvg-logo="{thumb}",{title}'
+        entries.append((extinf, url720))
+    return entries
+
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 SOURCES = [
@@ -99,6 +117,11 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(NEWS_CHANNELS)
     print(f"News: {len(NEWS_CHANNELS)} channels", flush=True)
+    vod = fetch_iranintl_vod()
+    for extinf, stream in vod:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(vod)
+    print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
