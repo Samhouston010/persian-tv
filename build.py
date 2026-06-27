@@ -244,10 +244,13 @@ def main():
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
     ted = fetch_ted_direct()
+    # TED goes to separate ted.m3u (VOD playlist in TiviMate Movies section)
+    ted_out = ["#EXTM3U", ""]
     for extinf, stream in ted:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(ted)
-    print(f"TED Talks: {len(ted)} videos", flush=True)
+        ted_out.append(extinf); ted_out.append(stream); ted_out.append("")
+    with open("ted.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(ted_out))
+    print(f"TED Talks: {len(ted)} videos → ted.m3u", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
