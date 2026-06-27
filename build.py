@@ -111,6 +111,14 @@ _AF_TELE = "\n".join([
     "#KODIPROP:inputstream.adaptive.manifest_type=hls",
     "#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive",
 ])
+_AF_EC = "\n".join([
+    "#EXTVLCOPT:network-caching=15000",
+    "#EXTVLCOPT:http-reconnect=true",
+    "#EXTVLCOPT:http-continuous=true",
+    "#KODIPROP:inputstream=inputstream.adaptive",
+    "#KODIPROP:inputstream.adaptive.manifest_type=hls",
+    "#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive",
+])
 
 SOURCES = [
     ("📺 پرشیانا", "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.m3u"),
@@ -231,7 +239,7 @@ def main():
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         for name, stream in _EC_CHANNELS:
             extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
-            out.append(extinf); out.append(_AF_TELE); out.append(stream); out.append("")
+            out.append(extinf); out.append(_AF_EC); out.append(stream); out.append("")
         total += len(entries) + len(_EC_CHANNELS)
         print(f"{group}: {len(entries)} channels (+English Club)", flush=True)
     for extinf, stream in NEWS_CHANNELS:
