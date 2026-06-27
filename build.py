@@ -14,9 +14,10 @@ def fetch_iranintl_vod():
     videos = re.findall(r"<video:content_loc>(.*?)</video:content_loc>", xml)
     entries = []
     for title, thumb, url in zip(titles, thumbs, videos):
-        url720 = url.replace("_240p.mp4", "_720p.mp4")
+        # Convert MP4 URL to HLS: .../1/{vid}/{uuid}_240p.mp4 → .../1/{vid}/hls/{uuid}.m3u8
+        hls = re.sub(r'/([0-9a-f-]+)_\d+p\.mp4$', r'/hls/\1.m3u8', url)
         extinf = f'#EXTINF:-1 group-title="\U0001f4f9 ایران اینترنشنال VOD" tvg-logo="{thumb}",{title}'
-        entries.append((extinf, url720))
+        entries.append((extinf, hls))
     return entries
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
