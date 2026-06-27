@@ -125,19 +125,16 @@ def fetch_ted_direct(workers=20):
         print(f"TED sitemap: {e}", flush=True)
         return []
 
-    talk_sms = re.findall(r"<loc>(https://[^<]*talk[^<]*\.xml[^<]*)</loc>", idx)
-    if not talk_sms:
-        talk_sms = ["https://www.ted.com/sitemap/talk_sitemap.xml"]
-
-    slugs = set()
-    for sm in talk_sms:
-        try:
-            req = urllib.request.Request(sm, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=30) as r:
-                text = r.read().decode("utf-8", errors="ignore")
-            slugs.update(re.findall(r"ted\.com/talks/([a-z0-9_]+)(?:<|\s|/|\?)", text))
-        except Exception:
-            pass
+    # ponytail: only curator-approved talks (~7500) — best quality, manageable size
+    curator_url = "https://www.ted.com/sitemaps/talks-curator-approved.xml.gz"
+    try:
+        req = urllib.request.Request(curator_url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = gzip.decompress(r.read())
+        slugs = set(re.findall(r"ted\.com/talks/([^<\"]+)</loc>", data.decode("utf-8", errors="ignore")))
+    except Exception as e:
+        print(f"TED curator sitemap: {e}", flush=True)
+        return []
     print(f"TED slugs: {len(slugs)}", flush=True)
 
     def _ted_get(url, timeout=15):
