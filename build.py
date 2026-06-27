@@ -253,8 +253,10 @@ def main():
         ted_out.append(extinf); ted_out.append(stream); ted_out.append("")
     with open("ted.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(ted_out))
-    # also include TED in main playlist for players that handle both live+VOD
+    # also include TED in main playlist — single group, no topic prefix in title
+    _group_re = re.compile(r'group-title="[^"]*"')
     for extinf, stream in ted:
+        extinf = _group_re.sub('group-title="\U0001f4f9 TED"', extinf)
         out.append(extinf); out.append(stream); out.append("")
     total += len(ted)
     print(f"TED Talks: {len(ted)} videos → ted.m3u + playlist.m3u", flush=True)
