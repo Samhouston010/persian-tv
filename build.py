@@ -206,13 +206,171 @@ ARCHIVE_CATEGORIES = [
     ('subject:education AND language:English AND mediatype:movies',  "\U0001f393 آموزش - عمومی"),
     ('subject:mathematics AND language:English AND mediatype:movies', "\U0001f393 آموزش - ریاضی"),
     ('subject:science AND language:English AND mediatype:movies',     "\U0001f393 آموزش - علوم"),
-    # ─── TED Talks ───────────────────────────────────────────────────────────
-    ('collection:ted_talks AND mediatype:movies',                     "\U0001f3a4 TED Talks"),
-    ('subject:"TED talk" AND mediatype:movies',                       "\U0001f3a4 TED Talks"),
-    ('creator:"TED Conferences" AND mediatype:movies',                "\U0001f3a4 TED Talks"),
-    ('subject:TEDx AND mediatype:movies',                             "\U0001f3a4 TEDx Talks"),
-    ('collection:tedx_talks AND mediatype:movies',                    "\U0001f3a4 TEDx Talks"),
 ]
+# TED / VOA / BBC — scrapers below, NOT via archive.org
+
+
+def fetch_ted_direct(workers=20):
+    """All TED Talks directly from ted.com → download.ted.com MP4."""
+    try:
+        req = urllib.request.Request("https://www.ted.com/sitemap.xml", headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=20) as r:
+            idx = r.read().decode("utf-8", errors="ignore")
+    except Exception as e:
+        print(f"TED sitemap index: {e}", flush=True)
+        return []
+
+    talk_sms = re.findall(r"<loc>(https://[^<]*talk[^<]*\.xml[^<]*)</loc>", idx)
+    if not talk_sms:
+        talk_sms = ["https://www.ted.com/sitemap/talk_sitemap.xml"]
+
+    slugs = set()
+    for sm in talk_sms:
+        try:
+            req = urllib.request.Request(sm, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=30) as r:
+                text = r.read().decode("utf-8", errors="ignore")
+            slugs.update(re.findall(r"ted\.com/talks/([a-z0-9_]+)(?:<|\s|/)", text))
+        except Exception:
+            pass
+    print(f"TED slugs: {len(slugs)}", flush=True)
+
+    def get_talk(slug):
+        try:
+            req = urllib.request.Request(
+                f"https://www.ted.com/talks/{slug}",
+                headers={**HEADERS, "Accept-Language": "en-US,en;q=0.9"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                html = r.read().decode("utf-8", errors="ignore")
+            mp4_m = re.search(r"(https://download\.ted\.com/talks/[^\s\"']+\.mp4)", html)
+            if not mp4_m:
+                return None
+            title = (re.search(r'<meta property="og:title" content="([^"]+)"', html) or
+                     re.search(r'<title>([^<|]+)', html))
+            thumb = re.search(r'<meta property="og:image" content="([^"]+)"', html)
+            t = title.group(1).strip() if title else slug.replace("_", " ").title()
+            img = thumb.group(1) if thumb else ""
+            return (f'#EXTINF:-1 group-title="\U0001f3a4 TED Talks" tvg-logo="{img}",{t}',
+                    mp4_m.group(1))
+        except Exception:
+            return None
+
+    results = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for fut in as_completed({pool.submit(get_talk, s): s for s in slugs}):
+            r = fut.result()
+            if r:
+                results.append(r)
+    print(f"TED Talks: {len(results)}", flush=True)
+    return results
+
+
+def fetch_voa_learning(workers=10):
+    """All VOA Learning English videos directly from learningenglish.voanews.com."""
+    base = "https://learningenglish.voanews.com"
+    seen = set()
+    articles = []
+
+    # VOA video sections (Videos + Everyday Grammar TV + Let's Learn English)
+    sections = ["/z/4392", "/z/1374", "/z/1649"]
+    for section in sections:
+        for page in range(1, 1000):
+            sep = "&" if "?" in section else "?"
+            url = f"{base}{section}{sep}p={page}"
+            try:
+                req = urllib.request.Request(url, headers=HEADERS)
+                with urllib.request.urlopen(req, timeout=15) as r:
+                    html = r.read().decode("utf-8", errors="ignore")
+            except Exception:
+                break
+            found = re.findall(r'href="(/[ap]/[^"]+\.html)"', html)
+            new = [p for p in found if p not in seen]
+            if not new and page > 1:
+                break
+            seen.update(new)
+            articles.extend(new)
+    print(f"VOA: {len(articles)} articles", flush=True)
+
+    def get_voa(path):
+        try:
+            req = urllib.request.Request(base + path, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                html = r.read().decode("utf-8", errors="ignore")
+            mp4_m = re.search(r"(https://av\.voanews\.com/[^\s\"']+\.mp4)", html)
+            if not mp4_m:
+                return None
+            title = re.search(r'<meta property="og:title" content="([^"]+)"', html)
+            thumb = re.search(r'<meta property="og:image" content="([^"]+)"', html)
+            t = title.group(1) if title else path
+            img = thumb.group(1) if thumb else ""
+            return (f'#EXTINF:-1 group-title="\U0001f4fa VOA Learning English" tvg-logo="{img}",{t}',
+                    mp4_m.group(1))
+        except Exception:
+            return None
+
+    results = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for fut in as_completed({pool.submit(get_voa, p): p for p in articles}):
+            r = fut.result()
+            if r:
+                results.append(r)
+    print(f"VOA Learning English: {len(results)}", flush=True)
+    return results
+
+
+def fetch_bbc_6min(workers=10):
+    """BBC 6 Minute English episodes via BBC HLS media selector."""
+    base = "https://www.bbc.co.uk"
+    seen = set()
+    eps = []
+
+    for page in range(1, 200):
+        url = f"{base}/learningenglish/english/features/6-minute-english?page={page}"
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=15) as r:
+                html = r.read().decode("utf-8", errors="ignore")
+        except Exception:
+            break
+        found = re.findall(
+            r'href="(/learningenglish/english/features/6-minute-english/ep-[^"]+)"', html)
+        new = [p for p in found if p not in seen]
+        if not new and page > 1:
+            break
+        seen.update(new)
+        eps.extend(new)
+    print(f"BBC 6min: {len(eps)} episodes", flush=True)
+
+    def get_ep(path):
+        try:
+            req = urllib.request.Request(
+                base + path, headers={**HEADERS, "Accept-Language": "en-GB"})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                html = r.read().decode("utf-8", errors="ignore")
+            vpid_m = re.search(r'"vpid"\s*:\s*"([^"]+)"', html) or \
+                     re.search(r'data-pid="([^"]+)"', html)
+            if not vpid_m:
+                return None
+            vpid = vpid_m.group(1)
+            hls = (f"https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0"
+                   f"/mediaset/hls-v5-plus/proto/https/vpid/{vpid}")
+            title = re.search(r'<meta property="og:title" content="([^"]+)"', html)
+            thumb = re.search(r'<meta property="og:image" content="([^"]+)"', html)
+            t = title.group(1) if title else path
+            img = thumb.group(1) if thumb else ""
+            return (f'#EXTINF:-1 group-title="\U0001f4fa BBC 6 Minute English" tvg-logo="{img}",{t}',
+                    hls)
+        except Exception:
+            return None
+
+    results = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for fut in as_completed({pool.submit(get_ep, p): p for p in eps}):
+            r = fut.result()
+            if r:
+                results.append(r)
+    print(f"BBC 6 Minute English: {len(results)}", flush=True)
+    return results
 
 
 def fetch_archive_vod(workers=30):
@@ -365,6 +523,18 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(arc)
     print(f"Archive.org VOD: {len(arc)} videos", flush=True)
+    ted = fetch_ted_direct()
+    for extinf, stream in ted:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(ted)
+    voa = fetch_voa_learning()
+    for extinf, stream in voa:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(voa)
+    bbc6 = fetch_bbc_6min()
+    for extinf, stream in bbc6:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(bbc6)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
