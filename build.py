@@ -238,11 +238,16 @@ def main():
         for extinf, stream in entries:
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
-        for name, stream in _EC_CHANNELS:
-            extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
-            out.append(extinf); out.append(_AF_EC); out.append(stream); out.append("")
-        total += len(entries) + len(_EC_CHANNELS)
-        print(f"{group}: {len(entries)} channels (+English Club)", flush=True)
+        # English Club only in تلوبیون group (once)
+        ec_count = 0
+        if "تلوبیون" in group:
+            for name, stream in _EC_CHANNELS:
+                extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
+                out.append(extinf); out.append(_AF_EC); out.append(stream); out.append("")
+            ec_count = len(_EC_CHANNELS)
+        total += len(entries) + ec_count
+        label = f" (+{ec_count} English Club)" if ec_count else ""
+        print(f"{group}: {len(entries)} channels{label}", flush=True)
     for extinf, stream in NEWS_CHANNELS:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(NEWS_CHANNELS)
