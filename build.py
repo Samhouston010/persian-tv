@@ -115,17 +115,7 @@ NEWS_CHANNELS = [
 
 
 def fetch_ted_direct(workers=20):
-    """All TED Talks via embed.ted.com (server-rendered) → hls.ted.com HLS."""
-    # Step 1: slugs from sitemap
-    try:
-        req = urllib.request.Request("https://www.ted.com/sitemap.xml", headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=20) as r:
-            idx = r.read().decode("utf-8", errors="ignore")
-    except Exception as e:
-        print(f"TED sitemap: {e}", flush=True)
-        return []
-
-    # ponytail: only curator-approved talks (~7500) — best quality, manageable size
+    """TED Talks grouped by topic from www.ted.com (curator-approved list)."""
     curator_url = "https://www.ted.com/sitemaps/talks-curator-approved.xml.gz"
     try:
         req = urllib.request.Request(curator_url, headers=HEADERS)
@@ -137,25 +127,20 @@ def fetch_ted_direct(workers=20):
         return []
     print(f"TED slugs: {len(slugs)}", flush=True)
 
-    def _ted_get(url, timeout=15):
-        """GET with manual redirect following (Python 3.10 urllib doesn't follow 308)."""
-        from urllib.parse import urljoin
-        for _ in range(5):
-            req = urllib.request.Request(url, headers={**HEADERS, "Accept-Language": "en-US,en;q=0.9"})
-            try:
-                with urllib.request.urlopen(req, timeout=timeout) as r:
-                    return r.read().decode("utf-8", errors="ignore")
-            except urllib.error.HTTPError as e:
-                loc = e.headers.get("Location")
-                if e.code in (301, 302, 307, 308) and loc:
-                    url = urljoin(url, loc)
-                else:
-                    raise
-        return ""
+    # topics to skip as group (meta-categories, not subject areas)
+    _SKIP_TOPICS = {"TEDx", "TED Fellows", "TEDx Talks", "Best of the Web",
+                    "TED-Ed", "TEDMED", "TED Prize", "TED Residency",
+                    "The Audacious Project", "TED Connects", "TED Books",
+                    "TED Membership", "TED Idea Search", "TED en Español",
+                    "Countdown", "Ideas studio", "Demo"}
 
     def get_talk(slug):
         try:
-            html = _ted_get(f"https://embed.ted.com/talks/{slug}")
+            req = urllib.request.Request(
+                f"https://www.ted.com/talks/{slug}",
+                headers={**HEADERS, "Accept-Language": "en-US,en;q=0.9"})
+            with urllib.request.urlopen(req, timeout=15) as r:
+                html = r.read().decode("utf-8", errors="ignore")
             hls_m = re.search(r"(https://hls\.ted\.com/[^\s\"'<>]+\.m3u8)", html)
             if not hls_m:
                 return None
@@ -164,8 +149,12 @@ def fetch_ted_direct(workers=20):
             thumb_m = re.search(r"(https://(?:pi|pu)\.tedcdn\.com/[^\s\"'<>]+\.jpg)", html)
             t = title_m.group(1).strip() if title_m else slug.replace("_", " ").title()
             img = thumb_m.group(1) if thumb_m else ""
-            return (f'#EXTINF:-1 group-title="\U0001f3a4 TED Talks" tvg-logo="{img}",{t}',
-                    hls)
+            # pick first topic that's a real subject area
+            all_topics = re.findall(r'"name":"([^"]+)","slug"', html)
+            topic = next((tp for tp in all_topics if tp not in _SKIP_TOPICS), None)
+            topic = topic.title() if topic else "TED Talks"
+            group = f"\U0001f3a4 TED • {topic}"
+            return (f'#EXTINF:-1 group-title="{group}" tvg-logo="{img}",{t}', hls)
         except Exception:
             return None
 
