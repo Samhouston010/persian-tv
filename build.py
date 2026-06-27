@@ -123,7 +123,6 @@ _AF_EC = "\n".join([
 SOURCES = [
     ("📺 پرشیانا", "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.m3u"),
     ("📡 تلوبیون",  "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.m3u"),
-    ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
 ]
 
 EPG_SOURCES = [
