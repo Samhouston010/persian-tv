@@ -1,12 +1,8 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+import gzip, json, re, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date, timedelta
 
 IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
-AJE_BC_ACCT = "665003303001"
-AJE_BC_PK   = ("BCpkADawqM39agLpp-TuKJ3fi2ac40ghRBmnV3-bKKuO6oZSDAbOgt4HRS5Tz"
-                "FxLH2NA0XQdsoWQjrOYvmD2bVLQSYjxRgHufXokniy4kOamHBQs6UIbDSYvj2M")
 
 
 def fetch_iranintl_vod():
@@ -25,72 +21,6 @@ def fetch_iranintl_vod():
         entries.append((extinf, hls))
     return entries
 
-
-def fetch_aljazeera_vod(days=7, workers=15):
-    today = date.today()
-    page_urls = set()
-    for i in range(days):
-        d = today - timedelta(days=i)
-        sm = f"https://www.aljazeera.com/sitemap.xml?yyyy={d.year}&mm={d.month:02d}&dd={d.day:02d}"
-        try:
-            req = urllib.request.Request(sm, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=10) as r:
-                page_urls.update(re.findall(
-                    r"<loc>(https://www\.aljazeera\.com/video/[^<]+)</loc>",
-                    r.read().decode("utf-8", errors="ignore")))
-        except Exception:
-            pass
-
-    def get_bc_id(u):
-        try:
-            req = urllib.request.Request(u, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=8) as r:
-                m = re.search(r"videoId=(\d{10,})", r.read().decode("utf-8", errors="ignore"))
-            return m.group(1) if m else None
-        except Exception:
-            return None
-
-    def get_entry(vid_id):
-        api = (f"https://edge.api.brightcove.com/playback/v1/accounts/"
-               f"{AJE_BC_ACCT}/videos/{vid_id}")
-        for _ in range(3):
-            try:
-                req = urllib.request.Request(api, headers={
-                    "Accept": f"application/json;pk={AJE_BC_PK}", **HEADERS})
-                with urllib.request.urlopen(req, timeout=15) as r:
-                    data = json.loads(r.read())
-                title = data.get("name", "").strip()
-                mp4 = next(
-                    (s["src"] for s in data.get("sources", [])
-                     if "akamaized" in s.get("src", "") and s.get("src", "").startswith("https")),
-                    None)
-                if not mp4:
-                    return None
-                return title, data.get("thumbnail", ""), mp4
-            except urllib.error.HTTPError:
-                return None
-            except Exception:
-                pass
-        return None
-
-    vid_ids = set()
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        for f in as_completed({pool.submit(get_bc_id, u): u for u in page_urls}):
-            v = f.result()
-            if v:
-                vid_ids.add(v)
-    print(f"AJ Brightcove IDs: {len(vid_ids)}", flush=True)
-
-    # sequential — parallel triggers Brightcove throttling
-    entries = []
-    for vid_id in vid_ids:
-        result = get_entry(vid_id)
-        if result:
-            title, thumb, mp4 = result
-            extinf = (f'#EXTINF:-1 group-title="\U0001f4f9 الجزیره VOD"'
-                      f' tvg-logo="{thumb}",{title}')
-            entries.append((extinf, mp4))
-    return entries
 
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -184,40 +114,15 @@ NEWS_CHANNELS = [
 ]
 
 
-# ─── آرشیو VOD ── هر ردیف: (query برای archive.org, نام گروه در پلیست) ──────
-# میتونی هر تعداد موضوع اضافه یا حذف کنی
-ARCHIVE_CATEGORIES = [
-    # ─── فارسی ──────────────────────────────────────────────────────────────
-    ("language:Persian AND subject:drama",       "\U0001f3ac آرشیو - درام"),
-    ("language:Persian AND subject:comedy",      "\U0001f3ac آرشیو - کمدی"),
-    ("language:Persian AND subject:documentary", "\U0001f3ac آرشیو - مستند"),
-    ("language:Persian AND subject:animation",   "\U0001f3ac آرشیو - انیمیشن"),
-    ("language:Persian AND subject:serial",      "\U0001f3ac آرشیو - سریال"),
-    ("language:Persian AND subject:music",       "\U0001f3ac آرشیو - موسیقی"),
-    # همه فیلم‌های فارسی که در بقیه دسته‌ها نیستند
-    ("language:Persian AND mediatype:movies",    "\U0001f3ac آرشیو - فیلم"),
-    # ─── آموزش زبان انگلیسی ─────────────────────────────────────────────────
-    ('subject:"english language" AND mediatype:movies',          "\U0001f393 آموزش - زبان انگلیسی"),
-    ('subject:"learn english" AND mediatype:movies',             "\U0001f393 آموزش - زبان انگلیسی"),
-    ('subject:ESL AND mediatype:movies',                         "\U0001f393 آموزش - زبان انگلیسی"),
-    ('subject:ESOL AND mediatype:movies',                        "\U0001f393 آموزش - زبان انگلیسی"),
-    ('subject:"english as a second language" AND mediatype:movies', "\U0001f393 آموزش - زبان انگلیسی"),
-    # ─── آموزش عمومی انگلیسی ────────────────────────────────────────────────
-    ('subject:education AND language:English AND mediatype:movies',  "\U0001f393 آموزش - عمومی"),
-    ('subject:mathematics AND language:English AND mediatype:movies', "\U0001f393 آموزش - ریاضی"),
-    ('subject:science AND language:English AND mediatype:movies',     "\U0001f393 آموزش - علوم"),
-]
-# TED / VOA / BBC — scrapers below, NOT via archive.org
-
-
 def fetch_ted_direct(workers=20):
-    """All TED Talks directly from ted.com → download.ted.com MP4."""
+    """All TED Talks via embed.ted.com (server-rendered) → download.ted.com MP4."""
+    # Step 1: slugs from sitemap
     try:
         req = urllib.request.Request("https://www.ted.com/sitemap.xml", headers=HEADERS)
         with urllib.request.urlopen(req, timeout=20) as r:
             idx = r.read().decode("utf-8", errors="ignore")
     except Exception as e:
-        print(f"TED sitemap index: {e}", flush=True)
+        print(f"TED sitemap: {e}", flush=True)
         return []
 
     talk_sms = re.findall(r"<loc>(https://[^<]*talk[^<]*\.xml[^<]*)</loc>", idx)
@@ -230,28 +135,33 @@ def fetch_ted_direct(workers=20):
             req = urllib.request.Request(sm, headers=HEADERS)
             with urllib.request.urlopen(req, timeout=30) as r:
                 text = r.read().decode("utf-8", errors="ignore")
-            slugs.update(re.findall(r"ted\.com/talks/([a-z0-9_]+)(?:<|\s|/)", text))
+            slugs.update(re.findall(r"ted\.com/talks/([a-z0-9_]+)(?:<|\s|/|\?)", text))
         except Exception:
             pass
     print(f"TED slugs: {len(slugs)}", flush=True)
 
     def get_talk(slug):
         try:
+            # embed.ted.com is server-side rendered; contains full JSON talk data in HTML
             req = urllib.request.Request(
-                f"https://www.ted.com/talks/{slug}",
+                f"https://embed.ted.com/talks/{slug}",
                 headers={**HEADERS, "Accept-Language": "en-US,en;q=0.9"})
             with urllib.request.urlopen(req, timeout=15) as r:
                 html = r.read().decode("utf-8", errors="ignore")
-            mp4_m = re.search(r"(https://download\.ted\.com/talks/[^\s\"']+\.mp4)", html)
+            mp4_m = re.search(r'"(https://download\.ted\.com/talks/[^"]+\.mp4)"', html)
+            if not mp4_m:
+                mp4_m = re.search(r"(https://download\.ted\.com/talks/[^\s\"'&]+\.mp4)", html)
             if not mp4_m:
                 return None
-            title = (re.search(r'<meta property="og:title" content="([^"]+)"', html) or
-                     re.search(r'<title>([^<|]+)', html))
-            thumb = re.search(r'<meta property="og:image" content="([^"]+)"', html)
-            t = title.group(1).strip() if title else slug.replace("_", " ").title()
-            img = thumb.group(1) if thumb else ""
+            mp4 = mp4_m.group(1)
+            title_m = re.search(r'"name"\s*:\s*"([^"]+)"', html) or \
+                      re.search(r'<title>([^<|]+)', html)
+            thumb_m = re.search(r'"thumbnail"\s*:\s*\{\s*"uri"\s*:\s*"([^"]+)"', html) or \
+                      re.search(r'"image"\s*:\s*"(https://[^"]+)"', html)
+            t = title_m.group(1).strip() if title_m else slug.replace("_", " ").title()
+            img = thumb_m.group(1) if thumb_m else ""
             return (f'#EXTINF:-1 group-title="\U0001f3a4 TED Talks" tvg-logo="{img}",{t}',
-                    mp4_m.group(1))
+                    mp4)
         except Exception:
             return None
 
@@ -265,179 +175,6 @@ def fetch_ted_direct(workers=20):
     return results
 
 
-def fetch_voa_learning(workers=10):
-    """All VOA Learning English videos directly from learningenglish.voanews.com."""
-    base = "https://learningenglish.voanews.com"
-    seen = set()
-    articles = []
-
-    # VOA video sections (Videos + Everyday Grammar TV + Let's Learn English)
-    sections = ["/z/4392", "/z/1374", "/z/1649"]
-    for section in sections:
-        for page in range(1, 1000):
-            sep = "&" if "?" in section else "?"
-            url = f"{base}{section}{sep}p={page}"
-            try:
-                req = urllib.request.Request(url, headers=HEADERS)
-                with urllib.request.urlopen(req, timeout=15) as r:
-                    html = r.read().decode("utf-8", errors="ignore")
-            except Exception:
-                break
-            found = re.findall(r'href="(/[ap]/[^"]+\.html)"', html)
-            new = [p for p in found if p not in seen]
-            if not new and page > 1:
-                break
-            seen.update(new)
-            articles.extend(new)
-    print(f"VOA: {len(articles)} articles", flush=True)
-
-    def get_voa(path):
-        try:
-            req = urllib.request.Request(base + path, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=10) as r:
-                html = r.read().decode("utf-8", errors="ignore")
-            mp4_m = re.search(r"(https://av\.voanews\.com/[^\s\"']+\.mp4)", html)
-            if not mp4_m:
-                return None
-            title = re.search(r'<meta property="og:title" content="([^"]+)"', html)
-            thumb = re.search(r'<meta property="og:image" content="([^"]+)"', html)
-            t = title.group(1) if title else path
-            img = thumb.group(1) if thumb else ""
-            return (f'#EXTINF:-1 group-title="\U0001f4fa VOA Learning English" tvg-logo="{img}",{t}',
-                    mp4_m.group(1))
-        except Exception:
-            return None
-
-    results = []
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        for fut in as_completed({pool.submit(get_voa, p): p for p in articles}):
-            r = fut.result()
-            if r:
-                results.append(r)
-    print(f"VOA Learning English: {len(results)}", flush=True)
-    return results
-
-
-def fetch_bbc_6min(workers=10):
-    """BBC 6 Minute English episodes via BBC HLS media selector."""
-    base = "https://www.bbc.co.uk"
-    seen = set()
-    eps = []
-
-    for page in range(1, 200):
-        url = f"{base}/learningenglish/english/features/6-minute-english?page={page}"
-        try:
-            req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=15) as r:
-                html = r.read().decode("utf-8", errors="ignore")
-        except Exception:
-            break
-        found = re.findall(
-            r'href="(/learningenglish/english/features/6-minute-english/ep-[^"]+)"', html)
-        new = [p for p in found if p not in seen]
-        if not new and page > 1:
-            break
-        seen.update(new)
-        eps.extend(new)
-    print(f"BBC 6min: {len(eps)} episodes", flush=True)
-
-    def get_ep(path):
-        try:
-            req = urllib.request.Request(
-                base + path, headers={**HEADERS, "Accept-Language": "en-GB"})
-            with urllib.request.urlopen(req, timeout=10) as r:
-                html = r.read().decode("utf-8", errors="ignore")
-            vpid_m = re.search(r'"vpid"\s*:\s*"([^"]+)"', html) or \
-                     re.search(r'data-pid="([^"]+)"', html)
-            if not vpid_m:
-                return None
-            vpid = vpid_m.group(1)
-            hls = (f"https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0"
-                   f"/mediaset/hls-v5-plus/proto/https/vpid/{vpid}")
-            title = re.search(r'<meta property="og:title" content="([^"]+)"', html)
-            thumb = re.search(r'<meta property="og:image" content="([^"]+)"', html)
-            t = title.group(1) if title else path
-            img = thumb.group(1) if thumb else ""
-            return (f'#EXTINF:-1 group-title="\U0001f4fa BBC 6 Minute English" tvg-logo="{img}",{t}',
-                    hls)
-        except Exception:
-            return None
-
-    results = []
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        for fut in as_completed({pool.submit(get_ep, p): p for p in eps}):
-            r = fut.result()
-            if r:
-                results.append(r)
-    print(f"BBC 6 Minute English: {len(results)}", flush=True)
-    return results
-
-
-def fetch_archive_vod(workers=30):
-    """Fetch Persian films from archive.org per ARCHIVE_CATEGORIES."""
-    seen = set()
-    all_docs = []  # list of (doc, group)
-
-    for query_str, group in ARCHIVE_CATEGORIES:
-        query = urllib.parse.quote(f"mediatype:movies AND ({query_str})")
-        start = 0
-        while True:
-            url = (f"https://archive.org/advancedsearch.php?q={query}"
-                   f"&fl=identifier,title&rows=500&start={start}"
-                   f"&output=json&sort=downloads+desc")
-            try:
-                req = urllib.request.Request(url, headers=HEADERS)
-                with urllib.request.urlopen(req, timeout=30) as r:
-                    resp = json.loads(r.read()).get("response", {})
-            except Exception as e:
-                print(f"archive.org [{group}] page {start}: {e}", flush=True)
-                break
-            docs = resp.get("docs", [])
-            if not docs:
-                break
-            for d in docs:
-                ident = d.get("identifier", "")
-                if ident and ident not in seen:
-                    seen.add(ident)
-                    all_docs.append((d, group))
-            total = resp.get("numFound", 0)
-            start += len(docs)
-            if start >= total:
-                break
-        print(f"archive.org [{group}]: {sum(1 for _,g in all_docs if g==group)}", flush=True)
-
-    def get_mp4(item):
-        doc, group = item
-        ident = doc.get("identifier", "")
-        title = doc.get("title", ident)
-        try:
-            meta_url = f"https://archive.org/metadata/{ident}/files"
-            req2 = urllib.request.Request(meta_url, headers=HEADERS)
-            with urllib.request.urlopen(req2, timeout=10) as r2:
-                files = json.loads(r2.read()).get("result", [])
-        except Exception:
-            return None
-        mp4 = next(
-            (f["name"] for f in files
-             if f.get("name", "").lower().endswith(".mp4") and f.get("source") == "original"),
-            None
-        ) or next(
-            (f["name"] for f in files if f.get("name", "").lower().endswith(".mp4")),
-            None
-        )
-        if not mp4:
-            return None
-        stream = f"https://archive.org/download/{ident}/{urllib.parse.quote(mp4)}"
-        extinf = f'#EXTINF:-1 group-title="{group}",{title}'
-        return extinf, stream
-
-    results = []
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        for fut in as_completed({pool.submit(get_mp4, item): item for item in all_docs}):
-            r = fut.result()
-            if r:
-                results.append(r)
-    return results
 
 
 def fetch(url):
@@ -513,28 +250,11 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
-    aj = fetch_aljazeera_vod()
-    for extinf, stream in aj:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(aj)
-    print(f"Al Jazeera VOD: {len(aj)} videos", flush=True)
-    arc = fetch_archive_vod()
-    for extinf, stream in arc:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(arc)
-    print(f"Archive.org VOD: {len(arc)} videos", flush=True)
     ted = fetch_ted_direct()
     for extinf, stream in ted:
         out.append(extinf); out.append(stream); out.append("")
     total += len(ted)
-    voa = fetch_voa_learning()
-    for extinf, stream in voa:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(voa)
-    bbc6 = fetch_bbc_6min()
-    for extinf, stream in bbc6:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(bbc6)
+    print(f"TED Talks: {len(ted)} videos", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
