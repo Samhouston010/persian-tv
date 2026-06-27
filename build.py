@@ -95,6 +95,23 @@ def fetch_aljazeera_vod(days=7, workers=15):
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
+_AF_NORMAL = "\n".join([
+    "#EXTVLCOPT:network-caching=2000",
+    "#EXTVLCOPT:http-reconnect=true",
+    "#EXTVLCOPT:http-continuous=true",
+    "#KODIPROP:inputstream=inputstream.adaptive",
+    "#KODIPROP:inputstream.adaptive.manifest_type=hls",
+    "#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive",
+])
+_AF_TELE = "\n".join([
+    "#EXTVLCOPT:network-caching=8000",
+    "#EXTVLCOPT:http-reconnect=true",
+    "#EXTVLCOPT:http-continuous=true",
+    "#KODIPROP:inputstream=inputstream.adaptive",
+    "#KODIPROP:inputstream.adaptive.manifest_type=hls",
+    "#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive",
+])
+
 SOURCES = [
     ("📺 پرشیانا", "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.m3u"),
     ("📡 تلوبیون",  "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.m3u"),
@@ -204,11 +221,12 @@ def main():
         text = fetch(url).decode("utf-8", errors="ignore")
         entries = list(extract(text, group))
         for extinf, stream in entries:
-            out.append(extinf); out.append(stream); out.append("")
+            af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
+            out.append(extinf); out.append(af); out.append(stream); out.append("")
         total += len(entries)
         print(f"{group}: {len(entries)} channels", flush=True)
     for extinf, stream in NEWS_CHANNELS:
-        out.append(extinf); out.append(stream); out.append("")
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(NEWS_CHANNELS)
     print(f"News: {len(NEWS_CHANNELS)} channels", flush=True)
     vod = fetch_iranintl_vod()
