@@ -1,7 +1,12 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, re, urllib.request, xml.etree.ElementTree as ET
+import gzip, json, re, urllib.request, xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import date, timedelta
 
 IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
+AJE_BC_ACCT = "665003303001"
+AJE_BC_PK   = ("BCpkADawqM39agLpp-TuKJ3fi2ac40ghRBmnV3-bKKuO6oZSDAbOgt4HRS5Tz"
+                "FxLH2NA0XQdsoWQjrOYvmD2bVLQSYjxRgHufXokniy4kOamHBQs6UIbDSYvj2M")
 
 
 def fetch_iranintl_vod():
@@ -19,6 +24,74 @@ def fetch_iranintl_vod():
         extinf = f'#EXTINF:-1 group-title="\U0001f4f9 ایران اینترنشنال VOD" tvg-logo="{thumb}",{title}'
         entries.append((extinf, hls))
     return entries
+
+
+def fetch_aljazeera_vod(days=7, workers=15):
+    today = date.today()
+    page_urls = set()
+    for i in range(days):
+        d = today - timedelta(days=i)
+        sm = f"https://www.aljazeera.com/sitemap.xml?yyyy={d.year}&mm={d.month:02d}&dd={d.day:02d}"
+        try:
+            req = urllib.request.Request(sm, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                page_urls.update(re.findall(
+                    r"<loc>(https://www\.aljazeera\.com/video/[^<]+)</loc>",
+                    r.read().decode("utf-8", errors="ignore")))
+        except Exception:
+            pass
+
+    def get_bc_id(u):
+        try:
+            req = urllib.request.Request(u, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=8) as r:
+                m = re.search(r"videoId=(\d{10,})", r.read().decode("utf-8", errors="ignore"))
+            return m.group(1) if m else None
+        except Exception:
+            return None
+
+    def get_entry(vid_id):
+        api = (f"https://edge.api.brightcove.com/playback/v1/accounts/"
+               f"{AJE_BC_ACCT}/videos/{vid_id}")
+        for _ in range(3):
+            try:
+                req = urllib.request.Request(api, headers={
+                    "Accept": f"application/json;pk={AJE_BC_PK}", **HEADERS})
+                with urllib.request.urlopen(req, timeout=15) as r:
+                    data = json.loads(r.read())
+                title = data.get("name", "").strip()
+                mp4 = next(
+                    (s["src"] for s in data.get("sources", [])
+                     if "akamaized" in s.get("src", "") and s.get("src", "").startswith("https")),
+                    None)
+                if not mp4:
+                    return None
+                return title, data.get("thumbnail", ""), mp4
+            except urllib.error.HTTPError:
+                return None
+            except Exception:
+                pass
+        return None
+
+    vid_ids = set()
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for f in as_completed({pool.submit(get_bc_id, u): u for u in page_urls}):
+            v = f.result()
+            if v:
+                vid_ids.add(v)
+    print(f"AJ Brightcove IDs: {len(vid_ids)}", flush=True)
+
+    # sequential — parallel triggers Brightcove throttling
+    entries = []
+    for vid_id in vid_ids:
+        result = get_entry(vid_id)
+        if result:
+            title, thumb, mp4 = result
+            extinf = (f'#EXTINF:-1 group-title="\U0001f4f9 الجزیره VOD"'
+                      f' tvg-logo="{thumb}",{title}')
+            entries.append((extinf, mp4))
+    return entries
+
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -124,6 +197,11 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
+    aj = fetch_aljazeera_vod()
+    for extinf, stream in aj:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(aj)
+    print(f"Al Jazeera VOD: {len(aj)} videos", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
