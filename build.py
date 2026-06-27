@@ -24,6 +24,8 @@ NEWS_CHANNELS = [
      "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/ar/thumb/1/10/AlJazeera.svg/320px-AlJazeera.svg.png\",Al Jazeera Arabic",
      "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sky_News_Arabia_logo.svg/320px-Sky_News_Arabia_logo.svg.png\",Sky News Arabia",
+     "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
     ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Al_Arabiya_logo.svg/320px-Al_Arabiya_logo.svg.png\",Al Arabiya English",
      "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
     ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Al_Arabiya_logo.svg/320px-Al_Arabiya_logo.svg.png\",Al Arabiya Al Hadath",
