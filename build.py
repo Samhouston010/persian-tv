@@ -187,6 +187,7 @@ NEWS_CHANNELS = [
 # ─── آرشیو VOD ── هر ردیف: (query برای archive.org, نام گروه در پلیست) ──────
 # میتونی هر تعداد موضوع اضافه یا حذف کنی
 ARCHIVE_CATEGORIES = [
+    # ─── فارسی ──────────────────────────────────────────────────────────────
     ("language:Persian AND subject:drama",       "\U0001f3ac آرشیو - درام"),
     ("language:Persian AND subject:comedy",      "\U0001f3ac آرشیو - کمدی"),
     ("language:Persian AND subject:documentary", "\U0001f3ac آرشیو - مستند"),
@@ -195,6 +196,16 @@ ARCHIVE_CATEGORIES = [
     ("language:Persian AND subject:music",       "\U0001f3ac آرشیو - موسیقی"),
     # همه فیلم‌های فارسی که در بقیه دسته‌ها نیستند
     ("language:Persian AND mediatype:movies",    "\U0001f3ac آرشیو - فیلم"),
+    # ─── آموزش زبان انگلیسی ─────────────────────────────────────────────────
+    ('subject:"english language" AND mediatype:movies',          "\U0001f393 آموزش - زبان انگلیسی"),
+    ('subject:"learn english" AND mediatype:movies',             "\U0001f393 آموزش - زبان انگلیسی"),
+    ('subject:ESL AND mediatype:movies',                         "\U0001f393 آموزش - زبان انگلیسی"),
+    ('subject:ESOL AND mediatype:movies',                        "\U0001f393 آموزش - زبان انگلیسی"),
+    ('subject:"english as a second language" AND mediatype:movies', "\U0001f393 آموزش - زبان انگلیسی"),
+    # ─── آموزش عمومی انگلیسی ────────────────────────────────────────────────
+    ('subject:education AND language:English AND mediatype:movies',  "\U0001f393 آموزش - عمومی"),
+    ('subject:mathematics AND language:English AND mediatype:movies', "\U0001f393 آموزش - ریاضی"),
+    ('subject:science AND language:English AND mediatype:movies',     "\U0001f393 آموزش - علوم"),
 ]
 
 
