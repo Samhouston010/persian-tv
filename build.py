@@ -115,7 +115,7 @@ NEWS_CHANNELS = [
 
 
 def fetch_ted_direct(workers=20):
-    """All TED Talks via embed.ted.com (server-rendered) → download.ted.com MP4."""
+    """All TED Talks via embed.ted.com (server-rendered) → hls.ted.com HLS."""
     # Step 1: slugs from sitemap
     try:
         req = urllib.request.Request("https://www.ted.com/sitemap.xml", headers=HEADERS)
@@ -140,28 +140,35 @@ def fetch_ted_direct(workers=20):
             pass
     print(f"TED slugs: {len(slugs)}", flush=True)
 
+    def _ted_get(url, timeout=15):
+        """GET with manual redirect following (Python 3.10 urllib doesn't follow 308)."""
+        from urllib.parse import urljoin
+        for _ in range(5):
+            req = urllib.request.Request(url, headers={**HEADERS, "Accept-Language": "en-US,en;q=0.9"})
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
+                    return r.read().decode("utf-8", errors="ignore")
+            except urllib.error.HTTPError as e:
+                loc = e.headers.get("Location")
+                if e.code in (301, 302, 307, 308) and loc:
+                    url = urljoin(url, loc)
+                else:
+                    raise
+        return ""
+
     def get_talk(slug):
         try:
-            # embed.ted.com is server-side rendered; contains full JSON talk data in HTML
-            req = urllib.request.Request(
-                f"https://embed.ted.com/talks/{slug}",
-                headers={**HEADERS, "Accept-Language": "en-US,en;q=0.9"})
-            with urllib.request.urlopen(req, timeout=15) as r:
-                html = r.read().decode("utf-8", errors="ignore")
-            mp4_m = re.search(r'"(https://download\.ted\.com/talks/[^"]+\.mp4)"', html)
-            if not mp4_m:
-                mp4_m = re.search(r"(https://download\.ted\.com/talks/[^\s\"'&]+\.mp4)", html)
-            if not mp4_m:
+            html = _ted_get(f"https://embed.ted.com/talks/{slug}")
+            hls_m = re.search(r"(https://hls\.ted\.com/[^\s\"'<>]+\.m3u8)", html)
+            if not hls_m:
                 return None
-            mp4 = mp4_m.group(1)
-            title_m = re.search(r'"name"\s*:\s*"([^"]+)"', html) or \
-                      re.search(r'<title>([^<|]+)', html)
-            thumb_m = re.search(r'"thumbnail"\s*:\s*\{\s*"uri"\s*:\s*"([^"]+)"', html) or \
-                      re.search(r'"image"\s*:\s*"(https://[^"]+)"', html)
+            hls = hls_m.group(1)
+            title_m = re.search(r"<title[^>]*>([^|<]+)", html)
+            thumb_m = re.search(r"(https://(?:pi|pu)\.tedcdn\.com/[^\s\"'<>]+\.jpg)", html)
             t = title_m.group(1).strip() if title_m else slug.replace("_", " ").title()
             img = thumb_m.group(1) if thumb_m else ""
             return (f'#EXTINF:-1 group-title="\U0001f3a4 TED Talks" tvg-logo="{img}",{t}',
-                    mp4)
+                    hls)
         except Exception:
             return None
 
