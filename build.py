@@ -244,7 +244,8 @@ def main():
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
     ted = fetch_ted_direct()
-    # TED goes to separate ted.m3u (VOD playlist in TiviMate Movies section)
+    # sort by topic (group-title) then by title — alphabetical in TiviMate
+    ted.sort(key=lambda x: (x[0].split('group-title="')[1].split('"')[0], x[0].rsplit(',', 1)[-1]))
     ted_out = ["#EXTM3U", ""]
     for extinf, stream in ted:
         ted_out.append(extinf); ted_out.append(stream); ted_out.append("")
