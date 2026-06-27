@@ -253,7 +253,11 @@ def main():
         ted_out.append(extinf); ted_out.append(stream); ted_out.append("")
     with open("ted.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(ted_out))
-    print(f"TED Talks: {len(ted)} videos → ted.m3u", flush=True)
+    # also include TED in main playlist for players that handle both live+VOD
+    for extinf, stream in ted:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(ted)
+    print(f"TED Talks: {len(ted)} videos → ted.m3u + playlist.m3u", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
