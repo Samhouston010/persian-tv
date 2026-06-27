@@ -3,6 +3,39 @@ import gzip, re, urllib.request, xml.etree.ElementTree as ET
 
 IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
 
+# YouTube channels: (channel_id, display_name, logo_url)
+YOUTUBE_CHANNELS = [
+    ("UCeBoFG76S36uI1rSUj98YzA", "کوچه",
+     "https://yt3.googleusercontent.com/ytc/default.jpg"),
+    ("UCsp47TGwJXhHoT3p36z7ZDQ", "Pouyan NR",
+     "https://yt3.googleusercontent.com/ytc/default.jpg"),
+]
+
+
+def fetch_youtube_vod(channel_id, name, logo):
+    """Get latest 15 videos as youtube.com/watch URLs — no expiry, no IP lock."""
+    rss = f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+    NS = {"atom": "http://www.w3.org/2005/Atom",
+          "yt":   "http://www.youtube.com/xml/schemas/2015",
+          "media":"http://search.yahoo.com/mrss/"}
+    try:
+        req = urllib.request.Request(rss, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=15) as r:
+            tree = ET.fromstring(r.read())
+    except Exception as e:
+        print(f"  YouTube RSS failed {name}: {e}", flush=True)
+        return []
+    entries = []
+    for entry in tree.findall("atom:entry", NS):
+        vid   = entry.findtext("yt:videoId", "", NS)
+        title = entry.findtext("atom:title", "", NS)
+        thumb = entry.find(".//media:thumbnail", NS)
+        thumb_url = thumb.get("url", logo) if thumb is not None else logo
+        extinf = (f'#EXTINF:-1 group-title="\U0001f3ac {name}"'
+                  f' tvg-logo="{thumb_url}",{title}')
+        entries.append((extinf, f"https://www.youtube.com/watch?v={vid}"))
+    return entries
+
 
 def fetch_iranintl_vod():
     req = urllib.request.Request(IRAN_INTL_SITEMAP, headers=HEADERS)
@@ -123,6 +156,12 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
+    for ch_id, ch_name, ch_logo in YOUTUBE_CHANNELS:
+        yt = fetch_youtube_vod(ch_id, ch_name, ch_logo)
+        for extinf, stream in yt:
+            out.append(extinf); out.append(stream); out.append("")
+        total += len(yt)
+        print(f"YouTube {ch_name}: {len(yt)} videos", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
