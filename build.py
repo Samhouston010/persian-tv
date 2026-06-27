@@ -122,7 +122,7 @@ _L = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries"
 
 NEWS_CHANNELS = [
     _ch("Iran International",   _L+"/iran/iran-international-ir.png",           "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
-    _ch("BBC World News",        _L+"/united-kingdom/bbc-world-news-uk.png",     "https://cdn-7.pishow.tv/live/429/master.m3u8"),
+    _ch("BBC World News",        _L+"/united-kingdom/bbc-world-news-uk.png",     "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8"),
     _ch("Al Jazeera English",    _L+"/qatar/al-jazeera-english-qa.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     _ch("Al Jazeera Arabic",     _L+"/qatar/al-jazeera-qa.png",                  "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
     _ch("Sky News Arabia",       _L+"/united-arab-emirates/sky-news-arabia-ae.png", "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
