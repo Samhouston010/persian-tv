@@ -1,5 +1,5 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, json, re, urllib.request, xml.etree.ElementTree as ET
+import gzip, json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, timedelta
 
@@ -184,6 +184,54 @@ NEWS_CHANNELS = [
 ]
 
 
+def fetch_archive_vod(limit=60, workers=10):
+    """Fetch Iranian/Persian films from archive.org."""
+    query = urllib.parse.quote(
+        'mediatype:movies AND (subject:"iranian" OR subject:"persian" OR subject:"irib")'
+    )
+    search_url = (f"https://archive.org/advancedsearch.php?q={query}"
+                  f"&fl=identifier,title&rows={limit}&output=json&sort=downloads+desc")
+    try:
+        req = urllib.request.Request(search_url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=20) as r:
+            docs = json.loads(r.read()).get("response", {}).get("docs", [])
+    except Exception as e:
+        print(f"archive.org search failed: {e}", flush=True)
+        return []
+
+    def get_mp4(doc):
+        ident = doc.get("identifier", "")
+        title = doc.get("title", ident)
+        try:
+            meta_url = f"https://archive.org/metadata/{ident}/files"
+            req2 = urllib.request.Request(meta_url, headers=HEADERS)
+            with urllib.request.urlopen(req2, timeout=10) as r2:
+                files = json.loads(r2.read()).get("result", [])
+        except Exception:
+            return None
+        mp4 = next(
+            (f["name"] for f in files
+             if f.get("name", "").lower().endswith(".mp4") and f.get("source") == "original"),
+            None
+        ) or next(
+            (f["name"] for f in files if f.get("name", "").lower().endswith(".mp4")),
+            None
+        )
+        if not mp4:
+            return None
+        stream = f"https://archive.org/download/{ident}/{urllib.parse.quote(mp4)}"
+        extinf = f'#EXTINF:-1 group-title="\U0001f3ac آرشیو VOD",{title}'
+        return extinf, stream
+
+    results = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for fut in as_completed({pool.submit(get_mp4, d): d for d in docs}):
+            r = fut.result()
+            if r:
+                results.append(r)
+    return results
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -262,6 +310,11 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(aj)
     print(f"Al Jazeera VOD: {len(aj)} videos", flush=True)
+    arc = fetch_archive_vod()
+    for extinf, stream in arc:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(arc)
+    print(f"Archive.org VOD: {len(arc)} videos", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
