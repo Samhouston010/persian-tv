@@ -154,6 +154,8 @@ def fetch_ted_direct(workers=20):
             topic = next((tp for tp in all_topics if tp not in _SKIP_TOPICS), None)
             topic = topic.title() if topic else "TED Talks"
             group = f"\U0001f3a4 TED • {topic}"
+            if re.search(r'hrefLang="fa"', html):
+                t = "\U0001f1ee\U0001f1f7 " + t
             return (f'#EXTINF:-1 group-title="{group}" tvg-logo="{img}",{t}', hls)
         except Exception:
             return None
