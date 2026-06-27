@@ -15,6 +15,29 @@ EPG_SOURCES = [
 
 GROUP_RE = re.compile(r'group-title="[^"]*"')
 
+NEWS_CHANNELS = [
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/320px-Al_Jazeera_English_logo.svg.png\",Al Jazeera English",
+     "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/ar/thumb/1/10/AlJazeera.svg/320px-AlJazeera.svg.png\",Al Jazeera Arabic",
+     "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Al_Arabiya_logo.svg/320px-Al_Arabiya_logo.svg.png\",Al Arabiya English",
+     "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Al_Arabiya_logo.svg/320px-Al_Arabiya_logo.svg.png\",Al Arabiya Al Hadath",
+     "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/France_24_logo.svg/320px-France_24_logo.svg.png\",France 24 English",
+     "https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/France_24_logo.svg/320px-France_24_logo.svg.png\",France 24 Arabic",
+     "https://static.france24.com/live/F24_AR_LO_HLS/live_web.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/DW_logo_2012.svg/320px-DW_logo_2012.svg.png\",DW English",
+     "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Euronews_logo.svg/320px-Euronews_logo.svg.png\",Euronews English",
+     "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CGTN.svg/320px-CGTN.svg.png\",CGTN English",
+     "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8"),
+    ("#EXTINF:-1 group-title=\"📰 خبر\" tvg-logo=\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/RT_logo_2021.svg/320px-RT_logo_2021.svg.png\",RT International",
+     "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8"),
+]
+
 
 def fetch(url):
     req = urllib.request.Request(url, headers=HEADERS)
@@ -71,6 +94,10 @@ def main():
             out.append(extinf); out.append(stream); out.append("")
         total += len(entries)
         print(f"{group}: {len(entries)} channels", flush=True)
+    for extinf, stream in NEWS_CHANNELS:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(NEWS_CHANNELS)
+    print(f"News: {len(NEWS_CHANNELS)} channels", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
