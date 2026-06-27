@@ -118,7 +118,7 @@ def fetch_pluto_vod():
                 logo = (_poster(item.get("poster16_9")) or
                         ((item.get("covers") or [{}])[0]).get("url", "") or
                         _poster(item.get("featuredImage")))
-                if itype == "movie" and iid not in seen_movies:
+                if itype == "movie" and iid not in seen_movies and len(movies) < 600:
                     seen_movies.add(iid)
                     path = (item.get("stitched") or {}).get("path", "")
                     if path:
@@ -160,7 +160,7 @@ def fetch_pluto_vod():
 
     series_entries = []
     with ThreadPoolExecutor(max_workers=50) as pool:
-        futures = {pool.submit(fetch_series_episodes, s): s for s in series_list[:300]}
+        futures = {pool.submit(fetch_series_episodes, s): s for s in series_list[:60]}
         for future in as_completed(futures):
             series_entries.extend(future.result())
 
