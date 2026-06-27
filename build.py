@@ -128,6 +128,12 @@ def _ch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f4f0 خبر" tvg-logo="%s",%s' % (logo, name), stream)
 
 # Logo CDN: github.com/tv-logo/tv-logos (PNG, no hotlink block)
+_EC_LOGO = "https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png"
+_EC_CHANNELS = [
+    ("English Club TV HD", "https://dash2.antik.sk/live/test_ectv_hd_1200/playlist.m3u8"),
+    ("English Club TV SD", "https://stream8.cinerama.uz/1442/tracks-v1a1/mono.m3u8"),
+]
+
 _L = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries"
 
 _S = "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
@@ -223,8 +229,11 @@ def main():
         for extinf, stream in entries:
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
-        total += len(entries)
-        print(f"{group}: {len(entries)} channels", flush=True)
+        for name, stream in _EC_CHANNELS:
+            extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
+            out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+        total += len(entries) + len(_EC_CHANNELS)
+        print(f"{group}: {len(entries)} channels (+English Club)", flush=True)
     for extinf, stream in NEWS_CHANNELS:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(NEWS_CHANNELS)
