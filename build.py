@@ -114,6 +114,30 @@ NEWS_CHANNELS = [
 ]
 
 
+ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
+KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
+
+def fetch_israel():
+    text = fetch(ISRAEL_M3U).decode("utf-8", errors="ignore")
+    entries = []
+    lines = text.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith("#EXTINF"):
+            extinf = re.sub(r'group-title="[^"]*"', 'group-title="\U0001f4e1 اسرائیل"', line)
+            i += 1
+            while i < len(lines) and lines[i].startswith("#"):
+                i += 1
+            if i < len(lines):
+                url = lines[i].strip()
+                if "mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8" in url:
+                    url = KESHET12_WORKER
+                entries.append((extinf, url))
+        i += 1
+    return entries
+
+
 def fetch_ted_direct(workers=20):
     """TED Talks grouped by topic from www.ted.com (curator-approved list)."""
     curator_url = "https://www.ted.com/sitemaps/talks-curator-approved.xml.gz"
@@ -260,6 +284,11 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(ted)
     print(f"TED Talks: {len(ted)} videos → ted.m3u + playlist.m3u", flush=True)
+    israel = fetch_israel()
+    for extinf, stream in israel:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(israel)
+    print(f"Israel: {len(israel)} channels", flush=True)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
