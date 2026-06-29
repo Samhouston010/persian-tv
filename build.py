@@ -1,5 +1,5 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, json, re, urllib.request, xml.etree.ElementTree as ET
+import gzip, re, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
@@ -74,6 +74,88 @@ _EC_CHANNELS = [
 ]
 
 _L = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries"
+
+# ponytail: slug from ncdn.telewebion.ir/{slug}/live/ → lb-cdn.sepehrtv.ir PNG
+_SL = "https://lb-cdn.sepehrtv.ir/img/channel/"
+_TELE_LOGO = {
+    "tv1":            _SL+"logo/Logo1plus.png",
+    "tv1plus":        _SL+"logo/Logo1plus.png",
+    "tv2":            _SL+"logo/2.png",
+    "tv3":            _SL+"logo/tv3-min.png",
+    "tv4":            _SL+"logo/4-min.png",
+    "tehran":         _SL+"logo/iribtv5_min.png",
+    "varzesh":        _SL+"VarzeshTV300.png",
+    "sport1":         _SL+"VarzeshTV300.png",
+    "sport2":         _SL+"VarzeshTV300.png",
+    "sport3":         _SL+"VarzeshTV300.png",
+    "sport4":         _SL+"VarzeshTV300.png",
+    "ofogh":          _SL+"ofogh.png",
+    "amouzesh":       _SL+"logo/Amoozesh_1402-min.png",
+    "irinn":          _SL+"logo/khabar-min.png",
+    "irinn2":         _SL+"logo/khabar-min.png",
+    "nasim":          _SL+"logo/nasim-min.png",
+    "namayesh":       _SL+"logo/namayesh-min.png",
+    "mostanad":       _SL+"logo/mostanad-min.png",
+    "ifilm":          _SL+"event/channel_logo/Ifilm.png",
+    "quran":          _SL+"quarnlogo.png",
+    "salamat":        _SL+"logo/salamat-min.png",
+    "pooya":          _SL+"logo/koodak_0c3b8f58fc9cf93bfb151d9400c8f795.png",
+    "omid":           _SL+"logo/omido-min.png",
+    "sepehr":         _SL+"logo/sepehr_liveirib.png",
+    "faratar":        _SL+"uhd_4k.png",
+    "abadan":         _SL+"abadan.png",
+    "aftab":          _SL+"aftab_01.png",
+    "atrak":          _SL+"logo/atrak-min.png",
+    "eshragh":        _SL+"eshragh.png",
+    "esfahan":        _SL+"esfahan.png",
+    "nesfejahan":     _SL+"esfahan.png",
+    "alborz":         _SL+"logo/alborz_1402_.png",
+    "ilam":           _SL+"ilam.png",
+    "baran":          _SL+"baran.png",
+    "jahanbin":       _SL+"logo/shahrekord__jahanbin-min.png",
+    "khavaran":       _SL+"khorasanjonoobi.png",
+    "khorasanrazavi": _SL+"KHORASANRAZAVI.png",
+    "khalijefars":    _SL+"khalijefars.png",
+    "khoozestan":     _SL+"khoozestan1.jpg",
+    "dena":           _SL+"dena.png",
+    "sabalan":        _SL+"ardebil.png",
+    "semnan":         _SL+"logo/semnan-02.png",
+    "sahand":         _SL+"sahand.png",
+    "fars":           _SL+"fars.png",
+    "qazvin":         _SL+"qazvin.png",
+    "mahabad":        _SL+"mahabad.png",
+    "hamoon":         _SL+"hamoon.png",
+    "kordestan":      _SL+"kordestan1.png",
+    "taban":          _SL+"taban.png",
+    "kawthar":        _SL+"logo/alkowsar.png",
+    "alalam":         _SL+"logo/alalam-02.png",
+    "presstv":        _SL+"logo/presstv.png",
+    "sabz":           _SL+"Golestan150.png",
+    # channels found in extended Sepehr list
+    "iribu":          _SL+"rooyatv.png",
+    "sarbedaran":     _SL+"logo/sarbedaran1.png",
+    "labbayk":        _SL+"shabake%20labeik%20130%20130.png",
+    "habib":          _SL+"habib300-min.png",
+    "golkhane":       _SL+"event/logo/golkhanelogo.png",
+    "makran":         _SL+"logo/makran.png",
+    "ara":            _SL+"shirran.png",
+    "sina":           _SL+"HAMEDAN.png",
+    "velayat":        "https://lb-cdn.sepehrtv.ir/img/news/velayat_630b3da2e98b1.png",
+    "palestine":      _SL+"palestine_.png",
+    "nesfejahan":     _SL+"logo/nesfejahan.png",
+    "irinn2":         "https://lb-cdn.sepehrtv.ir/img/news/irinn2_64328471ba6b6.png",
+    "tv1plus":        _SL+"logo/1.png",
+}
+_TELE_SLUG_RE = re.compile(r"telewebion\.ir/([^/]+)/live/")
+
+def _patch_tele_logo(extinf, stream):
+    m = _TELE_SLUG_RE.search(stream)
+    if not m:
+        return extinf
+    logo = _TELE_LOGO.get(m.group(1))
+    if not logo:
+        return extinf
+    return re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{logo}"', extinf)
 
 _S = "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
 _SU = "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
@@ -196,6 +278,7 @@ def fetch_ted_direct(workers=20):
 
 
 
+
 def fetch(url):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -248,6 +331,7 @@ def main():
         text = fetch(url).decode("utf-8", errors="ignore")
         entries = list(extract(text, group))
         for extinf, stream in entries:
+            extinf = _patch_tele_logo(extinf, stream)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
