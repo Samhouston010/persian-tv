@@ -32,8 +32,8 @@ STATIONS = [
 
 M3U8_RE = re.compile(r"(https://[^\s\"'<>]+\.m3u8[^\s\"'<>]*)")
 
-# Clip/VOD platform CDNs — not live streams
-_SKIP = re.compile(r"(cdn\.ex\.co|mux\.com/v|brightcove|jwplatform|cdn\.jwplayer)", re.I)
+# Clip/VOD platforms and secondary camera feeds — not the main broadcast
+_SKIP = re.compile(r"(cdn\.ex\.co|mux\.com/v|brightcove|jwplatform|cdn\.jwplayer|/ADHOC-)", re.I)
 
 
 def is_live(url):
