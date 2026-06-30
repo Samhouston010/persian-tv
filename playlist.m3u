@@ -1053,15 +1053,6 @@ https://sepehr-proxy.samhoustonbot.workers.dev/sahar3
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sepehr-proxy.samhoustonbot.workers.dev/sahar4
 
-#EXTINF:-1 group-title="📡 سپهر" tvg-id="alkosar" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alkowsar.png",الکوثر
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-proxy.samhoustonbot.workers.dev/alkosar
-
 #EXTINF:-1 group-title="📡 سپهر" tvg-id="saharafghan" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/saharAFGHANISTAN.png",سحر افغانستان
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1070,6 +1061,15 @@ https://sepehr-proxy.samhoustonbot.workers.dev/alkosar
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sepehr-proxy.samhoustonbot.workers.dev/saharafghan
+
+#EXTINF:-1 group-title="📡 سپهر" tvg-id="alkosar" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alkowsar.png",الکوثر
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-proxy.samhoustonbot.workers.dev/alkosar
 
 #EXTINF:-1 group-title="📡 سپهر" tvg-id="hispan" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/hispan-tv.png",هیسپان
 #EXTVLCOPT:network-caching=2000
@@ -1827,6 +1827,33 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8
 
+#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 1 Houston
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8
+
+#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 2 Houston
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
+
+#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/kuht-pbs-houston-us.png",Houston PBS KUHT
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tu.streamguys1.com/kuht/playlist.m3u8
+
 #EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/khou-11-us.png",KHOU 11 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1844,6 +1871,57 @@ https://video.tegnaone.com/khou/live/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pubads.g.doubleclick.net/ssai/event/jHV2RfV4QQuU2swXQUVHsA/master.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e57bd0fc7a1a49da83ec3d83f1f37394/d619ceb2-be83-4ea3-97d2-e3a40e971092_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۹ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/e57bd0fc7a1a49da83ec3d83f1f37394/hls/d619ceb2-be83-4ea3-97d2-e3a40e971092.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f49899b158ca4e4a8da39e8d4b58d9ba/4a5ef50e-9c63-4951-b3dc-2192681f075f_thumb_001_HD.jpg", توافق لبنان و اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/f49899b158ca4e4a8da39e8d4b58d9ba/hls/4a5ef50e-9c63-4951-b3dc-2192681f075f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ea92138937bf4d7a9faf0a84347df482/b0de8089-846c-4cb9-81e8-4691ef6e8945_thumb_001_HD.jpg",کشته شدن دو نیروی سپاه کرمانشاه در حمله مسلحانه پاوه
+https://daq1pvcuhj77l.cloudfront.net/1/ea92138937bf4d7a9faf0a84347df482/hls/b0de8089-846c-4cb9-81e8-4691ef6e8945.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/016d003514db481a9889f5f212820951/20a873cf-9eb1-445c-b567-aac195323f37_thumb_001_HD.jpg",دستور آماده‌باش ارتش اسرائیل برای عملیات مستقل علیه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/016d003514db481a9889f5f212820951/hls/20a873cf-9eb1-445c-b567-aac195323f37.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f58ebb884c9b49c6aeef25634dc856bc/66be3163-94d7-4e9d-9e0d-add79f97762a_thumb_001_HD.jpg",ترامپ: نشست دوحه شاید مهم باشد
+https://daq1pvcuhj77l.cloudfront.net/1/f58ebb884c9b49c6aeef25634dc856bc/hls/66be3163-94d7-4e9d-9e0d-add79f97762a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2156dbb0ee1d4ea393b4a430d4dbc279/065d57fa-e202-4945-bb06-71b714ad6eed_thumb_001_HD.jpg",روز دوم مرحله یک‌شانزدهم رقابت‌های جام‌جهانی فوتبال
+https://daq1pvcuhj77l.cloudfront.net/1/2156dbb0ee1d4ea393b4a430d4dbc279/hls/065d57fa-e202-4945-bb06-71b714ad6eed.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/477fff073dd242e4afc3d64f65c2839b/7c8b5997-12df-41e4-8abf-d5882c0ceb7c_thumb_001_HD.jpg",دیدار فرمانده سنتکام با مقامات لبنان و اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/477fff073dd242e4afc3d64f65c2839b/hls/7c8b5997-12df-41e4-8abf-d5882c0ceb7c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/24603724c1154dcfa76d793a3c7f78e0/69b0f8f3-9ce8-443c-a20b-ca2a02577873_thumb_001_HD.jpg",تحلیلگران: جنگ جمهوری اسلامی برای پکن فرصت‌ساز بوده است
+https://daq1pvcuhj77l.cloudfront.net/1/24603724c1154dcfa76d793a3c7f78e0/hls/69b0f8f3-9ce8-443c-a20b-ca2a02577873.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b9f1a31f9f3e4cbea71d0feacb9b717c/f7ee1b8c-f592-4d17-bbcf-1acb57b59855_thumb_001_HD.jpg",پشت پرده معامله سپاه پاسداران با یکی از خطرناک‌ترین مجرمان استرالیا
+https://daq1pvcuhj77l.cloudfront.net/1/b9f1a31f9f3e4cbea71d0feacb9b717c/hls/f7ee1b8c-f592-4d17-bbcf-1acb57b59855.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ee2dbb4714c948ef9b9bab6ff1d8ad95/9f13a761-517f-4745-9189-58670d6210d0_thumb_001_HD.jpg",جدال جمهوری اسلامی و آمریکا بر سر مدیریت تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/ee2dbb4714c948ef9b9bab6ff1d8ad95/hls/9f13a761-517f-4745-9189-58670d6210d0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/97b9e6832d624c298ea0dd226f22b084/673496c3-d77f-4ecb-8247-5612e65db335_thumb_001_HD.jpg", کنفرانس «نه به اعدام» در مجلس ملی فرانسه برگزار شد
+https://daq1pvcuhj77l.cloudfront.net/1/97b9e6832d624c298ea0dd226f22b084/hls/673496c3-d77f-4ecb-8247-5612e65db335.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/469fa587a39f4b818eec11d74ed2c24f/f93997e8-b018-46d7-a72b-bb5836b69108_thumb_001_HD.jpg",تهران ادعای آمریکا مبنی بر دیدار در دوحه را تکذیب کرد
+https://daq1pvcuhj77l.cloudfront.net/1/469fa587a39f4b818eec11d74ed2c24f/hls/f93997e8-b018-46d7-a72b-bb5836b69108.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e42ee7e0088742d58ba72f1942881fac/e95acb51-ac4f-4f5e-be8a-f54d6619f8f4_thumb_001_HD.jpg",پزشکیان شایعات مربوط به استعفای خود را رد کرد
+https://daq1pvcuhj77l.cloudfront.net/1/e42ee7e0088742d58ba72f1942881fac/hls/e95acb51-ac4f-4f5e-be8a-f54d6619f8f4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5a8e8906ac7d4d40be6ff36752e2f81c/a5989861-1932-4799-9ed4-880bd5dcc686_thumb_001_HD.jpg",ابهام درباره نشست احتمالی جمهوری اسلامی و آمریکا در قطر
+https://daq1pvcuhj77l.cloudfront.net/1/5a8e8906ac7d4d40be6ff36752e2f81c/hls/a5989861-1932-4799-9ed4-880bd5dcc686.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/73f3e75ca704432da82f937c6f9797ef/4dc21e8e-90c4-4eea-b856-2c594501052d_thumb_001_HD.jpg",اختلاف‌نظر میان اسرائیل و آمریکا درباره نحوه برخورد با پرونده‌های لبنان و جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/73f3e75ca704432da82f937c6f9797ef/hls/4dc21e8e-90c4-4eea-b856-2c594501052d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a01e92292126415d9fc998dd42471280/6f15d94e-d7ad-4f7d-997a-87d00b026555_thumb_001_HD.jpg", اخبار بامدادی | سه‌شنبه ۹ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/a01e92292126415d9fc998dd42471280/hls/6f15d94e-d7ad-4f7d-997a-87d00b026555.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/76df01ef23ee4de38a811efc03b9bb1a/ec4cfa0c-5741-4f7a-8879-48f0219c223d_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۹ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/76df01ef23ee4de38a811efc03b9bb1a/hls/ec4cfa0c-5741-4f7a-8879-48f0219c223d.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c01a79eec87346d4b3d6960fd07e2f0f/0b667396-ab0c-48e9-b771-8267facad6fa_thumb_001_HD.jpg",تیم ملی را از گروگان سیاست آزاد کنید!
 https://daq1pvcuhj77l.cloudfront.net/1/c01a79eec87346d4b3d6960fd07e2f0f/hls/0b667396-ab0c-48e9-b771-8267facad6fa.m3u8
@@ -3294,56 +3372,59 @@ https://daq1pvcuhj77l.cloudfront.net/1/a299883156314d6d870a0d74639808b6/hls/9107
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ec84fc66c1464c96a3a7feba3778a087/189fce41-3362-4c0a-a600-45405f69c480_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۳۱ خرداد
 https://daq1pvcuhj77l.cloudfront.net/1/ec84fc66c1464c96a3a7feba3778a087/hls/189fce41-3362-4c0a-a600-45405f69c480.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/62ab07249e7848aca3fb664020453a5b/90f8c300-7754-4e88-b060-9ecd0a0ed3b2_thumb_002_HD.jpg",کنفرانس همگرایی ملی برای ایران آزاد و دموکراتیک
-https://daq1pvcuhj77l.cloudfront.net/1/62ab07249e7848aca3fb664020453a5b/hls/90f8c300-7754-4e88-b060-9ecd0a0ed3b2.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/zyf6mvxzxiqsj5kv/mgigdjrd1j9m4mjl.jpg",Proposal Rejected to Censor Certain Concerts at Cynthia Woods Mitchell Pavilion
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46860144002_46860144198/46860144198/hf-uuid-aab29f76-4f12-4b47-a8c0-95e01396cb0a/46860144198_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b64c7ff3e4c64a59a4abb7514295686d/6ade8d36-ae68-433a-bb23-091043f34c0e_thumb_001_HD.jpg",شاهزاده رضا پهلوی: در برابر جمهوری اسلامی، اتحاد ملی داریم
-https://daq1pvcuhj77l.cloudfront.net/1/b64c7ff3e4c64a59a4abb7514295686d/hls/6ade8d36-ae68-433a-bb23-091043f34c0e.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/bo9jp0kcqmgdn37l/ckezuc4m272zw4dp.jpg",World Cup Debate: Are American Soccer Fans Lacking Passion Compared to International Crowds?
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46860092862_46860093149/46860093149/hf-uuid-7cc647ce-ff63-4301-8595-d7116c86d73c/46860093149_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f6c5a968058a4729ac7dfd45459bd351/944967f2-c00c-454b-8bb5-5787a22d3802_thumb_001_HD.jpg",افزایش فشارها بر نخست‌وزیر بریتانیا برای کناره‌گیری از سمت خود
-https://daq1pvcuhj77l.cloudfront.net/1/f6c5a968058a4729ac7dfd45459bd351/hls/944967f2-c00c-454b-8bb5-5787a22d3802.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/u1zsvjlehr39d4ui/wpg59ndkvjz4xd84.jpg",Tropical Weather Forecast: Watching area of low pressure in Atlantic
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46859776797_46859776995/46859776995/hf-uuid-62bb929e-60a0-47e0-9bc7-766d7bf85182/46859776995_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/98bc1765901545b281bbff477a3683f5/560a923c-77a2-4c3a-8a91-ce5f407349d4_thumb_004_HD.jpg",مروری بر رسانه‌ها و خبرگزاری‌ها در ایران، یکشنبه ۳۱ خرداد 
-https://daq1pvcuhj77l.cloudfront.net/1/98bc1765901545b281bbff477a3683f5/hls/560a923c-77a2-4c3a-8a91-ce5f407349d4.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/j2x100evq4hd2vjp/27rbopngwqh6vqy0.jpg",Houston weather: Saharan Dust expected across the Houston area Tuesday
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46859728770_46859728905/46859728905/hf-uuid-b8a15631-9273-4da9-ac52-5ab0b9b7889d/46859728905_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/894fe25ee0a64240b73796a826bfc7f1/419ccdbd-2a66-42f5-bdfe-92e999df4b53_thumb_001_HD.jpg",برگزاری کنفرانس «همگرایی ملی برای ایران آزاد و دموکراتیک» در آلمان
-https://daq1pvcuhj77l.cloudfront.net/1/894fe25ee0a64240b73796a826bfc7f1/hls/419ccdbd-2a66-42f5-bdfe-92e999df4b53.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ngxbbwjni3kdngq9/jv2zakh9btbzju3p.jpg",Roof leak dispute over solar panels
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46858614856_46858615249/46858615249/hf-uuid-a83b97eb-10ff-44a5-ac6a-f0a2bedcbed2/46858615249_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5c8a35abeee64555b4a55f0e34aad219/0042b881-6763-454c-b65c-26be242ad979_thumb_001_HD.jpg",نقش گسترده سپاه در اقتصاد ایران
-https://daq1pvcuhj77l.cloudfront.net/1/5c8a35abeee64555b4a55f0e34aad219/hls/0042b881-6763-454c-b65c-26be242ad979.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/r92itx8j94o1miy4/vpifocwq5s00u3kf.jpg",Fight continues against increase in mosquitoes
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46858440875_46858441093/46858441093/hf-uuid-2bbaf877-4a09-4525-a834-8970e5810535/46858441093_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e3a68b078e9842dcba515a4511660a45/c575d9ee-cd57-4fbd-94fc-735913786605_thumb_001_HD.jpg",پزشکیان از حمایت بی‌سابقه شورای عالی امنیت ملی از مذاکرات خبر داد
-https://daq1pvcuhj77l.cloudfront.net/1/e3a68b078e9842dcba515a4511660a45/hls/c575d9ee-cd57-4fbd-94fc-735913786605.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rb1iwzfxp6s5mqgn/c6kiidrlubdmkjtf.jpg",Houston weather: Saharan Dust possible across Houston on Tuesday
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46856045538_46856045677/46856045677/hf-uuid-0d0b4bd3-4200-4e19-a687-37309c40149d/46856045677_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/32dd5cdb6ecc42aa84d32ee20ffb01b5/517907c8-d140-4a27-bc99-f3c06ed1f034_thumb_001_HD.jpg",اخبار نیم‌روزی | یکشنبه ۳۱ خرداد
-https://daq1pvcuhj77l.cloudfront.net/1/32dd5cdb6ecc42aa84d32ee20ffb01b5/hls/517907c8-d140-4a27-bc99-f3c06ed1f034.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kwui464rlbdxnikw/u9q4zkvr00ybt0ou.jpg",Houston police investigating after man was killed during an argument
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46854682175_46854682526/46854682526/hf-uuid-a8a66543-d398-4a08-8dd0-acd149d973f3/46854682526_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6f9c3a576802442fb0243ee5beaad1f2/8e2084f5-00da-4ce7-a345-b879a515b452_thumb_002_HD.jpg",قلعه‌نویی اظهارات فدراسیون فوتبال جمهوری اسلامی درباره شکایت از فیفا را رد کرد
-https://daq1pvcuhj77l.cloudfront.net/1/6f9c3a576802442fb0243ee5beaad1f2/hls/8e2084f5-00da-4ce7-a345-b879a515b452.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/q9j88275jrp90e6s/8dw5tgehqhhrh2fc.jpg",Texas Flood: One Year Later
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46853027808_46853080677/46853080677/hf-uuid-9769603a-468b-4c1a-9cd3-b6659287c680/46853080677_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/20e918ed54714fbaaf96c3f8f3459239/563f9d8d-f967-45ee-9a89-0c4e6cf65523_thumb_001_HD.jpg",دوسلدورف میزبان کنفرانس همگرایی ملی برای ایران آزاد
-https://daq1pvcuhj77l.cloudfront.net/1/20e918ed54714fbaaf96c3f8f3459239/hls/563f9d8d-f967-45ee-9a89-0c4e6cf65523.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5culvhn7n97cf0k3/7cndsnjxxn85e83r.jpg",IShowSpeed and Taiyo Jr. after Brazil vs. Japan match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46852768103_46852768210/46852768210/hf-uuid-bf0da505-5e8c-49c6-9369-171ba968e54d/46852768210_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3acecbace7224ff682d6c4985e9e7693/977b5b5a-4885-4334-871d-af34d3bee035_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۳۱ خرداد
-https://daq1pvcuhj77l.cloudfront.net/1/3acecbace7224ff682d6c4985e9e7693/hls/977b5b5a-4885-4334-871d-af34d3bee035.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/c0jvl8mljq1c4wyp/7hkvrnqrzkzgw514.jpg",Butterflies swarm Texas coast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46852587179_46852755940/46852755940/hf-uuid-00e44089-f3b7-4a9b-aa47-c4a9c8bc67a2/46852755940_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f46c958b652c4560b6704e998cee655e/2338204b-57be-4d5b-8710-8795e83e954b_thumb_005_HD.jpg",روزنامه کیهان خواستار توقف اجرای تفاهم‌نامه اسلام‌آباد شد
-https://daq1pvcuhj77l.cloudfront.net/1/f46c958b652c4560b6704e998cee655e/hls/2338204b-57be-4d5b-8710-8795e83e954b.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/apdbfc0xwbekqt3f/dncqrnegy0xwkp87.jpg",Thousands watching Japan vs Brazil match at FIFA Fan Festival in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46850794656_46850794750/46850794750/hf-uuid-7e5e524a-b167-47af-87a9-60c3c1d0c9e9/46850794750_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3da6c25a787948539daebcd2072f0f45/f243bfa2-6030-4f7f-ab82-83a1a8607e4a_thumb_001_HD.jpg",جی‌دی ونس و هیات جمهوری اسلامی وارد بورگن‌اشتوک سوییس شدند
-https://daq1pvcuhj77l.cloudfront.net/1/3da6c25a787948539daebcd2072f0f45/hls/f243bfa2-6030-4f7f-ab82-83a1a8607e4a.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/zu91z84wrk1j4nac/7oufry05e6e96ypw.jpg",Fans fired up at Fan Fest in Houston for Japan vs Brazil FIFA World Cup match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46849835932_46849836053/46849836053/hf-uuid-3b74c10b-5d42-48fc-9da5-d582b836dcee/46849836053_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/90e70e2e476f45bfb40f135139b6f1ac/09bd9610-aade-4e35-9004-e5291bba9719_thumb_001_HD.jpg",اختصاصی ایران‌اینترنشنال؛ ممنوعیت طرح دوگانه «میدان-دیپلماسی» در رسانه‌های ایران
-https://daq1pvcuhj77l.cloudfront.net/1/90e70e2e476f45bfb40f135139b6f1ac/hls/09bd9610-aade-4e35-9004-e5291bba9719.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9hww8enlou04d2dk/0yerflnbleizka1x.jpg",Brazil vs Japan: Fans make score predictions at FIFA World Cup match in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46848885808_46848885983/46848885983/hf-uuid-d309d258-c7d3-4aa1-b677-e7d6f47206f4/46848885983_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/09aaaa77936c41b5a5481b125aee6beb/6803fda1-ef36-4c6e-b152-fd93663e3da5_thumb_001_HD.jpg",گزارش رسانه‌های آمریکایی از بررسی درگیری اسرائیل و حزب‌الله در مذاکرات سوییس
-https://daq1pvcuhj77l.cloudfront.net/1/09aaaa77936c41b5a5481b125aee6beb/hls/6803fda1-ef36-4c6e-b152-fd93663e3da5.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/mntp88kqmxebgyk2/hpe4ejpd78mv1bnd.jpg",Viral Japan fan attends FIFA World Cup match in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46848600457_46848600635/46848600635/hf-uuid-d068b10b-60bf-4d4a-9d75-4207948a2d10/46848600635_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7707f2a797c04bedb0bc029de4c9029f/aa66eb39-c5b4-472f-b608-f8159670c211_thumb_001_HD.jpg",حضور هوادارانی غیرایرانی با پرچم جمهوری اسلامی در لس‌آنجلس
-https://daq1pvcuhj77l.cloudfront.net/1/7707f2a797c04bedb0bc029de4c9029f/hls/aa66eb39-c5b4-472f-b608-f8159670c211.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/tvbjk5qs1qmi8nh7/8itjf2njgu02b2mw.jpg",Brazil fans march to Houston Stadium for FIFA World Cup match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46847918564_46847918782/46847918782/hf-uuid-c3aa0444-c52f-4a74-b53c-47a0af16b0f0/46847918782_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f0b6420c2ce74b3a934576ca9a7faa1a/7de494ee-8c22-4c0e-89be-f621924bf56e_thumb_001_HD.jpg",دیدار تیم فوتبال ایران و بلژیک در لس‌آنجلس در چارچوب جام جهانی
-https://daq1pvcuhj77l.cloudfront.net/1/f0b6420c2ce74b3a934576ca9a7faa1a/hls/7de494ee-8c22-4c0e-89be-f621924bf56e.m3u8
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/07rzlfdqakhifskm/gtj7l049bskpd80a.jpg",Brazil fans gather for march in Houston ahead of FIFA World Cup match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46847782608_46847782725/46847782725/hf-uuid-0047ea68-355c-4962-ba85-b9562159eed2/46847782725_lowres.mp4
+
+#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/3cj927c1rfhxdrh9/pivgn34ukz82ldb4.jpg",Houston weather: Hazy, sunny Monday in the 90s
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46847259649_46847259810/46847259810/hf-uuid-e2a7d734-96d8-4032-8071-9308d4453a35/46847259810_lowres.mp4
 
 #EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qmafmks3d6movuvh/2v12ga1ppjwt2ccf.jpg",Houston weather: June 28 overnight forecast
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46838645268_46838645397/46838645397/hf-uuid-d812f1ec-32c5-4a09-abff-b6448ad56c7b/46838645397_lowres.mp4
@@ -4191,59 +4272,59 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4655173
 #EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/f6e3k9xt82yo82xi/u70kyeypel71d16g.jpg",Houston City Council approves $7.5B 2027 budget | What's Your Point?
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46551109941_46551110042/46551110042/hf-uuid-357ef2c4-c532-4999-8569-5d95d1c415e3/46551110042_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4361wfb89clqj6nd/vkubka1ugcguwdci.jpg",Houston weather: Flood Watch until Wednesday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46548661978_46548662062/46548662062/hf-uuid-08050dac-55c6-4fe2-97ac-d70a11824b42/46548662062_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/zyf6mvxzxiqsj5kv/mgigdjrd1j9m4mjl.jpg",Proposal Rejected to Censor Certain Concerts at Cynthia Woods Mitchell Pavilion
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46860144002_46860144198/46860144198/hf-uuid-aab29f76-4f12-4b47-a8c0-95e01396cb0a/46860144198_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5vet41dbtqz0g938/cf65wg95a1056gk9.jpg",Karmelo Anthony sentence raises talks of self-defense, race | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46547015083_46547015186/46547015186/hf-uuid-2b171f89-c89b-4300-bb3f-4b342d5f77b5/46547015186_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/bo9jp0kcqmgdn37l/ckezuc4m272zw4dp.jpg",World Cup Debate: Are American Soccer Fans Lacking Passion Compared to International Crowds?
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46860092862_46860093149/46860093149/hf-uuid-7cc647ce-ff63-4301-8595-d7116c86d73c/46860093149_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/xjsp8vxfpvabrhjs/yr4gfqm2onc78plv.jpg",Houston budget approved, Karmelo Anthony sentenced, US-Iran, and more | What's Your Point?
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46540603968_46546004200/46546004200/hf-uuid-f3e6c8a6-ca94-4045-93e7-966666bc272b/46546004200_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/u1zsvjlehr39d4ui/wpg59ndkvjz4xd84.jpg",Tropical Weather Forecast: Watching area of low pressure in Atlantic
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46859776797_46859776995/46859776995/hf-uuid-62bb929e-60a0-47e0-9bc7-766d7bf85182/46859776995_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/2dqimqg8iarbh02y/mgyqtbpxjxf6bv76.jpg",VIDEO: Large crowds outside Houston Stadium for FIFA World Cup match
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46543781030_46543806269/46543806269/hf-uuid-3deb2c22-8961-4c6e-b7d3-a659e865ba45/46543806269_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/j2x100evq4hd2vjp/27rbopngwqh6vqy0.jpg",Houston weather: Saharan Dust expected across the Houston area Tuesday
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46859728770_46859728905/46859728905/hf-uuid-b8a15631-9273-4da9-ac52-5ab0b9b7889d/46859728905_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/hewt29cuu87gz4mk/s6nfu5hycl39x3ll.jpg",METRO bus seeing crowds at Houston Stadium
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46543417705_46543542089/46543542089/hf-uuid-99e2354a-e03b-43c0-a3be-663df2733111/46543542089_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ngxbbwjni3kdngq9/jv2zakh9btbzju3p.jpg",Roof leak dispute over solar panels
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46858614856_46858615249/46858615249/hf-uuid-a83b97eb-10ff-44a5-ac6a-f0a2bedcbed2/46858615249_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/fje1i2fdvu1azxvj/6mtnu6qxbdb3ynxt.jpg",Chris Canetti's final thoughts heading into the FIFA World Cup match in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46542923077_46542923208/46542923208/hf-uuid-13564238-75ad-4e96-9fbf-22a5774042aa/46542923208_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/r92itx8j94o1miy4/vpifocwq5s00u3kf.jpg",Fight continues against increase in mosquitoes
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46858440875_46858441093/46858441093/hf-uuid-2bbaf877-4a09-4525-a834-8970e5810535/46858441093_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/v2fp2mjif5g93tkf/updsef28wj6r24ec.jpg",Fans preparing to watch match at FIFA Fan Festival
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46542810767_46542810883/46542810883/hf-uuid-6128262a-76af-48ef-bf26-b543a293c332/46542810883_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rb1iwzfxp6s5mqgn/c6kiidrlubdmkjtf.jpg",Houston weather: Saharan Dust possible across Houston on Tuesday
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46856045538_46856045677/46856045677/hf-uuid-0d0b4bd3-4200-4e19-a687-37309c40149d/46856045677_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/a79lzqcj9eui6zit/57few72wjn7pri4r.jpg",Safety precautions in place for FIFA World Cup in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46542504777_46542504872/46542504872/hf-uuid-8e028db3-81fb-4d88-989d-03bc2525f4d8/46542504872_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kwui464rlbdxnikw/u9q4zkvr00ybt0ou.jpg",Houston police investigating after man was killed during an argument
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46854682175_46854682526/46854682526/hf-uuid-a8a66543-d398-4a08-8dd0-acd149d973f3/46854682526_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kaypgnh0ntt0l6o9/620kfagrf2yz8sjk.jpg",Team Curacao fans join Houston's Soccer HQ
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46541932846_46541932983/46541932983/hf-uuid-0902cb62-15b0-4d03-9264-6ee45233dc25/46541932983_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/q9j88275jrp90e6s/8dw5tgehqhhrh2fc.jpg",Texas Flood: One Year Later
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46853027808_46853080677/46853080677/hf-uuid-9769603a-468b-4c1a-9cd3-b6659287c680/46853080677_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/2e3tr7wzysr3eu7i/z54rrh3eh3642ft6.jpg",FIFA World Cup: Curaçao profile 
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46541289186_46541289285/46541289285/hf-uuid-7e9dd39a-63cc-448b-8af8-6c8fe699683d/46541289285_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5culvhn7n97cf0k3/7cndsnjxxn85e83r.jpg",IShowSpeed and Taiyo Jr. after Brazil vs. Japan match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46852768103_46852768210/46852768210/hf-uuid-bf0da505-5e8c-49c6-9369-171ba968e54d/46852768210_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/asmwps187ie7bkp5/je3tp10sae5jt0hv.jpg",Houston weather: Storms, scattered showers for World Cup Sunday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46541167940_46541168031/46541168031/hf-uuid-2315333e-6871-4593-ba0c-b8e9c6e595b7/46541168031_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/c0jvl8mljq1c4wyp/7hkvrnqrzkzgw514.jpg",Butterflies swarm Texas coast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46852587179_46852755940/46852755940/hf-uuid-00e44089-f3b7-4a9b-aa47-c4a9c8bc67a2/46852755940_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/7lhb2bvqsqiczjnn/c200m77997idbrfa.jpg",Houston weather: June 14 morning forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46540530912_46540531001/46540531001/hf-uuid-1202b93a-e9a3-4ab9-805d-7a5eebcc7fb3/46540531001_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/apdbfc0xwbekqt3f/dncqrnegy0xwkp87.jpg",Thousands watching Japan vs Brazil match at FIFA Fan Festival in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46850794656_46850794750/46850794750/hf-uuid-7e5e524a-b167-47af-87a9-60c3c1d0c9e9/46850794750_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/wb7p8m1yotu7v5np/ril58s993o01ldam.jpg",Houston weather: June 13th overnight forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46532938315_46532938834/46532938834/hf-uuid-c040d9ec-de9c-4237-ab66-4e74596720a0/46532938834_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/zu91z84wrk1j4nac/7oufry05e6e96ypw.jpg",Fans fired up at Fan Fest in Houston for Japan vs Brazil FIFA World Cup match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46849835932_46849836053/46849836053/hf-uuid-3b74c10b-5d42-48fc-9da5-d582b836dcee/46849836053_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/anxno3k8vwud2yz7/g8vkjrdttcmrqf1p.jpg",Houston World Cup fans navigate the parking options
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46532880183_46532880437/46532880437/hf-uuid-e71bc269-b40a-4606-9be3-9808defbb4f2/46532880437_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9hww8enlou04d2dk/0yerflnbleizka1x.jpg",Brazil vs Japan: Fans make score predictions at FIFA World Cup match in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46848885808_46848885983/46848885983/hf-uuid-d309d258-c7d3-4aa1-b677-e7d6f47206f4/46848885983_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gp85034z5wpcevar/ssal1gteu2c2ulrb.jpg",Houston weather: June 13th evening forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46530133017_46530133162/46530133162/hf-uuid-d7d86c05-1f15-4da0-a64e-f61c14444e2f/46530133162_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/mntp88kqmxebgyk2/hpe4ejpd78mv1bnd.jpg",Viral Japan fan attends FIFA World Cup match in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46848600457_46848600635/46848600635/hf-uuid-d068b10b-60bf-4d4a-9d75-4207948a2d10/46848600635_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gfc051pcflhs4f04/rqwgpixni1hyu3m3.jpg",Houston non-profit targeting traffcking during FIFA World Cup 2026
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46529189047_46529189246/46529189246/hf-uuid-62a2c4f2-a10a-46dc-a780-01774fc07079/46529189246_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/tvbjk5qs1qmi8nh7/8itjf2njgu02b2mw.jpg",Brazil fans march to Houston Stadium for FIFA World Cup match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46847918564_46847918782/46847918782/hf-uuid-c3aa0444-c52f-4a74-b53c-47a0af16b0f0/46847918782_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/yq7s591ma26e2cvl/zm5i7nukmek9g6fa.jpg",Houston Turkey Leg Hut owner on pop-up event, business history, recent controversy, and more
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46528697758_46528697947/46528697947/hf-uuid-ce96729d-1cae-4518-9971-f330511b99f5/46528697947_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/07rzlfdqakhifskm/gtj7l049bskpd80a.jpg",Brazil fans gather for march in Houston ahead of FIFA World Cup match
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46847782608_46847782725/46847782725/hf-uuid-0047ea68-355c-4962-ba85-b9562159eed2/46847782725_lowres.mp4
 
-#EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rhxb0pexm16hhkxr/f0etcu4k8k7ysxc2.jpg",THE NOW with CRIS: Pitch Perfect Houston
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46513048636_46513048788/46513048788/hf-uuid-022c4c13-9ca5-429b-bc51-609c51a56636/46513048788_lowres.mp4
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/3cj927c1rfhxdrh9/pivgn34ukz82ldb4.jpg",Houston weather: Hazy, sunny Monday in the 90s
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46847259649_46847259810/46847259810/hf-uuid-e2a7d734-96d8-4032-8071-9308d4453a35/46847259810_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qmafmks3d6movuvh/2v12ga1ppjwt2ccf.jpg",Houston weather: June 28 overnight forecast
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46838645268_46838645397/46838645397/hf-uuid-d812f1ec-32c5-4a09-abff-b6448ad56c7b/46838645397_lowres.mp4
@@ -5090,60 +5171,6 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4655173
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/f6e3k9xt82yo82xi/u70kyeypel71d16g.jpg",Houston City Council approves $7.5B 2027 budget | What's Your Point?
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46551109941_46551110042/46551110042/hf-uuid-357ef2c4-c532-4999-8569-5d95d1c415e3/46551110042_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4361wfb89clqj6nd/vkubka1ugcguwdci.jpg",Houston weather: Flood Watch until Wednesday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46548661978_46548662062/46548662062/hf-uuid-08050dac-55c6-4fe2-97ac-d70a11824b42/46548662062_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5vet41dbtqz0g938/cf65wg95a1056gk9.jpg",Karmelo Anthony sentence raises talks of self-defense, race | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46547015083_46547015186/46547015186/hf-uuid-2b171f89-c89b-4300-bb3f-4b342d5f77b5/46547015186_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/xjsp8vxfpvabrhjs/yr4gfqm2onc78plv.jpg",Houston budget approved, Karmelo Anthony sentenced, US-Iran, and more | What's Your Point?
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46540603968_46546004200/46546004200/hf-uuid-f3e6c8a6-ca94-4045-93e7-966666bc272b/46546004200_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/2dqimqg8iarbh02y/mgyqtbpxjxf6bv76.jpg",VIDEO: Large crowds outside Houston Stadium for FIFA World Cup match
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46543781030_46543806269/46543806269/hf-uuid-3deb2c22-8961-4c6e-b7d3-a659e865ba45/46543806269_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/hewt29cuu87gz4mk/s6nfu5hycl39x3ll.jpg",METRO bus seeing crowds at Houston Stadium
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46543417705_46543542089/46543542089/hf-uuid-99e2354a-e03b-43c0-a3be-663df2733111/46543542089_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/fje1i2fdvu1azxvj/6mtnu6qxbdb3ynxt.jpg",Chris Canetti's final thoughts heading into the FIFA World Cup match in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46542923077_46542923208/46542923208/hf-uuid-13564238-75ad-4e96-9fbf-22a5774042aa/46542923208_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/v2fp2mjif5g93tkf/updsef28wj6r24ec.jpg",Fans preparing to watch match at FIFA Fan Festival
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46542810767_46542810883/46542810883/hf-uuid-6128262a-76af-48ef-bf26-b543a293c332/46542810883_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/a79lzqcj9eui6zit/57few72wjn7pri4r.jpg",Safety precautions in place for FIFA World Cup in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46542504777_46542504872/46542504872/hf-uuid-8e028db3-81fb-4d88-989d-03bc2525f4d8/46542504872_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kaypgnh0ntt0l6o9/620kfagrf2yz8sjk.jpg",Team Curacao fans join Houston's Soccer HQ
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46541932846_46541932983/46541932983/hf-uuid-0902cb62-15b0-4d03-9264-6ee45233dc25/46541932983_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/2e3tr7wzysr3eu7i/z54rrh3eh3642ft6.jpg",FIFA World Cup: Curaçao profile 
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46541289186_46541289285/46541289285/hf-uuid-7e9dd39a-63cc-448b-8af8-6c8fe699683d/46541289285_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/asmwps187ie7bkp5/je3tp10sae5jt0hv.jpg",Houston weather: Storms, scattered showers for World Cup Sunday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46541167940_46541168031/46541168031/hf-uuid-2315333e-6871-4593-ba0c-b8e9c6e595b7/46541168031_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/7lhb2bvqsqiczjnn/c200m77997idbrfa.jpg",Houston weather: June 14 morning forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46540530912_46540531001/46540531001/hf-uuid-1202b93a-e9a3-4ab9-805d-7a5eebcc7fb3/46540531001_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/wb7p8m1yotu7v5np/ril58s993o01ldam.jpg",Houston weather: June 13th overnight forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46532938315_46532938834/46532938834/hf-uuid-c040d9ec-de9c-4237-ab66-4e74596720a0/46532938834_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/anxno3k8vwud2yz7/g8vkjrdttcmrqf1p.jpg",Houston World Cup fans navigate the parking options
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46532880183_46532880437/46532880437/hf-uuid-e71bc269-b40a-4606-9be3-9808defbb4f2/46532880437_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gp85034z5wpcevar/ssal1gteu2c2ulrb.jpg",Houston weather: June 13th evening forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46530133017_46530133162/46530133162/hf-uuid-d7d86c05-1f15-4da0-a64e-f61c14444e2f/46530133162_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gfc051pcflhs4f04/rqwgpixni1hyu3m3.jpg",Houston non-profit targeting traffcking during FIFA World Cup 2026
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46529189047_46529189246/46529189246/hf-uuid-62a2c4f2-a10a-46dc-a780-01774fc07079/46529189246_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/yq7s591ma26e2cvl/zm5i7nukmek9g6fa.jpg",Houston Turkey Leg Hut owner on pop-up event, business history, recent controversy, and more
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46528697758_46528697947/46528697947/hf-uuid-ce96729d-1cae-4518-9971-f330511b99f5/46528697947_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rhxb0pexm16hhkxr/f0etcu4k8k7ysxc2.jpg",THE NOW with CRIS: Pitch Perfect Houston
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46513048636_46513048788/46513048788/hf-uuid-022c4c13-9ca5-429b-bc51-609c51a56636/46513048788_lowres.mp4
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/261ec7c5-71d0-43d1-bca7-4ad03b368161/PeterBeck_2019-embed.jpg",Peter Beck: Small rockets are the next space revolution
 https://hls.ted.com/project_masters/677/manifest.m3u8
@@ -6491,9 +6518,6 @@ https://hls.ted.com/project_masters/8816/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/448cc03f-9169-4b47-9bce-69c2d27d38e4/SagarGoel_2023S-embed.jpg",Sagar Goel: An optimist&#x27;s take on reskilling in the age of AI
 https://hls.ted.com/project_masters/9280/manifest.m3u8
-
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/34d9c86f-c184-4a19-bc8b-40ee9f5502c6/SarahGuo_2023S-embed.jpg",Sarah Guo: Why you should invest in AI
-https://hls.ted.com/project_masters/8880/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d4550842-f406-42f6-ab0f-c38470340539/ShaneLegg_2023S-embed.jpg",Shane Legg and Chris Anderson: The transformative potential of AGI — and when it might arrive
 https://hls.ted.com/project_masters/8867/manifest.m3u8
@@ -8223,9 +8247,6 @@ https://hls.ted.com/project_masters/9766/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/4c9b41fac40ffc729ea73215f51c44b55a79e504_2880x1620.jpg",Wade Davis: The worldwide web of belief and ritual
 https://hls.ted.com/project_masters/846/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/dccc713c-c5ce-48f1-a1a1-2658703aa52a/AdamGrant_2016S-embed.jpg",🇮🇷 Adam Grant: Are you a giver or a taker?
-https://hls.ted.com/project_masters/2733/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/0da1893b-d459-45eb-bcaf-ea7c873d80e6/30_dognose.jpg",🇮🇷 Alexandra Horowitz: How do dogs &quot;see&quot; with their noses?
 https://hls.ted.com/project_masters/4766/manifest.m3u8
 
@@ -8450,9 +8471,6 @@ https://hls.ted.com/project_masters/1090/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/176929_800x600.jpg",🇮🇷 David Byrne: How architecture helped music evolve
 https://hls.ted.com/project_masters/1945/manifest.m3u8
-
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/be8bc8941155fcc0f96e25910d486ef6611e4a1c_1600x1200.jpg",🇮🇷 Doris Kim Sung: Metal that breathes
-https://hls.ted.com/project_masters/3587/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/89c8ef74-c311-417a-9492-a891990ae712/ElizabethDiller_2020W-embed.jpg",🇮🇷 Elizabeth Diller: A stealthy reimagining of urban public space
 https://hls.ted.com/project_masters/5684/manifest.m3u8
@@ -8889,9 +8907,6 @@ https://hls.ted.com/project_masters/10499/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_183465/82ff66eb-f32c-4823-8a63-fb2d2b43c775/YiyunKang_2026-embed.jpg",Yiyun Kang: The case for making art in a crisis
 https://hls.ted.com/project_masters/11811/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/6ff255e4-dafe-4051-9cab-4c9dce5d22d5/ATribeCalledRed_2018-embed.jpg",🇮🇷 A Tribe Called Red: &quot;We Are the Halluci Nation&quot;
-https://hls.ted.com/project_masters/11166/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7de26927-266c-4b8b-91a0-e93af9f9b2bf/AdamSavage_2016-embed.jpg",🇮🇷 Adam Savage: My love letter to cosplay
 https://hls.ted.com/project_masters/2659/manifest.m3u8
 
@@ -8966,9 +8981,6 @@ https://hls.ted.com/project_masters/2506/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/71466_800x600.jpg",🇮🇷 David Merrill: Toy tiles that talk to each other
 https://hls.ted.com/project_masters/1136/manifest.m3u8
-
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/28670529-721a-4bfd-8d2c-fcc609e8b515/DeborahWillis_HankWillisThomas_2017W-embed.jpg",🇮🇷 Deb Willis and Hank Willis Thomas: A mother and son united by love and art
-https://hls.ted.com/project_masters/6200/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/ef759233-58bf-4fcf-bec7-98b773efbcb8/DreadScott2018U-embed.jpg",🇮🇷 Dread Scott: How art can shape America&#x27;s conversation about freedom
 https://hls.ted.com/project_masters/3251/manifest.m3u8
@@ -10083,9 +10095,6 @@ https://hls.ted.com/project_masters/3193/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/95995_800x600.jpg",Jane Poynter: Life in Biosphere 2
 https://hls.ted.com/project_masters/1222/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_172152/81bb0d4e-e4a6-441e-bd34-a4c0b1b93e00/KarstenTemme_2025T-embed.jpg",Karsten Temme: The tiny organisms transforming farming
-https://hls.ted.com/project_masters/11416/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/f8e19735-ec5a-4766-893f-f9f6aaed3b42/MollyStevens_2013G-embed.jpg",Molly Stevens: A new way to grow bone
 https://hls.ted.com/project_masters/1333/manifest.m3u8
 
@@ -10250,9 +10259,6 @@ https://hls.ted.com/project_masters/1138/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/837e0028-e5bb-480e-bf31-2214d320dcd2/PeterWeinstock_2016X-embed.jpg",Peter Weinstock: Lifelike simulations that make real-life surgery safer
 https://hls.ted.com/project_masters/2821/manifest.m3u8
-
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/5ce77cc2-b18c-4f2b-b888-d4baa49321b2/RichardNeville_2014S-embed.jpg",Richard Neville: How can we give our kids a brighter future?
-https://hls.ted.com/project_masters/7632/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/a1eecc6e-d002-44a1-a9fb-836a75894f9e/SergiuPPasca_2022-embed.jpg",Sergiu P. Pasca: How we&#x27;re reverse engineering the human brain in the lab
 https://hls.ted.com/project_masters/11071/manifest.m3u8
@@ -11364,9 +11370,6 @@ https://hls.ted.com/project_masters/2673/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/096faaa85f3c0dba89bdb67de5a8095a64884910_800x600.jpg",🇮🇷 Drew Curtis: How I beat a patent troll
 https://hls.ted.com/project_masters/1953/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/2bcbfb05e7b5dac371640712d301eeff5323eb69_1600x1200.jpg",🇮🇷 Eddie Obeng: Smart failure for a fast-changing world
-https://hls.ted.com/project_masters/1766/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/4166f021-8c4a-4ce1-bf2c-b2b92aeda9d7/EricBerridge_2017S-embed.jpg",🇮🇷 Eric Berridge: Why tech needs the humanities
 https://hls.ted.com/project_masters/3143/manifest.m3u8
 
@@ -12345,9 +12348,6 @@ https://hls.ted.com/project_masters/5778/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d9ec9ed8-7966-46ab-9a2f-29634f10f78e/LouiseMabulo_2023T-embed.jpg",Louise Mabulo: A climate solution? The wisdom passed down through generations
 https://hls.ted.com/project_masters/9106/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/fbd6b2ac-85ce-459b-a907-6257c4cd8323/LuisaNeubauer_2022T-embed.jpg",Luisa Neubauer: The fairy tales of the fossil fuel industry — and a better climate story
-https://hls.ted.com/project_masters/8312/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7e69b4ad-c695-412f-8851-9d0913f5a732/MahendraSinghi_2021T-embed.jpg",Mahendra Singhi: Cement&#x27;s carbon problem -- and 2 ways to fix it
 https://hls.ted.com/project_masters/7551/manifest.m3u8
 
@@ -12755,9 +12755,6 @@ https://hls.ted.com/project_masters/723/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/56d231a9d4237915c1f0bdcf7874ff7a535e86a6_2880x1620.jpg",🇮🇷 Donald Hoffman: Do we see reality as it is?
 https://hls.ted.com/project_masters/11326/manifest.m3u8
-
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/27207208-0909-4f78-b182-31cb0100898f/MarianoSigman_2016-embed.jpg",🇮🇷 Mariano Sigman: Your words may predict your future mental health
-https://hls.ted.com/project_masters/3981/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/b9fa704c-e3a3-4af3-8493-d127aabb673e/PetterJohansson_2016X-embed.jpg",🇮🇷 Petter Johansson:  Do you really know why you do what you do?
 https://hls.ted.com/project_masters/3090/manifest.m3u8
@@ -19347,9 +19344,6 @@ https://hls.ted.com/project_masters/5729/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/735adaff-39ef-48ed-abd8-98fecfd045ec/BrendaRomero_2011X-embed.jpg",🇮🇷 Brenda Romero: Gaming for understanding
 https://hls.ted.com/project_masters/1940/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d2602596-a55f-4614-8be5-8dbb4c5db8fc/LivBoeree_2018U-embed.jpg",🇮🇷 Liv Boeree: 3 lessons on decision-making from a poker champion
-https://hls.ted.com/project_masters/3275/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/aa432db1-6a53-4fd4-a194-ec2368a4d332/StuartDuncan_2017X-embed.jpg",🇮🇷 Stuart Duncan: How I use Minecraft to help kids with autism
 https://hls.ted.com/project_masters/3064/manifest.m3u8
 
@@ -20189,9 +20183,6 @@ https://hls.ted.com/project_masters/4873/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/23e88de7-1c42-41c6-a6c4-2c9985c70955/215_heartattack.jpg",🇮🇷 Krishna Sudhir: What happens during a heart attack?
 https://hls.ted.com/project_masters/4834/manifest.m3u8
-
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/5efb76855ee037f1b0d5c2b713c42dc745a4c2ec_2880x1620.jpg",🇮🇷 Latif Nasser: The amazing story of the man who gave us modern pain relief
-https://hls.ted.com/project_masters/3845/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/e06257e3-250c-434e-aba0-dba56756bdef/LeiLi_2021-embed.jpg",🇮🇷 Lei Li: The incredible cancer-detecting potential of photoacoustic imaging
 https://hls.ted.com/project_masters/7525/manifest.m3u8
@@ -22905,9 +22896,6 @@ https://hls.ted.com/project_masters/11161/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/04f1c4c5-9b6d-4ec0-a008-b4610e4388de/GlenHenry_2017X-embed.jpg",🇮🇷 Glen Henry: What I&#x27;ve learned about parenting as a stay-at-home dad
 https://hls.ted.com/project_masters/3402/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/527c637c-65c4-4a8d-8335-0732c265dfd5/JulieLythcottHaims_2015P-embed.jpg",🇮🇷 Julie Lythcott-Haims: How to raise successful kids -- without over-parenting
-https://hls.ted.com/project_masters/4007/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/017cd281-e5ed-4c87-922a-aee9471da34a/KimberlyNoble_2019S-embed.jpg",🇮🇷 Kimberly Noble: How does income affect childhood brain development?
 https://hls.ted.com/project_masters/445/manifest.m3u8
 
@@ -24429,9 +24417,6 @@ https://hls.ted.com/project_masters/4664/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/1c5c1fbb-213e-422d-b136-d56edbd57916/DIY_Neuroscience_MindReading-embed.jpg",🇮🇷 Greg Gage: This computer is learning to read your mind
 https://hls.ted.com/project_masters/4661/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/703903fc-5ffd-4190-bb7f-d18b5bcc14de/Hani_Goodarzi_2023S-embed.jpg",🇮🇷 Hani Goodarzi: What if a simple blood test could detect cancer?
-https://hls.ted.com/project_masters/8994/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7b3aea7e-4a1b-48e7-8182-757984c4d36b/1210_13_A_Jimenez_Hortensia_16x9thumb_textless_logo.jpg",🇮🇷 Hortensia Jiménez Díaz: How Mendel&#x27;s pea plants helped us understand genetics
 https://hls.ted.com/project_masters/5095/manifest.m3u8
 
@@ -25101,11 +25086,11 @@ https://hls.ted.com/project_masters/8364/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/c53f2024-a59d-4812-b5ef-6e2b88b3cf63/Good+Sport+Episode+3+TED.com+thumbnail.jpg",Good Sport: The Truth About &quot;The Zone&quot;
 https://hls.ted.com/project_masters/8365/manifest.m3u8
 
-#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/5f475cef-6c5e-479e-b441-2f152fe05acc/Good_Sport_TED.com_thumbnail_2880x1620.jpg",Good Sport: The hidden world of stadium deals
-https://hls.ted.com/project_masters/9017/manifest.m3u8
-
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/0234d5f0-1d17-4d3e-9382-611a3cb6a29e/Good+Sport+Episode+4+TED.com+thumbnail.jpg",Good Sport: The hidden world of stadium deals
 https://hls.ted.com/project_masters/8376/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/5f475cef-6c5e-479e-b441-2f152fe05acc/Good_Sport_TED.com_thumbnail_2880x1620.jpg",Good Sport: The hidden world of stadium deals
+https://hls.ted.com/project_masters/9017/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/c9b820e0-c099-409a-9684-7b8afaa41965/JoeDavis_2013S-embed.jpg",Joe Davis: Using the Super Bowl to give back
 https://hls.ted.com/project_masters/5399/manifest.m3u8
