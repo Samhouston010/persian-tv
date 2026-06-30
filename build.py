@@ -100,6 +100,9 @@ def _ch(name, logo, stream):
 def _hch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f3d9 Houston" tvg-logo="%s",%s' % (logo, name), stream)
 
+def _mch(name, logo, stream):
+    return ('#EXTINF:-1 group-title="\U0001f3b5 موزیک عربی" tvg-logo="%s",%s' % (logo, name), stream)
+
 # Logo CDN: github.com/tv-logo/tv-logos (PNG, no hotlink block)
 _EC_LOGO = "https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png"
 _EC_CHANNELS = [
@@ -406,6 +409,16 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(houston)
     print(f"Houston: {len(houston)} channels", flush=True)
+    # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
+    _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
+    arabic_music = [
+        _mch("Rotana Music",  "https://upload.wikimedia.org/wikipedia/commons/0/00/Rotana_Music_Logo.png", "https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8"),
+        _mch("Rotana Clip",   "https://upload.wikimedia.org/wikipedia/commons/1/18/Rotana_Clip_Logo.png",  "https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8"),
+    ]
+    for extinf, stream in arabic_music:
+        out.append(extinf); out.append(_ROT_REF); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(arabic_music)
+    print(f"Arabic Music: {len(arabic_music)} channels", flush=True)
     vod = fetch_iranintl_vod()
     for extinf, stream in vod:
         out.append(extinf); out.append(stream); out.append("")
@@ -423,21 +436,8 @@ def main():
     for extinf, stream in fox26:
         out.append(extinf); out.append(stream); out.append("")
     print(f"Fox 26 VOD (movies): {len(fox26)} videos", flush=True)
-    ted = fetch_ted_direct()
-    # sort by topic (group-title) then by title — alphabetical in TiviMate
-    ted.sort(key=lambda x: (x[0].split('group-title="')[1].split('"')[0], x[0].rsplit(',', 1)[-1]))
-    ted_out = ["#EXTM3U", ""]
-    for extinf, stream in ted:
-        ted_out.append(extinf); ted_out.append(stream); ted_out.append("")
-    with open("ted.m3u", "w", encoding="utf-8") as f:
-        f.write("\n".join(ted_out))
-    # also include TED in main playlist — single group, no topic prefix in title
-    _group_re = re.compile(r'group-title="[^"]*"')
-    for extinf, stream in ted:
-        extinf = _group_re.sub('group-title="\U0001f4f9 TED"', extinf)
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(ted)
-    print(f"TED Talks: {len(ted)} videos → ted.m3u + playlist.m3u", flush=True)
+    ted = []  # ponytail: disabled until playlist is finalized
+    print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
     for extinf, stream in israel:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
