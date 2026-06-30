@@ -1,0 +1,28 @@
+name: Houston Live Streams
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'   # every 4h — refresh stream tokens
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Discover Houston streams
+        run: python houston_live.py
+      - name: Rebuild playlist
+        run: python build.py
+      - name: Commit
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add houston_live.json playlist.m3u epg.xml.gz ted.m3u
+          git diff --cached --quiet || git commit -m "Houston streams refresh $(date -u +%Y-%m-%dT%H:%M)"
+          git push

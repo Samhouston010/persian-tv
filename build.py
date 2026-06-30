@@ -1,8 +1,39 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, re, urllib.request, xml.etree.ElementTree as ET
+import gzip, json, os, re, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-IRAN_INTL_SITEMAP = "https://www.iranintl.com/sitemap-videos.xml"
+IRAN_INTL_SITEMAP  = "https://www.iranintl.com/sitemap-videos.xml"
+FOX26_SITEMAP_BASE = "https://www.fox26houston.com/sitemap.xml?type=videos"
+FOX26_LOGO         = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png"
+
+
+def fetch_fox26_vod(max_items=300):
+    entries = []
+    for page in range(1, 50):
+        if len(entries) >= max_items:
+            break
+        url = FOX26_SITEMAP_BASE + (f"&page={page}" if page > 1 else "")
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=15) as r:
+                xml = r.read().decode("utf-8", errors="ignore")
+        except Exception as e:
+            print(f"Fox26 sitemap page {page} failed: {e}", flush=True)
+            break
+        titles  = re.findall(r"<video:title>(.*?)</video:title>", xml)
+        thumbs  = re.findall(r"<video:thumbnail_loc>(.*?)</video:thumbnail_loc>", xml)
+        content = re.findall(r"<video:content_loc>(.*?)</video:content_loc>", xml)
+        if not titles:
+            break
+        for title, thumb, stream_url in zip(titles, thumbs, content):
+            if len(entries) >= max_items:
+                break
+            thumb = thumb or FOX26_LOGO
+            extinf = f'#EXTINF:-1 group-title="\U0001f4fa Fox 26 Houston VOD" tvg-logo="{thumb}",{title}'
+            entries.append((extinf, stream_url))
+        if len(titles) < 10:   # last partial page
+            break
+    return entries
 
 
 def fetch_iranintl_vod():
@@ -65,6 +96,9 @@ GROUP_RE = re.compile(r'group-title="[^"]*"')
 
 def _ch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f4f0 خبر" tvg-logo="%s",%s' % (logo, name), stream)
+
+def _hch(name, logo, stream):
+    return ('#EXTINF:-1 group-title="\U0001f3d9 Houston" tvg-logo="%s",%s' % (logo, name), stream)
 
 # Logo CDN: github.com/tv-logo/tv-logos (PNG, no hotlink block)
 _EC_LOGO = "https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png"
@@ -181,7 +215,6 @@ NEWS_CHANNELS = [
     _ch("CNBC",                  _S+"GBBD3600001NO_20260317T034210SQUARE.png",   "https://jmp2.uk/stvp-GBBD3600001NO"),
     _ch("Bloomberg TV+",         _P+"54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png", "https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8"),
     _ch("ABC News Live",         _P+"6508be683a0d700008c534e4/colorLogoPNG.png", "https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8"),
-    _ch("Fox 26 Houston",        _L+"/united-states/us-local/fox-26-kriv-us.png", "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8"),
     # ─── اروپا ───────────────────────────────────────────────────────────────
     _ch("DW English",            "https://www.dw.com/images/icons/favicon-540x540.png", "https://i.mjh.nz/.r/dw-news.m3u8"),
     _ch("Euronews",              _P+"5ca1da6c593a5d78f0e7edce/colorLogoPNG.png", "https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8"),
@@ -196,6 +229,20 @@ NEWS_CHANNELS = [
     _ch("NDTV 24X7",             _SU+"INBC2800001D8_20260623T015302SQUARE.png",  "https://jmp2.uk/stvp-INBC2800001D8"),
 ]
 
+
+HOUSTON_CHANNELS = [
+    # Fox 26: Amagi CDN — stable, no token
+    _hch("Fox 26 Houston",  _L+"/united-states/us-local/fox-26-kriv-us.png",         "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8"),
+]
+
+def load_houston_live():
+    """Load dynamic Houston channels from houston_live.json (refreshed every 4h)."""
+    try:
+        with open("houston_live.json", encoding="utf-8") as f:
+            data = json.load(f)
+        return [_hch(v["name"], v["logo"], v["url"]) for v in data.values()]
+    except FileNotFoundError:
+        return []
 
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
 KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
@@ -349,11 +396,21 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(NEWS_CHANNELS)
     print(f"News: {len(NEWS_CHANNELS)} channels", flush=True)
+    houston = HOUSTON_CHANNELS + load_houston_live()
+    for extinf, stream in houston:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(houston)
+    print(f"Houston: {len(houston)} channels", flush=True)
     vod = fetch_iranintl_vod()
     for extinf, stream in vod:
         out.append(extinf); out.append(stream); out.append("")
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
+    fox26 = fetch_fox26_vod()
+    for extinf, stream in fox26:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(fox26)
+    print(f"Fox 26 VOD: {len(fox26)} videos", flush=True)
     ted = fetch_ted_direct()
     # sort by topic (group-title) then by title — alphabetical in TiviMate
     ted.sort(key=lambda x: (x[0].split('group-title="')[1].split('"')[0], x[0].rsplit(',', 1)[-1]))
