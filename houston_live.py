@@ -32,16 +32,20 @@ STATIONS = [
 
 M3U8_RE = re.compile(r"(https://[^\s\"'<>]+\.m3u8[^\s\"'<>]*)")
 
-# Patterns that indicate ad/tracking URLs to skip
-_SKIP = re.compile(r"(doubleclick\.net/ssai/event/[^/]+/master|ads\.|tracking\.|ad\.)", re.I)
+# Clip/VOD platform CDNs — not live streams
+_SKIP = re.compile(r"(cdn\.ex\.co|mux\.com/v|brightcove|jwplatform|cdn\.jwplayer)", re.I)
 
 
-def validate(url):
-    """Return True if the URL is a live HLS playlist (starts with #EXTM3U)."""
+def is_live(url):
+    """Return True only if URL is a live HLS stream (no EXT-X-ENDLIST = not a finished VOD)."""
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=8) as r:
-            return r.read(16).startswith(b"#EXTM3U")
+            body = r.read(2048).decode("utf-8", errors="ignore")
+        if not body.startswith("#EXTM3U"):
+            return False
+        # VOD playlists end with EXT-X-ENDLIST; live streams don't
+        return "#EXT-X-ENDLIST" not in body
     except Exception:
         return False
 
@@ -56,11 +60,10 @@ def discover(station):
         return None
 
     candidates = M3U8_RE.findall(html)
-    # prefer non-ad URLs first, then fall back to SSAI if nothing else
-    ordered = [u for u in candidates if not _SKIP.search(u)] + \
-              [u for u in candidates if _SKIP.search(u)]
-    for url in ordered:
-        if validate(url):
+    # skip known clip/VOD platforms
+    candidates = [u for u in candidates if not _SKIP.search(u)]
+    for url in candidates:
+        if is_live(url):
             return url
     return None
 
