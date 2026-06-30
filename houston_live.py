@@ -11,22 +11,35 @@ _L = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-s
 
 STATIONS = [
     {
-        "key":  "ktrk",
-        "name": "ABC 13 Houston",
-        "logo": _L + "abc-13-ktrk-us.png",
-        "page": "https://abc13.com/watch/live/",
-    },
-    {
         "key":  "kprc",
         "name": "KPRC 2 Houston",
         "logo": _L + "kprc-2-us.png",
-        "page": "https://www.click2houston.com/",
+        "pages": ["https://www.click2houston.com/"],
     },
     {
         "key":  "khou",
         "name": "KHOU 11 Houston",
         "logo": _L + "khou-11-us.png",
-        "page": "https://www.khou.com/",
+        "pages": ["https://www.khou.com/"],
+    },
+    {
+        "key":  "ktmd",
+        "name": "Telemundo Houston",
+        "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png",
+        "pages": [
+            "https://www.telemundohouston.com/en/live",
+            "https://www.telemundohouston.com/",
+            "https://www.telemundohouston.com/live-stream",
+        ],
+    },
+    {
+        "key":  "kxln",
+        "name": "Univision Houston",
+        "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/univision-us.png",
+        "pages": [
+            "https://www.univision.com/local/houston-kxln",
+            "https://www.univision.com/local/houston-kxln/en-vivo",
+        ],
     },
 ]
 
@@ -36,35 +49,40 @@ M3U8_RE = re.compile(r"(https://[^\s\"'<>]+\.m3u8[^\s\"'<>]*)")
 _SKIP = re.compile(r"(cdn\.ex\.co|mux\.com/v|brightcove|jwplatform|cdn\.jwplayer|/ADHOC-)", re.I)
 
 
-def is_live(url):
-    """Return True only if URL is a live HLS stream (no EXT-X-ENDLIST = not a finished VOD)."""
+def is_live_video(url):
+    """Return True only if URL is a live HLS VIDEO stream (not VOD, not audio-only)."""
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=8) as r:
             body = r.read(2048).decode("utf-8", errors="ignore")
         if not body.startswith("#EXTM3U"):
             return False
-        # VOD playlists end with EXT-X-ENDLIST; live streams don't
-        return "#EXT-X-ENDLIST" not in body
+        if "#EXT-X-ENDLIST" in body:
+            return False   # VOD
+        # Must contain video indicator: RESOLUTION= or video codec (avc1/hvc1/hevc)
+        return bool(re.search(r"RESOLUTION=|avc1|hvc1|hevc|VIDEO", body, re.I))
     except Exception:
         return False
 
 
 def discover(station):
-    try:
-        req = urllib.request.Request(station["page"], headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=20) as r:
-            html = r.read().decode("utf-8", errors="ignore")
-    except Exception as e:
-        print(f"  {station['name']}: page fetch failed — {e}", flush=True)
-        return None
-
-    candidates = M3U8_RE.findall(html)
-    # skip known clip/VOD platforms
-    candidates = [u for u in candidates if not _SKIP.search(u)]
-    for url in candidates:
-        if is_live(url):
-            return url
+    for page in station.get("pages", []):
+        try:
+            req = urllib.request.Request(page, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=20) as r:
+                chunks = []
+                while True:
+                    c = r.read(32768)
+                    if not c: break
+                    chunks.append(c)
+                html = b"".join(chunks).decode("utf-8", errors="ignore")
+        except Exception as e:
+            print(f"  {station['name']} [{page.split('/')[2]}]: {e}", flush=True)
+            continue
+        candidates = [u for u in M3U8_RE.findall(html) if not _SKIP.search(u)]
+        for url in candidates:
+            if is_live_video(url):
+                return url
     return None
 
 
@@ -81,7 +99,12 @@ def main():
             cache[s["key"]] = {"name": s["name"], "logo": s["logo"], "url": url}
             print(f"  ✓ {s['name']}: {url[:70]}", flush=True)
         elif s["key"] in cache:
-            print(f"  ⚠ {s['name']}: using cached URL", flush=True)
+            # re-validate cached URL; keep if still live
+            if is_live_video(cache[s["key"]]["url"]):
+                print(f"  ✓ {s['name']}: cached URL still live", flush=True)
+            else:
+                print(f"  ✗ {s['name']}: cached URL dead, removed", flush=True)
+                del cache[s["key"]]
         else:
             print(f"  ✗ {s['name']}: not found", flush=True)
 
