@@ -230,14 +230,14 @@ NEWS_CHANNELS = [
 ]
 
 
-HOUSTON_CHANNELS = [
+_HOUSTON_MAIN = [
     # Fox 26: Amagi CDN — stable, no token
-    _hch("Fox 26 Houston",  _L+"/united-states/us-local/fox-26-kriv-us.png",         "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8"),
+    _hch("Fox 26 Houston",  _L+"/united-states/us-local/fox-26-kriv-us.png",  "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8"),
+]
+_HOUSTON_CITY = [
     # HTV: Houston city government channels via Swagit — stable, no token
-    _hch("HTV 1 Houston",   "https://www.houstontx.gov/htv/images/HTV-logo.png",     "https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8"),
-    _hch("HTV 2 Houston",   "https://www.houstontx.gov/htv/images/HTV-logo.png",     "https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8"),
-    # PBS KUHT: StreamGuys — base URL stable, session auto-refreshes on each play
-    _hch("Houston PBS KUHT","https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/kuht-pbs-houston-us.png", "https://tu.streamguys1.com/kuht/playlist.m3u8"),
+    _hch("HTV 1 Houston",   "https://www.houstontx.gov/htv/images/HTV-logo.png", "https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8"),
+    _hch("HTV 2 Houston",   "https://www.houstontx.gov/htv/images/HTV-logo.png", "https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8"),
 ]
 
 def load_houston_live():
@@ -401,7 +401,7 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(NEWS_CHANNELS)
     print(f"News: {len(NEWS_CHANNELS)} channels", flush=True)
-    houston = HOUSTON_CHANNELS + load_houston_live()
+    houston = _HOUSTON_MAIN + load_houston_live() + _HOUSTON_CITY
     for extinf, stream in houston:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(houston)

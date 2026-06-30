@@ -1827,33 +1827,6 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8
 
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 1 Houston
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8
-
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 2 Houston
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
-
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/kuht-pbs-houston-us.png",Houston PBS KUHT
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tu.streamguys1.com/kuht/playlist.m3u8
-
 #EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/khou-11-us.png",KHOU 11 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1871,6 +1844,24 @@ https://video.tegnaone.com/khou/live/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pubads.g.doubleclick.net/ssai/event/jHV2RfV4QQuU2swXQUVHsA/master.m3u8
+
+#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 1 Houston
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8
+
+#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 2 Houston
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e57bd0fc7a1a49da83ec3d83f1f37394/d619ceb2-be83-4ea3-97d2-e3a40e971092_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۹ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/e57bd0fc7a1a49da83ec3d83f1f37394/hls/d619ceb2-be83-4ea3-97d2-e3a40e971092.m3u8
@@ -6519,6 +6510,9 @@ https://hls.ted.com/project_masters/8816/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/448cc03f-9169-4b47-9bce-69c2d27d38e4/SagarGoel_2023S-embed.jpg",Sagar Goel: An optimist&#x27;s take on reskilling in the age of AI
 https://hls.ted.com/project_masters/9280/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/34d9c86f-c184-4a19-bc8b-40ee9f5502c6/SarahGuo_2023S-embed.jpg",Sarah Guo: Why you should invest in AI
+https://hls.ted.com/project_masters/8880/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d4550842-f406-42f6-ab0f-c38470340539/ShaneLegg_2023S-embed.jpg",Shane Legg and Chris Anderson: The transformative potential of AGI — and when it might arrive
 https://hls.ted.com/project_masters/8867/manifest.m3u8
 
@@ -8247,6 +8241,9 @@ https://hls.ted.com/project_masters/9766/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/4c9b41fac40ffc729ea73215f51c44b55a79e504_2880x1620.jpg",Wade Davis: The worldwide web of belief and ritual
 https://hls.ted.com/project_masters/846/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/dccc713c-c5ce-48f1-a1a1-2658703aa52a/AdamGrant_2016S-embed.jpg",🇮🇷 Adam Grant: Are you a giver or a taker?
+https://hls.ted.com/project_masters/2733/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/0da1893b-d459-45eb-bcaf-ea7c873d80e6/30_dognose.jpg",🇮🇷 Alexandra Horowitz: How do dogs &quot;see&quot; with their noses?
 https://hls.ted.com/project_masters/4766/manifest.m3u8
 
@@ -8471,6 +8468,9 @@ https://hls.ted.com/project_masters/1090/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/176929_800x600.jpg",🇮🇷 David Byrne: How architecture helped music evolve
 https://hls.ted.com/project_masters/1945/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/be8bc8941155fcc0f96e25910d486ef6611e4a1c_1600x1200.jpg",🇮🇷 Doris Kim Sung: Metal that breathes
+https://hls.ted.com/project_masters/3587/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/89c8ef74-c311-417a-9492-a891990ae712/ElizabethDiller_2020W-embed.jpg",🇮🇷 Elizabeth Diller: A stealthy reimagining of urban public space
 https://hls.ted.com/project_masters/5684/manifest.m3u8
@@ -8907,6 +8907,9 @@ https://hls.ted.com/project_masters/10499/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_183465/82ff66eb-f32c-4823-8a63-fb2d2b43c775/YiyunKang_2026-embed.jpg",Yiyun Kang: The case for making art in a crisis
 https://hls.ted.com/project_masters/11811/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/6ff255e4-dafe-4051-9cab-4c9dce5d22d5/ATribeCalledRed_2018-embed.jpg",🇮🇷 A Tribe Called Red: &quot;We Are the Halluci Nation&quot;
+https://hls.ted.com/project_masters/11166/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7de26927-266c-4b8b-91a0-e93af9f9b2bf/AdamSavage_2016-embed.jpg",🇮🇷 Adam Savage: My love letter to cosplay
 https://hls.ted.com/project_masters/2659/manifest.m3u8
 
@@ -8981,6 +8984,9 @@ https://hls.ted.com/project_masters/2506/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/71466_800x600.jpg",🇮🇷 David Merrill: Toy tiles that talk to each other
 https://hls.ted.com/project_masters/1136/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/28670529-721a-4bfd-8d2c-fcc609e8b515/DeborahWillis_HankWillisThomas_2017W-embed.jpg",🇮🇷 Deb Willis and Hank Willis Thomas: A mother and son united by love and art
+https://hls.ted.com/project_masters/6200/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/ef759233-58bf-4fcf-bec7-98b773efbcb8/DreadScott2018U-embed.jpg",🇮🇷 Dread Scott: How art can shape America&#x27;s conversation about freedom
 https://hls.ted.com/project_masters/3251/manifest.m3u8
@@ -10095,6 +10101,9 @@ https://hls.ted.com/project_masters/3193/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/95995_800x600.jpg",Jane Poynter: Life in Biosphere 2
 https://hls.ted.com/project_masters/1222/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_172152/81bb0d4e-e4a6-441e-bd34-a4c0b1b93e00/KarstenTemme_2025T-embed.jpg",Karsten Temme: The tiny organisms transforming farming
+https://hls.ted.com/project_masters/11416/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/f8e19735-ec5a-4766-893f-f9f6aaed3b42/MollyStevens_2013G-embed.jpg",Molly Stevens: A new way to grow bone
 https://hls.ted.com/project_masters/1333/manifest.m3u8
 
@@ -10259,6 +10268,9 @@ https://hls.ted.com/project_masters/1138/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/837e0028-e5bb-480e-bf31-2214d320dcd2/PeterWeinstock_2016X-embed.jpg",Peter Weinstock: Lifelike simulations that make real-life surgery safer
 https://hls.ted.com/project_masters/2821/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/5ce77cc2-b18c-4f2b-b888-d4baa49321b2/RichardNeville_2014S-embed.jpg",Richard Neville: How can we give our kids a brighter future?
+https://hls.ted.com/project_masters/7632/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/a1eecc6e-d002-44a1-a9fb-836a75894f9e/SergiuPPasca_2022-embed.jpg",Sergiu P. Pasca: How we&#x27;re reverse engineering the human brain in the lab
 https://hls.ted.com/project_masters/11071/manifest.m3u8
@@ -11370,6 +11382,9 @@ https://hls.ted.com/project_masters/2673/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/096faaa85f3c0dba89bdb67de5a8095a64884910_800x600.jpg",🇮🇷 Drew Curtis: How I beat a patent troll
 https://hls.ted.com/project_masters/1953/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/2bcbfb05e7b5dac371640712d301eeff5323eb69_1600x1200.jpg",🇮🇷 Eddie Obeng: Smart failure for a fast-changing world
+https://hls.ted.com/project_masters/1766/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/4166f021-8c4a-4ce1-bf2c-b2b92aeda9d7/EricBerridge_2017S-embed.jpg",🇮🇷 Eric Berridge: Why tech needs the humanities
 https://hls.ted.com/project_masters/3143/manifest.m3u8
 
@@ -12348,6 +12363,9 @@ https://hls.ted.com/project_masters/5778/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d9ec9ed8-7966-46ab-9a2f-29634f10f78e/LouiseMabulo_2023T-embed.jpg",Louise Mabulo: A climate solution? The wisdom passed down through generations
 https://hls.ted.com/project_masters/9106/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/fbd6b2ac-85ce-459b-a907-6257c4cd8323/LuisaNeubauer_2022T-embed.jpg",Luisa Neubauer: The fairy tales of the fossil fuel industry — and a better climate story
+https://hls.ted.com/project_masters/8312/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7e69b4ad-c695-412f-8851-9d0913f5a732/MahendraSinghi_2021T-embed.jpg",Mahendra Singhi: Cement&#x27;s carbon problem -- and 2 ways to fix it
 https://hls.ted.com/project_masters/7551/manifest.m3u8
 
@@ -12755,6 +12773,9 @@ https://hls.ted.com/project_masters/723/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/56d231a9d4237915c1f0bdcf7874ff7a535e86a6_2880x1620.jpg",🇮🇷 Donald Hoffman: Do we see reality as it is?
 https://hls.ted.com/project_masters/11326/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/27207208-0909-4f78-b182-31cb0100898f/MarianoSigman_2016-embed.jpg",🇮🇷 Mariano Sigman: Your words may predict your future mental health
+https://hls.ted.com/project_masters/3981/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/b9fa704c-e3a3-4af3-8493-d127aabb673e/PetterJohansson_2016X-embed.jpg",🇮🇷 Petter Johansson:  Do you really know why you do what you do?
 https://hls.ted.com/project_masters/3090/manifest.m3u8
@@ -19344,6 +19365,9 @@ https://hls.ted.com/project_masters/5729/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/735adaff-39ef-48ed-abd8-98fecfd045ec/BrendaRomero_2011X-embed.jpg",🇮🇷 Brenda Romero: Gaming for understanding
 https://hls.ted.com/project_masters/1940/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/d2602596-a55f-4614-8be5-8dbb4c5db8fc/LivBoeree_2018U-embed.jpg",🇮🇷 Liv Boeree: 3 lessons on decision-making from a poker champion
+https://hls.ted.com/project_masters/3275/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/aa432db1-6a53-4fd4-a194-ec2368a4d332/StuartDuncan_2017X-embed.jpg",🇮🇷 Stuart Duncan: How I use Minecraft to help kids with autism
 https://hls.ted.com/project_masters/3064/manifest.m3u8
 
@@ -20183,6 +20207,9 @@ https://hls.ted.com/project_masters/4873/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/23e88de7-1c42-41c6-a6c4-2c9985c70955/215_heartattack.jpg",🇮🇷 Krishna Sudhir: What happens during a heart attack?
 https://hls.ted.com/project_masters/4834/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/5efb76855ee037f1b0d5c2b713c42dc745a4c2ec_2880x1620.jpg",🇮🇷 Latif Nasser: The amazing story of the man who gave us modern pain relief
+https://hls.ted.com/project_masters/3845/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/e06257e3-250c-434e-aba0-dba56756bdef/LeiLi_2021-embed.jpg",🇮🇷 Lei Li: The incredible cancer-detecting potential of photoacoustic imaging
 https://hls.ted.com/project_masters/7525/manifest.m3u8
@@ -22896,6 +22923,9 @@ https://hls.ted.com/project_masters/11161/manifest.m3u8
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/04f1c4c5-9b6d-4ec0-a008-b4610e4388de/GlenHenry_2017X-embed.jpg",🇮🇷 Glen Henry: What I&#x27;ve learned about parenting as a stay-at-home dad
 https://hls.ted.com/project_masters/3402/manifest.m3u8
 
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/527c637c-65c4-4a8d-8335-0732c265dfd5/JulieLythcottHaims_2015P-embed.jpg",🇮🇷 Julie Lythcott-Haims: How to raise successful kids -- without over-parenting
+https://hls.ted.com/project_masters/4007/manifest.m3u8
+
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/017cd281-e5ed-4c87-922a-aee9471da34a/KimberlyNoble_2019S-embed.jpg",🇮🇷 Kimberly Noble: How does income affect childhood brain development?
 https://hls.ted.com/project_masters/445/manifest.m3u8
 
@@ -24416,6 +24446,9 @@ https://hls.ted.com/project_masters/4664/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/1c5c1fbb-213e-422d-b136-d56edbd57916/DIY_Neuroscience_MindReading-embed.jpg",🇮🇷 Greg Gage: This computer is learning to read your mind
 https://hls.ted.com/project_masters/4661/manifest.m3u8
+
+#EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/703903fc-5ffd-4190-bb7f-d18b5bcc14de/Hani_Goodarzi_2023S-embed.jpg",🇮🇷 Hani Goodarzi: What if a simple blood test could detect cancer?
+https://hls.ted.com/project_masters/8994/manifest.m3u8
 
 #EXTINF:-1 group-title="📹 TED" tvg-logo="https://pi.tedcdn.com/r/talkstar-photos.s3.amazonaws.com/uploads/7b3aea7e-4a1b-48e7-8182-757984c4d36b/1210_13_A_Jimenez_Hortensia_16x9thumb_textless_logo.jpg",🇮🇷 Hortensia Jiménez Díaz: How Mendel&#x27;s pea plants helped us understand genetics
 https://hls.ted.com/project_masters/5095/manifest.m3u8
