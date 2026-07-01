@@ -5,6 +5,7 @@ We scrape, validate, and cache in houston_live.json.
 Falls back to last cached URL if the page scrape fails.
 """
 import json, re, urllib.request
+from urllib.parse import urljoin
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 _L = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/"
@@ -49,18 +50,30 @@ M3U8_RE = re.compile(r"(https://[^\s\"'<>]+\.m3u8[^\s\"'<>]*)")
 _SKIP = re.compile(r"(cdn\.ex\.co|mux\.com/v|brightcove|jwplatform|cdn\.jwplayer|/ADHOC-)", re.I)
 
 
+def _get(url, n=8192):
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=8) as r:
+        return r.read(n).decode("utf-8", errors="ignore")
+
+
 def is_live_video(url):
-    """Return True only if URL is a live HLS VIDEO stream (not VOD, not audio-only)."""
+    """Return True only if URL is a live HLS VIDEO stream (not VOD, not audio-only)
+    AND its actual sub-manifest resolves (catches master-playlist-only outages, e.g. SSAI backend down)."""
     try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=8) as r:
-            body = r.read(2048).decode("utf-8", errors="ignore")
+        body = _get(url)
         if not body.startswith("#EXTM3U"):
             return False
         if "#EXT-X-ENDLIST" in body:
             return False   # VOD
-        # Must contain video indicator: RESOLUTION= or video codec (avc1/hvc1/hevc)
-        return bool(re.search(r"RESOLUTION=|avc1|hvc1|hevc|VIDEO", body, re.I))
+        if not re.search(r"RESOLUTION=|avc1|hvc1|hevc|VIDEO", body, re.I):
+            return False
+        # master playlist -> resolve first variant sub-manifest and confirm it actually has segments
+        sub = next((l for l in body.splitlines() if l and not l.startswith("#")), None)
+        if sub:
+            sub_body = _get(urljoin(url, sub))
+            if not sub_body.startswith("#EXTM3U") or "#EXTINF" not in sub_body:
+                return False
+        return True
     except Exception:
         return False
 

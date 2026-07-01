@@ -425,17 +425,14 @@ def main():
     total += len(vod)
     print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
     fox26 = fetch_fox26_vod()
-    # copy 1: alongside Iran Intl VOD — Persian group name so TiviMate keeps it in main section
-    _fox_re = re.compile(r'group-title="[^"]*"')
-    for extinf, stream in fox26:
-        extinf2 = _fox_re.sub('group-title="\U0001f4fa فاکس 26 هیوستن"', extinf)
-        out.append(extinf2); out.append(stream); out.append("")
-    total += len(fox26)
-    print(f"Fox 26 VOD (main): {len(fox26)} videos", flush=True)
-    # copy 2: original English group name → TiviMate movies section
+    # ponytail: TiviMate buckets raw .mp4 URLs into the Movies tab by file extension,
+    # regardless of group-title language — renaming the group doesn't move it next to
+    # channels (unlike Iran Intl VOD, which is HLS .m3u8). Single copy until Fox26 clips
+    # are served as HLS (would need our own transcode/proxy, see yt-vod-proxy precedent).
     for extinf, stream in fox26:
         out.append(extinf); out.append(stream); out.append("")
-    print(f"Fox 26 VOD (movies): {len(fox26)} videos", flush=True)
+    total += len(fox26)
+    print(f"Fox 26 VOD: {len(fox26)} videos", flush=True)
     ted = []  # ponytail: disabled until playlist is finalized
     print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
