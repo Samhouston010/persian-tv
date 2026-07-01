@@ -1053,15 +1053,6 @@ https://sepehr-proxy.samhoustonbot.workers.dev/sahar3
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sepehr-proxy.samhoustonbot.workers.dev/sahar4
 
-#EXTINF:-1 group-title="📡 سپهر" tvg-id="alkosar" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alkowsar.png",الکوثر
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-proxy.samhoustonbot.workers.dev/alkosar
-
 #EXTINF:-1 group-title="📡 سپهر" tvg-id="saharafghan" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/saharAFGHANISTAN.png",سحر افغانستان
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1070,6 +1061,15 @@ https://sepehr-proxy.samhoustonbot.workers.dev/alkosar
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sepehr-proxy.samhoustonbot.workers.dev/saharafghan
+
+#EXTINF:-1 group-title="📡 سپهر" tvg-id="alkosar" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alkowsar.png",الکوثر
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-proxy.samhoustonbot.workers.dev/alkosar
 
 #EXTINF:-1 group-title="📡 سپهر" tvg-id="hispan" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/hispan-tv.png",هیسپان
 #EXTVLCOPT:network-caching=2000
@@ -1891,6 +1891,30 @@ https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/89e294f5ebef454195f5a518bae234ed/4bd11b14-3d23-4ec9-af95-f054e91f79d6_thumb_001_HD.jpg",زمینه‌سازی اسرائیل برای جنگ سوم با جمهوری اسلامی؟!
+https://daq1pvcuhj77l.cloudfront.net/1/89e294f5ebef454195f5a518bae234ed/hls/4bd11b14-3d23-4ec9-af95-f054e91f79d6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/17ffb65553a045ebbcccaae1487ae325/07260278-e393-44cd-8ed3-fef205e57128_thumb_001_HD.jpg",علی شیرازی: روایت جمهوری اسلامی از توافق با آمریکا پس از انتشار جزییات فرو ریخت
+https://daq1pvcuhj77l.cloudfront.net/1/17ffb65553a045ebbcccaae1487ae325/hls/07260278-e393-44cd-8ed3-fef205e57128.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/49db1fecfb3d45f5a6bd8b07db68a983/c5ae05c9-47e1-4731-a09e-d6dba8658f2e_thumb_001_HD.jpg",پایان گفت‌وگوهای تهران و واشینگتن در دوحه؛ ترامپ از پیشرفت مذاکرات خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/49db1fecfb3d45f5a6bd8b07db68a983/hls/c5ae05c9-47e1-4731-a09e-d6dba8658f2e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9eca3edfb5dd4037ac3dee7ea7bfb2d4/35077d4e-f8ac-4b5f-976a-16f235ac917f_thumb_001_HD.jpg",چشم‌انداز: زمینه‌سازی اسرائیل برای جنگ سوم با جمهوری اسلامی؟!
+https://daq1pvcuhj77l.cloudfront.net/1/9eca3edfb5dd4037ac3dee7ea7bfb2d4/hls/35077d4e-f8ac-4b5f-976a-16f235ac917f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0ec8f635bbba442ba0d1c145f98a91e2/bd0b4404-124a-4263-9f00-4103f663f93b_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/0ec8f635bbba442ba0d1c145f98a91e2/hls/bd0b4404-124a-4263-9f00-4103f663f93b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ef83cef216184bb3832642a2c91ecc00/c134432b-f877-46d4-aac6-ddf5f74360ca_thumb_001_HD.jpg",تیتراول با نیوشا صارمی: بالاگرفتن اختلافات داخلی در تهران همزمان با مذاکرات دوحه
+https://daq1pvcuhj77l.cloudfront.net/1/ef83cef216184bb3832642a2c91ecc00/hls/c134432b-f877-46d4-aac6-ddf5f74360ca.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/72240d4239da4642bae25f632e1b9fff/3d72fa7c-80b2-483d-924f-b4a74f24ad78_thumb_001_HD.jpg",پشت پرده تناقض در مواضع تهران و واشینگتن نسبت به پیشبرد مذاکرات
+https://daq1pvcuhj77l.cloudfront.net/1/72240d4239da4642bae25f632e1b9fff/hls/3d72fa7c-80b2-483d-924f-b4a74f24ad78.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/09a8a873a38b463c890ad610c3f73686/6c63db65-df22-4dba-a607-df553ca7c026_thumb_001_HD.jpg",ادامه اختلاف‌ها در حاکمیت بر سر مذاکره و توافق با آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/09a8a873a38b463c890ad610c3f73686/hls/6c63db65-df22-4dba-a607-df553ca7c026.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2c4d9f74270045e89b5e4448ca50e1b2/1dea5889-dfb8-4c7c-9d48-339587d1d23f_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، چهارشنبه ۱۰ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/2c4d9f74270045e89b5e4448ca50e1b2/hls/1dea5889-dfb8-4c7c-9d48-339587d1d23f.m3u8
@@ -3367,30 +3391,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/b3157bc6498141218de97f61fee23eaa/hls/4071
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9d2cc31622774b9ea081c131514a8253/cab533a9-f999-4b03-83e0-c26a7fbb6c2b_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/9d2cc31622774b9ea081c131514a8253/hls/cab533a9-f999-4b03-83e0-c26a7fbb6c2b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9275b89f026a43dc82d035f8b3811f0f/f5e49832-2673-42d5-9eae-c6416add1e54_thumb_001_HD.jpg",مهرداد از تهران: زمان ثابت کردن ایران به دنیاست؛ ما حتی بدون اسلحه از پس این‌ها برمی‌آییم
-https://daq1pvcuhj77l.cloudfront.net/1/9275b89f026a43dc82d035f8b3811f0f/hls/f5e49832-2673-42d5-9eae-c6416add1e54.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a3442bc13af34798ac1dc3f079046410/b4fd3d0b-0567-4c1b-8247-5da7a44548e7_thumb_001_HD.jpg",حسن از یزد: مگر ما گاو و گوسفندیم که ونس می‌خواهد به ما سویا و ذرت بدهد؟
-https://daq1pvcuhj77l.cloudfront.net/1/a3442bc13af34798ac1dc3f079046410/hls/b4fd3d0b-0567-4c1b-8247-5da7a44548e7.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/425ff72433a54a5d91169babc595dcfc/a011a54b-31bd-464a-8ce1-e2b04a724e79_thumb_001_HD.jpg",رسایی: مجلس را باز نکنید، کنار خیابان جلسه می‌گذاریم!
-https://daq1pvcuhj77l.cloudfront.net/1/425ff72433a54a5d91169babc595dcfc/hls/a011a54b-31bd-464a-8ce1-e2b04a724e79.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/49e2cf485a0347cd98cb6ca5e550441c/c757be00-32d4-44bc-9d8f-3bf22f752210_thumb_001_HD.jpg",محمد قائدی: تعلیق غنی‌سازی در برابر رفع تحریم‌ها یادآور برجام است
-https://daq1pvcuhj77l.cloudfront.net/1/49e2cf485a0347cd98cb6ca5e550441c/hls/c757be00-32d4-44bc-9d8f-3bf22f752210.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a519c1442f8b44ba8a21e48744ea6d3e/d75ab303-6239-4db1-98e3-c82fe7e0c9a6_thumb_001_HD.jpg",ترامپ به جمهوری اسلامی هشدار داد؛ اختلاف بر سر ورود بازرسان آژانس به ایران
-https://daq1pvcuhj77l.cloudfront.net/1/a519c1442f8b44ba8a21e48744ea6d3e/hls/d75ab303-6239-4db1-98e3-c82fe7e0c9a6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/67be6a166cc4450ea3eb8cd4bc41f924/b03c09fc-9f75-458d-ac44-8a71f7530c22_thumb_001_HD.jpg",سیاست با مراد ویسی: بازی‌های فاسد‌ترین سردار
-https://daq1pvcuhj77l.cloudfront.net/1/67be6a166cc4450ea3eb8cd4bc41f924/hls/b03c09fc-9f75-458d-ac44-8a71f7530c22.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f15f886d2e341e3b1548ac7f380a504/b112d156-9997-4ceb-83bb-988bec00a324_thumb_001_HD.jpg",شهیدثالث: تهران و واشینگتن با انگیزه‌های متفاوت اما به‌شدت مایل‌اند به توافق برسند
-https://daq1pvcuhj77l.cloudfront.net/1/9f15f886d2e341e3b1548ac7f380a504/hls/b112d156-9997-4ceb-83bb-988bec00a324.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/34e970a5d233443982aea05ace8e4c3f/8a09fc4b-ecab-4c73-bf82-84ce53abe414_thumb_001_HD.jpg",علی شیرازی: بخشی از انتقادهای داخلی برای افزایش قدرت چانه‌زنی در مذاکرات مطرح می‌شود
-https://daq1pvcuhj77l.cloudfront.net/1/34e970a5d233443982aea05ace8e4c3f/hls/8a09fc4b-ecab-4c73-bf82-84ce53abe414.m3u8
 
 #EXTINF:-1 group-title="📺 فاکس 26 هیوستن" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/jwvttju8h85bgp7m/4gjzqymdf2kew903.jpg",Kentucky Pastor Under Fire for Defending Mock Firing Squad Skit in Front of Kids
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46881139577_46881139750/46881139750/hf-uuid-351496c3-cec1-4610-a209-b4ae22cc7e1f/46881139750_lowres.mp4
