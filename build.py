@@ -84,7 +84,9 @@ _AF_EC = "\n".join([
 SOURCES = [
     ("📺 پرشیانا", "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.m3u"),
     ("📡 تلوبیون",  "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.m3u"),
-    ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
+    # ponytail: Sepehr disabled by user request 2026-07-01 — token bound to Cloudflare IP,
+    # 403s outside Iran, so it never played in TiviMate anyway.
+    # ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
 ]
 
 EPG_SOURCES = [
@@ -102,6 +104,33 @@ def _hch(name, logo, stream):
 
 def _mch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f3b5 موزیک عربی" tvg-logo="%s",%s' % (logo, name), stream)
+
+
+def _shallow_alive(url):
+    """Master 200 + #EXTM3U only — no codec/sub-manifest checks.
+    ponytail: a deep check (like houston_live's is_live_video) false-positived on
+    BBC/CNN/Sky News/Al Jazeera/Bloomberg/Euronews/BFM here — their masters skip the
+    RESOLUTION attribute or need per-CDN session handling that a generic checker can't
+    know. A shallow check is less precise but doesn't kill channels that actually work."""
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10) as r:
+            body = r.read(2048).decode("utf-8", errors="ignore")
+        return body.startswith("#EXTM3U") and "#EXT-X-ENDLIST" not in body
+    except Exception:
+        return False
+
+
+def _alive(entries, label, workers=12):
+    """Drop static entries whose stream no longer even loads (dead/timeout/non-HLS
+    response) — runs on every build (cron every 4h via houston_live.yml) so a link that
+    dies stays out instead of lingering forever in the source list."""
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        results = list(pool.map(lambda e: (e, _shallow_alive(e[1])), entries))
+    dead = [extinf.rsplit(",", 1)[-1] for (extinf, stream), ok in results if not ok]
+    if dead:
+        print(f"{label}: dropped dead — {', '.join(dead)}", flush=True)
+    return [e for e, ok in results if ok]
 
 # Logo CDN: github.com/tv-logo/tv-logos (PNG, no hotlink block)
 _EC_LOGO = "https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png"
@@ -217,7 +246,11 @@ NEWS_CHANNELS = [
     _ch("CNN",                   _S+"GBBD8000016N_20260609T043642SQUARE.png",    "https://jmp2.uk/stvp-GBBD8000016N"),
     _ch("CNBC",                  _S+"GBBD3600001NO_20260317T034210SQUARE.png",   "https://jmp2.uk/stvp-GBBD3600001NO"),
     _ch("Bloomberg TV+",         _P+"54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png", "https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8"),
-    _ch("ABC News Live",         _P+"6508be683a0d700008c534e4/colorLogoPNG.png", "https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8"),
+    # ponytail: removed by user request 2026-07-01 — reported not playing in TiviMate.
+    # URL itself returns a valid-looking HLS master (200, #EXTM3U) from here, so this is
+    # likely a device/session-specific Pluto/Samsung-TVPlus auth quirk, not a dead link —
+    # the generic health check below can't catch it.
+    # _ch("ABC News Live",       _P+"6508be683a0d700008c534e4/colorLogoPNG.png", "https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8"),
     # ─── اروپا ───────────────────────────────────────────────────────────────
     _ch("DW English",            "https://www.dw.com/images/icons/favicon-540x540.png", "https://i.mjh.nz/.r/dw-news.m3u8"),
     _ch("Euronews",              _P+"5ca1da6c593a5d78f0e7edce/colorLogoPNG.png", "https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8"),
@@ -400,11 +433,12 @@ def main():
         total += len(entries) + ec_count
         label = f" (+{ec_count} English Club)" if ec_count else ""
         print(f"{group}: {len(entries)} channels{label}", flush=True)
-    for extinf, stream in NEWS_CHANNELS:
+    news = _alive(NEWS_CHANNELS, "News")
+    for extinf, stream in news:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
-    total += len(NEWS_CHANNELS)
-    print(f"News: {len(NEWS_CHANNELS)} channels", flush=True)
-    houston = _HOUSTON_MAIN + load_houston_live() + _HOUSTON_CITY
+    total += len(news)
+    print(f"News: {len(news)} channels", flush=True)
+    houston = _alive(_HOUSTON_MAIN + _HOUSTON_CITY, "Houston") + load_houston_live()
     for extinf, stream in houston:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(houston)
