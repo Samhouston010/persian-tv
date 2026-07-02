@@ -909,15 +909,6 @@ https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://images.pluto.tv/channels/55b285cd2665de274553d66f/colorLogoPNG.png",Sky News
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBB1600008R3_20250107T022831SQUARE.png",GB News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -945,15 +936,6 @@ https://jmp2.uk/stvp-GBBD8000016N
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://jmp2.uk/stvp-GBBD3600001NO
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://images.pluto.tv/channels/54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png",Bloomberg TV+
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.dw.com/images/icons/favicon-540x540.png",DW English
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -962,15 +944,6 @@ https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://i.mjh.nz/.r/dw-news.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://images.pluto.tv/channels/5ca1da6c593a5d78f0e7edce/colorLogoPNG.png",Euronews
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GBBD1100002L5_20250107T030646SQUARE.png",France 24
 #EXTVLCOPT:network-caching=2000
