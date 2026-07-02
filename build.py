@@ -460,8 +460,10 @@ def main():
             ec_count += 1
         if "پرشیانا" in group:
             mbc_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia' % group
-            out.append(mbc_extinf); out.append(_AF_NORMAL); out.append("https://shls-mbcpersia-prod-dub.shahid.net/out/v1/bdc7cd0d990e4c54808632a52c396946/index.m3u8"); out.append("")
-            ec_count += 1
+            out.append(mbc_extinf); out.append(_AF_NORMAL); out.append("https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8"); out.append("")
+            mbc_backup_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia (بکاپ)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia (بکاپ)' % group
+            out.append(mbc_backup_extinf); out.append(_AF_NORMAL); out.append("https://hls.mbcpersia.live/hls/stream.m3u8"); out.append("")
+            ec_count += 2
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group}: {len(entries)} channels{label}", flush=True)

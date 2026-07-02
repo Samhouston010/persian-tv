@@ -178,7 +178,16 @@ https://4kuhls.persiana.live/hls/stream.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://shls-mbcpersia-prod-dub.shahid.net/out/v1/bdc7cd0d990e4c54808632a52c396946/index.m3u8
+https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MBC Persia (بکاپ)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="📺 پرشیانا",MBC Persia (بکاپ)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://hls.mbcpersia.live/hls/stream.m3u8
 
 #EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="شبکه یک" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/Logo1plus.png" group-title="📡 تلوبیون",شبکه یک
 #EXTVLCOPT:network-caching=8000
@@ -1170,8 +1179,44 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8b326c9d3d234e2197a9ce172018d945/5b8ec9b7-5bb9-4863-9696-592ae69a47c8_thumb_001_HD.jpg",کشته شدن ۱۱ عضو احزاب کردستان ایران در درگیری با سپاه پاسداران
+https://daq1pvcuhj77l.cloudfront.net/1/8b326c9d3d234e2197a9ce172018d945/hls/5b8ec9b7-5bb9-4863-9696-592ae69a47c8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ae51277f717a41b488ae42e73478a88a/cb37255c-07b5-4fee-ac6b-5e6c37ce3efe_thumb_001_HD.jpg",نگرانی فعالان مدنی از بازداشت مجدد هومن جوکار و سپیده کاشانی، فعالان محیط‌ زیست
+https://daq1pvcuhj77l.cloudfront.net/1/ae51277f717a41b488ae42e73478a88a/hls/cb37255c-07b5-4fee-ac6b-5e6c37ce3efe.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d90b8fe60e434bfdb23aaeda1bda9314/a722dd12-0cdd-43a8-b9c5-0ce66ca7ab9e_thumb_001_HD.jpg",هشدار قرارگاه خاتم‌الانبیا از احتمال هدف قرار گرفتن چهره‌های نظامی در مراسم تشییع خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/d90b8fe60e434bfdb23aaeda1bda9314/hls/a722dd12-0cdd-43a8-b9c5-0ce66ca7ab9e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e40467cde2aa44bbbc4b391547f7b00b/07dbc920-ba69-4dfa-aa2e-77a1ee670d1d_thumb_001_HD.jpg",مجموعه مستند «مرگ خامنه‌ای؛ پایان دیکتاتور | قسمت اول: تولد یک دیکتاتور»
+https://daq1pvcuhj77l.cloudfront.net/1/e40467cde2aa44bbbc4b391547f7b00b/hls/07dbc920-ba69-4dfa-aa2e-77a1ee670d1d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b2a474f471e54eb9b6755c62b056547d/5ae5686d-e323-4c8e-bc48-5838ca7247ba_thumb_001_HD.jpg",اخبار نیمروزی | پنج‌شنبه ۱۱ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/b2a474f471e54eb9b6755c62b056547d/hls/5ae5686d-e323-4c8e-bc48-5838ca7247ba.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0a5b82a2ab704e13a0c6af0eaa0054e1/7e5ee625-4dc5-4afb-a6a3-493fb8ec58da_thumb_001_HD.jpg",مرتضی کاظمیان: قالیباف نماد شارلاتانیسم و عوام‌فریبی در جمهوری اسلامی است
+https://daq1pvcuhj77l.cloudfront.net/1/0a5b82a2ab704e13a0c6af0eaa0054e1/hls/7e5ee625-4dc5-4afb-a6a3-493fb8ec58da.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ca2d785ab5684526ac551c8ccf29d16c/711736c8-0b94-43d8-b585-750114b22bb8_thumb_001_HD.jpg",سرخط خبرهای پنجشنبه ۱۱ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/ca2d785ab5684526ac551c8ccf29d16c/hls/711736c8-0b94-43d8-b585-750114b22bb8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/caeba34d24a1490c9e346db4bd004493/e9348d78-a340-4f76-9866-246622a55211_thumb_003_HD.jpg",مرکز مطالعات راهبردی بین‌المللی: روسیه ابتکار عمل نظامی را در جنگ اوکراین از دست داده است
+https://daq1pvcuhj77l.cloudfront.net/1/caeba34d24a1490c9e346db4bd004493/hls/e9348d78-a340-4f76-9866-246622a55211.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5d479200253c46af8dadf09783c1c28b/725fcb52-c562-4cd6-9087-2a3ef1dc50ca_thumb_001_HD.jpg",گرد و غبار شدید چند استان ایران را درگیر کرد
+https://daq1pvcuhj77l.cloudfront.net/1/5d479200253c46af8dadf09783c1c28b/hls/725fcb52-c562-4cd6-9087-2a3ef1dc50ca.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d5728b8832f84afb8d2788889865d1b7/911842c8-ada7-40af-b3d0-0230d588d5b0_thumb_001_HD.jpg",گزارش رسانه‌های اسرائیلی از آماده‌سازی آمریکا برای گزینه نظامی علیه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/d5728b8832f84afb8d2788889865d1b7/hls/911842c8-ada7-40af-b3d0-0230d588d5b0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/75ddc183d3de41e28112d8c7ab3fda63/1b7162fa-78a5-47b2-bf02-648b2ab32f2e_thumb_001_HD.jpg",اختلاف در دولت آلمان بر سر مشارکت در مین‌روبی تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/75ddc183d3de41e28112d8c7ab3fda63/hls/1b7162fa-78a5-47b2-bf02-648b2ab32f2e.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/17600a6e41194f8e951b8b461a6034b7/063d9d20-ab9d-48ce-8230-8548c335fc0d_thumb_002_HD.jpg",مخالفت فعالان حقوق بشر با پیشنهاد بازگشایی سفارت کانادا در تهران 
 https://daq1pvcuhj77l.cloudfront.net/1/17600a6e41194f8e951b8b461a6034b7/hls/063d9d20-ab9d-48ce-8230-8548c335fc0d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bbfda0218bd74b1b8d50efdaa965185c/4031e126-cc01-42e9-913c-48ca515c2245_thumb_002_HD.jpg",اظهارات متناقض قالیباف برای انتقال پیام درباره بازدید بازرسان از سایت‌های هسته‌ای 
+https://daq1pvcuhj77l.cloudfront.net/1/bbfda0218bd74b1b8d50efdaa965185c/hls/4031e126-cc01-42e9-913c-48ca515c2245.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/11d1643ec060457da45056bbe5bfc0c5/ffd64285-4381-4e06-9df2-1b4b06b77899_thumb_001_HD.jpg",پیشنهاد عمان برای مدیریت تنگه هرمز بر اساس الگوی آبراه مالاکا
 https://daq1pvcuhj77l.cloudfront.net/1/11d1643ec060457da45056bbe5bfc0c5/hls/ffd64285-4381-4e06-9df2-1b4b06b77899.m3u8
@@ -2633,42 +2678,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/0b99073a4d6545b19509eee261003d63/hls/a9ea
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/890dfc07dcc34ec0bc57881447001a7a/a44aef60-7684-4770-8e96-d55633771a73_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/890dfc07dcc34ec0bc57881447001a7a/hls/a44aef60-7684-4770-8e96-d55633771a73.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eb751269532548a39278a922ca22bac0/a01cb750-a830-47b1-b6e7-d6003e12702b_thumb_002_HD.jpg",جزییات کشته شدن آرمان گرجیان، میلاد لواسانی و کریم حیدری
-https://daq1pvcuhj77l.cloudfront.net/1/eb751269532548a39278a922ca22bac0/hls/a01cb750-a830-47b1-b6e7-d6003e12702b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f805160ded574bcf9d2187480ca1594f/6928a189-e167-40f5-867e-d32175fcd9e5_thumb_001_HD.jpg",اختلال گسترده در سامانه‌های بانکی ایران
-https://daq1pvcuhj77l.cloudfront.net/1/f805160ded574bcf9d2187480ca1594f/hls/6928a189-e167-40f5-867e-d32175fcd9e5.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7889d54d12d4494ebc3864abb66a2e31/68abe091-8753-4931-96a2-098a7db5f785_thumb_001_HD.jpg",رسانه‌های اجتماعی: واکنش‌ها به شرط خرید مواد غذایی از آمریکا؛ مقایسه با «نفت در برابر غذا»
-https://daq1pvcuhj77l.cloudfront.net/1/7889d54d12d4494ebc3864abb66a2e31/hls/68abe091-8753-4931-96a2-098a7db5f785.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3ccbd0ca9c2e4850b69a37140a1fe17f/3fb972d3-d349-4cae-b56a-69466733be38_thumb_001_HD.jpg",ترامپ: دارایی‌های آزادشده ایران در حساب تحت کنترل آمریکا نگهداری می‌شود
-https://daq1pvcuhj77l.cloudfront.net/1/3ccbd0ca9c2e4850b69a37140a1fe17f/hls/3fb972d3-d349-4cae-b56a-69466733be38.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/49b3703eb71144e29385f8fdfca19986/8ff0d60b-e126-4a10-9435-2b168e215ecc_thumb_001_HD.jpg",نتانیاهو: اسرائیل نباید به آمریکا وابسته باشد
-https://daq1pvcuhj77l.cloudfront.net/1/49b3703eb71144e29385f8fdfca19986/hls/8ff0d60b-e126-4a10-9435-2b168e215ecc.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1781965b6c1440298e471eaa03b63f34/181e663d-3fda-407e-a54a-1203eacf7999_thumb_001_HD.jpg",مروری بر رسانه‌ها و خبرگزاری‌ها در ایران، سه‌شنبه ۲ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/1781965b6c1440298e471eaa03b63f34/hls/181e663d-3fda-407e-a54a-1203eacf7999.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f765024db8f84a3f81b3a6f2ef5f0106/7ca881c1-68aa-470e-94f2-fed14f28a64f_thumb_001_HD.jpg",اختلاف بر سر نحوه استفاده از دارایی‌های آزادشده ایران ادامه دارد
-https://daq1pvcuhj77l.cloudfront.net/1/f765024db8f84a3f81b3a6f2ef5f0106/hls/7ca881c1-68aa-470e-94f2-fed14f28a64f.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0ac40aad076f4de28f9928a2eabe49df/e1aa57ce-0f75-47d1-8165-4c728ea2dda8_thumb_001_HD.jpg",اخبار نیم‌روزی | سه‌شنبه ۲ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/0ac40aad076f4de28f9928a2eabe49df/hls/e1aa57ce-0f75-47d1-8165-4c728ea2dda8.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6682a1a71734487e85659d744aa49b85/acb21923-1bd6-4e3f-af7b-a08bcf112be7_thumb_001_HD.jpg",واکنش‌ مقامات و رسانه‌های اروپایی به کناره‌گیری استارمر از مقام نخست‌وزیری بریتانیا
-https://daq1pvcuhj77l.cloudfront.net/1/6682a1a71734487e85659d744aa49b85/hls/acb21923-1bd6-4e3f-af7b-a08bcf112be7.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d20635decfc44695a69468194202dbc2/24d1aaa5-a8ab-4461-ab38-7a8eedaf2a47_thumb_001_HD.jpg",واکنش‌ها به استعفای نخست‌وزیر بریتانیا
-https://daq1pvcuhj77l.cloudfront.net/1/d20635decfc44695a69468194202dbc2/hls/24d1aaa5-a8ab-4461-ab38-7a8eedaf2a47.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e7304df6f1a5461b9ab1e9b72905b8c2/2174cc6b-3f8c-4d68-b6a3-3c0d9b91bfcd_thumb_001_HD.jpg",نتانیاهو: کار ما با جمهوری اسلامی هنوز تمام نشده است
-https://daq1pvcuhj77l.cloudfront.net/1/e7304df6f1a5461b9ab1e9b72905b8c2/hls/2174cc6b-3f8c-4d68-b6a3-3c0d9b91bfcd.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d050b5bf7b2d4a2aa5d5825f4c62cb60/9de598d6-3ab7-4982-8ed8-f408891957b3_thumb_001_HD.jpg",ابهام در سرنوشت تفاهم؛ تهران بازرسی از سایت‌های آسیب‌دیده را رد کرد
-https://daq1pvcuhj77l.cloudfront.net/1/d050b5bf7b2d4a2aa5d5825f4c62cb60/hls/9de598d6-3ab7-4982-8ed8-f408891957b3.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/0igcv08o7qj7834g/ryd3o23u9ov6agzm.jpg",High School Graduate Gets Ultimate Surprise From FOX 26 Houston's Isiah Carey
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46902275227_46902275431/46902275431/hf-uuid-067e07eb-9747-4713-a010-a73933acdbb9/46902275431_lowres.mp4
