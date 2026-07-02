@@ -17,12 +17,14 @@ jobs:
           python-version: '3.11'
       - name: Discover Houston streams
         run: python houston_live.py
+      - name: Discover Simaye Azadi stream
+        run: python simay_live.py
       - name: Rebuild playlist
         run: python build.py
       - name: Commit
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add houston_live.json playlist.m3u epg.xml.gz ted.m3u
+          git add houston_live.json simay_live.json playlist.m3u epg.xml.gz ted.m3u
           git diff --cached --quiet || git commit -m "Houston streams refresh $(date -u +%Y-%m-%dT%H:%M)"
           git push

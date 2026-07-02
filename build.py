@@ -112,6 +112,8 @@ MUSIC_CHANNELS = [
     _musch("PMC",                           "",  "https://ca-rt.onetv.app:8443/PMCMusic/index-0.m3u8?token=onetv202"),
     _musch("PMC Royale",                    "",  "https://pmcrohls.wns.live/hls/stream.m3u8"),
     _musch("PMC (Backup)",                  "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pmc.default.svg", "https://pmchls.wns.live/hls/stream.m3u8"),
+    _musch("T2 TV",                         "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://t2hls.wns.live/hls/stream.m3u8"),
+    _musch("4U TV",                         "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/4utv.default.png", "https://hls.4utv.live/hls/stream.m3u8"),
     _musch("Radio Javan TV",                "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiojavan.default.svg", "https://rjtvhls.wns.live/hls/stream.m3u8"),
     _musch("Avang TV",                      "https://www.parsatv.com/index_files/channels/avang.png", "https://hls.avang.live/hls/stream.m3u8"),
     _musch("Navahang TV",                   "",  "https://hls.navahang.live/hls/stream.m3u8"),
@@ -260,10 +262,8 @@ NEWS_CHANNELS = [
     _ch("MelliG TV",             "https://www.parsatv.com/index_files/channels/melligtv.jpg", "https://mellihls.wns.live/hls/stream.m3u8"),
     _ch("Radio Farda TV",        "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiofarda.default.svg", "https://rferl-ingest.akamaized.net/hls/live/2121768/tvmc01/playlist.m3u8"),
     _ch("Khabarbin TV",          "https://www.parsatv.com/index_files/channels/khabarbin.png", "https://khbhls.wns.live/hls/stream.m3u8"),
-    _ch("T2 TV",                 "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://t2hls.wns.live/hls/stream.m3u8"),
-    _ch("4U TV",                 "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/4utv.default.png", "https://hls.4utv.live/hls/stream.m3u8"),
     _ch("Tapesh",                "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pbctapesh.default.png", "https://maxtvhls.wns.live/hls/stream.m3u8"),
-    _ch("سیمای آزادی",           "https://www.iranntv.com/images/logo.png", "https://simaytv.akamaized.net/hls/live/a162cb6c-3be1-4e57-87dc-a75a50b3b8d9/simayhls/index.m3u8"),
+    # سیمای آزادی: dynamic, see load_simay_live() — refreshed every 4h so a rotated CDN URL doesn't go dead
     # ─── عربی ───────────────────────────────────────────────────────────────
     _ch("Al Jazeera English",    _L+"/qatar/al-jazeera-english-qa.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     _ch("Al Jazeera Arabic",     _L+"/qatar/al-jazeera-qa.png",                  "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
@@ -315,6 +315,15 @@ def load_houston_live():
         with open("houston_live.json", encoding="utf-8") as f:
             data = json.load(f)
         return [_hch(v["name"], v["logo"], v["url"]) for v in data.values()]
+    except FileNotFoundError:
+        return []
+
+def load_simay_live():
+    """Load Simaye Azadi live channel from simay_live.json (refreshed every 4h)."""
+    try:
+        with open("simay_live.json", encoding="utf-8") as f:
+            data = json.load(f)
+        return [_ch(v["name"], v["logo"], v["url"]) for v in data.values()]
     except FileNotFoundError:
         return []
 
@@ -476,7 +485,7 @@ def main():
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group}: {len(entries)} channels{label}", flush=True)
-    news = _alive(NEWS_CHANNELS, "News")
+    news = _alive(NEWS_CHANNELS, "News") + load_simay_live()
     for extinf, stream in news:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(news)
