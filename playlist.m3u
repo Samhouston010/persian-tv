@@ -909,6 +909,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1178,6 +1187,66 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/814bd1f487844e01ae11bd4fe1449ce6/1d9d722a-0388-4648-8542-7e425c7acb85_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/814bd1f487844e01ae11bd4fe1449ce6/hls/1d9d722a-0388-4648-8542-7e425c7acb85.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/344742c112a24118ab9f5f54969d372f/631811f8-4a81-4b91-ad82-bfadf48c5fc6_thumb_001_HD.jpg",دومینو: تدارک نجومی حکومت برای مراسم دفن جلاد دی‌ماه
+https://daq1pvcuhj77l.cloudfront.net/1/344742c112a24118ab9f5f54969d372f/hls/631811f8-4a81-4b91-ad82-bfadf48c5fc6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/08c550178410443e89ef01c73dcb63ed/7071363e-9a75-485e-8cc6-b6c3eff2e9c5_thumb_001_HD.jpg",گفتگوی ویژه با: حسن نمازی، تاجر و سرمایه‌گذار
+https://daq1pvcuhj77l.cloudfront.net/1/08c550178410443e89ef01c73dcb63ed/hls/7071363e-9a75-485e-8cc6-b6c3eff2e9c5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a481d0e2ddf64ff58f594a7396652ed1/e9e838f8-bb91-4831-a36b-15f27fde051b_thumb_001_HD.jpg",سفیر آمریکا در سازمان ملل: جهان و مردم ایران در کنار جمهوری اسلامی نیستند
+https://daq1pvcuhj77l.cloudfront.net/1/a481d0e2ddf64ff58f594a7396652ed1/hls/e9e838f8-bb91-4831-a36b-15f27fde051b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b1ca48ce1db44995a9bb57963d3aed98/0d86a90f-a25c-4c39-a948-ed57d4ebcf2c_thumb_001_HD.jpg",فاکس‌نیوز: غیبت مقام‌های خارجی در مراسم دفن خامنه‌ای نشانه انزوای جمهوری اسلامی است
+https://daq1pvcuhj77l.cloudfront.net/1/b1ca48ce1db44995a9bb57963d3aed98/hls/0d86a90f-a25c-4c39-a948-ed57d4ebcf2c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e81464249017494da920dc1c79203095/7daaa366-d95e-45bc-acd9-c07e2020196e_thumb_001_HD.jpg",گزارش الحدث از زمان دور بعدی مذاکرات آمریکا و جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/e81464249017494da920dc1c79203095/hls/7daaa366-d95e-45bc-acd9-c07e2020196e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3e5b3fb95fae4b58bbc4d89111adb3f9/804c2cd8-8fc7-473a-91e8-079c60b5c8f7_thumb_001_HD.jpg",مرگ خامنه‌ای؛ پایان دیکتاتور
+https://daq1pvcuhj77l.cloudfront.net/1/3e5b3fb95fae4b58bbc4d89111adb3f9/hls/804c2cd8-8fc7-473a-91e8-079c60b5c8f7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6a4cb4a9528849dca0ce48cb2290c9a0/5884dc54-f2e1-4c1a-9a52-4bcc3c9b8269_thumb_001_HD.jpg",جام جهانی نه، آمریکایی‌ها منتظر عروسی تیلور سوئیفت هستند
+https://daq1pvcuhj77l.cloudfront.net/1/6a4cb4a9528849dca0ce48cb2290c9a0/hls/5884dc54-f2e1-4c1a-9a52-4bcc3c9b8269.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4774f98c0f80481883be0c8e2d27313f/60343f15-415a-406f-afd5-d74d27d46fe9_thumb_001_HD.jpg",به لطف درخشش شاگردان پوچتینو و میزبانی از جام جهانی، فوتبال در آمریکا هم طرفدار پیدا کرد
+https://daq1pvcuhj77l.cloudfront.net/1/4774f98c0f80481883be0c8e2d27313f/hls/60343f15-415a-406f-afd5-d74d27d46fe9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/151cf69be03148ddb1c9ea158b4fc973/86232313-9ca0-46e1-8ce2-df0b77721ec2_thumb_001_HD.jpg",روزهای خوش آمریکا در جام جهانی خانگی با پوچتینو
+https://daq1pvcuhj77l.cloudfront.net/1/151cf69be03148ddb1c9ea158b4fc973/hls/86232313-9ca0-46e1-8ce2-df0b77721ec2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b3ce8def8b1e4fbe97735ab3c25f1212/9a1120e8-2e60-4031-97d5-b894149bc1b8_thumb_001_HD.jpg",شیاطین سرخ از مهلکه یک‌شانزدهم نهایی نجات یافتند
+https://daq1pvcuhj77l.cloudfront.net/1/b3ce8def8b1e4fbe97735ab3c25f1212/hls/9a1120e8-2e60-4031-97d5-b894149bc1b8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2c6051ddbdc8482e8f0813240e2094a2/1ef48461-692f-429e-a3a6-f5e4b7cb72e1_thumb_001_HD.jpg",کامبک دیوانه‌وار بلژیک؛ از جهنم تا بهشت در ۴۰ دقیقه
+https://daq1pvcuhj77l.cloudfront.net/1/2c6051ddbdc8482e8f0813240e2094a2/hls/1ef48461-692f-429e-a3a6-f5e4b7cb72e1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2ee10aa13eaf460d85b863d5eb356da9/fa752c77-75c3-4cec-a82e-0dd0b9c84718_thumb_001_HD.jpg",گریز سه‌شیرها از شگفتی با کامبک برابر کنگو
+https://daq1pvcuhj77l.cloudfront.net/1/2ee10aa13eaf460d85b863d5eb356da9/hls/fa752c77-75c3-4cec-a82e-0dd0b9c84718.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bfc26ac257cb4e56ac29808888bdcc5b/2e219ae3-c4fd-425b-8813-f2717a9c09ab_thumb_001_HD.jpg",تیم ملی فوتبال، نمونه کوچک جمهوری اسلامی؛ چرا قلعه‌نویی نه استعفا می‌کند نه برکنار می‌شود؟
+https://daq1pvcuhj77l.cloudfront.net/1/bfc26ac257cb4e56ac29808888bdcc5b/hls/2e219ae3-c4fd-425b-8813-f2717a9c09ab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/33cc6eafd89240d2867af85c786dbe3a/88f4c044-b6d6-4982-a9fd-87ebdc35a25b_thumb_001_HD.jpg",قلعه‌نویی به بهانه نتیجه‌گیری از بازی دادن به جوان‌ها خودداری کرد، نتیجه هم نگرفت و حذف شد
+https://daq1pvcuhj77l.cloudfront.net/1/33cc6eafd89240d2867af85c786dbe3a/hls/88f4c044-b6d6-4982-a9fd-87ebdc35a25b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1317a0f34c304ffba8aac27dfc30ba15/2f8575ec-5aa0-45d2-8b65-2c78e01a70bf_thumb_001_HD.jpg",نیویورک‌تایمز؛ عملکرد تیم ملی ایران در جام جهانی فاجعه‌بار بود
+https://daq1pvcuhj77l.cloudfront.net/1/1317a0f34c304ffba8aac27dfc30ba15/hls/2f8575ec-5aa0-45d2-8b65-2c78e01a70bf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/94636c77261e4d798d903d0b591b4322/65a31ff4-524c-41a5-bca3-caa70000ddb2_thumb_001_HD.jpg",استقبال حکومتی از تیم ملی پس از ثبت ضعیف‌ترین عملکرد ممکن در جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/94636c77261e4d798d903d0b591b4322/hls/65a31ff4-524c-41a5-bca3-caa70000ddb2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/39d2eccc276d4c019f95c86d341b9444/a65aa477-97da-4276-8ec5-05d0aaf7b717_thumb_001_HD.jpg",بازگشت پیروزمندانه قلعه‌نویی به ایران همزمان با موج استعفا در تیم‌های حذف شده از جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/39d2eccc276d4c019f95c86d341b9444/hls/a65aa477-97da-4276-8ec5-05d0aaf7b717.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2de458451a5b495f8081440ef75aa5b2/9fa47bdf-42bc-4afd-98ad-8db82d4b8534_thumb_001_HD.jpg",سیرک حکومتی برای استقبال از تیم حذف شده قلعه‌نویی
+https://daq1pvcuhj77l.cloudfront.net/1/2de458451a5b495f8081440ef75aa5b2/hls/9fa47bdf-42bc-4afd-98ad-8db82d4b8534.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1fd13b2b0e2d4525a89586d3a1e60aef/b4b0c68d-fa51-41d7-ba1e-2f073053746d_thumb_001_HD.jpg",اخبار شبانگاهی | پنجشنبه ۱۱ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/1fd13b2b0e2d4525a89586d3a1e60aef/hls/b4b0c68d-fa51-41d7-ba1e-2f073053746d.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cc07e8c028b64c7684006af352639668/e2a6d717-c6f2-4848-aa8d-790ac04fb6cc_thumb_001_HD.jpg",نشست شورای امنیت برای بررسی تحولات خاورمیانه
 https://daq1pvcuhj77l.cloudfront.net/1/cc07e8c028b64c7684006af352639668/hls/e2a6d717-c6f2-4848-aa8d-790ac04fb6cc.m3u8
@@ -2618,66 +2687,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/0e34fd28b985475bad556133535f164b/hls/2e80
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4e8271b860854650bda4ef32f3b6b607/e93245d5-c87d-43a4-a011-b11faef95958_thumb_001_HD.jpg",دنیا از اصفهان: این‌ها توان حل مشکلات ما را ندارند و همین باعث سقوطشان می‌شود
 https://daq1pvcuhj77l.cloudfront.net/1/4e8271b860854650bda4ef32f3b6b607/hls/e93245d5-c87d-43a4-a011-b11faef95958.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b7606be084d749aea90fb20270ba0723/f3ea77e6-c652-412b-bdd7-095690792398_thumb_005_HD.jpg",نوید از سراوان: بحث ذرت و پاپ‌کورن ما را از بحث اصلی دور نکند!
-https://daq1pvcuhj77l.cloudfront.net/1/b7606be084d749aea90fb20270ba0723/hls/f3ea77e6-c652-412b-bdd7-095690792398.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0e985d6129f74bf6af2b63ca35df6311/69a2c0fc-f2b3-4a64-a619-8b49b44ad866_thumb_001_HD.jpg",خامنه‌ای را دادند؛ ذرت گرفتند!
-https://daq1pvcuhj77l.cloudfront.net/1/0e985d6129f74bf6af2b63ca35df6311/hls/69a2c0fc-f2b3-4a64-a619-8b49b44ad866.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3524818f5fad4cdaa74d28aaf81c6ec7/42790dd5-3e87-48cf-a72c-00fb437d5633_thumb_001_HD.jpg",بررسی مفاد تفاهم‌نامه جمهوری اسلامی و آمریکا
-https://daq1pvcuhj77l.cloudfront.net/1/3524818f5fad4cdaa74d28aaf81c6ec7/hls/42790dd5-3e87-48cf-a72c-00fb437d5633.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a99ee54ac37c47ff89e2dd2ec204d369/ff7fa7c2-28aa-49b2-b594-b869132e6988_thumb_001_HD.jpg",تاکید ترامپ بر حضور بازرسان آژانس در ایران در زمان مناسب
-https://daq1pvcuhj77l.cloudfront.net/1/a99ee54ac37c47ff89e2dd2ec204d369/hls/ff7fa7c2-28aa-49b2-b594-b869132e6988.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/985a1a44fca64cbabd72f0bca9d79899/e3c61c00-3027-45e6-b5b6-a4a486d6e94b_thumb_001_HD.jpg",سیاست با مراد ویسی: اورانیوم در برابر غذا 
-https://daq1pvcuhj77l.cloudfront.net/1/985a1a44fca64cbabd72f0bca9d79899/hls/e3c61c00-3027-45e6-b5b6-a4a486d6e94b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b29c0f26bee34595ad509bd84384e65e/b96cbf53-5509-41ca-bbe6-d850830a040f_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: ترامپ: جمهوری اسلامی از پا افتاده
-https://daq1pvcuhj77l.cloudfront.net/1/b29c0f26bee34595ad509bd84384e65e/hls/b96cbf53-5509-41ca-bbe6-d850830a040f.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/18edbfcd1dc343448c845202b021063a/8b0e582a-37f6-4492-af27-a54285315c57_thumb_003_HD.jpg", وزارت خارجه اسرائیل از انبار مهمات تازه کشف شده در نزدیکی مرز اسرائیل و لبنان خبر داد
-https://daq1pvcuhj77l.cloudfront.net/1/18edbfcd1dc343448c845202b021063a/hls/8b0e582a-37f6-4492-af27-a54285315c57.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c5bb39e36116457890e375e2d47c5587/ce642569-6cea-4ef7-8284-affb369ecdbd_thumb_002_HD.jpg",شایان سمیعی: توافقنامه‌ای که ترامپ با جمهوری اسلامی امضا کرده یک راه حل پایدار نیست
-https://daq1pvcuhj77l.cloudfront.net/1/c5bb39e36116457890e375e2d47c5587/hls/ce642569-6cea-4ef7-8284-affb369ecdbd.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/21f18b2c27e74fca93fab0b956e3b806/d788ee61-297f-4533-8440-1be88f55dc3a_thumb_001_HD.jpg",چشم‌انداز: معتمد مجتبی یا منتخب ترامپ؛ قالیباف دقیقا کیست؟
-https://daq1pvcuhj77l.cloudfront.net/1/21f18b2c27e74fca93fab0b956e3b806/hls/d788ee61-297f-4533-8440-1be88f55dc3a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9bc854e61c8144d89639141087f262c5/e6bf0d0f-c3cc-4352-8972-2a241a2dc253_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/9bc854e61c8144d89639141087f262c5/hls/e6bf0d0f-c3cc-4352-8972-2a241a2dc253.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cc46c16d4383453e8e58434694e72801/cc6a89fa-3752-4fb6-b124-177a77a3850e_thumb_003_HD.jpg",معتمد مجتبی یا منتخب ترامپ؛ قالیباف دقیقا کیست؟
-https://daq1pvcuhj77l.cloudfront.net/1/cc46c16d4383453e8e58434694e72801/hls/cc6a89fa-3752-4fb6-b124-177a77a3850e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6f5e931525564468aa169f7483739356/6328f210-46c7-4f3f-bddc-0f7f10ac5b03_thumb_002_HD.jpg",فرزین ندیمی: حزب‌الله نمی‌خواهد استحکامات خود را که با پول ایران ساخته از بین ببرد
-https://daq1pvcuhj77l.cloudfront.net/1/6f5e931525564468aa169f7483739356/hls/6328f210-46c7-4f3f-bddc-0f7f10ac5b03.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/939e0cdb2fd6401d9c8b379ff542add7/c64e65de-64fa-4ed5-bf43-184e18ade8ae_thumb_001_HD.jpg",ترامپ: ایران با بالاترین سطح بازرسی‌ها، به‌طور کامل و برای همیشه موافقت کرده است
-https://daq1pvcuhj77l.cloudfront.net/1/939e0cdb2fd6401d9c8b379ff542add7/hls/c64e65de-64fa-4ed5-bf43-184e18ade8ae.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1fed788260314db18430160df36892ca/ebdf6741-4ace-4497-812f-dc982ee68d31_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، سه‌شنبه ۲ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/1fed788260314db18430160df36892ca/hls/ebdf6741-4ace-4497-812f-dc982ee68d31.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3920fa65938d4fc29dd64c8480520b07/62b31b94-6355-4470-a780-0c0f7194eaf1_thumb_001_HD.jpg",تقابل دوباره کارلوس کیروش با تیم ملی انگلیس در جام جهانی
-https://daq1pvcuhj77l.cloudfront.net/1/3920fa65938d4fc29dd64c8480520b07/hls/62b31b94-6355-4470-a780-0c0f7194eaf1.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0f34ab1f60a044b7a3a9fa7ef71065c0/f3cea28a-9d3e-40dc-aac3-74766fc7bc59_thumb_001_HD.jpg",حمایت پارلمان نروژ از تیم ملی این کشور با تشویق وایکینگی
-https://daq1pvcuhj77l.cloudfront.net/1/0f34ab1f60a044b7a3a9fa7ef71065c0/hls/f3cea28a-9d3e-40dc-aac3-74766fc7bc59.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a06fe2d3efde4d2a85591acf83918f7a/84aa7b16-ee90-4fa1-9869-87cda15b4293_thumb_001_HD.jpg",تشویق وایکینگی هواداران نروژ نماد جدید فوتبال و جام جهانی
-https://daq1pvcuhj77l.cloudfront.net/1/a06fe2d3efde4d2a85591acf83918f7a/hls/84aa7b16-ee90-4fa1-9869-87cda15b4293.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ae9567e14cad4ca8a2f28b3984026a3c/842ce74b-59c2-444d-bc28-416809fcd89e_thumb_001_HD.jpg",توقف یکساعته بازی فرانسه و عراق به دلیل شرایط بد جوی در فیلادلفیا
-https://daq1pvcuhj77l.cloudfront.net/1/ae9567e14cad4ca8a2f28b3984026a3c/hls/842ce74b-59c2-444d-bc28-416809fcd89e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/06dc2a8727024f7a92637df11aa118cf/0a204286-abf9-44c7-ae9c-5fd2a1587ce3_thumb_001_HD.jpg",انتقاد از تیم ملی عراق پس از شکست برابر فرانسه
-https://daq1pvcuhj77l.cloudfront.net/1/06dc2a8727024f7a92637df11aa118cf/hls/0a204286-abf9-44c7-ae9c-5fd2a1587ce3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e492f05d7d21498d97a69cbfa1e577e0/8c9e2e73-107d-4746-8781-95061bf19fbe_thumb_001_HD.jpg",رکوردشکنی لیونل مسی در جام جهانی با درخشش برابر اتریش
-https://daq1pvcuhj77l.cloudfront.net/1/e492f05d7d21498d97a69cbfa1e577e0/hls/8c9e2e73-107d-4746-8781-95061bf19fbe.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/0igcv08o7qj7834g/ryd3o23u9ov6agzm.jpg",High School Graduate Gets Ultimate Surprise From FOX 26 Houston's Isiah Carey
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46902275227_46902275431/46902275431/hf-uuid-067e07eb-9747-4713-a010-a73933acdbb9/46902275431_lowres.mp4
