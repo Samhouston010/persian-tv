@@ -864,6 +864,60 @@ https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.parsatv.com/index_files/channels/dejtv.jpg",DEJ TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://rdejhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.parsatv.com/index_files/channels/melligtv.jpg",MelliG TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mellihls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiofarda.default.svg",Radio Farda TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://rferl-ingest.akamaized.net/hls/live/2121768/tvmc01/playlist.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.parsatv.com/index_files/channels/khabarbin.png",Khabarbin TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://khbhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.parsatv.com/index_files/channels/t2tv.jpg",T2 TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://t2hls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/4utv.default.png",4U TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://hls.4utv.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/qatar/al-jazeera-english-qa.png",Al Jazeera English
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -908,15 +962,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
@@ -1107,6 +1152,15 @@ https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pmcrohls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pmc.default.svg",PMC (Backup)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmchls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiojavan.default.svg",Radio Javan TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1187,6 +1241,15 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c599ff90717247bba7a8643663c81109/1732f4bd-3579-4c28-bf74-876ec1e7ea96_thumb_001_HD.jpg",تلاش جمهوری اسلامی برای دریافت تضمین امنیتی برای برگزاری مراسم دفن خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/c599ff90717247bba7a8643663c81109/hls/1732f4bd-3579-4c28-bf74-876ec1e7ea96.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4f5ded22ac7a4fac9e6835ab7cf97cd7/3c193bfa-6afa-40d6-9f7e-8fb884a26885_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: اعلام تاریخ دور بعدی مذاکرات؛ همزمان با تهدیدهای تازه تهران
+https://daq1pvcuhj77l.cloudfront.net/1/4f5ded22ac7a4fac9e6835ab7cf97cd7/hls/3c193bfa-6afa-40d6-9f7e-8fb884a26885.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b3ffbf2b4e04413fa27eb5fd8a4c5651/d14697e7-c61f-4aea-9be8-89d31a449545_thumb_001_HD.jpg",هشدار جمهوری اسلامی درباره تنگه هرمز همزمان با فشارهای بین‌المللی بر تهران
+https://daq1pvcuhj77l.cloudfront.net/1/b3ffbf2b4e04413fa27eb5fd8a4c5651/hls/d14697e7-c61f-4aea-9be8-89d31a449545.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/814bd1f487844e01ae11bd4fe1449ce6/1d9d722a-0388-4648-8542-7e425c7acb85_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
 https://daq1pvcuhj77l.cloudfront.net/1/814bd1f487844e01ae11bd4fe1449ce6/hls/1d9d722a-0388-4648-8542-7e425c7acb85.m3u8
@@ -2678,15 +2741,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/642befe0138f4bf68ccc09ce2177a915/hls/5e12
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9db16621a14d42ec9c3674720a3d4ce3/0438b891-6b84-4175-9e35-075af87b0620_thumb_001_HD.jpg",نخست‌وزیر پاکستان از نبود اشاره به موشک‌های بالیستیک در تفاهم‌نامه ایران و آمریکا خبر داد
 https://daq1pvcuhj77l.cloudfront.net/1/9db16621a14d42ec9c3674720a3d4ce3/hls/0438b891-6b84-4175-9e35-075af87b0620.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/533bffe7743b4d50959ebc1b87d6a64a/58e68a1b-0327-4ae0-9da6-2f8c52cfcf14_thumb_004_HD.jpg",نور از تهران: چاره‌ای جز قبول این تسلیم‌نامه ندارند و ایدئولوژی‌شان را با ذرت تاخت زدند
-https://daq1pvcuhj77l.cloudfront.net/1/533bffe7743b4d50959ebc1b87d6a64a/hls/58e68a1b-0327-4ae0-9da6-2f8c52cfcf14.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0e34fd28b985475bad556133535f164b/2e801e09-547c-414f-8a98-4e399a903470_thumb_005_HD.jpg",افشین از شیراز: ترامپ اولویت اولش مردم خودش است؛ اما ما عادت نداریم به این چیزها
-https://daq1pvcuhj77l.cloudfront.net/1/0e34fd28b985475bad556133535f164b/hls/2e801e09-547c-414f-8a98-4e399a903470.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4e8271b860854650bda4ef32f3b6b607/e93245d5-c87d-43a4-a011-b11faef95958_thumb_001_HD.jpg",دنیا از اصفهان: این‌ها توان حل مشکلات ما را ندارند و همین باعث سقوطشان می‌شود
-https://daq1pvcuhj77l.cloudfront.net/1/4e8271b860854650bda4ef32f3b6b607/hls/e93245d5-c87d-43a4-a011-b11faef95958.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/0igcv08o7qj7834g/ryd3o23u9ov6agzm.jpg",High School Graduate Gets Ultimate Surprise From FOX 26 Houston's Isiah Carey
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46902275227_46902275431/46902275431/hf-uuid-067e07eb-9747-4713-a010-a73933acdbb9/46902275431_lowres.mp4
