@@ -263,6 +263,7 @@ NEWS_CHANNELS = [
     _ch("T2 TV",                 "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://t2hls.wns.live/hls/stream.m3u8"),
     _ch("4U TV",                 "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/4utv.default.png", "https://hls.4utv.live/hls/stream.m3u8"),
     _ch("Tapesh",                "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pbctapesh.default.png", "https://maxtvhls.wns.live/hls/stream.m3u8"),
+    _ch("سیمای آزادی",           "https://www.iranntv.com/images/logo.png", "https://simaytv.akamaized.net/hls/live/a162cb6c-3be1-4e57-87dc-a75a50b3b8d9/simayhls/index.m3u8"),
     # ─── عربی ───────────────────────────────────────────────────────────────
     _ch("Al Jazeera English",    _L+"/qatar/al-jazeera-english-qa.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     _ch("Al Jazeera Arabic",     _L+"/qatar/al-jazeera-qa.png",                  "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
