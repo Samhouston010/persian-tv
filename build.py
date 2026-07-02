@@ -105,6 +105,25 @@ def _hch(name, logo, stream):
 def _mch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f3b5 موزیک عربی" tvg-logo="%s",%s' % (logo, name), stream)
 
+def _musch(name, logo, stream):
+    return ('#EXTINF:-1 group-title="\U0001f3b5 موسیقی" tvg-logo="%s",%s' % (logo, name), stream)
+
+MUSIC_CHANNELS = [
+    _musch("PMC",                           "",  "https://ca-rt.onetv.app:8443/PMCMusic/index-0.m3u8?token=onetv202"),
+    _musch("PMC Royale",                    "",  "https://pmcrohls.wns.live/hls/stream.m3u8"),
+    _musch("Radio Javan TV",                "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiojavan.default.svg", "https://rjtvhls.wns.live/hls/stream.m3u8"),
+    _musch("Avang TV",                      "https://www.parsatv.com/index_files/channels/avang.png", "https://hls.avang.live/hls/stream.m3u8"),
+    _musch("Navahang TV",                   "",  "https://hls.navahang.live/hls/stream.m3u8"),
+    _musch("Sun Music",                     "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/sunmusic.default.png", "https://hls.sunmusic.live/hls/stream.m3u8"),
+    _musch("Music Channel",                 "http://media.boni-records.com/logo.png", "http://media.boni-records.com/index.m3u8"),
+    _musch("Music ON TV", "https://www.lyngsat-logo.com/logo/tv/mm/music_on_tv.png", "https://stream01.willfonk.com/live_playlist.m3u8?cid=CS325&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"),
+    _musch("DELUXE MUSIC",                  "https://i.imgur.com/E65GQN9.png", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8"),
+    _musch("DELUXE MUSIC DANCE BY KONTOR",  "", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8"),
+    _musch("DELUXE MUSIC RAP",              "", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8"),
+    _musch("Zerouno Tv Music",              "https://i.imgur.com/r74lqW8.png", "https://5f22d76e220e1.streamlock.net/zerounotvmusic/zerounotvmusic/playlist.m3u8"),
+    _musch("BIZ Music",                     "", "https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8"),
+]
+
 
 def _shallow_alive(url):
     """Master 200 + #EXTM3U only — no codec/sub-manifest checks.
@@ -230,6 +249,11 @@ _P = "https://images.pluto.tv/channels/"
 NEWS_CHANNELS = [
     # ─── فارسی/ایرانی ───────────────────────────────────────────────────────
     _ch("Iran International",    _L+"/iran/iran-international-ir.png",           "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
+    _ch("Iran International (Backup)", _L+"/iran/iran-international-ir.png",     "https://dev-live.livetvstream.co.uk/LS-63503-4/index.m3u8"),
+    _ch("BBC Persian",           "https://upload.wikimedia.org/wikipedia/en/4/44/BBC_News_Persian_Logo.jpg", "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8"),
+    _ch("BBC Persian (Backup)",  "https://upload.wikimedia.org/wikipedia/en/4/44/BBC_News_Persian_Logo.jpg", "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/mobile_wifi_main_hd_abr_v2.m3u8"),
+    _ch("VOA Persian",           "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/voapersian.default.png", "https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8"),
+    _ch("VOA Persian (Backup)",  "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/voapersian.default.png", "https://voaphls.wns.live/hls/stream.m3u8"),
     _ch("Press TV",              _L+"/iran/press-tv-ir.png",                     "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"),
     # ─── عربی ───────────────────────────────────────────────────────────────
     _ch("Al Jazeera English",    _L+"/qatar/al-jazeera-english-qa.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
@@ -430,8 +454,16 @@ def main():
                 extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
                 out.append(extinf); out.append(_AF_EC); out.append(stream); out.append("")
             ec_count = len(_EC_CHANNELS)
+            # شبکه سه (بکاپ) — main ncdn.telewebion.ir/tv3 reported not working, IRIB's own CDN as backup
+            tv3_extinf = '#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="شبکه سه (بکاپ)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="%s",شبکه سه (بکاپ)' % group
+            out.append(tv3_extinf); out.append(_AF_TELE); out.append("https://s1-cloud.irib.ir/securelive3/tv3hd/tv3hd.m3u8"); out.append("")
+            ec_count += 1
+        if "پرشیانا" in group:
+            mbc_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia' % group
+            out.append(mbc_extinf); out.append(_AF_NORMAL); out.append("https://shls-mbcpersia-prod-dub.shahid.net/out/v1/bdc7cd0d990e4c54808632a52c396946/index.m3u8"); out.append("")
+            ec_count += 1
         total += len(entries) + ec_count
-        label = f" (+{ec_count} English Club)" if ec_count else ""
+        label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group}: {len(entries)} channels{label}", flush=True)
     news = _alive(NEWS_CHANNELS, "News")
     for extinf, stream in news:
@@ -443,6 +475,11 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(houston)
     print(f"Houston: {len(houston)} channels", flush=True)
+    music = _alive(MUSIC_CHANNELS, "Music")
+    for extinf, stream in music:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(music)
+    print(f"Music: {len(music)} channels", flush=True)
     # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
     _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
     # disabled by user request 2026-07-01 — geo-blocked, no non-VPN fix yet
