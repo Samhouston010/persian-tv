@@ -100,7 +100,7 @@ def _ch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f4f0 خبر" tvg-logo="%s",%s' % (logo, name), stream)
 
 def _hch(name, logo, stream):
-    return ('#EXTINF:-1 group-title="\U0001f3d9 Houston" tvg-logo="%s",%s' % (logo, name), stream)
+    return ('#EXTINF:-1 group-title="\U0001f3d9 هیوستن" tvg-logo="%s",%s' % (logo, name), stream)
 
 def _mch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f3b5 موزیک عربی" tvg-logo="%s",%s' % (logo, name), stream)
@@ -438,16 +438,17 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(news)
     print(f"News: {len(news)} channels", flush=True)
-    houston = _alive(_HOUSTON_MAIN + _HOUSTON_CITY, "Houston") + load_houston_live()
+    houston = _alive(_HOUSTON_MAIN, "Houston") + load_houston_live() + _alive(_HOUSTON_CITY, "Houston")
     for extinf, stream in houston:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(houston)
     print(f"Houston: {len(houston)} channels", flush=True)
     # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
     _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
+    # disabled by user request 2026-07-01 — geo-blocked, no non-VPN fix yet
     arabic_music = [
-        _mch("Rotana Music",  "https://upload.wikimedia.org/wikipedia/commons/0/00/Rotana_Music_Logo.png", "https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8"),
-        _mch("Rotana Clip",   "https://upload.wikimedia.org/wikipedia/commons/1/18/Rotana_Clip_Logo.png",  "https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8"),
+        # _mch("Rotana Music",  "https://upload.wikimedia.org/wikipedia/commons/0/00/Rotana_Music_Logo.png", "https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8"),
+        # _mch("Rotana Clip",   "https://upload.wikimedia.org/wikipedia/commons/1/18/Rotana_Clip_Logo.png",  "https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8"),
     ]
     for extinf, stream in arabic_music:
         out.append(extinf); out.append(_ROT_REF); out.append(_AF_NORMAL); out.append(stream); out.append("")

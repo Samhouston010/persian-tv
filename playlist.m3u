@@ -846,15 +846,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -990,7 +981,7 @@ https://jmp2.uk/stvp-INBC2800005X4
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://jmp2.uk/stvp-INBC2800001D8
 
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png",Fox 26 Houston
+#EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png",Fox 26 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -999,25 +990,7 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00488-foxdigital-kriv-lgus/playlist.m3u8
 
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 1 Houston
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8
-
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 2 Houston
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
-
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/khou-11-us.png",KHOU 11 Houston
+#EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/khou-11-us.png",KHOU 11 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -1026,7 +999,7 @@ https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://video.tegnaone.com/khou/live/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/KHOU-Production/live/index.m3u8
 
-#EXTINF:-1 group-title="🏙 Houston" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/kprc-2-us.png",KPRC 2 Houston
+#EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/kprc-2-us.png",KPRC 2 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -1035,25 +1008,23 @@ https://video.tegnaone.com/khou/live/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pubads.g.doubleclick.net/ssai/event/jHV2RfV4QQuU2swXQUVHsA/master.m3u8
 
-#EXTINF:-1 group-title="🎵 موزیک عربی" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/00/Rotana_Music_Logo.png",Rotana Music
-#EXTVLCOPT:http-referrer=https://rotana.net/
+#EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 1 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8
+https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-a/playlist.m3u8
 
-#EXTINF:-1 group-title="🎵 موزیک عربی" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/18/Rotana_Clip_Logo.png",Rotana Clip
-#EXTVLCOPT:http-referrer=https://rotana.net/
+#EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 2 Houston
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://rotana.hibridcdn.net/rotananet/clip_net-7Y83PP5adWixDF93/playlist.m3u8
+https://stream.swagit.com/live-edge/houstontx/smil:hd-16x9-2-b/playlist.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fdd2f2bc817a44caba7a383eb489e2fb/24f3de82-af5b-4b5d-8f35-4de22a837499_thumb_001_HD.jpg",«گندم و جو ارزونیتون؛ تنگه نمی‌دیم بهتون!»
 https://daq1pvcuhj77l.cloudfront.net/1/fdd2f2bc817a44caba7a383eb489e2fb/hls/24f3de82-af5b-4b5d-8f35-4de22a837499.m3u8
