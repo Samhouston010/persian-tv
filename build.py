@@ -332,9 +332,62 @@ IRAN_ORG_SOURCES = [
     "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ir_wnslive.m3u",
 ]
 
-def fetch_iran_org():
+_IPTVORG_CHANNELS = "https://iptv-org.github.io/api/channels.json"
+_IPTVORG_LOGOS = "https://iptv-org.github.io/api/logos.json"
+_TVGID_RE = re.compile(r'tvg-id="([^"]*)"')
+_TVGLOGO_RE = re.compile(r'tvg-logo="([^"]*)"')
+_CATEGORY_ORDER = ["news", "sports", "general", "entertainment", "series", "movies",
+                    "kids", "family", "animation", "music", "religious", "culture",
+                    "documentary", "education", "business", "legislative", "shop"]
+
+def load_iptvorg_meta():
+    """id -> categories, id -> logo url — pulled fresh every build so new/changed
+    entries in iptv-org's own database show up here automatically too."""
+    try:
+        channels = json.loads(fetch(_IPTVORG_CHANNELS))
+    except Exception as e:
+        print(f"iptv-org channels.json failed: {e}", flush=True)
+        channels = []
+    try:
+        logos = json.loads(fetch(_IPTVORG_LOGOS))
+    except Exception as e:
+        print(f"iptv-org logos.json failed: {e}", flush=True)
+        logos = []
+    cat_by_id = {c["id"]: (c.get("categories") or []) for c in channels}
+    logo_by_id = {}
+    for l in logos:
+        if l.get("feed") or not l.get("in_use") or l.get("format") == "SVG":
+            continue
+        logo_by_id.setdefault(l["channel"], l["url"])
+    return cat_by_id, logo_by_id
+
+def _fill_logo(extinf, logo_by_id):
+    """Only fills a logo when tvg-id matches iptv-org AND we don't already have one —
+    never overrides logos we've hand-picked elsewhere in this file."""
+    m = _TVGID_RE.search(extinf)
+    if not m or not m.group(1):
+        return extinf
+    logo = logo_by_id.get(m.group(1).split("@")[0])
+    if not logo:
+        return extinf
+    lm = _TVGLOGO_RE.search(extinf)
+    if lm:
+        return extinf if lm.group(1) else _TVGLOGO_RE.sub(f'tvg-logo="{logo}"', extinf, count=1)
+    return extinf.replace('tvg-id="', f'tvg-logo="{logo}" tvg-id="', 1)
+
+def _channel_category(extinf, cat_by_id):
+    m = _TVGID_RE.search(extinf)
+    cats = cat_by_id.get(m.group(1).split("@")[0], []) if m else []
+    for i, cat in enumerate(_CATEGORY_ORDER):
+        if cat in cats:
+            return i
+    return len(_CATEGORY_ORDER)
+
+def fetch_iran_org(cat_by_id, logo_by_id):
     """Iran channels from iptv-org/iptv — re-fetched and re-checked every build,
-    so channels iptv-org adds show up automatically and ones that stop loading drop out."""
+    so channels iptv-org adds show up automatically and ones that stop loading drop out.
+    Sorted by category (news/sports/movies/music/...) so same-type channels sit together
+    within the single ایران group, per user request."""
     entries = []
     for url in IRAN_ORG_SOURCES:
         try:
@@ -343,7 +396,10 @@ def fetch_iran_org():
             print(f"Iran org source failed ({url}): {e}", flush=True)
             continue
         entries.extend(extract(text, "\U0001f1ee\U0001f1f7 ایران"))
-    return _alive(entries, "Iran (iptv-org)")
+    entries = _alive(entries, "Iran (iptv-org)")
+    entries = [(_fill_logo(extinf, logo_by_id), stream) for extinf, stream in entries]
+    entries.sort(key=lambda e: _channel_category(e[0], cat_by_id))
+    return entries
 
 
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
@@ -477,6 +533,8 @@ def build_epg():
 
 def main():
     build_epg()
+    cat_by_id, logo_by_id = load_iptvorg_meta()
+    print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
     out = [f'#EXTM3U url-tvg="{epg_url}"', ""]
     total = 0
@@ -485,6 +543,7 @@ def main():
         entries = list(extract(text, group))
         for extinf, stream in entries:
             extinf = _patch_tele_logo(extinf, stream)
+            extinf = _fill_logo(extinf, logo_by_id)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
@@ -509,6 +568,7 @@ def main():
         print(f"{group}: {len(entries)} channels{label}", flush=True)
     news = _alive(NEWS_CHANNELS, "News") + load_simay_live()
     for extinf, stream in news:
+        extinf = _fill_logo(extinf, logo_by_id)
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(news)
     print(f"News: {len(news)} channels", flush=True)
@@ -551,10 +611,11 @@ def main():
     print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
     for extinf, stream in israel:
+        extinf = _fill_logo(extinf, logo_by_id)
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(israel)
     print(f"Israel: {len(israel)} channels", flush=True)
-    iran_org = fetch_iran_org()
+    iran_org = fetch_iran_org(cat_by_id, logo_by_id)
     for extinf, stream in iran_org:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(iran_org)
