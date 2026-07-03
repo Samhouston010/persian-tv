@@ -327,6 +327,25 @@ def load_simay_live():
     except FileNotFoundError:
         return []
 
+IRAN_ORG_SOURCES = [
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ir.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/ir_wnslive.m3u",
+]
+
+def fetch_iran_org():
+    """Iran channels from iptv-org/iptv — re-fetched and re-checked every build,
+    so channels iptv-org adds show up automatically and ones that stop loading drop out."""
+    entries = []
+    for url in IRAN_ORG_SOURCES:
+        try:
+            text = fetch(url).decode("utf-8", errors="ignore")
+        except Exception as e:
+            print(f"Iran org source failed ({url}): {e}", flush=True)
+            continue
+        entries.extend(extract(text, "\U0001f1ee\U0001f1f7 ایران"))
+    return _alive(entries, "Iran (iptv-org)")
+
+
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
 KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
 
@@ -422,7 +441,10 @@ def extract(text, group):
     while i < len(lines):
         line = lines[i].strip()
         if line.startswith("#EXTINF"):
-            line = GROUP_RE.sub(f'group-title="{group}"', line)
+            if GROUP_RE.search(line):
+                line = GROUP_RE.sub(f'group-title="{group}"', line)
+            else:
+                line = line.replace("#EXTINF:-1", f'#EXTINF:-1 group-title="{group}"', 1)
             j = i + 1
             while j < len(lines) and (not lines[j].strip() or
                   lines[j].strip().startswith("#EXT") and not lines[j].strip().startswith("#EXTINF")):
@@ -532,6 +554,17 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(israel)
     print(f"Israel: {len(israel)} channels", flush=True)
+    iran_org = fetch_iran_org()
+    for extinf, stream in iran_org:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(iran_org)
+    print(f"Iran (iptv-org): {len(iran_org)} channels", flush=True)
+    os.makedirs("ایران", exist_ok=True)
+    iran_file = ["#EXTM3U", ""]
+    for extinf, stream in iran_org:
+        iran_file.append(extinf); iran_file.append(_AF_NORMAL); iran_file.append(stream); iran_file.append("")
+    with open("ایران/ایران.m3u", "w", encoding="utf-8") as f:
+        f.write("\n".join(iran_file))
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
