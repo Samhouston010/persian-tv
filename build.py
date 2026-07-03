@@ -395,7 +395,7 @@ def fetch_iran_org(cat_by_id, logo_by_id):
         except Exception as e:
             print(f"Iran org source failed ({url}): {e}", flush=True)
             continue
-        entries.extend(extract(text, "\U0001f1ee\U0001f1f7 ایران"))
+        entries.extend(extract(text, "ایران"))
     entries = _alive(entries, "Iran (iptv-org)")
     entries = [(_fill_logo(extinf, logo_by_id), stream) for extinf, stream in entries]
     entries.sort(key=lambda e: _channel_category(e[0], cat_by_id))
@@ -405,6 +405,8 @@ def fetch_iran_org(cat_by_id, logo_by_id):
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
 KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
 
+ISRAEL_SKIP = {"Keshet 12 DVR", "N12 News", "Keshet 12 CC", "Kan Kids"}
+
 def fetch_israel():
     text = fetch(ISRAEL_M3U).decode("utf-8", errors="ignore")
     entries = []
@@ -413,11 +415,15 @@ def fetch_israel():
     while i < len(lines):
         line = lines[i].strip()
         if line.startswith("#EXTINF"):
-            extinf = re.sub(r'group-title="[^"]*"', 'group-title="\U0001f4e1 اسرائیل"', line)
+            name = line.rsplit(",", 1)[-1].strip()
             i += 1
             while i < len(lines) and lines[i].startswith("#"):
                 i += 1
+            if name in ISRAEL_SKIP:
+                i += 1
+                continue
             if i < len(lines):
+                extinf = re.sub(r'group-title="[^"]*"', 'group-title="\U0001f4e1 اسرائیل"', line)
                 url = lines[i].strip()
                 if "mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8" in url:
                     url = KESHET12_WORKER
