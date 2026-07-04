@@ -296,6 +296,7 @@ NEWS_CHANNELS = [
     _ch("WION",                  _SU+"INBD4000058T_20260623T013446SQUARE.png",   "https://jmp2.uk/stvp-INBD4000058T"),
     _ch("India Today",           _SU+"INBC2800005X4_20260623T015135SQUARE.png",  "https://jmp2.uk/stvp-INBC2800005X4"),
     _ch("NDTV 24X7",             _SU+"INBC2800001D8_20260623T015302SQUARE.png",  "https://jmp2.uk/stvp-INBC2800001D8"),
+    _ch("NHK World Full HD",     _L+"/international/nhk-world-hd-int.png",       "https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8"),
 ]
 
 
@@ -572,7 +573,8 @@ def main():
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group}: {len(entries)} channels{label}", flush=True)
-    news = _alive(NEWS_CHANNELS, "News") + load_simay_live()
+    # سیمای آزادی right under Iran International (first 2 entries), not appended at the end
+    news = _alive(NEWS_CHANNELS[:2], "News") + load_simay_live() + _alive(NEWS_CHANNELS[2:], "News")
     for extinf, stream in news:
         extinf = _fill_logo(extinf, logo_by_id)
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")

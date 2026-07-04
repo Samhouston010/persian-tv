@@ -828,6 +828,15 @@ https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIO
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://dev-live.livetvstream.co.uk/LS-63503-4/index.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.iranntv.com/images/logo.png",سیمای آزادی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://simaytv.akamaized.net/hls/live/a162cb6c-3be1-4e57-87dc-a75a50b3b8d9/simayhls/index.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/44/BBC_News_Persian_Logo.jpg",BBC Persian
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -944,6 +953,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
@@ -1080,14 +1098,14 @@ https://jmp2.uk/stvp-INBC2800005X4
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://jmp2.uk/stvp-INBC2800001D8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.iranntv.com/images/logo.png",سیمای آزادی
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/nhk-world-hd-int.png",NHK World Full HD
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://simaytv.akamaized.net/hls/live/a162cb6c-3be1-4e57-87dc-a75a50b3b8d9/simayhls/index.m3u8
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
 #EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png",Fox 26 Houston
 #EXTVLCOPT:network-caching=2000
@@ -1250,6 +1268,27 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5432263ad98b4b53902d8210c5eaab49/007fc56c-5e78-48e2-b561-565bd90e734d_thumb_001_HD.jpg",بازتاب مراسم دفن علی خامنه‌ای در رسانه‌های آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/5432263ad98b4b53902d8210c5eaab49/hls/007fc56c-5e78-48e2-b561-565bd90e734d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6855368be36242f1a38ed20234489ab9/21269973-3394-4e7b-b1b9-a17576738a98_thumb_001_HD.jpg",صدور احکام اعدام برای معترضان؛ دستگاه قضایی جمهوری اسلامی، ابزار حذف مخالفان سیاسی
+https://daq1pvcuhj77l.cloudfront.net/1/6855368be36242f1a38ed20234489ab9/hls/21269973-3394-4e7b-b1b9-a17576738a98.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91116f452d4d479eb89abe064ab97cbe/652bb32e-7752-4bfa-9eda-7ffa2b465bb2_thumb_001_HD.jpg",پیام غیبت رهبران جهان در مراسم دفن علی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/91116f452d4d479eb89abe064ab97cbe/hls/652bb32e-7752-4bfa-9eda-7ffa2b465bb2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0c37ec3b29fb4271ad7208b2a94b0941/9b395bce-def6-4843-b05a-1078649f58f4_thumb_001_HD.jpg",اهمیت و پیامدهای حذف دیکتاتور ایران و همراهانش
+https://daq1pvcuhj77l.cloudfront.net/1/0c37ec3b29fb4271ad7208b2a94b0941/hls/9b395bce-def6-4843-b05a-1078649f58f4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4dfc58f3317d4620ba0b1118b1bee181/56bd44f1-3499-4b8a-a7f1-9a672df3697d_thumb_001_HD.jpg",محکومیت عاملان حمله به پوریا زراعتی در بریتانیا
+https://daq1pvcuhj77l.cloudfront.net/1/4dfc58f3317d4620ba0b1118b1bee181/hls/56bd44f1-3499-4b8a-a7f1-9a672df3697d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bc59e8594c9e424db0a61f00742244ac/abcf7a9c-4884-44c2-b6db-5ff6cdb369e7_thumb_001_HD.jpg",میراث سیاسی علی خامنه‌ای؛ جنگ، کشتار و ویرانی
+https://daq1pvcuhj77l.cloudfront.net/1/bc59e8594c9e424db0a61f00742244ac/hls/abcf7a9c-4884-44c2-b6db-5ff6cdb369e7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5696acc5360a47f6a438e72492116cb1/ae7c141e-3f1d-499e-a42a-18c3176007a5_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: پایان یک دیکتاتور و آغاز نبرد بر سر آینده در جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/5696acc5360a47f6a438e72492116cb1/hls/ae7c141e-3f1d-499e-a42a-18c3176007a5.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c7a6ade80e1f4103b54eba605965cc2b/8863f398-fd35-4f80-98f2-45c770ec44cf_thumb_001_HD.jpg",وضعیت شکننده جمهوری اسلامی و آینده سیاسی بنیامین نتانیاهو
 https://daq1pvcuhj77l.cloudfront.net/1/c7a6ade80e1f4103b54eba605965cc2b/hls/8863f398-fd35-4f80-98f2-45c770ec44cf.m3u8
@@ -2729,27 +2768,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/d4db9c3d6ad4461bb6c88c273df25a19/hls/c323
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/03cd3b0ba1db41668673955d8f5c1b5f/79cd4a80-3318-42ef-a432-649278898455_thumb_001_HD.jpg",نادرازبوشهر:خیلی‌ها «برنامه» می‌دیدند؛ساچمه خوردند بینایی‌شان از دست رفت؛حالا فقط می‌شنوند
 https://daq1pvcuhj77l.cloudfront.net/1/03cd3b0ba1db41668673955d8f5c1b5f/hls/79cd4a80-3318-42ef-a432-649278898455.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5c66e50ec8be4e098b06e4934b7a87dc/b6fc31d1-6dea-4a2a-916f-ac86ec08f93c_thumb_001_HD.jpg",خلدی: جمهوری اسلامی بیش از اسرائیل از توافق ابراهیم احساس خطر می‌کند
-https://daq1pvcuhj77l.cloudfront.net/1/5c66e50ec8be4e098b06e4934b7a87dc/hls/b6fc31d1-6dea-4a2a-916f-ac86ec08f93c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f0db64142fb045dd9652e699c277a0db/e26fa720-646c-4240-b41e-db1f3544d615_thumb_001_HD.jpg",ترامپ: جمهوری اسلامی چاره‌ای جز پذیرش خواسته‌های آمریکا ندارد
-https://daq1pvcuhj77l.cloudfront.net/1/f0db64142fb045dd9652e699c277a0db/hls/e26fa720-646c-4240-b41e-db1f3544d615.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/10e4829251d84d09919ded8f0cd0f540/d5cdd802-2ba5-45d1-89d2-c57d59e0065c_thumb_001_HD.jpg",سیاست با مراد ویسی: اما‌ن‌نامه آمریکایی برای مجتبی؟
-https://daq1pvcuhj77l.cloudfront.net/1/10e4829251d84d09919ded8f0cd0f540/hls/d5cdd802-2ba5-45d1-89d2-c57d59e0065c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8718391dc9fb4535a369b922defea91c/1744e266-55d5-4762-b5a9-04e72b77e4fa_thumb_001_HD.jpg",شاهد علوی: جمهوری اسلامی در جنگ پشت مردم پنهان شد
-https://daq1pvcuhj77l.cloudfront.net/1/8718391dc9fb4535a369b922defea91c/hls/1744e266-55d5-4762-b5a9-04e72b77e4fa.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/941f82f9fb2a496c822171853afbf031/dc7baa6f-e430-42bf-9a6b-2cf69ce7848b_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: نتانیاهو: برای حمله به ایران، اجازه آمریکا لازم نیست 
-https://daq1pvcuhj77l.cloudfront.net/1/941f82f9fb2a496c822171853afbf031/hls/dc7baa6f-e430-42bf-9a6b-2cf69ce7848b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c06a24017b87456683c18c0055206645/670f81c3-4c57-490b-b08d-11a3ca781ad4_thumb_001_HD.jpg",نورمن رول: بعید است جمهوری اسلامی با حضور بازرسان آمریکایی در خاک ایران موافقت کند
-https://daq1pvcuhj77l.cloudfront.net/1/c06a24017b87456683c18c0055206645/hls/670f81c3-4c57-490b-b08d-11a3ca781ad4.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6309705af3b64eabad637f3a42114e11/332e2382-e953-48ce-9257-49708f054543_thumb_001_HD.jpg",چشم‌انداز: رهبر حکومت را دادند، سویا و ذرت آمریکایی گرفتند!
-https://daq1pvcuhj77l.cloudfront.net/1/6309705af3b64eabad637f3a42114e11/hls/332e2382-e953-48ce-9257-49708f054543.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cxu7m7bdccns4n8a/bez1ct2846j1y20p.jpg",Why Singles Are Running to Run Clubs for Hookups and Sex
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46922626883_46922627013/46922627013/hf-uuid-8b2d421a-fca8-4031-a261-78baeb47a734/46922627013_lowres.mp4
