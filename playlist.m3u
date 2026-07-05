@@ -954,6 +954,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1260,6 +1269,21 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9d117ac2dfda44c0873e1d54bddfee7f/885fc2e5-d9c5-4f2e-8804-091dfa7ba164_thumb_001_HD.jpg",غیبت مجتبی خامنه‌ای در مراسم دفن علی خامنه‌ای و شکاف در ساختار قدرت جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/9d117ac2dfda44c0873e1d54bddfee7f/hls/885fc2e5-d9c5-4f2e-8804-091dfa7ba164.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b81b4a7e58d74d4582f8f6e783518150/acd02a01-f43c-47e4-9350-10c24832d89d_thumb_001_HD.jpg",پیام هشدار آمیز ترامپ به مقام‌های جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/b81b4a7e58d74d4582f8f6e783518150/hls/acd02a01-f43c-47e4-9350-10c24832d89d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bc8cb332b9874c929b1fce74b4740663/da9ea0f2-dcc9-42f7-90af-2a7da9d3ead8_thumb_001_HD.jpg",سیاست با مراد ویسی: میراث شوم خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/bc8cb332b9874c929b1fce74b4740663/hls/da9ea0f2-dcc9-42f7-90af-2a7da9d3ead8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b2c8815bbc9c4014ac6532d70aff3781/4f3d8f26-0cb6-43f6-a37d-f18f1135faeb_thumb_001_HD.jpg",تغییر در روند انتصاب فرماندهان سپاه پس از کشته‌شدن علی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/b2c8815bbc9c4014ac6532d70aff3781/hls/4f3d8f26-0cb6-43f6-a37d-f18f1135faeb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ece8f9a54fab47e68aab6aa5bcd367cf/81311454-c5e0-4929-9323-03ceab44856a_thumb_001_HD.jpg",چالش جمهوری اسلامی میان مذاکره و انتقام
+https://daq1pvcuhj77l.cloudfront.net/1/ece8f9a54fab47e68aab6aa5bcd367cf/hls/81311454-c5e0-4929-9323-03ceab44856a.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ac26035ec8b7485f9c1da55f518eff38/9f33a499-3c09-4a8b-9f6d-661b0137dc8e_thumb_001_HD.jpg",جشن دویست‌وپنجاهمین سالگرد استقلال ایالات متحده
 https://daq1pvcuhj77l.cloudfront.net/1/ac26035ec8b7485f9c1da55f518eff38/hls/9f33a499-3c09-4a8b-9f6d-661b0137dc8e.m3u8
 
@@ -1268,6 +1292,9 @@ https://daq1pvcuhj77l.cloudfront.net/1/0c225742365f46749200070fc22bab6d/hls/09c4
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/282010fe08fc47dc83576328129cc866/8cc5db1a-d9d9-4b8f-b161-a24a88f0a150_thumb_001_HD.jpg",تجمع ایرانیان مقابل سفارت آمریکا در پایتخت کانادا در حمایت از مردم ایران
 https://daq1pvcuhj77l.cloudfront.net/1/282010fe08fc47dc83576328129cc866/hls/8cc5db1a-d9d9-4b8f-b161-a24a88f0a150.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/704ba290b8384f4ab32f69251e1b5d92/36cccc49-f244-4301-aa76-3cc0995dd3de_thumb_001_HD.jpg",دفن خامنه‌ای یا مقدمه‌ای بر دفن جمهوری اسلامی؟!
+https://daq1pvcuhj77l.cloudfront.net/1/704ba290b8384f4ab32f69251e1b5d92/hls/36cccc49-f244-4301-aa76-3cc0995dd3de.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d1bf0f1cc34541f592703e3df74ebf96/c6f87b60-1ebc-4413-9364-a2e0b6a76788_thumb_001_HD.jpg",چشم‌انداز: دفن خامنه‌ای یا مقدمه‌ای بر دفن جمهوری اسلامی؟!
 https://daq1pvcuhj77l.cloudfront.net/1/d1bf0f1cc34541f592703e3df74ebf96/hls/c6f87b60-1ebc-4413-9364-a2e0b6a76788.m3u8
@@ -2742,24 +2769,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/62a30343875d418aa6ff2631472f9cf9/hls/bbbd
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a652a20fac4849e5b5b093a0507e5e1e/ef0ee1fc-cb8a-480e-9438-b2a8c8bd174f_thumb_001_HD.jpg",رویا برومند: شکنجه بخشی از سازوکار حکمرانی جمهوری اسلامی است
 https://daq1pvcuhj77l.cloudfront.net/1/a652a20fac4849e5b5b093a0507e5e1e/hls/ef0ee1fc-cb8a-480e-9438-b2a8c8bd174f.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a083f75126724e5eb1df65dcbddbd686/98bc9160-080d-4dd3-902a-c275d6f32ea6_thumb_001_HD.jpg",برزگر: تداوم مشوق‌های اقتصادی به رفتار جمهوری اسلامی بستگی دارد
-https://daq1pvcuhj77l.cloudfront.net/1/a083f75126724e5eb1df65dcbddbd686/hls/98bc9160-080d-4dd3-902a-c275d6f32ea6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53cf7f5e7c1d4c84a3847bee6406635e/bd6c7c68-eaed-4193-be49-0d5e412fc5b3_thumb_001_HD.jpg",سناتور جمهوری‌خواه: دادن پول نقد به ایران صرف کشتن آمریکایی‌ها می‌شود
-https://daq1pvcuhj77l.cloudfront.net/1/53cf7f5e7c1d4c84a3847bee6406635e/hls/bd6c7c68-eaed-4193-be49-0d5e412fc5b3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5a57d29ac9fd4abf8c72fe6e743f38f5/047694fa-dd27-495c-a967-c9ce6c8630f1_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/5a57d29ac9fd4abf8c72fe6e743f38f5/hls/047694fa-dd27-495c-a967-c9ce6c8630f1.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7b00c6a7c0e54e2eac94dbad0f943404/50c38d09-d67f-4c6b-8025-ba953b861ed2_thumb_001_HD.jpg",اندیشکده صوفان: جمهوری اسلامی به تقویت نیروهای نیابتی ادامه می‌دهد
-https://daq1pvcuhj77l.cloudfront.net/1/7b00c6a7c0e54e2eac94dbad0f943404/hls/50c38d09-d67f-4c6b-8025-ba953b861ed2.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2fa623e718cd4d6fb5a2b7f995e87c6d/df76c819-2210-497c-84b9-143005e5e035_thumb_001_HD.jpg",سنای آمریکا قطعنامه محدودیت اختیارات جنگی ترامپ را رد کرد
-https://daq1pvcuhj77l.cloudfront.net/1/2fa623e718cd4d6fb5a2b7f995e87c6d/hls/df76c819-2210-497c-84b9-143005e5e035.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f6559143b5064ceb9f4227fc4891125a/08ed0afb-e82e-4ae9-acf4-3a5259daeb44_thumb_001_HD.jpg",ونس: تهران و واشینگتن بر سر ایجاد کانال مستقیم نظامی به توافق اولیه رسیدند
-https://daq1pvcuhj77l.cloudfront.net/1/f6559143b5064ceb9f4227fc4891125a/hls/08ed0afb-e82e-4ae9-acf4-3a5259daeb44.m3u8
-
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ly15qhz6018jzz75/ow56a3p860jkyg8v.jpg",Houston weather: Hot Fourth of July on tap in Houston
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46942210619_46942210866/46942210866/hf-uuid-813e89cf-0596-4bf3-86c8-5edc96847289/46942210866_lowres.mp4
 
@@ -4226,24 +4235,6 @@ https://5acf9f9415a10.streamlock.net/live_transcoder/ngrp:mohabat.stream_all/pla
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Jh5ADee.png" tvg-id="RasoulallahTv.ir@HD",RasoulallahTv (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/BT7EtfB.png" tvg-id="WiseHumanTv.ir@HD",WiseHumanTv (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://avr.host247.net/live/WiseHumanTv/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/aeS4Sjv.png" tvg-id="ICnet1.ca@SD",icnet 1
 #EXTVLCOPT:network-caching=2000
