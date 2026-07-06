@@ -954,15 +954,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1268,6 +1259,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/05eef98ccfc34cb0b585b2f122aaf1e2/aaf7085a-b875-49fb-884b-bea10a27d47d_thumb_001_HD.jpg",تجمع ایرانیان لس‌آنجلس در مخالفت با مذاکره با جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/05eef98ccfc34cb0b585b2f122aaf1e2/hls/aaf7085a-b875-49fb-884b-bea10a27d47d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/18a05c4f402d466692b66cdda922bd8a/164c88f9-5075-451c-9ed8-e102a7865773_thumb_001_HD.jpg",ابقای محسنی اژه‌ای در قوه قضاییه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/18a05c4f402d466692b66cdda922bd8a/hls/164c88f9-5075-451c-9ed8-e102a7865773.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/404f969d189c4eb3ab8d81cad9cb614e/4fee6a0b-5099-414f-90e5-fce2ce8dc895_thumb_001_HD.jpg",ادامه نگرانی‌ها درباره امنیت تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/404f969d189c4eb3ab8d81cad9cb614e/hls/4fee6a0b-5099-414f-90e5-fce2ce8dc895.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/20a50f1043944e5885881e0967c7c259/26bc836a-7101-4ab3-9c8f-fef508955d93_thumb_001_HD.jpg", سیاست با مراد ویسی: مجتبی؛ زنده یا مرده؟ شبهه قوی‌تر شد
+https://daq1pvcuhj77l.cloudfront.net/1/20a50f1043944e5885881e0967c7c259/hls/26bc836a-7101-4ab3-9c8f-fef508955d93.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/45dc7ede70744f4fac4b6a07d9275d89/a5fb64e1-759c-46a6-a4dd-2eb35f729792_thumb_001_HD.jpg",رشد صادرات صنایع دفاعی و هوافضای ترکیه
+https://daq1pvcuhj77l.cloudfront.net/1/45dc7ede70744f4fac4b6a07d9275d89/hls/a5fb64e1-759c-46a6-a4dd-2eb35f729792.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/67ffc198f5ee45259c750a4f461c10a1/93c8c52d-1e0c-4e76-bd15-e418a3326420_thumb_001_HD.jpg",دیپلماسی و گزینه نظامی، دو راهبرد همزمان اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/67ffc198f5ee45259c750a4f461c10a1/hls/93c8c52d-1e0c-4e76-bd15-e418a3326420.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7c35bb1552c1449885512fd55ad7b81d/9a6c1e5f-3018-43a4-a3aa-771190b98a8d_thumb_001_HD.jpg",گروگان‌گیری ژئوپلیتیکی سپاه پاسداران در تنگه هرمز 
+https://daq1pvcuhj77l.cloudfront.net/1/7c35bb1552c1449885512fd55ad7b81d/hls/9a6c1e5f-3018-43a4-a3aa-771190b98a8d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f7b257d32a7c4383b57c7dfb2266389e/3ad60804-53f4-45ea-b863-fd833ae237b4_thumb_001_HD.jpg",رویکرد اسرائیل در قبال رویکرد ترامپ در مذاکره با جمهوری اسلامی 
+https://daq1pvcuhj77l.cloudfront.net/1/f7b257d32a7c4383b57c7dfb2266389e/hls/3ad60804-53f4-45ea-b863-fd833ae237b4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1b2c93a411d94d2d912fc56f89f79efe/bb331441-0850-4649-a39c-d477dc5eb9a2_thumb_001_HD.jpg",خودداری مراجع تقلید مشهور از اقامه نماز میت خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/1b2c93a411d94d2d912fc56f89f79efe/hls/bb331441-0850-4649-a39c-d477dc5eb9a2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cdf8515d1cf842128cd18247a9b48d9f/18b393d5-24a0-4a07-ab38-be0dfe434f19_thumb_001_HD.jpg",چشم‌انداز: خودداری مراجع تقلید مشهور از اقامه نماز میت خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/cdf8515d1cf842128cd18247a9b48d9f/hls/18b393d5-24a0-4a07-ab38-be0dfe434f19.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dc31b5998bfd4cfd948f8d93f76c6e53/3a5b989e-3676-4b04-b6aa-281aadf8a963_thumb_001_HD.jpg",نتانیاهو اختلاف با ترامپ را رد کرد
 https://daq1pvcuhj77l.cloudfront.net/1/dc31b5998bfd4cfd948f8d93f76c6e53/hls/3a5b989e-3676-4b04-b6aa-281aadf8a963.m3u8
@@ -2739,36 +2760,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/6bc3b79c8917433c99dc37d6aef9e5e6/hls/9bf2
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/21f8d279b82c4ad2ae9e88ba4a7edcee/e9e0d5dd-f5f9-4131-b2ee-2d736f13f658_thumb_001_HD.jpg",بیژن کیان: جنگ زمانی تمام می‌شود که همه چیز به وضعیت عادی بازگردد
 https://daq1pvcuhj77l.cloudfront.net/1/21f8d279b82c4ad2ae9e88ba4a7edcee/hls/e9e0d5dd-f5f9-4131-b2ee-2d736f13f658.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6d6b16b223b841edb2d12c59202273e8/b97da237-fa1d-4607-8bb7-6662afbcf3ef_thumb_001_HD.jpg",سنتکام از حمله به مواضع جمهوری اسلامی در داخل خاک ایران خبر داد
-https://daq1pvcuhj77l.cloudfront.net/1/6d6b16b223b841edb2d12c59202273e8/hls/b97da237-fa1d-4607-8bb7-6662afbcf3ef.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f8951ee1a6514ddbaf74cf01e4de48da/c80e3a7e-1ab2-4322-abdb-1f56ac54f188_thumb_001_HD.jpg",جاودانفر: جنگ در لبنان تنها با انزوای کامل حزب‌الله پایان می‌یابد
-https://daq1pvcuhj77l.cloudfront.net/1/f8951ee1a6514ddbaf74cf01e4de48da/hls/c80e3a7e-1ab2-4322-abdb-1f56ac54f188.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/833d7497dea74845b172d98179f039b9/6f02201f-2dd2-41cc-98a0-5b05b5c24f27_thumb_001_HD.jpg",حمله سپاه به کشتی باری تنش‌ها در تنگه هرمز را تشدید کرد
-https://daq1pvcuhj77l.cloudfront.net/1/833d7497dea74845b172d98179f039b9/hls/6f02201f-2dd2-41cc-98a0-5b05b5c24f27.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f9e5a99fc1c345fdae8adfb2f6e58aeb/b1a7f0cb-bded-456c-ab10-b49826dd7e1d_thumb_001_HD.jpg",افزایش تنش‌های داخلی در جمهوری اسلامی درباره تفاهم‌نامه با آمریکا
-https://daq1pvcuhj77l.cloudfront.net/1/f9e5a99fc1c345fdae8adfb2f6e58aeb/hls/b1a7f0cb-bded-456c-ab10-b49826dd7e1d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c9dab81a00ec4648a7797d644e3c8f54/9857d62a-7236-44c8-8f11-05eab67e01c6_thumb_001_HD.jpg",تنش بر سر تنگه هرمز پس از حمله به کشتی باری وارد مرحله تازه‌ای شد
-https://daq1pvcuhj77l.cloudfront.net/1/c9dab81a00ec4648a7797d644e3c8f54/hls/9857d62a-7236-44c8-8f11-05eab67e01c6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d61c44401b17418987106cf8afb2df21/0aa7d101-cf50-4766-8376-807f4af3181b_thumb_001_HD.jpg",فرشته پزشک: جمهوری اسلامی در پی کسب حداکثر امتیاز پیش از انتخابات نوامبر آمریکا است
-https://daq1pvcuhj77l.cloudfront.net/1/d61c44401b17418987106cf8afb2df21/hls/0aa7d101-cf50-4766-8376-807f4af3181b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d56f7627dd18401789b2918a6579c264/523cc151-3f19-4118-a160-e32d50fec7c4_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: تهران آتش‌بس را احمقانه نقض کرده
-https://daq1pvcuhj77l.cloudfront.net/1/d56f7627dd18401789b2918a6579c264/hls/523cc151-3f19-4118-a160-e32d50fec7c4.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5b483395c16346a3a60a4cbcc9ee08fe/7c2a473b-0796-437e-8987-59bbc346ba79_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/5b483395c16346a3a60a4cbcc9ee08fe/hls/7c2a473b-0796-437e-8987-59bbc346ba79.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9c5a6bd9bdf94a70a365b361329d8297/cb43d3ef-e564-4eb5-93a0-698f6eb896e9_thumb_001_HD.jpg",حرف آخر با پوریا زراعتی - کدام سردارها رو قالیباف با پول خریده؟
-https://daq1pvcuhj77l.cloudfront.net/1/9c5a6bd9bdf94a70a365b361329d8297/hls/cb43d3ef-e564-4eb5-93a0-698f6eb896e9.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/145423d2d531409394dfe569eb47942c/256abb69-d32c-4955-abb4-56172ca06971_thumb_001_HD.jpg",روایت شهروندان از تاسوعا و عاشورا در سایه یاد جان‌باختگان دی‌ماه
-https://daq1pvcuhj77l.cloudfront.net/1/145423d2d531409394dfe569eb47942c/hls/256abb69-d32c-4955-abb4-56172ca06971.m3u8
-
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/959cyei3au5c8p7f/ti2nu43zntyfn11w.jpg",FULL VIDEO: Freedom Over Texas 2026
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46963969884_46963970177/46963970177/hf-uuid-75447e40-3242-4110-9046-539745a1f4e3/46963970177_lowres.mp4
 
@@ -3965,6 +3956,15 @@ https://hls.247box.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.oxir.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/X38vWJ1.png" tvg-id="YourTimeTV.ir@SD",YourTime TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.yourtime.tv/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-id="FX1.ir@SD",FX TV 1
 #EXTVLCOPT:network-caching=2000
