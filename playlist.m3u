@@ -954,6 +954,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1259,6 +1268,9 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e742e3999778488fb2cf4f109d16a555/42f7b749-d2c2-4b65-bb9d-db3472ec01cb_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۱۶ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/e742e3999778488fb2cf4f109d16a555/hls/42f7b749-d2c2-4b65-bb9d-db3472ec01cb.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ec955cffb66949c4b1055207509aaf6e/47d448af-7e32-49d8-b9f1-95712100367e_thumb_001_HD.jpg",حامد از تهران: دلمان را خوش نکنیم که مجتبی نیست؛ فرض کنیم هست و ببینیم چه کار باید بکنیم
 https://daq1pvcuhj77l.cloudfront.net/1/ec955cffb66949c4b1055207509aaf6e/hls/47d448af-7e32-49d8-b9f1-95712100367e.m3u8
@@ -2757,9 +2769,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/37cca83c7a264127a2c830ad8f79566d/hls/6b59
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3eacdc67930a43a082a2ad8d109dd6fa/a97bbeeb-3adf-44ac-9b1e-e5cb70990ec0_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۷ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/3eacdc67930a43a082a2ad8d109dd6fa/hls/a97bbeeb-3adf-44ac-9b1e-e5cb70990ec0.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/18c094f8983e487bb1aaeca474309ad5/6811566f-66cf-4e25-b073-da594e414dc2_thumb_002_HD.jpg",ناکامی تیم فوتبال ایران از صعود به مرحله یک شانزدهم جام جهانی
-https://daq1pvcuhj77l.cloudfront.net/1/18c094f8983e487bb1aaeca474309ad5/hls/6811566f-66cf-4e25-b073-da594e414dc2.m3u8
-
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/7huxsk3dpxwuxlvj/yw2iysast5ekkor2.jpg",Houston weather: July 5 overnight forecast
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46984356850_46984357007/46984357007/hf-uuid-67b34938-14a6-4df8-a3a3-656eb3f4f6bc/46984357007_lowres.mp4
 
@@ -3965,15 +3974,6 @@ https://hls.oxir.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="FX1.ir@SD",FX TV 1
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://fxtvhls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-id="FX2.ir@SD",FX TV 2
 #EXTVLCOPT:network-caching=2000
