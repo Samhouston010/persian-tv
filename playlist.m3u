@@ -954,15 +954,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1268,6 +1259,12 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a1a0a3e1d06640c28b2e0d00cad224ef/924c9aab-eac9-4e82-865a-fcc9b6cddd68_thumb_001_HD.jpg",سنتکام از حمله تلافی‌جویانه به بیش از ۸۰ هدف جمهوری اسلامی در تنگه هرمز خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/a1a0a3e1d06640c28b2e0d00cad224ef/hls/924c9aab-eac9-4e82-865a-fcc9b6cddd68.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f44636cf172641b7a4bcc407b92b5418/13ed493b-36af-4ece-a1bc-fd6bfd4d5009_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۱۷ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/f44636cf172641b7a4bcc407b92b5418/hls/13ed493b-36af-4ece-a1bc-fd6bfd4d5009.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7386728e55de4a89990efe678c80c963/e03a68c3-f245-4b45-a478-0644a8a2c5ab_thumb_001_HD.jpg",گران‌ترین تشییع جنازه تاریخ ایران؟
 https://daq1pvcuhj77l.cloudfront.net/1/7386728e55de4a89990efe678c80c963/hls/e03a68c3-f245-4b45-a478-0644a8a2c5ab.m3u8
@@ -2762,12 +2759,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/e1b4bff1f63f4ebc90df1e437300981c/hls/4914
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/372abcfb51bc4d959ada4bcfacc1aca7/c6e301ce-1f28-4a02-854c-80fd9fe489d3_thumb_001_HD.jpg",روایت‌ها از هزینه‌های اختلال بانک‌ها در زندگی مردم
 https://daq1pvcuhj77l.cloudfront.net/1/372abcfb51bc4d959ada4bcfacc1aca7/hls/c6e301ce-1f28-4a02-854c-80fd9fe489d3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/57ae33de8d22448a9275ebff48911c55/52678e17-71ec-4393-ad89-684628897530_thumb_001_HD.jpg",اختلاف در مجلس خبرگان بر سر مذاکرات
-https://daq1pvcuhj77l.cloudfront.net/1/57ae33de8d22448a9275ebff48911c55/hls/52678e17-71ec-4393-ad89-684628897530.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a86d5acda8c4b8381313abfd1410f5c/3ddb3665-805c-423d-bd28-69c3b5f66031_thumb_001_HD.jpg",گزارش بلومبرگ درباره چالش اجرای تعلیق ۶۰ روزه تحریم‌های آمریکا
-https://daq1pvcuhj77l.cloudfront.net/1/4a86d5acda8c4b8381313abfd1410f5c/hls/3ddb3665-805c-423d-bd28-69c3b5f66031.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/8hr3tv4ok42rll16/6vt13eih6k70bbmq.jpg",Houston Attorney Arrested Over Alleged Abuse of Family Dog Captured on Home Security Video
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47007038946_47007039109/47007039109/hf-uuid-e2d81c2f-5f9d-42ac-bfa8-2d1fc01aed76/47007039109_lowres.mp4
