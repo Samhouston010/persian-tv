@@ -954,6 +954,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1260,6 +1269,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7386728e55de4a89990efe678c80c963/e03a68c3-f245-4b45-a478-0644a8a2c5ab_thumb_001_HD.jpg",گران‌ترین تشییع جنازه تاریخ ایران؟
+https://daq1pvcuhj77l.cloudfront.net/1/7386728e55de4a89990efe678c80c963/hls/e03a68c3-f245-4b45-a478-0644a8a2c5ab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bb143fedafd34b6bb39c8cd85e088fc6/cd9e4d34-23db-4c25-a25a-b4892abe5e1b_thumb_001_HD.jpg",دادگاه بریتانیا حمله به پوریا زراعتی را مرتبط با حکومت ایران دانست
+https://daq1pvcuhj77l.cloudfront.net/1/bb143fedafd34b6bb39c8cd85e088fc6/hls/cd9e4d34-23db-4c25-a25a-b4892abe5e1b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1a78368fa77e4810ba1a2029427c0819/ada885cb-82f2-4862-8c4b-5bc57ff9a572_thumb_001_HD.jpg",لغو مجوز فروش نفت ایران، پیامد نقض تفاهم با آمریکا است
+https://daq1pvcuhj77l.cloudfront.net/1/1a78368fa77e4810ba1a2029427c0819/hls/ada885cb-82f2-4862-8c4b-5bc57ff9a572.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7ac5a4b1b4e4456295d03ab7632ac15b/2ff8c4aa-ea56-4a3d-9728-15d854456a18_thumb_001_HD.jpg",تشدید تنش‌ها در تنگه هرمز؛ آمریکا تحریم‌های جمهوری اسلامی را سخت‌تر کرد
+https://daq1pvcuhj77l.cloudfront.net/1/7ac5a4b1b4e4456295d03ab7632ac15b/hls/2ff8c4aa-ea56-4a3d-9728-15d854456a18.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/561fa38be04f4db5a64a8ac3f1c8b092/2fb5166f-6cf4-43e9-95cb-e07243d922e6_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: بازگشت ناآرامی‌ها به منطقه با حملات سپاه به نفتکش‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/561fa38be04f4db5a64a8ac3f1c8b092/hls/2fb5166f-6cf4-43e9-95cb-e07243d922e6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2b3c9e436ab94ba39bd80fea58c4d9c0/0e540ac5-856b-4a80-a55d-6e6ac11deaeb_thumb_001_HD.jpg",جمهوری اسلامی به‌دنبال قرار دادن ترکیه در موقعیت انتخاب
+https://daq1pvcuhj77l.cloudfront.net/1/2b3c9e436ab94ba39bd80fea58c4d9c0/hls/0e540ac5-856b-4a80-a55d-6e6ac11deaeb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d379ffe2e8384743860a7f830179b6cb/611a7557-c8ed-46ab-a04b-301b4d5588db_thumb_001_HD.jpg",حملات لفظی به عراقچی و پزشکیان در مراسم تشییع خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/d379ffe2e8384743860a7f830179b6cb/hls/611a7557-c8ed-46ab-a04b-301b4d5588db.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/696b13615fa3484ea83f4073d352ed46/09d0df56-ad6f-4546-8338-e255652e5dd1_thumb_001_HD.jpg",چشم‌انداز: روح سرگردان علی خامنه‌ای بر فراز تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/696b13615fa3484ea83f4073d352ed46/hls/09d0df56-ad6f-4546-8338-e255652e5dd1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c5d43ba1544242249a355946d5b1306d/d22dca35-7d80-49b7-b28a-7e96bce20fc8_thumb_001_HD.jpg",مرگ خامنه‌ای؛ اهمیت و پیامدهای حذف دیکتاتور ایران | قسمت اول
+https://daq1pvcuhj77l.cloudfront.net/1/c5d43ba1544242249a355946d5b1306d/hls/d22dca35-7d80-49b7-b28a-7e96bce20fc8.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8847f6800e0e447f9ee91fe6273c1783/83763e99-7f3f-4ab2-a1a0-7ea498493dc6_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
 https://daq1pvcuhj77l.cloudfront.net/1/8847f6800e0e447f9ee91fe6273c1783/hls/83763e99-7f3f-4ab2-a1a0-7ea498493dc6.m3u8
 
@@ -1269,7 +1305,7 @@ https://daq1pvcuhj77l.cloudfront.net/1/56a32c6705e44288a144094c0a790ae4/hls/4e26
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d4fb283085a94a1a9ce12aecd71818df/8a1cd37e-c4a8-47c6-a71e-8ef8fda2e741_thumb_001_HD.jpg",حمله جمهوری اسلامی به نفتکش قطری پیام تهران برای نمایش کنترل تنگه هرمز است
 https://daq1pvcuhj77l.cloudfront.net/1/d4fb283085a94a1a9ce12aecd71818df/hls/8a1cd37e-c4a8-47c6-a71e-8ef8fda2e741.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/670ac6ce99f7438e97825b6ea9485bd1/a35072d1-2d9e-4d9e-87c6-121595bc370e_thumb_001_HD.jpg",مرگ خامنه‌ای و پایان دیکتاتور؛ اهمیت و پیامدهای حذف دیکتاتور ایران
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/670ac6ce99f7438e97825b6ea9485bd1/a35072d1-2d9e-4d9e-87c6-121595bc370e_thumb_001_HD.jpg",مرگ خامنه‌ای؛ اهمیت و پیامدهای حذف دیکتاتور ایران | قسمت سوم
 https://daq1pvcuhj77l.cloudfront.net/1/670ac6ce99f7438e97825b6ea9485bd1/hls/a35072d1-2d9e-4d9e-87c6-121595bc370e.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/35e2ed242e23481990151bbc29e83473/de0ff8ac-94db-47eb-92e8-a88a00600c31_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، سه‌شنبه ۱۶ تیر
@@ -2733,33 +2769,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/57ae33de8d22448a9275ebff48911c55/hls/5267
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a86d5acda8c4b8381313abfd1410f5c/3ddb3665-805c-423d-bd28-69c3b5f66031_thumb_001_HD.jpg",گزارش بلومبرگ درباره چالش اجرای تعلیق ۶۰ روزه تحریم‌های آمریکا
 https://daq1pvcuhj77l.cloudfront.net/1/4a86d5acda8c4b8381313abfd1410f5c/hls/3ddb3665-805c-423d-bd28-69c3b5f66031.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5296ceec049c49aebd138deb9e75dcea/748beaf3-a232-4e92-8d5c-b66f021c1f11_thumb_001_HD.jpg", سپاه پاسداران در حال مصادره کلیسای پطرس مقدس تهران است
-https://daq1pvcuhj77l.cloudfront.net/1/5296ceec049c49aebd138deb9e75dcea/hls/748beaf3-a232-4e92-8d5c-b66f021c1f11.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0fddf6918fd448d9b031f07833582b07/94ce77c8-a417-4f8a-b42f-c64dde5d5ba0_thumb_001_HD.jpg",گزارشی تحلیلی از پیامدهای اقتصادی تنش‌ها در تنگه هرمز
-https://daq1pvcuhj77l.cloudfront.net/1/0fddf6918fd448d9b031f07833582b07/hls/94ce77c8-a417-4f8a-b42f-c64dde5d5ba0.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0aa6a054b66e4f1cb2f665cb589823a6/85c5fee5-b245-4a28-b5df-fddcfaa5e51a_thumb_001_HD.jpg",کانادا با شکست آفریقای جنوبی به یک‌هشتم نهایی جام جهانی ۲۰۲۶ صعود کرد
-https://daq1pvcuhj77l.cloudfront.net/1/0aa6a054b66e4f1cb2f665cb589823a6/hls/85c5fee5-b245-4a28-b5df-fddcfaa5e51a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/48179ea8feec42548a761851b63775d8/f8e7e678-e5db-4d7e-b1fa-87c5f4662dd3_thumb_001_HD.jpg",تشدید حملات میان مسکو و کی‌یف
-https://daq1pvcuhj77l.cloudfront.net/1/48179ea8feec42548a761851b63775d8/hls/f8e7e678-e5db-4d7e-b1fa-87c5f4662dd3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/02ca70d90c464f51a4b5cf4e0c97372a/41aab0ba-30b6-4d5e-94e6-c6080ce972bf_thumb_001_HD.jpg",واکنش مقامات اسرائیلی به توافق با لبنان
-https://daq1pvcuhj77l.cloudfront.net/1/02ca70d90c464f51a4b5cf4e0c97372a/hls/41aab0ba-30b6-4d5e-94e6-c6080ce972bf.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d831ac0b781349ba9fffab09c41c811c/5520984e-32bb-4bbf-87fc-43c32e6735b7_thumb_001_HD.jpg", اخبار بامدادی | دوشنبه ۸ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/d831ac0b781349ba9fffab09c41c811c/hls/5520984e-32bb-4bbf-87fc-43c32e6735b7.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d09ffad4d3f64177b3e747406180aeb9/9734d9e1-aff9-4e2a-920e-1e3fb48a35e7_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۸ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/d09ffad4d3f64177b3e747406180aeb9/hls/9734d9e1-aff9-4e2a-920e-1e3fb48a35e7.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d4cc99d2cde84ef2b562512b5baf3606/6120a567-a8ed-4cee-829f-e64933a529c1_thumb_001_HD.jpg",تشدید بحران معیشتی و نارضایتی‌های اجتماعی، تهدیدی جدی برای جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/d4cc99d2cde84ef2b562512b5baf3606/hls/6120a567-a8ed-4cee-829f-e64933a529c1.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0f797ffd7d9f4fadae89a0632c35324c/2c2b855d-bf62-470a-8fbe-dd961a59f715_thumb_001_HD.jpg",پیام منتسب به مجتبی خامنه‌ای و نقش قوه قضاییه در ساختار آینده جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/0f797ffd7d9f4fadae89a0632c35324c/hls/2c2b855d-bf62-470a-8fbe-dd961a59f715.m3u8
-
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/8hr3tv4ok42rll16/6vt13eih6k70bbmq.jpg",Houston Attorney Arrested Over Alleged Abuse of Family Dog Captured on Home Security Video
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47007038946_47007039109/47007039109/hf-uuid-e2d81c2f-5f9d-42ac-bfa8-2d1fc01aed76/47007039109_lowres.mp4
 
@@ -3921,6 +3930,24 @@ https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://185.9.2.18/chid_926/index.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/7oGGgfD.png" tvg-id="KanalJadid.uk@SD",Kanal Jadid
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://kjhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/RQ5DzEE.png" tvg-id="ParsTV.us@SD",Pars TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://parshls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/t5AUthL.png" tvg-id="247BoxTV.ir@SD",247 Box TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3947,6 +3974,60 @@ https://hls.oxir.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="FX1.ir@SD",FX TV 1
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://fxtvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="FX2.ir@SD",FX TV 2
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://toonixhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/CeMf68L.png" tvg-id="OmideIranTV.us@SD",Omide Iran
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://oitnhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/oHmh5Jb.png" tvg-id="Shabakeh7.us@SD",Shabakeh 7
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sh7hls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/U4sKHWy.png" tvg-id="TVITN.ir@SD",TV ITN
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://itnhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8AfAfZE.png" tvg-id="AVASeries.ir@SD",AVA Series
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://avaserieshls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png" tvg-id="iFilm2.ir@SD",iFilm 2
 #EXTVLCOPT:network-caching=2000
@@ -3984,6 +4065,87 @@ https://live.presstv.ir/hls/ifilmen.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.presstv.ir/hls/ifilmfa.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-id="AfraFilm.ir@SD",Afra Film
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://afrafhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="CafeFilm.ir@SD",Cafe Film
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cafefhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="GoldStar.ir@SD",Gold Star
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://moviethls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="GrandCinema.tr@SD",Grand Cinema
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://gcinemahls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="HomePlus.ir@SD",Home Plus
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://homeplushls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://icchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="MetaFilmTV.ir@SD",Meta Film TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://metafilmhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/n9cuM2W.jpg" tvg-id="SL1.ir@SD",SL 1
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://slonehls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/BVuUx5R.jpg" tvg-id="SL2.ir@SD",SL 2
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sltwohls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-id="AVAFamily.ir@SD",AVA Family
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -4001,6 +4163,33 @@ https://familyhls.avatv.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/AbrHI7K.png" tvg-id="PMC.ae@SD",PMC
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="PMCRoyale.ae@SD",PMC Royale (1080p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmcrohls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Wu8MBb7.png" tvg-id="T2TV.ir@SD",T2 TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://t2hls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/OI1HQv5.png" tvg-id="AlWilayah.ir@SD",Al Wilayah (720p)
 #EXTVLCOPT:network-caching=2000
@@ -4047,14 +4236,77 @@ https://5acf9f9415a10.streamlock.net/live_transcoder/ngrp:mohabat.stream_all/pla
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Jh5ADee.png" tvg-id="RasoulallahTv.ir@HD",RasoulallahTv (1080p)
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/aeS4Sjv.png" tvg-id="ICnet1.ca@SD",icnet 1
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
+https://icnet1hls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Ke5xn4E.png" tvg-id="ICnet2.ca@SD",icnet 2
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://icnet2hls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="icnet3.ca@SD",icnet 3
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ic3hls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/RsKKULI.png" tvg-id="KalemehTV.uk@HD",Kalemeh TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://klmhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/tucTC1O.jpg" tvg-id="MohabatTV.us@HD",Mohabat TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mohabathls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/VTLQeul.png" tvg-id="Sat7Pars.cy@SD",Sat7 Pars
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sat7phls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/D6KBLB8.png" tvg-id="KomalaTV.se@SD",Komala TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://komhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/GW4cMfc/cafe-trade-tv.png" tvg-id="CafeTradeTV.ir@SD",Cafe Trade TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cafetradehls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/gROQqFD.png" tvg-id="AsilTV.ir@SD",Asil TV (576p)
 #EXTVLCOPT:network-caching=2000
@@ -4073,3 +4325,102 @@ https://live.asil.tv/asiltv/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.nejat.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="AraxTV.ir@SD",Arax TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://araxhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="ArkoTV.ir@SD",Arko TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://arkhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="ArvanTV.ir@SD",Arvan TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://arvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="ClassicTV.ir@SD",Classic TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://clshls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="DatisTV.ir@SD",Datis TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://dathls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="DejTV.ir@HD",Dej TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://rdejhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="KhabarbinTV.ir@HD",Khabarbin TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://khbhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/xPwzad9.png" tvg-id="KurdChannel.iq@SD",Kurd Channel
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://kurdchhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/JxoAR4j.png" tvg-id="MTC.us@SD",MTC TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mtchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="SetarehTV.uk@HD",Setareh TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://setarehhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-id="ZedTV.ir@HD",Zed TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://zedhls.wns.live/hls/stream.m3u8
