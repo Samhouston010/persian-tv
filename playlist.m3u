@@ -954,6 +954,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1123,7 +1132,7 @@ https://video.tegnaone.com/khou/live/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://pubads.g.doubleclick.net/ssai/event/jrCe7yCMSPyxU9j2E076Zw/master.m3u8
+https://pubads.g.doubleclick.net/ssai/event/fHGDg20mSc6bGCLEOniS5w/master.m3u8
 
 #EXTINF:-1 group-title="🏙 هیوستن" tvg-logo="https://www.houstontx.gov/htv/images/HTV-logo.png",HTV 1 Houston
 #EXTVLCOPT:network-caching=2000
@@ -1259,6 +1268,24 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dfb82b158cc94e71b1d37b9623d73b65/b09137e7-d516-4bc9-8ac3-8389c9324631_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: هشدار ترامپ برای تمام کردن کار جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/dfb82b158cc94e71b1d37b9623d73b65/hls/b09137e7-d516-4bc9-8ac3-8389c9324631.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/82ea7812c9264f2cbe6634e786cf1a6f/accbb314-4173-400b-abb9-7be8d83103ed_thumb_001_HD.jpg",تغییر لحن دونالد ترامپ با هدف افزایش فشار بر جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/82ea7812c9264f2cbe6634e786cf1a6f/hls/accbb314-4173-400b-abb9-7be8d83103ed.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e261644148da4841af627ba7fb6fad65/6736bd2c-9268-4fee-8d39-8ac465678e87_thumb_001_HD.jpg",واکنش کشورهای غربی به حملات تازه آمریکا علیه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/e261644148da4841af627ba7fb6fad65/hls/6736bd2c-9268-4fee-8d39-8ac465678e87.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4be3d65f4b304d45b7175a08d27cb310/22090260-1fc4-4d5b-bb3f-58727cee76b4_thumb_001_HD.jpg",پایان آتش‌بس ایران و آمریکا، شمارش معکوس برای جنگ سوم؟
+https://daq1pvcuhj77l.cloudfront.net/1/4be3d65f4b304d45b7175a08d27cb310/hls/22090260-1fc4-4d5b-bb3f-58727cee76b4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bd5dea6df2124ae587725e7e1d43246b/2050aab7-e3e7-444b-9b7e-f4e8bac6d59c_thumb_001_HD.jpg",پایان آتش‌بس ایران و آمریکا، شمارش معکوس برای جنگ سوم؟
+https://daq1pvcuhj77l.cloudfront.net/1/bd5dea6df2124ae587725e7e1d43246b/hls/2050aab7-e3e7-444b-9b7e-f4e8bac6d59c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1edbdb7de02b40f183ce27284be12b63/cb5dd60c-e284-447f-a56c-f06a31ad3c9e_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/1edbdb7de02b40f183ce27284be12b63/hls/cb5dd60c-e284-447f-a56c-f06a31ad3c9e.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/737110fe514342fb88b0b6053299c56a/02625d24-d6e4-42a7-8111-95d1b3b0f02a_thumb_001_HD.jpg",احتمال پایان آتش‌بس میان آمریکا و جمهوری اسلامی
 https://daq1pvcuhj77l.cloudfront.net/1/737110fe514342fb88b0b6053299c56a/hls/02625d24-d6e4-42a7-8111-95d1b3b0f02a.m3u8
@@ -2741,24 +2768,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/a01e92292126415d9fc998dd42471280/hls/6f15
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/76df01ef23ee4de38a811efc03b9bb1a/ec4cfa0c-5741-4f7a-8879-48f0219c223d_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۹ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/76df01ef23ee4de38a811efc03b9bb1a/hls/ec4cfa0c-5741-4f7a-8879-48f0219c223d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c01a79eec87346d4b3d6960fd07e2f0f/0b667396-ab0c-48e9-b771-8267facad6fa_thumb_001_HD.jpg",تیم ملی را از گروگان سیاست آزاد کنید!
-https://daq1pvcuhj77l.cloudfront.net/1/c01a79eec87346d4b3d6960fd07e2f0f/hls/0b667396-ab0c-48e9-b771-8267facad6fa.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e4eb13df09c34305ac59d69fb1b339c9/80cd780b-ace4-4c74-9214-6a3cf2b337ba_thumb_001_HD.jpg",تشییع جنازه «هوایی» خامنه‌ای!
-https://daq1pvcuhj77l.cloudfront.net/1/e4eb13df09c34305ac59d69fb1b339c9/hls/80cd780b-ace4-4c74-9214-6a3cf2b337ba.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8013d5c6ee0946369aa857d0651ca972/d65be7d1-a27c-48cf-a2c0-be1c4f5f4632_thumb_001_HD.jpg",محسن از نیشابور: از دی‌ماه، هر کس نفهمید، یعنی نانش در نفهمیدن است
-https://daq1pvcuhj77l.cloudfront.net/1/8013d5c6ee0946369aa857d0651ca972/hls/d65be7d1-a27c-48cf-a2c0-be1c4f5f4632.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f7dae11607bd486a9faa7e8e82f6d661/2bd7ed15-0630-48cf-af2a-d277990fcf7f_thumb_001_HD.jpg",پریسا از لس‌آنجلس، از خانواده جاویدنام علیرضا مهرداد: علیرضا برای آزادی به خیابان رفت
-https://daq1pvcuhj77l.cloudfront.net/1/f7dae11607bd486a9faa7e8e82f6d661/hls/2bd7ed15-0630-48cf-af2a-d277990fcf7f.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ab6d48f0715f4da297de22e5e9b6e8f5/6d1947b8-5988-472c-8249-7ba77c2832e0_thumb_001_HD.jpg",ترنم از بروجرد: هجدهم دی‌ تیر به پایم خورد؛ حتی نمی‌توانم جایی بروم تا تیر را بیرون بیاورم
-https://daq1pvcuhj77l.cloudfront.net/1/ab6d48f0715f4da297de22e5e9b6e8f5/hls/6d1947b8-5988-472c-8249-7ba77c2832e0.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/886ddbb78fd445cba848c82c4b6bdf99/92164273-9bf0-44f6-8279-16c4d263fd21_thumb_001_HD.jpg",اختلاف بر سر توافق با آمریکا، نشانه شکاف عمیق در ساختار جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/886ddbb78fd445cba848c82c4b6bdf99/hls/92164273-9bf0-44f6-8279-16c4d263fd21.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/drh5wioia50r7ok2/4q37xiyr0ze6h5rk.jpg",Houston Young Adults Flock to Rapidly Growing Tuesday Night Ministry at Grace Church
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47027208461_47027208664/47027208664/hf-uuid-04f0c986-41c1-4b57-b2e8-f0dac3dce1fc/47027208664_lowres.mp4
