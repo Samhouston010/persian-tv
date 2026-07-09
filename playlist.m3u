@@ -954,15 +954,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1268,6 +1259,42 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/31361dca7b9e415f89514bf49e274363/926d6cb1-6359-4bc0-bc15-4d556262e568_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۱۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/31361dca7b9e415f89514bf49e274363/hls/926d6cb1-6359-4bc0-bc15-4d556262e568.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/766546945be14b8999540074f0bc1200/4a7a30c0-7380-428b-bb71-ac85b12ff58a_thumb_001_HD.jpg",نخستین تصاویر از «بیت» خامنه‌ای پس از حمله آمریکا و اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/766546945be14b8999540074f0bc1200/hls/4a7a30c0-7380-428b-bb71-ac85b12ff58a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7bc23d42735f4eaf9576e273a6646f92/f0237963-6f4f-4bae-a609-e64fba92fa51_thumb_001_HD.jpg",امیر از تهران: با بسته شدن بانک‌ها، خود من دو میلیارد تومان ضرر کردم
+https://daq1pvcuhj77l.cloudfront.net/1/7bc23d42735f4eaf9576e273a6646f92/hls/f0237963-6f4f-4bae-a609-e64fba92fa51.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/983ca01cc94743d0ad7dd0cc90586ea3/98eb55b4-27b4-4d7e-ae15-9f5684ac12dd_thumb_001_HD.jpg",کژال از کرمان: با این دیوانه‌ها کسی نمی‌تواند به توافق برسد
+https://daq1pvcuhj77l.cloudfront.net/1/983ca01cc94743d0ad7dd0cc90586ea3/hls/98eb55b4-27b4-4d7e-ae15-9f5684ac12dd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b3e42554458a4e1d80299ee971a722d3/19ccde15-feac-4172-9e25-7b16b7212f0b_thumb_001_HD.jpg",افشین از ایتالیا: هنوز هیچ اتفاقی نیفتاده و دلار امروز به ۱۸۱ هزار تومان رسیده است
+https://daq1pvcuhj77l.cloudfront.net/1/b3e42554458a4e1d80299ee971a722d3/hls/19ccde15-feac-4172-9e25-7b16b7212f0b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7cbe7df633a74372b8578dc77ba6b3a1/fc0c347d-9223-49d1-9984-0947b5991b32_thumb_001_HD.jpg",شاهین از تهران: هر گندی به نام اسلام زدند؛ بدبختی‌اش را ما کشیدیم، بچه‌هایشان هم خارج‌اند
+https://daq1pvcuhj77l.cloudfront.net/1/7cbe7df633a74372b8578dc77ba6b3a1/hls/fc0c347d-9223-49d1-9984-0947b5991b32.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2022b96975434d1498513e2c4af89005/cb8ea57a-7ff9-457a-93a8-1b1f3f35d130_thumb_001_HD.jpg",اهمیت پیام شاهزاده رضا پهلوی در ششمین ماه قتل‌عام دی‌ماه
+https://daq1pvcuhj77l.cloudfront.net/1/2022b96975434d1498513e2c4af89005/hls/cb8ea57a-7ff9-457a-93a8-1b1f3f35d130.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b8fd4a0c769b4cd4988f9aa32201e1ef/a762f2e3-e3e2-46af-b268-d76d8fff7f70_thumb_001_HD.jpg",احتمال گسترش درگیری آمریکا و جمهوری اسلامی به دیگر کشورهای منطقه
+https://daq1pvcuhj77l.cloudfront.net/1/b8fd4a0c769b4cd4988f9aa32201e1ef/hls/a762f2e3-e3e2-46af-b268-d76d8fff7f70.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ba929323b71f4e79b25bfaf74958940a/a48fa166-4599-4bbb-b8f3-041861642f9c_thumb_001_HD.jpg",آغاز دور جدید حملات آمریکا به جمهوری اسلامی و احتمال تشدید درگیری‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/ba929323b71f4e79b25bfaf74958940a/hls/a48fa166-4599-4bbb-b8f3-041861642f9c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aa6d72aa4e334f1fb73b6ba933cd81dc/6892d832-7b4a-497f-b4b2-ba0bbda9ed33_thumb_001_HD.jpg",ابعاد تهدیدهای آمریکا علیه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/aa6d72aa4e334f1fb73b6ba933cd81dc/hls/6892d832-7b4a-497f-b4b2-ba0bbda9ed33.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a33a596e0380425083bd4f51a349e6ad/1aaa84c7-3f68-4859-bd4a-8dbaf1bb577d_thumb_001_HD.jpg",گزارش‌ها از آغاز موج تازه حملات آمریکا به ایران
+https://daq1pvcuhj77l.cloudfront.net/1/a33a596e0380425083bd4f51a349e6ad/hls/1aaa84c7-3f68-4859-bd4a-8dbaf1bb577d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8a79fdc985664542b85d2c8646df93f0/4156e70e-12c8-43e8-99aa-3833555bb356_thumb_001_HD.jpg", سیاست با مراد ویسی: دور جدید حملات آمریکا به جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/8a79fdc985664542b85d2c8646df93f0/hls/4156e70e-12c8-43e8-99aa-3833555bb356.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dfb82b158cc94e71b1d37b9623d73b65/b09137e7-d516-4bc9-8ac3-8389c9324631_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: هشدار ترامپ برای تمام کردن کار جمهوری اسلامی
 https://daq1pvcuhj77l.cloudfront.net/1/dfb82b158cc94e71b1d37b9623d73b65/hls/b09137e7-d516-4bc9-8ac3-8389c9324631.m3u8
@@ -2732,42 +2759,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/016d003514db481a9889f5f212820951/hls/20a8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f58ebb884c9b49c6aeef25634dc856bc/66be3163-94d7-4e9d-9e0d-add79f97762a_thumb_001_HD.jpg",ترامپ: نشست دوحه شاید مهم باشد
 https://daq1pvcuhj77l.cloudfront.net/1/f58ebb884c9b49c6aeef25634dc856bc/hls/66be3163-94d7-4e9d-9e0d-add79f97762a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2156dbb0ee1d4ea393b4a430d4dbc279/065d57fa-e202-4945-bb06-71b714ad6eed_thumb_001_HD.jpg",روز دوم مرحله یک‌شانزدهم رقابت‌های جام‌جهانی فوتبال
-https://daq1pvcuhj77l.cloudfront.net/1/2156dbb0ee1d4ea393b4a430d4dbc279/hls/065d57fa-e202-4945-bb06-71b714ad6eed.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/477fff073dd242e4afc3d64f65c2839b/7c8b5997-12df-41e4-8abf-d5882c0ceb7c_thumb_001_HD.jpg",دیدار فرمانده سنتکام با مقامات لبنان و اسرائیل
-https://daq1pvcuhj77l.cloudfront.net/1/477fff073dd242e4afc3d64f65c2839b/hls/7c8b5997-12df-41e4-8abf-d5882c0ceb7c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/24603724c1154dcfa76d793a3c7f78e0/69b0f8f3-9ce8-443c-a20b-ca2a02577873_thumb_001_HD.jpg",تحلیلگران: جنگ جمهوری اسلامی برای پکن فرصت‌ساز بوده است
-https://daq1pvcuhj77l.cloudfront.net/1/24603724c1154dcfa76d793a3c7f78e0/hls/69b0f8f3-9ce8-443c-a20b-ca2a02577873.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b9f1a31f9f3e4cbea71d0feacb9b717c/f7ee1b8c-f592-4d17-bbcf-1acb57b59855_thumb_001_HD.jpg",پشت پرده معامله سپاه پاسداران با یکی از خطرناک‌ترین مجرمان استرالیا
-https://daq1pvcuhj77l.cloudfront.net/1/b9f1a31f9f3e4cbea71d0feacb9b717c/hls/f7ee1b8c-f592-4d17-bbcf-1acb57b59855.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ee2dbb4714c948ef9b9bab6ff1d8ad95/9f13a761-517f-4745-9189-58670d6210d0_thumb_001_HD.jpg",جدال جمهوری اسلامی و آمریکا بر سر مدیریت تنگه هرمز
-https://daq1pvcuhj77l.cloudfront.net/1/ee2dbb4714c948ef9b9bab6ff1d8ad95/hls/9f13a761-517f-4745-9189-58670d6210d0.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/97b9e6832d624c298ea0dd226f22b084/673496c3-d77f-4ecb-8247-5612e65db335_thumb_001_HD.jpg", کنفرانس «نه به اعدام» در مجلس ملی فرانسه برگزار شد
-https://daq1pvcuhj77l.cloudfront.net/1/97b9e6832d624c298ea0dd226f22b084/hls/673496c3-d77f-4ecb-8247-5612e65db335.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/469fa587a39f4b818eec11d74ed2c24f/f93997e8-b018-46d7-a72b-bb5836b69108_thumb_001_HD.jpg",تهران ادعای آمریکا مبنی بر دیدار در دوحه را تکذیب کرد
-https://daq1pvcuhj77l.cloudfront.net/1/469fa587a39f4b818eec11d74ed2c24f/hls/f93997e8-b018-46d7-a72b-bb5836b69108.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e42ee7e0088742d58ba72f1942881fac/e95acb51-ac4f-4f5e-be8a-f54d6619f8f4_thumb_001_HD.jpg",پزشکیان شایعات مربوط به استعفای خود را رد کرد
-https://daq1pvcuhj77l.cloudfront.net/1/e42ee7e0088742d58ba72f1942881fac/hls/e95acb51-ac4f-4f5e-be8a-f54d6619f8f4.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5a8e8906ac7d4d40be6ff36752e2f81c/a5989861-1932-4799-9ed4-880bd5dcc686_thumb_001_HD.jpg",ابهام درباره نشست احتمالی جمهوری اسلامی و آمریکا در قطر
-https://daq1pvcuhj77l.cloudfront.net/1/5a8e8906ac7d4d40be6ff36752e2f81c/hls/a5989861-1932-4799-9ed4-880bd5dcc686.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/73f3e75ca704432da82f937c6f9797ef/4dc21e8e-90c4-4eea-b856-2c594501052d_thumb_001_HD.jpg",اختلاف‌نظر میان اسرائیل و آمریکا درباره نحوه برخورد با پرونده‌های لبنان و جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/73f3e75ca704432da82f937c6f9797ef/hls/4dc21e8e-90c4-4eea-b856-2c594501052d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a01e92292126415d9fc998dd42471280/6f15d94e-d7ad-4f7d-997a-87d00b026555_thumb_001_HD.jpg", اخبار بامدادی | سه‌شنبه ۹ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/a01e92292126415d9fc998dd42471280/hls/6f15d94e-d7ad-4f7d-997a-87d00b026555.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/76df01ef23ee4de38a811efc03b9bb1a/ec4cfa0c-5741-4f7a-8879-48f0219c223d_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۹ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/76df01ef23ee4de38a811efc03b9bb1a/hls/ec4cfa0c-5741-4f7a-8879-48f0219c223d.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/drh5wioia50r7ok2/4q37xiyr0ze6h5rk.jpg",Houston Young Adults Flock to Rapidly Growing Tuesday Night Ministry at Grace Church
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47027208461_47027208664/47027208664/hf-uuid-04f0c986-41c1-4b57-b2e8-f0dac3dce1fc/47027208664_lowres.mp4
