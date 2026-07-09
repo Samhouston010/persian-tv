@@ -63,24 +63,6 @@ https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://185.9.2.18/chid_926/index.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/7oGGgfD.png" tvg-id="KanalJadid.uk@SD",Kanal Jadid
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://kjhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/RQ5DzEE.png" tvg-id="ParsTV.us@SD",Pars TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://parshls.wns.live/hls/stream.m3u8
-
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/t5AUthL.png" tvg-id="247BoxTV.ir@SD",247 Box TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -107,60 +89,6 @@ https://hls.oxir.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="FX1.ir@SD",FX TV 1
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://fxtvhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="FX2.ir@SD",FX TV 2
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://toonixhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/CeMf68L.png" tvg-id="OmideIranTV.us@SD",Omide Iran
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://oitnhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/oHmh5Jb.png" tvg-id="Shabakeh7.us@SD",Shabakeh 7
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sh7hls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/U4sKHWy.png" tvg-id="TVITN.ir@SD",TV ITN
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://itnhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8AfAfZE.png" tvg-id="AVASeries.ir@SD",AVA Series
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://avaserieshls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png" tvg-id="iFilm2.ir@SD",iFilm 2
 #EXTVLCOPT:network-caching=2000
@@ -198,87 +126,6 @@ https://live.presstv.ir/hls/ifilmen.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.presstv.ir/hls/ifilmfa.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="AfraFilm.ir@SD",Afra Film
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://afrafhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="CafeFilm.ir@SD",Cafe Film
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://cafefhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="GoldStar.ir@SD",Gold Star
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://moviethls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="GrandCinema.tr@SD",Grand Cinema
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://gcinemahls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="HomePlus.ir@SD",Home Plus
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://homeplushls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://icchls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="MetaFilmTV.ir@SD",Meta Film TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://metafilmhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/n9cuM2W.jpg" tvg-id="SL1.ir@SD",SL 1
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://slonehls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/BVuUx5R.jpg" tvg-id="SL2.ir@SD",SL 2
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sltwohls.wns.live/hls/stream.m3u8
-
 #EXTINF:-1 group-title="ایران" tvg-id="AVAFamily.ir@SD",AVA Family
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -296,33 +143,6 @@ https://familyhls.avatv.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/AbrHI7K.png" tvg-id="PMC.ae@SD",PMC
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://pmchls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="PMCRoyale.ae@SD",PMC Royale (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://pmcrohls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Wu8MBb7.png" tvg-id="T2TV.ir@SD",T2 TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://t2hls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/OI1HQv5.png" tvg-id="AlWilayah.ir@SD",Al Wilayah (720p)
 #EXTVLCOPT:network-caching=2000
@@ -378,78 +198,6 @@ https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/aeS4Sjv.png" tvg-id="ICnet1.ca@SD",icnet 1
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://icnet1hls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Ke5xn4E.png" tvg-id="ICnet2.ca@SD",icnet 2
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://icnet2hls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="icnet3.ca@SD",icnet 3
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://ic3hls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/RsKKULI.png" tvg-id="KalemehTV.uk@HD",Kalemeh TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://klmhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/tucTC1O.jpg" tvg-id="MohabatTV.us@HD",Mohabat TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mohabathls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/VTLQeul.png" tvg-id="Sat7Pars.cy@SD",Sat7 Pars
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sat7phls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/D6KBLB8.png" tvg-id="KomalaTV.se@SD",Komala TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://komhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/GW4cMfc/cafe-trade-tv.png" tvg-id="CafeTradeTV.ir@SD",Cafe Trade TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://cafetradehls.wns.live/hls/stream.m3u8
-
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/gROQqFD.png" tvg-id="AsilTV.ir@SD",Asil TV (576p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -467,102 +215,3 @@ https://live.asil.tv/asiltv/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.nejat.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="AraxTV.ir@SD",Arax TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://araxhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="ArkoTV.ir@SD",Arko TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://arkhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="ArvanTV.ir@SD",Arvan TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://arvhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="ClassicTV.ir@SD",Classic TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://clshls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="DatisTV.ir@SD",Datis TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://dathls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="DejTV.ir@HD",Dej TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://rdejhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="KhabarbinTV.ir@HD",Khabarbin TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://khbhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/xPwzad9.png" tvg-id="KurdChannel.iq@SD",Kurd Channel
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://kurdchhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/JxoAR4j.png" tvg-id="MTC.us@SD",MTC TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mtchls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="SetarehTV.uk@HD",Setareh TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://setarehhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-id="ZedTV.ir@HD",Zed TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://zedhls.wns.live/hls/stream.m3u8

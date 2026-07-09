@@ -90,6 +90,26 @@ SOURCES = [
     # apsattv.com re-publishes Whale TV+'s full lineup (~360ch) and refreshes it themselves
     # every few weeks -- fetched fresh on every daily build, so it self-updates with no extra script.
     ("🐋 وال تی وی", "https://www.apsattv.com/whaletvplus_all.m3u"),
+    # apsattv.com FAST-channel dumps -- same self-update pattern (all fetched fresh on every daily build).
+    # Several tuples sharing one group name just accumulate under it, no code change needed.
+    # User's own notes: Orka/Metax/Galxy.TV have some geo-blocked or dead entries; Kogantvplus mostly needs an AU IP.
+    ("➕ و غیره", "https://www.apsattv.com/rakutentv-uk.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/rakutentv-fr.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/distro.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/vizio.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/vidaa.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/orka.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/kogantvplus.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/metax.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/freelivesports.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/galxytv.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/localnow.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/tclplus.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/hp.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/igocast.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/rewardedtv.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/xumo.m3u"),
+    ("➕ و غیره", "https://www.apsattv.com/cineverse.m3u"),
 ]
 
 EPG_SOURCES = [
