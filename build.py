@@ -87,6 +87,9 @@ SOURCES = [
     # ponytail: Sepehr disabled by user request 2026-07-01 — token bound to Cloudflare IP,
     # 403s outside Iran, so it never played in TiviMate anyway.
     # ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
+    # apsattv.com re-publishes Whale TV+'s full lineup (~360ch) and refreshes it themselves
+    # every few weeks -- fetched fresh on every daily build, so it self-updates with no extra script.
+    ("🐋 وال تی وی", "https://www.apsattv.com/whaletvplus_all.m3u"),
 ]
 
 EPG_SOURCES = [
