@@ -16,9 +16,20 @@ APARAT_PROXY_BASE = "https://aparat-vod-proxy.samhouston010.workers.dev"
 APARAT_MOVIE_PLAYLISTS = [276140, 22120472, 492423, 6193963, 596480]
 
 
-def fetch_aparat_vod():
+def _aparat_alive(uid):
+    """Pirated-movie reuploads get taken down often -- the playlist API's cached
+    listing lags behind removals (~35% of a batch were already 404 on Aparat's own
+    show endpoint), so confirm each one still resolves before publishing it."""
+    try:
+        d = json.loads(fetch(f"https://www.aparat.com/api/fa/v1/video/video/show/videohash/{uid}"))
+    except Exception:
+        return False
+    return not isinstance(d.get("data"), list)
+
+
+def fetch_aparat_vod(workers=15):
     seen = set()
-    entries = []
+    candidates = []
     for pid in APARAT_MOVIE_PLAYLISTS:
         try:
             data = json.loads(fetch(f"https://www.aparat.com/api/fa/v1/video/playlist/one/playlist_id/{pid}"))
@@ -43,8 +54,13 @@ def fetch_aparat_vod():
             seen.add(vid)
             poster = a.get("big_poster") or a.get("medium_poster") or ""
             extinf = f'#EXTINF:-1 tvg-logo="{poster}" group-title="\U0001f3ac آپارات VOD - فیلم سینمایی",{title}'
-            entries.append((extinf, f"{APARAT_PROXY_BASE}/play/{uid}"))
-    return entries
+            candidates.append((uid, extinf))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        alive = dict(zip((u for u, _ in candidates), pool.map(_aparat_alive, (u for u, _ in candidates))))
+    dead = sum(1 for u, _ in candidates if not alive[u])
+    if dead:
+        print(f"Aparat VOD: dropped {dead} dead/removed videos", flush=True)
+    return [(extinf, f"{APARAT_PROXY_BASE}/play/{uid}") for uid, extinf in candidates if alive[uid]]
 
 
 def fetch_fox26_vod(max_items=300):
