@@ -84,6 +84,8 @@ _AF_EC = "\n".join([
 SOURCES = [
     ("📺 پرشیانا", "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.m3u"),
     ("📡 تلوبیون",  "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.m3u"),
+    # group=None: each entry already carries its own per-category group-title (🎬 سپهر <دسته>)
+    (None, "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.m3u"),
     # ponytail: Sepehr disabled by user request 2026-07-01 — token bound to Cloudflare IP,
     # 403s outside Iran, so it never played in TiviMate anyway.
     # ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
@@ -521,13 +523,15 @@ def fetch(url):
         return r.read()
 
 
-def extract(text, group):
+def extract(text, group=None):
     lines = text.splitlines()
     i = 0
     while i < len(lines):
         line = lines[i].strip()
         if line.startswith("#EXTINF"):
-            if GROUP_RE.search(line):
+            if group is None:
+                pass  # ponytail: group=None keeps each entry's own group-title (e.g. per-category VOD source)
+            elif GROUP_RE.search(line):
                 line = GROUP_RE.sub(f'group-title="{group}"', line)
             else:
                 line = line.replace("#EXTINF:-1", f'#EXTINF:-1 group-title="{group}"', 1)
@@ -578,7 +582,7 @@ def main():
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
         ec_count = 0
-        if "تلوبیون" in group:
+        if group and "تلوبیون" in group:
             for name, stream in _EC_CHANNELS:
                 extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
                 out.append(extinf); out.append(_AF_EC); out.append(stream); out.append("")
@@ -587,7 +591,7 @@ def main():
             tv3_extinf = '#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="شبکه سه (بکاپ)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="%s",شبکه سه (بکاپ)' % group
             out.append(tv3_extinf); out.append(_AF_TELE); out.append("https://s1-cloud.irib.ir/securelive3/tv3hd/tv3hd.m3u8"); out.append("")
             ec_count += 1
-        if "پرشیانا" in group:
+        if group and "پرشیانا" in group:
             mbc_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia' % group
             out.append(mbc_extinf); out.append(_AF_NORMAL); out.append("https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8"); out.append("")
             mbc_backup_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia (بکاپ)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia (بکاپ)' % group
@@ -595,7 +599,7 @@ def main():
             ec_count += 2
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
-        print(f"{group}: {len(entries)} channels{label}", flush=True)
+        print(f"{group or url}: {len(entries)} channels{label}", flush=True)
     # سیمای آزادی right under Iran International (first 2 entries), not appended at the end
     news = _alive(NEWS_CHANNELS[:2], "News") + load_simay_live() + _alive(NEWS_CHANNELS[2:], "News")
     for extinf, stream in news:
