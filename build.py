@@ -117,6 +117,7 @@ SOURCES = [
 EPG_SOURCES = [
     "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.xml.gz",
+    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",
 ]
 
 GROUP_RE = re.compile(r'group-title="[^"]*"')
