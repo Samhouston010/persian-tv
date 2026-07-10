@@ -1,10 +1,50 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, json, os, re, urllib.request, xml.etree.ElementTree as ET
+import gzip, html, json, os, re, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 IRAN_INTL_SITEMAP  = "https://www.iranintl.com/sitemap-videos.xml"
 FOX26_SITEMAP_BASE = "https://www.fox26houston.com/sitemap.xml?type=videos"
 FOX26_LOGO         = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png"
+
+# ponytail: Aparat's own HLS manifest tokens expire in ~5h, so entries point at a
+# Worker (aparat-vod-proxy) that re-resolves a fresh link per play, same as Sepehr VOD.
+APARAT_PROXY_BASE = "https://aparat-vod-proxy.samhouston010.workers.dev"
+# curated "full movie" playlists (found via search) -- Aparat has no movie-category API
+# like Sepehr's, so this is the closest equivalent. Max quality on Aparat tops out at
+# 720p platform-wide (verified against ~60 videos incl. ones titled "1080p HD") -- there
+# is no true 1080p to filter for.
+APARAT_MOVIE_PLAYLISTS = [276140, 22120472, 492423, 6193963, 596480]
+
+
+def fetch_aparat_vod():
+    seen = set()
+    entries = []
+    for pid in APARAT_MOVIE_PLAYLISTS:
+        try:
+            data = json.loads(fetch(f"https://www.aparat.com/api/fa/v1/video/playlist/one/playlist_id/{pid}"))
+        except Exception as e:
+            print(f"Aparat playlist {pid} failed: {e}", flush=True)
+            continue
+        for item in data.get("included") or []:
+            if item.get("type") != "Video":
+                continue
+            a = item["attributes"]
+            vid, uid = a.get("id"), a.get("uid")
+            if not uid or vid in seen or a.get("process") != "done":
+                continue
+            try:
+                if int(a.get("duration") or 0) < 1200:  # skip trailers/clips, keep full movies (20min+)
+                    continue
+            except ValueError:
+                continue
+            title = html.unescape(a.get("title") or "").strip()
+            if not title:
+                continue
+            seen.add(vid)
+            poster = a.get("big_poster") or a.get("medium_poster") or ""
+            extinf = f'#EXTINF:-1 tvg-logo="{poster}" group-title="\U0001f3ac آپارات VOD - فیلم سینمایی",{title}'
+            entries.append((extinf, f"{APARAT_PROXY_BASE}/play/{uid}"))
+    return entries
 
 
 def fetch_fox26_vod(max_items=300):
@@ -643,6 +683,11 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(fox26)
     print(f"Fox 26 VOD: {len(fox26)} videos", flush=True)
+    aparat = fetch_aparat_vod()
+    for extinf, stream in aparat:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(aparat)
+    print(f"Aparat VOD: {len(aparat)} videos", flush=True)
     ted = []  # ponytail: disabled until playlist is finalized
     print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
