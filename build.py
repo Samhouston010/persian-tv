@@ -9,11 +9,15 @@ FOX26_LOGO         = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/co
 # ponytail: Aparat's own HLS manifest tokens expire in ~5h, so entries point at a
 # Worker (aparat-vod-proxy) that re-resolves a fresh link per play, same as Sepehr VOD.
 APARAT_PROXY_BASE = "https://aparat-vod-proxy.samhouston010.workers.dev"
-# curated "full movie" playlists (found via search) -- Aparat has no movie-category API
-# like Sepehr's, so this is the closest equivalent. Max quality on Aparat tops out at
-# 720p platform-wide (verified against ~60 videos incl. ones titled "1080p HD") -- there
-# is no true 1080p to filter for.
-APARAT_MOVIE_PLAYLISTS = [276140, 22120472, 492423, 6193963, 596480]
+# curated "full movie" playlists (found via search, spanning genres) -- Aparat has no
+# movie-category API like Sepehr's, so this is the closest equivalent. Max quality on
+# Aparat tops out at 720p platform-wide (verified against ~60 videos incl. ones titled
+# "1080p HD") -- there is no true 1080p to filter for.
+APARAT_MOVIE_PLAYLISTS = [
+    276140, 22120472, 492423, 6193963, 596480, 491715, 349482, 4446258, 259766, 243450,
+    1030868, 348420, 23420922, 10115234, 1874423, 12062357, 6625238, 9753476, 853106,
+    493601, 354624, 11895670, 851074, 491733, 655135, 388745,
+]
 
 
 def _aparat_alive(uid):
