@@ -319,10 +319,10 @@ def fetch_arte_vod(workers=4):
 
     for pid, title, desc, poster, hls, mp4 in results:
         _add(f"arte{pid}", title, desc, poster, hls)
-        # ponytail: user wants both -- keep the original HLS entry (existing group)
-        # and add a second .mp4 copy so TiviMate also lists it in the Movies tab.
-        if mp4:
-            _add(f"arte{pid}m", title, desc, poster, mp4)
+        # ponytail: reverted 2026-07-11 -- the .mp4 Movies-tab copy was video-only
+        # (ARTE's CMAF delivery keeps audio as a separate HLS track group entirely;
+        # there's no single muxed file to grab), so it played silently. No fix
+        # without a server-side proxy to remux video+audio, out of scope for now.
     return entries, tv
 
 
