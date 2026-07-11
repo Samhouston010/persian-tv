@@ -1,5 +1,5 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, html, json, os, re, time, urllib.request, xml.etree.ElementTree as ET
+import gzip, html, json, os, re, time, urllib.error, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 IRAN_INTL_SITEMAP  = "https://www.iranintl.com/sitemap-videos.xml"
@@ -167,13 +167,21 @@ def fetch_namakade_vod(workers=15):
     return entries
 
 
-def _arte_program(pid, _retries=2):
+def _arte_program(pid, _retries=4):
     err = None
     for attempt in range(_retries + 1):
         try:
             data = json.loads(fetch(f"{ARTE_API}/{pid}"))
             err = None
             break
+        except urllib.error.HTTPError as e:
+            err = e
+            if attempt < _retries:
+                # ponytail: shared CI IPs hit ARTE's rate limit much harder than a
+                # home IP does (confirmed via GitHub Actions logs: 429 on ~93% of
+                # requests) -- honor Retry-After when given, otherwise back off hard.
+                wait = e.headers.get("Retry-After") if e.code == 429 else None
+                time.sleep(float(wait) if wait else 2 ** (attempt + 1))
         except Exception as e:
             err = e
             if attempt < _retries:
@@ -197,7 +205,7 @@ def _arte_program(pid, _retries=2):
     return ("ok", (pid, title, desc, poster, hls))
 
 
-def fetch_arte_vod(workers=20):
+def fetch_arte_vod(workers=4):
     """ARTE (Franco-German public broadcaster) VOD. Unlike Sepehr/Aparat, streams are
     plain HLS with no session token (verified: static long-lived Cache-Control, no
     expiring query params) -- entries link straight to the CDN, no proxy needed.
