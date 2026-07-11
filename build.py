@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 IRAN_INTL_SITEMAP  = "https://www.iranintl.com/sitemap-videos.xml"
 FOX26_SITEMAP_BASE = "https://www.fox26houston.com/sitemap.xml?type=videos"
 FOX26_LOGO         = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png"
+NAMAKADE_MOVIES_URL = "https://namakade.com/movies"
 
 # ponytail: Aparat's own HLS manifest tokens expire in ~5h, so entries point at a
 # Worker (aparat-vod-proxy) that re-resolves a fresh link per play, same as Sepehr VOD.
@@ -118,6 +119,49 @@ def fetch_fox26_vod(max_items=300):
             entries.append((extinf, stream_url))
         if len(titles) < 10:   # last partial page
             break
+    return entries
+
+
+def _namakade_movie(path, workers_ignore=None):
+    try:
+        req = urllib.request.Request("https://namakade.com" + path, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=15) as r:
+            html_text = r.read().decode("utf-8", errors="ignore")
+    except Exception:
+        return None
+    m = re.search(r"media\.negahestan\.com/ipnx/media/movies/[A-Za-z0-9_\-]+\.mp4", html_text)
+    if not m:
+        return None
+    title_m = re.search(r"<title>([^<]*)</title>", html_text)
+    thumb_m = re.search(r'og:image" content="([^"]+)"', html_text)
+    title = (title_m.group(1).split("|")[0].strip() if title_m else path.rsplit("/", 1)[-1])
+    thumb = thumb_m.group(1) if thumb_m else ""
+    return title, thumb, "https://" + m.group(0)
+
+
+def fetch_namakade_vod(workers=15):
+    """IranProud's movie catalog, mirrored at namakade.com (branded 'Negahestan' in
+    page titles/media CDN). No sitemap -- the /movies page itself lists ~130 unique
+    titles across its category carousels, so that single page is the crawl seed.
+    Each movie's mp4 is a plain unprotected file (verified: no referer/token check,
+    plays via bare curl), so entries link straight to media.negahestan.com -- no
+    proxy needed, unlike Aparat/Sepehr VOD."""
+    try:
+        req = urllib.request.Request(NAMAKADE_MOVIES_URL, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=20) as r:
+            listing = r.read().decode("utf-8", errors="ignore")
+    except Exception as e:
+        print(f"Namakade movies listing failed: {e}", flush=True)
+        return []
+    paths = sorted(set(re.findall(r'href="(/(?:iran-1-movies|movies)/[^"]+)"', listing)))
+    entries = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for result in pool.map(_namakade_movie, paths):
+            if not result:
+                continue
+            title, thumb, stream = result
+            extinf = f'#EXTINF:-1 group-title="\U0001f3ac IranProud VOD" tvg-logo="{thumb}",{title}'
+            entries.append((extinf, stream))
     return entries
 
 
@@ -749,6 +793,11 @@ def main():
     for extinf, stream in aparat:
         out.append(extinf); out.append(stream); out.append("")
     total += len(aparat)
+    namakade = fetch_namakade_vod()
+    for extinf, stream in namakade:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(namakade)
+    print(f"Namakade (IranProud) VOD: {len(namakade)} videos", flush=True)
     ted = []  # ponytail: disabled until playlist is finalized
     print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
