@@ -197,15 +197,15 @@ SOURCES = [
     ("➕ و غیره", "https://www.apsattv.com/rewardedtv.m3u"),
     ("➕ و غیره", "https://www.apsattv.com/xumo.m3u"),
     ("➕ و غیره", "https://www.apsattv.com/cineverse.m3u"),
-    # BuddyChewChew/app-m3u-generator: community repo, rebuilds these daily from each
-    # app's own free/ad-supported catalog (movie-heavy, like FilmRise) -- same
-    # self-update pattern as the apsattv.com dumps above, no proxy/scraping needed.
-    # US-only variants used (not "_all") to skip the non-English regional noise.
-    ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_all.m3u"),
-    ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plex_us.m3u"),
-    ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_us.m3u"),
-    ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u"),
-    ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_us.m3u"),
+    # ponytail: disabled by user request 2026-07-11 -- these are FAST channels (Tubi/Plex/
+    # Pluto/Roku/Samsung's live-loop lineups), not real per-title VOD. User wanted VOD like
+    # Aparat/Sepehr, list got too crowded with 2221 channel entries for something they didn't
+    # want. Left here in case a real per-title VOD source for one of these turns up later.
+    # ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/tubi_all.m3u"),
+    # ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plex_us.m3u"),
+    # ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/plutotv_us.m3u"),
+    # ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/roku_all.m3u"),
+    # ("🎬 فیلم رایگان جهانی", "https://raw.githubusercontent.com/BuddyChewChew/app-m3u-generator/main/playlists/samsungtvplus_us.m3u"),
 ]
 
 EPG_SOURCES = [
