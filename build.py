@@ -202,7 +202,39 @@ def _arte_program(pid, _retries=4):
     desc = (meta.get("description") or "").strip()
     images = meta.get("images") or []
     poster = images[0]["url"] if images else ""
-    return ("ok", (pid, title, desc, poster, hls))
+    # ponytail: TiviMate buckets entries into its Movies tab (poster grid) by the
+    # stream URL's file extension, not group-title -- .m3u8 stays in the plain
+    # channel list. ARTE's HLS is CMAF (fragmented-mp4 segments addressed by byte
+    # range inside one file per quality), so the plain progressive file is just the
+    # sub-manifest URL with .m3u8 swapped for .mp4 -- no extra API call needed, and
+    # it's a different host to api.arte.tv so it doesn't feed the same 429s. User
+    # wants both: the existing HLS entry stays, and this mp4 gets a second entry
+    # so the same title also shows up in the Movies poster grid.
+    mp4 = None
+    try:
+        master = fetch(hls).decode("utf-8", errors="ignore")
+        mp4 = _arte_best_mp4(master)
+    except Exception:
+        pass
+    return ("ok", (pid, title, desc, poster, hls, mp4))
+
+
+def _arte_best_mp4(master_text):
+    lines = master_text.splitlines()
+    best = None
+    for i, line in enumerate(lines):
+        if not (line.startswith("#EXT-X-STREAM-INF") and "avc1" in line):
+            continue
+        m = re.search(r"RESOLUTION=(\d+)x(\d+)", line)
+        if not m or i + 1 >= len(lines):
+            continue
+        sub_url = lines[i + 1].strip()
+        if not sub_url.endswith(".m3u8"):
+            continue
+        pixels = int(m.group(1)) * int(m.group(2))
+        if best is None or pixels > best[0]:
+            best = (pixels, sub_url[:-len(".m3u8")] + ".mp4")
+    return best[1] if best else None
 
 
 ARTE_CACHE_FILE = "arte_vod_cache.json"
@@ -248,8 +280,9 @@ def fetch_arte_vod(workers=4):
             for pid, (kind, payload) in zip(new_pids, pool.map(_arte_program, new_pids)):
                 counts[kind] = counts.get(kind, 0) + 1
                 if kind == "ok":
-                    _, title, desc, poster, hls = payload
-                    cache[pid] = {"kind": "ok", "title": title, "desc": desc, "poster": poster, "hls": hls}
+                    _, title, desc, poster, hls, mp4 = payload
+                    cache[pid] = {"kind": "ok", "title": title, "desc": desc, "poster": poster,
+                                  "hls": hls, "mp4": mp4}
                 else:
                     cache[pid] = {"kind": kind}
                     if kind == "error" and len(sample_errors) < 5:
@@ -260,7 +293,7 @@ def fetch_arte_vod(workers=4):
         with open(ARTE_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(cache, f, ensure_ascii=False)
 
-    results = [(pid, v["title"], v["desc"], v["poster"], v["hls"])
+    results = [(pid, v["title"], v["desc"], v["poster"], v["hls"], v.get("mp4"))
                for pid, v in cache.items() if v.get("kind") == "ok"]
 
     from datetime import datetime, timedelta, timezone
@@ -269,10 +302,10 @@ def fetch_arte_vod(workers=4):
     epg_stop = (now + timedelta(hours=12)).strftime("%Y%m%d%H%M%S +0000")
     tv = ET.Element("tv")
     entries = []
-    for pid, title, desc, poster, hls in results:
-        tvg_id = f"arte{pid}"
+
+    def _add(tvg_id, title, desc, poster, stream):
         extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{poster}" group-title="\U0001f3ac ARTE VOD",{title}'
-        entries.append((extinf, hls))
+        entries.append((extinf, stream))
         ch = ET.SubElement(tv, "channel", {"id": tvg_id})
         ET.SubElement(ch, "display-name").text = title
         if poster:
@@ -283,6 +316,13 @@ def fetch_arte_vod(workers=4):
             ET.SubElement(pe, "desc", {"lang": "en"}).text = desc
         if poster:
             ET.SubElement(pe, "icon", {"src": poster})
+
+    for pid, title, desc, poster, hls, mp4 in results:
+        _add(f"arte{pid}", title, desc, poster, hls)
+        # ponytail: user wants both -- keep the original HLS entry (existing group)
+        # and add a second .mp4 copy so TiviMate also lists it in the Movies tab.
+        if mp4:
+            _add(f"arte{pid}m", title, desc, poster, mp4)
     return entries, tv
 
 
