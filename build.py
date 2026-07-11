@@ -6,6 +6,8 @@ IRAN_INTL_SITEMAP  = "https://www.iranintl.com/sitemap-videos.xml"
 FOX26_SITEMAP_BASE = "https://www.fox26houston.com/sitemap.xml?type=videos"
 FOX26_LOGO         = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/fox-26-kriv-us.png"
 NAMAKADE_MOVIES_URL = "https://namakade.com/movies"
+ARTE_SITEMAP = "https://www.arte.tv/static/opa_static/sitemap/en_programs.xml"
+ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 
 # ponytail: Aparat's own HLS manifest tokens expire in ~5h, so entries point at a
 # Worker (aparat-vod-proxy) that re-resolves a fresh link per play, same as Sepehr VOD.
@@ -163,6 +165,70 @@ def fetch_namakade_vod(workers=15):
             extinf = f'#EXTINF:-1 group-title="\U0001f3ac IranProud VOD" tvg-logo="{thumb}",{title}'
             entries.append((extinf, stream))
     return entries
+
+
+def _arte_program(pid):
+    try:
+        data = json.loads(fetch(f"{ARTE_API}/{pid}"))
+    except Exception:
+        return None
+    attrs = (data.get("data") or {}).get("attributes") or {}
+    meta = attrs.get("metadata") or {}
+    if (meta.get("duration") or {}).get("seconds", 0) < 3000:  # ~50min -- drop clips/magazine segments
+        return None
+    hls = next((s["url"] for s in (attrs.get("streams") or [])
+                if s.get("protocol") == "API_HLS_NG_MA" and s.get("url")), None)
+    if not hls:
+        return None
+    title = meta.get("title") or pid
+    if meta.get("subtitle"):
+        title = f"{title} - {meta['subtitle']}"
+    desc = (meta.get("description") or "").strip()
+    images = meta.get("images") or []
+    poster = images[0]["url"] if images else ""
+    return pid, title, desc, poster, hls
+
+
+def fetch_arte_vod(workers=20):
+    """ARTE (Franco-German public broadcaster) VOD. Unlike Sepehr/Aparat, streams are
+    plain HLS with no session token (verified: static long-lived Cache-Control, no
+    expiring query params) -- entries link straight to the CDN, no proxy needed.
+    The sitemap carries no category tag, so duration >=50min is the stand-in filter
+    for "real film" vs magazine/news clips (same idea as Aparat's duration cutoff)."""
+    try:
+        xml_ = fetch(ARTE_SITEMAP).decode("utf-8", errors="ignore")
+    except Exception as e:
+        print(f"ARTE sitemap failed: {e}", flush=True)
+        return [], ET.Element("tv")
+    pids = sorted(set(re.findall(r"/en/videos/([A-Za-z0-9-]+)/", xml_)))
+    print(f"ARTE sitemap: {len(pids)} programs", flush=True)
+    results = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for r in pool.map(_arte_program, pids):
+            if r:
+                results.append(r)
+
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc)
+    epg_start = (now - timedelta(hours=12)).strftime("%Y%m%d%H%M%S +0000")
+    epg_stop = (now + timedelta(hours=12)).strftime("%Y%m%d%H%M%S +0000")
+    tv = ET.Element("tv")
+    entries = []
+    for pid, title, desc, poster, hls in results:
+        tvg_id = f"arte{pid}"
+        extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{poster}" group-title="\U0001f3ac ARTE VOD",{title}'
+        entries.append((extinf, hls))
+        ch = ET.SubElement(tv, "channel", {"id": tvg_id})
+        ET.SubElement(ch, "display-name").text = title
+        if poster:
+            ET.SubElement(ch, "icon", {"src": poster})
+        pe = ET.SubElement(tv, "programme", {"start": epg_start, "stop": epg_stop, "channel": tvg_id})
+        ET.SubElement(pe, "title", {"lang": "en"}).text = title
+        if desc:
+            ET.SubElement(pe, "desc", {"lang": "en"}).text = desc
+        if poster:
+            ET.SubElement(pe, "icon", {"src": poster})
+    return entries, tv
 
 
 def fetch_iranintl_vod():
@@ -714,7 +780,9 @@ def build_epg(extra_trees=()):
 def main():
     aparat, aparat_epg = fetch_aparat_vod()
     print(f"Aparat VOD: {len(aparat)} videos", flush=True)
-    build_epg(extra_trees=[aparat_epg])
+    arte, arte_epg = fetch_arte_vod()
+    print(f"ARTE VOD: {len(arte)} videos", flush=True)
+    build_epg(extra_trees=[aparat_epg, arte_epg])
     cat_by_id, logo_by_id = load_iptvorg_meta()
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
@@ -793,11 +861,18 @@ def main():
     for extinf, stream in aparat:
         out.append(extinf); out.append(stream); out.append("")
     total += len(aparat)
-    namakade = fetch_namakade_vod()
-    for extinf, stream in namakade:
+    for extinf, stream in arte:
         out.append(extinf); out.append(stream); out.append("")
-    total += len(namakade)
-    print(f"Namakade (IranProud) VOD: {len(namakade)} videos", flush=True)
+    total += len(arte)
+    # ponytail: disabled 2026-07-11 -- confirmed dead. Every single title's mp4 URL now
+    # serves the exact same 41,316,739-byte file (checked Boomerang/Enola Holmes 2/Mezon
+    # Kaar/2 Rooz Dirtar), a generic notice clip telling viewers to watch on iranproud.com
+    # directly. The site retired this CDN mirror; no working link exists here anymore.
+    # namakade = fetch_namakade_vod()
+    # for extinf, stream in namakade:
+    #     out.append(extinf); out.append(stream); out.append("")
+    # total += len(namakade)
+    # print(f"Namakade (IranProud) VOD: {len(namakade)} videos", flush=True)
     ted = []  # ponytail: disabled until playlist is finalized
     print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
