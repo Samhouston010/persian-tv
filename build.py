@@ -381,27 +381,29 @@ SOURCES = [
     # ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
     # apsattv.com re-publishes Whale TV+'s full lineup (~360ch) and refreshes it themselves
     # every few weeks -- fetched fresh on every daily build, so it self-updates with no extra script.
-    ("🐋 وال تی وی", "https://www.apsattv.com/whaletvplus_all.m3u"),
+    # ponytail: Whale TV + "و غیره" apsattv dumps disabled by user request 2026-07-11 -- playlist
+    # got too crowded (~4500 combined entries incl. Korea Movies/Discovery etc via xumo/vizio).
+    # ("🐋 وال تی وی", "https://www.apsattv.com/whaletvplus_all.m3u"),
     # apsattv.com FAST-channel dumps -- same self-update pattern (all fetched fresh on every daily build).
     # Several tuples sharing one group name just accumulate under it, no code change needed.
     # User's own notes: Orka/Metax/Galxy.TV have some geo-blocked or dead entries; Kogantvplus mostly needs an AU IP.
-    ("➕ و غیره", "https://www.apsattv.com/rakutentv-uk.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/rakutentv-fr.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/distro.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/vizio.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/vidaa.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/orka.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/kogantvplus.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/metax.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/freelivesports.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/galxytv.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/localnow.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/tclplus.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/hp.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/igocast.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/rewardedtv.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/xumo.m3u"),
-    ("➕ و غیره", "https://www.apsattv.com/cineverse.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/rakutentv-uk.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/rakutentv-fr.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/distro.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/vizio.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/vidaa.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/orka.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/kogantvplus.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/metax.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/freelivesports.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/galxytv.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/localnow.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/tclplus.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/hp.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/igocast.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/rewardedtv.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/xumo.m3u"),
+    # ("➕ و غیره", "https://www.apsattv.com/cineverse.m3u"),
     # ponytail: disabled by user request 2026-07-11 -- these are FAST channels (Tubi/Plex/
     # Pluto/Roku/Samsung's live-loop lineups), not real per-title VOD. User wanted VOD like
     # Aparat/Sepehr, list got too crowded with 2221 channel entries for something they didn't
@@ -873,11 +875,11 @@ def build_epg(extra_trees=()):
 
 
 def main():
-    aparat, aparat_epg = fetch_aparat_vod()
-    print(f"Aparat VOD: {len(aparat)} videos", flush=True)
+    aparat, aparat_epg = [], None  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
+    print("Aparat VOD: disabled", flush=True)
     arte, arte_epg = [], None  # ponytail: temporarily disabled by user request 2026-07-11
     print("ARTE VOD: disabled", flush=True)
-    build_epg(extra_trees=[aparat_epg])
+    build_epg(extra_trees=[])
     cat_by_id, logo_by_id = load_iptvorg_meta()
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
@@ -886,6 +888,8 @@ def main():
     for group, url in SOURCES:
         text = fetch(url).decode("utf-8", errors="ignore")
         entries = list(extract(text, group))
+        # ponytail: Sepehr VOD "سریال" category disabled by user request 2026-07-11 -- too crowded
+        entries = [e for e in entries if 'سپهر VOD - سریال' not in e[0]]
         for extinf, stream in entries:
             extinf = _patch_tele_logo(extinf, stream)
             extinf = _fill_logo(extinf, logo_by_id)
@@ -918,16 +922,10 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(news)
     print(f"News: {len(news)} channels", flush=True)
-    houston = _alive(_HOUSTON_MAIN, "Houston") + load_houston_live() + _alive(_HOUSTON_CITY, "Houston")
-    for extinf, stream in houston:
-        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
-    total += len(houston)
-    print(f"Houston: {len(houston)} channels", flush=True)
-    music = _alive(MUSIC_CHANNELS, "Music")
-    for extinf, stream in music:
-        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
-    total += len(music)
-    print(f"Music: {len(music)} channels", flush=True)
+    houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
+    print("Houston: disabled", flush=True)
+    music = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
+    print("Music: disabled", flush=True)
     # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
     _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
     # disabled by user request 2026-07-01 — geo-blocked, no non-VPN fix yet
