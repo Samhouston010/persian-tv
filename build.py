@@ -875,9 +875,9 @@ def build_epg(extra_trees=()):
 def main():
     aparat, aparat_epg = fetch_aparat_vod()
     print(f"Aparat VOD: {len(aparat)} videos", flush=True)
-    arte, arte_epg = fetch_arte_vod()
-    print(f"ARTE VOD: {len(arte)} videos", flush=True)
-    build_epg(extra_trees=[aparat_epg, arte_epg])
+    arte, arte_epg = [], None  # ponytail: temporarily disabled by user request 2026-07-11
+    print("ARTE VOD: disabled", flush=True)
+    build_epg(extra_trees=[aparat_epg])
     cat_by_id, logo_by_id = load_iptvorg_meta()
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
