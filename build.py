@@ -1,5 +1,5 @@
 """Build Persiana + Telewebion combined playlist."""
-import gzip, html, json, os, re, urllib.request, xml.etree.ElementTree as ET
+import gzip, html, json, os, re, time, urllib.request, xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 IRAN_INTL_SITEMAP  = "https://www.iranintl.com/sitemap-videos.xml"
@@ -167,26 +167,34 @@ def fetch_namakade_vod(workers=15):
     return entries
 
 
-def _arte_program(pid):
-    try:
-        data = json.loads(fetch(f"{ARTE_API}/{pid}"))
-    except Exception:
-        return None
+def _arte_program(pid, _retries=2):
+    err = None
+    for attempt in range(_retries + 1):
+        try:
+            data = json.loads(fetch(f"{ARTE_API}/{pid}"))
+            err = None
+            break
+        except Exception as e:
+            err = e
+            if attempt < _retries:
+                time.sleep(0.5 * (attempt + 1))
+    if err is not None:
+        return ("error", repr(err))
     attrs = (data.get("data") or {}).get("attributes") or {}
     meta = attrs.get("metadata") or {}
     if (meta.get("duration") or {}).get("seconds", 0) < 3000:  # ~50min -- drop clips/magazine segments
-        return None
+        return ("short", None)
     hls = next((s["url"] for s in (attrs.get("streams") or [])
                 if s.get("protocol") == "API_HLS_NG_MA" and s.get("url")), None)
     if not hls:
-        return None
+        return ("nohls", None)
     title = meta.get("title") or pid
     if meta.get("subtitle"):
         title = f"{title} - {meta['subtitle']}"
     desc = (meta.get("description") or "").strip()
     images = meta.get("images") or []
     poster = images[0]["url"] if images else ""
-    return pid, title, desc, poster, hls
+    return ("ok", (pid, title, desc, poster, hls))
 
 
 def fetch_arte_vod(workers=20):
@@ -203,10 +211,18 @@ def fetch_arte_vod(workers=20):
     pids = sorted(set(re.findall(r"/en/videos/([A-Za-z0-9-]+)/", xml_)))
     print(f"ARTE sitemap: {len(pids)} programs", flush=True)
     results = []
+    counts = {}
+    sample_errors = []
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        for r in pool.map(_arte_program, pids):
-            if r:
-                results.append(r)
+        for kind, payload in pool.map(_arte_program, pids):
+            counts[kind] = counts.get(kind, 0) + 1
+            if kind == "ok":
+                results.append(payload)
+            elif kind == "error" and len(sample_errors) < 5:
+                sample_errors.append(payload)
+    print(f"ARTE fetch breakdown: {counts}", flush=True)
+    if sample_errors:
+        print(f"ARTE sample errors: {sample_errors}", flush=True)
 
     from datetime import datetime, timedelta, timezone
     now = datetime.now(timezone.utc)
