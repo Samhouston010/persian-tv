@@ -205,32 +205,63 @@ def _arte_program(pid, _retries=4):
     return ("ok", (pid, title, desc, poster, hls))
 
 
+ARTE_CACHE_FILE = "arte_vod_cache.json"
+
+
 def fetch_arte_vod(workers=4):
     """ARTE (Franco-German public broadcaster) VOD. Unlike Sepehr/Aparat, streams are
     plain HLS with no session token (verified: static long-lived Cache-Control, no
     expiring query params) -- entries link straight to the CDN, no proxy needed.
     The sitemap carries no category tag, so duration >=50min is the stand-in filter
-    for "real film" vs magazine/news clips (same idea as Aparat's duration cutoff)."""
+    for "real film" vs magazine/news clips (same idea as Aparat's duration cutoff).
+
+    ponytail: GitHub's shared CI IPs get rate-limited (429) far harder than a home IP
+    -- a full 3666-item run there mostly failed even with retries/backoff, and a fix
+    that just waits it out would take an hour+ every single day on a private repo's
+    Actions minutes budget. So the per-program lookup result is cached in
+    ARTE_CACHE_FILE (committed to the repo) keyed by program id; each run only fetches
+    ids newly added to the sitemap (normally a handful/day) and prunes ids the sitemap
+    dropped. The expensive first pass runs once from a non-rate-limited machine."""
     try:
         xml_ = fetch(ARTE_SITEMAP).decode("utf-8", errors="ignore")
     except Exception as e:
         print(f"ARTE sitemap failed: {e}", flush=True)
-        return [], ET.Element("tv")
+        xml_ = ""
     pids = sorted(set(re.findall(r"/en/videos/([A-Za-z0-9-]+)/", xml_)))
     print(f"ARTE sitemap: {len(pids)} programs", flush=True)
-    results = []
-    counts = {}
-    sample_errors = []
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        for kind, payload in pool.map(_arte_program, pids):
-            counts[kind] = counts.get(kind, 0) + 1
-            if kind == "ok":
-                results.append(payload)
-            elif kind == "error" and len(sample_errors) < 5:
-                sample_errors.append(payload)
-    print(f"ARTE fetch breakdown: {counts}", flush=True)
-    if sample_errors:
-        print(f"ARTE sample errors: {sample_errors}", flush=True)
+
+    try:
+        with open(ARTE_CACHE_FILE, encoding="utf-8") as f:
+            cache = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        cache = {}
+
+    pid_set = set(pids)
+    cache = {pid: v for pid, v in cache.items() if pid in pid_set}  # drop ids no longer in the sitemap
+    new_pids = [p for p in pids if p not in cache]
+    print(f"ARTE cache: {len(cache)} known, {len(new_pids)} new", flush=True)
+
+    if new_pids:
+        counts = {}
+        sample_errors = []
+        with ThreadPoolExecutor(max_workers=workers) as pool:
+            for pid, (kind, payload) in zip(new_pids, pool.map(_arte_program, new_pids)):
+                counts[kind] = counts.get(kind, 0) + 1
+                if kind == "ok":
+                    _, title, desc, poster, hls = payload
+                    cache[pid] = {"kind": "ok", "title": title, "desc": desc, "poster": poster, "hls": hls}
+                else:
+                    cache[pid] = {"kind": kind}
+                    if kind == "error" and len(sample_errors) < 5:
+                        sample_errors.append(payload)
+        print(f"ARTE fetch breakdown: {counts}", flush=True)
+        if sample_errors:
+            print(f"ARTE sample errors: {sample_errors}", flush=True)
+        with open(ARTE_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(cache, f, ensure_ascii=False)
+
+    results = [(pid, v["title"], v["desc"], v["poster"], v["hls"])
+               for pid, v in cache.items() if v.get("kind") == "ok"]
 
     from datetime import datetime, timedelta, timezone
     now = datetime.now(timezone.utc)

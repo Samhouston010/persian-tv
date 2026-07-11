@@ -19,6 +19,6 @@ jobs:
       - run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add playlist.m3u epg.xml.gz ted.m3u
+          git add playlist.m3u epg.xml.gz ted.m3u arte_vod_cache.json
           git diff --cached --quiet || git commit -m "Auto-update $(date -u +%Y-%m-%d\ %H:%M)"
           git push
