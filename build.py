@@ -32,6 +32,10 @@ def _aparat_alive(uid):
 
 
 def fetch_aparat_vod(workers=15):
+    """Returns (entries, epg_tv_element). Aparat's playlist API already gives a
+    synopsis per video, so a synthetic EPG entry (same trick as Sepehr VOD -- a
+    fake 24h-wide 'now playing' window, since VOD has no real airtime) lets
+    TiviMate's Info panel show it."""
     seen = set()
     candidates = []
     for pid in APARAT_MOVIE_PLAYLISTS:
@@ -57,14 +61,35 @@ def fetch_aparat_vod(workers=15):
                 continue
             seen.add(vid)
             poster = a.get("big_poster") or a.get("medium_poster") or ""
-            extinf = f'#EXTINF:-1 tvg-logo="{poster}" group-title="\U0001f3ac آپارات VOD - فیلم سینمایی",{title}'
-            candidates.append((uid, extinf))
+            desc = html.unescape(a.get("description") or "").strip()
+            tvg_id = f"aparat{vid}"
+            extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{poster}" group-title="\U0001f3ac آپارات VOD - فیلم سینمایی",{title}'
+            candidates.append((uid, tvg_id, extinf, title, desc, poster))
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        alive = dict(zip((u for u, _ in candidates), pool.map(_aparat_alive, (u for u, _ in candidates))))
-    dead = sum(1 for u, _ in candidates if not alive[u])
+        alive = dict(zip((u for u, *_ in candidates), pool.map(_aparat_alive, (u for u, *_ in candidates))))
+    dead = sum(1 for u, *_ in candidates if not alive[u])
     if dead:
         print(f"Aparat VOD: dropped {dead} dead/removed videos", flush=True)
-    return [(extinf, f"{APARAT_PROXY_BASE}/play/{uid}") for uid, extinf in candidates if alive[uid]]
+    live = [c for c in candidates if alive[c[0]]]
+    entries = [(extinf, f"{APARAT_PROXY_BASE}/play/{uid}") for uid, tvg_id, extinf, title, desc, poster in live]
+
+    from datetime import datetime, timedelta, timezone
+    now = datetime.now(timezone.utc)
+    epg_start = (now - timedelta(hours=12)).strftime("%Y%m%d%H%M%S +0000")
+    epg_stop = (now + timedelta(hours=12)).strftime("%Y%m%d%H%M%S +0000")
+    tv = ET.Element("tv")
+    for uid, tvg_id, extinf, title, desc, poster in live:
+        ch = ET.SubElement(tv, "channel", {"id": tvg_id})
+        ET.SubElement(ch, "display-name").text = title
+        if poster:
+            ET.SubElement(ch, "icon", {"src": poster})
+        pe = ET.SubElement(tv, "programme", {"start": epg_start, "stop": epg_stop, "channel": tvg_id})
+        ET.SubElement(pe, "title", {"lang": "fa"}).text = title
+        if desc:
+            ET.SubElement(pe, "desc", {"lang": "fa"}).text = desc
+        if poster:
+            ET.SubElement(pe, "icon", {"src": poster})
+    return entries, tv
 
 
 def fetch_fox26_vod(max_items=300):
@@ -606,7 +631,7 @@ def extract(text, group=None):
         i += 1
 
 
-def build_epg():
+def build_epg(extra_trees=()):
     root = ET.Element("tv")
     seen = set()
     for url in EPG_SOURCES:
@@ -620,6 +645,13 @@ def build_epg():
                 root.append(ch); seen.add(cid)
         for prog in tree.findall("programme"):
             root.append(prog)
+    for tree in extra_trees:
+        for ch in tree.findall("channel"):
+            cid = ch.get("id", "")
+            if cid not in seen:
+                root.append(ch); seen.add(cid)
+        for prog in tree.findall("programme"):
+            root.append(prog)
     xml = b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="unicode").encode("utf-8")
     with gzip.open("epg.xml.gz", "wb", compresslevel=9) as f:
         f.write(xml)
@@ -627,7 +659,9 @@ def build_epg():
 
 
 def main():
-    build_epg()
+    aparat, aparat_epg = fetch_aparat_vod()
+    print(f"Aparat VOD: {len(aparat)} videos", flush=True)
+    build_epg(extra_trees=[aparat_epg])
     cat_by_id, logo_by_id = load_iptvorg_meta()
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
@@ -703,11 +737,9 @@ def main():
         out.append(extinf); out.append(stream); out.append("")
     total += len(fox26)
     print(f"Fox 26 VOD: {len(fox26)} videos", flush=True)
-    aparat = fetch_aparat_vod()
     for extinf, stream in aparat:
         out.append(extinf); out.append(stream); out.append("")
     total += len(aparat)
-    print(f"Aparat VOD: {len(aparat)} videos", flush=True)
     ted = []  # ponytail: disabled until playlist is finalized
     print("TED Talks: disabled", flush=True)
     israel = fetch_israel()
