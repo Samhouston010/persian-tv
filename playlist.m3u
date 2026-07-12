@@ -225,6 +225,600 @@ https://mtchls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://familyhls.avatv.live/hls/stream.m3u8
 
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="شبکه یک" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/Logo1plus.png" group-title="📡 تلوبیون",شبکه یک
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tv1/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIB2.ir" tvg-name="شبکه دو" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/2.png" group-title="📡 تلوبیون",شبکه دو
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tv2/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="شبکه سه" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="📡 تلوبیون",شبکه سه
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tv3/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIB4.ir" tvg-name="شبکه چهار" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/4-min.png" group-title="📡 تلوبیون",شبکه چهار
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tv4/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TehranTV.ir" tvg-name="شبکه پنج (تهران)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/iribtv5_min.png" group-title="📡 تلوبیون",شبکه پنج (تهران)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tehran/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="VarzeshTV.ir" tvg-name="شبکه ورزش" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون",شبکه ورزش
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/varzesh/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="OfoghTV.ir" tvg-name="شبکه افق" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/ofogh.png" group-title="📡 تلوبیون",شبکه افق
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/ofogh/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AmouzeshTV.ir" tvg-name="شبکه آموزش" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/Amoozesh_1402-min.png" group-title="📡 تلوبیون",شبکه آموزش
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/amouzesh/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRINN.ir" tvg-name="شبکه خبر" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/khabar-min.png" group-title="📡 تلوبیون",شبکه خبر
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/irinn/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="Nasim.ir" tvg-name="شبکه نسیم" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/nasim-min.png" group-title="📡 تلوبیون",شبکه نسیم
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/nasim/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NamayeshTV.ir" tvg-name="شبکه نمایش" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/namayesh-min.png" group-title="📡 تلوبیون",شبکه نمایش
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/namayesh/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIBMostanad.ir" tvg-name="شبکه مستند" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/mostanad-min.png" group-title="📡 تلوبیون",شبکه مستند
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/mostanad/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="iFilmPersian.ir" tvg-name="آی‌فیلم" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/event/channel_logo/Ifilm.png" group-title="📡 تلوبیون",آی‌فیلم
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/ifilm/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="شبکه قرآن" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/quarnlogo.png" group-title="📡 تلوبیون",شبکه قرآن
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/quran/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SalamatTV.ir" tvg-name="شبکه سلامت" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/salamat-min.png" group-title="📡 تلوبیون",شبکه سلامت
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/salamat/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PooyaTV.ir" tvg-name="شبکه پویا" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/koodak_0c3b8f58fc9cf93bfb151d9400c8f795.png" group-title="📡 تلوبیون",شبکه پویا
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/pooya/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIBOmid.ir" tvg-name="شبکه امید" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/omido-min.png" group-title="📡 تلوبیون",شبکه امید
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/omid/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SepehrTV.ir" tvg-name="شبکه سپهر" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/sepehr_liveirib.png" group-title="📡 تلوبیون",شبکه سپهر
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sepehr/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRINN2.ir" tvg-name="شبکه خبر ۲" tvg-logo="https://lb-cdn.sepehrtv.ir/img/news/irinn2_64328471ba6b6.png" group-title="📡 تلوبیون",شبکه خبر ۲
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/irinn2/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIBUHD.ir" tvg-name="شبکه فراتر (UHD)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/uhd_4k.png" group-title="📡 تلوبیون",شبکه فراتر (UHD)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/faratar/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AbadanTV.ir" tvg-name="شبکه آبادان" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/abadan.png" group-title="📡 تلوبیون",شبکه آبادان
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/abadan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AraTV.ir" tvg-name="شبکه آرا (چهارمحال)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/shirran.png" group-title="📡 تلوبیون",شبکه آرا (چهارمحال)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/ara/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AftabTV.ir" tvg-name="شبکه آفتاب (مرکزی)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/aftab_01.png" group-title="📡 تلوبیون",شبکه آفتاب (مرکزی)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/aftab/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AtrakTV.ir" tvg-name="شبکه اترک (خراسان شمالی)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/atrak-min.png" group-title="📡 تلوبیون",شبکه اترک (خراسان شمالی)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/atrak/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="EshraghNetwork.ir" tvg-name="شبکه اشراق (زنجان)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/eshragh.png" group-title="📡 تلوبیون",شبکه اشراق (زنجان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/eshragh/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IsfahanTV.ir" tvg-name="شبکه اصفهان" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/esfahan.png" group-title="📡 تلوبیون",شبکه اصفهان
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/esfahan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="AlborzTV.ir" tvg-name="شبکه البرز" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alborz_1402_.png" group-title="📡 تلوبیون",شبکه البرز
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/alborz/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IlamTV.ir" tvg-name="شبکه ایلام" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/ilam.png" group-title="📡 تلوبیون",شبکه ایلام
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/ilam/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BaranTV.ir" tvg-name="شبکه باران (گیلان)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/baran.png" group-title="📡 تلوبیون",شبکه باران (گیلان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/baran/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="JahanbinTV.ir" tvg-name="شبکه جهان‌بین" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/shahrekord__jahanbin-min.png" group-title="📡 تلوبیون",شبکه جهان‌بین
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/jahanbin/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KhavaranTV.ir" tvg-name="شبکه خاوران (خراسان جنوبی)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/khorasanjonoobi.png" group-title="📡 تلوبیون",شبکه خاوران (خراسان جنوبی)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/khavaran/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KhorasanRazaviTV.ir" tvg-name="شبکه خراسان رضوی" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/KHORASANRAZAVI.png" group-title="📡 تلوبیون",شبکه خراسان رضوی
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/khorasanrazavi/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KhalijeFarsTV.ir" tvg-name="شبکه خلیج فارس (هرمزگان)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/khalijefars.png" group-title="📡 تلوبیون",شبکه خلیج فارس (هرمزگان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/khalijefars/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KhozestanTV.ir" tvg-name="شبکه خوزستان" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/khoozestan1.jpg" group-title="📡 تلوبیون",شبکه خوزستان
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/khoozestan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="DenaTV.ir" tvg-name="شبکه دنا (کهگیلویه)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/dena.png" group-title="📡 تلوبیون",شبکه دنا (کهگیلویه)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/dena/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="RoyaTV.ir" tvg-name="شبکه رویا" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/rooyatv.png" group-title="📡 تلوبیون",شبکه رویا
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/iribu/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZagrosTV.ir" tvg-name="شبکه زاگرس (لرستان)" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/thumb/e/e4/Kermanshah_Zaghros.svg/960px-Kermanshah_Zaghros.svg.png" group-title="📡 تلوبیون",شبکه زاگرس (لرستان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/zagros/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SarbedaranTV.ir" tvg-name="شبکه سبزوار" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/sarbedaran1.png" group-title="📡 تلوبیون",شبکه سبزوار
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sarbedaran/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SabalanTV.ir" tvg-name="شبکه سبلان (اردبیل)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/ardebil.png" group-title="📡 تلوبیون",شبکه سبلان (اردبیل)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sabalan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SemnanTV.ir" tvg-name="شبکه سمنان" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/semnan-02.png" group-title="📡 تلوبیون",شبکه سمنان
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/semnan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="SahandTV.ir" tvg-name="شبکه سهند (آذربایجان شرقی)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/sahand.png" group-title="📡 تلوبیون",شبکه سهند (آذربایجان شرقی)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sahand/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="FarsTV.ir" tvg-name="شبکه فارس" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/fars.png" group-title="📡 تلوبیون",شبکه فارس
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/fars/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="QazvinTV.ir" tvg-name="شبکه قزوین" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/qazvin.png" group-title="📡 تلوبیون",شبکه قزوین
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/qazvin/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MahabadTV.ir" tvg-name="شبکه مهاباد" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/mahabad.png" group-title="📡 تلوبیون",شبکه مهاباد
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/mahabad/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="شبکه نصف جهان (اصفهان)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/nesfejahan.png" group-title="📡 تلوبیون",شبکه نصف جهان (اصفهان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/nesfejahan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HamoonTV.ir" tvg-name="شبکه هامون (سیستان)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/hamoon.png" group-title="📡 تلوبیون",شبکه هامون (سیستان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/hamoon/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="HamedanTV.ir" tvg-name="شبکه همدان (سینا)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/HAMEDAN.png" group-title="📡 تلوبیون",شبکه همدان (سینا)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sina/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="KordestanTV.ir" tvg-name="شبکه کردستان" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/kordestan1.png" group-title="📡 تلوبیون",شبکه کردستان
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/kordestan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="YazdTV.ir" tvg-name="شبکه یزد (تابان)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/taban.png" group-title="📡 تلوبیون",شبکه یزد (تابان)
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/taban/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="مثبت یک" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/1.png" group-title="📡 تلوبیون",مثبت یک
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tv1plus/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="تلوبیون اسپرت ۱" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون",تلوبیون اسپرت ۱
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sport1/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="تلوبیون اسپرت ۲" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون",تلوبیون اسپرت ۲
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sport2/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="تلوبیون اسپرت ۳" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون",تلوبیون اسپرت ۳
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sport3/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="الکوثر" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alkowsar.png" group-title="📡 تلوبیون",الکوثر
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/kawthar/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="ولایت" tvg-logo="https://lb-cdn.sepehrtv.ir/img/news/velayat_630b3da2e98b1.png" group-title="📡 تلوبیون",ولایت
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/velayat/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="لبیک" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/shabake%20labeik%20130%20130.png" group-title="📡 تلوبیون",لبیک
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/labbayk/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="حبیب" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/habib300-min.png" group-title="📡 تلوبیون",حبیب
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/habib/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="تکیه مداحی" tvg-logo="https://cdn.telewebion.ir/channelsLogo/d602596d-7b8d-48ef-8f51-9344b4ac0eb6/default" group-title="📡 تلوبیون",تکیه مداحی
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tekyemadahi/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="العالم" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/alalam-02.png" group-title="📡 تلوبیون",العالم
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/alalam/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="فلسطین" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/palestine_.png" group-title="📡 تلوبیون",فلسطین
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/palestine/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="گلخانه" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/event/logo/golkhanelogo.png" group-title="📡 تلوبیون",گلخانه
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/golkhane/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="گلستان" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/Golestan150.png" group-title="📡 تلوبیون",گلستان
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sabz/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="مکران" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/makran.png" group-title="📡 تلوبیون",مکران
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/makran/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="زعفران" tvg-logo="https://cdn.telewebion.ir/channelsLogo/bc660d9e-4d2d-450f-bbff-517326d59695/default" group-title="📡 تلوبیون",زعفران
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/zaferan/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="پرس تی وی" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/presstv.png" group-title="📡 تلوبیون",پرس تی وی
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/presstv/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="sport4" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون",sport4
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/sport4/live/playlist.m3u8
+
 #EXTINF:-1 group-title="📡 تلوبیون" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png",English Club TV HD
 #EXTVLCOPT:network-caching=15000
 #EXTVLCOPT:http-reconnect=true
@@ -11610,15 +12204,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -11762,6 +12347,24 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c9542381121a452c9703f7623181c151/0ab7589f-798e-4ea7-9f5c-cd96085a0ab6_thumb_001_HD.jpg",روایت مخاطبان ایران‌اینترنشنال از قطعی بی‌خبر برق در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/c9542381121a452c9703f7623181c151/hls/0ab7589f-798e-4ea7-9f5c-cd96085a0ab6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a83669d1e7a4e2cbadd4b2537cb3319/1370f6a1-fda2-4ab1-811f-a43fabe4f929_thumb_004_HD.jpg",درخواست‌ها برای بررسی نقش احتمالی روسیه یا جمهوری اسلامی در مرگ لیندزی گراهام
+https://daq1pvcuhj77l.cloudfront.net/1/4a83669d1e7a4e2cbadd4b2537cb3319/hls/1370f6a1-fda2-4ab1-811f-a43fabe4f929.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9549d911333549b085509f44557e845b/70fe8ae0-9c55-49b1-b0c3-65911d78d672_thumb_003_HD.jpg",مروری بر روزنامه‌های ایران، یکشنبه ۲۱ تیر، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/9549d911333549b085509f44557e845b/hls/70fe8ae0-9c55-49b1-b0c3-65911d78d672.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/40977af1fa2841e5bb8b7c082d2f356e/6d5945c2-8cf9-4262-bacb-633834cf9bb6_thumb_001_HD.jpg",اخبار نیمروزی | یکشنبه ۲۱ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/40977af1fa2841e5bb8b7c082d2f356e/hls/6d5945c2-8cf9-4262-bacb-633834cf9bb6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/183c115221c74ce4ab3a3ed4db61bcfc/fc05e58a-6844-4d6e-a36d-a424bd91c704_thumb_001_HD.jpg",دور جدید حملات متقابل آمریکا و جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/183c115221c74ce4ab3a3ed4db61bcfc/hls/fc05e58a-6844-4d6e-a36d-a424bd91c704.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ad5d10156f0e476f90b72c0062a1327c/e1e1109b-4c36-4c80-acf0-f3a129e5a3e7_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۲۱ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/ad5d10156f0e476f90b72c0062a1327c/hls/e1e1109b-4c36-4c80-acf0-f3a129e5a3e7.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7bbc57f008dc4701a2d0c92e62604e8f/68040222-b508-4576-a0ba-60ab13353f9b_thumb_001_HD.jpg",واکنش‌ها به درگذشت لیندسی گراهام، سناتور جمهوری‌خواه حامی انقلاب ملی ایرانیان
 https://daq1pvcuhj77l.cloudfront.net/1/7bbc57f008dc4701a2d0c92e62604e8f/hls/68040222-b508-4576-a0ba-60ab13353f9b.m3u8
