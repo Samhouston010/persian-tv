@@ -12195,15 +12195,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12347,6 +12338,42 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e61d753f563241678d8bc3751ff89247/276e2ad0-6eb8-45c5-817c-5309226f9cdc_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، یک‌شنبه ۲۱ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/e61d753f563241678d8bc3751ff89247/hls/276e2ad0-6eb8-45c5-817c-5309226f9cdc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7095befbc35241529420c3def922cdb3/167d0fb1-fcb1-4786-8a2e-68249fdd659f_thumb_001_HD.jpg",پیش‌بینی‌ها از نتایج بازی‌های نیمه‌هایی جام جهانی 
+https://daq1pvcuhj77l.cloudfront.net/1/7095befbc35241529420c3def922cdb3/hls/167d0fb1-fcb1-4786-8a2e-68249fdd659f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ccfeee9bdf5e4af5bc7f2f9e5de1cc68/2fcdb18e-2458-4c70-bf11-4bc5ac472cb7_thumb_001_HD.jpg",دوراهی بزرگ دیوید بکام در نیمه نهایی جام جهانی؛ تیم ملی انگلیس یا لیونل مسی؟
+https://daq1pvcuhj77l.cloudfront.net/1/ccfeee9bdf5e4af5bc7f2f9e5de1cc68/hls/2fcdb18e-2458-4c70-bf11-4bc5ac472cb7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a857cba09a1946138e4ce488437848b2/fd69d7f2-a974-401b-abd0-cb42f326dfbf_thumb_001_HD.jpg",آرژانتین بدون لیونل مسی یک تیم معمولی است
+https://daq1pvcuhj77l.cloudfront.net/1/a857cba09a1946138e4ce488437848b2/hls/fd69d7f2-a974-401b-abd0-cb42f326dfbf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0f1a22f807224218aaed5e9559549ff7/8c51ac74-3ae6-4db0-a050-361b71f80164_thumb_001_HD.jpg",میدان تایمز نیویورک در تسخیر هواداران آرژانتین پس از پیروزی بر سوئیس
+https://daq1pvcuhj77l.cloudfront.net/1/0f1a22f807224218aaed5e9559549ff7/hls/8c51ac74-3ae6-4db0-a050-361b71f80164.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/638641a53ea2424cbf6ec0dc0486f47a/6ff744b4-4fd6-4579-9936-b8e9845b4f25_thumb_001_HD.jpg",آرژانتین تنها تیم غیر اروپایی در نیمه نهایی جام جهانی ۲۰۲۶
+https://daq1pvcuhj77l.cloudfront.net/1/638641a53ea2424cbf6ec0dc0486f47a/hls/6ff744b4-4fd6-4579-9936-b8e9845b4f25.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b651d946735a4384a4f4ba683037c191/2bf94f9d-9944-413d-a1cf-fd32d591aa20_thumb_001_HD.jpg",جشن خانوادگی انگلیسی‌ها در شب پیروزی سه‌شیرها برابر نروژ و هالند
+https://daq1pvcuhj77l.cloudfront.net/1/b651d946735a4384a4f4ba683037c191/hls/2bf94f9d-9944-413d-a1cf-fd32d591aa20.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/28eba4af8a2740aca762254d17503080/ca95c959-4683-4ae8-a149-b4d37a064583_thumb_001_HD.jpg",ناکامی بزرگ ارلینگ هالند برابر تیم ملی انگلیس و پایان روند گلزنی خارق‌العاده غول نروژی
+https://daq1pvcuhj77l.cloudfront.net/1/28eba4af8a2740aca762254d17503080/hls/ca95c959-4683-4ae8-a149-b4d37a064583.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b602ca35a56146f3a4a83d2a2cc9735a/9535e03d-983c-445d-bdb5-af02046b661a_thumb_001_HD.jpg",افزایش محبوبیت جود بلینگام پس از درخشش در جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/b602ca35a56146f3a4a83d2a2cc9735a/hls/9535e03d-983c-445d-bdb5-af02046b661a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5a4e33e25eda4ef795e76be049eb7d27/ca29fc2c-2e8f-4695-863d-de811872e12c_thumb_001_HD.jpg",اعتراض شدید هواداران انگلیسی پس از نشان دادن تصویر اینفانتینو در هنگام بازی با نروژ
+https://daq1pvcuhj77l.cloudfront.net/1/5a4e33e25eda4ef795e76be049eb7d27/hls/ca29fc2c-2e8f-4695-863d-de811872e12c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fdb66716377a4e7b9ec6b979db6f9909/556a9ebc-32cf-4589-93b7-b30d55c5a43f_thumb_001_HD.jpg",پیشروی بازی به بازی انگلیسی‌ها به سمت قهرمانی در جام جهانی با توماس توخل
+https://daq1pvcuhj77l.cloudfront.net/1/fdb66716377a4e7b9ec6b979db6f9909/hls/556a9ebc-32cf-4589-93b7-b30d55c5a43f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8a7d3edb6a7b4411b08d3ae39f8260b5/b85fd2d5-f7ce-4d61-a90e-76c5115b887c_thumb_001_HD.jpg",صعود انگلیس به نیمه نهایی جام جهانی با درخشش بلینگام برابر نروژ
+https://daq1pvcuhj77l.cloudfront.net/1/8a7d3edb6a7b4411b08d3ae39f8260b5/hls/b85fd2d5-f7ce-4d61-a90e-76c5115b887c.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0bb660e132e748f6849ec39f44ca7a2d/2cfd8688-b642-4fad-81d7-e15d5656f81d_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن‌: آتش سنگین جنگ مجتبی و ترامپ بر سر تنگه هرمز
 https://daq1pvcuhj77l.cloudfront.net/1/0bb660e132e748f6849ec39f44ca7a2d/hls/2cfd8688-b642-4fad-81d7-e15d5656f81d.m3u8
