@@ -1054,20 +1054,21 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(israel)
     print(f"Israel: {len(israel)} channels", flush=True)
-    iran_org = fetch_iran_org(cat_by_id, logo_by_id)
-    for extinf, stream in iran_org:
-        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
-    total += len(iran_org)
-    print(f"Iran (iptv-org): {len(iran_org)} channels", flush=True)
+    # user request 2026-07-12: new parsatv.com channels go at the top of ایران, iptv-org after
     parsatv_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
                       for name, logo, stream in PARSATV_IRAN_EXTRA]
     for extinf, stream in parsatv_extra:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(parsatv_extra)
     print(f"Iran (parsatv.com): {len(parsatv_extra)} channels", flush=True)
+    iran_org = fetch_iran_org(cat_by_id, logo_by_id)
+    for extinf, stream in iran_org:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(iran_org)
+    print(f"Iran (iptv-org): {len(iran_org)} channels", flush=True)
     os.makedirs("ایران", exist_ok=True)
     iran_file = ["#EXTM3U", ""]
-    for extinf, stream in iran_org + parsatv_extra:
+    for extinf, stream in parsatv_extra + iran_org:
         iran_file.append(extinf); iran_file.append(_AF_NORMAL); iran_file.append(stream); iran_file.append("")
     with open("ایران/ایران.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(iran_file))
