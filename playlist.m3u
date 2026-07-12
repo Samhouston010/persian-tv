@@ -12204,15 +12204,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12356,6 +12347,18 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/05833b1f4adc492397755c28811e2383/77355777-6eff-4b44-8342-aeef107d6fb9_thumb_001_HD.jpg",خودداری وریشه مرادی از حضور در دادگاه انقلاب تهران
+https://daq1pvcuhj77l.cloudfront.net/1/05833b1f4adc492397755c28811e2383/hls/77355777-6eff-4b44-8342-aeef107d6fb9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0722826fd04f46cf9f90d459245ae2e1/6b826e64-49d9-442b-a69c-722d9c846278_thumb_001_HD.jpg",تلاش دولت لبنان برای مهار حزب‌الله در سایه مذاکرات با اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/0722826fd04f46cf9f90d459245ae2e1/hls/6b826e64-49d9-442b-a69c-722d9c846278.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c4213e9b300b4352b4b5e3f90972f3e6/15e0f3ec-020d-48d6-84d0-ff2f89bb6970_thumb_001_HD.jpg",افزایش رایزنی‌های دیپلماتیک برای بازگشت آمریکا و جمهوری اسلامی به میز مذاکره
+https://daq1pvcuhj77l.cloudfront.net/1/c4213e9b300b4352b4b5e3f90972f3e6/hls/15e0f3ec-020d-48d6-84d0-ff2f89bb6970.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a8510e724c49448bb557138bd45fe782/b0e20d2b-fcbb-45d7-9efb-1652bdf80c1c_thumb_001_HD.jpg", سیاست با مراد ویسی: هشدار مرعشی به مجتبی درباره تله انتقام: فتحعلی‌شاه نشو
+https://daq1pvcuhj77l.cloudfront.net/1/a8510e724c49448bb557138bd45fe782/hls/b0e20d2b-fcbb-45d7-9efb-1652bdf80c1c.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/297b6f0b6115496488feb49a5732ac70/1b2059c6-3bd4-4cbb-90d5-588cecffa35a_thumb_001_HD.jpg",چالش خلع سلاح حزب‌الله در مسیر آتش‌بس لبنان
 https://daq1pvcuhj77l.cloudfront.net/1/297b6f0b6115496488feb49a5732ac70/hls/1b2059c6-3bd4-4cbb-90d5-588cecffa35a.m3u8
@@ -13442,6 +13445,15 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4672618
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://keshet12.samhoustonbot.workers.dev
+
+#EXTINF:-1 tvg-name="TBN Israel" tvg-logo="https://www.parsatv.com/index_files/channels/tbnisrael.jpg" group-title="📡 اسرائیل",TBN Israel
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1783843446/ei/FfZSav2uPJaEt7EPo4Oh6AM/ip/2a0e:d785:6002:3fc6:e470:3ab1:f388:7d3c/id/Mw1luoSACh4.1/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr3---sn-q4fl6nzy.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AZFlqhMDo6hlzXa4KCE3Mx4KUf-3iSxmrBxv-NAucK1Ve6vIa4CEV20Nhk97jtbFHl1EtUpyBLp032me/spc/SQ-umoy2A944Jvuko8zMFRC3D1golgvV_lPwckzzwUHe9n1dVA/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4331250/met/1783821846,/mh/A8/mip/142.111.152.185/mm/44/mn/sn-q4fl6nzy/ms/lva/mv/m/mvi/3/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,52017147/mt/1783821638/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIga8O0wYZ396fGIa932inkZj5Rql7xPEPGoZi5s3WmCAECIQDQ_KDnTdTL4cKo51d3ePeHisjBf7qe8Ly-DUsNuwi80Q%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgHoz6y1S5kODERfqDuuwoLJ0AawHfX9XcFN98cNbFDuECIQDx_a7D7Mu2sj8qP24biaieedi0HFAcGZM-4T7nkMYebg%3D%3D/playlist/index.m3u8
 
 #EXTINF:-1 tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000
