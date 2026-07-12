@@ -9,6 +9,16 @@ NAMAKADE_MOVIES_URL = "https://namakade.com/movies"
 ARTE_SITEMAP = "https://www.arte.tv/static/opa_static/sitemap/en_programs.xml"
 ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 
+# user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
+# these dead intermittently under load -- and moved to end of پرشیانا instead
+_PERSIANA_EXTRA = [
+    ("FX1.ir",       "FX TV 1",    "https://fxtvhls.wns.live/hls/stream.m3u8"),
+    ("FX2.ir",       "FX TV 2",    "https://toonixhls.wns.live/hls/stream.m3u8"),
+    ("MTC.us",       "MTC TV",     "https://mtchls.wns.live/hls/stream.m3u8"),
+    ("AVAFamily.ir", "AVA Family", "https://familyhls.avatv.live/hls/stream.m3u8"),
+]
+_PERSIANA_EXTRA_IDS = [tid for tid, _, _ in _PERSIANA_EXTRA]
+
 # ponytail: Aparat's own HLS manifest tokens expire in ~5h, so entries point at a
 # Worker (aparat-vod-proxy) that re-resolves a fresh link per play, same as Sepehr VOD.
 APARAT_PROXY_BASE = "https://aparat-vod-proxy.samhouston010.workers.dev"
@@ -334,8 +344,13 @@ def fetch_iranintl_vod():
     titles = re.findall(r"<video:title>(.*?)</video:title>", xml)
     thumbs = re.findall(r"<video:thumbnail_loc>(.*?)</video:thumbnail_loc>", xml)
     videos = re.findall(r"<video:content_loc>(.*?)</video:content_loc>", xml)
+    dates  = re.findall(r"<video:publication_date>(.*?)</video:publication_date>", xml)
+    # ponytail: user only wants today's daily VOD, not the sitemap's full ~9-day backlog
+    today = max(d[:10] for d in dates) if dates else ""
     entries = []
-    for title, thumb, url in zip(titles, thumbs, videos):
+    for title, thumb, url, date in zip(titles, thumbs, videos, dates):
+        if date[:10] != today:
+            continue
         # Convert MP4 URL to HLS: .../1/{vid}/{uuid}_240p.mp4 → .../1/{vid}/hls/{uuid}.m3u8
         hls = re.sub(r'/([0-9a-f-]+)_\d+p\.mp4$', r'/hls/\1.m3u8', url)
         extinf = f'#EXTINF:-1 group-title="\U0001f4f9 ایران اینترنشنال VOD" tvg-logo="{thumb}",{title}'
@@ -724,6 +739,8 @@ def fetch_iran_org(cat_by_id, logo_by_id):
             print(f"Iran org source failed ({url}): {e}", flush=True)
             continue
         entries.extend(extract(text, "ایران"))
+    # moved to end of پرشیانا per user request 2026-07-11 -- keep out of this group too
+    entries = [e for e in entries if not any(tid in e[0] for tid in _PERSIANA_EXTRA_IDS)]
     entries = _alive(entries, "Iran (iptv-org)")
     entries = [(_fill_logo(extinf, logo_by_id), stream) for extinf, stream in entries]
     entries.sort(key=lambda e: _channel_category(e[0], cat_by_id))
@@ -912,6 +929,10 @@ def main():
             mbc_backup_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia (بکاپ)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia (بکاپ)' % group
             out.append(mbc_backup_extinf); out.append(_AF_NORMAL); out.append("https://hls.mbcpersia.live/hls/stream.m3u8"); out.append("")
             ec_count += 2
+            for tvg_id, name, stream in _PERSIANA_EXTRA:
+                extinf = _fill_logo(f'#EXTINF:-1 tvg-id="{tvg_id}" group-title="{group}",{name}', logo_by_id)
+                out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+            ec_count += len(_PERSIANA_EXTRA)
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group or url}: {len(entries)} channels{label}", flush=True)
