@@ -652,13 +652,16 @@ _P = "https://images.pluto.tv/channels/"
 
 NEWS_CHANNELS = [
     # ─── فارسی/ایرانی ───────────────────────────────────────────────────────
-    _ch("Iran International",    _L+"/iran/iran-international-ir.png",           "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
-    _ch("Iran International (Backup)", _L+"/iran/iran-international-ir.png",     "https://dev-live.livetvstream.co.uk/LS-63503-4/index.m3u8"),
+    # ponytail: tv-logo/tv-logos dropped its iran/ and qatar/ country folders in a repo
+    # reorg (2026-07) -- these paths 404 now. Iran International has no replacement in
+    # that repo; using iptv-org's own logos.json entry instead.
+    _ch("Iran International",    "https://i.imgur.com/55RpaF3.png",              "https://hlspackager.akamaized.net/live/DB/IRAN_INTERNATIONAL/HLS/IRAN_INTERNATIONAL.m3u8"),
+    _ch("Iran International (Backup)", "https://i.imgur.com/55RpaF3.png",        "https://dev-live.livetvstream.co.uk/LS-63503-4/index.m3u8"),
     _ch("BBC Persian",           "https://upload.wikimedia.org/wikipedia/en/4/44/BBC_News_Persian_Logo.jpg", "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8"),
     _ch("BBC Persian (Backup)",  "https://upload.wikimedia.org/wikipedia/en/4/44/BBC_News_Persian_Logo.jpg", "https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/mobile_wifi_main_hd_abr_v2.m3u8"),
     _ch("VOA Persian",           "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/voapersian.default.png", "https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8"),
     _ch("VOA Persian (Backup)",  "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/voapersian.default.png", "https://voaphls.wns.live/hls/stream.m3u8"),
-    _ch("Press TV",              _L+"/iran/press-tv-ir.png",                     "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"),
+    _ch("Press TV",              _L+"/international/press-tv-int.png",           "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"),
     _ch("DEJ TV",                "https://www.parsatv.com/index_files/channels/dejtv.jpg", "https://rdejhls.wns.live/hls/stream.m3u8"),
     _ch("MelliG TV",             "https://www.parsatv.com/index_files/channels/melligtv.jpg", "https://mellihls.wns.live/hls/stream.m3u8"),
     _ch("Radio Farda TV",        "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiofarda.default.svg", "https://rferl-ingest.akamaized.net/hls/live/2121768/tvmc01/playlist.m3u8"),
@@ -666,12 +669,13 @@ NEWS_CHANNELS = [
     _ch("Tapesh",                "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pbctapesh.default.png", "https://maxtvhls.wns.live/hls/stream.m3u8"),
     # سیمای آزادی: dynamic, see load_simay_live() — refreshed every 4h so a rotated CDN URL doesn't go dead
     # ─── عربی ───────────────────────────────────────────────────────────────
-    _ch("Al Jazeera English",    _L+"/qatar/al-jazeera-english-qa.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
-    _ch("Al Jazeera Arabic",     _L+"/qatar/al-jazeera-qa.png",                  "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
-    _ch("Sky News Arabia",       _L+"/united-arab-emirates/sky-news-arabia-ae.png", "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
-    _ch("Al Arabiya",            _L+"/saudi-arabia/al-arabiya-sa.png",           "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
-    _ch("Al Hadath",             _L+"/saudi-arabia/al-arabiya-sa.png",           "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
-    _ch("Al Mayadeen",           _L+"/lebanon/al-mayadeen-lb.png",               "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8"),
+    _ch("Al Jazeera English",    _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
+    _ch("Al Jazeera Arabic",     _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
+    _ch("Sky News Arabia",       _L+"/world-middle-east/sky-news-arabia-mea.png", "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
+    _ch("Al Arabiya",            _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
+    _ch("Al Hadath",             _L+"/united-arab-emirates/al-arabiya-al-hadath-ae.png", "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
+    # ponytail: Al Mayadeen has no replacement in tv-logo/tv-logos either; iptv-org's own logo instead
+    _ch("Al Mayadeen",           "https://i.imgur.com/GtQOKeW.png",              "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8"),
     # ─── انگلیسی/بریتانیا ───────────────────────────────────────────────────
     _ch("BBC World News",        "http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png", "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8"),
     _ch("Sky News",              _P+"55b285cd2665de274553d66f/colorLogoPNG.png", "https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8"),
@@ -691,7 +695,7 @@ NEWS_CHANNELS = [
     _ch("France 24",             _S+"GBBD1100002L5_20250107T030646SQUARE.png",   "https://jmp2.uk/stvp-GBBD1100002L5"),
     _ch("BFM TV",                _S+"CH500001V2_20251209T125744SQUARE.png",      "https://jmp2.uk/stvp-CH500001V2"),
     # ─── روسیه/چین ───────────────────────────────────────────────────────────
-    _ch("RT International",      _L+"/russia/rt-ru.png",                         "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8"),
+    _ch("RT International",      _L+"/international/russia-today-int.png",       "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8"),
     _ch("CGTN",                  "https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/82a28e14-7f41-4a39-b6b9-57de69feb0ef.jpeg", "https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8"),
     # ─── آسیا ────────────────────────────────────────────────────────────────
     _ch("WION",                  _SU+"INBD4000058T_20260623T013446SQUARE.png",   "https://jmp2.uk/stvp-INBD4000058T"),
