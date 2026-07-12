@@ -765,7 +765,7 @@ def load_iptvorg_meta():
 
 # user request 2026-07-12: iptv-org has zero logos for these -- pulled from parsatv.com,
 # downloaded and self-hosted here so they don't break if that site changes/goes down
-_LOGOS = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos"
+_LOGOS = "https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos"
 MANUAL_LOGO_OVERRIDES = {
     "FX1.ir":         f"{_LOGOS}/fx1.png",
     "FX2.ir":         f"{_LOGOS}/fx2.png",
