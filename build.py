@@ -766,7 +766,10 @@ def load_iptvorg_meta():
 # user request 2026-07-12: iptv-org has zero logos for these -- pulled from parsatv.com,
 # downloaded and self-hosted here so they don't break if that site changes/goes down
 _LOGOS = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos"
-IRAN_LOGO_OVERRIDES = {
+MANUAL_LOGO_OVERRIDES = {
+    "FX1.ir":         f"{_LOGOS}/fx1.png",
+    "FX2.ir":         f"{_LOGOS}/fx2.png",
+    "AVAFamily.ir":   f"{_LOGOS}/avafamily.png",
     "AfraFilm.ir":    f"{_LOGOS}/afrafilm.jpg",
     "CafeFilm.ir":    f"{_LOGOS}/cafefilm.png",
     "GrandCinema.tr": f"{_LOGOS}/grandcinema.png",
@@ -981,7 +984,7 @@ def main():
     print("ARTE VOD: disabled", flush=True)
     build_epg(extra_trees=[])
     cat_by_id, logo_by_id = load_iptvorg_meta()
-    logo_by_id.update(IRAN_LOGO_OVERRIDES)
+    logo_by_id.update(MANUAL_LOGO_OVERRIDES)
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
     out = [f'#EXTM3U url-tvg="{epg_url}"', ""]

@@ -189,7 +189,7 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc4976
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.mbcpersia.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="FX1.ir" group-title="📺 پرشیانا",FX TV 1
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/fx1.png" tvg-id="FX1.ir" group-title="📺 پرشیانا",FX TV 1
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -198,7 +198,7 @@ https://hls.mbcpersia.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://fxtvhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="FX2.ir" group-title="📺 پرشیانا",FX TV 2
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/fx2.png" tvg-id="FX2.ir" group-title="📺 پرشیانا",FX TV 2
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -216,7 +216,7 @@ https://toonixhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://mtchls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="AVAFamily.ir" group-title="📺 پرشیانا",AVA Family
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/avafamily.png" tvg-id="AVAFamily.ir" group-title="📺 پرشیانا",AVA Family
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-mayadeen-lb.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -13401,7 +13410,7 @@ https://d1yd8hohnldm33.cloudfront.net/out/v1/19dee23c2cc24f689bd4e1288661ee0c/in
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8?dvr=21600000
 
-#EXTINF:-1 tvg-name="Channel 10 Economy" tvg-logo="" group-title="📡 اسرائیل",Channel 10 Economy
+#EXTINF:-1 tvg-name="Channel 10 Economy" tvg-logo="https://raw.githubusercontent.com/Samhouston010/israel-tv/main/logos/channel10economy.png" group-title="📡 اسرائیل",Channel 10 Economy
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -13473,7 +13482,7 @@ https://rgelive.akamaized.net/hls/live/2043095/live3/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8
 
-#EXTINF:-1 tvg-name="100FM TV" tvg-logo="" group-title="📡 اسرائیل",100FM TV
+#EXTINF:-1 tvg-name="100FM TV" tvg-logo="https://raw.githubusercontent.com/Samhouston010/israel-tv/main/logos/100fm.png" group-title="📡 اسرائیل",100FM TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -13482,7 +13491,7 @@ https://ynet-live-01.ynet-pic1.yit.co.il/ynet/live.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://cdn.cybercdn.live/Radios_100FM/Video/playlist.m3u8
 
-#EXTINF:-1 tvg-name="Hidabroot 97" tvg-logo="" group-title="📡 اسرائیل",Hidabroot 97
+#EXTINF:-1 tvg-name="Hidabroot 97" tvg-logo="https://raw.githubusercontent.com/Samhouston010/israel-tv/main/logos/hidabroot97.png" group-title="📡 اسرائیل",Hidabroot 97
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14103,7 +14112,7 @@ https://live.presstv.ir/hls/ifilmen.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.presstv.ir/hls/ifilmfa.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="AfraFilm.ir@SD",Afra Film
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/afrafilm.jpg" tvg-id="AfraFilm.ir@SD",Afra Film
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14112,7 +14121,7 @@ https://live.presstv.ir/hls/ifilmfa.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://afrafhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="CafeFilm.ir@SD",Cafe Film
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/cafefilm.png" tvg-id="CafeFilm.ir@SD",Cafe Film
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14130,7 +14139,7 @@ https://cafefhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://moviethls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="GrandCinema.tr@SD",Grand Cinema
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/grandcinema.png" tvg-id="GrandCinema.tr@SD",Grand Cinema
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14139,7 +14148,7 @@ https://moviethls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://gcinemahls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="HomePlus.ir@SD",Home Plus
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/homeplus.jpg" tvg-id="HomePlus.ir@SD",Home Plus
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14148,7 +14157,7 @@ https://gcinemahls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://homeplushls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/icc.png" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14157,7 +14166,7 @@ https://homeplushls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://icchls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="MetaFilmTV.ir@SD",Meta Film TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/metafilm.jpg" tvg-id="MetaFilmTV.ir@SD",Meta Film TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14202,7 +14211,7 @@ https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pmchls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="PMCRoyale.ae@SD",PMC Royale (1080p)
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/pmcroyale.png" tvg-id="PMCRoyale.ae@SD",PMC Royale (1080p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14292,7 +14301,7 @@ https://icnet1hls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://icnet2hls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="icnet3.ca@SD",icnet 3
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/icnet3.png" tvg-id="icnet3.ca@SD",icnet 3
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14364,7 +14373,7 @@ https://live.asil.tv/asiltv/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.nejat.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="AraxTV.ir@SD",Arax TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/araxtv.png" tvg-id="AraxTV.ir@SD",Arax TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14373,7 +14382,7 @@ https://hls.nejat.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://araxhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="ArkoTV.ir@SD",Arko TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/arkotv.jpg" tvg-id="ArkoTV.ir@SD",Arko TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14382,7 +14391,7 @@ https://araxhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://arkhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="ArvanTV.ir@SD",Arvan TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/arvantv.png" tvg-id="ArvanTV.ir@SD",Arvan TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14391,7 +14400,7 @@ https://arkhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://arvhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="ClassicTV.ir@SD",Classic TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/classictv.png" tvg-id="ClassicTV.ir@SD",Classic TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14400,7 +14409,7 @@ https://arvhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://clshls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="DatisTV.ir@SD",Datis TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/datis.png" tvg-id="DatisTV.ir@SD",Datis TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14409,7 +14418,7 @@ https://clshls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://dathls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="DejTV.ir@HD",Dej TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/dejtv.jpg" tvg-id="DejTV.ir@HD",Dej TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14418,7 +14427,7 @@ https://dathls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://rdejhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="KhabarbinTV.ir@HD",Khabarbin TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/khabarbin.png" tvg-id="KhabarbinTV.ir@HD",Khabarbin TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14436,7 +14445,7 @@ https://khbhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://kurdchhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="SetarehTV.uk@HD",Setareh TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/setarehtv.png" tvg-id="SetarehTV.uk@HD",Setareh TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -14445,7 +14454,7 @@ https://kurdchhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://setarehhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="ZedTV.ir@HD",Zed TV
+#EXTINF:-1 group-title="ایران" tvg-logo="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos/zedtvpersian.jpg" tvg-id="ZedTV.ir@HD",Zed TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
