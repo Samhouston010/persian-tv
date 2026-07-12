@@ -750,7 +750,7 @@ def fetch_iran_org(cat_by_id, logo_by_id):
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
 KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
 
-ISRAEL_SKIP = {"Keshet 12 DVR", "N12 News", "Keshet 12 CC", "Kan Kids"}
+ISRAEL_SKIP = {"Keshet 12 DVR", "N12 News", "Keshet 12 CC", "Kan Kids", "Channel 24", "Eretz Nehederet"}
 
 def fetch_israel():
     text = fetch(ISRAEL_M3U).decode("utf-8", errors="ignore")
