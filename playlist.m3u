@@ -837,15 +837,6 @@ https://dash2.antik.sk/live/test_ectv_hd_1200/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1442/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="شبکه سه (بکاپ)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="📡 تلوبیون",شبکه سه (بکاپ)
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://s1-cloud.irib.ir/securelive3/tv3hd/tv3hd.m3u8
-
 #EXTINF:-1 tvg-id="sepehrvod348978" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۸
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -13328,15 +13319,6 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4673245
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://keshet12.samhoustonbot.workers.dev
-
-#EXTINF:-1 tvg-name="TBN Israel" tvg-logo="https://www.parsatv.com/index_files/channels/tbnisrael.jpg" group-title="📡 اسرائیل",TBN Israel
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1783843446/ei/FfZSav2uPJaEt7EPo4Oh6AM/ip/2a0e:d785:6002:3fc6:e470:3ab1:f388:7d3c/id/Mw1luoSACh4.1/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr3---sn-q4fl6nzy.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AZFlqhMDo6hlzXa4KCE3Mx4KUf-3iSxmrBxv-NAucK1Ve6vIa4CEV20Nhk97jtbFHl1EtUpyBLp032me/spc/SQ-umoy2A944Jvuko8zMFRC3D1golgvV_lPwckzzwUHe9n1dVA/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4331250/met/1783821846,/mh/A8/mip/142.111.152.185/mm/44/mn/sn-q4fl6nzy/ms/lva/mv/m/mvi/3/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,52017147/mt/1783821638/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIga8O0wYZ396fGIa932inkZj5Rql7xPEPGoZi5s3WmCAECIQDQ_KDnTdTL4cKo51d3ePeHisjBf7qe8Ly-DUsNuwi80Q%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgHoz6y1S5kODERfqDuuwoLJ0AawHfX9XcFN98cNbFDuECIQDx_a7D7Mu2sj8qP24biaieedi0HFAcGZM-4T7nkMYebg%3D%3D/playlist/index.m3u8
 
 #EXTINF:-1 tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000

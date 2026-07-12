@@ -978,10 +978,6 @@ def main():
                 extinf = f'#EXTINF:-1 group-title="{group}" tvg-logo="{_EC_LOGO}",{name}'
                 out.append(extinf); out.append(_AF_EC); out.append(stream); out.append("")
             ec_count = len(_EC_CHANNELS)
-            # شبکه سه (بکاپ) — main ncdn.telewebion.ir/tv3 reported not working, IRIB's own CDN as backup
-            tv3_extinf = '#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="شبکه سه (بکاپ)" tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="%s",شبکه سه (بکاپ)' % group
-            out.append(tv3_extinf); out.append(_AF_TELE); out.append("https://s1-cloud.irib.ir/securelive3/tv3hd/tv3hd.m3u8"); out.append("")
-            ec_count += 1
         if group and "پرشیانا" in group:
             mbc_extinf = '#EXTINF:-1 tvg-id="" tvg-name="MBC Persia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="%s",MBC Persia' % group
             out.append(mbc_extinf); out.append(_AF_NORMAL); out.append("https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-persia/818ee8e4b592dc497608f066d825bfb4/index.m3u8"); out.append("")
