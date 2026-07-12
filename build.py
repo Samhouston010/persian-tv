@@ -763,6 +763,30 @@ def load_iptvorg_meta():
         logo_by_id.setdefault(l["channel"], l["url"])
     return cat_by_id, logo_by_id
 
+# user request 2026-07-12: iptv-org has zero logos for these -- pulled from parsatv.com,
+# downloaded and self-hosted here so they don't break if that site changes/goes down
+_LOGOS = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/logos"
+IRAN_LOGO_OVERRIDES = {
+    "AfraFilm.ir":    f"{_LOGOS}/afrafilm.jpg",
+    "CafeFilm.ir":    f"{_LOGOS}/cafefilm.png",
+    "GrandCinema.tr": f"{_LOGOS}/grandcinema.png",
+    "HomePlus.ir":    f"{_LOGOS}/homeplus.jpg",
+    "ICCplus.us":     f"{_LOGOS}/icc.png",
+    "MetaFilmTV.ir":  f"{_LOGOS}/metafilm.jpg",
+    "PMCRoyale.ae":   f"{_LOGOS}/pmcroyale.png",
+    "icnet3.ca":      f"{_LOGOS}/icnet3.png",
+    "AraxTV.ir":      f"{_LOGOS}/araxtv.png",
+    "ArkoTV.ir":      f"{_LOGOS}/arkotv.jpg",
+    "ArvanTV.ir":     f"{_LOGOS}/arvantv.png",
+    "ClassicTV.ir":   f"{_LOGOS}/classictv.png",
+    "DatisTV.ir":     f"{_LOGOS}/datis.png",
+    "DejTV.ir":       f"{_LOGOS}/dejtv.jpg",
+    "KhabarbinTV.ir": f"{_LOGOS}/khabarbin.png",
+    "SetarehTV.uk":   f"{_LOGOS}/setarehtv.png",
+    "ZedTV.ir":       f"{_LOGOS}/zedtvpersian.jpg",
+    # GoldStar.ir: no logo found anywhere (parsatv.com, iptv-org, lyngsat all came up empty)
+}
+
 def _fill_logo(extinf, logo_by_id):
     """Only fills a logo when tvg-id matches iptv-org AND we don't already have one —
     never overrides logos we've hand-picked elsewhere in this file."""
@@ -957,6 +981,7 @@ def main():
     print("ARTE VOD: disabled", flush=True)
     build_epg(extra_trees=[])
     cat_by_id, logo_by_id = load_iptvorg_meta()
+    logo_by_id.update(IRAN_LOGO_OVERRIDES)
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
     out = [f'#EXTM3U url-tvg="{epg_url}"', ""]
