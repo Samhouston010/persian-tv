@@ -22,3 +22,5 @@ jobs:
           git add playlist.m3u epg.xml.gz ted.m3u arte_vod_cache.json
           git diff --cached --quiet || git commit -m "Auto-update $(date -u +%Y-%m-%d\ %H:%M)"
           git push
+      - name: Purge playlist proxy cache
+        run: curl -s "https://persian-tv-playlist-proxy.samhouston010.workers.dev/purge?token=${{ secrets.PURGE_TOKEN }}"
