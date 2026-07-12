@@ -9,6 +9,65 @@ NAMAKADE_MOVIES_URL = "https://namakade.com/movies"
 ARTE_SITEMAP = "https://www.arte.tv/static/opa_static/sitemap/en_programs.xml"
 ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 
+# user request 2026-07-11: scraped from parsatv.com's #persian channel list -- each page's
+# embedded stream URL extracted and verified (200 + #EXTM3U) individually. Channels whose
+# link 403'd/404'd (GEM-* family, ITC/Grand Sport/Grand Toon/Persiana Sports 1-4 -- all
+# behind the same Cloudflare-challenged pakhshzende.com proxy that no HTTP client can pass;
+# Iran TV Israel, Irane Farda, Khatereh TV -- 404; Persiana Rap TV -- bad SSL cert;
+# Tapesh Iran -- DNS doesn't resolve) were left out as genuinely dead, not just unlucky.
+# Telewebion Sport 1-3 share telewebion.ir's current outage (see build.py's Telewebion
+# section) -- included anyway since they'll start working the moment that recovers.
+PARSATV_IRAN_EXTRA = [
+    ("4U TV", "https://www.parsatv.com/index_files/channels/4u.png", "https://hls.4utv.live/hls/stream.m3u8"),
+    ("Alternative Shorai TV", "https://www.parsatv.com/index_files/channels/alternativeshoraitv.jpg", "https://hlspackager.akamaized.net/live/DB/ALTERNATIVE_SHORAI_TV/HLS/ALTERNATIVE_SHORAI_TV.m3u8"),
+    ("Avang TV", "https://www.parsatv.com/index_files/channels/avang.png", "https://hls.avang.live/hls/stream.m3u8"),
+    ("Ayeneh TV", "https://www.parsatv.com/index_files/channels/ayenehtv.png", "https://spf-ayeneh.cfallinone.workers.dev/?url=https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040318/b0d2763968fd0bdd2dc0d44ba2abf9ce.sdp/playlist.m3u8"),
+    ("Channel One", "https://www.parsatv.com/index_files/channels/kanalyek.png", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app:8443/ChannelOne/index-0.m3u8"),
+    ("Cinex", "https://www.parsatv.com/index_files/channels/cinex.png", "https://gcinemahls.wns.live/hls/stream.m3u8"),
+    ("Derakhte Zendegi", "https://www.parsatv.com/index_files/channels/derakhtezendegi.jpg", "https://derakhtzhls.wns.live/hls/stream.m3u8"),
+    ("Didgah TV", "https://www.parsatv.com/index_files/channels/didgahtv.png", "https://media.streambrothers.com:1936/8276/8276/playlist.m3u8"),
+    ("Ekran Movies", "https://www.parsatv.com/index_files/channels/ekran.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/EkranMovies/index-0.m3u8"),
+    ("Erfan Halgheh", "https://www.parsatv.com/index_files/channels/erfanhalgheh.png", "https://hls.erfanhalgheh.live/hls/stream.m3u8"),
+    ("Ganje Hozoor", "https://www.parsatv.com/index_files/channels/ganjehozoor.png", "https://media.parvizshahbazi.com/ganjehozour/Main_tv/playlist.m3u8"),
+    ("GordAfarid TV", "https://www.parsatv.com/index_files/channels/gordafaridtv.jpg", "https://gatvhls.wns.live/hls/stream.m3u8"),
+    ("High Vision", "https://www.parsatv.com/index_files/channels/highvision.jpg", "https://streamer1.connectto.com/HIGHVISION_WEB_1205/playlist.m3u8"),
+    ("ICC TV", "https://www.parsatv.com/index_files/channels/icc.png", "https://icchls.wns.live/hls/stream.m3u8"),
+    ("Iran Aryaee", "https://www.parsatv.com/index_files/channels/iranearyaee.jpg", "https://iranaryai.pahlavi.shop/iranearyaeesd/index.m3u8"),
+    ("Iran Independent TV", "https://www.parsatv.com/index_files/channels/iranindependent.jpg", "https://mediamtx.elitelatrade.com/live/stream/main_stream.m3u8"),
+    ("Iran National Revolution TV", "https://www.parsatv.com/index_files/channels/revolutiontv.jpg", "https://hls.irannrtv.live/hls/stream.m3u8"),
+    ("Iran Wire TV", "https://www.parsatv.com/index_files/channels/iranwiretv.png", "https://irwhls.wns.live/hls/stream.m3u8"),
+    ("Jahan Nama TV", "https://www.parsatv.com/index_files/channels/jahannama.jpg", "https://stream01.gaplication.com/hls/jahannamatvlive/index.m3u8"),
+    ("Maah TV", "https://www.parsatv.com/index_files/channels/maahtv.jpg", "https://hls.maahtv.live/hls/stream.m3u8"),
+    ("Nahade Azadi", "https://www.parsatv.com/index_files/channels/nahadeazadi.jpg", "https://livestream.5centscdn.com/nahadeazadi/14a66ff6dca989d3a2eb0dc8cdb50892.sdp/chunks.m3u8"),
+    ("Net TV", "https://www.parsatv.com/index_files/channels/nettv.png", "https://nethls.wns.live/hls/stream.m3u8"),
+    ("Novin TV", "https://www.parsatv.com/index_files/channels/novintv.png", "https://stream.novin.live/hls/playlist.m3u8"),
+    ("Omid Javedan", "https://www.parsatv.com/index_files/channels/omidjavedan.png", "https://livestream.5centscdn.com/pwocchurchweb1/cebac1e921182acff008ab1222f0c916.sdp/playlist.m3u8"),
+    ("Omid e Iran", "https://www.parsatv.com/index_files/channels/omideiran.png", "https://oitnhls.wns.live/hls/stream.m3u8"),
+    ("Payam Javan TV", "https://www.parsatv.com/index_files/channels/payamjavan.jpg", "https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8"),
+    ("Payame Aramesh", "https://www.parsatv.com/index_files/channels/payamearamesh.png", "https://hls.keshishhamid.live/hls/stream.m3u8"),
+    ("Persiana Science", "https://www.parsatv.com/index_files/channels/persianascience.png", "https://scihls.persiana.live/hls/stream.m3u8"),
+    ("Persiana One", "https://www.parsatv.com/index_files/channels/persianaone.png", "https://onehls.persiana.live/hls/stream.m3u8"),
+    ("Persiana Sonnati", "https://www.parsatv.com/index_files/channels/persianasonnatitv.png", "https://sonhls.persiana.live/hls/stream.m3u8"),
+    ("Persiana TV (Persiana Group)", "https://www.parsatv.com/index_files/channels/persianatv.png", "https://euhls.persiana.live/hls/stream.m3u8"),
+    ("Persiana Turkiye", "https://www.parsatv.com/index_files/channels/persianaturkey.png", "https://turkhls.persiana.live/hls/stream.m3u8"),
+    ("Porchooneh TV", "https://www.parsatv.com/index_files/channels/porchooneh.jpg", "https://oldkors-k0y7s.cfallinone.workers.dev/?url=http://porchooneh.com/hls/live1/stream1.m3u8"),
+    ("Project Leon", "https://www.parsatv.com/index_files/channels/projectleon.jpg", "https://pleonhls.wns.live/hls/stream.m3u8"),
+    ("Pulse Media", "https://www.parsatv.com/index_files/channels/pulsemedia.jpg", "https://pulsehls.wns.live/hls/stream.m3u8"),
+    ("Radio Javan TV", "https://www.parsatv.com/index_files/channels/rjtv.png", "https://rjtvhls.wns.live/hls/stream.m3u8"),
+    ("Rahe Nejat TV", "https://www.parsatv.com/index_files/channels/rahenejat.jpg", "https://hls.rahenejat.live/hls/stream.m3u8"),
+    ("Ravi TV", "https://www.parsatv.com/index_files/channels/ravitv.png", "https://hls.ravitv.com/hls/stream.m3u8"),
+    ("Royal TV", "https://www.parsatv.com/index_files/channels/royaltv.png", "https://arvhls.wns.live/hls/stream.m3u8"),
+    ("T2 America", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2America/index-0.m3u8"),
+    ("T2 International", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2International/index-0.m3u8"),
+    ("T2 Movies", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8"),
+    ("TM TV", "https://www.parsatv.com/index_files/channels/tmtelevision.png", "https://hls.tmtv.live/hls/stream.m3u8"),
+    ("Tasvire Iran", "https://www.parsatv.com/index_files/channels/timtv.png", "https://bozztv.com/1gbw5/tintv/tintv/playlist.m3u8"),
+    ("Woman TV", "https://www.parsatv.com/index_files/channels/womantv.jpg", "https://wmtvhls.wns.live/hls/stream.m3u8"),
+    ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8"),
+    ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8"),
+    ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
+]
+
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
 # these dead intermittently under load -- and moved to end of پرشیانا instead
 _PERSIANA_EXTRA = [
@@ -1000,9 +1059,15 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(iran_org)
     print(f"Iran (iptv-org): {len(iran_org)} channels", flush=True)
+    parsatv_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
+                      for name, logo, stream in PARSATV_IRAN_EXTRA]
+    for extinf, stream in parsatv_extra:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(parsatv_extra)
+    print(f"Iran (parsatv.com): {len(parsatv_extra)} channels", flush=True)
     os.makedirs("ایران", exist_ok=True)
     iran_file = ["#EXTM3U", ""]
-    for extinf, stream in iran_org:
+    for extinf, stream in iran_org + parsatv_extra:
         iran_file.append(extinf); iran_file.append(_AF_NORMAL); iran_file.append(stream); iran_file.append("")
     with open("ایران/ایران.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(iran_file))
