@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12339,11 +12348,62 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e1a8a5a5867c4677949cc63c08faacf1/b5195c65-cc8c-4d91-b66f-a0cd142e9ebb_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، دوشنبه ۲۲ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/e1a8a5a5867c4677949cc63c08faacf1/hls/b5195c65-cc8c-4d91-b66f-a0cd142e9ebb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/649be84558f04af0a9105972016399a5/c8003714-d44b-4c99-abcd-f8fd05fd46b3_thumb_001_HD.jpg",جایزه صلح فیفا، همراهی با جمهوری اسلامی و پرونده بالوگان، نقاط تاریک کارنامه اینفانتینو
+https://daq1pvcuhj77l.cloudfront.net/1/649be84558f04af0a9105972016399a5/hls/c8003714-d44b-4c99-abcd-f8fd05fd46b3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/767ccf4c8df3401a8e5932b99713fba1/18cd27fb-22f9-408b-93fa-b62c14e35da2_thumb_001_HD.jpg",بالاگرفتن انتقادات از عملکرد جیانی اینفانتینو با وجود دگرگونی اقتصادی در فیفا
+https://daq1pvcuhj77l.cloudfront.net/1/767ccf4c8df3401a8e5932b99713fba1/hls/18cd27fb-22f9-408b-93fa-b62c14e35da2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3c1a3e049904465a9626d1aa1ba72ab0/3e3067a9-4bfb-4872-80af-492aaaee4ac4_thumb_001_HD.jpg",پای ترامپ در میان است؛ شکایت نمایندگان پارلمان اروپا علیه اینفانتینو به کمیته اخلاق فیفا
+https://daq1pvcuhj77l.cloudfront.net/1/3c1a3e049904465a9626d1aa1ba72ab0/hls/3e3067a9-4bfb-4872-80af-492aaaee4ac4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/629cd63318be4725acc307bf5a7e1732/0cd5f08e-ff61-4563-adc0-acaf5411e06f_thumb_001_HD.jpg",ایران و میزبانی از جام جهانی؛ رویای امروز که ۵۰ سال پیش هدف بود
+https://daq1pvcuhj77l.cloudfront.net/1/629cd63318be4725acc307bf5a7e1732/hls/0cd5f08e-ff61-4563-adc0-acaf5411e06f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4944e5b87b984cea83a0cee63bd92eb7/58d35e19-db04-4e51-94f1-6de3c323bc64_thumb_001_HD.jpg",کشورهای میزبان یا فیفا؛ برنده واقعی برگزاری جام جهانی از نظر اقتصادی کیست؟
+https://daq1pvcuhj77l.cloudfront.net/1/4944e5b87b984cea83a0cee63bd92eb7/hls/58d35e19-db04-4e51-94f1-6de3c323bc64.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/814ef18157f341b09d10dc5f02833282/32034f0e-f62d-478f-8817-6de72b5fb90c_thumb_001_HD.jpg",رشد ۱۶ درصدی هزینه‌کرد گردشگران و مسافران در آمریکا تحت تاثیر برگزاری جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/814ef18157f341b09d10dc5f02833282/hls/32034f0e-f62d-478f-8817-6de72b5fb90c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/48a5ac9e2b7b4d97b9c20747b8c5565a/4ebd130b-9923-4107-99e9-5f99e45470be_thumb_001_HD.jpg",جام جهانی فوتبال؛ موتور محرک اقتصاد جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/48a5ac9e2b7b4d97b9c20747b8c5565a/hls/4ebd130b-9923-4107-99e9-5f99e45470be.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c1653529a4094157aa925ecbbf8e479d/28f11068-a015-49dc-a83b-05119c5eaf48_thumb_001_HD.jpg",محمد تقوی: قلعه‌نویی با حاکمیت همراه شده و هر سازی بزند، برایش می‌رقصند
+https://daq1pvcuhj77l.cloudfront.net/1/c1653529a4094157aa925ecbbf8e479d/hls/28f11068-a015-49dc-a83b-05119c5eaf48.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4b544bc77e0b477da755709fe9e9aea9/f0f5eac9-44a9-46d8-a4a9-b937d4e69cab_thumb_001_HD.jpg",تداوم حضور قلعه‌نویی در تیم ملی پس از تملق‌گویی زنجیره‌ای بازیکنان، کادر فنی و مدیران
+https://daq1pvcuhj77l.cloudfront.net/1/4b544bc77e0b477da755709fe9e9aea9/hls/f0f5eac9-44a9-46d8-a4a9-b937d4e69cab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/85bf6f2a575841f6a40772145eae3141/c314d174-700f-435a-808f-a2b9fc2b0dab_thumb_001_HD.jpg",قلعه‌نویی دومین تیم پیر جام جهانی را به آمریکا برد، حذف شد، استعفا هم نکرد
+https://daq1pvcuhj77l.cloudfront.net/1/85bf6f2a575841f6a40772145eae3141/hls/c314d174-700f-435a-808f-a2b9fc2b0dab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9873e5a36b38424c8c600bc94ba9e109/02838519-facb-4d29-8cf3-e7960757cd01_thumb_001_HD.jpg",ورود آمریکا به سومین جنگ فراگیر با حمله به ۲۰ شهر ایران؛ ترامپ کنترل کامل تنگه را می‌خواهد
+https://daq1pvcuhj77l.cloudfront.net/1/9873e5a36b38424c8c600bc94ba9e109/hls/02838519-facb-4d29-8cf3-e7960757cd01.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ad12645fb94345c7b6448a0fd606cf14/8de41646-5402-4fb7-ba15-ec0187f2fd8b_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: حمله آمریکا به بیش از ۲۰ شهر ایران در جنگ تنگه
+https://daq1pvcuhj77l.cloudfront.net/1/ad12645fb94345c7b6448a0fd606cf14/hls/8de41646-5402-4fb7-ba15-ec0187f2fd8b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d23bb1e636c4d35ada6a2bd11e9b753/48d42d25-a3f9-43a0-a498-a2d40ffbd6ae_thumb_001_HD.jpg",اخبار شبانگاهی | دوشنبه ۲۲ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/7d23bb1e636c4d35ada6a2bd11e9b753/hls/48d42d25-a3f9-43a0-a498-a2d40ffbd6ae.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f8791a90105a4dba9aed0dbd87674c2c/4bcaabf7-aacf-4fab-98a4-f20d98180f82_thumb_001_HD.jpg",گزارش‌ها از وضعیت وخیم بازداشت‌شدگان اعتراض‌های دی‌ماه در زندان تهران بزرگ
+https://daq1pvcuhj77l.cloudfront.net/1/f8791a90105a4dba9aed0dbd87674c2c/hls/4bcaabf7-aacf-4fab-98a4-f20d98180f82.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1184d11eb28e4ff685276360759cbc32/0dbd01bb-9dfc-4cce-8ba7-c3bb8824ec00_thumb_001_HD.jpg",تاکید دونالد ترامپ بر به دست گرفتن کنترل تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/1184d11eb28e4ff685276360759cbc32/hls/0dbd01bb-9dfc-4cce-8ba7-c3bb8824ec00.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bee1e506b841477da6493ca30dda3b9c/45e9271e-896e-4605-8453-0bb731a6fe80_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۲۲ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/bee1e506b841477da6493ca30dda3b9c/hls/45e9271e-896e-4605-8453-0bb731a6fe80.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a0ba882e272c4e9e9571dcedc06b3108/de71b34d-4a3f-4a1e-8e49-7de2c7616197_thumb_001_HD.jpg",کارزار کشف حقیقت؛ شناسایی هویت یکی دیگر از کشته‌شدگان در بیمارستان الغدیر 
 https://daq1pvcuhj77l.cloudfront.net/1/a0ba882e272c4e9e9571dcedc06b3108/hls/de71b34d-4a3f-4a1e-8e49-7de2c7616197.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e73a0183b34d4cfe9c99b715c97a6c46/607c6778-5e45-45fb-ba6c-95f38e01b7f6_thumb_001_HD.jpg",نقش نهادهای حکومتی در بروز بحران اقتصادی و معیشتی در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/e73a0183b34d4cfe9c99b715c97a6c46/hls/607c6778-5e45-45fb-ba6c-95f38e01b7f6.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0257a4576f9646d08064f839ed65e04c/b2e6091e-c9c6-4b3b-92a8-d87634f04367_thumb_001_HD.jpg",قرار گرفتن سپاه پاسداران در فهرست گروه‌های غیرقانونی بریتانیا
 https://daq1pvcuhj77l.cloudfront.net/1/0257a4576f9646d08064f839ed65e04c/hls/b2e6091e-c9c6-4b3b-92a8-d87634f04367.m3u8
@@ -13477,7 +13537,7 @@ https://i24newsarabic-cdn.encoders.immergo.tv/master.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sport5.samhouston010.workers.dev/playlist.m3u8
+https://rgelive.akamaized.net/hls/live/2043095/live3/playlist.m3u8
 
 #EXTINF:-1 tvg-name="Ynet Live" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/ynet.png" group-title="📡 اسرائیل",Ynet Live
 #EXTVLCOPT:network-caching=2000
