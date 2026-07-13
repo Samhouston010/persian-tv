@@ -450,6 +450,15 @@ https://live2.alalam.ir/alalam.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+http://185.9.2.18/chid_926/index.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/XEMsM7w.png" tvg-id="MihanTV.ir@SD",Mihan TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -485,15 +494,6 @@ https://live.presstv.ir/hls/presstv.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-http://185.9.2.18/chid_926/index.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/7oGGgfD.png" tvg-id="KanalJadid.uk@SD",Kanal Jadid
 #EXTVLCOPT:network-caching=2000
