@@ -12195,15 +12195,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12347,6 +12338,12 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0550c8907ed1490fb18ade10c2ec3a4f/db55b126-1796-4dbc-b870-ab8b6e9fbb93_thumb_001_HD.jpg",تلاش آمریکا برای کنترل تنگه هرمز؛ چالش نظامی و ابهام حقوقی
+https://daq1pvcuhj77l.cloudfront.net/1/0550c8907ed1490fb18ade10c2ec3a4f/hls/db55b126-1796-4dbc-b870-ab8b6e9fbb93.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7b3ec7c17c194a55a613d1710580108b/2274dcd3-b904-41fc-b085-30bb8451f329_thumb_001_HD.jpg",تغییر موازنه به زیان جمهوری اسلامی در تقابل با آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/7b3ec7c17c194a55a613d1710580108b/hls/2274dcd3-b904-41fc-b085-30bb8451f329.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e1a8a5a5867c4677949cc63c08faacf1/b5195c65-cc8c-4d91-b66f-a0cd142e9ebb_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، دوشنبه ۲۲ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/e1a8a5a5867c4677949cc63c08faacf1/hls/b5195c65-cc8c-4d91-b66f-a0cd142e9ebb.m3u8
