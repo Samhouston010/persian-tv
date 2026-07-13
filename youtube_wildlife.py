@@ -19,8 +19,13 @@ def get_live_url(video_id):
     try:
         r = subprocess.run(["yt-dlp", "-g", f"https://www.youtube.com/watch?v={video_id}"],
                             capture_output=True, text=True, timeout=30)
-        return r.stdout.strip().splitlines()[0] if r.stdout.strip() else None
-    except Exception:
+        if r.stdout.strip():
+            return r.stdout.strip().splitlines()[0]
+        if r.stderr.strip():
+            print(f"  yt-dlp stderr: {r.stderr.strip().splitlines()[-1]}")
+        return None
+    except Exception as e:
+        print(f"  yt-dlp exception: {e}")
         return None
 
 
