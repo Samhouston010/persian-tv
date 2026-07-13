@@ -17,7 +17,8 @@ CHANNELS = [
 
 def get_live_url(video_id):
     try:
-        r = subprocess.run(["yt-dlp", "-g", f"https://www.youtube.com/watch?v={video_id}"],
+        r = subprocess.run(["yt-dlp", "-g", "--extractor-args", "youtube:player_client=web_embedded",
+                            f"https://www.youtube.com/watch?v={video_id}"],
                             capture_output=True, text=True, timeout=30)
         if r.stdout.strip():
             return r.stdout.strip().splitlines()[0]
