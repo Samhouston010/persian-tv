@@ -531,17 +531,19 @@ PARSATV_MOVIE_EXTRA = [
     _moch("Revry TV",       "https://www.parsatv.com/index_files/channels/revrytv.jpg", "https://03e7e5beea1d42fea576037d67f531eb.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Revry/playlist.m3u8"),
     _moch("Nolly Africa",   "https://www.parsatv.com/index_files/channels/nollyafrica.jpg", "https://amg02784-nollyafricafast-amg02784c1-cineverse-us-1124.playouts.now.amagi.tv/playlist/amg02784-nollyafricafast-nollyafricahd-cineverseus/playlist.m3u8"),
     _moch("MyTime Movie",   "https://www.parsatv.com/index_files/channels/mytimemovie.jpg", "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8"),
-    _moch("30A Classic",    "https://www.parsatv.com/index_files/channels/30atv2.jpg", "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8"),
     _moch("MovieSphere",    "https://www.parsatv.com/index_files/channels/moviesphere.jpg", "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8"),
     _moch("Cowboy Movie",   "https://www.parsatv.com/index_files/channels/cowboymovie.jpg", "https://streams2.sofast.tv/sofastplayout/32eb332e-f644-46e5-ad91-e55ad80d14f7_0_HLS/index.m3u8"),
     _moch("CrimeFlix",      "https://www.parsatv.com/index_files/channels/crimeflix.png", "https://dgx2snzx175pa.cloudfront.net/scheduler/scheduleMaster/391.m3u8"),
-    _moch("24 Hour Movies", "https://www.parsatv.com/index_files/channels/24hourfreemovies.jpg", "https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8"),
-    _moch("YTA TV",         "https://www.parsatv.com/index_files/channels/ytatv.png", "https://yta.unitedteleports.tv/hls/YTA-SCTE35.m3u8"),
     _moch("Electric Now",   "https://www.parsatv.com/index_files/channels/electricnow.png", "https://amg01705-amg01705c1-amgplt0274.playout.now3.amagi.tv/playlist.m3u8"),
-    _moch("Brat TV",        "https://www.parsatv.com/index_files/channels/brattv.jpg", "https://brat-samsung-us.amagi.tv/playlist.m3u8"),
     _moch("BBC Drama IT",   "https://www.parsatv.com/index_files/channels/bbcdrama.jpg", "https://amg00793-amg00793c41-rakuten-it-5445.playouts.now.amagi.tv/playlist.m3u8"),
     _moch("Dr Who Classic", "https://www.parsatv.com/index_files/channels/bbcdrwho.jpg", "https://bbc-classicdrwho-1-us.xumo.wurl.tv/playlist.m3u8"),
-    _moch("Comet TV",       "https://www.parsatv.com/index_files/channels/comet.png", "https://fast-channels.sinclairstoryline.com/COMET/index.m3u8"),
+    # user request 2026-07-14: 30A Classic, 24 Hour Movies, YTA TV, Brat TV, Comet TV moved
+    # to the "🎬 موووی" group in persian-tv-playlist-proxy instead -- disabled here for now.
+    # _moch("30A Classic",    "https://www.parsatv.com/index_files/channels/30atv2.jpg", "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8"),
+    # _moch("24 Hour Movies", "https://www.parsatv.com/index_files/channels/24hourfreemovies.jpg", "https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8"),
+    # _moch("YTA TV",         "https://www.parsatv.com/index_files/channels/ytatv.png", "https://yta.unitedteleports.tv/hls/YTA-SCTE35.m3u8"),
+    # _moch("Brat TV",        "https://www.parsatv.com/index_files/channels/brattv.jpg", "https://brat-samsung-us.amagi.tv/playlist.m3u8"),
+    # _moch("Comet TV",       "https://www.parsatv.com/index_files/channels/comet.png", "https://fast-channels.sinclairstoryline.com/COMET/index.m3u8"),
 ]
 
 MUSIC_CHANNELS = [
