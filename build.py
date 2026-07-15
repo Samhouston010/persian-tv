@@ -509,6 +509,41 @@ def _mch(name, logo, stream):
 def _musch(name, logo, stream):
     return ('#EXTINF:-1 group-title="\U0001f3b5 موسیقی" tvg-logo="%s",%s' % (logo, name), stream)
 
+def _moch(name, logo, stream):
+    return ('#EXTINF:-1 group-title="\U0001f3ac مووی" tvg-logo="%s",%s' % (logo, name), stream)
+
+# user request 2026-07-14: these 24 were scraped from parsatv.com and added straight to
+# playlist.m3u on 2026-07-13 (commit 42014e26), never into this script -- so every rebuild
+# since (daily cron + this one) silently wiped them out again. Moved into build.py so they
+# survive. Popstar! TV and CineLife dropped here already -- DNS no longer resolves for either.
+PARSATV_MOVIE_EXTRA = [
+    _moch("Biz Cinema",     "https://www.parsatv.com/index_files/channels/bizcinema.jpg", "https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/playlist.m3u8"),
+    _moch("Biz TV",         "https://www.parsatv.com/index_files/channels/biztv.jpg", "https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/playlist.m3u8"),
+    _moch("NTV Afrique",    "https://www.parsatv.com/index_files/channels/ntvafrique.png", "https://strhlslb01.streamakaci.tv/str_ntv_ntv/str_ntv_ntv_multi/playlist.m3u8"),
+    _moch("Carac 1",        "https://www.parsatv.com/index_files/channels/carac.jpg", "https://edge17.vedge.infomaniak.com/livecast/ik:event/playlist.m3u8"),
+    _moch("Carac 2",        "https://www.parsatv.com/index_files/channels/carac.jpg", "https://edge18.vedge.infomaniak.com/livecast/ik:onefmmd/playlist.m3u8"),
+    _moch("Carac 3",        "https://www.parsatv.com/index_files/channels/carac.jpg", "https://edge14.vedge.infomaniak.com/livecast/ik:lfmmd/playlist.m3u8"),
+    _moch("Carac 4",        "https://www.parsatv.com/index_files/channels/carac.jpg", "https://edge17.vedge.infomaniak.com/livecast/ik:compack_media_1/playlist.m3u8"),
+    _moch("TV100 Greece",   "https://www.parsatv.com/index_files/channels/tv100greece.jpg", "https://gwebstream.net/hls/master.m3u8"),
+    _moch("Groovy TV",      "https://www.parsatv.com/index_files/channels/groovytv.jpg", "https://web.onair-radio.eu/groovytv/groovytv/playlist.m3u8"),
+    _moch("Dove Channel",   "https://www.parsatv.com/index_files/channels/dovechannel.png", "https://linear-896.frequency.stream/dist/xumo/896/hls/master/playlist.m3u8"),
+    _moch("AfroLand TV",    "https://www.parsatv.com/index_files/channels/afrolandtv.jpg", "https://alt-al.otteravision.com/alt/al/al.m3u8"),
+    _moch("Revry TV",       "https://www.parsatv.com/index_files/channels/revrytv.jpg", "https://03e7e5beea1d42fea576037d67f531eb.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Revry/playlist.m3u8"),
+    _moch("Nolly Africa",   "https://www.parsatv.com/index_files/channels/nollyafrica.jpg", "https://amg02784-nollyafricafast-amg02784c1-cineverse-us-1124.playouts.now.amagi.tv/playlist/amg02784-nollyafricafast-nollyafricahd-cineverseus/playlist.m3u8"),
+    _moch("MyTime Movie",   "https://www.parsatv.com/index_files/channels/mytimemovie.jpg", "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8"),
+    _moch("30A Classic",    "https://www.parsatv.com/index_files/channels/30atv2.jpg", "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8"),
+    _moch("MovieSphere",    "https://www.parsatv.com/index_files/channels/moviesphere.jpg", "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8"),
+    _moch("Cowboy Movie",   "https://www.parsatv.com/index_files/channels/cowboymovie.jpg", "https://streams2.sofast.tv/sofastplayout/32eb332e-f644-46e5-ad91-e55ad80d14f7_0_HLS/index.m3u8"),
+    _moch("CrimeFlix",      "https://www.parsatv.com/index_files/channels/crimeflix.png", "https://dgx2snzx175pa.cloudfront.net/scheduler/scheduleMaster/391.m3u8"),
+    _moch("24 Hour Movies", "https://www.parsatv.com/index_files/channels/24hourfreemovies.jpg", "https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8"),
+    _moch("YTA TV",         "https://www.parsatv.com/index_files/channels/ytatv.png", "https://yta.unitedteleports.tv/hls/YTA-SCTE35.m3u8"),
+    _moch("Electric Now",   "https://www.parsatv.com/index_files/channels/electricnow.png", "https://amg01705-amg01705c1-amgplt0274.playout.now3.amagi.tv/playlist.m3u8"),
+    _moch("Brat TV",        "https://www.parsatv.com/index_files/channels/brattv.jpg", "https://brat-samsung-us.amagi.tv/playlist.m3u8"),
+    _moch("BBC Drama IT",   "https://www.parsatv.com/index_files/channels/bbcdrama.jpg", "https://amg00793-amg00793c41-rakuten-it-5445.playouts.now.amagi.tv/playlist.m3u8"),
+    _moch("Dr Who Classic", "https://www.parsatv.com/index_files/channels/bbcdrwho.jpg", "https://bbc-classicdrwho-1-us.xumo.wurl.tv/playlist.m3u8"),
+    _moch("Comet TV",       "https://www.parsatv.com/index_files/channels/comet.png", "https://fast-channels.sinclairstoryline.com/COMET/index.m3u8"),
+]
+
 MUSIC_CHANNELS = [
     _musch("PMC",                           "",  "https://ca-rt.onetv.app:8443/PMCMusic/index-0.m3u8?token=onetv202"),
     _musch("PMC Royale",                    "",  "https://pmcrohls.wns.live/hls/stream.m3u8"),
@@ -1037,6 +1072,11 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(music)
     print(f"Music: {len(music)} channels", flush=True)
+    movies = _alive(PARSATV_MOVIE_EXTRA, "Movie (parsatv.com)")
+    for extinf, stream in movies:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(movies)
+    print(f"Movie (parsatv.com): {len(movies)} channels", flush=True)
     # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
     _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
     # disabled by user request 2026-07-01 — geo-blocked, no non-VPN fix yet
