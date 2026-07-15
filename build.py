@@ -1074,11 +1074,8 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(music)
     print(f"Music: {len(music)} channels", flush=True)
-    movies = _alive(PARSATV_MOVIE_EXTRA, "Movie (parsatv.com)")
-    for extinf, stream in movies:
-        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
-    total += len(movies)
-    print(f"Movie (parsatv.com): {len(movies)} channels", flush=True)
+    movies = []  # ponytail: temporarily disabled by user request 2026-07-14
+    print("Movie (parsatv.com): disabled", flush=True)
     # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
     _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
     # disabled by user request 2026-07-01 — geo-blocked, no non-VPN fix yet
