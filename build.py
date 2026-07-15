@@ -1032,8 +1032,11 @@ def main():
     print(f"News: {len(news)} channels", flush=True)
     houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
     print("Houston: disabled", flush=True)
-    music = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
-    print("Music: disabled", flush=True)
+    music = _alive(MUSIC_CHANNELS, "Music")
+    for extinf, stream in music:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(music)
+    print(f"Music: {len(music)} channels", flush=True)
     # ponytail: geo-blocked — needs VPN (Saudi/Middle East) active on device to stream
     _ROT_REF = "#EXTVLCOPT:http-referrer=https://rotana.net/"
     # disabled by user request 2026-07-01 — geo-blocked, no non-VPN fix yet
