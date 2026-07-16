@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12456,215 +12465,110 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a46883156ed945ee883225118016acdf/90f07649-9ac3-47d0-a569-b48c5814b768_thumb_001_HD.jpg",وداع با شهرنوش پارسی‌پور در شمال کالیفرنیا
-https://daq1pvcuhj77l.cloudfront.net/1/a46883156ed945ee883225118016acdf/hls/90f07649-9ac3-47d0-a569-b48c5814b768.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5a45f5efd55e4ca3a4162d5a63258d72/ea85bf6c-e9b5-4cf7-9264-54bf2a3e8476_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۲۵ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/5a45f5efd55e4ca3a4162d5a63258d72/hls/ea85bf6c-e9b5-4cf7-9264-54bf2a3e8476.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dec6c0019bdf4a08b832c727e7580edf/1525f579-5ef4-4c20-8d39-528440fd1941_thumb_001_HD.jpg",تحریم‌های تازه آمریکا علیه افراد و نهادهای مرتبط با جمهوری اسلامی و سپاه پاسداران
-https://daq1pvcuhj77l.cloudfront.net/1/dec6c0019bdf4a08b832c727e7580edf/hls/1525f579-5ef4-4c20-8d39-528440fd1941.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/12336364df6747b59b2000c63055e68a/dfc3ec06-ca3c-4bce-8700-0aed3ffd837f_thumb_001_HD.jpg",قطع طولانی آب و برق؛ شهروندان از رهاشدگی و بی‌پاسخ ماندن شکایت دارند
+https://daq1pvcuhj77l.cloudfront.net/1/12336364df6747b59b2000c63055e68a/hls/dfc3ec06-ca3c-4bce-8700-0aed3ffd837f.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2ce293edfec342969ee2404c23f6a271/34e5487b-eaa6-44fe-8ca3-c6c1685eb858_thumb_001_HD.jpg",موج تازه حملات آمریکا؛ گزارش‌هایی از هدف قرار گرفتن یک پاسگاه دریابانی چابهار
-https://daq1pvcuhj77l.cloudfront.net/1/2ce293edfec342969ee2404c23f6a271/hls/34e5487b-eaa6-44fe-8ca3-c6c1685eb858.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d5619f3e318f44afb19ef771eb034680/9cd1c629-bb77-4e8e-ae16-447cfe7120e8_thumb_001_HD.jpg",دنا کراری، شهروند آمریکایی بازداشت‌شده در ایران، آزاد شد و به آمریکا بازمی‌گردد
+https://daq1pvcuhj77l.cloudfront.net/1/d5619f3e318f44afb19ef771eb034680/hls/9cd1c629-bb77-4e8e-ae16-447cfe7120e8.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/776a0db1208644a5b4191754c6adcd95/a617af19-5964-4df3-9d75-ba78483f2ed7_thumb_001_HD.jpg", سیاست با مراد ویسی: فروپاشی توهمات نظامی سپاه 
-https://daq1pvcuhj77l.cloudfront.net/1/776a0db1208644a5b4191754c6adcd95/hls/a617af19-5964-4df3-9d75-ba78483f2ed7.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e2d399faa89546b687debd095180abd8/0cd36b29-5639-450f-a27e-4b2cb3cb98bc_thumb_001_HD.jpg",تداوم راهبرد تسلیم‌سازی دیپلماتیک جمهوری اسلامی در سیاست ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/e2d399faa89546b687debd095180abd8/hls/0cd36b29-5639-450f-a27e-4b2cb3cb98bc.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cc3723136b4944759b8448b81ce81d25/2106451a-40ae-4b3a-810a-f53f44eb9c9f_thumb_001_HD.jpg",وابستگی ایران به واردات بنزین؛ نقطه فشار محاصره دریایی بر اقتصاد ایران
-https://daq1pvcuhj77l.cloudfront.net/1/cc3723136b4944759b8448b81ce81d25/hls/2106451a-40ae-4b3a-810a-f53f44eb9c9f.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0645167ce8e44e839060dacb44b223a0/60fa5385-2249-4c3d-98ef-1ec6b70797d2_thumb_001_HD.jpg",تناقض میان تهدید جدید سپاه و روایت پیشین جمهوری اسلامی از حملات منطقه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/0645167ce8e44e839060dacb44b223a0/hls/60fa5385-2249-4c3d-98ef-1ec6b70797d2.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4b6537f4736f4a2da78033eb6106411f/c6edc978-d4d8-4fdd-a3af-f9cbad2d65c9_thumb_001_HD.jpg",اختلاف بر سر مذاکره؛ ابزار تازه رقابت درون جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/4b6537f4736f4a2da78033eb6106411f/hls/c6edc978-d4d8-4fdd-a3af-f9cbad2d65c9.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b4ba33a856c84cc5911220f939680e08/941ca341-0d60-43ba-bd53-b0e06f947069_thumb_002_HD.jpg",رسانه دولتی اسرائیل: آمریکا برای سناریوی ازسرگیری جنگ آماده می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/b4ba33a856c84cc5911220f939680e08/hls/941ca341-0d60-43ba-bd53-b0e06f947069.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f546b88f61a649d6b9fc1607c97a4503/fd0d2650-f7b1-485c-a188-f7504303e614_thumb_001_HD.jpg",دورنمای ترسناک تهدیدات ترامپ و قلدری حکومت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/f546b88f61a649d6b9fc1607c97a4503/hls/fd0d2650-f7b1-485c-a188-f7504303e614.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/672a4bc55dd94617a3573f607615b66f/a29595d0-3da1-4d77-b85f-5dc97cac2bb1_thumb_001_HD.jpg",دادگاه آمریکا پرونده ۱۰ ساله رضا ضراب، تاجر ایرانی‌تبار، را مختومه کرد
+https://daq1pvcuhj77l.cloudfront.net/1/672a4bc55dd94617a3573f607615b66f/hls/a29595d0-3da1-4d77-b85f-5dc97cac2bb1.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9a40433bb4774c358598bbe25fcf4d3c/26429ff9-65c4-4b6f-a1c9-e9daafe4efde_thumb_001_HD.jpg",کوچک‌نمایی حملات آمریکا در روایت رسمی جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/9a40433bb4774c358598bbe25fcf4d3c/hls/26429ff9-65c4-4b6f-a1c9-e9daafe4efde.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4072833dba544c15be10c5146d1dd009/4c891f81-e088-4c28-a30a-89c6d142fa7a_thumb_001_HD.jpg",صندوق بین‌المللی پول درباره کاهش حاشیه اطمینان بازار نفت هشدار داد
+https://daq1pvcuhj77l.cloudfront.net/1/4072833dba544c15be10c5146d1dd009/hls/4c891f81-e088-4c28-a30a-89c6d142fa7a.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aec55df2cae64bbdb64012bd5b8c3844/4f254208-6072-41bb-bb52-96b67c112cfe_thumb_001_HD.jpg",چشم‌انداز: دورنمای ترسناک تهدیدات ترامپ و قلدری حکومت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/aec55df2cae64bbdb64012bd5b8c3844/hls/4f254208-6072-41bb-bb52-96b67c112cfe.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/28944223323744dd891bd97696a4e402/6a9a95ae-5d17-476a-8cd7-4f077fe4ee10_thumb_002_HD.jpg",پکن در پی تقویت روابط خود با کره شمالی است
+https://daq1pvcuhj77l.cloudfront.net/1/28944223323744dd891bd97696a4e402/hls/6a9a95ae-5d17-476a-8cd7-4f077fe4ee10.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dfb2e4e6609e4728b7f0c70db842d4a8/00aa890f-cbd0-4ff3-b6c0-b48954044abd_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/dfb2e4e6609e4728b7f0c70db842d4a8/hls/00aa890f-cbd0-4ff3-b6c0-b48954044abd.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/207bd6683b2b48e0a2dc353168fd164b/5e8a72d0-e1ab-4a76-a7c6-38f1b4f79f23_thumb_002_HD.jpg",عباس میلانی: آثار شهرنوش پارسی‌پور با گذشت زمان بیشتر شناخته می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/207bd6683b2b48e0a2dc353168fd164b/hls/5e8a72d0-e1ab-4a76-a7c6-38f1b4f79f23.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/92eb2c8ea3d748c18a14fdf2ba098d0a/2220391b-509f-4f67-9909-782002abd585_thumb_001_HD.jpg",محاصره دریایی ایران و نگرانی از اختلال در صادرات نفت خلیج فارس
-https://daq1pvcuhj77l.cloudfront.net/1/92eb2c8ea3d748c18a14fdf2ba098d0a/hls/2220391b-509f-4f67-9909-782002abd585.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/33c983bfbea049f698fc892a6c91d201/1b7d1fd3-265f-4da1-b054-222e517a0edf_thumb_001_HD.jpg",خاموش شدن صدای شادی هواداران انگلیس با حذف انگلیس از جام جهانی با شکست برابر آرژانتین
+https://daq1pvcuhj77l.cloudfront.net/1/33c983bfbea049f698fc892a6c91d201/hls/1b7d1fd3-265f-4da1-b054-222e517a0edf.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f2cb76305ad4aa1a4cf7a68568e0f99/bdd96549-0b5b-46b3-aa7a-4e3f632c1300_thumb_001_HD.jpg",گسترش دامنه حملات آمریکا به جمهوری اسلامی و احتمال حمله زمینی به جنوب ایران
-https://daq1pvcuhj77l.cloudfront.net/1/9f2cb76305ad4aa1a4cf7a68568e0f99/hls/bdd96549-0b5b-46b3-aa7a-4e3f632c1300.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a4309d9634b4439ba8306247b0fba7e1/35b2598d-763d-459a-bdb5-57b9085fb0b5_thumb_002_HD.jpg",آرژانتین با شکست انگلیس به فینال جام جهانی ۲۰۲۶ رسید
+https://daq1pvcuhj77l.cloudfront.net/1/a4309d9634b4439ba8306247b0fba7e1/hls/35b2598d-763d-459a-bdb5-57b9085fb0b5.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0e5c1237e79b41cdbf87f59ff168f85a/3e9ee0cc-12b2-442a-8e95-f388fe108f8e_thumb_001_HD.jpg",ادامه حملات آمریکا و گسترش تقابل نظامی با جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/0e5c1237e79b41cdbf87f59ff168f85a/hls/3e9ee0cc-12b2-442a-8e95-f388fe108f8e.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/54e45f9f12e2430c9918eb792267914b/c08ae9ee-e179-4225-878a-eb412a89ac39_thumb_002_HD.jpg",چشم‌انداز صلح میان اسرائیل و لبنان در سایه تنش‌های آمریکا و جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/54e45f9f12e2430c9918eb792267914b/hls/c08ae9ee-e179-4225-878a-eb412a89ac39.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5cdc77aabe36446f9b0dae478a6c23db/f3bba6ca-57bd-4499-a5cc-79bf7befcdee_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/5cdc77aabe36446f9b0dae478a6c23db/hls/f3bba6ca-57bd-4499-a5cc-79bf7befcdee.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3bf1d6f8057a45258bfef085441ef556/51bf95e8-9f70-4e61-841d-f8171f1f6201_thumb_001_HD.jpg",کامیار بهرنگ: الگوی فتوای سلمان رشدی ممکن است درباره ترامپ تکرار شود
+https://daq1pvcuhj77l.cloudfront.net/1/3bf1d6f8057a45258bfef085441ef556/hls/51bf95e8-9f70-4e61-841d-f8171f1f6201.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/10dcc35c282d4ce8b2ef52b101bc66c1/4c102b7a-e462-4463-b072-a38fd9a8ddef_thumb_001_HD.jpg",بین دو نیمه فینال جام جهانی ۲۰۲۶ با اجرای شکیرا و مدونا
-https://daq1pvcuhj77l.cloudfront.net/1/10dcc35c282d4ce8b2ef52b101bc66c1/hls/4c102b7a-e462-4463-b072-a38fd9a8ddef.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5ecd2ae428f0461e99d6717ea6cedfe9/5b595c02-4500-4440-8ac6-f9e7c2d6bb36_thumb_001_HD.jpg",اخبار بامدادی | پنج‌شنبه ۲۵ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/5ecd2ae428f0461e99d6717ea6cedfe9/hls/5b595c02-4500-4440-8ac6-f9e7c2d6bb36.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91032f81c1854c4abc1a8f5b63630dd8/879652b7-9e82-4a5d-81f3-0c2b7453d4ba_thumb_001_HD.jpg",سابقه‌های تاریخی تقابل انگلیس و آرژانتین در تاریخ جام جهانی
-https://daq1pvcuhj77l.cloudfront.net/1/91032f81c1854c4abc1a8f5b63630dd8/hls/879652b7-9e82-4a5d-81f3-0c2b7453d4ba.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/96d642b3c3a54425a0cfa5e16a30ca41/2d40834e-452a-4f9b-b81f-ddf2322e4942_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۲۵ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/96d642b3c3a54425a0cfa5e16a30ca41/hls/2d40834e-452a-4f9b-b81f-ddf2322e4942.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c7a62041aeaa494fb4abe4fed00ea2c1/fccfaa2e-d9f5-445d-8b68-5bb2391fc023_thumb_001_HD.jpg",حال و هوای شهر آتلانتا پیش از دیدار حساس آرژانتین و انگلیس
-https://daq1pvcuhj77l.cloudfront.net/1/c7a62041aeaa494fb4abe4fed00ea2c1/hls/fccfaa2e-d9f5-445d-8b68-5bb2391fc023.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ckw363fp0cjq74ug/hsm2t8f115diz02c.jpg",Angela After Dark: Sex, Science &amp; The Body
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47190859545_47190859784/47190859784/hf-uuid-33d77794-c8ff-4cdb-a36a-b5a7fec223ba/47190859784_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f55bf9a5f76b42da83a31d579649bb3c/484f6b04-29fe-421c-b6a9-f48c92e312f8_thumb_001_HD.jpg",حال و هوای شهر لندن پیش از تقابل انگلیس و آرژانتین
-https://daq1pvcuhj77l.cloudfront.net/1/f55bf9a5f76b42da83a31d579649bb3c/hls/484f6b04-29fe-421c-b6a9-f48c92e312f8.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9csofni6v6twxq92/8asgdnye4y1av7wn.jpg",Officer Explains Traffic Stop Risks
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47190824537_47190824750/47190824750/hf-uuid-38fad0c9-0fb8-4954-b203-ebeca7c26a04/47190824750_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/19b7ea8004864e148714d7c05a141cf5/29016937-aec8-45c5-8c06-1b94c2efbef3_thumb_001_HD.jpg",انگلیس - آرژانتین؛ همه نگاه‌ها روی لیونل مسی
-https://daq1pvcuhj77l.cloudfront.net/1/19b7ea8004864e148714d7c05a141cf5/hls/29016937-aec8-45c5-8c06-1b94c2efbef3.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/8uh27wnxk1fq6a18/kf6vyoaw3470exgv.jpg",Trump Reverses ICE Traffic Stop Pause After Deadly Shootings
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47190785764_47190785927/47190785927/hf-uuid-f1398039-0d19-4516-9f7b-e912b837e63b/47190785927_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0099d9f67b7343bb8fd8dbf88fde5ddf/e16e3123-4d95-41d6-859d-bf6dccde1953_thumb_001_HD.jpg",تقابل آرژانتین و انگلیس؛ نیمه‌نهایی جام جهانی زیر سایه فالکلند و «دست خدا»
-https://daq1pvcuhj77l.cloudfront.net/1/0099d9f67b7343bb8fd8dbf88fde5ddf/hls/e16e3123-4d95-41d6-859d-bf6dccde1953.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/yqr60zat4om9g7rj/qggx7rgqriue36gj.jpg",Houston weather: Warmer temperatures to return
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47189791896_47189792067/47189792067/hf-uuid-9ba9260f-be81-4da9-b2ac-e14d72563041/47189792067_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/df3956843bb94b539df581224536b0ee/e628aa06-5032-4691-b727-3ecad506bd38_thumb_001_HD.jpg",تغییرات دشان در ترکیب فرانسه جواب نداد
-https://daq1pvcuhj77l.cloudfront.net/1/df3956843bb94b539df581224536b0ee/hls/e628aa06-5032-4691-b727-3ecad506bd38.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4vu79ayvfg2x9hyl/cmw2qurhe5wwsl4u.jpg",Doordash driver hit during police chase talks with FOX 26
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47189741838_47189742097/47189742097/hf-uuid-ebe5c36d-f3a9-49bf-b109-b7a8c03a863f/47189742097_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ef84bdc2a9ac43f78e728467180b5bb2/96d17fda-4561-4fe3-8114-bfdfca8c631f_thumb_001_HD.jpg",اونای سیمون و رودری کلید برتری اسپانیا برابر فرانسه
-https://daq1pvcuhj77l.cloudfront.net/1/ef84bdc2a9ac43f78e728467180b5bb2/hls/96d17fda-4561-4fe3-8114-bfdfca8c631f.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/q2j9pbxoc7wj0e70/l6qhdswhhioqhea9.jpg",Family members of man killed after being tased by HPD demanding answers
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47189663451_47189663657/47189663657/hf-uuid-834acd6f-3ca9-48c1-8362-13786b3da1df/47189663657_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/744514cfe972419ea05a4f96601052f3/44f38a70-b857-48c6-8394-07de3cf867fd_thumb_001_HD.jpg",بدترین نمایش سال‌های اخیر فرانسوی‌ها برابر اسپانیا
-https://daq1pvcuhj77l.cloudfront.net/1/744514cfe972419ea05a4f96601052f3/hls/44f38a70-b857-48c6-8394-07de3cf867fd.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gz2qj8qhrojqofv4/jij336g41k8yiphy.jpg",Two men shot inside Cypress Kroger store
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47189437995_47189438180/47189438180/hf-uuid-623a1b5f-c4e8-4ab4-a551-b7a7f2fe8ab6/47189438180_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/68d674920e7a49a1bd91e8c125f1edcd/d3b1aaac-51cb-444a-8044-b326fdb8924a_thumb_001_HD.jpg",رکورد بی‌نظیر تیم ملی اسپانیا؛ ۳۷ بازی بدون شکست
-https://daq1pvcuhj77l.cloudfront.net/1/68d674920e7a49a1bd91e8c125f1edcd/hls/d3b1aaac-51cb-444a-8044-b326fdb8924a.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/6cs1h2p55sqp3esq/3phak7ic9xwyqao3.jpg",Houston weather: Warmer temperatures returning to Houston following wet start to the week
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47187017147_47187017333/47187017333/hf-uuid-34d78d28-fa74-4832-aabf-3caec2d7e77d/47187017333_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6f03f50bb7804026b8e664771c4a07b9/c341c7e2-e956-43c9-bfd7-377fc49999a4_thumb_001_HD.jpg",ناآرامی‌ها در شهرهای پاریس و لیون پس از شکست فرانسه برابر اسپانیا
-https://daq1pvcuhj77l.cloudfront.net/1/6f03f50bb7804026b8e664771c4a07b9/hls/c341c7e2-e956-43c9-bfd7-377fc49999a4.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/60icwxawh6e317gy/ap42xanr0a5vnuw7.jpg",Two shot inside Kroger store in Cypress, suspect detained
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47186980623_47186980815/47186980815/hf-uuid-a3b6e5ae-a867-4c2c-8ad0-2f699a0306d9/47186980815_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d0ccc09bd833459c90097d4f840c8ea6/b3ff7893-6111-4f09-ae83-38742e9e2542_thumb_001_HD.jpg",فرسنگ‌ها فاصله میان فرانسه در جام جهانی با تیم حاضر در نیمه نهایی برابر اسپانیا
-https://daq1pvcuhj77l.cloudfront.net/1/d0ccc09bd833459c90097d4f840c8ea6/hls/b3ff7893-6111-4f09-ae83-38742e9e2542.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/faomhmyl1clqzn2h/7fe0m5y0mbe9s37s.jpg",Arcola Mayor arrested on five felonies
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47186910231_47186910427/47186910427/hf-uuid-9bb8d563-af0e-4f95-b500-8eee54949871/47186910427_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ba3c26f9294a486bbaf238433875f118/95e50953-5f58-49d4-a216-30c07376f589_thumb_001_HD.jpg",ترس رویارویی با اسپانیا بلای جان تیم ملی فرانسه
-https://daq1pvcuhj77l.cloudfront.net/1/ba3c26f9294a486bbaf238433875f118/hls/95e50953-5f58-49d4-a216-30c07376f589.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/m2jhrt5474bm6p7e/lj7c95iart1311yw.jpg",'Crystal-like' substance found after deadly Houston ICE shooting, FBI says
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47186846791_47186847030/47186847030/hf-uuid-4f43fa27-d72d-4baa-ac7b-5a727e6a9395/47186847030_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fe2f3342b7164388ba3916642750cf56/dc1b6f26-e8e8-4517-b38f-cf9dd3b369ef_thumb_001_HD.jpg",شب کم فروغ ستاره‌های فرانسه در دیدار نیمه‌نهایی برابر اسپانیا
-https://daq1pvcuhj77l.cloudfront.net/1/fe2f3342b7164388ba3916642750cf56/hls/dc1b6f26-e8e8-4517-b38f-cf9dd3b369ef.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/fz4236l8ah9c7z7c/laol6rnzgzxyfu3h.jpg",WITNESS VIDEO: Witness captures moments following Kroger shooting in Cypress
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47185755145_47185755356/47185755356/hf-uuid-2ea302ec-d089-40e1-a5b5-17507b74ceeb/47185755356_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c83d8a032df6416dac334d5a9ceea7a8/898c380a-223a-4a3b-9ed1-28b3be56ceb9_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: پشت پرده جنجال همکاری احمدی‌‌‌نژاد با اسرائیل
-https://daq1pvcuhj77l.cloudfront.net/1/c83d8a032df6416dac334d5a9ceea7a8/hls/898c380a-223a-4a3b-9ed1-28b3be56ceb9.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/nsgrqf0exaqahnl0/q2m59h3zibmhyxr3.jpg",Cypress Kroger shooting: Authorities provide latest details following shooting
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47184975818_47184976013/47184976013/hf-uuid-404fe3d7-a441-4c30-bf15-d4264c26a579/47184976013_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cc1def98e5c64c9498aee3bfcc87ad2a/75e06c90-8be6-4248-9414-559115f02a95_thumb_001_HD.jpg",جنجال ارتباط احمدی‌‌نژاد و اسرائیل؛ رهبر منتخب موساد یا مهره بازی سیاسی علیه نتانیاهو؟
-https://daq1pvcuhj77l.cloudfront.net/1/cc1def98e5c64c9498aee3bfcc87ad2a/hls/75e06c90-8be6-4248-9414-559115f02a95.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/y40gvn13xney2hjl/zucm5102334le762.jpg",Abbot breaks silence on deadly ICE shooting in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47183880012_47183880123/47183880123/hf-uuid-7a1bfd2d-7a57-40fd-a641-2f98a98d2e85/47183880123_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/da022318c46b4333ad4fd0d77e5dfd49/fb79a9bc-2eb2-443d-9d46-eead0dece1b7_thumb_001_HD.jpg",اخبار شبانگاهی | چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/da022318c46b4333ad4fd0d77e5dfd49/hls/fb79a9bc-2eb2-443d-9d46-eead0dece1b7.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/v4exrkwxuzuamqtm/ahiwlcuftm4igmqn.jpg",Forecasting with Friends 07.13.2026
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47138801091_47183077716/47183077716/hf-uuid-37709ef2-d09e-48d9-aeaa-0fe9c474e698/47183077716_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/572ed439dd38451983344c3b13a6dd1b/9c06ee91-cb7f-4c5a-9e19-237e7f2b0350_thumb_001_HD.jpg",افزایش قیمت بنزین در کانادا هم‌زمان با تشدید تنش‌ها در تنگه هرمز
-https://daq1pvcuhj77l.cloudfront.net/1/572ed439dd38451983344c3b13a6dd1b/hls/9c06ee91-cb7f-4c5a-9e19-237e7f2b0350.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/01lcp7hn7keocdmj/ltatfxoa9h3ijj79.jpg",FULL: Gov. Greg Abbott talks initiatives to keep Texas affordable in Houston
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47182408948_47182409047/47182409047/hf-uuid-5d45076e-4440-4a8d-82e0-b6dbd3f87c88/47182409047_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a393c8e1ed6d4770a36621d36397307b/6f652372-df6f-4b79-a3c8-e9df74a102f7_thumb_001_HD.jpg",آیا اقدامات سپاه، عربستان را دوباره به جبهه یمن کشانده است؟
-https://daq1pvcuhj77l.cloudfront.net/1/a393c8e1ed6d4770a36621d36397307b/hls/6f652372-df6f-4b79-a3c8-e9df74a102f7.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5qoj5vbay9hbvu35/kdfjjxubia3jcr35.jpg",Your Legal Questions: July 14, 2026
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47179833425_47179833518/47179833518/hf-uuid-5f231eb2-ce72-4a9a-8274-b3298e1850b2/47179833518_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d3928b78892544ccb096a873dafc32a1/46a8dde7-8602-4e38-82e0-b91940d38602_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/d3928b78892544ccb096a873dafc32a1/hls/46a8dde7-8602-4e38-82e0-b91940d38602.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/elv5ixs5tk8gwxmj/jpdtymj1760ee75a.jpg",Houston Restaurant Weeks 2026 menus released
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47178387525_47178387683/47178387683/hf-uuid-755534e7-3243-4bd7-aca4-052484914e0d/47178387683_lowres.mp4
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9630b8bbdfaa43ed8e24167d386fd8ca/49ad3a58-2291-44c0-9378-96c656f5236e_thumb_001_HD.jpg",موج همدلی با شهروندان شهرهای جنوبی ایران در شبکه‌های اجتماعی
-https://daq1pvcuhj77l.cloudfront.net/1/9630b8bbdfaa43ed8e24167d386fd8ca/hls/49ad3a58-2291-44c0-9378-96c656f5236e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1be6df8fe7f54c7abd9030c7078933d5/14db5e26-f9f6-41b9-addc-f310adf86957_thumb_005_HD.jpg",هشدار پژوهشگران سوئدی درباره تاثیر جنگ بر سلامت روان ایرانیان خارج از کشور
-https://daq1pvcuhj77l.cloudfront.net/1/1be6df8fe7f54c7abd9030c7078933d5/hls/14db5e26-f9f6-41b9-addc-f310adf86957.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7120c714dc5f45768b38b935ecc853e7/c7dc094a-5cb0-4890-9f59-3461fc3be56c_thumb_001_HD.jpg",تحریم‌های جدید آمریکا علیه شبکه فروش و انتقال نفت مرتبط با پسر علی شمخانی
-https://daq1pvcuhj77l.cloudfront.net/1/7120c714dc5f45768b38b935ecc853e7/hls/c7dc094a-5cb0-4890-9f59-3461fc3be56c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a57001b7f9e342fd9434a108130fb7ee/4c5e8d19-8614-4881-97b0-c9b02d334f03_thumb_001_HD.jpg",گفت‌وگوی ویژه با نیلوفر بیضایی
-https://daq1pvcuhj77l.cloudfront.net/1/a57001b7f9e342fd9434a108130fb7ee/hls/4c5e8d19-8614-4881-97b0-c9b02d334f03.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/19c5d091f34a4a4aa26e354f5440183d/b78fba88-b83b-4390-b983-3ecc42b6e393_thumb_001_HD.jpg",دور دوم حملات ارتش آمریکا به مواضع جمهوری اسلامی در ایران
-https://daq1pvcuhj77l.cloudfront.net/1/19c5d091f34a4a4aa26e354f5440183d/hls/b78fba88-b83b-4390-b983-3ecc42b6e393.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fda0f1827c9b48af93b1ef22fd0c220f/22934ebb-866e-4e14-ae62-884e913cce0a_thumb_002_HD.jpg",سناتور ایتالیایی خواستار حمایت از معترضان ایرانی شد
-https://daq1pvcuhj77l.cloudfront.net/1/fda0f1827c9b48af93b1ef22fd0c220f/hls/22934ebb-866e-4e14-ae62-884e913cce0a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6c6f9d792c7441629c13a44a407ad241/07f4b695-2b18-4dbf-9691-a2b0575918c7_thumb_002_HD.jpg",دبیرکل شورای همکاری خلیج فارس خواستار اقدام جهانی برای توقف حملات جمهوری اسلامی شد
-https://daq1pvcuhj77l.cloudfront.net/1/6c6f9d792c7441629c13a44a407ad241/hls/07f4b695-2b18-4dbf-9691-a2b0575918c7.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/654a747894ae48188d55fb1d7455d661/be9cbc3d-bef5-41cc-b804-59d6aa4a5a2a_thumb_005_HD.jpg",روایت شهروندان از تداوم قطعی برق و آب در اوج گرمای تابستان
-https://daq1pvcuhj77l.cloudfront.net/1/654a747894ae48188d55fb1d7455d661/hls/be9cbc3d-bef5-41cc-b804-59d6aa4a5a2a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/73e532c99c334a9d95007d7d189e8528/144c6135-696b-4cea-b4be-180d60c10771_thumb_004_HD.jpg",مروری بر روزنامه‌های ایران، چهارشنبه ۲۴ تیر، با مجتبی هاشمی، روزنامه‌نگار
-https://daq1pvcuhj77l.cloudfront.net/1/73e532c99c334a9d95007d7d189e8528/hls/144c6135-696b-4cea-b4be-180d60c10771.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bf92afd754254c33b8087f4bbbec7ad7/c7e4680e-002f-4aa2-be7e-22a37adfc36c_thumb_001_HD.jpg",اخبار نیمروزی | چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/bf92afd754254c33b8087f4bbbec7ad7/hls/c7e4680e-002f-4aa2-be7e-22a37adfc36c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bfe40a00cc2c4fbb88e6a85971ea383c/8a28a129-a6d5-4e20-9eab-ff20649c38d6_thumb_001_HD.jpg",واکنش وزارت کشور آلمان به قرار گرفتن نام صدراعظم این کشور در فهرست انتقام جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/bfe40a00cc2c4fbb88e6a85971ea383c/hls/8a28a129-a6d5-4e20-9eab-ff20649c38d6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/87ec4d5c679d4dab98d2c4c68ef73c6d/ed6fe843-6ada-4045-bc5b-ffb1148b7e7b_thumb_001_HD.jpg",محمدجواد اکبرین: فراخوان سپاه برای اقدام علیه آمریکا، سابقه‌ای در آغاز جنگ با عراق دارد
-https://daq1pvcuhj77l.cloudfront.net/1/87ec4d5c679d4dab98d2c4c68ef73c6d/hls/ed6fe843-6ada-4045-bc5b-ffb1148b7e7b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/82a6a92ed3104902b6fb72d720d95ac3/0c7042fc-25ce-400a-b049-7a65897bc79d_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: ترامپ با تهدید نظامی، جمهوری اسلامی را زیر فشار مذاکره قرار می‌دهد
-https://daq1pvcuhj77l.cloudfront.net/1/82a6a92ed3104902b6fb72d720d95ac3/hls/0c7042fc-25ce-400a-b049-7a65897bc79d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/28d8ea6219f5416f84c8ec17bfdadbdf/b6d46ca7-7c98-4028-99dd-8e5a8017fafd_thumb_001_HD.jpg",گمانه‌زنی‌ها در اسرائیل درباره ازسرگیری رویارویی نظامی آمریکا و جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/28d8ea6219f5416f84c8ec17bfdadbdf/hls/b6d46ca7-7c98-4028-99dd-8e5a8017fafd.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/831151e987ca498d8b8d050ce38f90d9/a94ed906-1ce0-4f22-bccb-d7cd8919686e_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/831151e987ca498d8b8d050ce38f90d9/hls/a94ed906-1ce0-4f22-bccb-d7cd8919686e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1ca7f90562c648f2a68cea388655be07/fe99ab17-28ab-492e-81b3-094301113a8b_thumb_005_HD.jpg",همدلی مردم شهرهای مختلف ایران با مردم جنوب در دور تازه حملات
-https://daq1pvcuhj77l.cloudfront.net/1/1ca7f90562c648f2a68cea388655be07/hls/fe99ab17-28ab-492e-81b3-094301113a8b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/107d51948b3747d4beddbd9e0da7eb49/888398d3-db98-46c8-a2f0-dfb17cc22700_thumb_001_HD.jpg",دور جدید حملات آمریکا به شهرهای مختلف همزمان با آغاز محاصره دریایی
-https://daq1pvcuhj77l.cloudfront.net/1/107d51948b3747d4beddbd9e0da7eb49/hls/888398d3-db98-46c8-a2f0-dfb17cc22700.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/302e7adfd09d4f4b82b2ae261d7f560f/c3e62b05-be36-4158-83b7-1c02a434c065_thumb_001_HD.jpg",مرگ خامنه‌ای؛ اهمیت و پیامدهای حذف دیکتاتور ایران و همراهانش | قسمت ششم
-https://daq1pvcuhj77l.cloudfront.net/1/302e7adfd09d4f4b82b2ae261d7f560f/hls/c3e62b05-be36-4158-83b7-1c02a434c065.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53f62c9489d54969ab7f9831e1088d05/3c94566e-b702-4d35-b0cf-b29cdb5d7147_thumb_001_HD.jpg",مرتضی کاظمیان: جمهوری اسلامی در صدد است ایران را به زمین سوخته تبدیل کند
-https://daq1pvcuhj77l.cloudfront.net/1/53f62c9489d54969ab7f9831e1088d05/hls/3c94566e-b702-4d35-b0cf-b29cdb5d7147.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a9c1dc64687b4ee6b252e1e9e3188c16/32183483-ad0d-4db8-9a3d-ee8d330f9b09_thumb_001_HD.jpg",حملات جمهوری اسلامی همکاری نظامی کشورهای منطقه با آمریکا را تقویت کرد
-https://daq1pvcuhj77l.cloudfront.net/1/a9c1dc64687b4ee6b252e1e9e3188c16/hls/32183483-ad0d-4db8-9a3d-ee8d330f9b09.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0ef8aa5d516049c5b8f187c7a866867e/1712cf3e-107b-45e1-8d23-9759bae67cd7_thumb_002_HD.jpg",احضار دیپلمات‌های جمهوری اسلامی از سوی نیوزیلند و بریتانیا
-https://daq1pvcuhj77l.cloudfront.net/1/0ef8aa5d516049c5b8f187c7a866867e/hls/1712cf3e-107b-45e1-8d23-9759bae67cd7.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6b80367e98d941878e7f3d44392e0350/52bb119c-91b0-4b1c-8e19-0c52e486bf2c_thumb_001_HD.jpg",تأثیر جنگ بر درآمدهای نفتی سپاه پاسداران
-https://daq1pvcuhj77l.cloudfront.net/1/6b80367e98d941878e7f3d44392e0350/hls/52bb119c-91b0-4b1c-8e19-0c52e486bf2c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fe2edc4536fe4d1aa904dc1cd09edb94/dcd8e688-6370-472f-8034-63453f0dfc48_thumb_001_HD.jpg",اخبار بامدادی | چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/fe2edc4536fe4d1aa904dc1cd09edb94/hls/dcd8e688-6370-472f-8034-63453f0dfc48.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/922d46e7c11649509346a435087501ed/acfbd6f7-2e5c-4ef6-9319-b3c6769d220e_thumb_002_HD.jpg",ترامپ: ضربه سختی به جمهوری اسلامی زدیم
-https://daq1pvcuhj77l.cloudfront.net/1/922d46e7c11649509346a435087501ed/hls/acfbd6f7-2e5c-4ef6-9319-b3c6769d220e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2bd670411c35483487e41daef216b177/9a883a65-b519-4135-bd3c-01f3f9cda453_thumb_005_HD.jpg",اسپانیا با شکست فرانسه به فینال جام جهانی ۲۰۲۶ راه یافت
-https://daq1pvcuhj77l.cloudfront.net/1/2bd670411c35483487e41daef216b177/hls/9a883a65-b519-4135-bd3c-01f3f9cda453.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/20a6b0fe4c9b44a5a274a34d55d74551/bb3f9ee6-1939-4d97-a62b-3b0e626f6136_thumb_001_HD.jpg",امضای قرارداد یک میلیارد دلاری کانادا و عربستان، مارک کارنی را با انتقادها روبه‌رو کرد
-https://daq1pvcuhj77l.cloudfront.net/1/20a6b0fe4c9b44a5a274a34d55d74551/hls/bb3f9ee6-1939-4d97-a62b-3b0e626f6136.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e998e1270db141459e74fd176057bcd2/091702ce-aae2-4d8b-841d-b86ed7bc9ce0_thumb_001_HD.jpg",ترامپ: تضعیف جمهوری اسلامی، عراق را از زیر بار نفوذ تهران خارج می‌کند
-https://daq1pvcuhj77l.cloudfront.net/1/e998e1270db141459e74fd176057bcd2/hls/091702ce-aae2-4d8b-841d-b86ed7bc9ce0.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9ab2e00f51484825ad9e668a7f800ff2/a15d6bf7-7ee2-4e58-9862-9908156d7298_thumb_002_HD.jpg",زاگرس در آتش؛ جنگل‌ها و جان داوطلبان همزمان می‌سوزند
-https://daq1pvcuhj77l.cloudfront.net/1/9ab2e00f51484825ad9e668a7f800ff2/hls/a15d6bf7-7ee2-4e58-9862-9908156d7298.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5d1bb1a65f5c4628ba3c34138c4aac9a/be748697-711e-42d4-af97-f6167fb62933_thumb_002_HD.jpg",فشار جهانی باید بر منابع مالی جمهوری اسلامی متمرکز شود
-https://daq1pvcuhj77l.cloudfront.net/1/5d1bb1a65f5c4628ba3c34138c4aac9a/hls/be748697-711e-42d4-af97-f6167fb62933.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ea29feb294164480bf5a8fa0e0207a76/6614c886-ae76-44cb-b4d2-30b6c478b8d6_thumb_003_HD.jpg",افت واردات نفت چین، ابهام درباره سرنوشت نفت جمهوری اسلامی را افزایش داد
-https://daq1pvcuhj77l.cloudfront.net/1/ea29feb294164480bf5a8fa0e0207a76/hls/6614c886-ae76-44cb-b4d2-30b6c478b8d6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fc01765aad1f40c68fee7bf12a1b3eae/6585cd8a-7f80-47ce-976a-e5b54103ce6c_thumb_002_HD.jpg",ادامه حملات آمریکا به مواضع جمهوری اسلامی با هدف کاهش توان حکومت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/fc01765aad1f40c68fee7bf12a1b3eae/hls/6585cd8a-7f80-47ce-976a-e5b54103ce6c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d70ce81a223b4d02bb07f1bca5bee189/ef10af3d-ad15-45b9-9832-a317651de8a3_thumb_002_HD.jpg",آمریکا بیش از ۱۳۰ میلیون دلار دارایی مرتبط با جمهوری اسلامی را مسدود کرد
-https://daq1pvcuhj77l.cloudfront.net/1/d70ce81a223b4d02bb07f1bca5bee189/hls/ef10af3d-ad15-45b9-9832-a317651de8a3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/82a1373b60a64c3a8731b2e9a2dc39cd/8addeb59-7fff-4aaa-9f96-72c6fa9dc96c_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۴ تیر
-https://daq1pvcuhj77l.cloudfront.net/1/82a1373b60a64c3a8731b2e9a2dc39cd/hls/8addeb59-7fff-4aaa-9f96-72c6fa9dc96c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5e32e622c941479ca85dd3846cc58097/8d68897f-eff1-4c11-97d2-80da359d337a_thumb_001_HD.jpg",حبس ابد برای همکاری با سپاه در بریتانیا
-https://daq1pvcuhj77l.cloudfront.net/1/5e32e622c941479ca85dd3846cc58097/hls/8d68897f-eff1-4c11-97d2-80da359d337a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3054e9816a044af7a7167b1a2f96240f/e656e679-6722-42bf-bdce-f87782b16945_thumb_001_HD.jpg",شکست اقتصاد؛ ایران در «سند چشم انداز ۱۴۰۴»، ناکامی رویاهای خامنه‌ای
-https://daq1pvcuhj77l.cloudfront.net/1/3054e9816a044af7a7167b1a2f96240f/hls/e656e679-6722-42bf-bdce-f87782b16945.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b1292c09c59f4e31a21e907d72da0c54/7307445f-6c42-4f8c-8493-edcafa1e0af2_thumb_001_HD.jpg",قرار گرفتن سپاه پاسداران در فهرست گروه‌های غیرقانونی بریتانیا
-https://daq1pvcuhj77l.cloudfront.net/1/b1292c09c59f4e31a21e907d72da0c54/hls/7307445f-6c42-4f8c-8493-edcafa1e0af2.m3u8
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cokvlxy4l4mgps6s/6v2rh1szxprc0y6m.jpg",Houston weather: Scattered showers Wednesday, flood threat
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47175524805_47175524899/47175524899/hf-uuid-6a6ef926-6243-404e-b1bc-7b6aeff8a874/47175524899_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ptc3y70ktd03h3zx/1hgup44l5x3n9ql2.jpg",FOX 26 packs 3,000 kids' lunches
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47170078127_47170078379/47170078379/hf-uuid-b1b04bdb-b8f3-4596-aebd-0e55f72959a0/47170078379_lowres.mp4
@@ -13508,63 +13412,6 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4681770
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/z6itao983qbhbdan/pyw8ox25gxh461g7.jpg",Harris County immigration defense funds paused by Texas
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46817570927_46817571108/46817571108/hf-uuid-a82955b8-5702-4162-a855-306d971cfb88/46817571108_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/nf5m0kyykurr1oo9/a3puw9j1f1dxfrbx.jpg",Battleground Texas - Countdown continues to November election
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46797974806_46797974951/46797974951/hf-uuid-f3f782b5-61c1-4160-a52b-5646115ed2e4/46797974951_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/pn6toscxyabf1957/fgavsnqyc75ntqnz.jpg",Houston weather: June 27 evening forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46815041578_46815041705/46815041705/hf-uuid-57ae88a7-8f52-48da-b6ea-7f0c410abc1a/46815041705_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/dkbdobbek51vz6d8/546xbkn095trgwi2.jpg",Israel, Lebanon sign peace agreement
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46814972699_46814972842/46814972842/hf-uuid-2e72fd0c-7946-4dd2-951e-76ea1c755214/46814972842_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/pr0bctcqczekll9t/sg0twa1kwuz0gobu.jpg",Gauchos du Sol - Foodies &amp; Friends
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46799202523_46799202655/46799202655/hf-uuid-edaf266e-5285-423f-8699-1c48a7a4adbf/46799202655_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/eiogm1t4vsf4bgto/jowadmgsdhbc92nx.jpg",Brennan's - Foodies &amp; Friends
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46798020097_46798020254/46798020254/hf-uuid-4978ec60-0a0d-40bb-8b1a-29b18d6d8d5b/46798020254_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gyf8679pfltqglwr/jxcv1jgucfi73lg6.jpg",THE NOW with CRIS: Classics, Cocktails &amp; Kicks
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46797935654_46797935814/46797935814/hf-uuid-046af5db-3d13-4811-9cc6-7971b63ef5ec/46797935814_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qta7j4v1kk7chl9z/vt7aipmg3pe5me3a.jpg",Tropical Weather Forecast: Sarahan Dust timing + new development potential
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46808191019_46808191189/46808191189/hf-uuid-4959782c-b21d-47fa-9f61-87491693752b/46808191189_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/esy4i1y8zx9148lv/470b8aib0ph9ysu6.jpg",Houston weather: June 27 morning forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46805882042_46805882151/46805882151/hf-uuid-0a463cd7-baae-47ed-bd7e-b74fa1add527/46805882151_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/xcroym1qg4nsd7om/0b2fnt8su61x3c4w.jpg",Cape Verde advances to knockout stage
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46797723907_46797724122/46797724122/hf-uuid-fda31e05-e87d-4efb-a89e-f15ece4788ff/46797724122_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/58y8rahtk8zn4wak/bs1gw7bz3ylabby5.jpg",Houston weather: Hot weekend ahead in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46797754425_46797754649/46797754649/hf-uuid-e25d9e50-79e8-4236-8704-7431ebf3d0fb/46797754649_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cbtb6xcih7xddyly/4th7h76nbmxzd9p7.jpg",Local Houston-area woman urging early Alzheimer's diagnosis
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46797663013_46797663194/46797663194/hf-uuid-90252328-01f1-4be6-b266-343e1961c66b/46797663194_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/dvxi7ofjnts9ckuk/wcf5yr4vw1m8bcbj.jpg",Katy community helping Venezuela earthquake vicitims
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46797608864_46797609066/46797609066/hf-uuid-a46182ab-daf9-4e17-a8f8-1ad039476b62/46797609066_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/jjzoe0me3s8tqsym/900o5mr5f2we6fid.jpg",Houston weather: Keeping the heat for the weekend
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46794992955_46794993154/46794993154/hf-uuid-0a1e22af-ef41-463f-ac79-929dba462f61/46794993154_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/1h0u85icqs4d96fd/xwqsvm5s35t9jjat.jpg",Bible-infused curriculum approved for Texas schools
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46794599461_46794599607/46794599607/hf-uuid-859e87b4-35f4-4c65-8d39-8b2d32f245db/46794599607_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qiy8da7p9rkrlai6/kho5lxwx9wn5961g.jpg",FIFA World Cup 2026: Houston preps for final Group Stage Match
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46794482523_46794482649/46794482649/hf-uuid-ff82dd39-8627-446f-9730-48efc93e576e/46794482649_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/7ig5i541uoqf7c6t/x0uacznj95q7582l.jpg",Local, global help following Venezuela earthquake
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46794192384_46794192524/46794192524/hf-uuid-054ca382-7fb6-4b8d-a6ff-ba500ffd8763/46794192524_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/8t79ob18zung30v4/c3qldfpn3zt40xsf.jpg",The Drop: of Montreal, Lizzo, Daniel Lanois
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_46789809520_46790226364/46790226364/hf-uuid-98df7883-160b-47eb-a07f-8b1549abe3e4/46790226364_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cyj8vbsb3fuxbjku/8lbou3y0qw7dxf58.jpg",Houston's Cesar Chavez Boulevard officially renamed
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46789212447_46789212618/46789212618/hf-uuid-6434a71a-f96f-4d61-905b-0a2d2a2b6e04/46789212618_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/o2u11kr0h8qcdxsv/2burbw6nga97zekk.jpg",Full Epstein Files Next Week | D.C. Daily
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_46784676298_46784798131/46784798131/hf-uuid-96cf0b07-86c4-430d-946f-18de529af3a1/46784798131_lowres.mp4
 
 #EXTINF:-1 tvg-name="Keshet 12" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12
 #EXTVLCOPT:network-caching=2000
