@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12455,6 +12464,42 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ba379a0503184338b9bbdc3df5d75c12/72c9d7cc-f7b9-4fa5-b446-b92d57fe0c8a_thumb_001_HD.jpg",تلاش اروپا برای تقویت امنیت انرژی همزمان با افزایش تنش‌ها در خاورمیانه
+https://daq1pvcuhj77l.cloudfront.net/1/ba379a0503184338b9bbdc3df5d75c12/hls/72c9d7cc-f7b9-4fa5-b446-b92d57fe0c8a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e397fcd1294f40259454f76a93b862cc/4c588437-ed1e-4978-9a5c-d765e084da0b_thumb_001_HD.jpg",تلاش جمهوری اسلامی برای کم‌اهمیت جلوه دادن حملات آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/e397fcd1294f40259454f76a93b862cc/hls/4c588437-ed1e-4978-9a5c-d765e084da0b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4d0d252e8b6643d0a41460e34358960d/a3d3c0b5-5a45-4d2b-a034-3dab65f38178_thumb_001_HD.jpg",هفتمین شب حملات آمریکا با هدف تضعیف توانمندی‌های نظامی ایران
+https://daq1pvcuhj77l.cloudfront.net/1/4d0d252e8b6643d0a41460e34358960d/hls/a3d3c0b5-5a45-4d2b-a034-3dab65f38178.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/434d4c62db014fab9cdc6818cedaa0b6/4a88a966-6f94-48cb-9e89-a77e60a968ad_thumb_001_HD.jpg",بازتاب حملات آمریکا به ایران در رسانه‌های فرانسه
+https://daq1pvcuhj77l.cloudfront.net/1/434d4c62db014fab9cdc6818cedaa0b6/hls/4a88a966-6f94-48cb-9e89-a77e60a968ad.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/87b62105c7e6419f9db96bc268b8d2fd/73a5b183-bdc4-4884-8876-9587162f8027_thumb_001_HD.jpg",واکنش فرانسه به حملات جمهوری اسلامی به کشورهای منطقه و کشتی‌های تجاری 
+https://daq1pvcuhj77l.cloudfront.net/1/87b62105c7e6419f9db96bc268b8d2fd/hls/73a5b183-bdc4-4884-8876-9587162f8027.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/85df27609a874720bfecf5194c7f7ad8/271c72ff-afff-49fc-845e-4967f5cb0ed3_thumb_001_HD.jpg",چشم‌انداز بازار ارز در سایه ادامه تنش‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/85df27609a874720bfecf5194c7f7ad8/hls/271c72ff-afff-49fc-845e-4967f5cb0ed3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b20ae685c5c04d9c875f55ec21216ba4/31da6b83-0fce-4a34-b1db-5f0a389a6212_thumb_001_HD.jpg",اهداف آمریکا از حمله به زیرساخت‌ها و پل‌های استراتژیک در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/b20ae685c5c04d9c875f55ec21216ba4/hls/31da6b83-0fce-4a34-b1db-5f0a389a6212.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/09bf6b622a8f46c899685e8599f4fcfd/233c8edd-8f3d-4094-bc10-6b5e63256fdd_thumb_001_HD.jpg",دستور شورای عالی امنیت ملی برای خودداری رسانه‌ها از انتشار جزییات خسارت‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/09bf6b622a8f46c899685e8599f4fcfd/hls/233c8edd-8f3d-4094-bc10-6b5e63256fdd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8af83738c4f7459cb96eb48f70b64679/3ad86ca6-a92e-4545-b7e6-e9ad5e003180_thumb_001_HD.jpg",گفت‌و‌گوی ویژه با پرتو نوری علا
+https://daq1pvcuhj77l.cloudfront.net/1/8af83738c4f7459cb96eb48f70b64679/hls/3ad86ca6-a92e-4545-b7e6-e9ad5e003180.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c4996beb75384f08bd32ebf29e88016c/82a64812-4506-4fb7-82d7-90d873d784b4_thumb_001_HD.jpg",شاهد علوی: جان‌باختن پیشمرگه‌ها در حمله جمهوری‌اسلامی باید مسئله همه ایران باشد
+https://daq1pvcuhj77l.cloudfront.net/1/c4996beb75384f08bd32ebf29e88016c/hls/82a64812-4506-4fb7-82d7-90d873d784b4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d45248b1d324113a6476f312e403d06/df1ecc6b-d547-40eb-a3a1-b1692a520401_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: ادامه حملات به راه‌های ارتباطی در جنوب
+https://daq1pvcuhj77l.cloudfront.net/1/7d45248b1d324113a6476f312e403d06/hls/df1ecc6b-d547-40eb-a3a1-b1692a520401.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b3e67c7faf5c4919b3bdd50eac7a2445/b9052802-4db1-4fa4-8a25-5c224e295d66_thumb_001_HD.jpg",احتمال گسترش دامنه عملیات آمریکا در صورت تشدید تنش‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/b3e67c7faf5c4919b3bdd50eac7a2445/hls/b9052802-4db1-4fa4-8a25-5c224e295d66.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dcebdeffb2164853bf8a4a27b69d5342/d698a327-4e18-4b4d-a2c2-2f14125759e4_thumb_001_HD.jpg", ۲۴ با فرداد فرحزاد
 https://daq1pvcuhj77l.cloudfront.net/1/dcebdeffb2164853bf8a4a27b69d5342/hls/d698a327-4e18-4b4d-a2c2-2f14125759e4.m3u8
