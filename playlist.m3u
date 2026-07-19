@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12455,6 +12464,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/635a60421acb45499eaaf7b1b710f503/2fa74d7b-1ecc-464c-93e3-bac7baeed3fd_thumb_001_HD.jpg",جزییات تازه از اعدام محمد امینی دهاقانی، معترض دی‌ماه ۱۴۰۴
+https://daq1pvcuhj77l.cloudfront.net/1/635a60421acb45499eaaf7b1b710f503/hls/2fa74d7b-1ecc-464c-93e3-bac7baeed3fd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a88280f0484541a9a44dbb64f7eef8f3/d5043936-daac-4014-b53a-860afa84aa7b_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، یکشنبه ۲۸ تیر، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/a88280f0484541a9a44dbb64f7eef8f3/hls/d5043936-daac-4014-b53a-860afa84aa7b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/13ef6359318a40aab125f3725dcdc248/90969370-a8db-4151-9132-99a5b28836b3_thumb_001_HD.jpg",تداوم حمله جمهوری اسلامی به کشورهای منطقه
+https://daq1pvcuhj77l.cloudfront.net/1/13ef6359318a40aab125f3725dcdc248/hls/90969370-a8db-4151-9132-99a5b28836b3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/50392f912bf74ae6884488708ca6928b/589eccc2-7411-4391-94fd-f6263fbfbde7_thumb_003_HD.jpg",بیانیه کنگره آزادی ایران در انتقاد به سیاست‌های جنگ‌طلبانه جمهوری اسلامی و حملات آمریکا 
+https://daq1pvcuhj77l.cloudfront.net/1/50392f912bf74ae6884488708ca6928b/hls/589eccc2-7411-4391-94fd-f6263fbfbde7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/759719c2d0fe4613aebcc7b7e30f1e57/625cad11-f2ad-497f-9050-8bc2c854ab0b_thumb_001_HD.jpg",اخبار نیم‌روزی | یکشنبه ۲۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/759719c2d0fe4613aebcc7b7e30f1e57/hls/625cad11-f2ad-497f-9050-8bc2c854ab0b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e7e545fa5974f9eae7d06d06b26b912/b165122c-0b4d-4a03-af5c-f14ff9339ea2_thumb_001_HD.jpg",شرایط روحی و مشکلات خانواده‌های جاویدنامان دی‌ماه
+https://daq1pvcuhj77l.cloudfront.net/1/7e7e545fa5974f9eae7d06d06b26b912/hls/b165122c-0b4d-4a03-af5c-f14ff9339ea2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5286d5f8b7ea420591360b5ec5b497ea/deaf8155-97a7-4afc-bf41-b887056f49a9_thumb_001_HD.jpg",دلار در بازار آزاد از ۱۹۴ هزار تومان عبور کرد
+https://daq1pvcuhj77l.cloudfront.net/1/5286d5f8b7ea420591360b5ec5b497ea/hls/deaf8155-97a7-4afc-bf41-b887056f49a9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/737129587067489fab575fb1c59385e2/134019df-78cf-4e79-a63e-c9d1298cb5b2_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۲۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/737129587067489fab575fb1c59385e2/hls/134019df-78cf-4e79-a63e-c9d1298cb5b2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f18df426ccc34eb19f5f184a6e16142c/91f7e228-3259-47fe-bfe5-2a5a3691cb17_thumb_001_HD.jpg",علی شیرازی: واشینگتن به تعهداتش عمل کرد، جمهوری اسلامی توافق را نقض کرد
+https://daq1pvcuhj77l.cloudfront.net/1/f18df426ccc34eb19f5f184a6e16142c/hls/91f7e228-3259-47fe-bfe5-2a5a3691cb17.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c663ffd1416249aab1de84fda2efa2f8/07304d72-f753-4a42-849a-123df2f38704_thumb_001_HD.jpg",پیام شهروندان از جنوب ایران؛ قیمت بنزین و کالاهای اساسی گران شده است
 https://daq1pvcuhj77l.cloudfront.net/1/c663ffd1416249aab1de84fda2efa2f8/hls/07304d72-f753-4a42-849a-123df2f38704.m3u8
@@ -14327,6 +14363,15 @@ https://t2hls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://nl.livekadeh.com/hls2/alwilayah_tv.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/ps4Gtj0.png" tvg-id="AssiratTV.ir@SD",Assirat TV (576p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" tvg-id="IranJewishTV.ir@SD",Iran Jewish TV
 #EXTVLCOPT:network-caching=2000
