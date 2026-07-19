@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12446,6 +12455,72 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a8167abbb7004eec898d36f75c2a0fae/1e9bbf5e-7ed0-423c-b001-387edfd0dfe2_thumb_001_HD.jpg",ادامه حملات آمریکا به مواضع سپاه در ایران و تشدید حملات جمهوری اسلامی به کشورهای منطقه
+https://daq1pvcuhj77l.cloudfront.net/1/a8167abbb7004eec898d36f75c2a0fae/hls/1e9bbf5e-7ed0-423c-b001-387edfd0dfe2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f2554215b8548288839244f4e23a6c5/b8db2ea2-d148-40bd-8a93-7ab250ff4e45_thumb_001_HD.jpg",حملات تهران به خاک اردن و بررسی ورود اسرائیل به جنگ آمریکا و جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/9f2554215b8548288839244f4e23a6c5/hls/b8db2ea2-d148-40bd-8a93-7ab250ff4e45.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5536f5878f694130ad2c7d7c4b5a9880/9e8247a8-866a-4b93-a5d8-a6787e7db0bb_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، یک‌شنبه ۲۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/5536f5878f694130ad2c7d7c4b5a9880/hls/9e8247a8-866a-4b93-a5d8-a6787e7db0bb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7af2d423eeee48bfbf8a2f505f48439f/d37a8500-767c-448f-99c1-aa427c62fe01_thumb_001_HD.jpg",مسی می‌تواند بر توتال فوتبال پیروز شود؟
+https://daq1pvcuhj77l.cloudfront.net/1/7af2d423eeee48bfbf8a2f505f48439f/hls/d37a8500-767c-448f-99c1-aa427c62fe01.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6f4dd8fc4f7f40d78edded8aefa4bed8/4b059ce5-a91d-4d2e-b03e-8a6d3838740c_thumb_001_HD.jpg",لیونل مسی به دنبال تاریخ سازی در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/6f4dd8fc4f7f40d78edded8aefa4bed8/hls/4b059ce5-a91d-4d2e-b03e-8a6d3838740c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/412365d613c84b8daba64ca0d3914aa0/2e028cbf-c085-481a-97d2-33712ed59666_thumb_001_HD.jpg",حمایت صریح بنیامین نتانیاهو از آرژانتین و آرزوی قهرمانی برای مسی
+https://daq1pvcuhj77l.cloudfront.net/1/412365d613c84b8daba64ca0d3914aa0/hls/2e028cbf-c085-481a-97d2-33712ed59666.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ceb8ac7afd76411ba06ec4960e083da4/06bd41ae-0eac-4e36-8396-1165a9ef6a0b_thumb_001_HD.jpg",امیدواری هواداران آرژانتین و اسپانیا برای قهرمانی در جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/ceb8ac7afd76411ba06ec4960e083da4/hls/06bd41ae-0eac-4e36-8396-1165a9ef6a0b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/98aa6e4d499147d989abb196e9dc5470/8bf2de1b-a25b-4327-9fea-3e469b684af9_thumb_001_HD.jpg",تقابل لیونل مسی با رودری و لامین یامال در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/98aa6e4d499147d989abb196e9dc5470/hls/8bf2de1b-a25b-4327-9fea-3e469b684af9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/660852ffe60f4308b1fb3eae110fbebd/b6b5fcc8-d324-4ed9-8956-e41f3bfd92d2_thumb_001_HD.jpg",تقابل‌ آرژانتین و اسپانیا به روایت آمار
+https://daq1pvcuhj77l.cloudfront.net/1/660852ffe60f4308b1fb3eae110fbebd/hls/b6b5fcc8-d324-4ed9-8956-e41f3bfd92d2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4ef0bc745c744c1cb5becd7832d89912/acea4c83-a8a6-4896-bfc0-3dcdbd3390bb_thumb_001_HD.jpg",سهم بالای اتلتیکو مادرید و لالیگا در فینال جام جهانی ۲۰۲۶
+https://daq1pvcuhj77l.cloudfront.net/1/4ef0bc745c744c1cb5becd7832d89912/hls/acea4c83-a8a6-4896-bfc0-3dcdbd3390bb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c8418b039ac945489cd2c06a3b43d628/475fe52a-ba2b-4594-b293-b78ec1a9f69c_thumb_001_HD.jpg",آرژانتین - اسپانیا؛ تقابل خلاقیب با تیم هماهنگ
+https://daq1pvcuhj77l.cloudfront.net/1/c8418b039ac945489cd2c06a3b43d628/hls/475fe52a-ba2b-4594-b293-b78ec1a9f69c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b2a71a34447549aa8df42251c5a2ba08/1912e12e-1e37-4eae-93d4-c0ebd3c26bab_thumb_001_HD.jpg",جو کامل فوتبالی در شهر نیویورک پیش از دیدار فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/b2a71a34447549aa8df42251c5a2ba08/hls/1912e12e-1e37-4eae-93d4-c0ebd3c26bab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/70335d6a39264abd8543b1e2b7918873/3a2f057d-5b00-46ad-b480-68eb8157d115_thumb_001_HD.jpg",جنگ اسپانیا و آرژانتین در آمریکا برای قهرمانی جهان
+https://daq1pvcuhj77l.cloudfront.net/1/70335d6a39264abd8543b1e2b7918873/hls/3a2f057d-5b00-46ad-b480-68eb8157d115.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3e111e27e3a947579d870cc50174035b/faeef7fd-72a3-4b80-b4ba-23f70504f9d0_thumb_001_HD.jpg",بازی فینال تنها شانس مسی برای عبور از امباپه و رسیدن به عنوان آقای گلی
+https://daq1pvcuhj77l.cloudfront.net/1/3e111e27e3a947579d870cc50174035b/hls/faeef7fd-72a3-4b80-b4ba-23f70504f9d0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/84dcb2705cdb490980ba1b6874d52fe0/0ce591ce-3522-45c5-b09a-a2391f71da29_thumb_001_HD.jpg",حال و هوای نیویورک پیش از بازی فینال جام جهانی بین آرژانتین و اسپانیا
+https://daq1pvcuhj77l.cloudfront.net/1/84dcb2705cdb490980ba1b6874d52fe0/hls/0ce591ce-3522-45c5-b09a-a2391f71da29.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/51b82aab44ba45fcb31647ef7add92a0/874265d4-f0e6-4a65-9366-29ec86f746b2_thumb_001_HD.jpg",تایید حکم اعدام علیرضا رئیسی در دیوان عالی کشور
+https://daq1pvcuhj77l.cloudfront.net/1/51b82aab44ba45fcb31647ef7add92a0/hls/874265d4-f0e6-4a65-9366-29ec86f746b2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/14804277fe5a4a339d8152b98e39da33/1f1eb62c-e59b-4061-a7bb-eda5f9deea94_thumb_001_HD.jpg",تاریخ‌سازی بوکایو ساکا با هت‌تریک در جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/14804277fe5a4a339d8152b98e39da33/hls/1f1eb62c-e59b-4061-a7bb-eda5f9deea94.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3e0bb48fa3b24d62a61a75bfd80c6af3/0eab410c-507e-4d93-afc3-f0edc9a077ff_thumb_001_HD.jpg",حمله بی‌رحمانه رسانه‌های فرانسوی پس از شکست در دیدار رده‌بندی جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/3e0bb48fa3b24d62a61a75bfd80c6af3/hls/0eab410c-507e-4d93-afc3-f0edc9a077ff.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/093e728dda7e4e04a72a401b32f68ccb/5976b1ed-4061-4227-be3d-c3e20169e467_thumb_001_HD.jpg",راز پیروزی انگلیس برابر فرانسه در دیدار رده بندی جام جهانی 
+https://daq1pvcuhj77l.cloudfront.net/1/093e728dda7e4e04a72a401b32f68ccb/hls/5976b1ed-4061-4227-be3d-c3e20169e467.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91e4e92d72534c9fab80b4ff8bf574f5/4f67ba6c-f467-422f-99ce-2a1189d323a2_thumb_001_HD.jpg",هنرنمایی بیژن مرتضوی در برنامه بزرگ فیفا در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/91e4e92d72534c9fab80b4ff8bf574f5/hls/4f67ba6c-f467-422f-99ce-2a1189d323a2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4b09fb98b59849d7bb5e64d8cd83c1a0/b3bda5a5-7926-48bd-bb32-51c52910cbf5_thumb_001_HD.jpg",نمایش بزرگ فیفا بین دو نیمه فینال جام جهانی ۲۰۲۶ با حضور ستاره‌های هالیوود و موسیقی
+https://daq1pvcuhj77l.cloudfront.net/1/4b09fb98b59849d7bb5e64d8cd83c1a0/hls/b3bda5a5-7926-48bd-bb32-51c52910cbf5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/35f5c309dbbc428e8eaa72ce335bbcce/e7c9c0f8-fd80-4c65-99e0-897b1d06f8e0_thumb_001_HD.jpg",برنامه ویژه فیفا برای اختتامیه جام جهانی با حضور ستاره‌هایی همچون تام کروز
+https://daq1pvcuhj77l.cloudfront.net/1/35f5c309dbbc428e8eaa72ce335bbcce/hls/e7c9c0f8-fd80-4c65-99e0-897b1d06f8e0.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/38297f0b6b774e91841a29107af9b150/4c69e166-8905-435e-b4d3-72ded6ed9a6a_thumb_001_HD.jpg",آرژانتین - اسپانیا؛ جام جهانی ۲۰۲۶ به آخرین ایستگاه رسید
 https://daq1pvcuhj77l.cloudfront.net/1/38297f0b6b774e91841a29107af9b150/hls/4c69e166-8905-435e-b4d3-72ded6ed9a6a.m3u8
