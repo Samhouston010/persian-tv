@@ -12195,15 +12195,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12456,14 +12447,29 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",BIZ Music
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/38297f0b6b774e91841a29107af9b150/4c69e166-8905-435e-b4d3-72ded6ed9a6a_thumb_001_HD.jpg",آرژانتین - اسپانیا؛ جام جهانی ۲۰۲۶ به آخرین ایستگاه رسید
+https://daq1pvcuhj77l.cloudfront.net/1/38297f0b6b774e91841a29107af9b150/hls/4c69e166-8905-435e-b4d3-72ded6ed9a6a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b635e7e38e8e48028a6804ff44b10c89/80219379-598a-4fb5-bb4c-78e113b9651e_thumb_001_HD.jpg",اخبار شبانگاهی | یکشنبه ۲۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/b635e7e38e8e48028a6804ff44b10c89/hls/80219379-598a-4fb5-bb4c-78e113b9651e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f7514574d3a84fddb3636f4837834d14/4f929efa-4f7d-49d8-ad8e-2dc18e85b7d1_thumb_001_HD.jpg",انتقاد کاربران افغان و ایرانی به اظهارات عباس جمشیدی‌فر درباره افغانستان
+https://daq1pvcuhj77l.cloudfront.net/1/f7514574d3a84fddb3636f4837834d14/hls/4f929efa-4f7d-49d8-ad8e-2dc18e85b7d1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d890bbbfea384db29dcdf313d2a595a0/7b8951e0-0584-44d6-9e95-09e4cb03508c_thumb_001_HD.jpg",موشک‌ پرتاب شده از سوی جمهوری اسلامی به اردن در آسمان بندر عقبه دیده شد
+https://daq1pvcuhj77l.cloudfront.net/1/d890bbbfea384db29dcdf313d2a595a0/hls/7b8951e0-0584-44d6-9e95-09e4cb03508c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2d0d60bda7664b288168247781760279/a10c182e-2e8a-4a46-a73f-207a3afa6195_thumb_001_HD.jpg",سرخط خبرهای یک‌شنبه ۲۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/2d0d60bda7664b288168247781760279/hls/a10c182e-2e8a-4a46-a73f-207a3afa6195.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3613fa2b5cee4dd2b35967b2ff97aff6/8f493740-ce9c-4c7e-8b98-385e6cff4684_thumb_002_HD.jpg",دو معترض اعدامی در اصفهان بدون اطلاع خانواده و به صورت مخفیانه در قبرستانی دوردست دفن شدند
+https://daq1pvcuhj77l.cloudfront.net/1/3613fa2b5cee4dd2b35967b2ff97aff6/hls/8f493740-ce9c-4c7e-8b98-385e6cff4684.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4e55b1fd795e4aaab4bb7fea6b3656b2/91d837f4-999d-4c4a-8e36-4a8004bcbb8a_thumb_003_HD.jpg",عراقچی از یک حفره امنیتی در حکومت که همچنان بر تصمیم‌گیری‌های کلان اثرگذار است خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/4e55b1fd795e4aaab4bb7fea6b3656b2/hls/91d837f4-999d-4c4a-8e36-4a8004bcbb8a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91a4960a44ff4dc5be6846f778706b9c/9a16a711-9094-479f-9277-7bb50cba5161_thumb_001_HD.jpg",حمله گسترده موشکی روسیه به کی‌یف؛ یک کشته و هفت زخمی
+https://daq1pvcuhj77l.cloudfront.net/1/91a4960a44ff4dc5be6846f778706b9c/hls/9a16a711-9094-479f-9277-7bb50cba5161.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/635a60421acb45499eaaf7b1b710f503/2fa74d7b-1ecc-464c-93e3-bac7baeed3fd_thumb_001_HD.jpg",جزییات تازه از اعدام محمد امینی دهاقانی، معترض دی‌ماه ۱۴۰۴
 https://daq1pvcuhj77l.cloudfront.net/1/635a60421acb45499eaaf7b1b710f503/hls/2fa74d7b-1ecc-464c-93e3-bac7baeed3fd.m3u8
