@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12455,6 +12464,21 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/991db19d7416410dac4b84c5fecdeb77/3d96c949-fee4-4aaa-92e4-976e708f3f66_thumb_001_HD.jpg",عراق و آمریکا ۴۸ قرارداد امضا کردند
+https://daq1pvcuhj77l.cloudfront.net/1/991db19d7416410dac4b84c5fecdeb77/hls/3d96c949-fee4-4aaa-92e4-976e708f3f66.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a5abb37b80e64d3889420175c0ff4155/5e984c42-6a1f-421f-b2a3-11321e3cd517_thumb_001_HD.jpg",کاروان ۵۵۰ خودرویی با پرچم شیر و خورشید در حمایت از مردم ایران در تورنتو
+https://daq1pvcuhj77l.cloudfront.net/1/a5abb37b80e64d3889420175c0ff4155/hls/5e984c42-6a1f-421f-b2a3-11321e3cd517.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f2358f5888994793819e844d200fab36/1e7b6832-6b73-4ba9-afe7-d6a197b63abf_thumb_001_HD.jpg",دویستمین روز راهپیمایی اعتراضی ایرانیان مقیم سوئد در استکهلم
+https://daq1pvcuhj77l.cloudfront.net/1/f2358f5888994793819e844d200fab36/hls/1e7b6832-6b73-4ba9-afe7-d6a197b63abf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1bc105ff5ee24422b1705a32b89045f6/55206222-6322-4522-953b-7ed0c4281a3b_thumb_001_HD.jpg",امید معماریان: جمهوری اسلامی به امید امتیازگیری، از تقابل با آمریکا دست نمی‌کشد
+https://daq1pvcuhj77l.cloudfront.net/1/1bc105ff5ee24422b1705a32b89045f6/hls/55206222-6322-4522-953b-7ed0c4281a3b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1ac2dfcc45a34aa0a6b0263ef9495d17/479a9a92-c81e-4e1b-94c1-1733551030d6_thumb_001_HD.jpg",اخبار بامدادی | یکشنبه ۲۸ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/1ac2dfcc45a34aa0a6b0263ef9495d17/hls/479a9a92-c81e-4e1b-94c1-1733551030d6.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2c845bf271a043a6905aa40562d92687/3768578f-3088-495a-91e2-21ba172a5099_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۲۸ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/2c845bf271a043a6905aa40562d92687/hls/3768578f-3088-495a-91e2-21ba172a5099.m3u8
