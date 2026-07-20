@@ -12195,15 +12195,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12455,6 +12446,39 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2f809ab1b4fa4fee9ea56ad622e2775f/083de224-ffe1-46ce-a2a2-b48c89077b0b_thumb_001_HD.jpg",پایان هشتمین شب حملات آمریکا به مواضع جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/2f809ab1b4fa4fee9ea56ad622e2775f/hls/083de224-ffe1-46ce-a2a2-b48c89077b0b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a95bc2632c34f95bac3b3df3e785ba2/55c619fa-875f-485a-84e9-4f2749ade4e5_thumb_001_HD.jpg",اسپانیا قهرمان جام جهانی ۲۰۲۶ شد
+https://daq1pvcuhj77l.cloudfront.net/1/4a95bc2632c34f95bac3b3df3e785ba2/hls/55c619fa-875f-485a-84e9-4f2749ade4e5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4fbcd45e16454f5b8c093bd69919b58c/2c57e3bf-d969-44c4-8598-7199616d3248_thumb_001_HD.jpg",سیاست با مراد ویسی: جمهوری اسلامی؛ حکومتِ تونل‌نشین‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/4fbcd45e16454f5b8c093bd69919b58c/hls/2c57e3bf-d969-44c4-8598-7199616d3248.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c247f74378464c5f88d999699d972667/147e31eb-6acc-4016-88a9-a646a1afabee_thumb_004_HD.jpg",حملات آمریکا به مواضع جمهوری اسلامی در جنوب ایران
+https://daq1pvcuhj77l.cloudfront.net/1/c247f74378464c5f88d999699d972667/hls/147e31eb-6acc-4016-88a9-a646a1afabee.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/63288178c92c4c7abfe24dadddd5f8bc/76e40497-157d-4b64-874b-f0adffc2bf01_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: حمله سپاه به چهار کشتی پس از فرمان جنگ مجتبی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/63288178c92c4c7abfe24dadddd5f8bc/hls/76e40497-157d-4b64-874b-f0adffc2bf01.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/504c013bdea7499dbd2d63a480510ee3/b2ced0e5-b958-4027-b75d-184a5df18fa4_thumb_001_HD.jpg",آغاز فینال جام جهانی ۲۰۲۶ میان آرژانتین و اسپانیا
+https://daq1pvcuhj77l.cloudfront.net/1/504c013bdea7499dbd2d63a480510ee3/hls/b2ced0e5-b958-4027-b75d-184a5df18fa4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0749a3b7cb3b46e58ac36f6a7617db66/8f0e0fdf-9e63-416d-ac45-00e49fae9fef_thumb_001_HD.jpg",سرشاخ با ترامپ با کارت مجتبی خامنه‌ای؛ چرا سپاه پاسداران خواهان ادامه جنگ با آمریکاست؟
+https://daq1pvcuhj77l.cloudfront.net/1/0749a3b7cb3b46e58ac36f6a7617db66/hls/8f0e0fdf-9e63-416d-ac45-00e49fae9fef.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/68e2508b45894fb986dce49dd2da14d6/2370bc16-1488-4057-9c31-c7b6b74d790a_thumb_001_HD.jpg",حفره امنیتی نظام و معمای مجتبی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/68e2508b45894fb986dce49dd2da14d6/hls/2370bc16-1488-4057-9c31-c7b6b74d790a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0d27ee8130264f708c6f0ef3e41b613c/65b5be50-1ff4-4f98-abc9-2d1712354b7e_thumb_002_HD.jpg",اسناد داخلی ارتش آلمان از کمبود نیرو برای استقرار در لیتوانی خبر می‌دهند
+https://daq1pvcuhj77l.cloudfront.net/1/0d27ee8130264f708c6f0ef3e41b613c/hls/65b5be50-1ff4-4f98-abc9-2d1712354b7e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b82b18071707404185ac70bffa417ac6/5b283870-7c88-4425-894c-dc8d6ab7c5d0_thumb_002_HD.jpg",توقف صادرات نفت ایران و اظهارات مقام‌های جمهوری اسلامی درباره توقف صادرات نفت منطقه
+https://daq1pvcuhj77l.cloudfront.net/1/b82b18071707404185ac70bffa417ac6/hls/5b283870-7c88-4425-894c-dc8d6ab7c5d0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/63f56762d9d54a4db735f03df14a1c04/4a27b381-75de-43fa-862b-38001cdc5bfd_thumb_001_HD.jpg",چشم‌انداز: حفره امنیتی نظام و معمای مجتبی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/63f56762d9d54a4db735f03df14a1c04/hls/4a27b381-75de-43fa-862b-38001cdc5bfd.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a8167abbb7004eec898d36f75c2a0fae/1e9bbf5e-7ed0-423c-b001-387edfd0dfe2_thumb_001_HD.jpg",ادامه حملات آمریکا به مواضع سپاه در ایران و تشدید حملات جمهوری اسلامی به کشورهای منطقه
 https://daq1pvcuhj77l.cloudfront.net/1/a8167abbb7004eec898d36f75c2a0fae/hls/1e9bbf5e-7ed0-423c-b001-387edfd0dfe2.m3u8
