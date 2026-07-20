@@ -12195,6 +12195,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12456,8 +12465,38 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/956d044ea82547aa81532f54b369e443/38ac61be-1f99-476b-a12f-52790750b182_thumb_001_HD.jpg",پایان کار کی‌یر استارمر در مقام نخست‌وزیر بریتانیا
+https://daq1pvcuhj77l.cloudfront.net/1/956d044ea82547aa81532f54b369e443/hls/38ac61be-1f99-476b-a12f-52790750b182.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/57c92fdfb0f544b8a167e9eb13aee2ca/f2b45b5f-cec1-4ec3-aa8b-fba74e2bbc85_thumb_001_HD.jpg",تشدید حملات متقابل روسیه و اوکراین؛ مسکو و کی‌یف زیر آتش
+https://daq1pvcuhj77l.cloudfront.net/1/57c92fdfb0f544b8a167e9eb13aee2ca/hls/f2b45b5f-cec1-4ec3-aa8b-fba74e2bbc85.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a4b0b15706de426f92175ac15e7929c9/64775b7f-0109-41ec-8f09-34bd4cd54c79_thumb_001_HD.jpg",اخبار نیمروزی | دوشنبه ۲۹ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/a4b0b15706de426f92175ac15e7929c9/hls/64775b7f-0109-41ec-8f09-34bd4cd54c79.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e2579d1c6b944f39a64a788aa6bb1bfe/f54b96fc-8c15-4ea7-b699-98160b59c61e_thumb_003_HD.jpg",مروری بر روزنامه‌های ایران، دوشنبه ۲۹ تیر، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/e2579d1c6b944f39a64a788aa6bb1bfe/hls/f54b96fc-8c15-4ea7-b699-98160b59c61e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/68d85828fccb4c7681e1af71da7ca2c9/3e5c9e4c-a2e1-4325-a45d-bc97ceb0f522_thumb_001_HD.jpg",ابهام در بازگشت درآمدهای نفتی ایران با آغاز دوباره محاصره دریایی
+https://daq1pvcuhj77l.cloudfront.net/1/68d85828fccb4c7681e1af71da7ca2c9/hls/3e5c9e4c-a2e1-4325-a45d-bc97ceb0f522.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a788ba48b5f640c292fd0304659abec5/b2d16142-2cfb-4b18-af20-d46690f4c43b_thumb_001_HD.jpg",پایان جام جهانی ۲۰۲۶ با قهرمانی اسپانیا
+https://daq1pvcuhj77l.cloudfront.net/1/a788ba48b5f640c292fd0304659abec5/hls/b2d16142-2cfb-4b18-af20-d46690f4c43b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d3efb5fbb6f24f0f98019eed4d881e10/737b044a-7344-415b-81d0-83522c00d903_thumb_001_HD.jpg",گزارش عراقچی از جنگ، مجتبی خامنه‌ای و حفره امنیتی نظام
+https://daq1pvcuhj77l.cloudfront.net/1/d3efb5fbb6f24f0f98019eed4d881e10/hls/737b044a-7344-415b-81d0-83522c00d903.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a3faac67b3544c988943415358276fc0/bedbd6ee-92e7-4983-a10c-d31eaf4351c1_thumb_001_HD.jpg",نخست‌وزیر جدید بریتانیا
+https://daq1pvcuhj77l.cloudfront.net/1/a3faac67b3544c988943415358276fc0/hls/bedbd6ee-92e7-4983-a10c-d31eaf4351c1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a7dbf13407c2461db1e1721e5de1dfd9/615ec3d2-9361-4c78-a18c-8c16dd4993f8_thumb_001_HD.jpg",ادامه حملات آمریکا با هدف تضعیف توان نظامی جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/a7dbf13407c2461db1e1721e5de1dfd9/hls/615ec3d2-9361-4c78-a18c-8c16dd4993f8.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3a53e93db99245eea5d2ad6c20f93be8/e6263d44-f344-4363-b999-522b619f97cf_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۲۹ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/3a53e93db99245eea5d2ad6c20f93be8/hls/e6263d44-f344-4363-b999-522b619f97cf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3764ac833708451da54fb5d3416a8849/e48e7ed4-df20-41c4-8e4f-a34f15615c25_thumb_001_HD.jpg",مولوی محمدانور ریگی، امام جمعه اهل سنت میرجاوه، کشته شد
+https://daq1pvcuhj77l.cloudfront.net/1/3764ac833708451da54fb5d3416a8849/hls/e48e7ed4-df20-41c4-8e4f-a34f15615c25.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e9c98333e6e40d389aacba03e9929ad/d05c4057-e497-464f-b2e3-35969c2780b7_thumb_001_HD.jpg",گسترش حملات آمریکا به جمهوری اسلامی؛ تبریز، ارومیه و خرم‌آباد هدف حمله قرار گرفت
 https://daq1pvcuhj77l.cloudfront.net/1/7e9c98333e6e40d389aacba03e9929ad/hls/d05c4057-e497-464f-b2e3-35969c2780b7.m3u8
