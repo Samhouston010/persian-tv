@@ -12195,15 +12195,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12464,6 +12455,54 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2158d6527dc643589cdd416f1331249f/f861515a-9de1-4cf8-9623-8f68eeaf82c7_thumb_001_HD.jpg",حمله رسانه‌های آرژانتینی به لیونل اسکالونی پس از شکست در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/2158d6527dc643589cdd416f1331249f/hls/f861515a-9de1-4cf8-9623-8f68eeaf82c7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5f8ae3179521431999524ff7c04d9a3b/5dcf7fe7-2700-4925-886e-5eb741959990_thumb_001_HD.jpg",انتقاد گسترده رسانه‌های جهان از سبک و نوع بازی آرژانتین در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/5f8ae3179521431999524ff7c04d9a3b/hls/5dcf7fe7-2700-4925-886e-5eb741959990.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1ba22eb06a174b68aff3b3892141c543/1135f56e-8cbb-4d37-b40f-10d32984baef_thumb_001_HD.jpg",تقابل «قلب و احساس» با «مغز و برنامه» در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/1ba22eb06a174b68aff3b3892141c543/hls/1135f56e-8cbb-4d37-b40f-10d32984baef.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/79bc0b0eef604eea97608c902022d420/6ca747d4-a716-4136-8c25-72769f5f90a9_thumb_001_HD.jpg",خاص‌ترین فینال جام جهانی با حضور ترامپ و اجرای ستاره‌های موسیقی در بین دو نیمه بازی
+https://daq1pvcuhj77l.cloudfront.net/1/79bc0b0eef604eea97608c902022d420/hls/6ca747d4-a716-4136-8c25-72769f5f90a9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b85b049a30e84f87a09f9e2cbcbb1c17/d9283564-06e0-4d3d-88d9-e9ae8c20596f_thumb_001_HD.jpg",حواشی فینال جام جهانی با حضور ویژه دونالد ترامپ با شرایط امنیتی 
+https://daq1pvcuhj77l.cloudfront.net/1/b85b049a30e84f87a09f9e2cbcbb1c17/hls/d9283564-06e0-4d3d-88d9-e9ae8c20596f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d95d76f76bba4194b6323e44c0f3d60a/14aecfec-3fc4-4134-b55d-79934eecc3de_thumb_001_HD.jpg",درگیری بازیکنان آرژانتین با اسپانیا پس از شکست در فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/d95d76f76bba4194b6323e44c0f3d60a/hls/14aecfec-3fc4-4134-b55d-79934eecc3de.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0a34d5d971264ca68dd6077b98d75b1b/45470578-b01c-4b42-9168-894295457e6a_thumb_001_HD.jpg",حال و هوای فوتبالی نیویورک همزمان با دیدار فینال جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/0a34d5d971264ca68dd6077b98d75b1b/hls/45470578-b01c-4b42-9168-894295457e6a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0d6d597fde2b49bcaf76653f9af71ed2/4da791f2-de8a-4db2-93c6-afbe8fa9acc3_thumb_001_HD.jpg",اسپانیا با برتری برابر آرژآنتین قهرمان جام جهانی شد
+https://daq1pvcuhj77l.cloudfront.net/1/0d6d597fde2b49bcaf76653f9af71ed2/hls/4da791f2-de8a-4db2-93c6-afbe8fa9acc3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4d3166ecd9a5458994c91e4230ac0be5/43251898-7912-4037-85a4-fc2a1b3a1687_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: جزئیات تازه از نفوذ جاسوسان موساد به بیت خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/4d3166ecd9a5458994c91e4230ac0be5/hls/43251898-7912-4037-85a4-fc2a1b3a1687.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2afaa452c2544f9aba611a5a378c9bf3/584f660a-f3ac-4f19-9c0b-ee76896a9d51_thumb_001_HD.jpg",جزئیات تازه از نفوذ موساد به بیت خامنه‌ای؛ مسوول پدافند ۲۳ دقیقه قبل از شلیک خبر داشت
+https://daq1pvcuhj77l.cloudfront.net/1/2afaa452c2544f9aba611a5a378c9bf3/hls/584f660a-f3ac-4f19-9c0b-ee76896a9d51.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e72aea0318664d0d80391e84514e7dfb/06f1d296-bf02-4d40-ae26-88e9f500c86f_thumb_001_HD.jpg",اخبار شبانگاهی | دوشنبه ۲۹ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/e72aea0318664d0d80391e84514e7dfb/hls/06f1d296-bf02-4d40-ae26-88e9f500c86f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/adc509bbdd684fe186d92aee7c8ccadb/45244821-dfdc-4432-952b-76c1b37dd677_thumb_001_HD.jpg",آغاز اکران جهانی فیلم «اودیسه» با فروش ۲۶۴ میلیون دلاری در هفته نخست
+https://daq1pvcuhj77l.cloudfront.net/1/adc509bbdd684fe186d92aee7c8ccadb/hls/45244821-dfdc-4432-952b-76c1b37dd677.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f3b6b3911ea243f6bd1281464eda564d/04a561a1-40fa-4b1f-b3e4-6c607525f84a_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۲۹ تیر
+https://daq1pvcuhj77l.cloudfront.net/1/f3b6b3911ea243f6bd1281464eda564d/hls/04a561a1-40fa-4b1f-b3e4-6c607525f84a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/00794a3504b74907bfe6fe259bf49a4e/75d7955b-68d5-4135-8637-c8362a7744f2_thumb_001_HD.jpg",مسئول نظارت بر قوانین تروریسم بریتانیا: قانون جدید برای مقابله با فعالیت‌های سپاه تصویب شد
+https://daq1pvcuhj77l.cloudfront.net/1/00794a3504b74907bfe6fe259bf49a4e/hls/75d7955b-68d5-4135-8637-c8362a7744f2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8526998cadac41dc802466967f88216c/7421beb6-f111-4c35-83fb-e53f57da1043_thumb_001_HD.jpg",گزارش رییس کل بانک مرکزی از نصف شدن درآمد سرانه واقعی ایرانیان
+https://daq1pvcuhj77l.cloudfront.net/1/8526998cadac41dc802466967f88216c/hls/7421beb6-f111-4c35-83fb-e53f57da1043.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53a666d953aa4d25987554e312e03e7f/2327acd7-41ed-4c20-ac4a-18b25c8d8954_thumb_001_HD.jpg",گزارش نیویورک تایمز از پنهان ماندن ده‌ها مورد جراحت نیروهای آمریکایی در اردن
+https://daq1pvcuhj77l.cloudfront.net/1/53a666d953aa4d25987554e312e03e7f/hls/2327acd7-41ed-4c20-ac4a-18b25c8d8954.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/956d044ea82547aa81532f54b369e443/38ac61be-1f99-476b-a12f-52790750b182_thumb_001_HD.jpg",پایان کار کی‌یر استارمر در مقام نخست‌وزیر بریتانیا
 https://daq1pvcuhj77l.cloudfront.net/1/956d044ea82547aa81532f54b369e443/hls/38ac61be-1f99-476b-a12f-52790750b182.m3u8
