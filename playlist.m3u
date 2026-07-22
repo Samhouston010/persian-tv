@@ -12105,15 +12105,6 @@ https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persia
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/press-tv-int.png",Press TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/presstv_5_482/index.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://www.parsatv.com/index_files/channels/dejtv.jpg",DEJ TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12456,8 +12447,20 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1283ff4f435b49e2b3ad09d437c2dce5/715cc9c1-dd30-4235-8e38-6efa407bedbd_thumb_005_HD.jpg",تاکید یک جامعه شناس بر گذار به دموکراسی با اعتراض همزمان به جنگ و استبداد در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/1283ff4f435b49e2b3ad09d437c2dce5/hls/715cc9c1-dd30-4235-8e38-6efa407bedbd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/406ce403d17c4df1bf93613543d7b527/a7bd468a-7bc2-498e-a713-18bad6cd2578_thumb_005_HD.jpg",گزارش وزیر خزانه‌داری آمریکا از شناسایی دارایی‌های منتسب به مجتبی خامنه‌ای در سراسر جهان
+https://daq1pvcuhj77l.cloudfront.net/1/406ce403d17c4df1bf93613543d7b527/hls/a7bd468a-7bc2-498e-a713-18bad6cd2578.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a87ee2223b674780ab1b004c7863043a/49923d8b-1cef-4b73-adfc-2aa353ffeea3_thumb_001_HD.jpg",وزیر دفاع پیشین اسرائیل نسبت به توافق هسته‌ای آمریکا و عربستان سعودی هشدار داد
+https://daq1pvcuhj77l.cloudfront.net/1/a87ee2223b674780ab1b004c7863043a/hls/49923d8b-1cef-4b73-adfc-2aa353ffeea3.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a1014d20fab448d9b6e3eb9bbd05f686/bbc6797f-fa22-45c3-b9f3-1253d7305a54_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۳۱ تیر
 https://daq1pvcuhj77l.cloudfront.net/1/a1014d20fab448d9b6e3eb9bbd05f686/hls/bbc6797f-fa22-45c3-b9f3-1253d7305a54.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/54a638a96a20427f8478ba1564400430/4f0661bf-a7b1-4a58-bd53-ce062ba26394_thumb_002_HD.jpg",استقرار موقت نیروهای آمریکایی در بلغارستان در انتظار رای نهایی پارلمان است
+https://daq1pvcuhj77l.cloudfront.net/1/54a638a96a20427f8478ba1564400430/hls/4f0661bf-a7b1-4a58-bd53-ce062ba26394.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4968055df39242ee88be2ff927ef192e/4245a29f-88f3-4135-962b-383304998b40_thumb_001_HD.jpg",گزارش‌ شهروندان از شنیده شدن انفجارهای شدید و وجود فضای امنیتی در چند شهر ایران
 https://daq1pvcuhj77l.cloudfront.net/1/4968055df39242ee88be2ff927ef192e/hls/4245a29f-88f3-4135-962b-383304998b40.m3u8
@@ -12465,7 +12468,7 @@ https://daq1pvcuhj77l.cloudfront.net/1/4968055df39242ee88be2ff927ef192e/hls/4245
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/03bc71e854c84b77b7bb71c50a90ec2a/e6ee8af0-5f4d-4a77-9029-b3a75563905e_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: آمریکا با علم به تاب‌آوری پایین جمهوری اسلامی جنگ را ادامه می‌دهد
 https://daq1pvcuhj77l.cloudfront.net/1/03bc71e854c84b77b7bb71c50a90ec2a/hls/e6ee8af0-5f4d-4a77-9029-b3a75563905e.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/14f294d9c1bd4e9e82a3b865bf4a5bc7/e5989843-0da6-4718-aeb1-1bf4d6f0f8fa_thumb_001_HD.jpg",رسانه‌های اسرائیلی: واشینگتن توافق هسته‌ای با ریاض را می‌تواند بدون شرط پیش می‌برد
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/14f294d9c1bd4e9e82a3b865bf4a5bc7/e5989843-0da6-4718-aeb1-1bf4d6f0f8fa_thumb_001_HD.jpg",رسانه‌های اسرائیلی: واشینگتن توافق هسته‌ای با ریاض را می‌تواند بدون شرط پیش ببرد
 https://daq1pvcuhj77l.cloudfront.net/1/14f294d9c1bd4e9e82a3b865bf4a5bc7/hls/e5989843-0da6-4718-aeb1-1bf4d6f0f8fa.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4ea281a382d5419c8d5986358e304076/bfc20fe5-7a4f-4b0b-a7cd-196bba289fd6_thumb_001_HD.jpg",بازداشت غیرقانونی، بازجویی و آزار فیزیکی دو کارمند سفارت فرانسه در ایران
@@ -14019,15 +14022,6 @@ https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live2.alalam.ir/alalam.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg/960px-%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg" tvg-id="IranPress.ir@SD",Iran Press
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/presstv_5_482/index.m3u8
-
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -14054,15 +14048,6 @@ https://iptv.mihantv.com/mihantv/playlist.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tv.iraniancongress.com/stream/tv.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Press_TV_logo.svg/960px-Press_TV_logo.svg.png" tvg-id="PressTV.ir@SD",Press TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/presstv.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Press_TV_logo.svg/960px-Press_TV_logo.svg.png" tvg-id="PressTVFrench.ir@SD",Press TV French (1080p)
 #EXTVLCOPT:network-caching=2000
@@ -14153,42 +14138,6 @@ https://itnhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://avaserieshls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png" tvg-id="iFilm2.ir@SD",iFilm 2
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/ifilm2.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-id="iFilmArabic.ir@SD",iFilm Arabic
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/ifilmar.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-id="iFilmEnglish.ir@SD",iFilm English
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/ifilmen.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-id="iFilmPersian.ir@SD",iFilm Persian
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.ir/hls/ifilmfa.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/afrafilm.jpg" tvg-id="AfraFilm.ir@SD",Afra Film
 #EXTVLCOPT:network-caching=2000
