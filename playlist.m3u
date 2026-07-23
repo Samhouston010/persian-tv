@@ -162,15 +162,6 @@ https://setmixhls.persiana.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://ptravelhls.persiana.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="kurd4" tvg-name="4 Kurd" tvg-logo="https://www.persianagroup.tv/assets/logos/kurd4.png" group-title="📺 پرشیانا",4 Kurd
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://4kuhls.persiana.live/hls/stream.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-name="MBC Persia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="📺 پرشیانا",MBC Persia
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
