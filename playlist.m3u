@@ -12177,6 +12177,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12446,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cd233367eeb34edbab6c2bd9e540e761/058ae6ff-fd61-42ce-a313-2ebd600efc1d_thumb_001_HD.jpg",«خوبم، تماس می‌گیرم!»: مستند تحقیقی ایران‌اینترنشنال درباره ربایش و مرگ جمشید شارمهد
+https://daq1pvcuhj77l.cloudfront.net/1/cd233367eeb34edbab6c2bd9e540e761/hls/058ae6ff-fd61-42ce-a313-2ebd600efc1d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/067ec158e3514d3aa973112770eb38dd/81054a4b-7ed7-456f-b099-d21639624b68_thumb_001_HD.jpg",هزینه تنش‌آفرینی حوثی‌ها متوجه جمهوری اسلامی خواهد شد
+https://daq1pvcuhj77l.cloudfront.net/1/067ec158e3514d3aa973112770eb38dd/hls/81054a4b-7ed7-456f-b099-d21639624b68.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7145987cf8dd4d4cbe7a43aa6e0fd756/356a743e-6b57-4396-814d-dd95cef90f18_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/7145987cf8dd4d4cbe7a43aa6e0fd756/hls/356a743e-6b57-4396-814d-dd95cef90f18.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f4b45f3f81264e82bfe87a9ce4de8c1c/c014ded8-b1b5-472b-88a3-b46304075c49_thumb_001_HD.jpg",درخواست شورای همکاری خلیج فارس برای مهار سیاست‌های تهاجمی جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/f4b45f3f81264e82bfe87a9ce4de8c1c/hls/c014ded8-b1b5-472b-88a3-b46304075c49.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c551985669fc4ded80d2f73c49b62ec8/51aa85a5-ff91-445e-be17-72e99e534661_thumb_001_HD.jpg",گزارش نهادهای اطلاعاتی کانادا درباره نقش جمهوری اسلامی در توطئه علیه یهودیان
+https://daq1pvcuhj77l.cloudfront.net/1/c551985669fc4ded80d2f73c49b62ec8/hls/51aa85a5-ff91-445e-be17-72e99e534661.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9acae4d8a144456944239bdf7286347/3c90acf7-cce9-45b1-b6d5-462a76e7ff8e_thumb_001_HD.jpg",گزارش موساد درباره خنثی‌سازی تلاش جمهوری اسلامی برای نفوذ به اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/d9acae4d8a144456944239bdf7286347/hls/3c90acf7-cce9-45b1-b6d5-462a76e7ff8e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/75141d30b1224cebae860d3ea33d6fa7/3b105f3e-94d3-4e63-948a-8f1659f39dc0_thumb_001_HD.jpg",کاهش سهمیه گازوییل؛ افت درآمد رانندگان و اختلال در زنجیره تامین
+https://daq1pvcuhj77l.cloudfront.net/1/75141d30b1224cebae860d3ea33d6fa7/hls/3b105f3e-94d3-4e63-948a-8f1659f39dc0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d0f4c6c2ddac42e983e3c38b7bce0526/5d6901f3-9656-4b59-b524-9022f4e1b30d_thumb_001_HD.jpg",اخبار شبانگاهی | پنج‌شنبه ۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/d0f4c6c2ddac42e983e3c38b7bce0526/hls/5d6901f3-9656-4b59-b524-9022f4e1b30d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6c0ebaff46154c8383e2f20827784bb3/cd94cb0c-a11f-4c22-9cb6-5161a1aa5451_thumb_001_HD.jpg",«خوبم، تماس می‌گیرم!»؛ روایت ربایش، انتقال مخفیانه، زندان و مرگ جمشید شارمهد
+https://daq1pvcuhj77l.cloudfront.net/1/6c0ebaff46154c8383e2f20827784bb3/hls/cd94cb0c-a11f-4c22-9cb6-5161a1aa5451.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4bfd7e53314946228036c016a3e9c2ca/c3d41849-94a1-4088-add8-e74291e23668_thumb_001_HD.jpg",گزارش رسانه اماراتی از تلاش ترامپ برای تشدید فشار بر ایران
 https://daq1pvcuhj77l.cloudfront.net/1/4bfd7e53314946228036c016a3e9c2ca/hls/c3d41849-94a1-4088-add8-e74291e23668.m3u8
