@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12447,128 +12438,8 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cd233367eeb34edbab6c2bd9e540e761/058ae6ff-fd61-42ce-a313-2ebd600efc1d_thumb_001_HD.jpg",«خوبم، تماس می‌گیرم!»: مستند تحقیقی ایران‌اینترنشنال درباره ربایش و مرگ جمشید شارمهد
-https://daq1pvcuhj77l.cloudfront.net/1/cd233367eeb34edbab6c2bd9e540e761/hls/058ae6ff-fd61-42ce-a313-2ebd600efc1d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/067ec158e3514d3aa973112770eb38dd/81054a4b-7ed7-456f-b099-d21639624b68_thumb_001_HD.jpg",هزینه تنش‌آفرینی حوثی‌ها متوجه جمهوری اسلامی خواهد شد
-https://daq1pvcuhj77l.cloudfront.net/1/067ec158e3514d3aa973112770eb38dd/hls/81054a4b-7ed7-456f-b099-d21639624b68.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7145987cf8dd4d4cbe7a43aa6e0fd756/356a743e-6b57-4396-814d-dd95cef90f18_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/7145987cf8dd4d4cbe7a43aa6e0fd756/hls/356a743e-6b57-4396-814d-dd95cef90f18.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f4b45f3f81264e82bfe87a9ce4de8c1c/c014ded8-b1b5-472b-88a3-b46304075c49_thumb_001_HD.jpg",درخواست شورای همکاری خلیج فارس برای مهار سیاست‌های تهاجمی جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/f4b45f3f81264e82bfe87a9ce4de8c1c/hls/c014ded8-b1b5-472b-88a3-b46304075c49.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c551985669fc4ded80d2f73c49b62ec8/51aa85a5-ff91-445e-be17-72e99e534661_thumb_001_HD.jpg",گزارش نهادهای اطلاعاتی کانادا درباره نقش جمهوری اسلامی در توطئه علیه یهودیان
-https://daq1pvcuhj77l.cloudfront.net/1/c551985669fc4ded80d2f73c49b62ec8/hls/51aa85a5-ff91-445e-be17-72e99e534661.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9acae4d8a144456944239bdf7286347/3c90acf7-cce9-45b1-b6d5-462a76e7ff8e_thumb_001_HD.jpg",گزارش موساد درباره خنثی‌سازی تلاش جمهوری اسلامی برای نفوذ به اسرائیل
-https://daq1pvcuhj77l.cloudfront.net/1/d9acae4d8a144456944239bdf7286347/hls/3c90acf7-cce9-45b1-b6d5-462a76e7ff8e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/75141d30b1224cebae860d3ea33d6fa7/3b105f3e-94d3-4e63-948a-8f1659f39dc0_thumb_001_HD.jpg",کاهش سهمیه گازوییل؛ افت درآمد رانندگان و اختلال در زنجیره تامین
-https://daq1pvcuhj77l.cloudfront.net/1/75141d30b1224cebae860d3ea33d6fa7/hls/3b105f3e-94d3-4e63-948a-8f1659f39dc0.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d0f4c6c2ddac42e983e3c38b7bce0526/5d6901f3-9656-4b59-b524-9022f4e1b30d_thumb_001_HD.jpg",اخبار شبانگاهی | پنج‌شنبه ۱ مرداد
-https://daq1pvcuhj77l.cloudfront.net/1/d0f4c6c2ddac42e983e3c38b7bce0526/hls/5d6901f3-9656-4b59-b524-9022f4e1b30d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6c0ebaff46154c8383e2f20827784bb3/cd94cb0c-a11f-4c22-9cb6-5161a1aa5451_thumb_001_HD.jpg",«خوبم، تماس می‌گیرم!»؛ روایت ربایش، انتقال مخفیانه، زندان و مرگ جمشید شارمهد
-https://daq1pvcuhj77l.cloudfront.net/1/6c0ebaff46154c8383e2f20827784bb3/hls/cd94cb0c-a11f-4c22-9cb6-5161a1aa5451.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4bfd7e53314946228036c016a3e9c2ca/c3d41849-94a1-4088-add8-e74291e23668_thumb_001_HD.jpg",گزارش رسانه اماراتی از تلاش ترامپ برای تشدید فشار بر ایران
-https://daq1pvcuhj77l.cloudfront.net/1/4bfd7e53314946228036c016a3e9c2ca/hls/c3d41849-94a1-4088-add8-e74291e23668.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e858d8dfcb24cdc9b17ecfa6023abae/002531a8-4684-436d-b214-2b334195ce1f_thumb_001_HD.jpg",بازگشت دیپلمات‌های فرانسوی از تهران
-https://daq1pvcuhj77l.cloudfront.net/1/7e858d8dfcb24cdc9b17ecfa6023abae/hls/002531a8-4684-436d-b214-2b334195ce1f.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/05c18bb4c8854e32bf81f59a22b46424/07d9baa5-b5b3-480f-9b5f-7f389b8d269d_thumb_001_HD.jpg",سپاه محاصره نفتی عربستان را چگونه اجرا می‌کند؟
-https://daq1pvcuhj77l.cloudfront.net/1/05c18bb4c8854e32bf81f59a22b46424/hls/07d9baa5-b5b3-480f-9b5f-7f389b8d269d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/23b7e31188a94f33b772ad884d922d66/d1a21c3e-7787-4fe7-968b-e2fae6dca02a_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۱ مرداد
-https://daq1pvcuhj77l.cloudfront.net/1/23b7e31188a94f33b772ad884d922d66/hls/d1a21c3e-7787-4fe7-968b-e2fae6dca02a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/665a2f1b48a146f49cc11a6c2b1d4604/e71d96ee-b3ec-4683-9e9e-f8ea4dd481a6_thumb_001_HD.jpg",مارکو روبیو: تهران قصد داشت زرادخانه موشکی خود را دو برابر کند
-https://daq1pvcuhj77l.cloudfront.net/1/665a2f1b48a146f49cc11a6c2b1d4604/hls/e71d96ee-b3ec-4683-9e9e-f8ea4dd481a6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/10bc830a32644e38a337ecdcd0f79e37/8cdf9e01-a00c-4bb0-a167-497a198cb8a5_thumb_001_HD.jpg",افزایش دامنه درگیری‌ها میان آمریکا و جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/10bc830a32644e38a337ecdcd0f79e37/hls/8cdf9e01-a00c-4bb0-a167-497a198cb8a5.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/de825ff74b7943fa91ec0dc216ffb916/c4690bfe-0480-4dec-8557-b4fe620ac66a_thumb_001_HD.jpg",گسترش دامنه حملات آمریکا از سواحل جنوب به شهرهای داخلی ایران
-https://daq1pvcuhj77l.cloudfront.net/1/de825ff74b7943fa91ec0dc216ffb916/hls/c4690bfe-0480-4dec-8557-b4fe620ac66a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3773d98731f14c128316f5075cb868b4/88f56b46-bd97-479e-bed4-f398d6cd53c5_thumb_001_HD.jpg",هشدار اتحادیه اروپا درباره تهدید حوثی‌ها علیه عربستان
-https://daq1pvcuhj77l.cloudfront.net/1/3773d98731f14c128316f5075cb868b4/hls/88f56b46-bd97-479e-bed4-f398d6cd53c5.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3ff5fa393b9f4aa59facad746ab03f78/68cef1bd-ebc3-479c-970b-3f255f7ef3f2_thumb_002_HD.jpg",آنکارا: تهدید حوثی‌ها علیه امنیت دریانوردی باید متوقف شود
-https://daq1pvcuhj77l.cloudfront.net/1/3ff5fa393b9f4aa59facad746ab03f78/hls/68cef1bd-ebc3-479c-970b-3f255f7ef3f2.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f4b3796fc08047389ee0c0e69298e1c4/8569e895-881a-47d2-881f-1bbc25515ee6_thumb_001_HD.jpg",سفر نخست‌وزیر عراق به تهران با محوریت امنیت منطقه
-https://daq1pvcuhj77l.cloudfront.net/1/f4b3796fc08047389ee0c0e69298e1c4/hls/8569e895-881a-47d2-881f-1bbc25515ee6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5b714800a108441483b1d96f409b1c4e/89853bac-67c9-4cbf-b56d-a90943dcb031_thumb_001_HD.jpg",اخبار نیم‌روزی | پنج‌شنبه ۱ مرداد
-https://daq1pvcuhj77l.cloudfront.net/1/5b714800a108441483b1d96f409b1c4e/hls/89853bac-67c9-4cbf-b56d-a90943dcb031.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c2c88c7b397744f095b802addc6fee33/e7de6c6d-57c7-47a5-8c9c-4472b4d19068_thumb_001_HD.jpg",بازگشت دو دیپلمات فرانسوی بازداشت‌شده در تهران به پاریس
-https://daq1pvcuhj77l.cloudfront.net/1/c2c88c7b397744f095b802addc6fee33/hls/e7de6c6d-57c7-47a5-8c9c-4472b4d19068.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4fa8ceee79044223ad974626df3edef6/7b0cdc02-8ed4-4634-84ac-0f75ae959460_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۱ مرداد
-https://daq1pvcuhj77l.cloudfront.net/1/4fa8ceee79044223ad974626df3edef6/hls/7b0cdc02-8ed4-4634-84ac-0f75ae959460.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d09c18f5b08a430d851707d9dc9f13e1/7b55ef5e-4b68-495d-ba92-7296e05d1c5c_thumb_003_HD.jpg",انتقال دوباره مسعود فرهیخته، معلم و فعال صنفی زندانی به مکانی نامعلوم
-https://daq1pvcuhj77l.cloudfront.net/1/d09c18f5b08a430d851707d9dc9f13e1/hls/7b55ef5e-4b68-495d-ba92-7296e05d1c5c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3e038a5ed11c470e9f47e4cc986344a2/2e0c85c9-13dd-4daf-a031-857d23ac1f44_thumb_001_HD.jpg",درگیری لفظی دو نماینده مجلس درباره تنگه هرمز در برنامه تلویزیونی
-https://daq1pvcuhj77l.cloudfront.net/1/3e038a5ed11c470e9f47e4cc986344a2/hls/2e0c85c9-13dd-4daf-a031-857d23ac1f44.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/54ad039d024748978bccb1c2fceec546/ca869d31-c6be-4d60-9837-d8bffa12610d_thumb_001_HD.jpg",گسترش حملات آمریکا به مناطق مختلف ایران
-https://daq1pvcuhj77l.cloudfront.net/1/54ad039d024748978bccb1c2fceec546/hls/ca869d31-c6be-4d60-9837-d8bffa12610d.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a3a30e1c75e54b9f9d3f1e7347833a25/81f52114-c700-44f8-9890-8c8619f2c9ca_thumb_001_HD.jpg",گمانه‌زنی‌ها درباره احتمال عملیات زمینی آمریکا در ایران
-https://daq1pvcuhj77l.cloudfront.net/1/a3a30e1c75e54b9f9d3f1e7347833a25/hls/81f52114-c700-44f8-9890-8c8619f2c9ca.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c3bd0d8dc9544a16b71c88d86c71ca1f/ab2e2982-4531-4698-a99c-1cc2c30aca76_thumb_001_HD.jpg",نیویورک تایمز: محاکمه فدرال هادی مطر، ضارب سلمان رشدی آغاز شده است
-https://daq1pvcuhj77l.cloudfront.net/1/c3bd0d8dc9544a16b71c88d86c71ca1f/hls/ab2e2982-4531-4698-a99c-1cc2c30aca76.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5d7b79d0c27d4706bc5cfee4c7c8dfa9/b0b064b0-4e6c-4782-8ef4-f8afd0792de3_thumb_001_HD.jpg",روایت‌ها از تاخیر و کسری در پرداخت حقوق کارکنان، کارگران و بازنشستگان
-https://daq1pvcuhj77l.cloudfront.net/1/5d7b79d0c27d4706bc5cfee4c7c8dfa9/hls/b0b064b0-4e6c-4782-8ef4-f8afd0792de3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/57e3f1ef95224cbd8da9d57a1d3b6ce4/2be861a7-e056-44d9-9f9b-ea81858535d5_thumb_001_HD.jpg",مارکو روبیو: جمهوری اسلامی برای توافق آماده نیست
-https://daq1pvcuhj77l.cloudfront.net/1/57e3f1ef95224cbd8da9d57a1d3b6ce4/hls/2be861a7-e056-44d9-9f9b-ea81858535d5.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/78ef5719c4594cde975dc71ade2b95e5/65bcff04-f113-4a24-8523-3b2981d46c3e_thumb_001_HD.jpg",افزایش آماده‌باش اسرائیل همزمان با تحولات جنگ آمریکا و جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/78ef5719c4594cde975dc71ade2b95e5/hls/65bcff04-f113-4a24-8523-3b2981d46c3e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ccc2bf60597a46a6b983a0a618f561c5/1e713cbb-9ed7-4079-8794-35f7e3157982_thumb_002_HD.jpg",تلاش بغداد برای فراهم کردن بستر گفت‌وگو میان تهران و واشینگتن 
-https://daq1pvcuhj77l.cloudfront.net/1/ccc2bf60597a46a6b983a0a618f561c5/hls/1e713cbb-9ed7-4079-8794-35f7e3157982.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f88f541d196545ea96b0a093b48b45d9/7125cb63-10fd-4321-8a48-4054aa32481c_thumb_001_HD.jpg",مارکو روبیو: نقض تعهدات از سوی جمهوری اسلامی، تفاهم‌نامه را از اعتبار انداخت
-https://daq1pvcuhj77l.cloudfront.net/1/f88f541d196545ea96b0a093b48b45d9/hls/7125cb63-10fd-4321-8a48-4054aa32481c.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dc1ead9cd60941b7a15a5f54ecde561c/c6a4046f-91a4-4e18-84de-45ca362f8db6_thumb_001_HD.jpg",العربیه: پاکستان حوثی‌های یمن را به پاسخ نظامی تهدید کرد
-https://daq1pvcuhj77l.cloudfront.net/1/dc1ead9cd60941b7a15a5f54ecde561c/hls/c6a4046f-91a4-4e18-84de-45ca362f8db6.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/594b105f388a42178a4d0ff27060e023/6dfcc6fa-f69f-41b3-8823-cff476666e6f_thumb_002_HD.jpg",استفاده از بمب‌افکن بی-۱؛ پیام هشدار آمریکا به جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/594b105f388a42178a4d0ff27060e023/hls/6dfcc6fa-f69f-41b3-8823-cff476666e6f.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/95b258cd6b5e4eccaa8b130db8cba33d/14428124-9912-4fdc-b3ed-57a39b5ea476_thumb_003_HD.jpg",دیپلماسی همراه با بازدارندگی؛ راهبرد آمریکا در قبال جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/95b258cd6b5e4eccaa8b130db8cba33d/hls/14428124-9912-4fdc-b3ed-57a39b5ea476.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5369acf85fab46099225e8d6fa30b2a6/d71062d0-4e81-4e4d-8190-c4e4788689f1_thumb_001_HD.jpg",اخبار بامدادی | پنج‌شنبه ۱ مرداد
-https://daq1pvcuhj77l.cloudfront.net/1/5369acf85fab46099225e8d6fa30b2a6/hls/d71062d0-4e81-4e4d-8190-c4e4788689f1.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1058a6f4145c469c87eccd2a7001fb1e/e5671d93-3344-4f8d-a808-cdd79bf7a934_thumb_001_HD.jpg",تصویب بودجه نظامی ۹۵ میلیارد دلاری آمریکا و نقش روسیه و چین در حمایت از جمهوری اسلامی
-https://daq1pvcuhj77l.cloudfront.net/1/1058a6f4145c469c87eccd2a7001fb1e/hls/e5671d93-3344-4f8d-a808-cdd79bf7a934.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c14032c266ed480fa5e1360dcc3b5abf/1acb77c6-966a-4345-b4a7-9ffcb56954fa_thumb_001_HD.jpg",شدت گرفتن اعدام‌های سیاسی در ایران پس از اعتراضات دی ماه ۱۴۰۴
-https://daq1pvcuhj77l.cloudfront.net/1/c14032c266ed480fa5e1360dcc3b5abf/hls/1acb77c6-966a-4345-b4a7-9ffcb56954fa.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e2db9e79880f4e599b77660a6b0b8de5/38b0b9aa-e8cc-4450-9c03-145545eb6845_thumb_001_HD.jpg",احتمال نقش روسیه در تقویت توان پهپادی جمهوری اسلامی زیر ذره‌بین آمریکا
-https://daq1pvcuhj77l.cloudfront.net/1/e2db9e79880f4e599b77660a6b0b8de5/hls/38b0b9aa-e8cc-4450-9c03-145545eb6845.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ccbd1605a7b44d989c0b45070337480a/37230c0f-5fdc-47cd-8d7f-853048c6d812_thumb_001_HD.jpg",گزارش‌ها از درخواست آمریکا برای مشارکت نظامی کره جنوبی در حفاظت از تنگه هرمز
-https://daq1pvcuhj77l.cloudfront.net/1/ccbd1605a7b44d989c0b45070337480a/hls/37230c0f-5fdc-47cd-8d7f-853048c6d812.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/79110e24e9b548149876375d288e95d8/ceb81911-6ae0-42cc-b995-a6af96e1552c_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه یک مرداد
-https://daq1pvcuhj77l.cloudfront.net/1/79110e24e9b548149876375d288e95d8/hls/ceb81911-6ae0-42cc-b995-a6af96e1552c.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3154ab5baafc4179af7a3e36714ef865/2a0b517f-ad7d-46d8-9d4e-cacdcb684c30_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: ترامپ به سنتکام: درهای جهنم را باز و به جمهوری اسلامی حمله کنید
+https://daq1pvcuhj77l.cloudfront.net/1/3154ab5baafc4179af7a3e36714ef865/hls/2a0b517f-ad7d-46d8-9d4e-cacdcb684c30.m3u8
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/3j56c8vo0ekkdmhc/pghj4rnzpenpvvur.jpg",Is 22 Too Young for Power? Georgia Mayor Stripped of Privileges Amid Spending Probe
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47333389293_47333389491/47333389491/hf-uuid-8f2637e7-c569-40bb-b7a3-766a8c51a2a1/47333389491_lowres.mp4
@@ -14100,15 +13971,6 @@ https://live2.alalam.ir/alalam.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://185.9.2.18/chid_926/index.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/XEMsM7w.png" tvg-id="MihanTV.ir@SD",Mihan TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://iptv.mihantv.com/mihantv/playlist.m3u8
-
 #EXTINF:-1 group-title="ایران" tvg-logo="https://iraniancongress.com/tv/logo.png" tvg-id="NationalIranianCongressTV.us@SD",National Iranian Congress TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -14378,15 +14240,6 @@ https://5acf9f9415a10.streamlock.net/live_transcoder/ngrp:mohabat.stream_all/pla
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Jh5ADee.png" tvg-id="RasoulallahTv.ir@HD",RasoulallahTv (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/aeS4Sjv.png" tvg-id="ICnet1.ca@SD",icnet 1
 #EXTVLCOPT:network-caching=2000
