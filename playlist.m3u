@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12446,6 +12437,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1acb63f7bc5e42a28ed81bfa220ea23d/4357034a-7f1e-4c8c-9eae-25d0b090aa77_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، شنبه ۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/1acb63f7bc5e42a28ed81bfa220ea23d/hls/4357034a-7f1e-4c8c-9eae-25d0b090aa77.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/67443def84e945e3b817ed56a867fff7/6234e63e-6ac3-467b-8a4e-6b191c72f260_thumb_001_HD.jpg",پدرام زنگویی: فرصت دادن برای دیپلماسی بخشی از سیاست خارجی آمریکا در برابر تهران است
+https://daq1pvcuhj77l.cloudfront.net/1/67443def84e945e3b817ed56a867fff7/hls/6234e63e-6ac3-467b-8a4e-6b191c72f260.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/68d012fbd7554189947e49470ce3ef5e/df4ce37a-f31c-4ee5-a8ce-5856fcf9fd21_thumb_001_HD.jpg",نیویورک پست: آمریکا طرح خروج اورانیوم غنی‌شده جمهوری اسلامی از داخل ایران را بررسی می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/68d012fbd7554189947e49470ce3ef5e/hls/df4ce37a-f31c-4ee5-a8ce-5856fcf9fd21.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2089c16c629e4d8b8a3f07b8d18273ce/393f7359-30f1-46af-bddd-04be6f79539e_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: مجتبی خامنه‌ای و وحیدی؛ اهداف استراتژی سر در برابر چشم ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/2089c16c629e4d8b8a3f07b8d18273ce/hls/393f7359-30f1-46af-bddd-04be6f79539e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ecc6e94fe6c845b9a0d3022c86cb8cf3/2a1a8f5f-22cc-4284-b4df-52373fae3202_thumb_001_HD.jpg",دفاع ترامپ از حمله به نیروگاه‌ها و پل‌های ایران؛ استراتژی سر در برابر چشم آمریکا چیست؟
+https://daq1pvcuhj77l.cloudfront.net/1/ecc6e94fe6c845b9a0d3022c86cb8cf3/hls/2a1a8f5f-22cc-4284-b4df-52373fae3202.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/76520ee07f1e4fd2a463f96a17182d51/9dca5f2e-78e8-4577-a2e7-be234b696913_thumb_003_HD.jpg",تاسیس یک حزب جدید در ترکیه
+https://daq1pvcuhj77l.cloudfront.net/1/76520ee07f1e4fd2a463f96a17182d51/hls/9dca5f2e-78e8-4577-a2e7-be234b696913.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/640e54fc2064499fa57b4bc86c76c805/f96a1c5e-c34d-4e53-8467-8e1cc30f0a9a_thumb_001_HD.jpg",اخبار شبانگاهی | شنبه ۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/640e54fc2064499fa57b4bc86c76c805/hls/f96a1c5e-c34d-4e53-8467-8e1cc30f0a9a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/24d3213f59f44cfe898b68593a5d0f03/c793d327-86c3-4842-901d-9dba10259e6a_thumb_001_HD.jpg",حمایت ایرانیان مقیم برلین از مطالبات آزادی‌خواهانه مردم ایران
+https://daq1pvcuhj77l.cloudfront.net/1/24d3213f59f44cfe898b68593a5d0f03/hls/c793d327-86c3-4842-901d-9dba10259e6a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0e7e9c084be347c7857b15e70f308f51/ffb74177-4d9f-47ee-8cf7-1bdf1e79e0f5_thumb_001_HD.jpg",یک روزنامه‌‌نگار: کشتی‌های هدف اوکراین، بخشی از شبکه انتقال تسلیحات جمهوری اسلامی بودند
+https://daq1pvcuhj77l.cloudfront.net/1/0e7e9c084be347c7857b15e70f308f51/hls/ffb74177-4d9f-47ee-8cf7-1bdf1e79e0f5.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/36087d8816dd4adea9b7a64f10937f43/7dd5567f-ca23-411a-9e03-744f30f83c42_thumb_001_HD.jpg",سرخط خبرهای شنبه ۳ مرداد
 https://daq1pvcuhj77l.cloudfront.net/1/36087d8816dd4adea9b7a64f10937f43/hls/7dd5567f-ca23-411a-9e03-744f30f83c42.m3u8
