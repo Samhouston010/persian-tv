@@ -12141,15 +12141,6 @@ https://khbhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/aljazeera-uk.png",Al Jazeera Arabic
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",Sky News Arabia
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12428,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/269cc903d41b43eb9200c0a5c5a312f6/50521ec3-06b3-4fb1-b617-c7e551b436f7_thumb_001_HD.jpg",قصد آمریکا و بریتانیا برای افزایش فشار نظامی بر جمهوری اسلامی برای تامین امنیت تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/269cc903d41b43eb9200c0a5c5a312f6/hls/50521ec3-06b3-4fb1-b617-c7e551b436f7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/df4cef0be29049b7b9654186f2445c6f/942d8907-9fe3-4ed9-b592-0e8ee0c0ffa2_thumb_001_HD.jpg",توافق یا تشدید حملات؛ آمریکا همچنان هر دو گزینه را روی میز نگه داشته است
+https://daq1pvcuhj77l.cloudfront.net/1/df4cef0be29049b7b9654186f2445c6f/hls/942d8907-9fe3-4ed9-b592-0e8ee0c0ffa2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d5ca64fd582348d8b10c17cd747bc3d0/226568e9-4d10-443b-82e5-00744bd0e7b6_thumb_001_HD.jpg",کشورهای منطقه همچنان بر پرهیز از درگیری مستقیم با جمهوری اسلامی تاکید دارند
+https://daq1pvcuhj77l.cloudfront.net/1/d5ca64fd582348d8b10c17cd747bc3d0/hls/226568e9-4d10-443b-82e5-00744bd0e7b6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7333435afea04b45b920c1e33946b439/ca3f6c28-b03b-451d-82eb-c3988a031b3f_thumb_001_HD.jpg",تلاش‌های دیپلماتیک برای توافق همزمان با احتمال تشدید حملات آمریکا علیه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/7333435afea04b45b920c1e33946b439/hls/ca3f6c28-b03b-451d-82eb-c3988a031b3f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/39c1fdaf1a57465fba489f4ffaeb19c5/a45d7995-0df0-483f-9878-3862e4b51e38_thumb_001_HD.jpg",فشار حداکثری آمریکا بر جمهوری اسلامی؛ افزایش احتمال جنگ یا توافق؟
+https://daq1pvcuhj77l.cloudfront.net/1/39c1fdaf1a57465fba489f4ffaeb19c5/hls/a45d7995-0df0-483f-9878-3862e4b51e38.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d3a4515b4b304f338a2c3d70e2e4cb02/ecfc8e40-ca25-46e8-828f-fbf39af678ca_thumb_001_HD.jpg",اختلاف منافع، مانع انسجام کشورهای خلیج فارس در برابر جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/d3a4515b4b304f338a2c3d70e2e4cb02/hls/ecfc8e40-ca25-46e8-828f-fbf39af678ca.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a2d276723c794fe88951a383aef5bd6a/8b7d81a7-9ec3-4e99-a09e-0b80436c2fc5_thumb_001_HD.jpg",آمریکا در پی شکل‌دهی ائتلاف منطقه‌ای علیه جمهوری اسلامی 
+https://daq1pvcuhj77l.cloudfront.net/1/a2d276723c794fe88951a383aef5bd6a/hls/8b7d81a7-9ec3-4e99-a09e-0b80436c2fc5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/38ad6f4f1d3b4beca12d4d9940f5be10/71771ed1-0e70-4356-bd68-a11e6a204f5b_thumb_001_HD.jpg",حفظ سرمایه اجتماعی شاهزاده رضا پهلوی برای تداوم اعتراض‌ها ضروری است
+https://daq1pvcuhj77l.cloudfront.net/1/38ad6f4f1d3b4beca12d4d9940f5be10/hls/71771ed1-0e70-4356-bd68-a11e6a204f5b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/39ee60ca2c6e453ba2899587cf2d371d/ed795bee-295d-45c5-a6d5-eb2faff53a1e_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: حملات تلافی‌جویانه بحرین و کویت به ایران
+https://daq1pvcuhj77l.cloudfront.net/1/39ee60ca2c6e453ba2899587cf2d371d/hls/ed795bee-295d-45c5-a6d5-eb2faff53a1e.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f6e6c394e94c48d59cda4f1bfab3c071/b5729684-f238-4756-b78b-6f6bd19a129d_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
 https://daq1pvcuhj77l.cloudfront.net/1/f6e6c394e94c48d59cda4f1bfab3c071/hls/b5729684-f238-4756-b78b-6f6bd19a129d.m3u8
