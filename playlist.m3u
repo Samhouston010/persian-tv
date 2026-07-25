@@ -12177,6 +12177,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12446,48 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/36087d8816dd4adea9b7a64f10937f43/7dd5567f-ca23-411a-9e03-744f30f83c42_thumb_001_HD.jpg",سرخط خبرهای شنبه ۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/36087d8816dd4adea9b7a64f10937f43/hls/7dd5567f-ca23-411a-9e03-744f30f83c42.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/51e445ef45234e769920ad75c007ca6d/713e713d-f8c3-4e3e-8210-b641f155c87b_thumb_001_HD.jpg",تداوم تجمع ایرانیان مقیم سوئد در حمایت از اعتراض‌های مردم ایران
+https://daq1pvcuhj77l.cloudfront.net/1/51e445ef45234e769920ad75c007ca6d/hls/713e713d-f8c3-4e3e-8210-b641f155c87b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5c9b97cad87f454b910a7b4389afcd9f/c29bfd9e-bf92-4b5f-93d4-1c964da5e7d9_thumb_001_HD.jpg",کارشناس مسائل امنیتی: قاچاق انسان ابزاری در خدمت اهداف ضد امنیتی جمهوری اسلامی است
+https://daq1pvcuhj77l.cloudfront.net/1/5c9b97cad87f454b910a7b4389afcd9f/hls/c29bfd9e-bf92-4b5f-93d4-1c964da5e7d9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d7920624e2ea4619950dc7aa4b6d59d4/b299a2dc-67a7-48bd-a0dd-916326b144ab_thumb_001_HD.jpg",گزارش رسانه‌های بین‌المللی از حمله کشورهای حاشیه خلیج فارس به اهدافی در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/d7920624e2ea4619950dc7aa4b6d59d4/hls/b299a2dc-67a7-48bd-a0dd-916326b144ab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c490d3718c554ffe819b3fb74aa46a45/612614b4-3432-4c9b-b987-1c50ded0dd5d_thumb_001_HD.jpg",آمریکا شبکه مالی بابک زنجانی را تحریم کرد
+https://daq1pvcuhj77l.cloudfront.net/1/c490d3718c554ffe819b3fb74aa46a45/hls/612614b4-3432-4c9b-b987-1c50ded0dd5d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dfcaaa9b98ef44f0bf839936e1bb74b2/6e7d518f-da4e-44dd-83d4-7489e8fe29be_thumb_004_HD.jpg",واکنش بریتانیا به تهدید سپاه پاسداران؛ آمادگی کامل برای مقابله با حمله‌های احتمالی
+https://daq1pvcuhj77l.cloudfront.net/1/dfcaaa9b98ef44f0bf839936e1bb74b2/hls/6e7d518f-da4e-44dd-83d4-7489e8fe29be.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a05e3dd91de74c76b5378ed01b2147e8/7a976333-e85d-458f-afe6-98eac8c35718_thumb_004_HD.jpg",پرده‌برداری روزنامه تلگراف از فعالیت‌های بی‌ثبات‌کننده سپاه پاسداران در بریتانیا
+https://daq1pvcuhj77l.cloudfront.net/1/a05e3dd91de74c76b5378ed01b2147e8/hls/7a976333-e85d-458f-afe6-98eac8c35718.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9959f5099ce43bba66e157361fcc9d8/8a06f606-4afb-4a51-8d0c-a4a175d93162_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، شنبه ۳ مرداد، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/d9959f5099ce43bba66e157361fcc9d8/hls/8a06f606-4afb-4a51-8d0c-a4a175d93162.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dc8099b639e24deca45111b56e458dbc/d2faad67-7c9c-44a0-bd79-e85b1d9a33bd_thumb_001_HD.jpg",اخبار نیمروزی | شنبه ۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/dc8099b639e24deca45111b56e458dbc/hls/d2faad67-7c9c-44a0-bd79-e85b1d9a33bd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b966bbe3641e4d70a57175bc670d5f0e/4b2cc0b5-21a2-4cf0-af5a-17ed5b70cc54_thumb_004_HD.jpg",آزار و اذیت نیروهای عراقی حشدشعبی برای زنان و دختران در ایران 
+https://daq1pvcuhj77l.cloudfront.net/1/b966bbe3641e4d70a57175bc670d5f0e/hls/4b2cc0b5-21a2-4cf0-af5a-17ed5b70cc54.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6decd5b7d83a4297aa29f20325798636/c683a639-6ebc-4ef4-8e3a-8f31f3213d4d_thumb_001_HD.jpg",قطعی برق بیماران پروانه‌ای را با مشکلات جدی روبه‌رو کرده است
+https://daq1pvcuhj77l.cloudfront.net/1/6decd5b7d83a4297aa29f20325798636/hls/c683a639-6ebc-4ef4-8e3a-8f31f3213d4d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91871c89c70143689f0091c82615481b/775b7edf-93e9-4440-bbb8-796bedd86e78_thumb_001_HD.jpg",هوشنگ حسن‌یاری: احتمال تشدید حملات بیش از گذشته افزایش یافته است
+https://daq1pvcuhj77l.cloudfront.net/1/91871c89c70143689f0091c82615481b/hls/775b7edf-93e9-4440-bbb8-796bedd86e78.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2e6cf6131ce74c37a553c44907245156/f97aa563-62d8-417d-a9e4-990d79765d25_thumb_001_HD.jpg",سرخط خبرهای شنبه ۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/2e6cf6131ce74c37a553c44907245156/hls/f97aa563-62d8-417d-a9e4-990d79765d25.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cb2cc222f1934bf389148dcc5f250ca8/1addcdf8-20e9-4e59-9b5a-0c7539f4a992_thumb_001_HD.jpg",آلمان از شهروندانش خواست ایران را ترک کنند
+https://daq1pvcuhj77l.cloudfront.net/1/cb2cc222f1934bf389148dcc5f250ca8/hls/1addcdf8-20e9-4e59-9b5a-0c7539f4a992.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/29cb36c8cadb4880925edef851b9831d/a4ffecbb-3355-407c-a787-8df1aa219f7f_thumb_001_HD.jpg",علی شیرازی: جمهوری اسلامی با رجزخوانی در پی جبران فقدان دستاورد نظامی است
 https://daq1pvcuhj77l.cloudfront.net/1/29cb36c8cadb4880925edef851b9831d/hls/a4ffecbb-3355-407c-a787-8df1aa219f7f.m3u8
