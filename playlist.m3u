@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12446,6 +12437,63 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ac93c6cdc55347218ab843555eb7c3e5/b501c72f-f42b-42cb-abbf-46040e930356_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۴ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/ac93c6cdc55347218ab843555eb7c3e5/hls/b501c72f-f42b-42cb-abbf-46040e930356.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c2c75e7396cc4c1da4ce2534c6e67454/d3612f42-092c-4846-a865-8f5eb43c6d1d_thumb_001_HD.jpg",ایرانیان ساکن لندن یاد رضا شاه و محمدرضا شاه پهلوی را گرامی داشتند
+https://daq1pvcuhj77l.cloudfront.net/1/c2c75e7396cc4c1da4ce2534c6e67454/hls/d3612f42-092c-4846-a865-8f5eb43c6d1d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/411fa102cde84766a8c46dd55521a91a/0fceeedc-a158-42b5-8273-42194d2bab14_thumb_004_HD.jpg",هشدار درباره وضعیت بحرانی واردات و تولید مواد غذایی در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/411fa102cde84766a8c46dd55521a91a/hls/0fceeedc-a158-42b5-8273-42194d2bab14.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4f269cee94ac409fb6644c5f2fb0a09d/aef45396-7a7c-4cdd-aa72-30f70fdcae7d_thumb_002_HD.jpg",نتانیاهو: موضوع ایران در سفرم به واشینگتن از محورهای دیدار با ترامپ است
+https://daq1pvcuhj77l.cloudfront.net/1/4f269cee94ac409fb6644c5f2fb0a09d/hls/aef45396-7a7c-4cdd-aa72-30f70fdcae7d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/168230f4924e467aa56a25481a7426c6/ddd9b742-2a27-4a3b-a4d5-7f6b1684d330_thumb_001_HD.jpg",مهدی مصلحی: مقام‌های جمهوری اسلامی از توان رصد سامانه‌های ماهواره‌ای غافل هستند
+https://daq1pvcuhj77l.cloudfront.net/1/168230f4924e467aa56a25481a7426c6/hls/ddd9b742-2a27-4a3b-a4d5-7f6b1684d330.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bb8d91d6d38543a5af20d96dd0ca5013/35c805fa-6a74-41aa-83f1-25add7a65d19_thumb_005_HD.jpg",دیدار شاهزاده رضا پهلوی با اعضای جامعه کوییر ایرانی در پاریس
+https://daq1pvcuhj77l.cloudfront.net/1/bb8d91d6d38543a5af20d96dd0ca5013/hls/35c805fa-6a74-41aa-83f1-25add7a65d19.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1248dfb0b51f40fda3d185f4f0fc75aa/f30b0484-f799-4acd-a97b-4276182b16c7_thumb_001_HD.jpg",تخریب سنگ مزار جاویدنام طاها نادری در شهرضا
+https://daq1pvcuhj77l.cloudfront.net/1/1248dfb0b51f40fda3d185f4f0fc75aa/hls/f30b0484-f799-4acd-a97b-4276182b16c7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/334d1a5f58db407baaf90fcc49c5a9ed/56cf9640-21b6-433d-babc-1e36d5b95442_thumb_001_HD.jpg",بحران سوخت و دشوار شدن تامین بنزین در ایران 
+https://daq1pvcuhj77l.cloudfront.net/1/334d1a5f58db407baaf90fcc49c5a9ed/hls/56cf9640-21b6-433d-babc-1e36d5b95442.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fc3b78c86b654351a8e711fa71df092d/f82ce7bc-52eb-436a-8ac0-23cc631f83a6_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، یکشنبه ۴ مرداد، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/fc3b78c86b654351a8e711fa71df092d/hls/f82ce7bc-52eb-436a-8ac0-23cc631f83a6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f40c61d74834463ba4e2ccdea1b7eb71/d97256e4-b583-424f-b2e6-09505640ddb9_thumb_001_HD.jpg",اخبار نیمروزی | یکشنبه ۴ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/f40c61d74834463ba4e2ccdea1b7eb71/hls/d97256e4-b583-424f-b2e6-09505640ddb9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/16e085f8c72c4655a3286301890935d0/c026de85-5e14-4f1f-a4ac-9089b8923a83_thumb_001_HD.jpg",حمله با خودرو به رژه افتخار در برلین یک کشته و ۱۶ زخمی برجا گذاشت
+https://daq1pvcuhj77l.cloudfront.net/1/16e085f8c72c4655a3286301890935d0/hls/c026de85-5e14-4f1f-a4ac-9089b8923a83.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6ebc522e1aed4ac1af9fe36e90d17ab5/7aeb196d-1923-4bc2-8142-539ca495108e_thumb_001_HD.jpg",آتش‌سوزی‌های گسترده در جنوب اروپا؛ اسپانیا وضعیت اضطراری ملی اعلام کرد
+https://daq1pvcuhj77l.cloudfront.net/1/6ebc522e1aed4ac1af9fe36e90d17ab5/hls/7aeb196d-1923-4bc2-8142-539ca495108e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9836d9b005f54aa38ff59d4dceb680c8/f8be4043-bdeb-42a7-b7ba-bf540a9e14f4_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۴ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/9836d9b005f54aa38ff59d4dceb680c8/hls/f8be4043-bdeb-42a7-b7ba-bf540a9e14f4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3f34567856644f368466248d2334ccca/dca2e913-7b6b-4a89-a7d3-3f7e0f0af03a_thumb_001_HD.jpg",رضا علیجانی: رسانه‌های تندرو در پی جلوگیری از کاهش تنش با آمریکا هستند
+https://daq1pvcuhj77l.cloudfront.net/1/3f34567856644f368466248d2334ccca/hls/dca2e913-7b6b-4a89-a7d3-3f7e0f0af03a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/07467c505baf48cf84272ab3415140ff/0b3f34d2-3c7a-4cc4-95ef-e1be736b0fec_thumb_003_HD.jpg",حسین آقایی: آمریکا برای خنثی‌سازی همه تهدیدهای جمهوری اسلامی چاره‌ای جز جنگ بزرگ ندارد
+https://daq1pvcuhj77l.cloudfront.net/1/07467c505baf48cf84272ab3415140ff/hls/0b3f34d2-3c7a-4cc4-95ef-e1be736b0fec.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b4b14c6aa9034883a39fddafe33be22d/9791879b-7a3d-4adf-80e5-3c9a18008aa2_thumb_001_HD.jpg",برنامه هسته‌ای جمهوری اسلامی محور دیدار ترامپ و نتانیاهو
+https://daq1pvcuhj77l.cloudfront.net/1/b4b14c6aa9034883a39fddafe33be22d/hls/9791879b-7a3d-4adf-80e5-3c9a18008aa2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/311903bf98a041838293a7c4c0f9fca2/c101a774-b293-4395-a1a7-04d22ae2eb89_thumb_001_HD.jpg",کاشت سرو ایرانی در سالگرد درگذشت محمدرضا شاه پهلوی در ملبورن استرالیا
+https://daq1pvcuhj77l.cloudfront.net/1/311903bf98a041838293a7c4c0f9fca2/hls/c101a774-b293-4395-a1a7-04d22ae2eb89.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5cc3dfbd43bc4e4085ba6eee41d827fe/8b8557b8-0212-4b35-b892-4d1831e481a8_thumb_001_HD.jpg",ایمان آقایاری: محاصره دریایی جمهوری اسلامی را به پذیرش خواسته‌های آمریکا وادار نمی‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/5cc3dfbd43bc4e4085ba6eee41d827fe/hls/8b8557b8-0212-4b35-b892-4d1831e481a8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c1b8b2fe74774a709bab94574ba3374c/813785cf-7f10-4ed0-adda-621873a6b165_thumb_001_HD.jpg",روح‌الله رحیم‌پور: دیدار ترامپ و نتانیاهو بر نتایج حملات علیه جمهوری اسلامی متمرکز است
+https://daq1pvcuhj77l.cloudfront.net/1/c1b8b2fe74774a709bab94574ba3374c/hls/813785cf-7f10-4ed0-adda-621873a6b165.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e1ec78eec7804f30a14ada780a222adb/a8b0519e-b563-4c85-a829-90c0a04c088a_thumb_001_HD.jpg",سنتکام از ادامه محاصره دریایی آمریکا علیه جمهوری اسلامی خبر داد
 https://daq1pvcuhj77l.cloudfront.net/1/e1ec78eec7804f30a14ada780a222adb/hls/a8b0519e-b563-4c85-a829-90c0a04c088a.m3u8
