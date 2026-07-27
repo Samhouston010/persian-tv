@@ -12177,6 +12177,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12446,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/16db41f1bdb64bcdb50e6bd88ce3c9d1/382aae07-c95c-49d8-8a33-859a9e2bd35b_thumb_001_HD.jpg",برگزاری مراسم گرامی‌داشت سالروز درگذشت محمدرضا شاه پهلوی در ژاپن
+https://daq1pvcuhj77l.cloudfront.net/1/16db41f1bdb64bcdb50e6bd88ce3c9d1/hls/382aae07-c95c-49d8-8a33-859a9e2bd35b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ff85029186704adf92c89e4b9ccbc67c/b86c0179-9cda-42b2-9b80-409101cbe7c0_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، دوشنبه ۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/ff85029186704adf92c89e4b9ccbc67c/hls/b86c0179-9cda-42b2-9b80-409101cbe7c0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/173ece70a37d4550a3266a4c98e2a6a3/d8c3591f-6a51-467d-9c01-281f85a73cc6_thumb_001_HD.jpg",بالا گرفتن تنش‌ها میان جمهوری اسلامی و اوکراین
+https://daq1pvcuhj77l.cloudfront.net/1/173ece70a37d4550a3266a4c98e2a6a3/hls/d8c3591f-6a51-467d-9c01-281f85a73cc6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d456a043ca7a41c48d3345b83b1c1777/1cd2fc52-406c-42e0-8836-7f76eed02073_thumb_001_HD.jpg",شرط نتانیاهو برای پایان جنگ: سقوط جمهوری اسلامی؛ سپاه پاسداران در تدارک حمله به اوکراین
+https://daq1pvcuhj77l.cloudfront.net/1/d456a043ca7a41c48d3345b83b1c1777/hls/1cd2fc52-406c-42e0-8836-7f76eed02073.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/39774b82acff455c960cbc18f52a70af/9a69dd19-d8f1-4144-97a5-5f18748e7b10_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: ترامپ به دنبال تصرف خارک، سپاه در پی حمله به اوکراین
+https://daq1pvcuhj77l.cloudfront.net/1/39774b82acff455c960cbc18f52a70af/hls/9a69dd19-d8f1-4144-97a5-5f18748e7b10.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e2ad9f320c0d4e02aaa591b982fc1c81/efe179e6-482a-4917-a83a-ff58934b17af_thumb_001_HD.jpg",بحران صندوق‌های بازنشستگی و بازار کار در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/e2ad9f320c0d4e02aaa591b982fc1c81/hls/efe179e6-482a-4917-a83a-ff58934b17af.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a32966b9764c4c85b956110644851ed8/633cb051-7cf2-48e6-9a49-22b0730f4fbf_thumb_001_HD.jpg",اخبار شبانگاهی | دوشنبه ۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/a32966b9764c4c85b956110644851ed8/hls/633cb051-7cf2-48e6-9a49-22b0730f4fbf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b7f6db4aa62c42ccb26ee1a1b5384dab/9f23def6-f07a-430b-865a-8c0531a4d1f0_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/b7f6db4aa62c42ccb26ee1a1b5384dab/hls/9f23def6-f07a-430b-865a-8c0531a4d1f0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/638e04042f01480ba8f20e88528cad6c/abeb39e7-a909-44c5-aaf8-4538c4ebc7a0_thumb_001_HD.jpg",گزارش اختصاصی ایران‌اینترنشنال از حضور نیروهای نیابتی عراقی در جنوب ایران
+https://daq1pvcuhj77l.cloudfront.net/1/638e04042f01480ba8f20e88528cad6c/hls/abeb39e7-a909-44c5-aaf8-4538c4ebc7a0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/06d390784a9d4583a5e0b1920b4764f8/22b43fd4-75ff-4bea-aa16-f99b4bb48d07_thumb_001_HD.jpg",جزییات تازه از نحوه کشته شدن یلدا محمدخانی در اعتراضات فردیس کرج
+https://daq1pvcuhj77l.cloudfront.net/1/06d390784a9d4583a5e0b1920b4764f8/hls/22b43fd4-75ff-4bea-aa16-f99b4bb48d07.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/43d88ea56c7d414dbdc5659c3a3d094a/2515533e-d2e6-4f9b-a2f0-ee9550d96b5b_thumb_001_HD.jpg",پژمان جمشیدی از اتهام تجاوز به عنف تبرئه و به اتهام رابطه نامشروع محکوم شد
 https://daq1pvcuhj77l.cloudfront.net/1/43d88ea56c7d414dbdc5659c3a3d094a/hls/2515533e-d2e6-4f9b-a2f0-ee9550d96b5b.m3u8
