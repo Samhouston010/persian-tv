@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12446,6 +12437,18 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/beb65fabf9784e2fa8c49bded04f6aa4/be86d912-9a22-40d0-9c23-89a0bb5243b7_thumb_001_HD.jpg",چشم‌انداز: خط و نشان سپاه برای حمله به اوکراین و بریتانیا!
+https://daq1pvcuhj77l.cloudfront.net/1/beb65fabf9784e2fa8c49bded04f6aa4/hls/be86d912-9a22-40d0-9c23-89a0bb5243b7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/14b5046202d1467bbda56e1b208eb032/07e92faa-3091-4f80-9e20-968b51e7a1a7_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/14b5046202d1467bbda56e1b208eb032/hls/07e92faa-3091-4f80-9e20-968b51e7a1a7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d0855ca1146e49b2af1e3ba8681fc8c0/a7968a25-6b59-4b78-8956-f9cd3c127e35_thumb_001_HD.jpg",علی صدرزاده: ریاض نه می‌تواند با حوثی‌ها نجنگد، نه خواهان جنگی گسترده است
+https://daq1pvcuhj77l.cloudfront.net/1/d0855ca1146e49b2af1e3ba8681fc8c0/hls/a7968a25-6b59-4b78-8956-f9cd3c127e35.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ea82d963c884477ba637be3fbf8837cf/7ab7af3d-515b-4a58-a71b-956f7d7a7a63_thumb_001_HD.jpg",دونالد ترامپ: به ایران فرصتی محدود برای مذاکره دوباره داده‌ایم
+https://daq1pvcuhj77l.cloudfront.net/1/ea82d963c884477ba637be3fbf8837cf/hls/7ab7af3d-515b-4a58-a71b-956f7d7a7a63.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/16db41f1bdb64bcdb50e6bd88ce3c9d1/382aae07-c95c-49d8-8a33-859a9e2bd35b_thumb_001_HD.jpg",برگزاری مراسم گرامی‌داشت سالروز درگذشت محمدرضا شاه پهلوی در ژاپن
 https://daq1pvcuhj77l.cloudfront.net/1/16db41f1bdb64bcdb50e6bd88ce3c9d1/hls/382aae07-c95c-49d8-8a33-859a9e2bd35b.m3u8
