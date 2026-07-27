@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12447,6 +12438,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e05ad7b5d744fde9bed7a87dcfb0251/78998cae-817b-4eef-97ec-ee7f39f7a66c_thumb_001_HD.jpg",تداوم حملات روسیه و اوکراین دست‌کم ۱۰ کشته برجا گذاشت
+https://daq1pvcuhj77l.cloudfront.net/1/7e05ad7b5d744fde9bed7a87dcfb0251/hls/78998cae-817b-4eef-97ec-ee7f39f7a66c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d45762ac9f4a427484518fdefca39af8/554d7aa2-2315-401f-8cff-0f44b3bfedd9_thumb_001_HD.jpg",مرتضی کاظمیان: حمایت مجتبی خامنه‌ای از حزب‌الله لبنان در تضاد با منافع ملی ایران است
+https://daq1pvcuhj77l.cloudfront.net/1/d45762ac9f4a427484518fdefca39af8/hls/554d7aa2-2315-401f-8cff-0f44b3bfedd9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b0771772a6ac4a8fa35d70345216f156/b3bee006-80b4-4dd0-bd2f-791b7640566f_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: احتمال موفقیت مذاکرات آمریکا با جمهوری اسلامی پایین است
+https://daq1pvcuhj77l.cloudfront.net/1/b0771772a6ac4a8fa35d70345216f156/hls/b3bee006-80b4-4dd0-bd2f-791b7640566f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9bdde44a056943f5b62d5cb2d8d62e90/3fa0e006-2af9-44ee-a5f9-d4022748fcfd_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/9bdde44a056943f5b62d5cb2d8d62e90/hls/3fa0e006-2af9-44ee-a5f9-d4022748fcfd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/78f67af27abf4af695c017433d346c95/bb4075d9-fea5-415d-8c67-569e7b3c61ea_thumb_001_HD.jpg",تداوم تعطیلی واحدهای تولیدی و تعدیل نیرو در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/78f67af27abf4af695c017433d346c95/hls/bb4075d9-fea5-415d-8c67-569e7b3c61ea.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/397db9c0145a473cac0ce5db9c4eccd0/debdc562-4e31-4039-aa7e-130571ba64f4_thumb_001_HD.jpg",نتانیاهو با اطلاعات تازه درباره برنامه هسته‌ای جمهوری اسلامی راهی واشینگتن می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/397db9c0145a473cac0ce5db9c4eccd0/hls/debdc562-4e31-4039-aa7e-130571ba64f4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3db5cb2ca4dc422da619a87a6a615a42/b718ac9b-bd95-48ef-9bdf-329e305baae5_thumb_001_HD.jpg",حسین آقایی: توقف حملات آمریکا به جمهوری اسلامی لزوما به معنای پایان درگیری نیست
+https://daq1pvcuhj77l.cloudfront.net/1/3db5cb2ca4dc422da619a87a6a615a42/hls/b718ac9b-bd95-48ef-9bdf-329e305baae5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cb00162f49354319ad85d0384dda4039/109794cc-821d-44f8-bf03-249e15ae7fc6_thumb_001_HD.jpg",لیلا مروتی: نقض آتش‌بس ابزار فشار جمهوری اسلامی در مذاکرات است
+https://daq1pvcuhj77l.cloudfront.net/1/cb00162f49354319ad85d0384dda4039/hls/109794cc-821d-44f8-bf03-249e15ae7fc6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/88459f97b9034cc6a3ade513089e888d/397802fe-6ac9-40c9-8d26-be357a328f21_thumb_001_HD.jpg",روح‌الله رحیم‌پور: هدف ترامپ از انتشار تصاویر خارک، افزایش فشار روانی بر جمهوری اسلامی است
+https://daq1pvcuhj77l.cloudfront.net/1/88459f97b9034cc6a3ade513089e888d/hls/397802fe-6ac9-40c9-8d26-be357a328f21.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0b704f1ada07416cae64d1f404b1fd65/298ec2da-159a-4c19-adab-91af5760f448_thumb_001_HD.jpg",راهبرد بلندمدت آمریکا برای مهار جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/0b704f1ada07416cae64d1f404b1fd65/hls/298ec2da-159a-4c19-adab-91af5760f448.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0b760377250a4187a1915cc6579696ef/dbebb132-efff-4a81-a3d0-33de77cfa450_thumb_001_HD.jpg",احمد علوی: دور زدن تحریم‌ها، زمینه‌ساز شکل‌گیری تراستی‌ها شد
 https://daq1pvcuhj77l.cloudfront.net/1/0b760377250a4187a1915cc6579696ef/hls/dbebb132-efff-4a81-a3d0-33de77cfa450.m3u8
 
@@ -12473,6 +12494,42 @@ https://daq1pvcuhj77l.cloudfront.net/1/14da968a1b3548de81c7c24505cd6bd8/hls/a67c
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e1f88716d74e47f28ffceb7c7d678975/00590e5c-07b6-470c-927f-85e681352d01_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۵ مرداد
 https://daq1pvcuhj77l.cloudfront.net/1/e1f88716d74e47f28ffceb7c7d678975/hls/00590e5c-07b6-470c-927f-85e681352d01.m3u8
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/dw4y64d4q0y0awde/lk9l5ctj7x9iaq04.jpg",Houston weather: July 26 overnight forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47409366873_47409367029/47409367029/hf-uuid-fa6cb818-63cd-4bb7-a0ed-9f1433a925e4/47409367029_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/u34s145txofhjyfo/0r7yrf76pb9tynqq.jpg",One suspect arrested in deadly double shooting 
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47408964550_47409274675/47409274675/hf-uuid-1058c586-0bdb-49d9-9146-2c568e3532e1/47409274675_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/dkii2xh5xkheqxvs/48770s2ogrzepkea.jpg",UH Get to Know: Shadre Hurst
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47406574866_47407584658/47407584658/hf-uuid-f02e45cf-9cc7-4d1c-a484-69eab8fa5ff1/47407584658_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qusf5470q5ca6mwj/52dp0b6wse6lhix2.jpg",UH Get to Know: Brandon Mack
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47406563112_47407545575/47407545575/hf-uuid-b1e875c1-22df-4631-b384-b01b89c5076c/47407545575_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/y8edleng3a9lieyv/53l5rv9bxwns4i3q.jpg",UH Get to Know: Ashton Porter
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47407496163_47407496302/47407496302/hf-uuid-bd25f8f5-b918-4953-8750-4f18e5057719/47407496302_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/upiryj9tltk5tvmd/9g2recsulau0cz9y.jpg",1-on-1 with UH Football's Jordan Allen
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47386483818_47406494741/47406494741/hf-uuid-d11b08de-b1d5-445e-b69d-ec9523150987/47406494741_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/m2ocps2qnggbtk59/siv0tqr5vkr6e380.jpg",Houston weather: July 26 evening forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47406444456_47406444543/47406444543/hf-uuid-5c42d65c-e96b-4471-853d-78a237866d55/47406444543_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kqxvn52iqg167jur/ngj9nl8ot90cak8n.jpg",Houston event held to remember victims of unsolved cases
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47405469528_47406351984/47406351984/hf-uuid-810f5dbb-f814-4bb6-a5d2-58cec814c8e8/47406351984_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/c6x8amguc1hc45nk/08s53mowykeegbhe.jpg",What's Your Point? Overtime | July 26, 2026
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47405469528_47405469619/47405469619/hf-uuid-ab046d8b-bda7-410c-9506-47c780901236/47405469619_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gu02q4snq4xi1aqq/ff7thyrpmrsjmadq.jpg",ICE shooting latest, city employee pay, homestead fraud investigation, and more | What's Your Point?
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47397918040_47405439191/47405439191/hf-uuid-479995c7-327b-4fd4-bc11-c0089508871f/47405439191_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/81l07zw54t7tplfj/qe1qivtxevr69mue.jpg",Good Samaritan helps family who fled Deerbrook Mall during shooting
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47403908793_47403908915/47403908915/hf-uuid-ff014560-3eed-4993-8526-51255c220193/47403908915_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/pcfsqh0njslvz91f/6hf4hd07jgvabush.jpg",Houston weather: July 26 morning forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47397944742_47397944848/47397944848/hf-uuid-af9ecdb3-f7ff-46ab-9729-4b4f03f6eda1/47397944848_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/103dkc0433nteq5p/a2p1a6fjlm4vcato.jpg",Houston weather: Triple-digit heat index this weekend
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47390106621_47390106755/47390106755/hf-uuid-f7a2e833-8800-4393-a692-5357844842bd/47390106755_lowres.mp4
@@ -13337,42 +13394,6 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4704683
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/22voev079p1saa1p/rp9mrva7rq2zzhpl.jpg",Urgent need for Black stem call donors
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47046780662_47046780902/47046780902/hf-uuid-d9083590-9c63-4a07-843d-25564f3e4af9/47046780902_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/dbk6qdwuzi4biby4/me8lgipzk8ppvjpr.jpg",Breaking down the ICE shooting timeline
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47046689532_47046689740/47046689740/hf-uuid-feb9b801-0c88-492c-a096-96c5e1e1138e/47046689740_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/lzacq3lokb4pgt78/ns3guo94cbe07f43.jpg",Mexico President reacts to deadly ICE shooting
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47045081058_47045253969/47045253969/hf-uuid-38b35428-b2f7-468a-8230-1f3cfc673e8d/47045253969_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/aovstaifngo5wx3h/caqao5v3v4t5s9lk.jpg",Houston: Lower rain chances Thursday, returns for the weekend
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47044775108_47044775195/47044775195/hf-uuid-1004e460-abdc-4f05-ba20-d0ecb7cad405/47044775195_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/faydvcd525qa558i/s5n905wpirljhjlz.jpg",Houston City Council reactions to ICE-involved shooting 
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47044416405_47044416542/47044416542/hf-uuid-8aab5847-c313-4472-8cb9-65fb1409266a/47044416542_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/r7zz0paw8vapzhyl/olpgdy5906nc5p62.jpg",Spring ICE operation ends with arrest
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47043260726_47044079918/47044079918/hf-uuid-efe098c2-25d7-435d-86a1-e9bdfb894a29/47044079918_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ex0yumkxey09hhrq/g8yvxmmb73aumsi5.jpg",Houston ICE shooting: Family, leaders speak on man's death | Houston Live &amp; Local
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47042025914_47042026010/47042026010/hf-uuid-389479ae-f53f-4162-b036-da5c0c9c468b/47042026010_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/1fg4pkvmsr3e94ic/d1fuvsy78dhq2z0h.jpg",Video shows moments before deadly ICE shooting in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47041018412_47041076114/47041076114/hf-uuid-8fbe0725-4c5c-4007-9fda-35e2074183e9/47041076114_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/6y6cuhvemcvzpw8p/999eojnqwwjr4bb2.jpg",FULL: Son speaks after father shot, killed by ICE officer in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47037126410_47039112955/47039112955/hf-uuid-dc12172c-109b-4e30-8083-db89a2b5de28/47039112955_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ao6nvsykmzmrovdp/gbczxvjmdh6iawhy.jpg",FULL: Family, activists speak out after man shot, killed by ICE in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47038296560_47038296713/47038296713/hf-uuid-bc4df650-34b2-46c1-8504-d42d65b2ef51/47038296713_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/l1zozi8e2n4u5y3v/kfbmuezbmzpx6o65.jpg",Rep. Al Green calls for local investigation into ICE-related death
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47037938539_47038594356/47038594356/hf-uuid-37a6674e-9d2f-45fc-b0cc-b2c08f6655ea/47038594356_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/i7hvpaygdwmazuys/p1pz5w569wdj8c2e.jpg",Houston weather: Hot Wednesday with scattered storms
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47032844145_47033065868/47033065868/hf-uuid-8f9c9b96-4b30-4bee-bdf4-91038e1f49b3/47033065868_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/drh5wioia50r7ok2/4q37xiyr0ze6h5rk.jpg",Houston Young Adults Flock to Rapidly Growing Tuesday Night Ministry at Grace Church
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47027208461_47027208664/47027208664/hf-uuid-04f0c986-41c1-4b57-b2e8-f0dac3dce1fc/47027208664_lowres.mp4
 
 #EXTINF:-1 tvg-name="Keshet 12" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12
 #EXTVLCOPT:network-caching=2000
