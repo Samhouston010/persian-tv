@@ -12177,6 +12177,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12438,11 +12447,50 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/752b4779fa2b499683b06a9aa27bf950/838297c5-4f04-45b2-98fd-d03c250606ff_thumb_001_HD.jpg",پاسخ وزات خارجه سوئد به ایران‌اینترنشنال درباره تلاش‌ این کشور برای آزادی احمدرضا جلالی
+https://daq1pvcuhj77l.cloudfront.net/1/752b4779fa2b499683b06a9aa27bf950/hls/838297c5-4f04-45b2-98fd-d03c250606ff.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b40f98b1d3474afd8dae1eaf0e7ec554/8218a5d2-9238-4b72-b279-5ee05e3d87a7_thumb_001_HD.jpg",روزنامه ایتالیایی لا ری‌پوبلیکا گزارشی همراه با تصویری از یک دیوارنگاره در تهران منتشر کرد
+https://daq1pvcuhj77l.cloudfront.net/1/b40f98b1d3474afd8dae1eaf0e7ec554/hls/8218a5d2-9238-4b72-b279-5ee05e3d87a7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e1177666bfd64eac874b3088360a4316/0e6cfb95-f0e0-4954-9de3-d7d70313e0bc_thumb_001_HD.jpg",دیدار نتانیاهو و ترامپ با محور تاسیسات هسته‌ای جمهوری اسلامی و خطوط قرمز اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/e1177666bfd64eac874b3088360a4316/hls/0e6cfb95-f0e0-4954-9de3-d7d70313e0bc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3a132babcdab44f4b0484e917414ff24/d99d80d3-1008-47e1-a055-270c856418e3_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، سه‌شنبه ۶ مرداد، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/3a132babcdab44f4b0484e917414ff24/hls/d99d80d3-1008-47e1-a055-270c856418e3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/334e5940e20043229caa25e31a693f1a/3f8d3438-8c84-48e1-9876-fd9548fd3179_thumb_001_HD.jpg",سخنگوی دولت جمهوری اسلامی: سهمیه بنزین سه‌هزار تومانی به ۵۰ لیتر کاهش یافته است
+https://daq1pvcuhj77l.cloudfront.net/1/334e5940e20043229caa25e31a693f1a/hls/3f8d3438-8c84-48e1-9876-fd9548fd3179.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d6063f52e3024ddb8f2994ce4b085d05/f78ed035-6623-4ec0-a4ed-8ffbe3bf9381_thumb_001_HD.jpg",استفاده سپاه پاسداران از پهپاد رادارگریز جدید برای حمله به نیروهای آمریکا 
+https://daq1pvcuhj77l.cloudfront.net/1/d6063f52e3024ddb8f2994ce4b085d05/hls/f78ed035-6623-4ec0-a4ed-8ffbe3bf9381.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a364272055af4fb2846939bea568d7e1/5752dc8c-3b47-4821-965f-23cf6aa635f0_thumb_001_HD.jpg",علی شیرازی: اعدام در ملا عام نشانه هراس حکومت از مردم است
+https://daq1pvcuhj77l.cloudfront.net/1/a364272055af4fb2846939bea568d7e1/hls/5752dc8c-3b47-4821-965f-23cf6aa635f0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b80f1181f2064e1fa64405f047724140/de1f40d8-a6d2-4905-9a4f-9d93cc0603f1_thumb_001_HD.jpg",اخبار نیمروزی | سه‌شنبه ۶ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/b80f1181f2064e1fa64405f047724140/hls/de1f40d8-a6d2-4905-9a4f-9d93cc0603f1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b191076fbfd54e2794167d2480142cac/762e48af-cd98-4c95-b0ec-1fb959211009_thumb_001_HD.jpg",مخاطبان: جمهوری اسلامی انتقام شکست‌هایش را با اعدام جوانان ایران می‌گیرد
+https://daq1pvcuhj77l.cloudfront.net/1/b191076fbfd54e2794167d2480142cac/hls/762e48af-cd98-4c95-b0ec-1fb959211009.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2e5b1cc0200745258d6c2afc8a44f925/7498b8b2-abcb-4133-9c16-eb3f95ed8a74_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: اعدام معترضان با هدف جلوگیری از تکرار اعتراضات انجام می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/2e5b1cc0200745258d6c2afc8a44f925/hls/7498b8b2-abcb-4133-9c16-eb3f95ed8a74.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/335feb7b42ce4f1c8474334aca051ebc/6a1df63d-0a82-416a-893f-51f832e288e2_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۶ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/335feb7b42ce4f1c8474334aca051ebc/hls/6a1df63d-0a82-416a-893f-51f832e288e2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8fed5436e2fe48949b9f759353fa1d9d/f7768346-24ce-4194-b7d8-97f161259f3e_thumb_001_HD.jpg",ترامپ در کاخ سفید میزبان نتانیاهو و زلنسکی می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/8fed5436e2fe48949b9f759353fa1d9d/hls/f7768346-24ce-4194-b7d8-97f161259f3e.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3ae8d2dff65b46a6bc989818300275ad/fc753994-7036-4ffa-bb00-0ce3c89a17e9_thumb_001_HD.jpg",فروغ کنعانی: جمهوری اسلامی از اعدام در ملأعام برای ایجاد رعب و وحشت استفاده می‌کند
 https://daq1pvcuhj77l.cloudfront.net/1/3ae8d2dff65b46a6bc989818300275ad/hls/fc753994-7036-4ffa-bb00-0ce3c89a17e9.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7daeee03dd1f42ababdc14091d7126ba/08c1641b-194d-4c94-9461-82696e236657_thumb_001_HD.jpg",شلیک گلوله ساچمه‌ای و گاز اشک‌آور به معترضان به اجرای حکم دو بازداشتی دی‌ماه در اصفهان
 https://daq1pvcuhj77l.cloudfront.net/1/7daeee03dd1f42ababdc14091d7126ba/hls/08c1641b-194d-4c94-9461-82696e236657.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b6614201562140549dddd5e0313d6063/89c633a4-bb6c-4fa3-8a5a-ce838bb37fbc_thumb_001_HD.jpg",مرتضی کاظمیان: جمهوری اسلامی اعدام دو جوان را در فضای عمومی برای ایجاد ارعاب اجرا کرد
+https://daq1pvcuhj77l.cloudfront.net/1/b6614201562140549dddd5e0313d6063/hls/89c633a4-bb6c-4fa3-8a5a-ce838bb37fbc.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1469863c08444401b5a97a456d43fca5/fc62d336-0a8d-49f1-9219-edf1617e7ee7_thumb_001_HD.jpg",شکست رفاه و امنیت غذایی؛ ایران در «سند چشم‌انداز ۱۴۰۴»، ناکامی رویاهای خامنه‌ای
 https://daq1pvcuhj77l.cloudfront.net/1/1469863c08444401b5a97a456d43fca5/hls/fc62d336-0a8d-49f1-9219-edf1617e7ee7.m3u8
