@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12446,6 +12437,30 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/48e414137e1049b39c0807bd3add4945/ed6b84ea-3a72-4c3c-9288-66e33e4d7781_thumb_001_HD.jpg",برگزاری شتاب‌زده دادگاه معترضان اصفهان با خطر صدور احکام اعدام
+https://daq1pvcuhj77l.cloudfront.net/1/48e414137e1049b39c0807bd3add4945/hls/ed6b84ea-3a72-4c3c-9288-66e33e4d7781.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cfbb4080658148119973460f1c8d5eab/85d75486-b130-48cc-afdf-a5a29adadced_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: اعدام دو معترض دیگر‌؛ مجتبی، پیامبر تازه اعدام ایران
+https://daq1pvcuhj77l.cloudfront.net/1/cfbb4080658148119973460f1c8d5eab/hls/85d75486-b130-48cc-afdf-a5a29adadced.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8d8826b8c1c34620b058f30cc02cae08/d9ae0ce9-8c3c-404a-9865-c4fc96e98c32_thumb_001_HD.jpg",روزنامه پیام ما از رنج بازماندگان جنگ در هرمزگان روایت کرد
+https://daq1pvcuhj77l.cloudfront.net/1/8d8826b8c1c34620b058f30cc02cae08/hls/d9ae0ce9-8c3c-404a-9865-c4fc96e98c32.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bb5469eea2064a18b9b43aa4a5497228/a9bd430f-a9df-4780-b238-c2d756cd4f65_thumb_001_HD.jpg",صلات صبح مرداد و اذان اعدام دو معترض در اصفهان؛ مجتبی خامنه‌ای پیامبر تازه اعدام در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/bb5469eea2064a18b9b43aa4a5497228/hls/a9bd430f-a9df-4780-b238-c2d756cd4f65.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cebd6624601941d3a613b047165bd182/a0c76e62-8eff-4987-a8b7-27c54472ec9e_thumb_001_HD.jpg",اخبار شبانگاهی | سه‌شنبه ۶ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/cebd6624601941d3a613b047165bd182/hls/a0c76e62-8eff-4987-a8b7-27c54472ec9e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f9f13b14adfa4b2abc796caa13b9ba12/09b4a7f2-d443-4ad5-9584-51ad5e939cc5_thumb_001_HD.jpg",چرا اوکراین جنگ را به دریای خزر کشاند؟
+https://daq1pvcuhj77l.cloudfront.net/1/f9f13b14adfa4b2abc796caa13b9ba12/hls/09b4a7f2-d443-4ad5-9584-51ad5e939cc5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/587e49a4defa4e28b098acc4c29f4081/b9db8ed8-325d-4e5a-8e2d-5db0ae889f13_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۶ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/587e49a4defa4e28b098acc4c29f4081/hls/b9db8ed8-325d-4e5a-8e2d-5db0ae889f13.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/18ab090fc83040eca685ce9f317a1971/336a8801-2568-4326-bc9e-150959dc3176_thumb_001_HD.jpg",دستور نخست‌وزیر عراق برای تحقیق درباره حملات نیابتی‌های سپاه به عربستان سعودی
+https://daq1pvcuhj77l.cloudfront.net/1/18ab090fc83040eca685ce9f317a1971/hls/336a8801-2568-4326-bc9e-150959dc3176.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/752b4779fa2b499683b06a9aa27bf950/838297c5-4f04-45b2-98fd-d03c250606ff_thumb_001_HD.jpg",پاسخ وزات خارجه سوئد به ایران‌اینترنشنال درباره تلاش‌ این کشور برای آزادی احمدرضا جلالی
 https://daq1pvcuhj77l.cloudfront.net/1/752b4779fa2b499683b06a9aa27bf950/hls/838297c5-4f04-45b2-98fd-d03c250606ff.m3u8
