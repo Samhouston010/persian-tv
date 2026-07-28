@@ -12177,6 +12177,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12446,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1df94f73f6a948e2829888d13e587c88/97a9e4d7-3eed-428b-b804-8697e8fbe800_thumb_001_HD.jpg",آموزش تیراندازی به کودکان در میدان آزادی؛ جمهوری اسلامی چگونه خشونت را عادی می‌کند؟
+https://daq1pvcuhj77l.cloudfront.net/1/1df94f73f6a948e2829888d13e587c88/hls/97a9e4d7-3eed-428b-b804-8697e8fbe800.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/52cf2014ff864ba78c09724d99c94bfe/036f7fad-6e7d-438f-808b-ad8d02eba885_thumb_001_HD.jpg",حشد شعبی در ایران چه می‌کند؟؛ از ایست‌های بازرسی تا مزاحمت برای زنان و دختران
+https://daq1pvcuhj77l.cloudfront.net/1/52cf2014ff864ba78c09724d99c94bfe/hls/036f7fad-6e7d-438f-808b-ad8d02eba885.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/52d01aa429a94bb09e189014a9b5b9a2/1104e4b8-ce9a-4ab1-a061-4d8e5d6f7466_thumb_001_HD.jpg",محمد قائدی: کشورهای شورای همکاری با رزمایش‌های مشترک به دنبال همگرایی عملیاتی هستند
+https://daq1pvcuhj77l.cloudfront.net/1/52d01aa429a94bb09e189014a9b5b9a2/hls/1104e4b8-ce9a-4ab1-a061-4d8e5d6f7466.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a9dc381617d5456aae3f54c0ca8e28ff/7068ebb5-5539-4a1a-b9a4-552a27cb6ebf_thumb_001_HD.jpg",تغییر مسیر ترامپ به سوی مذاکره؛ نتانیاهو در واشینگتن به دنبال چیست؟
+https://daq1pvcuhj77l.cloudfront.net/1/a9dc381617d5456aae3f54c0ca8e28ff/hls/7068ebb5-5539-4a1a-b9a4-552a27cb6ebf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d3a5c469e32f45a89843a06c7f8c9465/a2e6993c-239d-4c2d-b599-ac9ca8e230e4_thumb_001_HD.jpg",ترامپ در آستانه دیدار با نتانیاهو: مذاکرات با جمهوری اسلامی باید به‌سرعت به نتیجه برسد
+https://daq1pvcuhj77l.cloudfront.net/1/d3a5c469e32f45a89843a06c7f8c9465/hls/a2e6993c-239d-4c2d-b599-ac9ca8e230e4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c04ff98c16564d5aaf8005bbba854c8d/1a8e87fd-fdf0-4804-aede-51dc72ecdf20_thumb_001_HD.jpg", سیاست با مراد ویسی: فشار اسرائیل بر آمریکا برای سرنگونی جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/c04ff98c16564d5aaf8005bbba854c8d/hls/1a8e87fd-fdf0-4804-aede-51dc72ecdf20.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/20bc82dba1a847f1b6e48786228de705/ae8011e5-651c-4854-97b8-df91050099f7_thumb_001_HD.jpg",حسین علیزاده: گسترش درگیری ایران و اوکراین جنگ را از سطح منطقه‌ای فراتر می‌برد
+https://daq1pvcuhj77l.cloudfront.net/1/20bc82dba1a847f1b6e48786228de705/hls/ae8011e5-651c-4854-97b8-df91050099f7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d994f0d7b46c4202853358d05a8eb4e0/61a8572f-1f74-4a0a-8393-2b8018ffd819_thumb_001_HD.jpg",جنگ یا مذاکره؟؛ حکومت ایران در کانون گفت‌وگوهای نتانیاهو و ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/d994f0d7b46c4202853358d05a8eb4e0/hls/61a8572f-1f74-4a0a-8393-2b8018ffd819.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/884bc33ecd2f4722a19bdbe16c182d36/080bf7f9-195e-4a8a-8543-c6bd61f85094_thumb_001_HD.jpg",صفحه‌های نیما تکیدو در یوتیوب و اینستاگرام با دستور قضایی از دسترس خارج شد
+https://daq1pvcuhj77l.cloudfront.net/1/884bc33ecd2f4722a19bdbe16c182d36/hls/080bf7f9-195e-4a8a-8543-c6bd61f85094.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bffeb02b382f45c8b5c142ae0d9c9753/8dc9a89c-945a-4881-9c2a-fc77c29cbbc6_thumb_001_HD.jpg",خط و نشان سپاه برای حمله به اوکراین و بریتانیا!
+https://daq1pvcuhj77l.cloudfront.net/1/bffeb02b382f45c8b5c142ae0d9c9753/hls/8dc9a89c-945a-4881-9c2a-fc77c29cbbc6.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/beb65fabf9784e2fa8c49bded04f6aa4/be86d912-9a22-40d0-9c23-89a0bb5243b7_thumb_001_HD.jpg",چشم‌انداز: خط و نشان سپاه برای حمله به اوکراین و بریتانیا!
 https://daq1pvcuhj77l.cloudfront.net/1/beb65fabf9784e2fa8c49bded04f6aa4/hls/be86d912-9a22-40d0-9c23-89a0bb5243b7.m3u8
