@@ -12177,6 +12177,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12446,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/818be9d553cc4dc7a75017224cccabaa/2c2dc857-9d79-4633-890d-22f25aa5367d_thumb_001_HD.jpg",دونالد ترامپ جمهوری اسلامی را تهدید به پاسخ سنگین و سخت کرد
+https://daq1pvcuhj77l.cloudfront.net/1/818be9d553cc4dc7a75017224cccabaa/hls/2c2dc857-9d79-4633-890d-22f25aa5367d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f73b646ec5d45ffae03ab845a5c3898/30dfca10-0544-449d-9aea-72bbce9285f5_thumb_001_HD.jpg",تحریم‌های تازه‌ آمریکا علیه جمهوری اسلامی؛ بسنت: اقتصاد ایران در حال «سقوط آزاد» است
+https://daq1pvcuhj77l.cloudfront.net/1/9f73b646ec5d45ffae03ab845a5c3898/hls/30dfca10-0544-449d-9aea-72bbce9285f5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9fd207538d04cdcad980e83336b0892/f8a7abb5-58f9-40b1-8b5e-3cbcf9db135e_thumb_001_HD.jpg", سیاست با مراد ویسی: سنگین‌ترین تلفات سپاه در خارج از ایران؛ ۲۰ کشته در عراق
+https://daq1pvcuhj77l.cloudfront.net/1/d9fd207538d04cdcad980e83336b0892/hls/f8a7abb5-58f9-40b1-8b5e-3cbcf9db135e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0fa7b0b2e80a4863b64ccd13c80e1a8d/a6500ff8-b05c-4ae4-b516-d528d0473f6c_thumb_001_HD.jpg",جمشید برزگر: جمهوری اسلامی ادامه درگیری‌های محدود را به مذاکره ترجیح می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/0fa7b0b2e80a4863b64ccd13c80e1a8d/hls/a6500ff8-b05c-4ae4-b516-d528d0473f6c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0509c115251b4a858a9e9f96955b3f8c/0fbb9e63-5d6c-4b7b-827c-7baeaf51febd_thumb_001_HD.jpg",نجات بهرامی: اقدام‌های جمهوری اسلامی ترامپ را به سمت ایده تغییر رژیم در ایران سوق می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/0509c115251b4a858a9e9f96955b3f8c/hls/0fbb9e63-5d6c-4b7b-827c-7baeaf51febd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/23281f1637f54189adc808f41d6309be/e18342eb-c75d-4835-8f6c-16dda7ba3094_thumb_001_HD.jpg",مهدی صارمی‌فر: روسیه و جمهوری اسلامی همزمان از تلگرام استفاده و آن را محدود می‌کنند
+https://daq1pvcuhj77l.cloudfront.net/1/23281f1637f54189adc808f41d6309be/hls/e18342eb-c75d-4835-8f6c-16dda7ba3094.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cfb6998485bd4ef4a1a797392df7c31f/f236152d-0c4a-49f9-bb5b-4f399d4a89e6_thumb_001_HD.jpg",نقش مجتبی در اعدام‌های اخیر جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/cfb6998485bd4ef4a1a797392df7c31f/hls/f236152d-0c4a-49f9-bb5b-4f399d4a89e6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cdea5e2d6b804575a4c2b0963c83bfdc/56bc6ead-bb9d-4fc0-83fc-d5e71269286d_thumb_001_HD.jpg",چشم‌انداز: نقش مجتبی در اعدام‌های اخیر جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/cdea5e2d6b804575a4c2b0963c83bfdc/hls/56bc6ead-bb9d-4fc0-83fc-d5e71269286d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ded8ba8af32f42088a5c799fa0af7e99/64703c1e-516f-4004-bb79-16bc38470a6d_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/ded8ba8af32f42088a5c799fa0af7e99/hls/64703c1e-516f-4004-bb79-16bc38470a6d.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6b0934ae1e0c4a1ea4b2952cba22d6fd/8024300a-4b57-4ef1-bf5a-85590f2984aa_thumb_001_HD.jpg",دیوید دی‌روش: ترامپ پرونده ایران را نیمه‌تمام رها نخواهد کرد
 https://daq1pvcuhj77l.cloudfront.net/1/6b0934ae1e0c4a1ea4b2952cba22d6fd/hls/8024300a-4b57-4ef1-bf5a-85590f2984aa.m3u8
