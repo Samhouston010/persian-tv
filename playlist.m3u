@@ -12177,15 +12177,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12447,7 +12438,37 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9d743ad2a7b0428fbd648fc2d6b71bac/66576218-111e-465c-a005-d8324eb47849_thumb_001_HD.jpg",علی حسینی قاضی‌زاده: مذاکره به‌تنهایی اسرائیل را به اهدافش در قبال جمهوری اسلامی نمی‌رساند
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/500fdd7598a04be793506e2fb965b91f/73b6cfbd-185f-48ad-90c4-b796cbab94a6_thumb_001_HD.jpg",سپاه از آتش‌سوزی و عقب‌نشینی دو نفتکش در تنگه هرمز خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/500fdd7598a04be793506e2fb965b91f/hls/73b6cfbd-185f-48ad-90c4-b796cbab94a6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b9b36dd5ccf549cbb7bd8208cd9fdffd/c47f5c6d-e4e7-4c9b-9383-20985869cdf7_thumb_001_HD.jpg",علیرضا سپاهی پیش از اجرای حکم اعدام دچار حمله قلبی شد
+https://daq1pvcuhj77l.cloudfront.net/1/b9b36dd5ccf549cbb7bd8208cd9fdffd/hls/c47f5c6d-e4e7-4c9b-9383-20985869cdf7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0016c27db25b4f85942f31254e0a727d/0d1d543c-47f1-4bd4-a9d1-0e2cd39846e2_thumb_001_HD.jpg",آمریکا پس از پنج روز توقف، حملات به جمهوری اسلامی را از سر گرفت
+https://daq1pvcuhj77l.cloudfront.net/1/0016c27db25b4f85942f31254e0a727d/hls/0d1d543c-47f1-4bd4-a9d1-0e2cd39846e2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9ca462156afe4494ba71f0bc6c240282/7a622934-5a00-4fac-8d43-8d23c27c1ee2_thumb_001_HD.jpg",اخبار شبانگاهی | پنج‌شنبه ۸ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/9ca462156afe4494ba71f0bc6c240282/hls/7a622934-5a00-4fac-8d43-8d23c27c1ee2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/efadbc606549424a9d423c1feb574656/62f09079-2dab-4e5d-91c1-c7426cf636cd_thumb_001_HD.jpg",اختلاف فیفا و یوفا بر سر واگذاری سهام جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/efadbc606549424a9d423c1feb574656/hls/62f09079-2dab-4e5d-91c1-c7426cf636cd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/adfb78cc312744149cde4d6745a5a2bc/f89536c6-60c5-482d-98bf-5a0f93f7ed68_thumb_001_HD.jpg",واکنش کاربران رسانه‌های اجتماعی به جدال غنی‌نژاد و سروش بر سر شریعتی
+https://daq1pvcuhj77l.cloudfront.net/1/adfb78cc312744149cde4d6745a5a2bc/hls/f89536c6-60c5-482d-98bf-5a0f93f7ed68.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/addc738b3fb5484ca0ed424440133b14/fe3e8ef4-c816-4456-9142-9b609b8071bd_thumb_001_HD.jpg",مرتضی کاظمیان: محکومان به اعدام در ایران از ابتدایی‌ترین حقوق خود محروم‌اند
+https://daq1pvcuhj77l.cloudfront.net/1/addc738b3fb5484ca0ed424440133b14/hls/fe3e8ef4-c816-4456-9142-9b609b8071bd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/77a3b74765014ce4a67691e44333ed1c/7fc42edf-5c3f-49b2-9096-74362fc9c01d_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۸ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/77a3b74765014ce4a67691e44333ed1c/hls/7fc42edf-5c3f-49b2-9096-74362fc9c01d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/23b2b1da3a21476cb2fb43bf80cf19ec/20ff7d28-b4f1-4e75-8c0d-cc4f6a50c459_thumb_001_HD.jpg",دور تازه بمباران
+https://daq1pvcuhj77l.cloudfront.net/1/23b2b1da3a21476cb2fb43bf80cf19ec/hls/20ff7d28-b4f1-4e75-8c0d-cc4f6a50c459.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e9d14d3d1a1945a1809920e73d07bde8/e7b82d89-5826-44b4-ac67-549815250b52_thumb_001_HD.jpg",حمله مسلحانه در ایرانشهر؛ دو نیروی انتظامی کشته شدند
+https://daq1pvcuhj77l.cloudfront.net/1/e9d14d3d1a1945a1809920e73d07bde8/hls/e7b82d89-5826-44b4-ac67-549815250b52.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9d743ad2a7b0428fbd648fc2d6b71bac/66576218-111e-465c-a005-d8324eb47849_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: مذاکره به‌تنهایی اسرائیل را به اهدافش در قبال جمهوری اسلامی نمی‌رساند
 https://daq1pvcuhj77l.cloudfront.net/1/9d743ad2a7b0428fbd648fc2d6b71bac/hls/66576218-111e-465c-a005-d8324eb47849.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4ce53edbdf7d4c22a89cfd0b01adee59/acfad7b4-954d-4f77-9b38-749a8d47dda2_thumb_001_HD.jpg",اقتصاد اروپا در سایه جنگ ایران ۰.۴ درصد رشد کرد
