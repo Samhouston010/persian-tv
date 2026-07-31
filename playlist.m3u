@@ -12168,6 +12168,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12429,8 +12438,26 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0ea4607e4edb4998b9f9e8a9417619d4/2ca0a9c8-a1fe-4f20-8152-c3346d96e3a8_thumb_001_HD.jpg",گفت‌وگوی ویژه با جان لیمبرت، دیپلمات پیشین آمریکا، درباره زندگی در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/0ea4607e4edb4998b9f9e8a9417619d4/hls/2ca0a9c8-a1fe-4f20-8152-c3346d96e3a8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/23b8aa99e3d54778bb325204aab414ae/a6c9296f-b6f2-4806-a3fd-64c6838aa70a_thumb_001_HD.jpg",کاهش بی‌سابقه آب دانوب، نیروگاه هسته‌ای مجارستان را در آستانه خاموشی قرار داد
+https://daq1pvcuhj77l.cloudfront.net/1/23b8aa99e3d54778bb325204aab414ae/hls/a6c9296f-b6f2-4806-a3fd-64c6838aa70a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9d7c28435f82459fb94d2479012ed882/fc1985a1-beaf-4c9d-93a0-5a3ccd7a2016_thumb_001_HD.jpg",ایران محور جلسه مهم کابینه آمریکا در کمپ دیوید
+https://daq1pvcuhj77l.cloudfront.net/1/9d7c28435f82459fb94d2479012ed882/hls/fc1985a1-beaf-4c9d-93a0-5a3ccd7a2016.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53ee6d2f94294fc48e3f8085892fa86d/f657c8f1-2c17-4e1c-8feb-04ae363ed83d_thumb_001_HD.jpg",شهرام خلدی: توافق‌های تهران و واشینگتن موقتی است و درگیری‌ها دوباره از سر گرفته می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/53ee6d2f94294fc48e3f8085892fa86d/hls/f657c8f1-2c17-4e1c-8feb-04ae363ed83d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/140ea7280ff743faa462ac1496d98a65/bc72b412-8db3-4d4c-98c3-bfeb168da2af_thumb_001_HD.jpg",اخبار شبانگاهی | جمعه ۹ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/140ea7280ff743faa462ac1496d98a65/hls/bc72b412-8db3-4d4c-98c3-bfeb168da2af.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ce6de8740d3e41e7ab49a428e0ecdcf9/e4f767fa-3a00-4ecd-b5cf-5b4bacd013b7_thumb_001_HD.jpg",جزئیاتی از زندگی قاسم وکیلی؛ قهرمان آفرود ایران که در قزوین کشته شد
 https://daq1pvcuhj77l.cloudfront.net/1/ce6de8740d3e41e7ab49a428e0ecdcf9/hls/e4f767fa-3a00-4ecd-b5cf-5b4bacd013b7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/015032f979b8404ea59f3872a93e3138/4f1efa3d-e307-4459-ae1c-4aeb509fb146_thumb_001_HD.jpg",آسیه امینی: جمهوری اسلامی همچنان اعدام را ابزار بقای خود می‌داند
+https://daq1pvcuhj77l.cloudfront.net/1/015032f979b8404ea59f3872a93e3138/hls/4f1efa3d-e307-4459-ae1c-4aeb509fb146.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eef2a7b454574c5d89d9134431cb75b2/610caf65-e913-4e69-b9c1-b97a5849e414_thumb_001_HD.jpg",ترامپ: جنگ با ایران به نفع آمریکا پیش می‌رود
 https://daq1pvcuhj77l.cloudfront.net/1/eef2a7b454574c5d89d9134431cb75b2/hls/610caf65-e913-4e69-b9c1-b97a5849e414.m3u8
