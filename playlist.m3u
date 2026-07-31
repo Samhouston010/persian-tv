@@ -12168,15 +12168,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12428,30 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ce6de8740d3e41e7ab49a428e0ecdcf9/e4f767fa-3a00-4ecd-b5cf-5b4bacd013b7_thumb_001_HD.jpg",جزئیاتی از زندگی قاسم وکیلی؛ قهرمان آفرود ایران که در قزوین کشته شد
+https://daq1pvcuhj77l.cloudfront.net/1/ce6de8740d3e41e7ab49a428e0ecdcf9/hls/e4f767fa-3a00-4ecd-b5cf-5b4bacd013b7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eef2a7b454574c5d89d9134431cb75b2/610caf65-e913-4e69-b9c1-b97a5849e414_thumb_001_HD.jpg",ترامپ: جنگ با ایران به نفع آمریکا پیش می‌رود
+https://daq1pvcuhj77l.cloudfront.net/1/eef2a7b454574c5d89d9134431cb75b2/hls/610caf65-e913-4e69-b9c1-b97a5849e414.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cbc9fc0c2bdb4034a51f5a97061c3ba8/2703fd0e-68dc-4e65-88a6-d697e8b6af23_thumb_001_HD.jpg",سرخط خبرهای جمعه ۹ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/cbc9fc0c2bdb4034a51f5a97061c3ba8/hls/2703fd0e-68dc-4e65-88a6-d697e8b6af23.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b0f4c889402144149aad1c2366b7de8c/250f1fc8-33cb-4ca6-9c51-4c280ff3da7e_thumb_001_HD.jpg",بازداشت شهروند کانادایی به اتهام جاسوسی برای چین در مقر ناتو
+https://daq1pvcuhj77l.cloudfront.net/1/b0f4c889402144149aad1c2366b7de8c/hls/250f1fc8-33cb-4ca6-9c51-4c280ff3da7e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a280409326634593bd221d1b2718b5aa/2ae569ac-1273-4136-b1e2-ffecf0d433dc_thumb_001_HD.jpg",ورود ۶۰ هزار مهاجر منطقه تحت حاکمیت اسپانیا در شمال آفریقا و جان‌ باختن ۳۴ نفر
+https://daq1pvcuhj77l.cloudfront.net/1/a280409326634593bd221d1b2718b5aa/hls/2ae569ac-1273-4136-b1e2-ffecf0d433dc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f4e1d33cfd9640f9aa678585509355ff/622ed11f-8683-41c6-bf9c-d392864d2816_thumb_001_HD.jpg",امین‌الله حبیبی: جمهوری اسلامی در برابر طالبان سیاست مماشات در پیش گرفته است
+https://daq1pvcuhj77l.cloudfront.net/1/f4e1d33cfd9640f9aa678585509355ff/hls/622ed11f-8683-41c6-bf9c-d392864d2816.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/558486fcf37542afb979a2e7485712ab/13908896-e954-463a-bd78-1fbf8a63ca37_thumb_001_HD.jpg",خشم کاربران شبکه‌های اجتماعی از اعدام دو معترض در ملاعام در اصفهان
+https://daq1pvcuhj77l.cloudfront.net/1/558486fcf37542afb979a2e7485712ab/hls/13908896-e954-463a-bd78-1fbf8a63ca37.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/43c8c21147524b2db6d369d795a226be/11ade140-73d9-4058-97ab-a72b3d68e323_thumb_001_HD.jpg",اسرائیل از تخریب تونل‌های حزب‌الله در منطقه بوفور خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/43c8c21147524b2db6d369d795a226be/hls/11ade140-73d9-4058-97ab-a72b3d68e323.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ed32dc10a6934850ac0ba204a1d4370d/bb3ce92a-5615-444b-a8b6-99cdcc9a290a_thumb_001_HD.jpg",فرانکو بارزی، اسطوره میلان و فوتبال ایتالیا، در ۶۶ سالگی درگذشت
 https://daq1pvcuhj77l.cloudfront.net/1/ed32dc10a6934850ac0ba204a1d4370d/hls/bb3ce92a-5615-444b-a8b6-99cdcc9a290a.m3u8
