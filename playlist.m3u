@@ -12168,15 +12168,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12437,6 +12428,30 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/653235cffae94125af97e466e9fb3a86/acfaa9e8-bbff-4794-abf6-bf5cdf0675a9_thumb_001_HD.jpg",مهدی صارمی‌فر: مزارزها مسیر انتقال پول برای جمهوری اسلامی را پنهان‌تر می‌کنند
+https://daq1pvcuhj77l.cloudfront.net/1/653235cffae94125af97e466e9fb3a86/hls/acfaa9e8-bbff-4794-abf6-bf5cdf0675a9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/62f9d8b7d3cf48068ecc975ff329c4bd/22a7c857-5571-443a-9fac-4270e9ae4416_thumb_001_HD.jpg",مقام پیشین وزارت خزانه‌داری آمریکا: اقتصاد جمهوری اسلامی در مسیر فروپاشی قرار دارد
+https://daq1pvcuhj77l.cloudfront.net/1/62f9d8b7d3cf48068ecc975ff329c4bd/hls/22a7c857-5571-443a-9fac-4270e9ae4416.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d4f335a865804ab5982f1c84a802d294/158bda6c-c4d9-441f-943d-dd157a8389c6_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد: ترامپ:جنگ جنگ تا پیروزی!
+https://daq1pvcuhj77l.cloudfront.net/1/d4f335a865804ab5982f1c84a802d294/hls/158bda6c-c4d9-441f-943d-dd157a8389c6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b07a632718ae4881b122b41c14b8e7e7/ec492167-e1e7-4f01-b0df-b3dd99b3a706_thumb_001_HD.jpg",اظهارات موسی غنی‌نژاد و پاسخ عبدالکریم سروش، بحث درباره علی شریعتی را دوباره داغ کرد
+https://daq1pvcuhj77l.cloudfront.net/1/b07a632718ae4881b122b41c14b8e7e7/hls/ec492167-e1e7-4f01-b0df-b3dd99b3a706.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a89be7f8505540e8b70230f2819e1cee/d6a5af05-7455-4f34-8dd3-fd1b01ff1c5f_thumb_001_HD.jpg",امیر براتی؛ روایت هکر نابغه ایرانی از همکاری با وزارت اطلاعات تا افتادن در دام اف‌بی‌آی
+https://daq1pvcuhj77l.cloudfront.net/1/a89be7f8505540e8b70230f2819e1cee/hls/d6a5af05-7455-4f34-8dd3-fd1b01ff1c5f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4d0ad8820b584afaa90b01427089a285/f603f0f1-7c8d-4540-984f-4f6878ba2fa9_thumb_003_HD.jpg",فرشته پزشک: نشانه‌ای از تغییر ایدئولوژیک برای پایان جنگ در جمهوری اسلامی دیده نمی‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/4d0ad8820b584afaa90b01427089a285/hls/f603f0f1-7c8d-4540-984f-4f6878ba2fa9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c2f45f0a24ea4e5981951ef815efd46b/20d75978-c4f8-42ca-aa49-71b2fcc3c3f7_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/c2f45f0a24ea4e5981951ef815efd46b/hls/20d75978-c4f8-42ca-aa49-71b2fcc3c3f7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c8c7c9a81cdf43c58dbc306e3b361e46/66538858-3214-43bb-b4c4-23e6c7ee3058_thumb_001_HD.jpg",حرف آخر با پوریا زراعتی- ترامپ دستور «حذف» رو صادر کرد
+https://daq1pvcuhj77l.cloudfront.net/1/c8c7c9a81cdf43c58dbc306e3b361e46/hls/66538858-3214-43bb-b4c4-23e6c7ee3058.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0ea4607e4edb4998b9f9e8a9417619d4/2ca0a9c8-a1fe-4f20-8152-c3346d96e3a8_thumb_001_HD.jpg",گفت‌وگوی ویژه با جان لیمبرت، دیپلمات پیشین آمریکا، درباره زندگی در ایران
 https://daq1pvcuhj77l.cloudfront.net/1/0ea4607e4edb4998b9f9e8a9417619d4/hls/2ca0a9c8-a1fe-4f20-8152-c3346d96e3a8.m3u8
