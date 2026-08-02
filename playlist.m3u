@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12518,33 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/17b53ab1fcd84009a08c9b0e43f34e86/11c505b4-a5e1-4a6a-80c6-379876035c21_thumb_001_HD.jpg",شایان سمیعی: نتانیاهو ممکن است دوباره به‌صورت یکجانبه علیه جمهوری اسلامی اقدام کند
+https://daq1pvcuhj77l.cloudfront.net/1/17b53ab1fcd84009a08c9b0e43f34e86/hls/11c505b4-a5e1-4a6a-80c6-379876035c21.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b1c3bab9e1a247a09c03b581502b9166/40a22a4f-3b37-4d1c-b8d5-ec73ad25befe_thumb_001_HD.jpg",بزرگ‌ترین اختلاس حکومتی تاریخ ایران در پرونده تراستی‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/b1c3bab9e1a247a09c03b581502b9166/hls/40a22a4f-3b37-4d1c-b8d5-ec73ad25befe.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/444b50eb24b24f4ca5299c45f44f52c8/e24ad2d7-a1f8-4688-99b7-b5db0cb4071d_thumb_002_HD.jpg",شهرام خلدی: ملاحظات امنیتی و میانجی‌گری قطر تصمیم ترامپ را برای حمله به ایران تغییر داد
+https://daq1pvcuhj77l.cloudfront.net/1/444b50eb24b24f4ca5299c45f44f52c8/hls/e24ad2d7-a1f8-4688-99b7-b5db0cb4071d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ba9896b8884a4a0a8c3dc50021c4754a/cfdb7b18-73da-48e9-bb1d-7f33ec80e615_thumb_002_HD.jpg",بزرگ‌ترین اختلاس حکومتی تاریخ ایران در پرونده تراستی‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/ba9896b8884a4a0a8c3dc50021c4754a/hls/cfdb7b18-73da-48e9-bb1d-7f33ec80e615.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aca78f365ee843c0b5c0dd64fa5c5d45/a304c8e5-634e-43e5-a407-980b0fe6d992_thumb_001_HD.jpg",فرزین ندیمی: ترامپ در بن‌بست راهبردی در برابر جمهوری اسلامی قرار گرفته است
+https://daq1pvcuhj77l.cloudfront.net/1/aca78f365ee843c0b5c0dd64fa5c5d45/hls/a304c8e5-634e-43e5-a407-980b0fe6d992.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/17a6c74c45374591810799d38eacde91/3d0f1036-c01a-4500-9b07-8af25b36ce92_thumb_001_HD.jpg",نجات بهرامی: عربستان نگران است ترامپ متحدانش را در میانه بحران تنها بگذارد
+https://daq1pvcuhj77l.cloudfront.net/1/17a6c74c45374591810799d38eacde91/hls/3d0f1036-c01a-4500-9b07-8af25b36ce92.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fcf30e29c47e4db595e166be528a45aa/ba658bdc-dc4d-4273-9292-4f4fb08e8912_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، یکشنبه ۱۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/fcf30e29c47e4db595e166be528a45aa/hls/ba658bdc-dc4d-4273-9292-4f4fb08e8912.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7724b7e6128b4f88b5637f6d9cad7d25/890f057d-fcc3-45e7-8e1f-238096f91665_thumb_001_HD.jpg",احمد علوی: منابع بازنشستگان به جای رفاه، صرف جنگ‌افروزی و سرکوب می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/7724b7e6128b4f88b5637f6d9cad7d25/hls/890f057d-fcc3-45e7-8e1f-238096f91665.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/717ff869a2e04301b1ac4946ba174f72/dc09e2dd-a7f1-43cd-91dd-2ecd9699011b_thumb_001_HD.jpg",هوشنگ حسن‌یاری: توقف جنگ، پایان بحران میان تهران و واشینگتن نیست
+https://daq1pvcuhj77l.cloudfront.net/1/717ff869a2e04301b1ac4946ba174f72/hls/dc09e2dd-a7f1-43cd-91dd-2ecd9699011b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1d013ae081d5460a8f957916e4d6e6f4/a699c42e-fda6-4a72-a8c0-16dcaeb442a1_thumb_001_HD.jpg",مهتاب قلی‌زاده: از بین رفتن ۶۳۰ هزار شغل، نتیجه سال‌ها کمبود سرمایه‌گذاری است
 https://daq1pvcuhj77l.cloudfront.net/1/1d013ae081d5460a8f957916e4d6e6f4/hls/a699c42e-fda6-4a72-a8c0-16dcaeb442a1.m3u8
