@@ -846,6 +846,69 @@ https://ncdn.telewebion.ir/presstv/live/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://ncdn.telewebion.ir/sport4/live/playlist.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-name="aflak" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/aflak.png" group-title="📡 تلوبیون",aflak
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/aflak/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="azarbayjangharbi" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/azarbayjangharbi.png" group-title="📡 تلوبیون",azarbayjangharbi
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/azarbayjangharbi/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="bushehr" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/bushehr.png" group-title="📡 تلوبیون",bushehr
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/bushehr/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="kerman" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/kerman.png" group-title="📡 تلوبیون",kerman
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/kerman/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="kish" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/kish.png" group-title="📡 تلوبیون",kish
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/kish/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="نور" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/noor.png" group-title="📡 تلوبیون",نور
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/noor/live/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="tabarestan" tvg-logo="https://static.televebion.net/web/content_images/channel_images/thumbs/new/240/v4/tabarestan.png" group-title="📡 تلوبیون",tabarestan
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ncdn.telewebion.ir/tabarestan/live/playlist.m3u8
+
 #EXTINF:-1 group-title="📡 تلوبیون" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png",English Club TV HD
 #EXTVLCOPT:network-caching=15000
 #EXTVLCOPT:http-reconnect=true
@@ -12204,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12464,6 +12536,18 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/264c00d613e9410bab42901344fd2dba/412b79b1-9bf3-4e99-8658-69be12400185_thumb_001_HD.jpg",محافظه‌کاران بریتانیا خواستار تروریستی اعلام شدن وزارت اطلاعات جمهوری اسلامی شدند
+https://daq1pvcuhj77l.cloudfront.net/1/264c00d613e9410bab42901344fd2dba/hls/412b79b1-9bf3-4e99-8658-69be12400185.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d5ee8689f63c48e0b1859cb30e50b17a/1f448bc1-6fe1-4657-ae41-51641e75d844_thumb_001_HD.jpg",حمله قریب‌الوقوع آمریکا علیه جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/d5ee8689f63c48e0b1859cb30e50b17a/hls/1f448bc1-6fe1-4657-ae41-51641e75d844.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dec5cc6d255445d1af7f7e9a79102908/5fe2bdd6-1a84-436f-82f1-d6caa0f5d717_thumb_001_HD.jpg",سیاست با مراد ویسی: انتظار منطقه‌ای برای حمله آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/dec5cc6d255445d1af7f7e9a79102908/hls/5fe2bdd6-1a84-436f-82f1-d6caa0f5d717.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8179e5e4a1ef450cb7f983ed53d70d99/c8103504-69b7-4ace-bceb-ff95d1f76715_thumb_004_HD.jpg",نوید محبی: هدف ترامپ، تضعیف جمهوری اسلامی با یک جنگ کوتاه‌مدت است
+https://daq1pvcuhj77l.cloudfront.net/1/8179e5e4a1ef450cb7f983ed53d70d99/hls/c8103504-69b7-4ace-bceb-ff95d1f76715.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f30c94fd2324677b16733b002532786/e82daf72-43f5-4bfe-acec-83e6aa1a3400_thumb_001_HD.jpg",علیرضا نامور حقیقی: هدف حملات احتمالی، تغییر رفتار جمهوری اسلامی است نه آغاز جنگ تمام‌عیار
 https://daq1pvcuhj77l.cloudfront.net/1/9f30c94fd2324677b16733b002532786/hls/e82daf72-43f5-4bfe-acec-83e6aa1a3400.m3u8
