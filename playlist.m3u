@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12519,14 +12528,26 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",BIZ Music
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1d013ae081d5460a8f957916e4d6e6f4/a699c42e-fda6-4a72-a8c0-16dcaeb442a1_thumb_001_HD.jpg",مهتاب قلی‌زاده: از بین رفتن ۶۳۰ هزار شغل، نتیجه سال‌ها کمبود سرمایه‌گذاری است
+https://daq1pvcuhj77l.cloudfront.net/1/1d013ae081d5460a8f957916e4d6e6f4/hls/a699c42e-fda6-4a72-a8c0-16dcaeb442a1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d8dc0da76f2743ed9d2183dbebe27503/ec32699e-2db2-4e03-852c-c4f726287ea8_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: دلیل اصلی ترامپ برای تعلیق حمله به ایران
+https://daq1pvcuhj77l.cloudfront.net/1/d8dc0da76f2743ed9d2183dbebe27503/hls/ec32699e-2db2-4e03-852c-c4f726287ea8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/27e4979f39de46f08795b887a4288a93/f26c2738-04af-4759-8454-c334b14b0364_thumb_001_HD.jpg",پاس گل آمریکا به سپاه پاسداران؛ چرا ترامپ حمله به زیرساخت‌های ایران را تعلیق کرد؟
+https://daq1pvcuhj77l.cloudfront.net/1/27e4979f39de46f08795b887a4288a93/hls/f26c2738-04af-4759-8454-c334b14b0364.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/473167fee231416ebfb737c7f6b48c6c/b2f0d46f-233f-4ee1-a6fa-35eb9160def5_thumb_001_HD.jpg",اخبار شبانگاهی | یکشنبه ۱۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/473167fee231416ebfb737c7f6b48c6c/hls/b2f0d46f-233f-4ee1-a6fa-35eb9160def5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cb4f011900fb42148aef6e099b915c91/bfc83717-987c-49ff-b19a-7caa3652a0b3_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۱۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/cb4f011900fb42148aef6e099b915c91/hls/bfc83717-987c-49ff-b19a-7caa3652a0b3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/27df8ac724d945b6a275b06897f3a411/8422954c-1d02-4939-acac-f19d26108cdf_thumb_001_HD.jpg",ایرانیان در بروکسل علیه اعدام معترضان از سوی جمهوری اسلامی تجمع کردند
+https://daq1pvcuhj77l.cloudfront.net/1/27df8ac724d945b6a275b06897f3a411/hls/8422954c-1d02-4939-acac-f19d26108cdf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/295bb2b78ff54f2b93393c33171373aa/7a367949-b0ea-4d12-a4d5-a31fd134b818_thumb_001_HD.jpg",برنامه حکومت برای افزایش نرخ بنزین جایگاه به هر لیتر ۱۰ هزار تومان
+https://daq1pvcuhj77l.cloudfront.net/1/295bb2b78ff54f2b93393c33171373aa/hls/7a367949-b0ea-4d12-a4d5-a31fd134b818.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1d768ece50c347cbb57b7133a779623e/7f4d63f4-a022-473d-b8b8-aa2cda85eae7_thumb_002_HD.jpg",کانال ۱۲ اسرائیل: عراقچی با پیشنهاد بازگشایی تنگه هرمز موافقت کرده است
 https://daq1pvcuhj77l.cloudfront.net/1/1d768ece50c347cbb57b7133a779623e/hls/7f4d63f4-a022-473d-b8b8-aa2cda85eae7.m3u8
@@ -14189,15 +14210,6 @@ https://hls.oxir.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/CeMf68L.png" tvg-id="OmideIranTV.us@SD",Omide Iran
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://oitnhls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/oHmh5Jb.png" tvg-id="Shabakeh7.us@SD",Shabakeh 7
 #EXTVLCOPT:network-caching=2000
