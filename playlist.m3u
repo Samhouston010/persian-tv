@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12492,15 +12483,6 @@ https://hls.navahang.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.sunmusic.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="http://media.boni-records.com/logo.png",Music Channel
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-http://media.boni-records.com/index.m3u8
-
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12537,14 +12519,95 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/90c8c78b1d71444a849737ded0179986/ea6f9a70-7542-47f3-92ee-27c95fd18d76_thumb_001_HD.jpg",لغو حملات آمریکا به جمهوری اسلامی به آمادگی ارتش اسرائیل آسیب زد
+https://daq1pvcuhj77l.cloudfront.net/1/90c8c78b1d71444a849737ded0179986/hls/ea6f9a70-7542-47f3-92ee-27c95fd18d76.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c9c49ec2597146a98613cfa2e28b53ef/bdf4ae4c-c1e1-4eb0-bda9-579859834c90_thumb_001_HD.jpg",منشه امیر: تعویق حمله آمریکا فرصت بیشتری به تهران می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/c9c49ec2597146a98613cfa2e28b53ef/hls/bdf4ae4c-c1e1-4eb0-bda9-579859834c90.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2ec10fcec9474399ba2b287365b601a1/fdcae971-a8fa-446f-9e0f-d46e5485c62b_thumb_001_HD.jpg",رایزنی تلفنی عراقچی با مقام‌های پاکستان و عربستان
+https://daq1pvcuhj77l.cloudfront.net/1/2ec10fcec9474399ba2b287365b601a1/hls/fdcae971-a8fa-446f-9e0f-d46e5485c62b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/10535db287204fa0ae7fe0becab4bcc9/3e7fe441-9600-4cf7-a172-cbf21f5e2443_thumb_001_HD.jpg",حسین قاضیان: هر لحظه احتمال بروز اعتراضات خیابانی در ایران وجود دارد
+https://daq1pvcuhj77l.cloudfront.net/1/10535db287204fa0ae7fe0becab4bcc9/hls/3e7fe441-9600-4cf7-a172-cbf21f5e2443.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8966a21d7d6846afafbd194216f2e1bf/c405477d-01f8-464c-ac46-6ed664a47610_thumb_001_HD.jpg",حسین آقایی: مردم ایران هزینه سیاست‌های متناقض ترامپ را می‌پردازند
+https://daq1pvcuhj77l.cloudfront.net/1/8966a21d7d6846afafbd194216f2e1bf/hls/c405477d-01f8-464c-ac46-6ed664a47610.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/faec6f17a82945e59478eef322243f18/50513cc2-5d60-4471-88c4-bf3f61bc5ec0_thumb_001_HD.jpg",شهرام خلدی: در غزه برخلاف لبنان، اعتماد لازم برای انتقال مسئولیت وجود ندارد
+https://daq1pvcuhj77l.cloudfront.net/1/faec6f17a82945e59478eef322243f18/hls/50513cc2-5d60-4471-88c4-bf3f61bc5ec0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e73b1cf0f3443b1b25d0bbb114fc0d4/bef4f732-48ba-469d-8cfb-3db48a514201_thumb_001_HD.jpg",روایت ای‌بی‌سی استرالیا از جنگ جمهوری اسلامی با شهروندان ایرانی
+https://daq1pvcuhj77l.cloudfront.net/1/7e73b1cf0f3443b1b25d0bbb114fc0d4/hls/bef4f732-48ba-469d-8cfb-3db48a514201.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1ab781dbb3ef4d5daf95bfbcc83c7e9f/c43d8a57-1a0c-423d-9780-94d4f87669b9_thumb_001_HD.jpg",بیژن کیان: چشم‌انداز روشنی برای بقای جمهوری اسلامی وجود ندارد
+https://daq1pvcuhj77l.cloudfront.net/1/1ab781dbb3ef4d5daf95bfbcc83c7e9f/hls/c43d8a57-1a0c-423d-9780-94d4f87669b9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0b2534888c0a432f86a74ccba8e8f230/14b9a55a-2e05-4c72-ab11-b5ae8952d842_thumb_001_HD.jpg",اخبار بامدادی | دوشنبه ۱۲ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/0b2534888c0a432f86a74ccba8e8f230/hls/14b9a55a-2e05-4c72-ab11-b5ae8952d842.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/47766d5da0964d738245e59351ad9b10/8314f5bd-4ab9-48a7-8f31-b88ab595f867_thumb_001_HD.jpg",ترامپ: مذاکرات با جمهوری اسلامی درباره تنگه هرمز و برنامه هسته‌ای آغاز می‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/47766d5da0964d738245e59351ad9b10/hls/8314f5bd-4ab9-48a7-8f31-b88ab595f867.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f1bd42dc35434cdda18afa605e40de62/e8c826f7-4218-4ce7-8cd9-22f278a366b6_thumb_001_HD.jpg",پگاه بنی‌هاشمی: جمهوری اسلامی کودکان را در صف اعدام قرار داده است
+https://daq1pvcuhj77l.cloudfront.net/1/f1bd42dc35434cdda18afa605e40de62/hls/e8c826f7-4218-4ce7-8cd9-22f278a366b6.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4caacda95b72423a99f7c56041921b9f/2fc92c4b-61ef-402c-ab4b-5dbadd048001_thumb_001_HD.jpg",تجمع ایرانیان لس‌آنجلس در اعتراض به احکام اعدام در ایران
 https://daq1pvcuhj77l.cloudfront.net/1/4caacda95b72423a99f7c56041921b9f/hls/2fc92c4b-61ef-402c-ab4b-5dbadd048001.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/33e73ea2bbce4d52a272e68a234c84ad/a3d24fe2-56cd-4a0d-b913-4dd1ff847ba0_thumb_001_HD.jpg",امیر حمیدی: ترامپ با تهدیدهای پی‌درپی، جمهوری اسلامی را به امتیازدهی وادار می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/33e73ea2bbce4d52a272e68a234c84ad/hls/a3d24fe2-56cd-4a0d-b913-4dd1ff847ba0.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e9b2c008323a4b518eadf53bda483da2/00983348-6500-44da-ac14-72259a11ddb7_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۱۲ مرداد
 https://daq1pvcuhj77l.cloudfront.net/1/e9b2c008323a4b518eadf53bda483da2/hls/00983348-6500-44da-ac14-72259a11ddb7.m3u8
 
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/j5mxom4tk96v3dzp/yixwded2gtnmxd5f.jpg",Houston weather: August 2nd overnight forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47545605264_47545605438/47545605438/hf-uuid-e726f9f2-7281-41f7-81e2-769920745d9b/47545605438_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/j4kp4ycmm76eqk87/i8cl0auovh2vp31d.jpg",Family searches for answers 6 months after deadly crash
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47545367255_47545367473/47545367473/hf-uuid-5c73ff8c-4159-4c0a-88f0-21ffe223b768/47545367473_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/8a18fmitmqim90p7/dddnu6hefavvfzlc.jpg",Motorcyclist dies after car crash in Channelview
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47545312331_47545312450/47545312450/hf-uuid-22af6999-7230-43b4-87b0-872104aaa380/47545312450_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/3p4nw2vl2xnlek1o/9eg1yxjjwuej4nrn.jpg",Houston weather: Aug. 2 evening forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47542799567_47542799644/47542799644/hf-uuid-ece6cb6c-a2c5-4acb-b520-3f2b3ab418b4/47542799644_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ercfdaseggyue4fu/11l1ky47lth834qa.jpg",White House moving to end Medicare subsidy | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47540478240_47540478352/47540478352/hf-uuid-c026ab23-8ba3-4eca-ab39-c945d6bdac23/47540478352_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/imjapkywfznj35ho/wzic1g7uo6uva5cm.jpg",Key interest rate left unchanged | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47540418854_47540418938/47540418938/hf-uuid-cad94c29-025e-4ce1-8751-95901654349d/47540418938_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ff6rj0rsmhg5mqv9/gecyc80q6fhql13q.jpg",Houston minority-focused business program ruled unconstitutional | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47540052358_47540052482/47540052482/hf-uuid-bb1abb03-3d4e-49dc-91c3-02a168222383/47540052482_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/mdc2ciff9qo6i2s3/06poccpqbrlr9tvl.jpg",Texas data center plans sparking concerns | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47539857512_47539857605/47539857605/hf-uuid-7d3ce1d8-8a48-4755-83fd-138dc269a484/47539857605_lowres.mp4
+
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/t0kyqns2pghtw7xi/x14au068ttivz8jv.jpg",Annabelle Brasserie | Foodies &amp; Friends
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47506677703_47506677846/47506677846/hf-uuid-96551694-4ebe-4cce-8569-51a98bb638d9/47506677846_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ee0o67onrevjcno7/fusfl4evatxn4eo1.jpg",Annabelle Brasserie | Foodies &amp; Friends
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47506677703_47506844471/47506844471/hf-uuid-7c0ba2e0-8951-4638-b1eb-e2d964d60fae/47506844471_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gcvyvsgza4u7j7c5/0ne1gfxh2lp00czw.jpg",US Attorney General nomination in limbo | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47538746181_47538746277/47538746277/hf-uuid-a541fbd7-f63c-4af3-9c57-1a661d190802/47538746277_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5ty3kz7h4wnl6wta/ffu7bzws5w9i76nw.jpg",Polls show tight Texas election races | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47538475041_47538475130/47538475130/hf-uuid-ba8733c8-9517-46e3-89a5-9cc1ff9827ae/47538475130_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/79lupov3rql0tnko/ujqxcv0x7c4l33nx.jpg",Houston ICE shooting could trigger political backlash | What's Your Point?
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47538168473_47538168578/47538168578/hf-uuid-972da542-c49d-4ca5-b128-b6c5f53b284c/47538168578_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/tlbwh4f6512cqe0n/o764ho2o713ka3zh.jpg",What's Your Point? Overtime | Aug 2, 2026
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47536244776_47536244867/47536244867/hf-uuid-fbec19ce-3941-426f-b312-05a8339c3bed/47536244867_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rc6lbbpp7kur3555/0fgdllf8vhzm5f8m.jpg",ICE shooting latest, tight Texas races, future of data centers, and more | What's Your Point?
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47534262050_47536213282/47536213282/hf-uuid-bd43a728-cfff-48a9-951a-38c473e2eb1d/47536213282_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/o7lr3k6lmb141hc5/klhg6j9flrinqe57.jpg",Houston weather: Aug. 2 morning forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47533917110_47533917256/47533917256/hf-uuid-fd03a3e8-8583-4383-a445-cb8cdd53679c/47533917256_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/arum98ugqqq3qb0i/nzyqy9xfbcrt5xjo.jpg",Houston weather: August 1st overnight forecast
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47527020372_47527020504/47527020504/hf-uuid-81347149-de34-4104-9137-6222afa6ba7b/47527020504_lowres.mp4
@@ -13398,51 +13461,6 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4718691
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/m2jhrt5474bm6p7e/lj7c95iart1311yw.jpg",'Crystal-like' substance found after deadly Houston ICE shooting, FBI says
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47186846791_47186847030/47186847030/hf-uuid-4f43fa27-d72d-4baa-ac7b-5a727e6a9395/47186847030_lowres.mp4
 
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/fz4236l8ah9c7z7c/laol6rnzgzxyfu3h.jpg",WITNESS VIDEO: Witness captures moments following Kroger shooting in Cypress
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47185755145_47185755356/47185755356/hf-uuid-2ea302ec-d089-40e1-a5b5-17507b74ceeb/47185755356_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/nsgrqf0exaqahnl0/q2m59h3zibmhyxr3.jpg",Cypress Kroger shooting: Authorities provide latest details following shooting
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47184975818_47184976013/47184976013/hf-uuid-404fe3d7-a441-4c30-bf15-d4264c26a579/47184976013_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/y40gvn13xney2hjl/zucm5102334le762.jpg",Abbot breaks silence on deadly ICE shooting in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47183880012_47183880123/47183880123/hf-uuid-7a1bfd2d-7a57-40fd-a641-2f98a98d2e85/47183880123_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/v4exrkwxuzuamqtm/ahiwlcuftm4igmqn.jpg",Forecasting with Friends 07.13.2026
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47138801091_47183077716/47183077716/hf-uuid-37709ef2-d09e-48d9-aeaa-0fe9c474e698/47183077716_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/01lcp7hn7keocdmj/ltatfxoa9h3ijj79.jpg",FULL: Gov. Greg Abbott talks initiatives to keep Texas affordable in Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47182408948_47182409047/47182409047/hf-uuid-5d45076e-4440-4a8d-82e0-b6dbd3f87c88/47182409047_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/5qoj5vbay9hbvu35/kdfjjxubia3jcr35.jpg",Your Legal Questions: July 14, 2026
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47179833425_47179833518/47179833518/hf-uuid-5f231eb2-ce72-4a9a-8274-b3298e1850b2/47179833518_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/elv5ixs5tk8gwxmj/jpdtymj1760ee75a.jpg",Houston Restaurant Weeks 2026 menus released
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47178387525_47178387683/47178387683/hf-uuid-755534e7-3243-4bd7-aca4-052484914e0d/47178387683_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cokvlxy4l4mgps6s/6v2rh1szxprc0y6m.jpg",Houston weather: Scattered showers Wednesday, flood threat
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47175524805_47175524899/47175524899/hf-uuid-6a6ef926-6243-404e-b1bc-7b6aeff8a874/47175524899_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ptc3y70ktd03h3zx/1hgup44l5x3n9ql2.jpg",FOX 26 packs 3,000 kids' lunches
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47170078127_47170078379/47170078379/hf-uuid-b1b04bdb-b8f3-4596-aebd-0e55f72959a0/47170078379_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qg9b2dgfr8lo6p5b/68fwxo8svyzg3mcu.jpg",Houston weather: FOX 26 Storm Alert extended through Wednesday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47169939680_47169939810/47169939810/hf-uuid-ba347b0f-9c8f-4c6f-bf17-6a618ad165dd/47169939810_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ny0zjkmsj036pbz0/ehpffblp0ely8pf2.jpg",Remembering Texans Co-Founder Janice McNair's Legacy
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47169592157_47169592333/47169592333/hf-uuid-7f679d03-7e73-4830-b974-c13993dad92e/47169592333_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4jcm5vfiums8w14y/p34ymvgm1nqehv42.jpg",Two arrested in Pokemon card burglary
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47169473714_47169473882/47169473882/hf-uuid-8f1c682e-6016-4cb1-95e2-6d3b7af41594/47169473882_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/1uqblwngqyvz72ao/ssnb70kam7hsxgz1.jpg",Dance pole hits sprinkler flooding Houston apartment
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47166857204_47167725157/47167725157/hf-uuid-be74fa5d-93cf-41e8-827b-02e700e4f192/47167725157_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/ijh36sy9epu0pcc5/vx1c0kb4mt2hbfbh.jpg",Houston weather: Additional rainfall expected across Texas on Wednesday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47166260727_47166260927/47166260927/hf-uuid-48fdc50d-9b87-4310-bd89-e34d952c2861/47166260927_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/y7ofnuaqc05iatqz/m53ubnhc95oez3vw.jpg",U.S. launches new strikes on Iran
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47166147840_47166148088/47166148088/hf-uuid-a42e992a-a4ee-44c8-8bc5-d2b041a6388f/47166148088_lowres.mp4
-
 #EXTINF:-1 tvg-name="Keshet 12" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -14055,6 +14073,15 @@ https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Zdi31dy.png" tvg-id="AlAlam.ir@SD",Al Alam (360p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live2.alalam.ir/alalam.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -14135,6 +14162,15 @@ https://hls.oxir.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/CeMf68L.png" tvg-id="OmideIranTV.us@SD",Omide Iran
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://oitnhls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/oHmh5Jb.png" tvg-id="Shabakeh7.us@SD",Shabakeh 7
 #EXTVLCOPT:network-caching=2000
@@ -14297,15 +14333,6 @@ https://nl.livekadeh.com/hls2/alwilayah_tv.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" tvg-id="IranJewishTV.ir@SD",Iran Jewish TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Ig0SPev.png" tvg-id="MohabatTV.ir@SD",Mohabat TV (540p)
 #EXTVLCOPT:network-caching=2000
