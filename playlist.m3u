@@ -12483,6 +12483,15 @@ https://hls.navahang.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.sunmusic.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="http://media.boni-records.com/logo.png",Music Channel
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+http://media.boni-records.com/index.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12518,6 +12527,51 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d346d0d466a4549b48c76c33f181592/7459fd84-5349-4f50-8d5f-1d0f5d6e7b3d_thumb_001_HD.jpg",واکنش‌ها در آمریکا به اعلام توقف جنگ و ادامه مذاکرات از سوی ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/7d346d0d466a4549b48c76c33f181592/hls/7459fd84-5349-4f50-8d5f-1d0f5d6e7b3d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3427b5a2d22f45b1aa5538cfef9ff5e7/689a42b5-074f-406d-98cc-c479470b9e1d_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۱۲ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/3427b5a2d22f45b1aa5538cfef9ff5e7/hls/689a42b5-074f-406d-98cc-c479470b9e1d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/43a938f446e4403bac9937f391fe035e/f57660d2-4215-46c5-aabc-454502de10aa_thumb_002_HD.jpg",واکنش کاربران رسانه‌های اجتماعی به تناقض در اظهارنظرها درباره درگیری و مذاکره با آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/43a938f446e4403bac9937f391fe035e/hls/f57660d2-4215-46c5-aabc-454502de10aa.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/12d2073ae30e4fb5ab50e2f7d94063e6/1da0c68f-4276-4cc2-a190-8f3b885f2df4_thumb_005_HD.jpg",گزارش‌ها درباره استفاده جمهوری اسلامی از مسیرهای قانونی مهاجرت برای انتقال عوامل اطلاعاتی
+https://daq1pvcuhj77l.cloudfront.net/1/12d2073ae30e4fb5ab50e2f7d94063e6/hls/1da0c68f-4276-4cc2-a190-8f3b885f2df4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0a0476fb87d44f768a8bd1d541e765b7/f0466377-5abc-4b43-a190-0d52a7b9cb13_thumb_001_HD.jpg",واکنش‌های سیاسی به طرح جنجالی اینفانتینو برای تغییرات تجاری فیفا
+https://daq1pvcuhj77l.cloudfront.net/1/0a0476fb87d44f768a8bd1d541e765b7/hls/f0466377-5abc-4b43-a190-0d52a7b9cb13.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0b722b832fa94877ad3acfda253dc4b7/70e044ed-205e-49e1-b8f0-d6295f444ffc_thumb_002_HD.jpg",اختلال در زندگی روزمره برخی شهرها همزمان با ارسال ارزاق عمومی به عراق برای مراسم اربعین
+https://daq1pvcuhj77l.cloudfront.net/1/0b722b832fa94877ad3acfda253dc4b7/hls/70e044ed-205e-49e1-b8f0-d6295f444ffc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dc06504d3b47482381bf7ade1327593b/c1ecd15a-0169-447e-ad91-98218ce236e4_thumb_001_HD.jpg",آرش آزرمی: ادعای دولت درباره نبود کمبود کالاهای اساسی، نشانه بی‌توجهی به وضعیت مردم است
+https://daq1pvcuhj77l.cloudfront.net/1/dc06504d3b47482381bf7ade1327593b/hls/c1ecd15a-0169-447e-ad91-98218ce236e4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/73f06ccd6f004259804c2b0d296aedb9/fe6ecebd-78c6-41b5-9fbd-97ec34f7e173_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، دوشنبه ۱۲ مرداد، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/73f06ccd6f004259804c2b0d296aedb9/hls/fe6ecebd-78c6-41b5-9fbd-97ec34f7e173.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cb5f26d2edf9494aa8fd663abd6cb3e1/7a3f7c6a-34c3-4d8b-a105-b097ec089321_thumb_001_HD.jpg",گاه‌شمار جنگ و مذاکره میان آمریکا و جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/cb5f26d2edf9494aa8fd663abd6cb3e1/hls/7a3f7c6a-34c3-4d8b-a105-b097ec089321.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5bc9252b96b144ff909bbe911f8d177e/e7caf93f-581c-4aff-bcf6-71bc0e2791c6_thumb_001_HD.jpg",لغو حملات آمریکا به جمهوری اسلامی با میانجی‌گری کشورهای منطقه
+https://daq1pvcuhj77l.cloudfront.net/1/5bc9252b96b144ff909bbe911f8d177e/hls/e7caf93f-581c-4aff-bcf6-71bc0e2791c6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d5b38149854462da0f4052da5aa18c7/046c0606-895c-4fff-8fea-867219ea713c_thumb_001_HD.jpg",اخبار نیم‌روزی | دوشنبه ۱۲ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/7d5b38149854462da0f4052da5aa18c7/hls/046c0606-895c-4fff-8fea-867219ea713c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e4db1d906f704bbeb9fb2caaeec2e41e/e7000fed-123a-4556-b4f7-a4920a6b5b7e_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: بدون گزینه نظامی، گشایشی در پرونده تنگه هرمز بعید است
+https://daq1pvcuhj77l.cloudfront.net/1/e4db1d906f704bbeb9fb2caaeec2e41e/hls/e7000fed-123a-4556-b4f7-a4920a6b5b7e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/52ba21a524ce4ca4933231907f2ad7c3/9c165708-7e7f-4440-ad28-b2022322ffa9_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۱۲ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/52ba21a524ce4ca4933231907f2ad7c3/hls/9c165708-7e7f-4440-ad28-b2022322ffa9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eb2d791a8690400693ffd4f4c53e30b4/582939cc-13b9-4a2a-95f0-c6dab2fa2159_thumb_001_HD.jpg",واکنش مخاطبان ایران‌اینترنشنال به لغو حمله آمریکا و ادامه تعامل با جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/eb2d791a8690400693ffd4f4c53e30b4/hls/582939cc-13b9-4a2a-95f0-c6dab2fa2159.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/484ee983b03744af85e467ec3f02c655/321d9047-1686-43ce-befb-f4e764055315_thumb_003_HD.jpg",مرتضی کاظمیان: توقف حملات آمریکا علیه جمهوری اسلامی به معنای تغییر راهبرد ترامپ نیست
+https://daq1pvcuhj77l.cloudfront.net/1/484ee983b03744af85e467ec3f02c655/hls/321d9047-1686-43ce-befb-f4e764055315.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/90c8c78b1d71444a849737ded0179986/ea6f9a70-7542-47f3-92ee-27c95fd18d76_thumb_001_HD.jpg",لغو حملات آمریکا به جمهوری اسلامی به آمادگی ارتش اسرائیل آسیب زد
 https://daq1pvcuhj77l.cloudfront.net/1/90c8c78b1d71444a849737ded0179986/hls/ea6f9a70-7542-47f3-92ee-27c95fd18d76.m3u8
@@ -14333,6 +14387,15 @@ https://nl.livekadeh.com/hls2/alwilayah_tv.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" tvg-id="IranJewishTV.ir@SD",Iran Jewish TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Ig0SPev.png" tvg-id="MohabatTV.ir@SD",Mohabat TV (540p)
 #EXTVLCOPT:network-caching=2000
