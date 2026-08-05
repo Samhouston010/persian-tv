@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12528,8 +12537,38 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/671665c650c6416b8bf9ec0e9a8b8dd2/851eb229-b9f2-4490-a0d4-036fa7773b19_thumb_001_HD.jpg",علی خضریان، نماینده مجلس: برای امنیت مسئولان «شهرهای حکمرانی زیرزمینی» بسازیم
+https://daq1pvcuhj77l.cloudfront.net/1/671665c650c6416b8bf9ec0e9a8b8dd2/hls/851eb229-b9f2-4490-a0d4-036fa7773b19.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f6cdb0a7be744e1bb2a746f70e5de021/54feb8b7-8be1-4e1a-bfed-02d900592630_thumb_001_HD.jpg",چرا هیچ صدایی از مجتبی خامنه‌ای منتشر نمی‌شود؟
+https://daq1pvcuhj77l.cloudfront.net/1/f6cdb0a7be744e1bb2a746f70e5de021/hls/54feb8b7-8be1-4e1a-bfed-02d900592630.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f78b70ad201e4339ac8bd8f74b84ea41/ec620c55-3a51-4ca6-bd3a-a63eea6e0a68_thumb_001_HD.jpg",خطر اجرای حکم اعدام برای دو معترض در مشهد و لردگان
+https://daq1pvcuhj77l.cloudfront.net/1/f78b70ad201e4339ac8bd8f74b84ea41/hls/ec620c55-3a51-4ca6-bd3a-a63eea6e0a68.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/42a18f24dc464389b901069167826ae5/b918febb-a2de-439d-9bad-840f04ce7f1f_thumb_001_HD.jpg",صادرات بیش از ۳۰ میلیون بشکه نفت عراق از تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/42a18f24dc464389b901069167826ae5/hls/b918febb-a2de-439d-9bad-840f04ce7f1f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d271bfe1c88f4decad3b8e5bbcd1fa36/d74183eb-e41b-42e9-b7b7-532719ea1625_thumb_001_HD.jpg",پیشرفت مذاکرات برای بازگشایی تنگه هرمز؛ احتمال توافق در روزهای آینده
+https://daq1pvcuhj77l.cloudfront.net/1/d271bfe1c88f4decad3b8e5bbcd1fa36/hls/d74183eb-e41b-42e9-b7b7-532719ea1625.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/926c8727b2664d008cafb92a94ef7ede/f0fc23a2-c3e3-444c-a726-1d7128e81019_thumb_001_HD.jpg",سیاست با مراد ویسی: سرنگونی؛ مساله اول ایران و ایرانیان
+https://daq1pvcuhj77l.cloudfront.net/1/926c8727b2664d008cafb92a94ef7ede/hls/f0fc23a2-c3e3-444c-a726-1d7128e81019.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/022dfed477c4423daff9205d476dc1da/a8a7577d-ea9f-47e4-a1ec-228add72752f_thumb_001_HD.jpg",مایکل ماکوفسکی: توافق تهران و واشینگتن تنها با امتیازهای قابل‌توجه آمریکا ممکن است
+https://daq1pvcuhj77l.cloudfront.net/1/022dfed477c4423daff9205d476dc1da/hls/a8a7577d-ea9f-47e4-a1ec-228add72752f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1aa12108515a492a90b527768e332f55/c6a723da-6852-4870-b029-205b1ddd5525_thumb_001_HD.jpg",جمشید برزگر: تکذیب استعفای پزشکیان نشانه شکاف‌های جدی در ساختار قدرت است
+https://daq1pvcuhj77l.cloudfront.net/1/1aa12108515a492a90b527768e332f55/hls/c6a723da-6852-4870-b029-205b1ddd5525.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/60d6559123ce4a40b6ba9a7a0d40649c/b5703c9e-b620-475a-bfbb-0d0b164ae0a2_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
 https://daq1pvcuhj77l.cloudfront.net/1/60d6559123ce4a40b6ba9a7a0d40649c/hls/b5703c9e-b620-475a-bfbb-0d0b164ae0a2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/998673dd379d41d3a2f0fbf07f2e283c/154325de-b691-4c50-89d7-d2c151d908d6_thumb_001_HD.jpg",چشم‌انداز: ماجرای استعفاهای پزشکیان و اولتیماتوم مجتبی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/998673dd379d41d3a2f0fbf07f2e283c/hls/154325de-b691-4c50-89d7-d2c151d908d6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1c0950e1a5b54918ab21c3c2e2f7c421/95a2db1a-6102-4591-9f23-bfa1fd036910_thumb_001_HD.jpg",ماجرای استعفاهای پزشکیان و اولتیماتوم مجتبی خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/1c0950e1a5b54918ab21c3c2e2f7c421/hls/95a2db1a-6102-4591-9f23-bfa1fd036910.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/913fd9262a844118834a9ebeebab21ea/683f1f0c-1fa6-4d74-8afa-49a68bbb39a2_thumb_001_HD.jpg",جابر رجبی: حوثی‌های عراق بخشی از تلاش جمهوری اسلامی برای حفظ نفوذ منطقه‌ای است
 https://daq1pvcuhj77l.cloudfront.net/1/913fd9262a844118834a9ebeebab21ea/hls/683f1f0c-1fa6-4d74-8afa-49a68bbb39a2.m3u8
