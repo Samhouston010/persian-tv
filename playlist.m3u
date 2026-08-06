@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12536,21 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d5179fff4161422db23dfb1501edc562/69641967-f0ec-4242-9b06-cd3cffdf31a2_thumb_001_HD.jpg",روایت قالیباف از شب اعلام خبر مرگ خامنه‌ای، واقعاً ضایع است!
+https://daq1pvcuhj77l.cloudfront.net/1/d5179fff4161422db23dfb1501edc562/hls/69641967-f0ec-4242-9b06-cd3cffdf31a2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f05cfc122c9a46718630005e87c07dc2/b5da3eb6-1f85-4e69-bd20-1b5b15cfcd5b_thumb_001_HD.jpg",جامعه ایران چگونه با این زخم روانی زندگی می‌کند؟
+https://daq1pvcuhj77l.cloudfront.net/1/f05cfc122c9a46718630005e87c07dc2/hls/b5da3eb6-1f85-4e69-bd20-1b5b15cfcd5b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3746ea7823254fd08e18cf200efa89b8/c158e7e7-a6fe-4a64-9d24-3eff816d8b6c_thumb_001_HD.jpg",کامیار بهرنگ: پس از کشته شدن علی خامنه‌ای، شکاف‌های قدرت در جمهوری اسلامی آشکار شده است
+https://daq1pvcuhj77l.cloudfront.net/1/3746ea7823254fd08e18cf200efa89b8/hls/c158e7e7-a6fe-4a64-9d24-3eff816d8b6c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4705086b43c34792a3aa63a3d36ac43e/7a55dcf4-2e0b-4562-a974-cf53c715ab9b_thumb_001_HD.jpg",ادامه ابهام درباره مذاکرات؛ تایید سپاه شرط اجرای توافق، هشدار ترامپ به تهران
+https://daq1pvcuhj77l.cloudfront.net/1/4705086b43c34792a3aa63a3d36ac43e/hls/7a55dcf4-2e0b-4562-a974-cf53c715ab9b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/81f7a035501d40759d990aa100114a72/4bb8d9cd-7100-4e84-887a-27693ae38f9a_thumb_001_HD.jpg", سیاست با مراد ویسی: ایران‌فروشی در دریای خزر
+https://daq1pvcuhj77l.cloudfront.net/1/81f7a035501d40759d990aa100114a72/hls/4bb8d9cd-7100-4e84-887a-27693ae38f9a.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c94dee4f2bb5494482c48d9a5ef40b07/2a18182f-f365-476e-8cf1-ba40a755b572_thumb_001_HD.jpg",غسان عاشور: عراق نقش تعیین‌کننده‌ای در تنش‌ها و تحولات منطقه‌ای ندارد
 https://daq1pvcuhj77l.cloudfront.net/1/c94dee4f2bb5494482c48d9a5ef40b07/hls/2a18182f-f365-476e-8cf1-ba40a755b572.m3u8
@@ -14465,15 +14489,6 @@ http://iran620.com:1935/live/IranJewishTv/playlist.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://uni6rtmp.tulix.tv/ucur1/Payvand/playlist.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Jh5ADee.png" tvg-id="RasoulallahTv.ir@HD",RasoulallahTv (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://avr.host247.net/live/rasoulallahtv/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/aeS4Sjv.png" tvg-id="ICnet1.ca@SD",icnet 1
 #EXTVLCOPT:network-caching=2000
