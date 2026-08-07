@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12527,30 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c94988a86b3f4977955939f23e071fa8/965a1f8e-22bb-4d63-9c3e-c2302f6f66e3_thumb_001_HD.jpg",تغییر تصمیم فدراسیون فوتبال برای سقوط تیم از لیگ برتر
+https://daq1pvcuhj77l.cloudfront.net/1/c94988a86b3f4977955939f23e071fa8/hls/965a1f8e-22bb-4d63-9c3e-c2302f6f66e3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/222bfead81e3453e9cb13a40d5c4e7c3/f0cd3957-a161-4ab8-b073-505e9d80cd00_thumb_001_HD.jpg",فصل جدید لیگ برتر؛ میراث تصمیم‌های فصل ناتمام
+https://daq1pvcuhj77l.cloudfront.net/1/222bfead81e3453e9cb13a40d5c4e7c3/hls/f0cd3957-a161-4ab8-b073-505e9d80cd00.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/82efe71196aa483ea4cf6c314712e710/a7c0aa00-f842-465e-a6f0-af5bb0bd098a_thumb_001_HD.jpg",آغاز لیگ برتر با بحران ورزشگاه‌ها و سکوهای خالی
+https://daq1pvcuhj77l.cloudfront.net/1/82efe71196aa483ea4cf6c314712e710/hls/a7c0aa00-f842-465e-a6f0-af5bb0bd098a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/da2d40c716564164adc55e359d6fc722/a0a28236-084c-4432-bf17-7bdfd505e866_thumb_001_HD.jpg",امضای «توافق مکه»؛ عربستان، ترکیه و پاکستان پیمان دفاعی سه‌جانبه تشکیل دادند
+https://daq1pvcuhj77l.cloudfront.net/1/da2d40c716564164adc55e359d6fc722/hls/a0a28236-084c-4432-bf17-7bdfd505e866.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6f55ed6e1eef41d4a48354f83f559dc0/62c10ef5-6a3d-4f2f-bca2-533c2c16487d_thumb_001_HD.jpg",محمد قائدی: توافق تهران و واشینگتن در آینده نزدیک بعید به نظر می‌رسد
+https://daq1pvcuhj77l.cloudfront.net/1/6f55ed6e1eef41d4a48354f83f559dc0/hls/62c10ef5-6a3d-4f2f-bca2-533c2c16487d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1b605ba595c54e33b11dde3a97b1ae2e/7baa1ecf-0d9c-4567-9487-25bb43110642_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/1b605ba595c54e33b11dde3a97b1ae2e/hls/7baa1ecf-0d9c-4567-9487-25bb43110642.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/61c98562b6f645b58d5ccb332d8e176c/bd5f749a-13c2-4034-8771-5eac659ff189_thumb_001_HD.jpg",حرف آخر با پوریا زراعتی - نقشه‌ی اسرائیل همزمان با بازی ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/61c98562b6f645b58d5ccb332d8e176c/hls/bd5f749a-13c2-4034-8771-5eac659ff189.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/01b78909b62b4bb282c8b1832eb52bc4/c9a86509-d8a1-43a7-919b-c43334b02bf9_thumb_001_HD.jpg",پلیس تورنتو دو مظنون را در پرونده تیراندازی به کنسولگری آمریکا بازداشت کرد
+https://daq1pvcuhj77l.cloudfront.net/1/01b78909b62b4bb282c8b1832eb52bc4/hls/c9a86509-d8a1-43a7-919b-c43334b02bf9.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aa8ad318027d4366b0995d258c320150/24491d3e-763c-485f-a86b-6d42e9704bdc_thumb_001_HD.jpg",اسکات بسنت: احتمال دستیابی به توافق آتش‌بس تا امروز یا فردا وجود دارد
 https://daq1pvcuhj77l.cloudfront.net/1/aa8ad318027d4366b0995d258c320150/hls/24491d3e-763c-485f-a86b-6d42e9704bdc.m3u8
