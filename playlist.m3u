@@ -12492,15 +12492,6 @@ https://hls.sunmusic.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://media.boni-records.com/index.m3u8
 
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",DELUXE MUSIC DANCE BY KONTOR
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12518,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bc799c2f4e3d4628a6d3500bb21b22ad/8771a253-63a3-4db2-bed2-a476b13f8cb5_thumb_001_HD.jpg",عطا حسینیان: جمهوری اسلامی بیش از وزارت جنگ، از وزارت خزانه‌داری آمریکا هراس دارد
+https://daq1pvcuhj77l.cloudfront.net/1/bc799c2f4e3d4628a6d3500bb21b22ad/hls/8771a253-63a3-4db2-bed2-a476b13f8cb5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5e4f182fe4964b01946cc2377648045d/028de95e-f596-4413-aa44-6a69eb340542_thumb_001_HD.jpg",مقام آمریکایی: پس از اعلام توافق، ایالات متحده محاصره دریایی ایران را لغو خواهد کرد
+https://daq1pvcuhj77l.cloudfront.net/1/5e4f182fe4964b01946cc2377648045d/hls/028de95e-f596-4413-aa44-6a69eb340542.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/49b56274ec7744baa2ab17ea87b91856/a8da0093-9179-4372-8fe3-2431582fd518_thumb_001_HD.jpg",آزرده خاطر شدن هواداران فوتبال با طرح فروش جام جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/49b56274ec7744baa2ab17ea87b91856/hls/a8da0093-9179-4372-8fe3-2431582fd518.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5bb805c9afa1467ca1f02930b515471b/6c882b44-6471-464e-9064-9ae506e5f3e4_thumb_001_HD.jpg",ورود جیانی اینفانتینو و فیفا به یک چالش بزرگ با طرحی جنجالی
+https://daq1pvcuhj77l.cloudfront.net/1/5bb805c9afa1467ca1f02930b515471b/hls/6c882b44-6471-464e-9064-9ae506e5f3e4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9fbc5fe81844d27a9e1fbb0d2e24178/a47fcde8-bd82-4fa6-919e-5b85a7fe433a_thumb_001_HD.jpg",برگزاری فصل جدید لیگ برتر با حضور ۱۸ تیم و بدون ورزشگاه
+https://daq1pvcuhj77l.cloudfront.net/1/d9fbc5fe81844d27a9e1fbb0d2e24178/hls/a47fcde8-bd82-4fa6-919e-5b85a7fe433a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b1a315a152e249f9bc67feef0fe6834e/4dff6da9-1c34-4af0-b576-07b5add7dd2d_thumb_001_HD.jpg",مقام عراقی به ایران‌اینترنشنال: دولت در آستانه وارد کردن ضربه نهایی به شبه‌نظامیان است
+https://daq1pvcuhj77l.cloudfront.net/1/b1a315a152e249f9bc67feef0fe6834e/hls/4dff6da9-1c34-4af0-b576-07b5add7dd2d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6ae50a27bdf5419ea0c3d52c6bf02c5f/88ae273e-1fed-43bf-ad5c-efcacd26d995_thumb_001_HD.jpg",سناتور جمهوری‌خواه: هدف آمریکا باید فروپاشی جمهوری اسلامی باشد، نه توافق با تهران
+https://daq1pvcuhj77l.cloudfront.net/1/6ae50a27bdf5419ea0c3d52c6bf02c5f/hls/88ae273e-1fed-43bf-ad5c-efcacd26d995.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d8e9ff76ffac4bba9cdd6467e89b654d/91953130-e666-497b-b553-541c0e767f0c_thumb_001_HD.jpg",پایان نیمه‌تمام لیگ بیست‌وپنجم در سایه جنگ؛ آغاز فصل جدید با بحران ورزشگاه و سکوهای خالی 
+https://daq1pvcuhj77l.cloudfront.net/1/d8e9ff76ffac4bba9cdd6467e89b654d/hls/91953130-e666-497b-b553-541c0e767f0c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/90accd99823c41cba80e754235872b78/d4818cd5-ce20-422c-8f13-1c5dca365b30_thumb_001_HD.jpg",فلاکت در فوتبال ایران؛ برگزاری بازی‌های استقلال و تراکتور در لیگ نخبگان در بصره
+https://daq1pvcuhj77l.cloudfront.net/1/90accd99823c41cba80e754235872b78/hls/d4818cd5-ce20-422c-8f13-1c5dca365b30.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/909f1bc5175d4ecdb8ec94249c06c0e2/04566a39-c725-42ef-b74a-ce44ed037957_thumb_001_HD.jpg",ساختن ورزشگاه آخرین اولویت جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/909f1bc5175d4ecdb8ec94249c06c0e2/hls/04566a39-c725-42ef-b74a-ce44ed037957.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c94988a86b3f4977955939f23e071fa8/965a1f8e-22bb-4d63-9c3e-c2302f6f66e3_thumb_001_HD.jpg",تغییر تصمیم فدراسیون فوتبال برای سقوط تیم از لیگ برتر
 https://daq1pvcuhj77l.cloudfront.net/1/c94988a86b3f4977955939f23e071fa8/hls/965a1f8e-22bb-4d63-9c3e-c2302f6f66e3.m3u8
