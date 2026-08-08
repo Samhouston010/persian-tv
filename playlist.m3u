@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12536,24 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fd69f27662534b94b3b88aab50855511/8b10588b-ec0d-444f-b42c-611b004817ec_thumb_001_HD.jpg",احمد علوی، اقتصاددان: دولت اگر قادر به انجام وظایفش نیست، باید استعفا دهد
+https://daq1pvcuhj77l.cloudfront.net/1/fd69f27662534b94b3b88aab50855511/hls/8b10588b-ec0d-444f-b42c-611b004817ec.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/04ace3cdc3974a06bc8ef9be17139e38/0500af0b-128f-48ad-8dd9-b44f1a45192b_thumb_001_HD.jpg",عطا محامد: سپاه با تنگه هرمز به دنبال افزایش قدرت چانه‌زنی در مذاکرات است
+https://daq1pvcuhj77l.cloudfront.net/1/04ace3cdc3974a06bc8ef9be17139e38/hls/0500af0b-128f-48ad-8dd9-b44f1a45192b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5d4175e185244c6581e4e9604bd44da2/39c6aec4-119b-4b31-a23c-a7ec1e13b7c2_thumb_001_HD.jpg",سرخط خبرهای شنبه ۱۷ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/5d4175e185244c6581e4e9604bd44da2/hls/39c6aec4-119b-4b31-a23c-a7ec1e13b7c2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8e8655fa0cbc4cf393d1f12c221131b3/fa429dcc-540a-41c6-b456-82f8cedc5133_thumb_001_HD.jpg",مهتاب قلی‌زاده: مرزهای زمینی پاسخگوی تلاش حکومت برای جایگزینی بنادر جنوبی نیستند
+https://daq1pvcuhj77l.cloudfront.net/1/8e8655fa0cbc4cf393d1f12c221131b3/hls/fa429dcc-540a-41c6-b456-82f8cedc5133.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a9415957d8ae443b98628b42eb8aee2b/9b477403-4158-4204-a621-416c174688c3_thumb_001_HD.jpg",حمله دو پهپاد به اردوگاه خانواده‌های کومله کردستان ایران در اقلیم کردستان عراق
+https://daq1pvcuhj77l.cloudfront.net/1/a9415957d8ae443b98628b42eb8aee2b/hls/9b477403-4158-4204-a621-416c174688c3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/afa31fe0ba494e8e875c06c91733cdff/132737ab-2e5a-4442-b5a2-82ce4125809b_thumb_001_HD.jpg",شهرام خلدی: اظهارات پزشکیان درباره مذاکرات، پروپاگاندای جمهوری اسلامی را دنبال می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/afa31fe0ba494e8e875c06c91733cdff/hls/132737ab-2e5a-4442-b5a2-82ce4125809b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/97091412092d4bb3a7735260ff04b05e/e6196362-fffd-41e9-b125-4e2b8fb1b09a_thumb_005_HD.jpg",گردهمایی ایرانیان بر سر مزار فریدون فرخزاد در سی‌وچهارمین سالروز قتل او
 https://daq1pvcuhj77l.cloudfront.net/1/97091412092d4bb3a7735260ff04b05e/hls/e6196362-fffd-41e9-b125-4e2b8fb1b09a.m3u8
@@ -14120,15 +14147,6 @@ https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Zdi31dy.png" tvg-id="AlAlam.ir@SD",Al Alam (360p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live2.alalam.ir/alalam.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
