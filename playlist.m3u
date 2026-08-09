@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12536,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/46bd961b2e1f488da43516bd912ff9c8/abaffd64-bb65-49cd-8315-627627825f87_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: دعوت سپاه از ترامپ برای جنگ با طرح شروط تازه
+https://daq1pvcuhj77l.cloudfront.net/1/46bd961b2e1f488da43516bd912ff9c8/hls/abaffd64-bb65-49cd-8315-627627825f87.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8acccf9af4834ad2ac1a03528be548e7/9132e680-d3cd-4b32-87cc-845eaf6a5441_thumb_001_HD.jpg",شروط محال مجتبی خامنه‌ای برای بازگشایی تنگه هرمز؛ آیا سپاه ترامپ را به جنگ برمی‌گرداند؟
+https://daq1pvcuhj77l.cloudfront.net/1/8acccf9af4834ad2ac1a03528be548e7/hls/9132e680-d3cd-4b32-87cc-845eaf6a5441.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/54e88b5b35184168ba4780ec92d971f0/514b65a7-e858-47c7-8ba2-ccad6e9d7a86_thumb_001_HD.jpg",اخبار شبانگاهی | یکشنبه ۱۸ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/54e88b5b35184168ba4780ec92d971f0/hls/514b65a7-e858-47c7-8ba2-ccad6e9d7a86.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/874eb89e3d2247a9a8f0816c9193807d/fa25cb8b-afdd-4665-b99f-1b8de601b770_thumb_001_HD.jpg",تجمع ایرانیان در لندن و پاریس در حمایت از انقلاب ملی ایرانیان
+https://daq1pvcuhj77l.cloudfront.net/1/874eb89e3d2247a9a8f0816c9193807d/hls/fa25cb8b-afdd-4665-b99f-1b8de601b770.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/256a7224653a45adab747fa4bebeb860/c4ebb5f7-0542-446f-b305-10eb3fd8a5f6_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۱۸ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/256a7224653a45adab747fa4bebeb860/hls/c4ebb5f7-0542-446f-b305-10eb3fd8a5f6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cab9cae013b74f6b8d9b56ef2661d6ad/dbf4f843-13f4-4c3b-92f9-5b52cfba4759_thumb_001_HD.jpg",ایرانیان دوسلدورف آلمان در حمایت از شاهزاده رضا پهلوی و گذار از جمهوری اسلامی تجمع کردند
+https://daq1pvcuhj77l.cloudfront.net/1/cab9cae013b74f6b8d9b56ef2661d6ad/hls/dbf4f843-13f4-4c3b-92f9-5b52cfba4759.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/22e1bea218cd4992b20a109c51b7008f/ad7d547e-b429-4a31-9083-7357b8df11b0_thumb_002_HD.jpg",نتانیاهو: هیچ عقب‌نشینی پیش از خلع سلاح کامل حماس انجام نخواهد شد
+https://daq1pvcuhj77l.cloudfront.net/1/22e1bea218cd4992b20a109c51b7008f/hls/ad7d547e-b429-4a31-9083-7357b8df11b0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f43680a2cc0e4e6abba38803b989e00c/5ddc7d86-f1b3-43f5-8b25-2286525a5a2a_thumb_001_HD.jpg",واکنش‌ها به ارسال لایحه کنوانسیون رژیم حقوقی دریای خزر به مجلس جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/f43680a2cc0e4e6abba38803b989e00c/hls/5ddc7d86-f1b3-43f5-8b25-2286525a5a2a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9a323a88d2e5451aa6b4a8e6ce716b3f/221c81d5-8c41-4c22-96a4-20b64fe0feed_thumb_001_HD.jpg",حمید رسایی در انیمیشنی، آمریکا را به گرگ و مذاکره‌کنندگان جمهوری اسلامی را به خر تشبیه کرد
+https://daq1pvcuhj77l.cloudfront.net/1/9a323a88d2e5451aa6b4a8e6ce716b3f/hls/221c81d5-8c41-4c22-96a4-20b64fe0feed.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/23b6130e3e9f4823b19d274dac6538eb/53ea5232-287c-4aeb-9dc2-1e3e172a898b_thumb_001_HD.jpg",شهرام خلدی: باب‌المندب به اهرم فشار جدید جمهوری اسلامی تبدیل شده است
+https://daq1pvcuhj77l.cloudfront.net/1/23b6130e3e9f4823b19d274dac6538eb/hls/53ea5232-287c-4aeb-9dc2-1e3e172a898b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1f2e6d6eb68d42fe9144f12d980f0230/f0c6afc9-2147-4886-b9de-1e09bff9ecfd_thumb_001_HD.jpg",حمله روسیه به بندر اودسا؛ هشت تن زخمی شدند
 https://daq1pvcuhj77l.cloudfront.net/1/1f2e6d6eb68d42fe9144f12d980f0230/hls/f0c6afc9-2147-4886-b9de-1e09bff9ecfd.m3u8
