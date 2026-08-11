@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12537,8 +12528,32 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7025c4f56b4947f1ad62093e745e779e/ad95dcab-ceb9-4b71-ae21-b2afef6bde17_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲۰ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/7025c4f56b4947f1ad62093e745e779e/hls/ad95dcab-ceb9-4b71-ae21-b2afef6bde17.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/742f9f5960d0450ab05943990128e1ef/39efe550-4089-4a1a-ab2e-b9836ca00357_thumb_001_HD.jpg",انجمن حمایت از حقوق کودکان: کودک‌آزاری جنسی، پرتکرارترین موضوع پرونده‌های حقوقی است
+https://daq1pvcuhj77l.cloudfront.net/1/742f9f5960d0450ab05943990128e1ef/hls/39efe550-4089-4a1a-ab2e-b9836ca00357.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1d81be05696643ac911694c935da2dc7/80170a2f-66e6-4782-9db4-313fc5e52565_thumb_001_HD.jpg",دادگاه جنایی سوریه بشار اسد را به اعدام محکوم کرد
+https://daq1pvcuhj77l.cloudfront.net/1/1d81be05696643ac911694c935da2dc7/hls/80170a2f-66e6-4782-9db4-313fc5e52565.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f9319e5215224993af89e5f94248a80b/d5ac9ac7-40da-419e-9409-c7a49e4020e5_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، سه‌شنبه ۲۰ مرداد، با مجتبی هاشمی، روزنامه‌نگار
+https://daq1pvcuhj77l.cloudfront.net/1/f9319e5215224993af89e5f94248a80b/hls/d5ac9ac7-40da-419e-9409-c7a49e4020e5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7251ce0250b44d97a052349a8452b81b/5248569d-8211-4282-b9db-740e9f609386_thumb_002_HD.jpg",پزشک و متخصص کودکان: جمهوری‌اسلامی اولویتی برای حل بحران دارو در ایران قائل نیست
+https://daq1pvcuhj77l.cloudfront.net/1/7251ce0250b44d97a052349a8452b81b/hls/5248569d-8211-4282-b9db-740e9f609386.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/145eabcb55464f2cbd1e798ea993aa7d/a9a568cb-be9b-45bf-b1c4-4eb56fbb1bf5_thumb_001_HD.jpg",آرش آزرمی: واشینگتن با فشار اقتصادی، تهران را به پذیرش شروط خود سوق می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/145eabcb55464f2cbd1e798ea993aa7d/hls/a9a568cb-be9b-45bf-b1c4-4eb56fbb1bf5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dd16b6c8e8f2490cb6487c5a6feccb8b/46f55472-26ba-475a-b31c-475108f40c19_thumb_001_HD.jpg",اخبار نیمروزی | سه‌شنبه ۲۰ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/dd16b6c8e8f2490cb6487c5a6feccb8b/hls/46f55472-26ba-475a-b31c-475108f40c19.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1a1ccc0abd9541bfab5f2e5397cdafd9/6b7fe05a-5df4-4d61-bd75-b7b9214be7fc_thumb_002_HD.jpg",موسسه پژوهش‌های صلح استکهلم: کره جنوبی نفوذ خود را در بازار جهانی تسلیحات افزایش داده است
 https://daq1pvcuhj77l.cloudfront.net/1/1a1ccc0abd9541bfab5f2e5397cdafd9/hls/6b7fe05a-5df4-4d61-bd75-b7b9214be7fc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/67d0b42d746e41559567cadbd44766c7/3f625ea7-2082-4dc2-b349-26dd8b4d3435_thumb_001_HD.jpg",نخست‌وزیر پاکستان: پیمان مکه تهدیدی برای دیگر کشورها محسوب نمی‌شود
+https://daq1pvcuhj77l.cloudfront.net/1/67d0b42d746e41559567cadbd44766c7/hls/3f625ea7-2082-4dc2-b349-26dd8b4d3435.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fe3c42b65f1c447791f1c1a75ead8b0d/299299ce-5661-4bdc-958a-4d4f0d35dafe_thumb_001_HD.jpg",شرکت کپلر: تردد کشتی‌ها از تنگه هرمز به کمتر از نصف میانگین روزهای گذشته رسید
 https://daq1pvcuhj77l.cloudfront.net/1/fe3c42b65f1c447791f1c1a75ead8b0d/hls/299299ce-5661-4bdc-958a-4d4f0d35dafe.m3u8
