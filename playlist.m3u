@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12536,30 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a1ab715db50c418d9da22d718a3bd853/175f44e0-9f8f-4f34-b27e-6c7d32352f72_thumb_001_HD.jpg",امیر گیتی: فشار اقتصادی آمریکا ممکن است جمهوری اسلامی را به عقب‌نشینی وادار کند
+https://daq1pvcuhj77l.cloudfront.net/1/a1ab715db50c418d9da22d718a3bd853/hls/175f44e0-9f8f-4f34-b27e-6c7d32352f72.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cdecf2a52cf540e496346751d8edb094/7154ea93-cd80-4e55-abc6-1cea374d75b2_thumb_001_HD.jpg",مجتبی به محسن رضایی : «با منی، در یمنی!»
+https://daq1pvcuhj77l.cloudfront.net/1/cdecf2a52cf540e496346751d8edb094/hls/7154ea93-cd80-4e55-abc6-1cea374d75b2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0333e90d82c047f0b0eddc40f51fe154/c525dcd2-535e-4ae3-8e2c-1f1d4c856369_thumb_001_HD.jpg",پزشکیان: من با «آقا» خیلی ندارم؛ فقط ۷ ساعت گپ زدیم!
+https://daq1pvcuhj77l.cloudfront.net/1/0333e90d82c047f0b0eddc40f51fe154/hls/c525dcd2-535e-4ae3-8e2c-1f1d4c856369.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b33afbad17d34f3c8499d7a7042264eb/c7fc41ce-b83b-4634-8fbc-bf745f36fa72_thumb_001_HD.jpg",تشدید تنش‌های لفظی تهران و واشینگتن هم‌زمان با پیچیده‌تر شدن مذاکرات
+https://daq1pvcuhj77l.cloudfront.net/1/b33afbad17d34f3c8499d7a7042264eb/hls/c7fc41ce-b83b-4634-8fbc-bf745f36fa72.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7f490706a0a441c2a8f16010878a9d2a/d1263b95-b78f-4791-b540-b5bc803078de_thumb_001_HD.jpg", سیاست با مراد ویسی: آرایش جدید قدرت در جمهوری اسلامی 
+https://daq1pvcuhj77l.cloudfront.net/1/7f490706a0a441c2a8f16010878a9d2a/hls/d1263b95-b78f-4791-b540-b5bc803078de.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9cd3d3ca06734384ae5713168a1afe98/ec29699e-40da-44d3-9cf4-256da92287ba_thumb_001_HD.jpg",مئیر جاودانفر: تجربه غزه نگاه اسرائیل به تشکیل کشور فلسطین را تغییر داده است
+https://daq1pvcuhj77l.cloudfront.net/1/9cd3d3ca06734384ae5713168a1afe98/hls/ec29699e-40da-44d3-9cf4-256da92287ba.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e144cc589274492a9796df56f914b521/fb1eacb8-6f56-4c4c-8848-ad8a80406e1c_thumb_001_HD.jpg",علیرضا نامور حقیقی: مخالفت صداوسیما با مذاکرات ریشه در تضاد منافع سیاسی و اقتصادی دارد
+https://daq1pvcuhj77l.cloudfront.net/1/e144cc589274492a9796df56f914b521/hls/fb1eacb8-6f56-4c4c-8848-ad8a80406e1c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/656dfb9a59e240fba028f691ff56f102/d3f5fcbc-529f-489f-952b-96001a238e47_thumb_001_HD.jpg",ماموریت ویژه مجتبی خامنه‌ای به محسن رضایی چیست؟!
+https://daq1pvcuhj77l.cloudfront.net/1/656dfb9a59e240fba028f691ff56f102/hls/d3f5fcbc-529f-489f-952b-96001a238e47.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4812ff770fec4f2c9ce8c17c3d09c947/75880079-b139-4bab-9ee4-2389fedb8971_thumb_001_HD.jpg",چشم‌انداز: ماموریت ویژه مجتبی خامنه‌ای به محسن رضایی چیست؟!
 https://daq1pvcuhj77l.cloudfront.net/1/4812ff770fec4f2c9ce8c17c3d09c947/hls/75880079-b139-4bab-9ee4-2389fedb8971.m3u8
