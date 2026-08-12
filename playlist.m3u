@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12527,42 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5037134b00d643ed9efe11c741605a6c/b75f262f-b02a-407a-9530-abbeb812e163_thumb_001_HD.jpg",آسیه امینی: حجاب، ابزار جمهوری اسلامی برای دخالت در زندگی مردم است
+https://daq1pvcuhj77l.cloudfront.net/1/5037134b00d643ed9efe11c741605a6c/hls/b75f262f-b02a-407a-9530-abbeb812e163.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6b1174315ec943e890f37c9d032d66e8/ba90c5f0-f0d4-4eec-99ce-07c020ee7165_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: آماده‌سازی پنهان سپاه پاسداران و ترامپ برای جنگ
+https://daq1pvcuhj77l.cloudfront.net/1/6b1174315ec943e890f37c9d032d66e8/hls/ba90c5f0-f0d4-4eec-99ce-07c020ee7165.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/14e659a695a54b6eb0125a261da518e8/8ab416ef-a836-4aca-9a43-d76780befeb5_thumb_001_HD.jpg",آماده‌سازی پنهان دو طرف برای جنگ؛ دستور مجتبی به سپاه برای حمله به خاک آمریکا و اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/14e659a695a54b6eb0125a261da518e8/hls/8ab416ef-a836-4aca-9a43-d76780befeb5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d694747d0d3e4f0a89ce99bfadf16a71/3e4b820e-0af1-4940-aa56-1866a8344f4b_thumb_001_HD.jpg",چهار روز تا پایان آتش‌بس ۶۰ روزه؛ تهران: مذاکره‌ای برای تمدید انجام نشده
+https://daq1pvcuhj77l.cloudfront.net/1/d694747d0d3e4f0a89ce99bfadf16a71/hls/3e4b820e-0af1-4940-aa56-1866a8344f4b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/976f19f0be3b4096acffb5a0edd5b8e8/136bf836-38fa-40c0-80f8-d634f428a340_thumb_001_HD.jpg",عملیات امنیتی نجات ترامپ در فرودگاه آنکارا
+https://daq1pvcuhj77l.cloudfront.net/1/976f19f0be3b4096acffb5a0edd5b8e8/hls/136bf836-38fa-40c0-80f8-d634f428a340.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3ee79f36b73049b18534f16e0e5786fb/3bd322ad-f58a-4a1a-a3af-d52214125f9d_thumb_001_HD.jpg",اخبار شبانگاهی | چهارشنبه ۲۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/3ee79f36b73049b18534f16e0e5786fb/hls/3bd322ad-f58a-4a1a-a3af-d52214125f9d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c9441c1d62ef442d87ffdf1dbf4c0b9b/1331dda8-51b2-45df-b501-fff913281c60_thumb_001_HD.jpg",رفتارهای خشونت‌آمیز حامیان حکومت با زنان دارای پوشش اختیاری
+https://daq1pvcuhj77l.cloudfront.net/1/c9441c1d62ef442d87ffdf1dbf4c0b9b/hls/1331dda8-51b2-45df-b501-fff913281c60.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eb714b435dd64cfbbb9d82ff17f37c3a/74918f0e-1036-4896-83a0-7ba6757b15c3_thumb_001_HD.jpg",کانادا به متقاضیان اقامت دارای سابقه خدمت در سپاه فرصت دفاع داد
+https://daq1pvcuhj77l.cloudfront.net/1/eb714b435dd64cfbbb9d82ff17f37c3a/hls/74918f0e-1036-4896-83a0-7ba6757b15c3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e817a466486f4eac8b3a1b3339c9688b/8dce4aa2-dea6-438d-a6ce-6ee76cb06308_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/e817a466486f4eac8b3a1b3339c9688b/hls/8dce4aa2-dea6-438d-a6ce-6ee76cb06308.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cdcfb454ce8f4f659ef429785b2ec104/1b1b7a09-a45d-4f09-a118-29cec4d89531_thumb_001_HD.jpg",نظرسنجی ایران‌اینترنشنال: ۸۳ درصد ایرانیان تمایل به مهاجرت دارند
+https://daq1pvcuhj77l.cloudfront.net/1/cdcfb454ce8f4f659ef429785b2ec104/hls/1b1b7a09-a45d-4f09-a118-29cec4d89531.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a9c2624f18c34a1997497226a9d4d22e/b3400dab-585a-4204-9997-579b0429545d_thumb_001_HD.jpg",واکنش کاربران شبکه‌های اجتماعی به آلودگی نفتی سواحل قشم
+https://daq1pvcuhj77l.cloudfront.net/1/a9c2624f18c34a1997497226a9d4d22e/hls/b3400dab-585a-4204-9997-579b0429545d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b94416f7227045bda43b077604819c80/7fb666b7-c16e-45a9-b64e-8a9a16d9d681_thumb_001_HD.jpg",چهار روز تا پایان آتش‌بس؛ تلاش میانجی‌گران برای ادامه مذاکرات ایران و آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/b94416f7227045bda43b077604819c80/hls/7fb666b7-c16e-45a9-b64e-8a9a16d9d681.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e77a65e763c54cceadbcfac8e1003234/3b6dc8fd-95f1-4a7d-9d0d-5e8d1551b56a_thumb_001_HD.jpg",اتحادیه اروپا از تصویب قانون لغو مجازات اعدام در لبنان استقبال کرد
 https://daq1pvcuhj77l.cloudfront.net/1/e77a65e763c54cceadbcfac8e1003234/hls/3b6dc8fd-95f1-4a7d-9d0d-5e8d1551b56a.m3u8
