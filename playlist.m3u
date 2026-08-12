@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12536,30 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8f9078b7f0364dbea3b8850c9847f0da/5329ad0d-d22e-44ec-a843-e980a66941ad_thumb_001_HD.jpg",کنوانسیون دریای خزر؛ خیانت بزرگ و ترکمانچای جدید
+https://daq1pvcuhj77l.cloudfront.net/1/8f9078b7f0364dbea3b8850c9847f0da/hls/5329ad0d-d22e-44ec-a843-e980a66941ad.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bf3691f531d74a279f930a48cb939c5b/a827a005-90bf-40bb-b901-17c88138590a_thumb_001_HD.jpg",چشم‌انداز: کنوانسیون دریای خزر؛ خیانت بزرگ و ترکمانچای جدید
+https://daq1pvcuhj77l.cloudfront.net/1/bf3691f531d74a279f930a48cb939c5b/hls/a827a005-90bf-40bb-b901-17c88138590a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b40233eef55642f893ac635b5bfc1a1e/4cd0a221-a9a2-46ef-bd7e-4c248478b023_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/b40233eef55642f893ac635b5bfc1a1e/hls/4cd0a221-a9a2-46ef-bd7e-4c248478b023.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/94446ec39ece4907900d08db88106fff/af38a901-7c5c-4b9b-984d-4e035f85c28e_thumb_001_HD.jpg",ادغام دو بازوی نیروهای مسلح در جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/94446ec39ece4907900d08db88106fff/hls/af38a901-7c5c-4b9b-984d-4e035f85c28e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/daef48beeed84110b02e3faf846f4c53/70b84aa4-58c5-4dd1-87b3-2b996f2ab2e2_thumb_001_HD.jpg",علیرضا نامور حقیقی: جمهوری اسلامی آثار تحریم‌ها را دست‌کم گرفته است
+https://daq1pvcuhj77l.cloudfront.net/1/daef48beeed84110b02e3faf846f4c53/hls/70b84aa4-58c5-4dd1-87b3-2b996f2ab2e2.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d057025dcc3741cfab26babc0b58ca9a/0d613a3e-a86a-405b-bd5c-07e55cc1ed04_thumb_001_HD.jpg",اختلاف روایت تهران و واشینگتن از مذاکرات هم‌زمان با تشدید فشارهای آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/d057025dcc3741cfab26babc0b58ca9a/hls/0d613a3e-a86a-405b-bd5c-07e55cc1ed04.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/36bea58162fe44a98b5915e741804097/c8ecb35d-926e-42d6-9057-d9c3def9510c_thumb_001_HD.jpg",سناتورهای دموکرات خواستار بررسی انتقال اطلاعات پناهجویان ایرانی به جمهوری اسلامی شدند
+https://daq1pvcuhj77l.cloudfront.net/1/36bea58162fe44a98b5915e741804097/hls/c8ecb35d-926e-42d6-9057-d9c3def9510c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/796b1eaa6f2949428f0cd5df8980d1bc/d660f604-65c9-4203-b307-8b1afcb5cc33_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، چهارشنبه ۲۱ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/796b1eaa6f2949428f0cd5df8980d1bc/hls/d660f604-65c9-4203-b307-8b1afcb5cc33.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5037134b00d643ed9efe11c741605a6c/b75f262f-b02a-407a-9530-abbeb812e163_thumb_001_HD.jpg",آسیه امینی: حجاب، ابزار جمهوری اسلامی برای دخالت در زندگی مردم است
 https://daq1pvcuhj77l.cloudfront.net/1/5037134b00d643ed9efe11c741605a6c/hls/b75f262f-b02a-407a-9530-abbeb812e163.m3u8
