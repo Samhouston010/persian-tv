@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12527,24 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/52262d3d94304634aa52f83e5453b0bf/4c685d27-fd30-453d-9a8e-074930d9b5ab_thumb_001_HD.jpg",سرخط خبرهای پنج‌شنبه ۲۲ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/52262d3d94304634aa52f83e5453b0bf/hls/4c685d27-fd30-453d-9a8e-074930d9b5ab.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c00838ff9eea4d13b118c80e6c8337eb/9d8fb748-0e35-47d6-8ea7-4567b3126a02_thumb_001_HD.jpg",محمدجواد اکبرین: تهدیدهای جمهوری اسلامی را نمی‌توان صرفا جنگ روانی دانست
+https://daq1pvcuhj77l.cloudfront.net/1/c00838ff9eea4d13b118c80e6c8337eb/hls/9d8fb748-0e35-47d6-8ea7-4567b3126a02.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/78e6bef719e04f1b82279e5c1e800cf9/1617ca03-2259-4878-a383-a823b5f624eb_thumb_001_HD.jpg",نایجل فاراژ بار دیگر برای کرسی کلاکتون رقابت می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/78e6bef719e04f1b82279e5c1e800cf9/hls/1617ca03-2259-4878-a383-a823b5f624eb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f609e5d12f34292941872fc231b1d62/bfa26c29-5466-4cb0-8dda-770ec58baa05_thumb_003_HD.jpg",طرح جدید آلمان برای افزایش اختیارات عملیاتی سازمان اطلاعات خارجی
+https://daq1pvcuhj77l.cloudfront.net/1/9f609e5d12f34292941872fc231b1d62/hls/bfa26c29-5466-4cb0-8dda-770ec58baa05.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c2b0d609226f4a9c8991c0ec39f685c3/2d2b596d-3def-44e1-9f1d-71bd1f9259ba_thumb_001_HD.jpg",نماینده پارلمان سوئد به ایران‌اینترنشنال: برای تعطیلی سفارت جمهوری‌اسلامی اقدام خواهیم کرد
+https://daq1pvcuhj77l.cloudfront.net/1/c2b0d609226f4a9c8991c0ec39f685c3/hls/2d2b596d-3def-44e1-9f1d-71bd1f9259ba.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e857f5bf6868493e83953dac4c3a3435/c6ebf3af-bb41-4293-8ed7-69120fa7693b_thumb_001_HD.jpg",توقف فروش بنزین ۸۷ هزار تومانی؛ نگرانی از اعتراضات مردمی
+https://daq1pvcuhj77l.cloudfront.net/1/e857f5bf6868493e83953dac4c3a3435/hls/c6ebf3af-bb41-4293-8ed7-69120fa7693b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/972b664be2be4e5d9861456b206b5e2a/5fed3303-3c83-47aa-9688-3f4832759361_thumb_001_HD.jpg",ارزیابی‌ها حاکی است ارتش اسرائیل در آینده نزدیک از جنوب لبنان عقب‌نشینی نمی‌کند
 https://daq1pvcuhj77l.cloudfront.net/1/972b664be2be4e5d9861456b206b5e2a/hls/5fed3303-3c83-47aa-9688-3f4832759361.m3u8
