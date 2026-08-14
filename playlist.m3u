@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12537,11 +12528,59 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f80f4dc89faf453fa030182bff569e06/3ed7ea92-ffbc-4d17-abe0-12c239d3cfad_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/f80f4dc89faf453fa030182bff569e06/hls/3ed7ea92-ffbc-4d17-abe0-12c239d3cfad.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1d7dd57b82c8481c9dd111a814c158d8/c6157008-3f6a-4a90-884b-5f7355737a0e_thumb_001_HD.jpg",حرف آخر با پوریا زراعتی - پیام محسن رضایی به آمریکا: سفر مهم فرمانده سنتکام
+https://daq1pvcuhj77l.cloudfront.net/1/1d7dd57b82c8481c9dd111a814c158d8/hls/c6157008-3f6a-4a90-884b-5f7355737a0e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d067bcf24fa6462b872e206b56c918f6/4c2c8649-d03e-4380-b979-b9be5f3d2713_thumb_001_HD.jpg",نماینده محافظه‌کار کانادا خواستار اخراج مجرمان غیرشهروند و استعفای دو وزیر شد
+https://daq1pvcuhj77l.cloudfront.net/1/d067bcf24fa6462b872e206b56c918f6/hls/4c2c8649-d03e-4380-b979-b9be5f3d2713.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/11989245aafa4c0a8b3eb4d89460bd4b/535cf050-1422-4edc-95a6-664d7b8ef47d_thumb_001_HD.jpg",مهدی مصلحی: بارگیری یک نفتکش در خارک به معنای ازسرگیری صادرات نفت نیست
+https://daq1pvcuhj77l.cloudfront.net/1/11989245aafa4c0a8b3eb4d89460bd4b/hls/535cf050-1422-4edc-95a6-664d7b8ef47d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7dd684d739f8455487ee5959cbe8974d/bc47c95f-09a6-49f7-9571-5f3f074487b7_thumb_001_HD.jpg",تشدید فشار حکومت بر خانواده یلدا محمدخانی، جاویدنام انقلاب ملی ایرانیان
+https://daq1pvcuhj77l.cloudfront.net/1/7dd684d739f8455487ee5959cbe8974d/hls/bc47c95f-09a6-49f7-9571-5f3f074487b7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/34cbf8a437ae4967ad1f4d7ebc04e0c8/cda4a677-ce93-461b-9dbe-c7bdb2295dea_thumb_001_HD.jpg",آلودگی نفتی ۹ هکتار از آب‌های ساحلی قشم را فراگرفته است
+https://daq1pvcuhj77l.cloudfront.net/1/34cbf8a437ae4967ad1f4d7ebc04e0c8/hls/cda4a677-ce93-461b-9dbe-c7bdb2295dea.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/54e0e5604a3145c69706835598364299/be808e7e-841a-4c28-bf94-3b65aba1935d_thumb_001_HD.jpg",چرتکه: طلب ۸۰ میلیارد دلاری مردم ایران از شرکت نفت
+https://daq1pvcuhj77l.cloudfront.net/1/54e0e5604a3145c69706835598364299/hls/be808e7e-841a-4c28-bf94-3b65aba1935d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/60ed8a13b9a34e1aa82cebd70c356f17/41af9e9e-1a99-460f-9549-87950a6d8735_thumb_001_HD.jpg",اخبار شبانگاهی | جمعه ۲۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/60ed8a13b9a34e1aa82cebd70c356f17/hls/41af9e9e-1a99-460f-9549-87950a6d8735.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/26f25e2d69444da9926d438c9334bc65/b9dd7799-4c63-4006-b555-b58565edf30b_thumb_001_HD.jpg",ادامه مذاکرات برای خلع سلاح حزب‌الله و استقرار ارتش لبنان در جنوب
+https://daq1pvcuhj77l.cloudfront.net/1/26f25e2d69444da9926d438c9334bc65/hls/b9dd7799-4c63-4006-b555-b58565edf30b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dc38b7109cf14cf186dd73a274e817b0/4e5d4239-7f41-402d-8e5b-0eb3c1845fee_thumb_001_HD.jpg",نظرسنجی ایران‌اینترنشنال: ۸۳ درصد شرکت‌کنندگان می‌خواهند از ایران مهاجرت کنند
+https://daq1pvcuhj77l.cloudfront.net/1/dc38b7109cf14cf186dd73a274e817b0/hls/4e5d4239-7f41-402d-8e5b-0eb3c1845fee.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0e50a74b360144d4857cdbb2f3be305f/6d87e9f2-53e9-4905-9ebd-0c1ea28a31ad_thumb_001_HD.jpg",آیین عبور از هفت موج در آخرین چهارشنبه ماه صفر در بندرعباس
+https://daq1pvcuhj77l.cloudfront.net/1/0e50a74b360144d4857cdbb2f3be305f/hls/6d87e9f2-53e9-4905-9ebd-0c1ea28a31ad.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/71412b42097f4539ab64a77c8ef37891/62ed1935-f779-478b-9640-9927ba490d78_thumb_001_HD.jpg",شهرام خلدی: فشار اقتصادی و گزینه نظامی آمریکا همزمان علیه جمهوری اسلامی در حال تشدید است
+https://daq1pvcuhj77l.cloudfront.net/1/71412b42097f4539ab64a77c8ef37891/hls/62ed1935-f779-478b-9640-9927ba490d78.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0694dda176c848088396e8f8b037b122/389b67a6-99a3-4532-a94c-9366c07487a1_thumb_001_HD.jpg",سرخط خبرهای جمعه ۲۳ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/0694dda176c848088396e8f8b037b122/hls/389b67a6-99a3-4532-a94c-9366c07487a1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c45c311727dc41edadd39762adec7da8/69d449d4-ae0a-4775-9584-f1e5e24ae59b_thumb_001_HD.jpg",گفتگوی ویژه با سام اصغری، بازیگر و مدل
+https://daq1pvcuhj77l.cloudfront.net/1/c45c311727dc41edadd39762adec7da8/hls/69d449d4-ae0a-4775-9584-f1e5e24ae59b.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7f8d54cad4264267ba6326d861a75cf1/b944aca5-0914-4848-b3b8-8d27dc296c71_thumb_001_HD.jpg",تلاش ایرانیان و اسرائیلی‌ها برای ایجاد پل میان دو ملت
 https://daq1pvcuhj77l.cloudfront.net/1/7f8d54cad4264267ba6326d861a75cf1/hls/b944aca5-0914-4848-b3b8-8d27dc296c71.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a8cf27d4843542b786a1d5445c9252d6/7bd9c95f-6702-4498-acec-87a76d5796a3_thumb_001_HD.jpg",وزیر دادگستری سوئد نفوذ جمهوری اسلامی را تهدیدی برای امنیت کشور دانست
+https://daq1pvcuhj77l.cloudfront.net/1/a8cf27d4843542b786a1d5445c9252d6/hls/7bd9c95f-6702-4498-acec-87a76d5796a3.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c1b5f5f2cd7a4af28d287a0e3c5baacf/e063f8f7-2c73-490f-bbd8-dda31ae53006_thumb_001_HD.jpg",نایجل فاراژ با بیش از ۲۲ هزار رای دوباره به پارلمان بریتانیا بازگشت
 https://daq1pvcuhj77l.cloudfront.net/1/c1b5f5f2cd7a4af28d287a0e3c5baacf/hls/e063f8f7-2c73-490f-bbd8-dda31ae53006.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5110d0249d4945038d08698e2cd05f57/34082e15-98ae-4332-ab2f-05a51b8b3c8f_thumb_001_HD.jpg",سارا بازوبندی: ارتباط علی انصاری با مجتبی خامنه‌ای تنها نوک کوه یخ شبکه فساد است
+https://daq1pvcuhj77l.cloudfront.net/1/5110d0249d4945038d08698e2cd05f57/hls/34082e15-98ae-4332-ab2f-05a51b8b3c8f.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d2b7acfdb4da45a1b6f4b1d63adde1d8/173e2037-03dc-443f-9130-92ea646da60b_thumb_001_HD.jpg",اعتراض تاجیکستان به طالبان در پی نقض حریم هوایی و کشته شدن یک غیرنظامی
 https://daq1pvcuhj77l.cloudfront.net/1/d2b7acfdb4da45a1b6f4b1d63adde1d8/hls/173e2037-03dc-443f-9130-92ea646da60b.m3u8
