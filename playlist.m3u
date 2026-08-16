@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12492,6 +12501,24 @@ https://hls.sunmusic.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://media.boni-records.com/index.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",DELUXE MUSIC DANCE BY KONTOR
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",DELUXE MUSIC RAP
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12509,6 +12536,36 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/930446c08f79451b9806633fcf952567/5e96e21e-1199-4629-af7e-8bb083a0f0fa_thumb_001_HD.jpg",علی دادپی: فشارهای اقتصادی تازه، حامیان مصالحه در جمهوری اسلامی را می‌تواند تقویت کند
+https://daq1pvcuhj77l.cloudfront.net/1/930446c08f79451b9806633fcf952567/hls/5e96e21e-1199-4629-af7e-8bb083a0f0fa.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d4a73d223dd2475dab9455a11222e728/6042806b-7762-40a6-96c4-4a193697eb70_thumb_001_HD.jpg",اکسیوس: آمریکا برای ارتباط با فرمانده سپاه پاسداران از رییس اقلیم کردستان کمک گرفت
+https://daq1pvcuhj77l.cloudfront.net/1/d4a73d223dd2475dab9455a11222e728/hls/6042806b-7762-40a6-96c4-4a193697eb70.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2087b968f6fe4564a772ecb3a12d55f7/3d22686f-9909-4dd7-ab93-b3bcb7af6088_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، یکشنبه ۲۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/2087b968f6fe4564a772ecb3a12d55f7/hls/3d22686f-9909-4dd7-ab93-b3bcb7af6088.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d215547aeeef47b08e59af41c3643608/d4660a20-8bc0-4b8d-8167-63ffaed11be8_thumb_001_HD.jpg",شهرام خلدی: نچیروان بارزانی مانند قطر می‌خواهد میانجی میان آمریکا و جمهوری اسلامی باشد
+https://daq1pvcuhj77l.cloudfront.net/1/d215547aeeef47b08e59af41c3643608/hls/d4660a20-8bc0-4b8d-8167-63ffaed11be8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b3f985c54b73463598e655f0d6fc5e74/590aa129-b447-4852-8507-20f251f44873_thumb_001_HD.jpg",آرش آرامش: تهدید به کشتن آمریکایی‌ها را نباید صرفا موضع تبلیغاتی جمهوری اسلامی دانست
+https://daq1pvcuhj77l.cloudfront.net/1/b3f985c54b73463598e655f0d6fc5e74/hls/590aa129-b447-4852-8507-20f251f44873.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b4bf5d50e37f402b82d4ac8756caca59/c3058cde-3b12-4dda-9e23-e1e08c5023f7_thumb_001_HD.jpg",تجمع ایرانیان در پاریس در اعتراض به اعدام معترضان در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/b4bf5d50e37f402b82d4ac8756caca59/hls/c3058cde-3b12-4dda-9e23-e1e08c5023f7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e7638ac540a64a0b87ec57e65061b564/86c317a2-b746-4d49-9614-d0a5a86d0f14_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: سلام جمهوری اسلامی به اعتراضات با بنزین ۸۷ هزار تومانی
+https://daq1pvcuhj77l.cloudfront.net/1/e7638ac540a64a0b87ec57e65061b564/hls/86c317a2-b746-4d49-9614-d0a5a86d0f14.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f2add7baabea411fa18f36612c6b0b45/4a63c21e-0b93-419b-ba94-564f9cf0f330_thumb_001_HD.jpg",اعتراف تهران به ضربه مرگبار ترامپ‌؛ نگرانی نظام از آغاز اعتراضات با بنزین ۸۷ هزار تومانی
+https://daq1pvcuhj77l.cloudfront.net/1/f2add7baabea411fa18f36612c6b0b45/hls/4a63c21e-0b93-419b-ba94-564f9cf0f330.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c79646831dec40ea8944416a2dfa2f54/145e1bed-8f3e-4478-a67b-e9373f3ef31c_thumb_001_HD.jpg",اخبار شبانگاهی | یکشنبه ۲۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/c79646831dec40ea8944416a2dfa2f54/hls/145e1bed-8f3e-4478-a67b-e9373f3ef31c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a374bb332fe641f59066bbaacee21cb9/0df7bc76-bf0f-4f9b-8879-149d8b7358e4_thumb_004_HD.jpg",اعتراض شماری از افغان‌ها و فعالان مدنی در پاریس به محدودیت‌های طالبان علیه زنان و دختران
+https://daq1pvcuhj77l.cloudfront.net/1/a374bb332fe641f59066bbaacee21cb9/hls/0df7bc76-bf0f-4f9b-8879-149d8b7358e4.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/70103662b0524c7b8d23b1b8a8a739c0/6d7b8fe7-81b6-4376-9ca8-799a4f3c596b_thumb_001_HD.jpg",آیا آمریکا برای جنگ بزرگ دیگری در ایران با کمبود مهمات روبه‌رو است؟
 https://daq1pvcuhj77l.cloudfront.net/1/70103662b0524c7b8d23b1b8a8a739c0/hls/6d7b8fe7-81b6-4376-9ca8-799a4f3c596b.m3u8
