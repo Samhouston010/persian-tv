@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12501,24 +12492,6 @@ https://hls.sunmusic.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://media.boni-records.com/index.m3u8
 
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
-
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",DELUXE MUSIC DANCE BY KONTOR
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8
-
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",DELUXE MUSIC RAP
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12509,39 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/70103662b0524c7b8d23b1b8a8a739c0/6d7b8fe7-81b6-4376-9ca8-799a4f3c596b_thumb_001_HD.jpg",آیا آمریکا برای جنگ بزرگ دیگری در ایران با کمبود مهمات روبه‌رو است؟
+https://daq1pvcuhj77l.cloudfront.net/1/70103662b0524c7b8d23b1b8a8a739c0/hls/6d7b8fe7-81b6-4376-9ca8-799a4f3c596b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/71c461c4e63940d8987d5dadf79f8ecb/2e2b6793-7cc1-4682-9edf-99a402d4ec87_thumb_001_HD.jpg",آمریکا در پی بن‌بست مذاکرات، رایزنی با متحدان اروپایی را افزایش داد
+https://daq1pvcuhj77l.cloudfront.net/1/71c461c4e63940d8987d5dadf79f8ecb/hls/2e2b6793-7cc1-4682-9edf-99a402d4ec87.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/61fbb4d89f634accacc9857b75509eed/52199c3f-3d06-4294-b398-7f207ec7b681_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۲۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/61fbb4d89f634accacc9857b75509eed/hls/52199c3f-3d06-4294-b398-7f207ec7b681.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/774ca62c4cd94a89a12b6b29b0828e6b/7ac9954e-1709-41c5-92f0-e8bb7bc8e404_thumb_001_HD.jpg",ورود پهپادها به آسمان اروپا؛ خطر افزایش تنش میان روسیه و ناتو
+https://daq1pvcuhj77l.cloudfront.net/1/774ca62c4cd94a89a12b6b29b0828e6b/hls/7ac9954e-1709-41c5-92f0-e8bb7bc8e404.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/44f78f1732554cdd8663c84381732cf4/0b76de96-44b0-4628-9090-9407a129b19b_thumb_005_HD.jpg",افزایش تهدیدها و نقض حریم هوایی کشورهای عضو پیمان آتلانتیک شمالی
+https://daq1pvcuhj77l.cloudfront.net/1/44f78f1732554cdd8663c84381732cf4/hls/0b76de96-44b0-4628-9090-9407a129b19b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/70ee2c4443d845e6ad3581e406f3602f/8dd6db8f-5144-4852-bf94-080cd7f8fac7_thumb_001_HD.jpg",تصویب طرح جرم‌انگاری ارسال اطلاعات به رسانه‌های خارجی در مجلس
+https://daq1pvcuhj77l.cloudfront.net/1/70ee2c4443d845e6ad3581e406f3602f/hls/8dd6db8f-5144-4852-bf94-080cd7f8fac7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e38e1beb02464ece8d37a3c83e2edbef/67ff5bde-fbd4-4ff9-9f53-04fbd5ee0e43_thumb_001_HD.jpg",کاهش باروری در ایران؛ کشور با سرعتی بی‌سابقه به سمت سالمندی پیش می‌رود
+https://daq1pvcuhj77l.cloudfront.net/1/e38e1beb02464ece8d37a3c83e2edbef/hls/67ff5bde-fbd4-4ff9-9f53-04fbd5ee0e43.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/60d57ed79bf04c35b2513f207c720558/3d30cb00-e830-4bbf-8482-9cb663495e95_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، یکشنبه ۲۵ مرداد، با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/60d57ed79bf04c35b2513f207c720558/hls/3d30cb00-e830-4bbf-8482-9cb663495e95.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ae908afae92f4bcfa598aa080c4dc594/c073b1af-f4a7-46d0-87dd-18757af48737_thumb_001_HD.jpg",اخبار نیمروزی | یکشنبه ۲۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/ae908afae92f4bcfa598aa080c4dc594/hls/c073b1af-f4a7-46d0-87dd-18757af48737.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/97b82ce090b24314b0c3b50b9637c9db/046b2538-6edd-4183-bd85-66f72e35b557_thumb_001_HD.jpg",عطا حسینیان: دولت برای افزایش قیمت بنزین منتظر چراغ سبز نهادهای امنیتی است
+https://daq1pvcuhj77l.cloudfront.net/1/97b82ce090b24314b0c3b50b9637c9db/hls/046b2538-6edd-4183-bd85-66f72e35b557.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c858dfd971824a758a6812cb9707a620/4c9b218f-3eb6-4b21-ac86-04d6e06a00cb_thumb_001_HD.jpg",تشدید فشار اقتصادی آمریکا؛ خطر رکود تورمی و افزایش فقر در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/c858dfd971824a758a6812cb9707a620/hls/4c9b218f-3eb6-4b21-ac86-04d6e06a00cb.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d8976505d9404c07b808564f3eacf3b2/c2b499aa-cd10-43bb-8da8-0ab34609c400_thumb_001_HD.jpg",شکیبا از تهران: پزشکم؛ حوادث دی باعث اخراجم شد؛ شرمنده پدرم شدم که با پول کارگری بزرگم کرد
 https://daq1pvcuhj77l.cloudfront.net/1/d8976505d9404c07b808564f3eacf3b2/hls/c2b499aa-cd10-43bb-8da8-0ab34609c400.m3u8
