@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12527,24 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2fd77035e9054620a06509e290ad2a9b/060a14f2-6603-4d4a-91a1-3a87a0502866_thumb_001_HD.jpg",اخبار بامدادی | یکشنبه ۲۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/2fd77035e9054620a06509e290ad2a9b/hls/060a14f2-6603-4d4a-91a1-3a87a0502866.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/51782fffe692413bb2f1c12ff76940c7/c0229a56-cd1a-4e6d-bf05-4adf7f8616e9_thumb_001_HD.jpg",احمد علوی: آمریکا برای باز کردن تنگه هرمز آماده پذیرش هزینه‌های اقتصادی است
+https://daq1pvcuhj77l.cloudfront.net/1/51782fffe692413bb2f1c12ff76940c7/hls/c0229a56-cd1a-4e6d-bf05-4adf7f8616e9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a6cf0fd1072a4111951a38e4d1aee4f1/22f53ad8-8670-4738-8856-a60bc7283dc8_thumb_001_HD.jpg",جمهوری اسلامی و عمان بر سر نقشه کشتیرانی تنگه هرمز توافق کردند
+https://daq1pvcuhj77l.cloudfront.net/1/a6cf0fd1072a4111951a38e4d1aee4f1/hls/22f53ad8-8670-4738-8856-a60bc7283dc8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53ad572207a3450db879ad2bb7d86ac1/c902acac-58f6-40fe-b6be-07228b65f3aa_thumb_001_HD.jpg",رضا گوهرزاد: فشار سوخت و توزیع آن می‌تواند مردم ایران را به خیابان بیاورد
+https://daq1pvcuhj77l.cloudfront.net/1/53ad572207a3450db879ad2bb7d86ac1/hls/c902acac-58f6-40fe-b6be-07228b65f3aa.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/258d0acaaeb040929314647e31ef38fa/85ea8c52-d7ee-4632-8c87-bdcc13d55803_thumb_001_HD.jpg",امید معماریان: جمهوری اسلامی باید شواهد زنده بودن سه خلبان را ارائه کند
+https://daq1pvcuhj77l.cloudfront.net/1/258d0acaaeb040929314647e31ef38fa/hls/85ea8c52-d7ee-4632-8c87-bdcc13d55803.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d7d51ae2a0314f98890654c27ad5cbf5/5232b431-b721-4a56-8beb-b17f5075a9fc_thumb_001_HD.jpg",سرخط خبرهای یکشنبه ۲۵ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/d7d51ae2a0314f98890654c27ad5cbf5/hls/5232b431-b721-4a56-8beb-b17f5075a9fc.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4d7bc6240c9342bca7e38bf20a838b26/f00b1ada-37e1-42bf-98b3-16f819ec8053_thumb_001_HD.jpg",کاوه یغمایی: هنرمندان باید امید را تا «نبرد نهایی» زنده نگه دارند
 https://daq1pvcuhj77l.cloudfront.net/1/4d7bc6240c9342bca7e38bf20a838b26/hls/f00b1ada-37e1-42bf-98b3-16f819ec8053.m3u8
