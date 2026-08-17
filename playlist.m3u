@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12527,51 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2ce96321dd5c43ecbb07c582b5bb6ac6/4508bde7-d9bc-4133-92c3-9b57205d406b_thumb_001_HD.jpg",هوشنگ‌ حسن‌یاری: تعیین جایزه برای کشتن آمریکایی‌ها نشانه آشفتگی رهبران حکومت است
+https://daq1pvcuhj77l.cloudfront.net/1/2ce96321dd5c43ecbb07c582b5bb6ac6/hls/4508bde7-d9bc-4133-92c3-9b57205d406b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eee7408662a24cd18c88d53de3330003/539cfb33-6240-43e6-bc32-5e073ab41753_thumb_001_HD.jpg", سیاست با مراد ویسی: یا با ایران یا با جمهوری‌اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/eee7408662a24cd18c88d53de3330003/hls/539cfb33-6240-43e6-bc32-5e073ab41753.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fb9c6c9d082c404ea6f6140a88188ba9/ac0ecd0b-04cf-4daf-a18b-d3cc3b43b3dd_thumb_001_HD.jpg",پایان مهلت آتش‌بس تهران و واشینگتن در سایه ابهام درباره توافق تازه
+https://daq1pvcuhj77l.cloudfront.net/1/fb9c6c9d082c404ea6f6140a88188ba9/hls/ac0ecd0b-04cf-4daf-a18b-d3cc3b43b3dd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/711c45beaf5c4543a00501f69e1e6023/7c6fb5f2-711d-4171-9cdd-425a77170ccb_thumb_001_HD.jpg",هت‌تریک؛ پیروزی آسان پرسپولیس مقابل شمس‌آذر در هفته اول 
+https://daq1pvcuhj77l.cloudfront.net/1/711c45beaf5c4543a00501f69e1e6023/hls/7c6fb5f2-711d-4171-9cdd-425a77170ccb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7c951091a77d4712863cc61077bee7b6/2914e522-0c8f-4fb8-83ef-9e491425b278_thumb_001_HD.jpg",استقلال و پرسپولیس ناگهان به یاد تیمسار خسروانی و علی عبده افتادند
+https://daq1pvcuhj77l.cloudfront.net/1/7c951091a77d4712863cc61077bee7b6/hls/2914e522-0c8f-4fb8-83ef-9e491425b278.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/69b0cf048d6c47f18f3554dabf92f700/71f41e8d-9936-47e4-9249-fe024f1a99b1_thumb_001_HD.jpg",لیگ برتر زنان شروع نشده، حاشیه داشت
+https://daq1pvcuhj77l.cloudfront.net/1/69b0cf048d6c47f18f3554dabf92f700/hls/71f41e8d-9936-47e4-9249-fe024f1a99b1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5257f1f6ed864757abcb71e12a022eaa/fbab08c9-b7b6-4905-8d9f-ffd1b28c0094_thumb_001_HD.jpg",هفته دوم لیگ برتر، وسط هفته برگزار می‌شود!
+https://daq1pvcuhj77l.cloudfront.net/1/5257f1f6ed864757abcb71e12a022eaa/hls/fbab08c9-b7b6-4905-8d9f-ffd1b28c0094.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1637f5307af744479916fa3bb1e00434/723264f0-8cad-4523-a5ba-5b21d4387d52_thumb_001_HD.jpg",محسن خلیلی، جانشین افشین پیروانی، حاشیه‌ساز برای پرسپولیس
+https://daq1pvcuhj77l.cloudfront.net/1/1637f5307af744479916fa3bb1e00434/hls/723264f0-8cad-4523-a5ba-5b21d4387d52.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d49c2fdfd43b47ddae19b19d0fa024d2/df7bffec-73d7-4515-905a-8b3e04c19bf6_thumb_001_HD.jpg",آنالیز فنی شمس آذر - پرسپولیس توسط محمد تقوی
+https://daq1pvcuhj77l.cloudfront.net/1/d49c2fdfd43b47ddae19b19d0fa024d2/hls/df7bffec-73d7-4515-905a-8b3e04c19bf6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/22d33d3f64774b40b969ea92c4f6cda9/74147a4c-a7ca-40da-8c27-f2a9be809b17_thumb_001_HD.jpg",چشم‌انداز: مصوبه مجلس برای تبدیل ایران به کره شمالی اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/22d33d3f64774b40b969ea92c4f6cda9/hls/74147a4c-a7ca-40da-8c27-f2a9be809b17.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a7be926a152465bab67c3fe189052af/87db84a9-b751-42a9-9058-a8563dba2bbc_thumb_001_HD.jpg",نخستین برد پرسپولیس با تارتار در لیگ برتر
+https://daq1pvcuhj77l.cloudfront.net/1/4a7be926a152465bab67c3fe189052af/hls/87db84a9-b751-42a9-9058-a8563dba2bbc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dbd54b64b03a4310918ad3a91005f2ad/7dafca5d-ffa4-4074-a97c-b40b0ef19287_thumb_001_HD.jpg",خلاصه بازی شمس‌آذر-پرسپولیس با گزارش مزدک میرزایی
+https://daq1pvcuhj77l.cloudfront.net/1/dbd54b64b03a4310918ad3a91005f2ad/hls/7dafca5d-ffa4-4074-a97c-b40b0ef19287.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c7d887e403bd4b55aa675238480bcbe6/9c7921e3-e830-4588-9c96-78ef27fce222_thumb_001_HD.jpg",اقلیم کردستان نقش بارزانی در انتقال پیام میان تهران و واشینگتن را تایید کرد
+https://daq1pvcuhj77l.cloudfront.net/1/c7d887e403bd4b55aa675238480bcbe6/hls/9c7921e3-e830-4588-9c96-78ef27fce222.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/826f50d309854bee8a4ac7579133640c/789b1744-df6c-4432-bd09-acefe739eea1_thumb_001_HD.jpg",حسن منصور: دولت مجری سیاست‌های اقتصادی نظام و رهبر جمهوری اسلامی است، نه طراح آن
+https://daq1pvcuhj77l.cloudfront.net/1/826f50d309854bee8a4ac7579133640c/hls/789b1744-df6c-4432-bd09-acefe739eea1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/36690205102a4315b7500128275b6ec4/3aa34a39-1075-4eff-a7b1-f75afce607c2_thumb_001_HD.jpg", مصوبه مجلس برای تبدیل ایران به کره شمالی اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/36690205102a4315b7500128275b6ec4/hls/3aa34a39-1075-4eff-a7b1-f75afce607c2.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/930446c08f79451b9806633fcf952567/5e96e21e-1199-4629-af7e-8bb083a0f0fa_thumb_001_HD.jpg",علی دادپی: فشارهای اقتصادی تازه، حامیان مصالحه در جمهوری اسلامی را می‌تواند تقویت کند
 https://daq1pvcuhj77l.cloudfront.net/1/930446c08f79451b9806633fcf952567/hls/5e96e21e-1199-4629-af7e-8bb083a0f0fa.m3u8
