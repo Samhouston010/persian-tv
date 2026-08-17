@@ -12267,6 +12267,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12527,6 +12536,48 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/19c8cf65c46541b284146fcc4b8b4e86/8a60cc2b-2f5d-4e9d-ab57-dbd8798824aa_thumb_001_HD.jpg",نمایندگان ترامپ برای پیشبرد طرح صلح غزه با میانجی‌گران دیدار کردند
+https://daq1pvcuhj77l.cloudfront.net/1/19c8cf65c46541b284146fcc4b8b4e86/hls/8a60cc2b-2f5d-4e9d-ab57-dbd8798824aa.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d8a9a40e148649ea8caf5b3f548b3856/9c19b7ca-eeb0-4ea9-aa72-76dff266a476_thumb_001_HD.jpg",احمد علوی: فروش نفت به دلالان زمینه گسترش فساد و خروج منابع را فراهم می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/d8a9a40e148649ea8caf5b3f548b3856/hls/9c19b7ca-eeb0-4ea9-aa72-76dff266a476.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a36a4d013d054247b4ba9be9d914cfd0/c2d7216d-3310-401f-8490-aa5e9b6d43e6_thumb_001_HD.jpg",ترامپ از پیمان دفاعی مشترک عربستان، ترکیه و پاکستان استقبال کرد
+https://daq1pvcuhj77l.cloudfront.net/1/a36a4d013d054247b4ba9be9d914cfd0/hls/c2d7216d-3310-401f-8490-aa5e9b6d43e6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aaa550204d004aabb3f4cd37fe03c4ef/c2ff81b8-79dd-4ac2-bf04-5c678cd9feb4_thumb_001_HD.jpg",روح‌الله رحیم‌پور: آمریکا هم‌زمان سه مسیر فشار بر جمهوری اسلامی را دنبال می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/aaa550204d004aabb3f4cd37fe03c4ef/hls/c2ff81b8-79dd-4ac2-bf04-5c678cd9feb4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e4a4981e81124a93b86bcc86cc495e22/e79f9093-3ec0-49ef-9701-f30c9edbecad_thumb_001_HD.jpg",مرتضی کاظمیان: جمهوری اسلامی انگیزه‌ای برای پایان دادن به تنش با آمریکا ندارد
+https://daq1pvcuhj77l.cloudfront.net/1/e4a4981e81124a93b86bcc86cc495e22/hls/e79f9093-3ec0-49ef-9701-f30c9edbecad.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cf3f2de1eb77480d864ea29792818754/8cd6c9dd-1a2f-4fc6-9c68-43474692e912_thumb_001_HD.jpg",شکست رشد اقتصادی؛ ایران در «سند چشم‌انداز ۱۴۰۴»، ناکامی رویاهای خامنه‌ای
+https://daq1pvcuhj77l.cloudfront.net/1/cf3f2de1eb77480d864ea29792818754/hls/8cd6c9dd-1a2f-4fc6-9c68-43474692e912.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/64966691a51d45ef989a502b9a0b4a5f/b4eb3fe0-4080-49fa-a5d7-5d15aa91ec71_thumb_001_HD.jpg",اخبار بامدادی | دوشنبه ۲۶ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/64966691a51d45ef989a502b9a0b4a5f/hls/b4eb3fe0-4080-49fa-a5d7-5d15aa91ec71.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6600cd4a97b84109a435826b41aa2c48/d25fa9d5-b698-4872-b87b-6da474a46404_thumb_001_HD.jpg",ترامپ دستور کاهش چشمگیر رزمایش‌های نظامی آمریکا و کره جنوبی را داد
+https://daq1pvcuhj77l.cloudfront.net/1/6600cd4a97b84109a435826b41aa2c48/hls/d25fa9d5-b698-4872-b87b-6da474a46404.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0f042380505b4e369e049bf857bd14be/9f062463-705b-4a20-813d-9f03146041cf_thumb_001_HD.jpg",امیر حمیدی: توان جمهوری اسلامی به معنای برتری راهبردی مقابل آمریکا نیست
+https://daq1pvcuhj77l.cloudfront.net/1/0f042380505b4e369e049bf857bd14be/hls/9f062463-705b-4a20-813d-9f03146041cf.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ed9a64202fe34452846ed99c361880fe/43031260-b50b-4c88-a1ef-c40f9c7b9f5d_thumb_001_HD.jpg",تجمع ایرانیان کلگری در حمایت از زندانیان محکوم به اعدام در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/ed9a64202fe34452846ed99c361880fe/hls/43031260-b50b-4c88-a1ef-c40f9c7b9f5d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/315303ae57854260910392e5e6965e47/84317ced-a37d-479a-8fae-b465714b53b6_thumb_001_HD.jpg",وال‌استریت ژورنال: جمهوری اسلامی برای گسترش جنگ آماده شده است
+https://daq1pvcuhj77l.cloudfront.net/1/315303ae57854260910392e5e6965e47/hls/84317ced-a37d-479a-8fae-b465714b53b6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/83206e1709524727bb9b3047f661c60d/df91501f-0ee3-45e2-a43f-a3df05b27a90_thumb_001_HD.jpg",محمد قائدی: ترامپ به‌دنبال کاهش تعهدات آمریکا در شرق آسیا نیست
+https://daq1pvcuhj77l.cloudfront.net/1/83206e1709524727bb9b3047f661c60d/hls/df91501f-0ee3-45e2-a43f-a3df05b27a90.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e848408ad10438e8566c947ae2e6d4a/d06bf43a-8d08-43ea-af28-91aa00d81cd1_thumb_001_HD.jpg",تجمع ایرانیان مقیم لس‌آنجلس در اعتراض به احکام اعدام در ایران
+https://daq1pvcuhj77l.cloudfront.net/1/7e848408ad10438e8566c947ae2e6d4a/hls/d06bf43a-8d08-43ea-af28-91aa00d81cd1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/47313e6e36ab46ffa3ce0810685b2e40/1f5dfc89-aec4-42b7-a8d4-c4deb42eae0e_thumb_001_HD.jpg",حسین قاضیان: شکاف میان جامعه و حکومت عمیق‌تر شده است
+https://daq1pvcuhj77l.cloudfront.net/1/47313e6e36ab46ffa3ce0810685b2e40/hls/1f5dfc89-aec4-42b7-a8d4-c4deb42eae0e.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e33c2ce494ea4bccbfdb4771c0cd361f/158291ba-9161-4846-bdb3-10bb2af61480_thumb_001_HD.jpg",سرخط خبرهای دوشنبه ۲۶ مرداد
 https://daq1pvcuhj77l.cloudfront.net/1/e33c2ce494ea4bccbfdb4771c0cd361f/hls/158291ba-9161-4846-bdb3-10bb2af61480.m3u8
@@ -14042,15 +14093,6 @@ https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Zdi31dy.png" tvg-id="AlAlam.ir@SD",Al Alam (360p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live2.alalam.ir/alalam.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
