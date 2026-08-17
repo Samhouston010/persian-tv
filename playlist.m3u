@@ -12267,15 +12267,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12536,6 +12527,27 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/effef624e6244a7787ec595a1b132208/b8d9fab5-b155-49d3-bd23-7a1d60a99c25_thumb_001_HD.jpg",افشای رابطه پنهانی آمریکا با فرماندهان ارشد سپاه
+https://daq1pvcuhj77l.cloudfront.net/1/effef624e6244a7787ec595a1b132208/hls/b8d9fab5-b155-49d3-bd23-7a1d60a99c25.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/96560075c6cc46e7954ad0700365b5af/7b79ab90-d426-4dbd-84d1-b119329c7b74_thumb_001_HD.jpg",چشم‌انداز: افشای رابطه پنهانی آمریکا با فرماندهان ارشد سپاه
+https://daq1pvcuhj77l.cloudfront.net/1/96560075c6cc46e7954ad0700365b5af/hls/7b79ab90-d426-4dbd-84d1-b119329c7b74.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/db92306e1d2640ec83671f94cbde304b/99ea1a0b-44b7-4a68-942a-aeb3d0aa2802_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/db92306e1d2640ec83671f94cbde304b/hls/99ea1a0b-44b7-4a68-942a-aeb3d0aa2802.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/eb73d997d20b454b9740ab1e3f9fcdc1/3cff5dc2-b15a-4df5-9575-16491504662e_thumb_001_HD.jpg",بهنام طالب‌لو: بن‌بست مذاکرات می‌تواند به واکنش نظامی جمهوری اسلامی منجر شود
+https://daq1pvcuhj77l.cloudfront.net/1/eb73d997d20b454b9740ab1e3f9fcdc1/hls/3cff5dc2-b15a-4df5-9575-16491504662e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f4fdc9c4630a40518db1f52d664f528b/f3906f48-c137-457b-b8c3-5ad6615624d5_thumb_001_HD.jpg",رهبر حزب محافظه‌کار کانادا خواستار اخراج عوامل سپاه پاسداران از این کشور شد 
+https://daq1pvcuhj77l.cloudfront.net/1/f4fdc9c4630a40518db1f52d664f528b/hls/f3906f48-c137-457b-b8c3-5ad6615624d5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3bf9a9c586a94e349f7acee96e3d299f/c42f94ed-9b9f-4dcb-b1ab-50d677b77c91_thumb_001_HD.jpg",دیدار جرد کوشنر، تونی بلر و نیکولای ملادینوف با نتانیاهو در ادامه تلاش‌ها برای صلح غزه
+https://daq1pvcuhj77l.cloudfront.net/1/3bf9a9c586a94e349f7acee96e3d299f/hls/c42f94ed-9b9f-4dcb-b1ab-50d677b77c91.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1839db99db424262baf7b4e98cf18480/938ae8bf-35c3-4088-afbb-3c62cd7775ca_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، دوشنبه ۲۶ مرداد
+https://daq1pvcuhj77l.cloudfront.net/1/1839db99db424262baf7b4e98cf18480/hls/938ae8bf-35c3-4088-afbb-3c62cd7775ca.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ed24747b9ec94111afa56ae25bb66565/7a04ca00-b270-4ac3-ab79-1270a7af3aa3_thumb_001_HD.jpg",ترامپ همزمان با پایان مهلت توافق گفت جمهوری اسلامی باید تسلیم شود
 https://daq1pvcuhj77l.cloudfront.net/1/ed24747b9ec94111afa56ae25bb66565/hls/7a04ca00-b270-4ac3-ab79-1270a7af3aa3.m3u8
