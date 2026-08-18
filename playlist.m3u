@@ -14214,6 +14214,15 @@ https://live2.alalam.ir/alalam.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://185.9.2.18/chid_926/index.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/XEMsM7w.png" tvg-id="MihanTV.ir@SD",Mihan TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://iptv.mihantv.com/mihantv/playlist.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://iraniancongress.com/tv/logo.png" tvg-id="NationalIranianCongressTV.us@SD",National Iranian Congress TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
