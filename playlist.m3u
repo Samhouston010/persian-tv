@@ -12240,15 +12240,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -12510,6 +12501,21 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a346e8c6b71445ca4cbfc94d095caf8/981bb6c8-eb6f-4fc2-bcf4-9e75eb94fc6d_thumb_001_HD.jpg",علیرضا نوری‌زاده: عراق در حال فاصله گرفتن از جمهوری اسلامی است
+https://daq1pvcuhj77l.cloudfront.net/1/4a346e8c6b71445ca4cbfc94d095caf8/hls/981bb6c8-eb6f-4fc2-bcf4-9e75eb94fc6d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2c2f86f2218741ae86bc64f46c1e0bf9/fe42253d-13b6-4cff-80fb-08757d9d9b48_thumb_001_HD.jpg",محمد الباشا: حوثی‌ها یمن را به سمت جنگی گسترده‌تر سوق می‌دهند
+https://daq1pvcuhj77l.cloudfront.net/1/2c2f86f2218741ae86bc64f46c1e0bf9/hls/fe42253d-13b6-4cff-80fb-08757d9d9b48.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/330b74a3c634488598018dc04ab076f9/7673630c-7427-4669-a98f-3eaa7d29fc7b_thumb_001_HD.jpg",تساوی خاتون بم با النصر عربستان سعودی در لیگ قهرمانان زنان آسیا
+https://daq1pvcuhj77l.cloudfront.net/1/330b74a3c634488598018dc04ab076f9/hls/7673630c-7427-4669-a98f-3eaa7d29fc7b.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/88f5e63dae314b0a883e1131299678ad/9a468cda-3932-4b6b-acf0-b29dd4632076_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/88f5e63dae314b0a883e1131299678ad/hls/9a468cda-3932-4b6b-acf0-b29dd4632076.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ed53a9a6fd504e6b8827043a6c8bc943/cfbbba18-2a38-4266-b5bb-e0bb942fd02c_thumb_001_HD.jpg",دومینو: تحریم و محاصره به قصد فروپاشی جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/ed53a9a6fd504e6b8827043a6c8bc943/hls/cfbbba18-2a38-4266-b5bb-e0bb942fd02c.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/830746a7af07485d8a30a21c72ac77ef/4b762c5f-8578-4d83-a5ca-8a574376546b_thumb_001_HD.jpg",حملات روسیه به اوکراین ۱۳ کشته بر جای گذاشت
 https://daq1pvcuhj77l.cloudfront.net/1/830746a7af07485d8a30a21c72ac77ef/hls/4b762c5f-8578-4d83-a5ca-8a574376546b.m3u8
 
@@ -12569,6 +12575,9 @@ https://daq1pvcuhj77l.cloudfront.net/1/5ed0d72429e44dff8bf04e73f3e64408/hls/383b
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2a18bf0e933843f783f8273b3e572c39/672e660f-1dc7-484b-bfa4-96cee353f5ac_thumb_002_HD.jpg",خبرنگار سوری به ایران‌اینترنشنال: سوریه در کانون تنش ترکیه و اسرائیل قرار گرفته است
 https://daq1pvcuhj77l.cloudfront.net/1/2a18bf0e933843f783f8273b3e572c39/hls/672e660f-1dc7-484b-bfa4-96cee353f5ac.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c550011f4c8e43368d7db7b358fbaaf4/b29ec15c-aa0c-4c8a-985f-8c6216c882ba_thumb_001_HD.jpg",گفت‌وگوی ویژه با پژمان اکبرزاده، پژوهشگر موسیقی
+https://daq1pvcuhj77l.cloudfront.net/1/c550011f4c8e43368d7db7b358fbaaf4/hls/b29ec15c-aa0c-4c8a-985f-8c6216c882ba.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9fa616b0bd0c420ab07dedbf23d6b109/73e72241-a97b-4d3a-9001-36005084b69c_thumb_001_HD.jpg",سرخط خبرهای پنجشنبه ۲۹ مرداد 
 https://daq1pvcuhj77l.cloudfront.net/1/9fa616b0bd0c420ab07dedbf23d6b109/hls/73e72241-a97b-4d3a-9001-36005084b69c.m3u8
