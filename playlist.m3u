@@ -171,6 +171,33 @@ https://ptravelhls.persiana.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://podhls.persiana.live/hls/stream.m3u8
 
+#EXTINF:-1 tvg-id="Rap" tvg-name="Rap" tvg-logo="https://www.persianagroup.tv/assets/logos/rap.png" group-title="📺 پرشیانا",Rap
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://raphls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="China" tvg-name="China" tvg-logo="https://www.persianagroup.tv/assets/logos/china.png" group-title="📺 پرشیانا",China
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://chinahls.persiana.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-id="Voyage" tvg-name="Voyage" tvg-logo="https://www.persianagroup.tv/assets/logos/voyage.png" group-title="📺 پرشیانا",Voyage
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://voyhls.persiana.live/hls/stream.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-name="MBC Persia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/MBC_Persia_Logo.png" group-title="📺 پرشیانا",MBC Persia
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
