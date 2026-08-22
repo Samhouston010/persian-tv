@@ -449,7 +449,9 @@ SOURCES = [
     ("📺 پرشیانا", "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.m3u"),
     ("📡 تلوبیون",  "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.m3u"),
     # group=None: each entry already carries its own per-category group-title (🎬 سپهر <دسته>)
-    (None, "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.m3u"),
+    # ponytail: Sepehr VOD suspended by user request 2026-08-22 — playlist got too heavy,
+    # can re-enable later if wanted.
+    # (None, "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.m3u"),
     # ponytail: Sepehr disabled by user request 2026-07-01 — token bound to Cloudflare IP,
     # 403s outside Iran, so it never played in TiviMate anyway.
     # ("📡 سپهر",    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_live.m3u"),
@@ -492,7 +494,8 @@ SOURCES = [
 EPG_SOURCES = [
     "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.xml.gz",
-    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",
+    # ponytail: matches sepehr_vod.m3u suspension above (user request 2026-08-22)
+    # "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",
 ]
 
 GROUP_RE = re.compile(r'group-title="[^"]*"')
@@ -1087,11 +1090,8 @@ def main():
         out.append(extinf); out.append(_ROT_REF); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(arabic_music)
     print(f"Arabic Music: {len(arabic_music)} channels", flush=True)
-    vod = fetch_iranintl_vod()
-    for extinf, stream in vod:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(vod)
-    print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
+    vod = []  # ponytail: Iran Intl VOD suspended by user request 2026-08-22 — playlist got too heavy
+    print("Iran Intl VOD: disabled", flush=True)
     fox26 = fetch_fox26_vod()
     # ponytail: TiviMate buckets raw .mp4 URLs into the Movies tab by file extension,
     # regardless of group-title language — renaming the group doesn't move it next to
