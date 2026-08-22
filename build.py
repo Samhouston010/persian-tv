@@ -880,7 +880,11 @@ def fetch_iran_org(cat_by_id, logo_by_id):
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
 KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
 
-ISRAEL_SKIP = {"Keshet 12 DVR", "N12 News", "Keshet 12 CC", "Kan Kids", "Channel 24", "Eretz Nehederet"}
+ISRAEL_SKIP = {"Kan Kids"}
+# ponytail: Keshet 12 DVR/N12 News/Keshet 12 CC/Channel 24/Eretz Nehederet un-skipped
+# 2026-08-22 -- they were dropped while israel-tv's GitHub Actions push was silently
+# failing (fixed same day, see israel-tv repo), leaving them stuck on expired tokens.
+# Tokens are fresh again now that the push works.
 
 def fetch_israel():
     text = fetch(ISRAEL_M3U).decode("utf-8", errors="ignore")
