@@ -1053,6 +1053,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1313,6 +1322,27 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/b4vuqtpt1vo7wy3v/iab5pxkozj3pdqnw.jpg",Houston weather: August 22 overnight forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47930459817_47930459932/47930459932/hf-uuid-df48edb0-eda1-4316-8b7f-0765c49134c8/47930459932_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/lv5mlr3pk1xnwair/jxtmzmrmn7pdjvkg.jpg",Battleground Texas - Latest in Senate race, other Texas races
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47912921345_47912921503/47912921503/hf-uuid-e65b1ad7-7576-496f-9c58-5375d6ebacb6/47912921503_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/wk7lh6i5yf8xopka/k5249xynjjoygft5.jpg",The Drop - Phoebe Bridgers, Katseye, and more!
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47912443868_47912963149/47912963149/hf-uuid-99099fef-b6fb-4375-ad84-26539d2188b9/47912963149_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/j8qorwblbz5ok0y1/ju6c02dq038qpwog.jpg",Foodies &amp; Friends - Astor's Table
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47912940253_47913115472/47913115472/hf-uuid-df8ce1d9-634e-4ef0-825c-00a2952d4e17/47913115472_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/dc2jt641g0vk38wy/41vhref4jba5esx6.jpg",Houston Uber driver speaks on police incident | FULL INTERVIEW
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47924307549_47924307727/47924307727/hf-uuid-fd99477b-92cc-4c65-a2ac-3a10b159c4a3/47924307727_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cq7auix5jk914kph/2hf0c5ujx8t6k1xc.jpg",Foodies &amp; Friends - Baan Talay
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47912805973_47913081261/47913081261/hf-uuid-07d0a693-efb4-4d64-b1eb-574d72591143/47913081261_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/a1bvfka38poxkfbv/45uzt28q9ysff2z5.jpg",Houston weather: Aug. 22 morning forecast
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47919327533_47919327673/47919327673/hf-uuid-04a78f60-297b-4a89-9d30-a873cf67d11c/47919327673_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qzgd2mj6z0u6wlq4/cpp3n6z8sdssg9zs.jpg",Houston weather: Heat to continue this weekend
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47911830442_47911830647/47911830647/hf-uuid-ec41b49b-c8cd-41aa-ade8-78feb658cd22/47911830647_lowres.mp4
@@ -2193,27 +2223,6 @@ https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_4
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rfl2u4eacsicxxcw/dc8sn1kf9fvk50l1.jpg",Can a $6 Million Campaign Win Back Latino Voters in Texas?
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_47566207050_47566207315/47566207315/hf-uuid-f9b74e8b-c9da-442e-acf5-1de3047f2a9b/47566207315_lowres.mp4
 
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/o5ug33916nkz8ht5/r9balzwzpnqt7lsm.jpg",Another hot day on the way for Houston
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47565134949_47565135106/47565135106/hf-uuid-85d64315-ff1b-48eb-8f07-4a32114a25a2/47565135106_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/k0not5xsixsc690o/zv16do6ah9jdk8c3.jpg",Peanut is back home following FOX 26 report
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47565010682_47565010865/47565010865/hf-uuid-6f5121d7-8a1a-4226-8c98-5dc0c051e371/47565010865_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/6zsiv14fbs9s5cdu/2rsac5v4dxpwjy3g.jpg",Search continues in Montgomery County for missing grandmother with dementia
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47564910006_47564910315/47564910315/hf-uuid-3d14ed23-0e9f-494e-a6f3-a06343d1e86a/47564910315_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4soqdj4z9t0s4l17/mn9q2wv9paxj5fuk.jpg",Houston weather: Summer heat to continue for Tuesday
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47562449668_47562449822/47562449822/hf-uuid-8f352a3f-5675-45f5-a1ae-cc2da9647b75/47562449822_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cgnlyvi85ejlucyu/xea9snvzzwwgaxi3.jpg",EaDo residents want green space restored
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47562364897_47562365166/47562365166/hf-uuid-15aa3543-6067-4333-a150-cd72f3314af2/47562365166_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/rx47khgxkp99timy/3afe8ardpwefpw3g.jpg",What will happen to closed Fort Bend ISD Schools?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47562179777_47562180030/47562180030/hf-uuid-0883adcb-7c73-4ca5-8e0a-4757a33a15c9/47562180030_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/bxy01sloh9v8q6zr/jj1eduv970hldcoe.jpg",FOX 26's Jade Flury Talks Dating Costs, Houston Drivers &amp; The Price of Being a Woman | 97.9 The Box
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_47557322666_47557339670/47557339670/hf-uuid-5f34b090-c713-4bb0-8d93-02fea53f28c1/47557339670_lowres.mp4
-
 #EXTINF:-1 tvg-name="Keshet 12" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2230,7 +2239,7 @@ https://keshet12.samhoustonbot.workers.dev
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12dvr/index.m3u8?hdnea=st%3D1787472948%7Eexp%3D1787473848%7Eacl%3D%2F*%7Ehmac%3D930679b40fe0ba6ade61ee79702e2a2e15967b1f4078d137e58ae6a9dc24bae4
+https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12dvr/index.m3u8?hdnea=st%3D1787487408%7Eexp%3D1787488308%7Eacl%3D%2F*%7Ehmac%3D24730ab909cf3da76fce72a5c0ba8cba3b40824eb4846068f3be171b62715411
 
 #EXTINF:-1 tvg-name="N12 News" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",N12 News
 #EXTVLCOPT:network-caching=2000
@@ -2239,7 +2248,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12dvr/index.m3u8?h
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/n12/hls/live/2103938/k12/index.m3u8?hdnea=st%3D1787472948%7Eexp%3D1787473848%7Eacl%3D%2F*%7Ehmac%3D930679b40fe0ba6ade61ee79702e2a2e15967b1f4078d137e58ae6a9dc24bae4
+https://mako-streaming.akamaized.net/n12/hls/live/2103938/k12/index.m3u8?hdnea=st%3D1787487409%7Eexp%3D1787488309%7Eacl%3D%2F*%7Ehmac%3Dc573f9aad12fd5c7246c92650bf9d40d64c69684b73caec130a7e91da55c9624
 
 #EXTINF:-1 tvg-name="Keshet 12 CC" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12 CC
 #EXTVLCOPT:network-caching=2000
@@ -2248,7 +2257,7 @@ https://mako-streaming.akamaized.net/n12/hls/live/2103938/k12/index.m3u8?hdnea=s
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035325/k12cc/index.m3u8?hdnea=st%3D1787472949%7Eexp%3D1787473849%7Eacl%3D%2F*%7Ehmac%3D28ce254879c4e63dba9e8ac70bb23dcd770f6e31b90cbc2ed2c139c240a7521d
+https://mako-streaming.akamaized.net/direct/hls/live/2035325/k12cc/index.m3u8?hdnea=st%3D1787487409%7Eexp%3D1787488309%7Eacl%3D%2F*%7Ehmac%3Dc573f9aad12fd5c7246c92650bf9d40d64c69684b73caec130a7e91da55c9624
 
 #EXTINF:-1 tvg-name="Channel 24" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Channel 24
 #EXTVLCOPT:network-caching=2000
@@ -2257,7 +2266,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035325/k12cc/index.m3u8?hd
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1787472949%7Eexp%3D1787473849%7Eacl%3D%2F*%7Ehmac%3D28ce254879c4e63dba9e8ac70bb23dcd770f6e31b90cbc2ed2c139c240a7521d
+https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1787487409%7Eexp%3D1787488309%7Eacl%3D%2F*%7Ehmac%3Dc573f9aad12fd5c7246c92650bf9d40d64c69684b73caec130a7e91da55c9624
 
 #EXTINF:-1 tvg-name="Eretz Nehederet" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Eretz Nehederet
 #EXTVLCOPT:network-caching=2000
@@ -2266,7 +2275,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1787472950%7Eexp%3D1787473850%7Eacl%3D%2F*%7Ehmac%3Daff663cac4ff602506f89bd61355d96e99572c8b79463f35f7d543e804d3fc62
+https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1787487410%7Eexp%3D1787488310%7Eacl%3D%2F*%7Ehmac%3Dd5cb6580757b53f98735a638a47c94a9689ee934b1fafabd59af72284083c89b
 
 #EXTINF:-1 tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000
@@ -3131,15 +3140,6 @@ https://t2hls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://nl.livekadeh.com/hls2/alwilayah_tv.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/ps4Gtj0.png" tvg-id="AssiratTV.ir@SD",Assirat TV (576p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" tvg-id="IranJewishTV.ir@SD",Iran Jewish TV
 #EXTVLCOPT:network-caching=2000
