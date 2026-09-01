@@ -1197,6 +1197,15 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",PMC Royale
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmcrohls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pmc.default.svg",PMC (Backup)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2221,7 +2230,7 @@ https://keshet12.samhoustonbot.workers.dev
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12dvr/index.m3u8?hdnea=st%3D1788257206%7Eexp%3D1788258106%7Eacl%3D%2F*%7Ehmac%3D479811b915d5fa4d758525f0d1bbe625cdf01afaf2e5cd7b281a7bdb71bcf092
+https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12dvr/index.m3u8?hdnea=st%3D1788285442%7Eexp%3D1788286342%7Eacl%3D%2F*%7Ehmac%3D091d66b7d6bb3209378ab834e92a5bd19447e555cbae4d349ffd223efffd62aa
 
 #EXTINF:-1 tvg-name="N12 News" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",N12 News
 #EXTVLCOPT:network-caching=2000
@@ -2230,7 +2239,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2033791/k12dvr/index.m3u8?h
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/n12/hls/live/2103938/k12/index.m3u8?hdnea=st%3D1788257207%7Eexp%3D1788258107%7Eacl%3D%2F*%7Ehmac%3Df55243b71e799ca5fe361ae2452b806ba88b5b8bed9848303d33f299d8663a49
+https://mako-streaming.akamaized.net/n12/hls/live/2103938/k12/index.m3u8?hdnea=st%3D1788285442%7Eexp%3D1788286342%7Eacl%3D%2F*%7Ehmac%3D091d66b7d6bb3209378ab834e92a5bd19447e555cbae4d349ffd223efffd62aa
 
 #EXTINF:-1 tvg-name="Keshet 12 CC" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12 CC
 #EXTVLCOPT:network-caching=2000
@@ -2239,7 +2248,7 @@ https://mako-streaming.akamaized.net/n12/hls/live/2103938/k12/index.m3u8?hdnea=s
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035325/k12cc/index.m3u8?hdnea=st%3D1788257207%7Eexp%3D1788258107%7Eacl%3D%2F*%7Ehmac%3Df55243b71e799ca5fe361ae2452b806ba88b5b8bed9848303d33f299d8663a49
+https://mako-streaming.akamaized.net/direct/hls/live/2035325/k12cc/index.m3u8?hdnea=st%3D1788285442%7Eexp%3D1788286342%7Eacl%3D%2F*%7Ehmac%3D091d66b7d6bb3209378ab834e92a5bd19447e555cbae4d349ffd223efffd62aa
 
 #EXTINF:-1 tvg-name="Channel 24" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Channel 24
 #EXTVLCOPT:network-caching=2000
@@ -2248,7 +2257,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035325/k12cc/index.m3u8?hd
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1788257208%7Eexp%3D1788258108%7Eacl%3D%2F*%7Ehmac%3D13183d6f9125584b6c44b7e215643a13cf83373149f0398a5e178fa059d273b4
+https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1788285442%7Eexp%3D1788286342%7Eacl%3D%2F*%7Ehmac%3D091d66b7d6bb3209378ab834e92a5bd19447e555cbae4d349ffd223efffd62aa
 
 #EXTINF:-1 tvg-name="Eretz Nehederet" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Eretz Nehederet
 #EXTVLCOPT:network-caching=2000
@@ -2257,7 +2266,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1788257208%7Eexp%3D1788258108%7Eacl%3D%2F*%7Ehmac%3D13183d6f9125584b6c44b7e215643a13cf83373149f0398a5e178fa059d273b4
+https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1788285443%7Eexp%3D1788286343%7Eacl%3D%2F*%7Ehmac%3Ded5ba13f6f8126b04f14d0bc27c9ea256419bb6791f165d6bd48ba9fb7a3f3a5
 
 #EXTINF:-1 tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000
@@ -2907,6 +2916,24 @@ https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live2.snn.ir/hls/snn2_hd720/index.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/7oGGgfD.png" tvg-id="KanalJadid.uk@SD",Kanal Jadid
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://kjhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/RQ5DzEE.png" tvg-id="ParsTV.us@SD",Pars TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://parshls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/t5AUthL.png" tvg-id="247BoxTV.ir@SD",247 Box TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2915,6 +2942,15 @@ https://live2.snn.ir/hls/snn2_hd720/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.247box.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/MGMhUDx.png" tvg-id="OXIRTV.ir@SD",OXIR TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://hls.oxir.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/X38vWJ1.png" tvg-id="YourTimeTV.ir@SD",YourTime TV
 #EXTVLCOPT:network-caching=2000
@@ -2952,6 +2988,33 @@ https://sh7hls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://itnhls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8AfAfZE.png" tvg-id="AVASeries.ir@SD",AVA Series
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://avaserieshls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/afrafilm.jpg" tvg-id="AfraFilm.ir@SD",Afra Film
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://afrafhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/cafefilm.png" tvg-id="CafeFilm.ir@SD",Cafe Film
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cafefhls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-id="GoldStar.ir@SD",Gold Star
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2969,6 +3032,15 @@ https://moviethls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://gcinemahls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/homeplus.jpg" tvg-id="HomePlus.ir@SD",Home Plus
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://homeplushls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/icc.png" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
 #EXTVLCOPT:network-caching=2000
@@ -2988,6 +3060,24 @@ https://icchls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://metafilmhls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/n9cuM2W.jpg" tvg-id="SL1.ir@SD",SL 1
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://slonehls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/BVuUx5R.jpg" tvg-id="SL2.ir@SD",SL 2
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sltwohls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/LctanF8.png" tvg-id="AFNTV.ir@SD",AFN TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3005,6 +3095,15 @@ https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pmchls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/pmcroyale.png" tvg-id="PMCRoyale.ae@SD",PMC Royale (1080p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmcrohls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Wu8MBb7.png" tvg-id="T2TV.ir@SD",T2 TV
 #EXTVLCOPT:network-caching=2000
@@ -3177,6 +3276,15 @@ https://live.asil.tv/asiltv/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.nejat.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/araxtv.png" tvg-id="AraxTV.ir@SD",Arax TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://araxhls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/arkotv.jpg" tvg-id="ArkoTV.ir@SD",Arko TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3194,6 +3302,15 @@ https://arkhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://arvhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/classictv.png" tvg-id="ClassicTV.ir@SD",Classic TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://clshls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/dejtv.jpg" tvg-id="DejTV.ir@HD",Dej TV
 #EXTVLCOPT:network-caching=2000
