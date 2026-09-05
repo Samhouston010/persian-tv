@@ -543,8 +543,7 @@ SOURCES = [
 EPG_SOURCES = [
     "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.xml.gz",
-    # ponytail: matches sepehr_vod.m3u suspension above (user request 2026-08-22)
-    # "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",
+    "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",  # re-enabled 2026-09-05
 ]
 
 GROUP_RE = re.compile(r'group-title="[^"]*"')
@@ -1143,8 +1142,7 @@ def main():
         out.append(extinf); out.append(_ROT_REF); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(arabic_music)
     print(f"Arabic Music: {len(arabic_music)} channels", flush=True)
-    vod = []  # ponytail: Iran Intl VOD suspended by user request 2026-08-22 — playlist got too heavy
-    print("Iran Intl VOD: disabled", flush=True)
+    vod = fetch_iranintl_vod()  # re-enabled by user request 2026-09-05, appended at end of playlist
     fox26 = fetch_fox26_vod()
     # ponytail: TiviMate buckets raw .mp4 URLs into the Movies tab by file extension,
     # regardless of group-title language — renaming the group doesn't move it next to
@@ -1169,8 +1167,7 @@ def main():
     #     out.append(extinf); out.append(stream); out.append("")
     # total += len(namakade)
     # print(f"Namakade (IranProud) VOD: {len(namakade)} videos", flush=True)
-    ted = []  # ponytail: disabled until playlist is finalized
-    print("TED Talks: disabled", flush=True)
+    ted = fetch_ted_direct()  # re-enabled by user request 2026-09-05, appended at end of playlist
     israel = fetch_israel()
     for extinf, stream in israel:
         extinf = _fill_logo(extinf, logo_by_id)
@@ -1195,6 +1192,20 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(iran_org)
     print(f"Iran (iptv-org): {len(iran_org)} channels", flush=True)
+    for extinf, stream in vod:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(vod)
+    print(f"Iran Intl VOD: {len(vod)} videos", flush=True)
+    for extinf, stream in ted:
+        out.append(extinf); out.append(stream); out.append("")
+    total += len(ted)
+    sepehr_vod_text = fetch("https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.m3u").decode("utf-8", errors="ignore")
+    sepehr_vod = [e for e in extract(sepehr_vod_text, None) if 'سپهر VOD - سریال' not in e[0]]
+    for extinf, stream in sepehr_vod:
+        extinf = _fill_logo(extinf, logo_by_id)
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(sepehr_vod)
+    print(f"Sepehr VOD: {len(sepehr_vod)} videos", flush=True)
     os.makedirs("ایران", exist_ok=True)
     iran_file = ["#EXTM3U", ""]
     for extinf, stream in parsatv_extra + iran_org:
