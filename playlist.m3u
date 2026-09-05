@@ -1053,6 +1053,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2475,15 +2484,6 @@ https://hls.avang.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://spf-ayeneh.cfallinone.workers.dev/?url=https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040318/b0d2763968fd0bdd2dc0d44ba2abf9ce.sdp/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/kanalyek.png" group-title="ایران",Channel One
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app:8443/ChannelOne/index-0.m3u8
-
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/cinex.png" group-title="ایران",Cinex
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2510,15 +2510,6 @@ https://derakhtzhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://media.streambrothers.com:1936/8276/8276/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/ekran.jpg" group-title="ایران",Ekran Movies
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/EkranMovies/index-0.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/erfanhalgheh.png" group-title="ایران",Erfan Halgheh
 #EXTVLCOPT:network-caching=2000
@@ -2789,33 +2780,6 @@ https://hls.ravitv.com/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://arvhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/t2tv.jpg" group-title="ایران",T2 America
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2America/index-0.m3u8
-
-#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/t2tv.jpg" group-title="ایران",T2 International
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2International/index-0.m3u8
-
-#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/t2tv.jpg" group-title="ایران",T2 Movies
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/tmtelevision.png" group-title="ایران",TM TV
 #EXTVLCOPT:network-caching=2000
