@@ -17,6 +17,18 @@ ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 # Tapesh Iran -- DNS doesn't resolve) were left out as genuinely dead, not just unlucky.
 # Telewebion Sport 1-3 share telewebion.ir's current outage (see build.py's Telewebion
 # section) -- included anyway since they'll start working the moment that recovers.
+#
+# 2026-09-05 update: GEM Mifa Music turned out NOT to be behind that same
+# pakhshzende.com wall -- its real stream is a plain 5centscdn.com URL, found
+# by loading the page in a real (headless) browser and watching the actual
+# network request the JW Player makes, verified 200 + #EXTM3U by hand. The
+# other 17 GEM-* variants weren't re-checked the same way yet (extraction
+# got rate-limited by parsatv.com after ~20 automated page loads in a few
+# minutes) -- don't assume they're all still dead without trying again,
+# same technique, with real delay between each channel this time.
+# No official channel logo found on the page itself -- using the site's own
+# generic parsatv.com logo as a placeholder, swap for a real GEM Mifa Music
+# logo if the user has one.
 PARSATV_IRAN_EXTRA = [
     ("4U TV", "https://www.parsatv.com/index_files/channels/4u.png", "https://hls.4utv.live/hls/stream.m3u8"),
     ("Alternative Shorai TV", "https://www.parsatv.com/index_files/channels/alternativeshoraitv.jpg", "https://hlspackager.akamaized.net/live/DB/ALTERNATIVE_SHORAI_TV/HLS/ALTERNATIVE_SHORAI_TV.m3u8"),
@@ -66,6 +78,7 @@ PARSATV_IRAN_EXTRA = [
     ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8"),
     ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8"),
     ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
+    ("GEM Mifa Music", "https://www.parsatv.com/index_files/parsalogo.png", "https://livestream.5centscdn.com/parstvtvweb1/e8ac8f595b3003ea3d22178c05c67593.sdp/playlist.m3u8"),
 ]
 
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
