@@ -126,7 +126,14 @@ def fetch_gem_tv_channels():
             slugs, seen = [], set()
             try:
                 disco = ctx.new_page()
-                disco.goto("https://www.parsatv.com/name=GEM-TV", timeout=20000, wait_until="networkidle")
+                # Real bug found 2026-09-05: wait_until="networkidle" hung and
+                # timed out on EVERY page in CI -- these are live-stream pages,
+                # background network activity (ads/analytics/buffering) never
+                # goes fully idle. Default wait_until (page "load" event) plus
+                # an explicit sleep for the JS-injected nav/player to finish is
+                # what actually worked interactively; networkidle never should
+                # have been used here.
+                disco.goto("https://www.parsatv.com/name=GEM-TV", timeout=20000)
                 disco.wait_for_timeout(4000)
                 hrefs = disco.eval_on_selector_all(
                     "a[href*='name=']",
@@ -135,7 +142,12 @@ def fetch_gem_tv_channels():
                 for href in hrefs or []:
                     m = re.search(r"name=([^#&?]+)", href or "")
                     slug = m.group(1) if m else None
-                    if slug and ("gem" in slug.lower() or "mifa" in slug.lower()) and slug not in seen:
+                    # Precise GEM-family match -- a bare "gem" substring also
+                    # matched unrelated channels on the same nav (GEMS-TV,
+                    # Gem-Shopping-Network), confirmed live 2026-09-05.
+                    if slug and slug not in seen and (
+                        slug.lower().startswith("gem-") or slug.lower() == "mifa-music"
+                    ):
                         seen.add(slug)
                         slugs.append(slug)
                 disco.close()
@@ -150,8 +162,8 @@ def fetch_gem_tv_channels():
                 pg = ctx.new_page()
                 pg.on("request", lambda req: found.append(req.url) if ".m3u8" in req.url else None)
                 try:
-                    pg.goto(f"https://www.parsatv.com/name={slug}", timeout=20000, wait_until="networkidle")
-                    pg.wait_for_timeout(9000)
+                    pg.goto(f"https://www.parsatv.com/name={slug}", timeout=20000)
+                    pg.wait_for_timeout(11000)
                 except Exception as e:
                     print(f"GEM TV: {slug} failed to load: {e}", flush=True)
                 pg.close()
