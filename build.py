@@ -71,15 +71,8 @@ PARSATV_IRAN_EXTRA = [
 ]
 
 # GEM TV family, own group per explicit request 2026-09-05 -- own separate
-# folder, not lumped into "ایران". Fully automatic per explicit follow-up
-# request ("اگه کم شدن یا زیاد شدن اتوماتیک اضافه یا کم بشه") -- re-discovers
-# the current GEM-* channel list from parsatv.com's own nav links AND
-# re-extracts each stream URL fresh on every run (see fetch_gem_tv_channels
-# below), instead of a hardcoded list that would silently drift out of date
-# as parsatv.com adds/removes channels. No manual list to maintain here.
-GEM_LOGO = "https://www.parsatv.com/index_files/parsalogo.png"
-
-
+# folder, not lumped into "ایران".
+#
 # GEM TV family stream URLs, extracted 2026-09-05 by rendering each real
 # parsatv.com/name=<slug> page in a headless (real, non-CI) browser and
 # reading the actual network request the page's JW/HLS player makes -- a
@@ -102,23 +95,26 @@ GEM_LOGO = "https://www.parsatv.com/index_files/parsalogo.png"
 # instead of automating in CI. GEM Drama / GEM Classic / GEM Entertainment
 # 404'd on their backend at extraction time -- left out, worth retrying
 # later in case they come back.
-GEM_LOGO = "https://www.parsatv.com/index_files/parsalogo.png"
+#
+# Real per-channel logos from GEM Group's own official site (gemgroup.tv/en/channels),
+# not the generic parsatv.com placeholder used at first.
+GEM_LOGO_BASE = "https://gemgroup.tv/assets/images/channels"
 GEM_TV_CHANNELS = [
-    ("GEM TV", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520TV2%2Fplaylist.m3u8"),
-    ("GEM Mifa Music", GEM_LOGO, "https://livestream.5centscdn.com/parstvtvweb1/e8ac8f595b3003ea3d22178c05c67593.sdp/playlist.m3u8"),
-    ("GEM Series", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Series%25202%2Fplaylist.m3u8"),
-    ("GEM Rubix", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Rubix2%2Fplaylist.m3u8"),
-    ("GEM River", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520Gem%2520River2%2Fplaylist.m3u8"),
-    ("GEM Comedy", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Comedy2%2Fplaylist.m3u8"),
-    ("GEM Onyx", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520Gem%2520Onyx2%2Fplaylist.m3u8"),
-    ("GEM Life", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Life2%2Fplaylist.m3u8"),
-    ("GEM Film", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Film2%2Fplaylist.m3u8"),
-    ("GEM Bollywood", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Bollywood2%2Fplaylist.m3u8"),
-    ("GEM Kids", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Kids2%2Fplaylist.m3u8"),
-    ("GEM Junior", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Junior2%2Fplaylist.m3u8"),
-    ("GEM Fit", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FIT2%2Fplaylist.m3u8"),
-    ("GEM Pixel", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Pixel2%2Fplaylist.m3u8"),
-    ("GEM Food", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8"),
+    ("GEM TV", f"{GEM_LOGO_BASE}/icon_16.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520TV2%2Fplaylist.m3u8"),
+    ("GEM Mifa Music", f"{GEM_LOGO_BASE}/icon_22.png", "https://livestream.5centscdn.com/parstvtvweb1/e8ac8f595b3003ea3d22178c05c67593.sdp/playlist.m3u8"),
+    ("GEM Series", f"{GEM_LOGO_BASE}/icon_32.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Series%25202%2Fplaylist.m3u8"),
+    ("GEM Rubix", f"{GEM_LOGO_BASE}/icon_30.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Rubix2%2Fplaylist.m3u8"),
+    ("GEM River", f"{GEM_LOGO_BASE}/icon_28.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520Gem%2520River2%2Fplaylist.m3u8"),
+    ("GEM Comedy", f"{GEM_LOGO_BASE}/icon_13.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Comedy2%2Fplaylist.m3u8"),
+    ("GEM Onyx", f"{GEM_LOGO_BASE}/icon_26.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520Gem%2520Onyx2%2Fplaylist.m3u8"),
+    ("GEM Life", f"{GEM_LOGO_BASE}/icon_21.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Life2%2Fplaylist.m3u8"),
+    ("GEM Film", f"{GEM_LOGO_BASE}/icon_15.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Film2%2Fplaylist.m3u8"),
+    ("GEM Bollywood", f"{GEM_LOGO_BASE}/icon_6.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Bollywood2%2Fplaylist.m3u8"),
+    ("GEM Kids", f"{GEM_LOGO_BASE}/icon_19.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Kids2%2Fplaylist.m3u8"),
+    ("GEM Junior", f"{GEM_LOGO_BASE}/icon_18.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Junior2%2Fplaylist.m3u8"),
+    ("GEM Fit", f"{GEM_LOGO_BASE}/icon_5.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FIT2%2Fplaylist.m3u8"),
+    ("GEM Pixel", f"{GEM_LOGO_BASE}/icon_27.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Pixel2%2Fplaylist.m3u8"),
+    ("GEM Food", f"{GEM_LOGO_BASE}/icon_9.png", "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8"),
 ]
 
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
