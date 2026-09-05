@@ -68,6 +68,32 @@ PARSATV_IRAN_EXTRA = [
     ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8"),
     ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8"),
     ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
+    # user request 2026-09-05: parsatv.com's #persian list re-checked against the full
+    # playlist for anything not yet added; these 21 all resolved to a live stream via
+    # plain HTML (no headless browser needed this time). Pars-TV and Persiana-Documentary
+    # were also found but skipped -- their streams are byte-identical to GEM Mifa Music and
+    # Persiana Science respectively, just re-branded pages for the same feed.
+    ("Afra Film", "https://www.parsatv.com/index_files/channels/afrafilm.jpg", "https://afrafhls.wns.live/hls/stream.m3u8"),
+    ("Arax TV", "https://www.parsatv.com/index_files/channels/araxtv.png", "https://araxhls.wns.live/hls/stream.m3u8"),
+    ("Cafe Film", "https://www.parsatv.com/index_files/channels/cafefilm.png", "https://cafefhls.wns.live/hls/stream.m3u8"),
+    ("Cafe Trade TV", "https://www.parsatv.com/index_files/channels/cafetrade.png", "https://cafetradehls.wns.live/hls/stream.m3u8"),
+    ("Classic TV", "https://www.parsatv.com/index_files/channels/classictv.png", "https://clshls.wns.live/hls/stream.m3u8"),
+    ("ICnet", "https://www.parsatv.com/index_files/channels/icnet1.png", "https://icnet1hls.wns.live/hls/stream.m3u8"),
+    ("ICnet 2", "https://www.parsatv.com/index_files/channels/icnet2.png", "https://icnet2hls.wns.live/hls/stream.m3u8"),
+    ("ICnet 3", "https://www.parsatv.com/index_files/channels/icnet3.png", "https://ic3hls.wns.live/hls/stream.m3u8"),
+    ("ITN TV", "https://www.parsatv.com/index_files/channels/itn.png", "https://itnhls.wns.live/hls/stream.m3u8"),
+    ("Iran Jewish TV", "https://www.parsatv.com/index_files/channels/iranjewishtv.jpg", "https://corsply-v0s4.cfcross.workers.dev/?url=http://iran620.com:1935/live/IranJewishTv/playlist.m3u8"),
+    ("Israel Pars TV", "https://www.parsatv.com/index_files/channels/israelparstv3.jpg", "https://live.pars-israel.com/tmp_hls/iptv/index.m3u8"),
+    ("Kanal Jadid", "https://www.parsatv.com/index_files/channels/kanaljadid.png", "https://kjhls.wns.live/hls/stream.m3u8"),
+    ("Meta Film", "https://www.parsatv.com/index_files/channels/metafilm.jpg", "https://metafilmhls.wns.live/hls/stream.m3u8"),
+    ("Mihan TV", "https://www.parsatv.com/index_files/channels/mihantv.jpg", "https://iptv.mihantv.com/mihantv/playlist.m3u8"),
+    ("Mohabat TV", "https://www.parsatv.com/index_files/channels/mohabattv.jpg", "https://5ad386ff92705.streamlock.net/live_transcodermh/ngrp:mohabat.stream_all/playlist.m3u8"),
+    ("Oxir TV", "https://www.parsatv.com/index_files/channels/oxirtv.png", "https://hls.oxir.live/hls/stream.m3u8"),
+    ("Payvand TV", "https://www.parsatv.com/index_files/channels/payvand.jpg", "https://tgn.bozztv.com/cus01/ucur1/Payvand/playlist.m3u8"),
+    ("SL 1", "https://www.parsatv.com/index_files/channels/sl.png", "https://slonehls.wns.live/hls/stream.m3u8"),
+    ("SL 2", "https://www.parsatv.com/index_files/channels/sl.png", "https://sltwohls.wns.live/hls/stream.m3u8"),
+    ("Shabakeh 7", "https://www.parsatv.com/index_files/channels/shabake7.jpg", "https://sh7hls.wns.live/hls/stream.m3u8"),
+    ("YourTime TV", "https://www.parsatv.com/index_files/channels/yourtime.png", "https://live.yourtime.tv/hls/stream.m3u8"),
 ]
 
 # GEM TV family, own group per explicit request 2026-09-05 -- own separate
