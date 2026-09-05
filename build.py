@@ -19,16 +19,20 @@ ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 # Tapesh Iran -- DNS doesn't resolve) were left out as genuinely dead, not just unlucky.
 # Telewebion Sport 1-3 share telewebion.ir's current outage (see build.py's Telewebion
 # section) -- included anyway since they'll start working the moment that recovers.
+# ponytail: Channel One/Ekran Movies/T2 America/T2 International/T2 Movies/PMC (primary)
+# removed 2026-09-05 -- all routed through onetv.app, either directly or via the
+# spf-onetv-9i4j.cfallinone.workers.dev proxy, and that whole worker domain now NXDOMAINs
+# (deleted by whoever ran it) while onetv.app itself 403s any direct/unproxied request.
+# T2 TV (different host, t2hls.wns.live) and PMC Royale/PMC (Backup) (different hosts)
+# are unaffected and still work.
 PARSATV_IRAN_EXTRA = [
     ("4U TV", "https://www.parsatv.com/index_files/channels/4u.png", "https://hls.4utv.live/hls/stream.m3u8"),
     ("Alternative Shorai TV", "https://www.parsatv.com/index_files/channels/alternativeshoraitv.jpg", "https://hlspackager.akamaized.net/live/DB/ALTERNATIVE_SHORAI_TV/HLS/ALTERNATIVE_SHORAI_TV.m3u8"),
     ("Avang TV", "https://www.parsatv.com/index_files/channels/avang.png", "https://hls.avang.live/hls/stream.m3u8"),
     ("Ayeneh TV", "https://www.parsatv.com/index_files/channels/ayenehtv.png", "https://spf-ayeneh.cfallinone.workers.dev/?url=https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040318/b0d2763968fd0bdd2dc0d44ba2abf9ce.sdp/playlist.m3u8"),
-    ("Channel One", "https://www.parsatv.com/index_files/channels/kanalyek.png", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app:8443/ChannelOne/index-0.m3u8"),
     ("Cinex", "https://www.parsatv.com/index_files/channels/cinex.png", "https://gcinemahls.wns.live/hls/stream.m3u8"),
     ("Derakhte Zendegi", "https://www.parsatv.com/index_files/channels/derakhtezendegi.jpg", "https://derakhtzhls.wns.live/hls/stream.m3u8"),
     ("Didgah TV", "https://www.parsatv.com/index_files/channels/didgahtv.png", "https://media.streambrothers.com:1936/8276/8276/playlist.m3u8"),
-    ("Ekran Movies", "https://www.parsatv.com/index_files/channels/ekran.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/EkranMovies/index-0.m3u8"),
     ("Erfan Halgheh", "https://www.parsatv.com/index_files/channels/erfanhalgheh.png", "https://hls.erfanhalgheh.live/hls/stream.m3u8"),
     ("Ganje Hozoor", "https://www.parsatv.com/index_files/channels/ganjehozoor.png", "https://media.parvizshahbazi.com/ganjehozour/Main_tv/playlist.m3u8"),
     ("GordAfarid TV", "https://www.parsatv.com/index_files/channels/gordafaridtv.jpg", "https://gatvhls.wns.live/hls/stream.m3u8"),
@@ -59,9 +63,6 @@ PARSATV_IRAN_EXTRA = [
     ("Rahe Nejat TV", "https://www.parsatv.com/index_files/channels/rahenejat.jpg", "https://hls.rahenejat.live/hls/stream.m3u8"),
     ("Ravi TV", "https://www.parsatv.com/index_files/channels/ravitv.png", "https://hls.ravitv.com/hls/stream.m3u8"),
     ("Royal TV", "https://www.parsatv.com/index_files/channels/royaltv.png", "https://arvhls.wns.live/hls/stream.m3u8"),
-    ("T2 America", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2America/index-0.m3u8"),
-    ("T2 International", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2International/index-0.m3u8"),
-    ("T2 Movies", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.cfallinone.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8"),
     ("TM TV", "https://www.parsatv.com/index_files/channels/tmtelevision.png", "https://hls.tmtv.live/hls/stream.m3u8"),
     ("Tasvire Iran", "https://www.parsatv.com/index_files/channels/timtv.png", "https://bozztv.com/1gbw5/tintv/tintv/playlist.m3u8"),
     ("Woman TV", "https://www.parsatv.com/index_files/channels/womantv.jpg", "https://wmtvhls.wns.live/hls/stream.m3u8"),
@@ -624,7 +625,6 @@ PARSATV_MOVIE_EXTRA = [
 ]
 
 MUSIC_CHANNELS = [
-    _musch("PMC",                           "",  "https://ca-rt.onetv.app:8443/PMCMusic/index-0.m3u8?token=onetv202"),
     _musch("PMC Royale",                    "",  "https://pmcrohls.wns.live/hls/stream.m3u8"),
     _musch("PMC (Backup)",                  "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pmc.default.svg", "https://pmchls.wns.live/hls/stream.m3u8"),
     _musch("T2 TV",                         "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://t2hls.wns.live/hls/stream.m3u8"),
