@@ -1167,7 +1167,7 @@ def main():
     #     out.append(extinf); out.append(stream); out.append("")
     # total += len(namakade)
     # print(f"Namakade (IranProud) VOD: {len(namakade)} videos", flush=True)
-    ted = fetch_ted_direct()  # re-enabled by user request 2026-09-05, appended at end of playlist
+    ted = []  # ponytail: TED re-enabled 2026-09-05 then reverted same day -- 7259 talks across 340 groups ballooned the file to 3.1MB, user said keep it disabled for now
     israel = fetch_israel()
     for extinf, stream in israel:
         extinf = _fill_logo(extinf, logo_by_id)
