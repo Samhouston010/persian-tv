@@ -80,106 +80,46 @@ PARSATV_IRAN_EXTRA = [
 GEM_LOGO = "https://www.parsatv.com/index_files/parsalogo.png"
 
 
-def fetch_gem_tv_channels():
-    """Discovers + extracts the current GEM TV family from parsatv.com.
-
-    The stream URL is never in the static HTML (the page's JW/HLS player
-    requests it via JS after load) -- a plain HTTP client can't see it,
-    which is exactly why the 2026-07-11 PARSATV_IRAN_EXTRA scrape above
-    wrote the whole GEM-* family off as unreachable. Rendering each page in
-    a real (headless) Chromium and reading the actual network request the
-    player makes works fine. The network-request handler MUST be attached
-    BEFORE navigating, not after -- attaching afterward missed the request
-    entirely on faster-loading pages (confirmed live 2026-09-05: worked by
-    luck for one channel, silently found nothing for the rest until this
-    ordering fix).
-
-    Best-effort end to end: no Playwright installed, the site being down, or
-    any single channel not resolving all degrade to fewer channels rather
-    than failing the whole playlist build.
-    """
-    try:
-        from playwright.sync_api import sync_playwright
-    except Exception as e:
-        print(f"GEM TV: playwright not available ({e}), skipping", flush=True)
-        return []
-
-    channels = []
-    try:
-        with sync_playwright() as p:
-            # --disable-blink-features=AutomationControlled + a normal UA/viewport:
-            # the nav menu and the player's own stream request are both injected by
-            # page JS, and sites like this commonly skip that JS (or serve a
-            # stripped-down page) for a detectably-automated browser -- confirmed
-            # live 2026-09-05: default launch args found 0 nav links and 0 stream
-            # requests in CI, despite working fine interactively beforehand.
-            browser = p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
-            ctx = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                viewport={"width": 1366, "height": 900},
-            )
-
-            # Discover the current channel list from any one GEM page's own nav links,
-            # so channels parsatv.com adds or removes are picked up automatically.
-            # The nav is injected by page JS, not present in the raw HTML -- must
-            # wait after navigation, not just read the DOM immediately on goto().
-            slugs, seen = [], set()
-            try:
-                disco = ctx.new_page()
-                # Real bug found 2026-09-05: wait_until="networkidle" hung and
-                # timed out on EVERY page in CI -- these are live-stream pages,
-                # background network activity (ads/analytics/buffering) never
-                # goes fully idle. Default wait_until (page "load" event) plus
-                # an explicit sleep for the JS-injected nav/player to finish is
-                # what actually worked interactively; networkidle never should
-                # have been used here.
-                disco.goto("https://www.parsatv.com/name=GEM-TV", timeout=20000)
-                disco.wait_for_timeout(4000)
-                hrefs = disco.eval_on_selector_all(
-                    "a[href*='name=']",
-                    "els => els.map(e => e.getAttribute('href'))",
-                )
-                for href in hrefs or []:
-                    m = re.search(r"name=([^#&?]+)", href or "")
-                    slug = m.group(1) if m else None
-                    # Precise GEM-family match -- a bare "gem" substring also
-                    # matched unrelated channels on the same nav (GEMS-TV,
-                    # Gem-Shopping-Network), confirmed live 2026-09-05.
-                    if slug and slug not in seen and (
-                        slug.lower().startswith("gem-") or slug.lower() == "mifa-music"
-                    ):
-                        seen.add(slug)
-                        slugs.append(slug)
-                disco.close()
-            except Exception as e:
-                print(f"GEM TV: channel-list discovery failed: {e}", flush=True)
-            if "GEM-TV" not in slugs:
-                slugs.insert(0, "GEM-TV")
-            print(f"GEM TV: discovered {len(slugs)} channels", flush=True)
-
-            for slug in slugs:
-                found = []
-                pg = ctx.new_page()
-                pg.on("request", lambda req: found.append(req.url) if ".m3u8" in req.url else None)
-                try:
-                    pg.goto(f"https://www.parsatv.com/name={slug}", timeout=20000)
-                    pg.wait_for_timeout(11000)
-                except Exception as e:
-                    print(f"GEM TV: {slug} failed to load: {e}", flush=True)
-                pg.close()
-                if found:
-                    name = slug.replace("-", " ")
-                    if not name.upper().startswith("GEM"):
-                        name = f"GEM {name}"
-                    channels.append((name, GEM_LOGO, found[0]))
-                    print(f"GEM TV: {slug} -> OK", flush=True)
-                else:
-                    print(f"GEM TV: {slug} -> no stream found (skipped)", flush=True)
-
-            browser.close()
-    except Exception as e:
-        print(f"GEM TV: extraction failed: {e}", flush=True)
-    return channels
+# GEM TV family stream URLs, extracted 2026-09-05 by rendering each real
+# parsatv.com/name=<slug> page in a headless (real, non-CI) browser and
+# reading the actual network request the page's JW/HLS player makes -- a
+# plain HTTP client can't see it (it's injected by page JS after load),
+# which is exactly why the 2026-07-11 PARSATV_IRAN_EXTRA scrape above wrote
+# the whole GEM-* family off as unreachable.
+#
+# Tried making this fully automatic (re-discover + re-extract on every CI
+# run) via Playwright inside this repo's own GitHub Actions workflow --
+# confirmed it does NOT work there even after fixing three real bugs along
+# the way (handler-attached-after-navigate race, a networkidle wait that
+# hangs forever on live-stream pages, an over-broad "gem" substring match).
+# Every page loaded fine (no more timeouts) but the player's own stream
+# request never fired for ANY channel in CI, while the identical code
+# worked interactively from a non-CI machine -- strongly points to
+# GitHub Actions' well-known runner IPs getting bot-detected/served a
+# stripped page, not a bug in this script. Deliberately left as a static
+# list for now rather than chase that further -- per explicit decision
+# 2026-09-05, re-extract by hand (see the technique above) when needed
+# instead of automating in CI. GEM Drama / GEM Classic / GEM Entertainment
+# 404'd on their backend at extraction time -- left out, worth retrying
+# later in case they come back.
+GEM_LOGO = "https://www.parsatv.com/index_files/parsalogo.png"
+GEM_TV_CHANNELS = [
+    ("GEM TV", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520TV2%2Fplaylist.m3u8"),
+    ("GEM Mifa Music", GEM_LOGO, "https://livestream.5centscdn.com/parstvtvweb1/e8ac8f595b3003ea3d22178c05c67593.sdp/playlist.m3u8"),
+    ("GEM Series", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Series%25202%2Fplaylist.m3u8"),
+    ("GEM Rubix", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Rubix2%2Fplaylist.m3u8"),
+    ("GEM River", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520Gem%2520River2%2Fplaylist.m3u8"),
+    ("GEM Comedy", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Comedy2%2Fplaylist.m3u8"),
+    ("GEM Onyx", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520Gem%2520Onyx2%2Fplaylist.m3u8"),
+    ("GEM Life", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Life2%2Fplaylist.m3u8"),
+    ("GEM Film", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Film2%2Fplaylist.m3u8"),
+    ("GEM Bollywood", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Bollywood2%2Fplaylist.m3u8"),
+    ("GEM Kids", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Kids2%2Fplaylist.m3u8"),
+    ("GEM Junior", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Junior2%2Fplaylist.m3u8"),
+    ("GEM Fit", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FIT2%2Fplaylist.m3u8"),
+    ("GEM Pixel", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Pixel2%2Fplaylist.m3u8"),
+    ("GEM Food", GEM_LOGO, "https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8"),
+]
 
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
 # these dead intermittently under load -- and moved to end of پرشیانا instead
@@ -1249,7 +1189,7 @@ def main():
     total += len(parsatv_extra)
     print(f"Iran (parsatv.com): {len(parsatv_extra)} channels", flush=True)
     gem_tv = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="\U0001f48e جم تی‌وی",{name}', stream)
-              for name, logo, stream in fetch_gem_tv_channels()]
+              for name, logo, stream in GEM_TV_CHANNELS]
     for extinf, stream in gem_tv:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(gem_tv)
