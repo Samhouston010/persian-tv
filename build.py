@@ -11,24 +11,14 @@ ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 
 # user request 2026-07-11: scraped from parsatv.com's #persian channel list -- each page's
 # embedded stream URL extracted and verified (200 + #EXTM3U) individually. Channels whose
-# link 403'd/404'd (GEM-* family, ITC/Grand Sport/Grand Toon/Persiana Sports 1-4 -- all
-# behind the same Cloudflare-challenged pakhshzende.com proxy that no HTTP client can pass;
+# link 403'd/404'd (GEM-* family was believed to be behind a Cloudflare-challenged
+# pakhshzende.com proxy that no HTTP client can pass -- see GEM_TV_CHANNELS below, this
+# turned out to be wrong once a real headless browser was used instead of a plain HTTP
+# client; ITC/Grand Sport/Grand Toon/Persiana Sports 1-4 -- still behind that wall;
 # Iran TV Israel, Irane Farda, Khatereh TV -- 404; Persiana Rap TV -- bad SSL cert;
 # Tapesh Iran -- DNS doesn't resolve) were left out as genuinely dead, not just unlucky.
 # Telewebion Sport 1-3 share telewebion.ir's current outage (see build.py's Telewebion
 # section) -- included anyway since they'll start working the moment that recovers.
-#
-# 2026-09-05 update: GEM Mifa Music turned out NOT to be behind that same
-# pakhshzende.com wall -- its real stream is a plain 5centscdn.com URL, found
-# by loading the page in a real (headless) browser and watching the actual
-# network request the JW Player makes, verified 200 + #EXTM3U by hand. The
-# other 17 GEM-* variants weren't re-checked the same way yet (extraction
-# got rate-limited by parsatv.com after ~20 automated page loads in a few
-# minutes) -- don't assume they're all still dead without trying again,
-# same technique, with real delay between each channel this time.
-# No official channel logo found on the page itself -- using the site's own
-# generic parsatv.com logo as a placeholder, swap for a real GEM Mifa Music
-# logo if the user has one.
 PARSATV_IRAN_EXTRA = [
     ("4U TV", "https://www.parsatv.com/index_files/channels/4u.png", "https://hls.4utv.live/hls/stream.m3u8"),
     ("Alternative Shorai TV", "https://www.parsatv.com/index_files/channels/alternativeshoraitv.jpg", "https://hlspackager.akamaized.net/live/DB/ALTERNATIVE_SHORAI_TV/HLS/ALTERNATIVE_SHORAI_TV.m3u8"),
@@ -78,8 +68,93 @@ PARSATV_IRAN_EXTRA = [
     ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8"),
     ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8"),
     ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
-    ("GEM Mifa Music", "https://www.parsatv.com/index_files/parsalogo.png", "https://livestream.5centscdn.com/parstvtvweb1/e8ac8f595b3003ea3d22178c05c67593.sdp/playlist.m3u8"),
 ]
+
+# GEM TV family, own group per explicit request 2026-09-05 -- own separate
+# folder, not lumped into "ایران". Fully automatic per explicit follow-up
+# request ("اگه کم شدن یا زیاد شدن اتوماتیک اضافه یا کم بشه") -- re-discovers
+# the current GEM-* channel list from parsatv.com's own nav links AND
+# re-extracts each stream URL fresh on every run (see fetch_gem_tv_channels
+# below), instead of a hardcoded list that would silently drift out of date
+# as parsatv.com adds/removes channels. No manual list to maintain here.
+GEM_LOGO = "https://www.parsatv.com/index_files/parsalogo.png"
+
+
+def fetch_gem_tv_channels():
+    """Discovers + extracts the current GEM TV family from parsatv.com.
+
+    The stream URL is never in the static HTML (the page's JW/HLS player
+    requests it via JS after load) -- a plain HTTP client can't see it,
+    which is exactly why the 2026-07-11 PARSATV_IRAN_EXTRA scrape above
+    wrote the whole GEM-* family off as unreachable. Rendering each page in
+    a real (headless) Chromium and reading the actual network request the
+    player makes works fine. The network-request handler MUST be attached
+    BEFORE navigating, not after -- attaching afterward missed the request
+    entirely on faster-loading pages (confirmed live 2026-09-05: worked by
+    luck for one channel, silently found nothing for the rest until this
+    ordering fix).
+
+    Best-effort end to end: no Playwright installed, the site being down, or
+    any single channel not resolving all degrade to fewer channels rather
+    than failing the whole playlist build.
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        print(f"GEM TV: playwright not available ({e}), skipping", flush=True)
+        return []
+
+    channels = []
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+
+            # Discover the current channel list from any one GEM page's own nav links,
+            # so channels parsatv.com adds or removes are picked up automatically.
+            slugs, seen = [], set()
+            try:
+                disco = browser.new_page()
+                disco.goto("https://www.parsatv.com/name=GEM-TV", timeout=20000)
+                hrefs = disco.eval_on_selector_all(
+                    "a[href*='parsatv.com/name=']",
+                    "els => els.map(e => e.getAttribute('href'))",
+                )
+                for href in hrefs or []:
+                    m = re.search(r"name=([^#&?]+)", href or "")
+                    slug = m.group(1) if m else None
+                    if slug and ("gem" in slug.lower() or "mifa" in slug.lower()) and slug not in seen:
+                        seen.add(slug)
+                        slugs.append(slug)
+                disco.close()
+            except Exception as e:
+                print(f"GEM TV: channel-list discovery failed: {e}", flush=True)
+            if "GEM-TV" not in slugs:
+                slugs.insert(0, "GEM-TV")
+            print(f"GEM TV: discovered {len(slugs)} channels", flush=True)
+
+            for slug in slugs:
+                found = []
+                pg = browser.new_page()
+                pg.on("request", lambda req: found.append(req.url) if ".m3u8" in req.url else None)
+                try:
+                    pg.goto(f"https://www.parsatv.com/name={slug}", timeout=20000)
+                    pg.wait_for_timeout(9000)
+                except Exception as e:
+                    print(f"GEM TV: {slug} failed to load: {e}", flush=True)
+                pg.close()
+                if found:
+                    name = slug.replace("-", " ")
+                    if not name.upper().startswith("GEM"):
+                        name = f"GEM {name}"
+                    channels.append((name, GEM_LOGO, found[0]))
+                    print(f"GEM TV: {slug} -> OK", flush=True)
+                else:
+                    print(f"GEM TV: {slug} -> no stream found (skipped)", flush=True)
+
+            browser.close()
+    except Exception as e:
+        print(f"GEM TV: extraction failed: {e}", flush=True)
+    return channels
 
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
 # these dead intermittently under load -- and moved to end of پرشیانا instead
@@ -1148,6 +1223,12 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(parsatv_extra)
     print(f"Iran (parsatv.com): {len(parsatv_extra)} channels", flush=True)
+    gem_tv = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="\U0001f48e جم تی‌وی",{name}', stream)
+              for name, logo, stream in fetch_gem_tv_channels()]
+    for extinf, stream in gem_tv:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(gem_tv)
+    print(f"GEM TV: {len(gem_tv)} channels", flush=True)
     iran_org = fetch_iran_org(cat_by_id, logo_by_id)
     for extinf, stream in iran_org:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
