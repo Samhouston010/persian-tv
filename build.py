@@ -107,16 +107,29 @@ def fetch_gem_tv_channels():
     channels = []
     try:
         with sync_playwright() as p:
-            browser = p.chromium.launch()
+            # --disable-blink-features=AutomationControlled + a normal UA/viewport:
+            # the nav menu and the player's own stream request are both injected by
+            # page JS, and sites like this commonly skip that JS (or serve a
+            # stripped-down page) for a detectably-automated browser -- confirmed
+            # live 2026-09-05: default launch args found 0 nav links and 0 stream
+            # requests in CI, despite working fine interactively beforehand.
+            browser = p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
+            ctx = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                viewport={"width": 1366, "height": 900},
+            )
 
             # Discover the current channel list from any one GEM page's own nav links,
             # so channels parsatv.com adds or removes are picked up automatically.
+            # The nav is injected by page JS, not present in the raw HTML -- must
+            # wait after navigation, not just read the DOM immediately on goto().
             slugs, seen = [], set()
             try:
-                disco = browser.new_page()
-                disco.goto("https://www.parsatv.com/name=GEM-TV", timeout=20000)
+                disco = ctx.new_page()
+                disco.goto("https://www.parsatv.com/name=GEM-TV", timeout=20000, wait_until="networkidle")
+                disco.wait_for_timeout(4000)
                 hrefs = disco.eval_on_selector_all(
-                    "a[href*='parsatv.com/name=']",
+                    "a[href*='name=']",
                     "els => els.map(e => e.getAttribute('href'))",
                 )
                 for href in hrefs or []:
@@ -134,10 +147,10 @@ def fetch_gem_tv_channels():
 
             for slug in slugs:
                 found = []
-                pg = browser.new_page()
+                pg = ctx.new_page()
                 pg.on("request", lambda req: found.append(req.url) if ".m3u8" in req.url else None)
                 try:
-                    pg.goto(f"https://www.parsatv.com/name={slug}", timeout=20000)
+                    pg.goto(f"https://www.parsatv.com/name={slug}", timeout=20000, wait_until="networkidle")
                     pg.wait_for_timeout(9000)
                 except Exception as e:
                     print(f"GEM TV: {slug} failed to load: {e}", flush=True)
