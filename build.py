@@ -964,7 +964,16 @@ ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/i
 # timestamps. No custom User-Agent needed (tested with several, all worked).
 KESHET12_URL = "http://stream.mcquack.net/294/index.m3u8"
 
-ISRAEL_SKIP = {"Kan Kids"}
+ISRAEL_SKIP = {"Kan Kids", "Keshet 12 DVR", "N12 News", "Keshet 12 CC"}
+# 2026-09-09: unlike the 2026-08-22 case below (a stale-token problem, since
+# fixed), these three are dead at the origin itself -- confirmed with a fresh
+# token straight from mass.mako.co.il (same method as KESHET12_URL above):
+# Keshet 12 DVR (same id 2033791 as the main channel) returns the identical
+# frozen May-2025/#EXT-X-ENDLIST snapshot; N12 News (2103938) and Keshet 12 CC
+# (2035325) both return a generic/fallback manifest (byte-identical between
+# the two, different stream ids) whose segments 404. No working replacement
+# found (checked RokuIL's list, a web search) -- user said drop them if they
+# can't be fixed. Channel 24/Eretz Nehederet are unaffected, still alive.
 # ponytail: Keshet 12 DVR/N12 News/Keshet 12 CC/Channel 24/Eretz Nehederet un-skipped
 # 2026-08-22 -- they were dropped while israel-tv's GitHub Actions push was silently
 # failing (fixed same day, see israel-tv repo), leaving them stuck on expired tokens.
