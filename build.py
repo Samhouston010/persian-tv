@@ -952,7 +952,17 @@ def fetch_iran_org(cat_by_id, logo_by_id):
 
 
 ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
-KESHET12_WORKER = "https://keshet12.samhoustonbot.workers.dev"
+# 2026-09-09: the old et=ngt/Akamai-token trick (KESHET12_WORKER, a Cloudflare
+# Worker) is dead -- confirmed the underlying Akamai stream id (2033791/k12)
+# itself is frozen on a stale May 2025 snapshot with #EXT-X-ENDLIST, even when
+# bypassing the worker and generating a fresh token directly from
+# mass.mako.co.il (other Keshet ids like Channel 24 are still alive, so this
+# is specific to Keshet 12's own id, not our worker or Mako's CDN broadly).
+# Replaced with a public relay (found in RokuIL/Live-From-Israel's playlist,
+# an actively-maintained community list) that re-serves the real live feed
+# with no token/geo-lock at all -- confirmed live segments with real
+# timestamps. No custom User-Agent needed (tested with several, all worked).
+KESHET12_URL = "http://stream.mcquack.net/294/index.m3u8"
 
 ISRAEL_SKIP = {"Kan Kids"}
 # ponytail: Keshet 12 DVR/N12 News/Keshet 12 CC/Channel 24/Eretz Nehederet un-skipped
@@ -979,7 +989,7 @@ def fetch_israel():
                 extinf = re.sub(r'group-title="[^"]*"', 'group-title="\U0001f4e1 اسرائیل"', line)
                 url = lines[i].strip()
                 if "mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8" in url:
-                    url = KESHET12_WORKER
+                    url = KESHET12_URL
                 entries.append((extinf, url))
         i += 1
     return entries
