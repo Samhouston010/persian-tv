@@ -980,16 +980,23 @@ ISRAEL_SKIP = {"Kan Kids", "Keshet 12 DVR", "N12 News", "Keshet 12 CC"}
 # Tokens are fresh again now that the push works.
 
 # 2026-09-09: tvg-id for the subset of these Israel/Roku-US channels that a
-# free public XMLTV source (epgshare01.online) actually has real programme
-# data for -- the Nimbus app fetches epgshare01's IL1/US2 files directly and
-# matches by this id (EpgRepository.kt), so nothing else needs to happen
-# here beyond tagging the right id on the right channel. Checked every
-# candidate by hand against the real files before adding it here; most of
-# Kan/Keshet/Reshet (IL1 only covers HOT/Yes cable channels, not Israeli
-# free-to-air) and the generic "FOX Sports"/"FOX 5 New York" mirrors (no
-# confident id match, would risk showing the wrong channel's schedule)
-# genuinely have none -- left unmapped rather than guessed at.
+# free public XMLTV source actually has real programme data for -- the
+# Nimbus app fetches these files directly (US2/IL1 from epgshare01.online,
+# the third from RokuIL's own repo -- the same source used for the Keshet 12
+# stream fix, also publishes a combined WGP-sourced guide.xml at
+# EPG/WGP/guide.xml, auto-updated multiple times a day, that covers Kan 11/
+# Keshet 12/Reshet 13 by their exact plain-text channel names) and matches
+# by this id (EpgRepository.kt), so nothing else needs to happen here beyond
+# tagging the right id on the right channel. Checked every candidate by hand
+# against the real files before adding it here; i24 stays on epgshare01 IL1
+# rather than RokuIL's guide.xml (which only has one generic "i24" channel,
+# not split by language like our three do) -- the generic "FOX Sports"/
+# "FOX 5 New York" mirrors genuinely have no confident id match anywhere
+# checked (would risk showing the wrong channel's schedule), left unmapped.
 EPG_ID_MAP = {
+    "Kan 11": "Kan 11",
+    "Keshet 12": "Keshet 12",
+    "Reshet 13": "Reshet 13",
     "i24 News Hebrew": "עברית.i24.il",
     "i24 News English": "i24NEWS.ENGLISH.il",
     "i24 News Arabic": "i24NEWS.ARABIC.il",
