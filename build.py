@@ -995,6 +995,51 @@ def fetch_israel():
     return entries
 
 
+ROKU_US_M3U = "https://raw.githubusercontent.com/RokuIL/Live-From-Israel/master/playlist.m3u8"
+
+def _sch(name, logo, stream):
+    return ('#EXTINF:-1 group-title="\U0001f3c8 اسپرت" tvg-logo="%s",%s' % (logo, name), stream)
+
+# 2026-09-09: despite the repo's name, its actual Israeli channels
+# (Kan 11/Keshet 12/Reshet 13) are already covered by fetch_israel() above --
+# this pulls in the REST of the list instead (user request), a grab-bag of US
+# News/Sports channels, split into خبر/اسپرت by the source's own group-title.
+# Several channels list multiple mirror URLs back to back under the same
+# tvg-name -- _alive() prunes dead ones, then we keep just the first alive
+# mirror per name. Fetched fresh on every daily build, same as fetch_israel(),
+# so it tracks whatever the source currently has with no extra script.
+def fetch_roku_us():
+    text = fetch(ROKU_US_M3U).decode("utf-8", errors="ignore")
+    lines = text.splitlines()
+    maker = {"US News": _ch, "Sports": _sch}
+    raw = []
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith("#EXTINF"):
+            m = re.search(r'group-title="([^"]*)"', line)
+            group = m.group(1) if m else ""
+            m = re.search(r'tvg-logo="([^"]*)"', line)
+            logo = m.group(1) if m else ""
+            name = line.rsplit(",", 1)[-1].strip()
+            i += 1
+            while i < len(lines) and lines[i].startswith("#"):
+                i += 1
+            if i < len(lines) and lines[i].strip() and group in maker:
+                raw.append(maker[group](name, logo, lines[i].strip()))
+        i += 1
+    raw = _alive(raw, "Roku US News/Sports")
+    seen = set()
+    entries = []
+    for extinf, stream in raw:
+        name = extinf.rsplit(",", 1)[-1]
+        if name in seen:
+            continue
+        seen.add(name)
+        entries.append((extinf, stream))
+    return entries
+
+
 def fetch_ted_direct(workers=20):
     """TED Talks grouped by topic from www.ted.com (curator-approved list)."""
     curator_url = "https://www.ted.com/sitemaps/talks-curator-approved.xml.gz"
@@ -1210,6 +1255,11 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(israel)
     print(f"Israel: {len(israel)} channels", flush=True)
+    roku_us = fetch_roku_us()
+    for extinf, stream in roku_us:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(roku_us)
+    print(f"Roku US News/Sports: {len(roku_us)} channels", flush=True)
     # user request 2026-07-12: new parsatv.com channels go at the top of ایران, iptv-org after
     parsatv_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
                       for name, logo, stream in PARSATV_IRAN_EXTRA]
