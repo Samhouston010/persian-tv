@@ -979,6 +979,36 @@ ISRAEL_SKIP = {"Kan Kids", "Keshet 12 DVR", "N12 News", "Keshet 12 CC"}
 # failing (fixed same day, see israel-tv repo), leaving them stuck on expired tokens.
 # Tokens are fresh again now that the push works.
 
+# 2026-09-09: tvg-id for the subset of these Israel/Roku-US channels that a
+# free public XMLTV source (epgshare01.online) actually has real programme
+# data for -- the Nimbus app fetches epgshare01's IL1/US2 files directly and
+# matches by this id (EpgRepository.kt), so nothing else needs to happen
+# here beyond tagging the right id on the right channel. Checked every
+# candidate by hand against the real files before adding it here; most of
+# Kan/Keshet/Reshet (IL1 only covers HOT/Yes cable channels, not Israeli
+# free-to-air) and the generic "FOX Sports"/"FOX 5 New York" mirrors (no
+# confident id match, would risk showing the wrong channel's schedule)
+# genuinely have none -- left unmapped rather than guessed at.
+EPG_ID_MAP = {
+    "i24 News Hebrew": "עברית.i24.il",
+    "i24 News English": "i24NEWS.ENGLISH.il",
+    "i24 News Arabic": "i24NEWS.ARABIC.il",
+    "Fox News Channel": "Fox.News.Channel.HD.us2",
+    "FOX Sports 1": "FS1.Fox.Sports.1.HD.us2",
+    "FOX Sports 2": "FS2.Fox.Sports.2.HD.us2",
+    "NFL Channel": "NFL.Network.HD.us2",
+    "MLB": "MLB.Network.HD.us2",
+    "MLB Channel": "MLB.Network.HD.us2",
+    "Yes Network": "Yes.Network.us2",
+    "NBC Sports NOW": "NBC.Sports.Now.us2",
+}
+
+def _with_epg_id(extinf, name):
+    tvg_id = EPG_ID_MAP.get(name)
+    if not tvg_id:
+        return extinf
+    return extinf.replace("#EXTINF:-1 ", '#EXTINF:-1 tvg-id="%s" ' % tvg_id, 1)
+
 def fetch_israel():
     text = fetch(ISRAEL_M3U).decode("utf-8", errors="ignore")
     entries = []
@@ -999,6 +1029,7 @@ def fetch_israel():
                 url = lines[i].strip()
                 if "mako-streaming.akamaized.net/direct/hls/live/2033791/k12/index.m3u8" in url:
                     url = KESHET12_URL
+                extinf = _with_epg_id(extinf, name)
                 entries.append((extinf, url))
         i += 1
     return entries
@@ -1035,7 +1066,8 @@ def fetch_roku_us():
             while i < len(lines) and lines[i].startswith("#"):
                 i += 1
             if i < len(lines) and lines[i].strip() and group in maker:
-                raw.append(maker[group](name, logo, lines[i].strip()))
+                extinf, stream = maker[group](name, logo, lines[i].strip())
+                raw.append((_with_epg_id(extinf, name), stream))
         i += 1
     raw = _alive(raw, "Roku US News/Sports")
     seen = set()
