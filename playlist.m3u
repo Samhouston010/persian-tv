@@ -1053,6 +1053,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2869,7 +2878,7 @@ https://wmtvhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8
+https://live-aburayhan1105.telewebion.net/ek/sport1/live/1080p/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png" group-title="ایران",Telewebion Sport 2
 #EXTVLCOPT:network-caching=2000
@@ -2878,7 +2887,7 @@ https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8
+https://live-aburayhan1109.telewebion.net/ek/sport2/live/1080p/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png" group-title="ایران",Telewebion Sport 3
 #EXTVLCOPT:network-caching=2000
@@ -2887,7 +2896,7 @@ https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8
+https://live-aburayhan1112.telewebion.net/ek/sport3/live/1080p/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/afrafilm.jpg" group-title="ایران",Afra Film
 #EXTVLCOPT:network-caching=2000
@@ -3213,6 +3222,15 @@ https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Hispantv_logo.jpg" tvg-id="HispanTV.ir@SD",Hispan TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.presstv.co.uk/hls/hispantv_5_482/index.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3248,6 +3266,15 @@ https://tv.iraniancongress.com/stream/tv.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/TmqComb.png" tvg-id="VoATVPersian.us@SD",VOA Persian
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/7oGGgfD.png" tvg-id="KanalJadid.uk@SD",Kanal Jadid
 #EXTVLCOPT:network-caching=2000
@@ -3294,6 +3321,15 @@ https://hls.oxir.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/X38vWJ1.png" tvg-id="YourTimeTV.ir@SD",YourTime TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.yourtime.tv/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/CeMf68L.png" tvg-id="OmideIranTV.us@SD",Omide Iran
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3329,6 +3365,33 @@ https://itnhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://avaserieshls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png" tvg-id="iFilm2.ir@SD",iFilm 2
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.presstv.co.uk/hls/ifilm2_4_482/index.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-id="iFilmArabic.ir@SD",iFilm Arabic
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.presstv.co.uk/hls/ifilmar_4_482/index.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-id="iFilmEnglish.ir@SD",iFilm English
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.presstv.co.uk/hls/ifilmen_4_482/index.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/afrafilm.jpg" tvg-id="AfraFilm.ir@SD",Afra Film
 #EXTVLCOPT:network-caching=2000
@@ -3393,6 +3456,15 @@ https://icchls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://metafilmhls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/hgIro9r.png" tvg-id="PersianaCinema.fr@SD",Persiana Cinema
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cinehls.persiana.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/n9cuM2W.jpg" tvg-id="SL1.ir@SD",SL 1
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3419,6 +3491,15 @@ https://sltwohls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/YteKXJy.png" tvg-id="NavahangTV.fi@SD",Navahang TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://hls.navahang.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/AbrHI7K.png" tvg-id="PMC.ae@SD",PMC
 #EXTVLCOPT:network-caching=2000
@@ -3582,6 +3663,15 @@ https://sat7phls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://komhls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-id="PersianaTravel.fr@SD",Persiana Travel
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://ptravelhls.persiana.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/GW4cMfc/cafe-trade-tv.png" tvg-id="CafeTradeTV.ir@SD",Cafe Trade TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3680,6 +3770,27 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/605b097bdc014c2aa8f492741b9b9e77/ef64257a-cdbe-4588-b910-21d72d526cdc_thumb_001_HD.jpg",نگرانی سخنگویان حکومت درباره عبور مردم از حجاب اجباری
+https://daq1pvcuhj77l.cloudfront.net/1/605b097bdc014c2aa8f492741b9b9e77/hls/ef64257a-cdbe-4588-b910-21d72d526cdc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a956f6f991444dab8e00348c62b510bf/a8a54fb5-2c49-48e8-8b29-dc957c865224_thumb_001_HD.jpg",خشم مردم از سخنان عارف درباره لزوم گرانی بنزین برای سفرهای تفریحی
+https://daq1pvcuhj77l.cloudfront.net/1/a956f6f991444dab8e00348c62b510bf/hls/a8a54fb5-2c49-48e8-8b29-dc957c865224.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/500b5e2f7caa47b98282bc2cedd2b764/ce73f237-34dd-466d-b2fc-15fc3913e447_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۱۸ شهریور
+https://daq1pvcuhj77l.cloudfront.net/1/500b5e2f7caa47b98282bc2cedd2b764/hls/ce73f237-34dd-466d-b2fc-15fc3913e447.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c6faea2a7db9413cb27389c35f1afa78/c0ac6d5c-114c-49f2-9aed-b769f1aa4042_thumb_001_HD.jpg",هشدار رییس انجمن آندوسکوپی گوارشی ایران درباره افزایش آمار سرطان
+https://daq1pvcuhj77l.cloudfront.net/1/c6faea2a7db9413cb27389c35f1afa78/hls/c0ac6d5c-114c-49f2-9aed-b769f1aa4042.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/db876d9f688840c9b872cd98c408f8ac/badd7d6e-f425-4bb2-8970-150f8d9c7c19_thumb_001_HD.jpg",افزایش تحرکات کره جنوبی و ژاپن هم‌زمان با تنش‌ها در تنگه هرمز
+https://daq1pvcuhj77l.cloudfront.net/1/db876d9f688840c9b872cd98c408f8ac/hls/badd7d6e-f425-4bb2-8970-150f8d9c7c19.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ebf6cd3c154e4b12975ce455813e9bdc/2e4c1c6a-f385-4484-8956-ef1f13784cde_thumb_001_HD.jpg",آخرین گزارش‌ها از پیشروی نیروهای دولتی یمن در مناطق تحت کنترل حوثی‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/ebf6cd3c154e4b12975ce455813e9bdc/hls/2e4c1c6a-f385-4484-8956-ef1f13784cde.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8695c56138be430d89b8aca8d2263d11/bdb05d3b-0fab-47eb-b266-341413802a99_thumb_001_HD.jpg",گذر نرخ دلار از ۲۳۲ هزار تومان در ایران با افزایش ریسک‌های نظامی و اقتصادی
+https://daq1pvcuhj77l.cloudfront.net/1/8695c56138be430d89b8aca8d2263d11/hls/bdb05d3b-0fab-47eb-b266-341413802a99.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/548da3e2d79b411399002d374cf81855/96a69030-903d-4ebc-b05f-67c1441c3537_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، چهارشنبه ۱۸ شهریور با مجتبی هاشمی
 https://daq1pvcuhj77l.cloudfront.net/1/548da3e2d79b411399002d374cf81855/hls/96a69030-903d-4ebc-b05f-67c1441c3537.m3u8

@@ -17,8 +17,10 @@ ARTE_API = "https://api.arte.tv/api/player/v2/config/en"
 # client; ITC/Grand Sport/Grand Toon/Persiana Sports 1-4 -- still behind that wall;
 # Iran TV Israel, Irane Farda, Khatereh TV -- 404; Persiana Rap TV -- bad SSL cert;
 # Tapesh Iran -- DNS doesn't resolve) were left out as genuinely dead, not just unlucky.
-# Telewebion Sport 1-3 share telewebion.ir's current outage (see build.py's Telewebion
-# section) -- included anyway since they'll start working the moment that recovers.
+# 2026-09-09: Telewebion Sport 1-3 were down because telewebion.ir itself is currently
+# unreachable (found while checking shayanline/iptv-iran, user noticed their sports
+# channels weren't geo-coded and asked what they'd done differently) -- telewebion.net
+# is the same CDN nodes, same content, and works fine; swapped the domain below.
 # ponytail: Channel One/Ekran Movies/T2 America/T2 International/T2 Movies/PMC (primary)
 # removed 2026-09-05 -- all routed through onetv.app, either directly or via the
 # spf-onetv-9i4j.cfallinone.workers.dev proxy, and that whole worker domain now NXDOMAINs
@@ -66,9 +68,9 @@ PARSATV_IRAN_EXTRA = [
     ("TM TV", "https://www.parsatv.com/index_files/channels/tmtelevision.png", "https://hls.tmtv.live/hls/stream.m3u8"),
     ("Tasvire Iran", "https://www.parsatv.com/index_files/channels/timtv.png", "https://bozztv.com/1gbw5/tintv/tintv/playlist.m3u8"),
     ("Woman TV", "https://www.parsatv.com/index_files/channels/womantv.jpg", "https://wmtvhls.wns.live/hls/stream.m3u8"),
-    ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.ir/ek/sport1/live/1080p/index.m3u8"),
-    ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.ir/ek/sport2/live/1080p/index.m3u8"),
-    ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
+    ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.net/ek/sport1/live/1080p/index.m3u8"),
+    ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.net/ek/sport2/live/1080p/index.m3u8"),
+    ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.net/ek/sport3/live/1080p/index.m3u8"),
     # user request 2026-09-05: parsatv.com's #persian list re-checked against the full
     # playlist for anything not yet added; these 21 all resolved to a live stream via
     # plain HTML (no headless browser needed this time). Pars-TV and Persiana-Documentary
@@ -930,6 +932,28 @@ def _channel_category(extinf, cat_by_id):
             return i
     return len(_CATEGORY_ORDER)
 
+# 2026-09-09: iptv-org's own URL for each of these was dead (confirmed by this
+# file's own "Iran (iptv-org): dropped dead" build log), found live replacements
+# in shayanline/iptv-iran's health-checked data. Only kept the ones a direct curl
+# from here actually confirmed live right now -- shayanline listed more (Press TV,
+# Al Alam, Iran Press, SNN TV, 4 Music, Bravo Farsi TV, Datis TV, EPlanet TV,
+# Persiana Medical) but those either 000'd or 404'd here, likely Iran-hosted
+# domains unreachable from this network specifically -- left dead rather than
+# guess, matches this project's zero-tolerance-for-unverified standard. Applied
+# before _alive() so these just go through the exact same check as everything
+# else, no special-casing. Keyed by the exact display name iptv-org uses.
+IRAN_ORG_URL_OVERRIDES = {
+    "VOA Persian": "https://voa-ingest.akamaized.net/hls/live/2033876/tvmc07/playlist.m3u8",
+    "Hispan TV": "https://live.presstv.co.uk/hls/hispantv_5_482/index.m3u8",
+    "iFilm 2": "https://live.presstv.co.uk/hls/ifilm2_4_482/index.m3u8",
+    "iFilm Arabic": "https://live.presstv.co.uk/hls/ifilmar_4_482/index.m3u8",
+    "iFilm English": "https://live.presstv.co.uk/hls/ifilmen_4_482/index.m3u8",
+    "YourTime TV": "https://live.yourtime.tv/hls/stream.m3u8",
+    "Navahang TV": "https://hls.navahang.live/hls/stream.m3u8",
+    "Persiana Cinema": "https://cinehls.persiana.live/hls/stream.m3u8",
+    "Persiana Travel": "https://ptravelhls.persiana.live/hls/stream.m3u8",
+}
+
 def fetch_iran_org(cat_by_id, logo_by_id):
     """Iran channels from iptv-org/iptv — re-fetched and re-checked every build,
     so channels iptv-org adds show up automatically and ones that stop loading drop out.
@@ -945,6 +969,8 @@ def fetch_iran_org(cat_by_id, logo_by_id):
         entries.extend(extract(text, "ایران"))
     # moved to end of پرشیانا per user request 2026-07-11 -- keep out of this group too
     entries = [e for e in entries if not any(tid in e[0] for tid in _PERSIANA_EXTRA_IDS)]
+    entries = [(extinf, IRAN_ORG_URL_OVERRIDES.get(extinf.rsplit(",", 1)[-1].strip(), stream))
+               for extinf, stream in entries]
     entries = _alive(entries, "Iran (iptv-org)")
     entries = [(_fill_logo(extinf, logo_by_id), stream) for extinf, stream in entries]
     entries.sort(key=lambda e: _channel_category(e[0], cat_by_id))
