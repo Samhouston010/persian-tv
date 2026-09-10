@@ -2230,7 +2230,7 @@ http://stream.mcquack.net/294/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1789069002%7Eexp%3D1789069902%7Eacl%3D%2F*%7Ehmac%3D900475d46804b796d7b1c490baee7201e903ac7e282048dd7b0bb4559b12931c
+https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1789076949%7Eexp%3D1789077849%7Eacl%3D%2F*%7Ehmac%3D26aedd93482abe0c560c087c8861d9fc9f7cf952f7ffda702595ace8943f9086
 
 #EXTINF:-1 tvg-name="Eretz Nehederet" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Eretz Nehederet
 #EXTVLCOPT:network-caching=2000
@@ -2239,7 +2239,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1789069003%7Eexp%3D1789069903%7Eacl%3D%2F*%7Ehmac%3D4791787bbe7919f754fd6fe82d1715f730bb678baefc59047bc3a08235648f15
+https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1789076950%7Eexp%3D1789077850%7Eacl%3D%2F*%7Ehmac%3D83c94de9d57b2285d724ad77c4fc743435c8c58630e70f7b1930002f94cc0533
 
 #EXTINF:-1 tvg-id="Kan 11" tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000
@@ -3212,6 +3212,15 @@ https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Hispantv_logo.jpg" tvg-id="HispanTV.ir@SD",Hispan TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.presstv.co.uk/hls/hispantv_5_482/index.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
