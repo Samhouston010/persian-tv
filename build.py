@@ -70,7 +70,10 @@ PARSATV_IRAN_EXTRA = [
     ("Woman TV", "https://www.parsatv.com/index_files/channels/womantv.jpg", "https://wmtvhls.wns.live/hls/stream.m3u8"),
     ("Telewebion Sport 1", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi1.png", "https://live-aburayhan1105.telewebion.net/ek/sport1/live/1080p/index.m3u8"),
     ("Telewebion Sport 2", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi2.png", "https://live-aburayhan1109.telewebion.net/ek/sport2/live/1080p/index.m3u8"),
-    ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.net/ek/sport3/live/1080p/index.m3u8"),
+    # 2026-09-09: reverted back to .ir per user report -- .net buffers heavily on
+    # their real connection even though .ir looked unreachable from here at the
+    # time; their on-device result outranks a synthetic curl test from here.
+    ("Telewebion Sport 3", "https://www.parsatv.com/index_files/channels/telewebionvarzeshi3.png", "https://live-aburayhan1112.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
     # user request 2026-09-05: parsatv.com's #persian list re-checked against the full
     # playlist for anything not yet added; these 21 all resolved to a live stream via
     # plain HTML (no headless browser needed this time). Pars-TV and Persiana-Documentary
