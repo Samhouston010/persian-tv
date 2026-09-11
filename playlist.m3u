@@ -1062,6 +1062,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3222,15 +3231,6 @@ https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://persiran.online/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Hispantv_logo.jpg" tvg-id="HispanTV.ir@SD",Hispan TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live.presstv.co.uk/hls/hispantv_5_482/index.m3u8
-
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/8tzsC9h.png" tvg-id="IRINN.ir@SD",IRINN (576p)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3770,6 +3770,84 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5d8cad0041b44a30afb3ba63335276e9/2221456f-7b81-4765-ad2e-c1f1fde8b2cd_thumb_001_HD.jpg",دهلی‌نو میزبان اجلاس بریکس با تمرکز بر بحران‌های جهانی
+https://daq1pvcuhj77l.cloudfront.net/1/5d8cad0041b44a30afb3ba63335276e9/hls/2221456f-7b81-4765-ad2e-c1f1fde8b2cd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3335753356b644d8b762fead553d9b97/4523ce53-60ec-48ca-8bc0-a51fcbd7c2cc_thumb_001_HD.jpg",مهدی مصلحی: محاصره دریایی آمریکا مسیر سنتی دور زدن تحریم‌های نفتی را مختل کرده است
+https://daq1pvcuhj77l.cloudfront.net/1/3335753356b644d8b762fead553d9b97/hls/4523ce53-60ec-48ca-8bc0-a51fcbd7c2cc.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f279f352fa5b42deb6de75d123f67448/0e893450-94fb-44d9-b019-138395562098_thumb_001_HD.jpg",گرامیداشت بیست‌وپنجمین سالگرد حملات ۱۱ سپتامبر در لس‌آنجلس
+https://daq1pvcuhj77l.cloudfront.net/1/f279f352fa5b42deb6de75d123f67448/hls/0e893450-94fb-44d9-b019-138395562098.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/85b9cfbf0f8045bf91f4d25fc2b84ad2/2e832ec2-6ece-4465-862d-039fc9511fe5_thumb_001_HD.jpg",محمد قائدی: هدف تهران از گسترش تنش، فشار بر اقتصاد جهانی و آمریکا است
+https://daq1pvcuhj77l.cloudfront.net/1/85b9cfbf0f8045bf91f4d25fc2b84ad2/hls/2e832ec2-6ece-4465-862d-039fc9511fe5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9c8e53c47014853be91c15ea6b8760f/03793192-f4f9-4d15-ba0c-6b8fcada97b1_thumb_001_HD.jpg",سفر فرمانده سنتکام به عربستان همزمان با تشدید نبردها با حوثی‌ها
+https://daq1pvcuhj77l.cloudfront.net/1/d9c8e53c47014853be91c15ea6b8760f/hls/03793192-f4f9-4d15-ba0c-6b8fcada97b1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f8e219a7fcd44cca87abf2d391506548/5c008959-930c-42a6-8666-fde81d954e89_thumb_001_HD.jpg",عرفان از بندرعباس: جنوب ایران الان مثل جنوب لبنان است؛ یگان‌های ارتش در مساجد هم مستقرند
+https://daq1pvcuhj77l.cloudfront.net/1/f8e219a7fcd44cca87abf2d391506548/hls/5c008959-930c-42a6-8666-fde81d954e89.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3228a7790e4f43d99ccaf357eb738f84/542b1c3a-ea48-466a-b475-38a36e0d9fdb_thumb_001_HD.jpg",هت‌تریک؛ پیروزی استقلال همزمان با اولین شکست تراکتور
+https://daq1pvcuhj77l.cloudfront.net/1/3228a7790e4f43d99ccaf357eb738f84/hls/542b1c3a-ea48-466a-b475-38a36e0d9fdb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/725cd1fd551449238d07fb3e07e4a853/90beb840-d7f0-47b3-a985-59367e6f4855_thumb_001_HD.jpg",امید معماریان: خاطره ۱۱ سپتامبر و جنگ با تروریسم نگاه آمریکایی‌ها به اسلام را تغییر داده 
+https://daq1pvcuhj77l.cloudfront.net/1/725cd1fd551449238d07fb3e07e4a853/hls/90beb840-d7f0-47b3-a985-59367e6f4855.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7749f10975124f7b8fb20705b5f7e599/125c2373-c8a8-43c5-93d6-c6247aae978d_thumb_001_HD.jpg",محسن مدیر شانه‌چی: تورم، شاخص اصلی سنجش تاب‌آوری اقتصاد ایران در برابر فشارهای آمریکا است
+https://daq1pvcuhj77l.cloudfront.net/1/7749f10975124f7b8fb20705b5f7e599/hls/125c2373-c8a8-43c5-93d6-c6247aae978d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bb79e119abcc4ca7aa2804ff618e7fc2/ed6077ad-39d1-4f3b-b65b-1e3dcfe4df5f_thumb_001_HD.jpg",تعویق بازی‌های لیگ برتر به دلیل حضور تیم امید در ناگویا
+https://daq1pvcuhj77l.cloudfront.net/1/bb79e119abcc4ca7aa2804ff618e7fc2/hls/ed6077ad-39d1-4f3b-b65b-1e3dcfe4df5f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aee648173b9d447694b8c9b3587439f6/48cb4e52-1d45-4fed-a198-70740f82aa4f_thumb_001_HD.jpg",تعویق بازی‌های لیگ برتر، نتیجه تصمیمات متناقض فدراسیون فوتبال
+https://daq1pvcuhj77l.cloudfront.net/1/aee648173b9d447694b8c9b3587439f6/hls/48cb4e52-1d45-4fed-a198-70740f82aa4f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8c800963599c4db89c820094533cb8b1/eed6264d-de74-44e1-958c-f3b614648613_thumb_001_HD.jpg",مسائل حاشیه‌ای عامل شکست تراکتور برابر استقلال خوزستان
+https://daq1pvcuhj77l.cloudfront.net/1/8c800963599c4db89c820094533cb8b1/hls/eed6264d-de74-44e1-958c-f3b614648613.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cae686dd749a4bf5bd0d87b0d169bb3f/dbe28f46-f8a8-4bac-acbe-89509e7ba7a1_thumb_001_HD.jpg",پایان شکست ناپذیری تراکتور با باخت مقابل تراکتور
+https://daq1pvcuhj77l.cloudfront.net/1/cae686dd749a4bf5bd0d87b0d169bb3f/hls/dbe28f46-f8a8-4bac-acbe-89509e7ba7a1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8b2d20676bfe45c5b2d00bf332772680/39ab77d0-331f-4e5a-8558-89244d53978f_thumb_001_HD.jpg",آنالیز دیدار استقلال - پیکان در هفته هفتم
+https://daq1pvcuhj77l.cloudfront.net/1/8b2d20676bfe45c5b2d00bf332772680/hls/39ab77d0-331f-4e5a-8558-89244d53978f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d4981e72596e49389c0e5ce24e849e1f/f0674df6-d3bc-45af-b606-d052c9008c49_thumb_001_HD.jpg",نگرانی هواداران استقلال از مصدومیت یاسر آسانی
+https://daq1pvcuhj77l.cloudfront.net/1/d4981e72596e49389c0e5ce24e849e1f/hls/f0674df6-d3bc-45af-b606-d052c9008c49.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/39211e4ece43466da73bcd92caea6763/ca4a40e6-7460-4194-a0d2-106a670d9cc3_thumb_001_HD.jpg",محمد تقوی: خط دفاعی استقلال آشفته است
+https://daq1pvcuhj77l.cloudfront.net/1/39211e4ece43466da73bcd92caea6763/hls/ca4a40e6-7460-4194-a0d2-106a670d9cc3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/34ccda99fb4743b4bb549fa37baf4b83/72e92fcd-097b-4934-b49a-aa96560617d6_thumb_001_HD.jpg",خلاصه دیدار استقلال و پیکان با گزارش مزدک میرزایی
+https://daq1pvcuhj77l.cloudfront.net/1/34ccda99fb4743b4bb549fa37baf4b83/hls/72e92fcd-097b-4934-b49a-aa96560617d6.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2d8556ebcba7497093d36a973020f46f/1ba05b80-0922-4045-88b9-b02ad664b18c_thumb_001_HD.jpg",پیروزی استقلال برابر پیکان در هفته هفتم لیگ برتر
+https://daq1pvcuhj77l.cloudfront.net/1/2d8556ebcba7497093d36a973020f46f/hls/1ba05b80-0922-4045-88b9-b02ad664b18c.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3f72e425c6b145e5999090e72ad2a739/acaedbbc-1040-4060-8303-78da60520ff8_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/3f72e425c6b145e5999090e72ad2a739/hls/acaedbbc-1040-4060-8303-78da60520ff8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8b580c88cdf14b0c8ec3a8cfd9eddd92/a221f73a-a16e-4b7d-baa7-19e772c911ac_thumb_001_HD.jpg",حرف آخر با پوریا زراعتی -تماس چند مقام ج.ا با موساد برای حذف مجتبی
+https://daq1pvcuhj77l.cloudfront.net/1/8b580c88cdf14b0c8ec3a8cfd9eddd92/hls/a221f73a-a16e-4b7d-baa7-19e772c911ac.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f66e10e9802b497cbe6f6d59b440fef2/684b1c40-c4f7-495d-8509-26aded254208_thumb_001_HD.jpg",جمشید برزگر: ۱۱ سپتامبر مسیر سیاست جهانی و تقابل آمریکا با جمهوری اسلامی را تغییر داد
+https://daq1pvcuhj77l.cloudfront.net/1/f66e10e9802b497cbe6f6d59b440fef2/hls/684b1c40-c4f7-495d-8509-26aded254208.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5fea55d902524c52950b2f61d042f305/744a4cb5-750b-4b75-b184-94836c9faac4_thumb_001_HD.jpg",اخبار شبانگاهی | جمعه ۲۰ شهریور
+https://daq1pvcuhj77l.cloudfront.net/1/5fea55d902524c52950b2f61d042f305/hls/744a4cb5-750b-4b75-b184-94836c9faac4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f58436e4616a4d06a648873475f2da93/284d7b01-f1f3-4da0-87ab-82fac94aec8f_thumb_001_HD.jpg",نتانیاهو: جمهوری اسلامی و «محور شرارت» ضعیف‌تر از همیشه‌اند
+https://daq1pvcuhj77l.cloudfront.net/1/f58436e4616a4d06a648873475f2da93/hls/284d7b01-f1f3-4da0-87ab-82fac94aec8f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cb97fecd2bc54204acf30988d20b2754/2a13f7b8-e3c0-430a-a2c9-fcc0cb05ee07_thumb_001_HD.jpg",جاویدنام صالحه اکبری؛ کوهنورد و مربی امداد و نجات که در یورش نیروهای امنیتی کشته شد
+https://daq1pvcuhj77l.cloudfront.net/1/cb97fecd2bc54204acf30988d20b2754/hls/2a13f7b8-e3c0-430a-a2c9-fcc0cb05ee07.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/af286b72c0b34ae38ad2e714644d7e6b/03b87210-bffb-438e-8391-c1357e18ea75_thumb_001_HD.jpg",نظرسنجی ایران‌اینترنشنال؛ ۹۴ درصد از افزایش سریع‌تر خشم خود خبر دادند
+https://daq1pvcuhj77l.cloudfront.net/1/af286b72c0b34ae38ad2e714644d7e6b/hls/03b87210-bffb-438e-8391-c1357e18ea75.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/962c052eb4a940f3b6a07c8f8937cb30/786e5aff-3d2f-4018-aeb8-11d803d5fe2b_thumb_001_HD.jpg",تصاویر ارتش اسرائیل از انفجار عظیم در ارتفاعات علی‌الطاهر
+https://daq1pvcuhj77l.cloudfront.net/1/962c052eb4a940f3b6a07c8f8937cb30/hls/786e5aff-3d2f-4018-aeb8-11d803d5fe2b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/195fd28cd00b43fdbdd12b3771bd8a5a/6823a6ee-5d87-4dba-84e5-c4d8ab0c0859_thumb_001_HD.jpg",مراسم یادبود حملات تروریستی ۱۱ سپتامبر در پنتاگون
 https://daq1pvcuhj77l.cloudfront.net/1/195fd28cd00b43fdbdd12b3771bd8a5a/hls/6823a6ee-5d87-4dba-84e5-c4d8ab0c0859.m3u8
