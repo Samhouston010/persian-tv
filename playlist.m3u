@@ -1062,15 +1062,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2239,7 +2230,7 @@ http://stream.mcquack.net/294/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1789245659%7Eexp%3D1789246559%7Eacl%3D%2F*%7Ehmac%3D684e166e49db5082633d38e7b4bdff5f327c5a365c4a76bb3d271ed894aa94ab
+https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1789252375%7Eexp%3D1789253275%7Eacl%3D%2F*%7Ehmac%3De8cee9c8e1063a7f41f0d1a8db023103ac3fde6ea0c5d2408a9da87f50fa5d32
 
 #EXTINF:-1 tvg-name="Eretz Nehederet" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Eretz Nehederet
 #EXTVLCOPT:network-caching=2000
@@ -2248,7 +2239,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1789245659%7Eexp%3D1789246559%7Eacl%3D%2F*%7Ehmac%3D684e166e49db5082633d38e7b4bdff5f327c5a365c4a76bb3d271ed894aa94ab
+https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1789252376%7Eexp%3D1789253276%7Eacl%3D%2F*%7Ehmac%3Dfb68017e68146513a8a1cec92b4fd10f6e261858c083dfcb748b7181a2829615
 
 #EXTINF:-1 tvg-id="Kan 11" tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000
