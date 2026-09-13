@@ -100,6 +100,20 @@ PARSATV_IRAN_EXTRA = [
     ("SL 2", "https://www.parsatv.com/index_files/channels/sl.png", "https://sltwohls.wns.live/hls/stream.m3u8"),
     ("Shabakeh 7", "https://www.parsatv.com/index_files/channels/shabake7.jpg", "https://sh7hls.wns.live/hls/stream.m3u8"),
     ("YourTime TV", "https://www.parsatv.com/index_files/channels/yourtime.png", "https://live.yourtime.tv/hls/stream.m3u8"),
+    # user request 2026-09-13: diffed parsatv.com's #persian list against the full
+    # playlist again; these 9 were missing and resolved to a live stream via plain
+    # HTML (no headless browser needed). Skipped as genuinely dead/unreachable this
+    # round: Simaye Azadi, Sedaye Israel (no stream URL in plain HTML -- likely
+    # JS-injected like the GEM family, needs a headless-browser re-check later).
+    ("AFN Music", "https://www.parsatv.com/index_files/channels/afnl.png", "https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8"),
+    ("Tapesh", "https://www.parsatv.com/index_files/channels/tapesh.png", "https://hls.tapeshtv.live/hls/stream.m3u8"),
+    ("4U Family", "https://www.parsatv.com/index_files/channels/4u.png", "https://familyhls.4utv.live/hls/stream.m3u8"),
+    ("Didaniha TV", "https://www.parsatv.com/index_files/channels/didanihatv.jpg", "https://932y493eljv8-hls-live.5centscdn.com/did/a5a78758611d40a8beef13f803dd816b.sdp/playlist.m3u8"),
+    ("Datis TV", "https://www.parsatv.com/index_files/channels/datis.png", "https://dathls.wns.live/hls/stream.m3u8"),
+    ("Romantico TV", "https://www.parsatv.com/index_files/channels/romanticotv.jpg", "https://live.livestreamtv.ca/romanticotvshow/playlist.m3u8"),
+    ("Today TV", "https://www.parsatv.com/index_files/channels/todaytv.jpg", "https://live.ontodaytv.com/hls/ontoday.m3u8"),
+    ("Hambastegi TV", "https://www.parsatv.com/index_files/channels/hambastegitv.jpg", "https://livestream.5centscdn.com/HambastegiTV/7f3e29c26468b5b1036c2fbe536b5c7b.sdp/playlist.m3u8"),
+    ("Cheshmeh Oghab", "https://www.parsatv.com/index_files/channels/cheshmehoghab.png", "https://choghls.wns.live/hls/stream.m3u8"),
 ]
 
 # GEM TV family, own group per explicit request 2026-09-05 -- own separate
@@ -133,8 +147,9 @@ PARSATV_IRAN_EXTRA = [
 # Re-verified every channel individually via curl after the path fix.
 # GEM Series is genuinely dead now (parsatv.com's OWN player shows the same
 # 404 on its backend, not just our proxy) -- dropped. GEM Classic, previously
-# 404 at 2026-09-05 extraction time, works now -- added. GEM Drama / GEM
-# Entertainment still unchecked -- retry later per the original note above.
+# 404 at 2026-09-05 extraction time, works now -- added. GEM Entertainment
+# checked 2026-09-13 -- live, added below. GEM Drama checked same day -- proxy
+# returns an HTML page (Cloudflare interstitial), not a stream -- still dead.
 #
 # Real per-channel logos from GEM Group's own official site (gemgroup.tv/en/channels),
 # not the generic parsatv.com placeholder used at first.
@@ -156,6 +171,7 @@ GEM_TV_CHANNELS = [
     ("GEM Fit", f"{GEM_LOGO_BASE}/icon_5.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FIT2%2Fplaylist.m3u8"),
     ("GEM Pixel", f"{GEM_LOGO_BASE}/icon_27.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Pixel2%2Fplaylist.m3u8"),
     ("GEM Food", f"{GEM_LOGO_BASE}/icon_9.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8"),
+    ("GEM Entertainment", "https://www.parsatv.com/index_files/channels/gementertainment.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Entertainment_%2Fplaylist.m3u8"),
 ]
 
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
