@@ -1314,6 +1314,15 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="",BIZ Music
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/e4alkomi0f24epbt/ejxzd1g5o2mys2gw.jpg",Houston weather: Hotter temps expected, storms possible
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48323247704_48323247791/48323247791/hf-uuid-18bdb7ae-0cab-4123-8d68-2dc67b66b3d4/48323247791_lowres.mp4
 
@@ -2230,7 +2239,7 @@ http://stream.mcquack.net/294/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1789252375%7Eexp%3D1789253275%7Eacl%3D%2F*%7Ehmac%3De8cee9c8e1063a7f41f0d1a8db023103ac3fde6ea0c5d2408a9da87f50fa5d32
+https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8?hdnea=st%3D1789258316%7Eexp%3D1789259216%7Eacl%3D%2F*%7Ehmac%3Dc7f4dbf8b7bf4c0f887cc3d2d1f5ed672d06105b675fd0fc0b8bd9aa1b9f50a0
 
 #EXTINF:-1 tvg-name="Eretz Nehederet" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Eretz Nehederet
 #EXTVLCOPT:network-caching=2000
@@ -2239,7 +2248,7 @@ https://mako-streaming.akamaized.net/direct/hls/live/2035340/ch24live/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1789252376%7Eexp%3D1789253276%7Eacl%3D%2F*%7Ehmac%3Dfb68017e68146513a8a1cec92b4fd10f6e261858c083dfcb748b7181a2829615
+https://mako-streaming.akamaized.net/free/hls/live/2111419/erets/index.m3u8?hdnea=st%3D1789258316%7Eexp%3D1789259216%7Eacl%3D%2F*%7Ehmac%3Dc7f4dbf8b7bf4c0f887cc3d2d1f5ed672d06105b675fd0fc0b8bd9aa1b9f50a0
 
 #EXTINF:-1 tvg-id="Kan 11" tvg-name="Kan 11" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/kan11.default.svg" group-title="📡 اسرائیل",Kan 11
 #EXTVLCOPT:network-caching=2000
