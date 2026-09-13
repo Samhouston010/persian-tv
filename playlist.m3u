@@ -3087,6 +3087,87 @@ https://sh7hls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.yourtime.tv/hls/stream.m3u8
 
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/afnl.png" group-title="ایران",AFN Music
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/tapesh.png" group-title="ایران",Tapesh
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://hls.tapeshtv.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/4u.png" group-title="ایران",4U Family
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://familyhls.4utv.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/didanihatv.jpg" group-title="ایران",Didaniha TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://932y493eljv8-hls-live.5centscdn.com/did/a5a78758611d40a8beef13f803dd816b.sdp/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/datis.png" group-title="ایران",Datis TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://dathls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/romanticotv.jpg" group-title="ایران",Romantico TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.livestreamtv.ca/romanticotvshow/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/todaytv.jpg" group-title="ایران",Today TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.ontodaytv.com/hls/ontoday.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/hambastegitv.jpg" group-title="ایران",Hambastegi TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://livestream.5centscdn.com/HambastegiTV/7f3e29c26468b5b1036c2fbe536b5c7b.sdp/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/cheshmehoghab.png" group-title="ایران",Cheshmeh Oghab
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://choghls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 tvg-logo="https://gemgroup.tv/assets/images/channels/icon_16.png" group-title="💎 جم تی‌وی",GEM TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3221,6 +3302,15 @@ https://persiran.online/codes/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Fliv
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://persiran.online/codes/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8
+
+#EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/gementertainment.png" group-title="💎 جم تی‌وی",GEM Entertainment
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://persiran.online/codes/spf-aparat.php?url=https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Entertainment_%2Fplaylist.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Hispantv_logo.jpg" tvg-id="HispanTV.ir@SD",Hispan TV
 #EXTVLCOPT:network-caching=2000
@@ -3770,6 +3860,66 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6ed11e4a78464f15bf85c8a433223c61/01fe01a8-384e-4a13-ad81-a48df50271ee_thumb_001_HD.jpg",حسن منصور: منابع ارزی جمهوری اسلامی برای تامین نیازهای تجاری کشور کافی نیست
+https://daq1pvcuhj77l.cloudfront.net/1/6ed11e4a78464f15bf85c8a433223c61/hls/01fe01a8-384e-4a13-ad81-a48df50271ee.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a0bb5a986588465f90768e9efff75ca9/7f0bdeb2-c4f4-475a-afb6-fda2e62025ea_thumb_001_HD.jpg",بیژن کیان: آمریکا نمی‌خواهد بدون همسویی راهبردی کشورهای منطقه، هزینه امنیت آنها را بپردازد
+https://daq1pvcuhj77l.cloudfront.net/1/a0bb5a986588465f90768e9efff75ca9/hls/7f0bdeb2-c4f4-475a-afb6-fda2e62025ea.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fd40200959b04e8fb2ac2167346bc08c/ad7fca79-2685-4a6a-8cdc-435431c3ee3f_thumb_001_HD.jpg",کامبیز توانا: نفوذ حوثی‌ها در باب‌المندب فشار منطقه‌ای جمهوری اسلامی را افزایش می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/fd40200959b04e8fb2ac2167346bc08c/hls/ad7fca79-2685-4a6a-8cdc-435431c3ee3f.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4d5888dc1d3541d6b3a465371588124d/d9221767-c493-436a-9f37-8c9f87775e76_thumb_001_HD.jpg",قمار آخر سپاه با تمام نیروهای نیابتی برای شکست ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/4d5888dc1d3541d6b3a465371588124d/hls/d9221767-c493-436a-9f37-8c9f87775e76.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e4727c140dec40fc91f6b74881ca9b75/c39a315d-870c-4cfd-bd1e-a7fe5c7f1965_thumb_001_HD.jpg",معاون نخست‌وزیر سوئد: اروپا باید فشار مالی و امنیتی بر جمهوری اسلامی را افزایش دهد
+https://daq1pvcuhj77l.cloudfront.net/1/e4727c140dec40fc91f6b74881ca9b75/hls/c39a315d-870c-4cfd-bd1e-a7fe5c7f1965.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0397e3adf2ac4d7eb421e5bd8c511975/6febb85c-9fc3-476c-835a-01ac61c68411_thumb_001_HD.jpg",شهرام خلدی: اخلال جمهوری اسلامی در هرمز می‌تواند اجماع منطقه‌ای علیه تهران ایجاد کند
+https://daq1pvcuhj77l.cloudfront.net/1/0397e3adf2ac4d7eb421e5bd8c511975/hls/6febb85c-9fc3-476c-835a-01ac61c68411.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/14104b7484614a929a7febdd3c09ebd9/665cdd8d-4c47-4771-a74d-ed9227435967_thumb_001_HD.jpg",چشم‌انداز: قمار آخر سپاه با تمام نیروهای نیابتی برای شکست ترامپ
+https://daq1pvcuhj77l.cloudfront.net/1/14104b7484614a929a7febdd3c09ebd9/hls/665cdd8d-4c47-4771-a74d-ed9227435967.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a2a434557ddb4c9091472b4b79a4279c/7024ea9a-b4ad-4723-b91e-ae5aa0f48b38_thumb_001_HD.jpg",ترامپ: جنگ با جمهوری اسلامی به‌زودی پایان می‌یابد
+https://daq1pvcuhj77l.cloudfront.net/1/a2a434557ddb4c9091472b4b79a4279c/hls/7024ea9a-b4ad-4723-b91e-ae5aa0f48b38.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/63d5fcaf61f340b9ae54b7b55b0a527c/dd3cd750-7723-49da-a560-7d0c53d65342_thumb_001_HD.jpg",سحر از شیراز: حتی اگر توان خرید دارو را هم داشته باشید، خود دارو در بازار نیست
+https://daq1pvcuhj77l.cloudfront.net/1/63d5fcaf61f340b9ae54b7b55b0a527c/hls/dd3cd750-7723-49da-a560-7d0c53d65342.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/69ab1abe6cba42bfaf3124f6c6e0e90f/419317f7-c526-46a4-8e7a-34f5e07de760_thumb_001_HD.jpg",سوءاستفاده تهران از هوش مصنوعی برای جاسوسی از شهروندان؛ جزییات جنگ شناختی جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/69ab1abe6cba42bfaf3124f6c6e0e90f/hls/419317f7-c526-46a4-8e7a-34f5e07de760.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d15af851d2d4c788a87529973b1c4f2/a9cdef42-2952-46d4-b328-1ed7d688e482_thumb_001_HD.jpg",فرزین ندیمی: حمله به خط لوله عربستان از پیشروی حوثی‌ها مهم‌تر است
+https://daq1pvcuhj77l.cloudfront.net/1/7d15af851d2d4c788a87529973b1c4f2/hls/a9cdef42-2952-46d4-b328-1ed7d688e482.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91655554681a44a98f610f0485ca31c4/f5498eec-ae9f-49f7-945d-94087e58265a_thumb_001_HD.jpg",لیلا مروتی: چین می‌تواند دریچه‌ای برای کاهش تنش میان ایران و آمریکا باشد
+https://daq1pvcuhj77l.cloudfront.net/1/91655554681a44a98f610f0485ca31c4/hls/f5498eec-ae9f-49f7-945d-94087e58265a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/572846c038f0478e8f55255978940f6b/93635662-55a2-4bde-8f14-ae2d0b094fc8_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، شنبه ۲۱ شهریور
+https://daq1pvcuhj77l.cloudfront.net/1/572846c038f0478e8f55255978940f6b/hls/93635662-55a2-4bde-8f14-ae2d0b094fc8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/88f701ebd9e241ba8a96ac6f537239b9/88052820-c179-4670-90ff-ca4406aea80d_thumb_001_HD.jpg",آسیه امینی: جمهوری اسلامی درگیر بحران مشروعیت، جنگ، اقتصاد و خیزش مردمی است.
+https://daq1pvcuhj77l.cloudfront.net/1/88f701ebd9e241ba8a96ac6f537239b9/hls/88052820-c179-4670-90ff-ca4406aea80d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0d1b43ef40f347b1bfa08786c7465aaf/94cf7c50-d78a-4e41-93e4-26d19d60f6bd_thumb_001_HD.jpg",روح‌الله رحیم‌پور: عراق ممکن است عمق استراتژیک جمهوری اسلامی را به گلوگاه لجستیکی بدل کند
+https://daq1pvcuhj77l.cloudfront.net/1/0d1b43ef40f347b1bfa08786c7465aaf/hls/94cf7c50-d78a-4e41-93e4-26d19d60f6bd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/727ce9c1f67644e389aa83dc9b6e5d87/467c3bd0-531c-4934-a3e9-be71990c552e_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: کد ترامپ درباره نقش سپاه در حمله به خط لوله نفت عربستان
+https://daq1pvcuhj77l.cloudfront.net/1/727ce9c1f67644e389aa83dc9b6e5d87/hls/467c3bd0-531c-4934-a3e9-be71990c552e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c71ad7f3b0c0430293f6a9fda9a89f8e/cf80f5ad-57b2-4449-8688-95868e0b73d9_thumb_001_HD.jpg",خاورمیانه در آتش سپاه؛ درس حوثی‌ها به ترامپ: آیا جمهوری اسلامی فقط با توافق مهار می‌شود؟
+https://daq1pvcuhj77l.cloudfront.net/1/c71ad7f3b0c0430293f6a9fda9a89f8e/hls/cf80f5ad-57b2-4449-8688-95868e0b73d9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bd95c7f1636046bbb48fc936ead4ff05/3d2090ed-300b-4bdf-b473-45803e15f57e_thumb_001_HD.jpg",بانک سپه در فرانکفورت وارد روند ورشکستگی شد
+https://daq1pvcuhj77l.cloudfront.net/1/bd95c7f1636046bbb48fc936ead4ff05/hls/3d2090ed-300b-4bdf-b473-45803e15f57e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/04a7bc5864334a6387a1e2bee1143524/e86d8794-ba4c-45ed-8522-9a60e7c9740a_thumb_001_HD.jpg",اخبار شبانگاهی | شنبه ۲۱ شهریور
+https://daq1pvcuhj77l.cloudfront.net/1/04a7bc5864334a6387a1e2bee1143524/hls/e86d8794-ba4c-45ed-8522-9a60e7c9740a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/00303ec632134547bf0f47d4a2ab8c42/fc34c434-ee67-4561-a89b-c40b47eebd2b_thumb_001_HD.jpg",شایان سمیعی: اختلال در انتقال انرژی از باب‌المندب شاید آمریکا را وارد جنگ با حوثی‌ها کند
+https://daq1pvcuhj77l.cloudfront.net/1/00303ec632134547bf0f47d4a2ab8c42/hls/fc34c434-ee67-4561-a89b-c40b47eebd2b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/444bbc63f127461382f9a34998287c48/729bcc6b-32f2-4819-a8ed-2abbb9eb0064_thumb_001_HD.jpg",سرخط خبرهای شنبه ۲۱ شهریور
 https://daq1pvcuhj77l.cloudfront.net/1/444bbc63f127461382f9a34998287c48/hls/729bcc6b-32f2-4819-a8ed-2abbb9eb0064.m3u8
