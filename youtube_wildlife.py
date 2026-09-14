@@ -1,18 +1,28 @@
-"""YouTube live wildlife channels -- HLS manifest URL expires after a few hours,
-so it's re-resolved via yt-dlp every 10 min (.github/workflows/youtube_wildlife.yml).
-Writes a standalone youtube_wildlife.m3u, served by playlist-proxy and merged into
-the final playlist by persian-tv-playlist-proxy (prepended ahead of the other
-🐾 حیات وحش sources so these channels land at the top of that group).
+"""YouTube live channels (wildlife + a couple of others) -- HLS manifest URL
+expires after a few hours, so it's re-resolved via yt-dlp every 10 min
+(.github/workflows/youtube_wildlife.yml). Writes a standalone
+youtube_wildlife.m3u, served by playlist-proxy and merged into the final
+playlist by persian-tv-playlist-proxy. Despite the filename (kept for the
+existing workflow/schedule), this isn't wildlife-only any more -- group is
+per-channel now, see CHANNELS below.
 """
 import subprocess
 
 # ponytail: hardcoded video_id per broadcast -- if a livestream ends without a
 # successor, the channel just gets skipped (no output line), not auto-rediscovered.
+# 5th field (group) defaults to wildlife when omitted; 6th (logo) defaults to
+# the YouTube thumbnail when omitted.
 CHANNELS = [
     ("Nat Geo Animals - Predator Battles", "MiQe9ob9aDc"),
     ("Nat Geo Kids - Animal Journeys", "q5xC6wv9Ut0"),
     ("National Geographic - National Parks USA", "lJOROUvD8sU"),
+    # User request 2026-09-14: Euronews Farsi found live on YouTube via
+    # parsatv.com (https://www.parsatv.com/name=Euronews-Farsi), lands in
+    # the same news group as Iran International/BBC Persian/VOA Persian.
+    ("Euronews Farsi", "A8eHIQdTpvQ", "📰 خبر", "https://www.parsatv.com/index_files/channels/euronewstv.png"),
 ]
+
+WILDLIFE_GROUP = "🐾 حیات وحش"
 
 
 def get_live_url(video_id):
@@ -31,13 +41,15 @@ def get_live_url(video_id):
 
 def main():
     lines = ["#EXTM3U"]
-    for name, video_id in CHANNELS:
+    for entry in CHANNELS:
+        name, video_id = entry[0], entry[1]
+        group = entry[2] if len(entry) > 2 else WILDLIFE_GROUP
+        logo = entry[3] if len(entry) > 3 else f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
         url = get_live_url(video_id)
         if not url:
             print(f"SKIP {name} — no stream url")
             continue
-        logo = f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg"
-        lines.append(f'#EXTINF:-1 tvg-name="{name}" tvg-logo="{logo}" group-title="🐾 حیات وحش",{name}')
+        lines.append(f'#EXTINF:-1 tvg-name="{name}" tvg-logo="{logo}" group-title="{group}",{name}')
         lines.append(url)
         print(f"OK {name}")
     with open("youtube_wildlife.m3u", "w", encoding="utf-8") as f:
