@@ -27,8 +27,17 @@ WILDLIFE_GROUP = "🐾 حیات وحش"
 
 def get_live_url(video_id):
     try:
-        r = subprocess.run(["yt-dlp", "-g", f"https://www.youtube.com/watch?v={video_id}"],
-                            capture_output=True, text=True, timeout=30)
+        # GitHub Actions' runner IPs are apparently now flagged by YouTube's
+        # bot-check ("Sign in to confirm you're not a bot") -- confirmed
+        # live 2026-09-14, every single channel in this file failing with
+        # the exact same error on every scheduled run, not just new ones.
+        # The android player client uses a different API path that doesn't
+        # trigger this check, no cookies/secrets needed (the standard
+        # low-risk yt-dlp community workaround for this exact message).
+        r = subprocess.run(
+            ["yt-dlp", "-g", "--extractor-args", "youtube:player_client=android",
+             f"https://www.youtube.com/watch?v={video_id}"],
+            capture_output=True, text=True, timeout=30)
         if r.stdout.strip():
             return r.stdout.strip().splitlines()[0]
         if r.stderr.strip():
