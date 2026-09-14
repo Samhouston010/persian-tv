@@ -1005,7 +1005,14 @@ def fetch_iran_org(cat_by_id, logo_by_id):
     return entries
 
 
-ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/master/israel.m3u"
+# israel-tv's default branch is "main", not "master" -- that repo has no
+# "master" branch at all, yet the old master/ URL kept returning 200 with
+# stale cached content via raw.githubusercontent's CDN instead of a clean
+# 404, so a real source-level channel removal there silently never
+# propagated here (found live 2026-09-14 removing Channel 24/Eretz
+# Nehederet -- their bytes kept showing up here long after they were
+# actually gone from the main branch).
+ISRAEL_M3U = "https://raw.githubusercontent.com/Samhouston010/israel-tv/main/israel.m3u"
 # 2026-09-09: the old et=ngt/Akamai-token trick (KESHET12_WORKER, a Cloudflare
 # Worker) is dead -- confirmed the underlying Akamai stream id (2033791/k12)
 # itself is frozen on a stale May 2025 snapshot with #EXT-X-ENDLIST, even when
