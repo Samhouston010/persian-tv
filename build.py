@@ -1109,6 +1109,15 @@ def _sch(name, logo, stream):
 # tvg-name -- _alive() prunes dead ones, then we keep just the first alive
 # mirror per name. Fetched fresh on every daily build, same as fetch_israel(),
 # so it tracks whatever the source currently has with no extra script.
+# User confirmed 2026-09-14 this specific mirror doesn't play on the TV
+# app despite the stream itself being fine -- a transient TV-side network
+# blip at the time, but the user asked to just remove it from the playlist
+# rather than keep it ("اون شبکه را از پلی‌لیست پاک کن"). Excluded by
+# name here (not just deleted from playlist.m3u) since fetch_roku_us()
+# re-pulls this source fresh on every build -- a plain output edit would
+# have been silently undone by the next scheduled run.
+SKIP_ROKU_US_NAMES = {"FOX 5 New York NY (WNYW)"}
+
 def fetch_roku_us():
     text = fetch(ROKU_US_M3U).decode("utf-8", errors="ignore")
     lines = text.splitlines()
@@ -1126,7 +1135,7 @@ def fetch_roku_us():
             i += 1
             while i < len(lines) and lines[i].startswith("#"):
                 i += 1
-            if i < len(lines) and lines[i].strip() and group in maker:
+            if i < len(lines) and lines[i].strip() and group in maker and name not in SKIP_ROKU_US_NAMES:
                 extinf, stream = maker[group](name, logo, lines[i].strip())
                 raw.append((_with_epg_id(extinf, name), stream))
         i += 1
