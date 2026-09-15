@@ -2410,7 +2410,7 @@ http://138.121.15.230:9002/FOX-NEWS/index.m3u8
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://amg02855-foxsports-amg02855c1-xumo-us-1755.playouts.now.amagi.tv/Fox-Sports-AmazonNews/playlist.m3u8
+https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports.m3u8
 
 #EXTINF:-1 tvg-id="FS1.Fox.Sports.1.HD.us2" group-title="🏈 اسپرت" tvg-logo="https://i.imgur.com/O9BapV9.png",FOX Sports 1
 #EXTVLCOPT:network-caching=2000
@@ -2439,15 +2439,6 @@ https://tvsen7.aynascope.net/foxsports2/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://d1m1xk35ma8qfl.cloudfront.net/master.m3u8
 
-#EXTINF:-1 tvg-id="NFL.Network.HD.us2" group-title="🏈 اسپرت" tvg-logo="https://i.imgur.com/mPGtwAP.png",NFL Channel
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://pb-we3ltka9xobj6.akamaized.net/master.m3u8
-
 #EXTINF:-1 tvg-id="MLB.Network.HD.us2" group-title="🏈 اسپرت" tvg-logo="https://i.imgur.com/ym3su2J.png",MLB
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2456,15 +2447,6 @@ https://pb-we3ltka9xobj6.akamaized.net/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://aegis-cloudfront-1.tubi.video/36ef2f9d-7100-4c4d-b41a-dbf41ab7e461/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MLB.Network.HD.us2" group-title="🏈 اسپرت" tvg-logo="https://i.imgur.com/ym3su2J.png",MLB Channel
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://pb-2y9ox4r1fy550.akamaized.net/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Yes.Network.us2" group-title="🏈 اسپرت" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/YES_Network_logo.svg/960px-YES_Network_logo.svg.png",Yes Network
 #EXTVLCOPT:network-caching=2000
@@ -3815,72 +3797,6 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/80f2b101b61f486bb31ef21f5a5e4d76/f2ac39b3-b1b9-4f33-9466-abe9842c0025_thumb_001_HD.jpg",چگونه یک میلیون کودک از تحصیل بازمانده‌اند و اول مهر به مدرسه نمی‌روند؟
-https://daq1pvcuhj77l.cloudfront.net/1/80f2b101b61f486bb31ef21f5a5e4d76/hls/f2ac39b3-b1b9-4f33-9466-abe9842c0025.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8f40461bc7e34bbf827c4f85992ab74f/239e1666-d9d8-4c17-8899-78f0d3466b78_thumb_001_HD.jpg",«علی کنکوری» الان کجاست؟
-https://daq1pvcuhj77l.cloudfront.net/1/8f40461bc7e34bbf827c4f85992ab74f/hls/239e1666-d9d8-4c17-8899-78f0d3466b78.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/27cbc19c46194de2a4ecd18af252a831/1aeda49f-a1de-409b-87fa-91a1adabc0d1_thumb_001_HD.jpg",«بلدی با اسلحه کار کنی؟»
-https://daq1pvcuhj77l.cloudfront.net/1/27cbc19c46194de2a4ecd18af252a831/hls/1aeda49f-a1de-409b-87fa-91a1adabc0d1.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9aa02dd7309646f7aefc9ee30ba4cb30/aa446caa-c8b2-475d-ba0d-041245ab99ab_thumb_001_HD.jpg",رد درخواست ویزای محمد اسلامی برای سفر به اتریش
-https://daq1pvcuhj77l.cloudfront.net/1/9aa02dd7309646f7aefc9ee30ba4cb30/hls/aa446caa-c8b2-475d-ba0d-041245ab99ab.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/206b9b748bd14c1a8cf242f58e821399/2b328317-aac8-4abb-bc64-0a8b18df6549_thumb_001_HD.jpg",حسن منصور: برنامه‌ریزی برای ماندگاری تحریم‌ها، نشانه نداشتن راه خروج از بحران است
-https://daq1pvcuhj77l.cloudfront.net/1/206b9b748bd14c1a8cf242f58e821399/hls/2b328317-aac8-4abb-bc64-0a8b18df6549.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/32adcfc5ae9742b184bc8a03604ffde2/f1bf81f6-60a8-4728-b38c-f3ca8babae1e_thumb_001_HD.jpg",شاهد علوی: مقاومت روزانه زنان، مهم‌ترین نشانه ماندگاری جنبش «زن، زندگی، آزادی» است
-https://daq1pvcuhj77l.cloudfront.net/1/32adcfc5ae9742b184bc8a03604ffde2/hls/f1bf81f6-60a8-4728-b38c-f3ca8babae1e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dd38453b9749484a94dfb376630255f0/e5ee88ed-aa0e-49ef-bdce-e63c052f39f1_thumb_001_HD.jpg",ترامپ: ایران به‌دنبال توافق است؛ آمریکا به اسکورت نفتکش‌ها در هرمز ادامه می‌دهد
-https://daq1pvcuhj77l.cloudfront.net/1/dd38453b9749484a94dfb376630255f0/hls/e5ee88ed-aa0e-49ef-bdce-e63c052f39f1.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6213702e57664175bf6e8496cf978c0d/1b02d229-f485-4a65-b676-7bba0f4cb30b_thumb_001_HD.jpg",آیا حلقه محاصره جمهوری اسلامی به‌شدت تنگ‌تر می‌شود؟!
-https://daq1pvcuhj77l.cloudfront.net/1/6213702e57664175bf6e8496cf978c0d/hls/1b02d229-f485-4a65-b676-7bba0f4cb30b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/360d98d76d454305a9af6e0e6c2a23d2/e2aa06ce-db9e-48f3-a44d-f385bbe814c9_thumb_001_HD.jpg",چشم‌انداز: آیا حلقه محاصره جمهوری اسلامی به‌شدت تنگ‌تر می‌شود؟!
-https://daq1pvcuhj77l.cloudfront.net/1/360d98d76d454305a9af6e0e6c2a23d2/hls/e2aa06ce-db9e-48f3-a44d-f385bbe814c9.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bbe0be59b03840f1a175abef75b02851/025d0dda-671f-4088-a991-9bdee95c403b_thumb_001_HD.jpg",جزییات تازه از ساعت‌ها حضور نیروهای آمریکایی در خاک ایران
-https://daq1pvcuhj77l.cloudfront.net/1/bbe0be59b03840f1a175abef75b02851/hls/025d0dda-671f-4088-a991-9bdee95c403b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/15aa0a7ea95341d1b0dfd756c6f28d12/2ccc3d84-59a7-45be-81ff-f74c0d2e69ea_thumb_001_HD.jpg",مسعود الفک: عادی‌سازی وضعیت تنگه هرمز بدون حل بحران باب‌المندب به سود جمهوری اسلامی است
-https://daq1pvcuhj77l.cloudfront.net/1/15aa0a7ea95341d1b0dfd756c6f28d12/hls/2ccc3d84-59a7-45be-81ff-f74c0d2e69ea.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/37f3b34c00bf4a19a256d6da26890c85/69c56dd3-a7f0-4172-b455-f66f537cbd79_thumb_001_HD.jpg",ترامپ: ایران به هر قیمتی به‌دنبال توافق است؛ نشست عمان با درخواست عربستان لغو شد
-https://daq1pvcuhj77l.cloudfront.net/1/37f3b34c00bf4a19a256d6da26890c85/hls/69c56dd3-a7f0-4172-b455-f66f537cbd79.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7c7be7fa9135482184eb291c0c3795f6/79a0b7b5-cc2e-44f5-9f3c-45d2166f97d3_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، دوشنبه ۲۳ شهریور
-https://daq1pvcuhj77l.cloudfront.net/1/7c7be7fa9135482184eb291c0c3795f6/hls/79a0b7b5-cc2e-44f5-9f3c-45d2166f97d3.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3d0597e27cd24cf581340d9910b36b33/29a63137-d2fa-4472-b567-8d3d52e8362b_thumb_001_HD.jpg",نتانیاهو خواستار حمایت لاپید از افزایش بودجه دفاعی اسرائیل شد
-https://daq1pvcuhj77l.cloudfront.net/1/3d0597e27cd24cf581340d9910b36b33/hls/29a63137-d2fa-4472-b567-8d3d52e8362b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d923fc110ffa40e992479f7538113671/54874243-6b0e-4aaa-9335-65afa1aadac4_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: خیزش «زن، زندگی، آزادی» جامعه را جسورتر و جمهوری اسلامی را خشن‌تر کرد
-https://daq1pvcuhj77l.cloudfront.net/1/d923fc110ffa40e992479f7538113671/hls/54874243-6b0e-4aaa-9335-65afa1aadac4.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aef04c45d69942d9ba47a1cb5f93f653/fc06548b-c2cc-45f0-8498-d3f20ea64aae_thumb_001_HD.jpg",لغو سفر رییس سازمان انرژی اتمی جمهوری اسلامی به اتریش با مخالفت آمریکا
-https://daq1pvcuhj77l.cloudfront.net/1/aef04c45d69942d9ba47a1cb5f93f653/hls/fc06548b-c2cc-45f0-8498-d3f20ea64aae.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c56a23d479a84ebbb0b57b94d5eb76c9/a3fa5d33-6b92-4653-8d87-29785357791a_thumb_001_HD.jpg",دیدار محمد بن سلمان و فرمانده سنتکام هم‌زمان با افزایش درگیری‌ها با حوثی‌ها
-https://daq1pvcuhj77l.cloudfront.net/1/c56a23d479a84ebbb0b57b94d5eb76c9/hls/a3fa5d33-6b92-4653-8d87-29785357791a.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b373cded54d64c3495fcd260eb42e49c/507c8820-887b-49be-8ad3-89f67262e180_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: جزئیات تازه از عملیات نجات خلبان آمریکایی از چنگ سپاه
-https://daq1pvcuhj77l.cloudfront.net/1/b373cded54d64c3495fcd260eb42e49c/hls/507c8820-887b-49be-8ad3-89f67262e180.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f48709775d2f420ca2357ae53b44a3e6/47cffdb2-ff86-4b9f-ba76-c1b2bcd9b57b_thumb_001_HD.jpg",جزئیات تازه از عملیات نجات خلبان آمریکایی در ایران؛ آمریکا ۹۲ نیرو در اصفهان پیاده کرد
-https://daq1pvcuhj77l.cloudfront.net/1/f48709775d2f420ca2357ae53b44a3e6/hls/47cffdb2-ff86-4b9f-ba76-c1b2bcd9b57b.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0c4f4b6838a64913bcef97fbc9b02f86/ffe6a649-61f5-4e13-9025-b0ea40df3fc8_thumb_001_HD.jpg",بازگشت دلار آزاد به محدوده ۲۳۵ هزار تومان؛ نرخ دولتی حواله دلار نیز رکورد جدیدی ثبت کرد
-https://daq1pvcuhj77l.cloudfront.net/1/0c4f4b6838a64913bcef97fbc9b02f86/hls/ffe6a649-61f5-4e13-9025-b0ea40df3fc8.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/650cb0b8e63944ed982eb2b7bc6e907e/82fb83b1-964b-4e6b-bb33-2ef239bd0361_thumb_001_HD.jpg",اخبار شبانگاهی | دوشنبه ۲۳ شهریور
-https://daq1pvcuhj77l.cloudfront.net/1/650cb0b8e63944ed982eb2b7bc6e907e/hls/82fb83b1-964b-4e6b-bb33-2ef239bd0361.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bd7f150d887743b0a4a876ee25bd0eb7/d5791a6f-afab-4962-a43b-6671001ad83c_thumb_001_HD.jpg",پول اضافه‌ای که مردم برای کالاها می‌پردازند، به جیب چه کسانی می‌رود؟ 
-https://daq1pvcuhj77l.cloudfront.net/1/bd7f150d887743b0a4a876ee25bd0eb7/hls/d5791a6f-afab-4962-a43b-6671001ad83c.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2c6b30e3a38a4966a2107a093c808846/979c3eaa-647b-4bbc-90ad-59d8d095773e_thumb_001_HD.jpg",آغاز لیگ نخبگان آسیا بدون حق میزبانی برای فوتبال ایران
 https://daq1pvcuhj77l.cloudfront.net/1/2c6b30e3a38a4966a2107a093c808846/hls/979c3eaa-647b-4bbc-90ad-59d8d095773e.m3u8
