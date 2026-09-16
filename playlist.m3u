@@ -1062,15 +1062,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3825,6 +3816,33 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/389f01d7085e456581ca7e2c20b539df/dcaf5001-a26b-4ee9-99df-1137df4b9036_thumb_001_HD.jpg",واشینگتن‌پست: آمریکا ۴۰ هزار بمب دو هزار پوندی در اختیار اسرائیل قرار می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/389f01d7085e456581ca7e2c20b539df/hls/dcaf5001-a26b-4ee9-99df-1137df4b9036.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2bad14a7becf4ae399c914027545abee/b60b081f-9491-426b-ba16-cd37ddd63c47_thumb_001_HD.jpg",بازگشت نیروهای سرکوب به خیابان‌ها؟ کدام شهرها را قرق کرده‌اند؟
+https://daq1pvcuhj77l.cloudfront.net/1/2bad14a7becf4ae399c914027545abee/hls/b60b081f-9491-426b-ba16-cd37ddd63c47.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ef907146ae354a5eb05e3efbd3038a86/0bd5c2be-69c0-4b0f-8a4b-c7b54b323de7_thumb_001_HD.jpg",«ذهن حاج‌آقا می‌پرید»؛ به رییسی با کارتون اقتصاد یاد می‌دادند!
+https://daq1pvcuhj77l.cloudfront.net/1/ef907146ae354a5eb05e3efbd3038a86/hls/0bd5c2be-69c0-4b0f-8a4b-c7b54b323de7.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bd65a939a7614b1a95bf619eaabd71a6/a84e0bae-ad90-479c-9d33-09126d480ffd_thumb_001_HD.jpg",«علاج» خبرچین استخدام می‌کند!
+https://daq1pvcuhj77l.cloudfront.net/1/bd65a939a7614b1a95bf619eaabd71a6/hls/a84e0bae-ad90-479c-9d33-09126d480ffd.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d1c1293276ab4c7489fc6b4ee6581eef/e8ac21ac-6a25-4ea2-b559-12fa3527a044_thumb_001_HD.jpg",اکسیوس: تلاش نماینده جمهوری‌خواه کنگره برای استیضاح پیت هگست
+https://daq1pvcuhj77l.cloudfront.net/1/d1c1293276ab4c7489fc6b4ee6581eef/hls/e8ac21ac-6a25-4ea2-b559-12fa3527a044.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8950e4071afd4e1d8aa55fc3a5fed83a/acfc9862-8146-4d9c-80cd-08af73674291_thumb_001_HD.jpg",فرزین کرباسی: عراق حاضر نیست برای تجارت با ایران فشار اقتصادی آمریکا را بپذیرد
+https://daq1pvcuhj77l.cloudfront.net/1/8950e4071afd4e1d8aa55fc3a5fed83a/hls/acfc9862-8146-4d9c-80cd-08af73674291.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a14b733b70d4f2aa0ab6d666835260f/1b9a410b-5b6c-4f43-9505-9ee1eb14f648_thumb_001_HD.jpg",مهدی صارمی‌فر: فعالیت هکرهای مرتبط با جمهوری اسلامی امنیت کشورهای مختلف را تهدید کرده است
+https://daq1pvcuhj77l.cloudfront.net/1/4a14b733b70d4f2aa0ab6d666835260f/hls/1b9a410b-5b6c-4f43-9505-9ee1eb14f648.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e3c39edab5224776b85ac1032b4a3a0b/d5a89c59-ee1e-4486-b7ee-45b88c24939a_thumb_001_HD.jpg",چشم‌انداز: ترس مقامات حکومتی از انفجار اجتماعی و اعتراضات خیابانی
+https://daq1pvcuhj77l.cloudfront.net/1/e3c39edab5224776b85ac1032b4a3a0b/hls/d5a89c59-ee1e-4486-b7ee-45b88c24939a.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5e772310ccaf4f668335989698bd37b7/4e3e4cc3-c378-46b1-b4a1-e6e2cff477e5_thumb_001_HD.jpg",ترس مقامات حکومتی از انفجار اجتماعی و اعتراضات خیابانی
+https://daq1pvcuhj77l.cloudfront.net/1/5e772310ccaf4f668335989698bd37b7/hls/4e3e4cc3-c378-46b1-b4a1-e6e2cff477e5.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/193ea1c2de294467b97266824f1efd7b/2d3b5316-b498-4cdd-a60e-2c73a74558bf_thumb_001_HD.jpg",گزارش بازرس کل پنتاگون درباره جنگ ایران
 https://daq1pvcuhj77l.cloudfront.net/1/193ea1c2de294467b97266824f1efd7b/hls/2d3b5316-b498-4cdd-a60e-2c73a74558bf.m3u8
 
@@ -3878,6 +3896,9 @@ https://daq1pvcuhj77l.cloudfront.net/1/2b97b092517a4ffd8fded34e2909b7b8/hls/adf3
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9f24e7b509b4417284903467d817f6cc/b5c3218b-0708-441f-b5f8-f79f7f10a29e_thumb_001_HD.jpg",دیدار نخست‌وزیر عراق با مقام‌های آلمانی در برلین
 https://daq1pvcuhj77l.cloudfront.net/1/9f24e7b509b4417284903467d817f6cc/hls/b5c3218b-0708-441f-b5f8-f79f7f10a29e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f2777cc3734e4be9b587639e4ea73eec/e04c7ac2-8e88-469b-a37a-85763b47f029_thumb_001_HD.jpg",گفت‌وگوی ویژه با یخیل لایتر، سفیر اسرائیل در آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/f2777cc3734e4be9b587639e4ea73eec/hls/e04c7ac2-8e88-469b-a37a-85763b47f029.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fe04ffb3a4c34507b9cfd116ddc084bc/9d87a657-e4f0-46cf-be9a-8fe2cf81c4a4_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲۴ شهریور
 https://daq1pvcuhj77l.cloudfront.net/1/fe04ffb3a4c34507b9cfd116ddc084bc/hls/9d87a657-e4f0-46cf-be9a-8fe2cf81c4a4.m3u8
