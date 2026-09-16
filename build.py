@@ -1342,15 +1342,9 @@ def main():
     total += len(arabic_music)
     print(f"Arabic Music: {len(arabic_music)} channels", flush=True)
     vod = fetch_iranintl_vod()  # re-enabled by user request 2026-09-05, appended at end of playlist
-    fox26 = fetch_fox26_vod()
-    # ponytail: TiviMate buckets raw .mp4 URLs into the Movies tab by file extension,
-    # regardless of group-title language — renaming the group doesn't move it next to
-    # channels (unlike Iran Intl VOD, which is HLS .m3u8). Single copy until Fox26 clips
-    # are served as HLS (would need our own transcode/proxy, see yt-vod-proxy precedent).
-    for extinf, stream in fox26:
-        out.append(extinf); out.append(stream); out.append("")
-    total += len(fox26)
-    print(f"Fox 26 VOD: {len(fox26)} videos", flush=True)
+    # Fox 26 Houston VOD removed 2026-09-16 at the user's request (not wanted at all);
+    # fetch_fox26_vod() is kept only in case it's ever asked for again. The live
+    # Fox 26 Houston channel is unaffected.
     for extinf, stream in aparat:
         out.append(extinf); out.append(stream); out.append("")
     total += len(aparat)
