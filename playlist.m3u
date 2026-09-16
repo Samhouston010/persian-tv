@@ -1062,6 +1062,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1323,6 +1332,60 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/1w1q2ravkyzl2466/rgd358jimxtyta73.jpg",The Hidden Financial Burden Keeping Black People &amp; Latinos from Building Generational Wealth
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48407467752_48407467908/48407467908/hf-uuid-1740076e-2c4f-4a21-8ec4-dfd7def8cc10/48407467908_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/zp7bydr3dkxy574v/utv1uwnipwbzomxt.jpg",Houston weather: Hot day ahead on Wednesday, storms possible Thursday
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48407442087_48407442218/48407442218/hf-uuid-10789bb9-8167-4f63-b4ba-0b26a5131511/48407442218_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cugfp52n49x7tsnt/qlr7aet4h3wiy96c.jpg",Swapped Cast Talks Dating, Red Flags &amp; When to Make the Swap 
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48405381178_48407520557/48407520557/hf-uuid-48d45b4d-e6bd-4c07-a74f-1f961948aaf4/48407520557_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/2jc8gqv6jwnuzhye/8rtlfyw0b98pdjuz.jpg",Red Tide impacting local seafood supply
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48407001121_48407001454/48407001454/hf-uuid-df0e7480-8a83-42e1-b65e-a35cb6fe2c64/48407001454_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/qcg5ajzh5ruz9wmq/glx8okdkawnl9ei7.jpg",Houston weather: More scattered storms possible
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48403374019_48403374155/48403374155/hf-uuid-c4c402f0-6ecd-4fad-8aa8-bea382ef2851/48403374155_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/vpkiyc9weiejx6pn/2al2z00f438z7tq8.jpg",Foul odor leads to discovery of two men dead inside home
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48403304759_48403304980/48403304980/hf-uuid-7ad8e2e9-dc2e-4826-ad26-67ef3316fb14/48403304980_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/e58c3zsa3dt3wamd/c6c8jk3gx9yv7r35.jpg",Deadly shooting in Woodland Heights
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48403031855_48403032029/48403032029/hf-uuid-d3c18560-5cb2-4c52-a588-57141d93eaa6/48403032029_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/f0i6ckldfe3jimeh/aqharf9qexdca1lx.jpg",Texas Restaurant Association speaks on Red Tide concerns
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48402952129_48402952332/48402952332/hf-uuid-98e339b5-18b2-4736-af92-d502b1fcaf0a/48402952332_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/xxcsuad3ujlr0te1/e4i2sxb2i293039l.jpg",Battleground Texas: Key Updates Ahead of Midterms!
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48400381287_48400457306/48400457306/hf-uuid-b919a0ca-c82a-4168-b380-40b317d1f191/48400457306_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cbct9abs0fofvf0v/1t5w1ba230nysy2o.jpg",Motion Night 2026: Thousands of Houston Young Adults Gather at Grace Church
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48400421228_48400449766/48400449766/hf-uuid-15c25048-b21a-4a92-9633-f4c022c88e61/48400449766_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/d991pzzs9k4fs49f/fpggawew558sxgjh.jpg",Breaking down Bo French controversy: What it means for election
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48400249365_48400438203/48400438203/hf-uuid-c4dcb21b-f003-4eaa-83db-0a10104518f4/48400438203_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/47gd0pzrhef0zy2c/rlbl86vqry6p84b3.jpg",Sen. Husted, PA Toss-Ups &amp; Repro Rights
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48398322487_48398326563/48398326563/hf-uuid-d51930d1-26f4-4083-837a-cfb8dc3d2192/48398326563_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9po6byy4nqfd8t68/sb43zto0otaqk3r2.jpg",Your Legal Questions: September 15, 2026
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48397604976_48397605086/48397605086/hf-uuid-4946d1d7-126d-40c8-84d8-2d2061d78d61/48397605086_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4mws90qd0dysdadn/6yrb99mx0fqt3twj.jpg",TRUMP HUGE LOSS | D.C. Daily
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48397328066_48397402948/48397402948/hf-uuid-c56129f3-a16c-470e-8b7d-7c8633777342/48397402948_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cc4c506vqfo9nmrp/40lsi42l2sf3kmt9.jpg",Houston County suspect kicks out window, jumps from deputy's truck
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48396314653_48396385232/48396385232/hf-uuid-28efaf4f-bd46-4911-97ad-6e88189a97cd/48396385232_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/f5oedn3txegrp55b/od5v24k5o2w3ve6g.jpg",Register to vote on National Voter Registration Day
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48394167455_48394167585/48394167585/hf-uuid-c113c12e-960b-4d19-896f-7ff5921e83f9/48394167585_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/i99em0wn2c6nqbhr/j6ory8rw8yjr29xr.jpg",Houston weather: Near-record highs for Tuesday
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48393485781_48393485845/48393485845/hf-uuid-af007e88-0d3d-4251-9ce2-df354e4cb8ef/48393485845_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/11ps1k2ygzpvlpl6/eyjuuksvzy38i1v0.jpg",FULL: Houston law enforcement detail SWAT stand-off in northwest Harris County
+https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48392649618_48393145174/48393145174/hf-uuid-0774b9ec-c1f0-4dbd-8ddc-b5bef84bf283/48393145174_lowres.mp4
+
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/2jf49bijdcmex1wa/nclvt3jidurmlh8j.jpg",The Inheritance Trap: Why Banking on Mom and Dad Could Ruin Your Retirement
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48386288569_48386288721/48386288721/hf-uuid-d5080749-4e23-4e35-99a0-fe23714260b7/48386288721_lowres.mp4
 
@@ -1419,11 +1482,11 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4834415
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/al9aoy8llzknppq0/fygb78rdav1nkwuj.jpg",Surveillance Cameras: Community Debate in Montgomery County
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48343442219_48343442380/48343442380/hf-uuid-2cf78446-b1ba-4b99-bd4f-68d647cfa7de/48343442380_lowres.mp4
 
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/aw9ud8nbinmy93q8/qo90sb5yh25dy2id.jpg",The Backstage Experience w/ Ryan Reynolds, Ed Sheran, Andrew Garfield &amp; Gal Gadot
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48323412073_48382345428/48382345428/hf-uuid-f3bfc290-a233-4c5d-b59d-525571274d9b/48382345428_lowres.mp4
-
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gmezhcj3oakbu0ro/1digsq4amgcmyhtl.jpg",The Backstage Experience w/ Ryan Reynolds, Ed Sheeran, Andrew Garfield &amp; Gal Gadot
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48323412073_48382555603/48382555603/hf-uuid-a6d38ee3-79e2-4c88-b47f-383296608245/48382555603_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/aw9ud8nbinmy93q8/qo90sb5yh25dy2id.jpg",The Backstage Experience w/ Ryan Reynolds, Ed Sheran, Andrew Garfield &amp; Gal Gadot
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48323412073_48382345428/48382345428/hf-uuid-f3bfc290-a233-4c5d-b59d-525571274d9b/48382345428_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/drnx4mr0ixgpi279/8ne23oozmjsvlbld.jpg",THE NOW with CRIS: Sweet, Savory &amp; Scented
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48324570748_48324570970/48324570970/hf-uuid-17c06e3b-4455-4af4-87db-431d5db9e4e5/48324570970_lowres.mp4
@@ -1863,11 +1926,11 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4820107
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/vtierp2vj5t6wlse/gnbmlr9kgzt9rq9l.jpg",Houston weather: Sept. 5 evening forecast
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48200894959_48200895050/48200895050/hf-uuid-fe77f19e-d2c9-4bc0-b52f-56bd2af98507/48200895050_lowres.mp4
 
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9dygeogb4ds743km/hru7bwhnma5u6ed3.jpg",Foodies &amp; Friends - Latuli
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48263653803_48263672010/48263672010/hf-uuid-40c46b14-0042-447d-b337-4cb42d57a305/48263672010_lowres.mp4
-
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/jb0n8owfzkkz00lq/sfkejkgwo6tpwknj.jpg",Foodies &amp; Friends - Latuli
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48263653803_48263653954/48263653954/hf-uuid-203cd74b-4576-4c01-b34b-517c5717e98a/48263653954_lowres.mp4
+
+#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9dygeogb4ds743km/hru7bwhnma5u6ed3.jpg",Foodies &amp; Friends - Latuli
+https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48263653803_48263672010/48263672010/hf-uuid-40c46b14-0042-447d-b337-4cb42d57a305/48263672010_lowres.mp4
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/cxbh4g2ug73n3sgd/imy8p8zb6e66krfh.jpg",Foodies and Friends - HAMSA
 https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48263537083_48263537222/48263537222/hf-uuid-73743268-1f88-4616-9157-696c7c319721/48263537222_lowres.mp4
@@ -2168,60 +2231,6 @@ https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_4810443
 
 #EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/jylqwsstzry6uq81/erauzsre72sotplk.jpg",Tupac Shakur murder: Duane 'Keefe D' Davis found guilty
 https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48102816715_48102816842/48102816842/hf-uuid-3783cf03-3ae0-463e-816a-fd5dc4cb247d/48102816842_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/22bl12p859ok3qay/iazb8l9t7vqqirek.jpg",Brother of man killed in Houston ICE shooting released from custody
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48102758615_48102758894/48102758894/hf-uuid-15b6d47d-b54d-454c-b197-8d3aa8287a4d/48102758894_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/t14ophfhogh9852v/g874dkfcll60uth9.jpg",Parents raise concerns over ongoing HVAC issues at Briargrove Elementary 
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48102205952_48102262911/48102262911/hf-uuid-80d0d56d-dd1c-44d4-b714-7e3fe19299be/48102262911_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/4fjbb4nez7c1u68h/cex5c5odw8vqhpip.jpg",Tropical Depression 5 update: Houston-area impacts, timeline
-https://static-clips.fox.com/proxy/fts_program/svc_hf_fts_program_prod/WM_KRIV_48100621934_48101725132/48101725132/hf-uuid-e4c2181c-0e8b-4c5e-a2b7-0ba86e671814/48101725132_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/gx3kgz1ix55juumz/guhvqrdlcn6rcumv.jpg",Battleground: Midterm Voter Trends 
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48100883849_48100884046/48100884046/hf-uuid-5eb151d6-fa1a-4d17-9a95-b5825a0b559f/48100884046_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kobpsnwk8kf89iwq/26xzvnlmsxtxemlc.jpg",Galveston County judge discusses preps with tropical depression in the Gulf
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48099483000_48099483096/48099483096/hf-uuid-c2f7cc7d-0472-4c60-a32c-da1bf3b3aea3/48099483096_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/uzio0m7d9kdkfgyp/l9lya6ilxpshb4nc.jpg",Talarico vs. Paxton in US Senate race | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48099411640_48099411779/48099411779/hf-uuid-db9640ae-a9dd-452d-9d39-77d36a5fa4cc/48099411779_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/bo8sjf58m1ehk2td/qpbgyzwigmq7ltsb.jpg",The Woodlands approves new agreement with Houston | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48099308231_48099308342/48099308342/hf-uuid-a8446f36-9db5-44a4-9682-f388d7af3e8d/48099308342_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/21amfpj6oae6f657/ydwc6g0o6c394x64.jpg",Harris County leaders debate potential property tax increase | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48099260670_48099260774/48099260774/hf-uuid-243c2afd-0a17-46a3-b236-71eda6f44187/48099260774_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/8g0fz6i257zpzt14/liaijnbnu50f5n57.jpg",Reaction to US Attorney for the Southern District of Texas | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48098924373_48098924485/48098924485/hf-uuid-608caeeb-dc9c-4063-89c2-285139f07d26/48098924485_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/vet250nq3j2pyq3l/jrggwyhjluomq7df.jpg",Tropical Depression Five develops in the Gulf
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48098542101_48098542293/48098542293/hf-uuid-c6261269-7ac7-4fae-8a63-66d7af3e1f13/48098542293_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/9xpdlcrq1lxd5f2i/tt9mr3gfh6josl0d.jpg",French bulldog stolen in north Houston home burglary
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48098117109_48098117251/48098117251/hf-uuid-9fa41d79-5e92-40aa-ad6e-d3836dd73789/48098117251_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/7aja9178d27yeral/zlrqrjfwb5o1g5sy.jpg",Update on Potential Tropical Cyclone 5
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48098014283_48098014402/48098014402/hf-uuid-669ee89e-1aed-4af9-9512-550e29fc9687/48098014402_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/bny5ul9klm1xeklk/jzho4uh0l49df4sz.jpg",One-on-one with US Attorney Aaron Reitz | What's Your Point?
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48095216036_48095216138/48095216138/hf-uuid-6fc7794e-bf47-41ac-b561-17ce632568e7/48095216138_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/uertzr81l4rnbczl/pqqo26qve8snru5e.jpg",Anker SOLIX EverFrost Cooler | Hurricane Gear Test
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48093438166_48094409687/48094409687/hf-uuid-4608a287-696b-4b01-88f9-98203d077159/48094409687_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/kggds9khbkq6mi36/bma9nkhau999tp4s.jpg",TRUMP: MOVE TO U.S. | D.C. Daily
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48092798451_48092798576/48092798576/hf-uuid-cbb85d0a-91b7-4b48-82f9-9d8369f363ab/48092798576_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/l8vwhvjvek8k3ywx/u6ibou7ejkkrfa5x.jpg",Houston weather: Dry Monday, watching Invest97L in the Gulf
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48086684774_48086684898/48086684898/hf-uuid-19a693f2-c627-4933-a799-d5e9b7f83eca/48086684898_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/f9xn7mttu89utofs/bdfen9w43dudhxbo.jpg",Houston weather: August 30 overnight forecast
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48085903649_48085904028/48085904028/hf-uuid-0f73070d-8ba1-4c43-a422-c50dfec57efb/48085904028_lowres.mp4
-
-#EXTINF:-1 group-title="📺 Fox 26 Houston VOD" tvg-logo="https://static-media.fox.com/fmcv3/prod/fts/bzick3h7fljhkg1s/xilyr58jo3e0i32k.jpg",Four Houston Heights restaurants targeted in same-day
-https://static-clips.fox.com/proxy/fts_clip/svc_hf_fts_clip_prod/WM_KRIV_48083412285_48083412360/48083412360/hf-uuid-5f34f022-67f9-48a3-9637-c2fdd134312e/48083412360_lowres.mp4
 
 #EXTINF:-1 tvg-id="Keshet 12" tvg-name="Keshet 12" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12
 #EXTVLCOPT:network-caching=2000
