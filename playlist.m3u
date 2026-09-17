@@ -2592,6 +2592,15 @@ https://gcinemahls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://homeplushls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/icc.png" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://icchls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/metafilm.jpg" tvg-id="MetaFilmTV.ir@SD",Meta Film TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
