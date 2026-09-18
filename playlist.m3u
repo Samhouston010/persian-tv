@@ -1206,6 +1206,15 @@ https://jmp2.uk/stvp-INBC2800001D8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pmc.default.svg",PMC (Backup)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmchls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://www.parsatv.com/index_files/channels/t2tv.jpg",T2 TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2637,6 +2646,15 @@ https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.navahang.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/AbrHI7K.png" tvg-id="PMC.ae@SD",PMC
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://pmchls.wns.live/hls/stream.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/Wu8MBb7.png" tvg-id="T2TV.ir@SD",T2 TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2861,27 +2879,6 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cda1d3028b724df39de367461669ff78/e6fde9aa-2e25-4bfb-be97-fc8a7d033385_thumb_001_HD.jpg",بسکتبال ایران با شکست برابر کره جنوبی به فینال نرسید
-https://daq1pvcuhj77l.cloudfront.net/1/cda1d3028b724df39de367461669ff78/hls/e6fde9aa-2e25-4bfb-be97-fc8a7d033385.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b7151e0b717044918c7f397a7c647bff/6d552b28-ff70-42e0-9d06-f580398ef981_thumb_001_HD.jpg",دست‌کم چهار عضو فاطمیون در تیراندازی زاهدان کشته شدند
-https://daq1pvcuhj77l.cloudfront.net/1/b7151e0b717044918c7f397a7c647bff/hls/6d552b28-ff70-42e0-9d06-f580398ef981.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2e95f9789795443da55c9b2730ee5ac0/75fed6fd-ca13-4198-b0d8-1a471d3c7bde_thumb_001_HD.jpg",تایید حکم اعدام پنج معترض و جان‌باختن یک تکواندوکار مجروح در اعتراضات دی ماه
-https://daq1pvcuhj77l.cloudfront.net/1/2e95f9789795443da55c9b2730ee5ac0/hls/75fed6fd-ca13-4198-b0d8-1a471d3c7bde.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3dd094ebe9034fe59ae0f7c0ac8efed4/7badc471-3895-40bf-a638-d0e05a02e750_thumb_001_HD.jpg",سرخط خبرهای جمعه ۲۷ شهریور
-https://daq1pvcuhj77l.cloudfront.net/1/3dd094ebe9034fe59ae0f7c0ac8efed4/hls/7badc471-3895-40bf-a638-d0e05a02e750.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/be710322093241e995d8ea992317affb/a662a173-03cf-4010-9870-de9da3287c0f_thumb_001_HD.jpg",مخاطبان ایران‌اینترنشنال از ناکارآمدی بیمه‌ها و قطع پوشش بیمه‌ای گفتند
-https://daq1pvcuhj77l.cloudfront.net/1/be710322093241e995d8ea992317affb/hls/a662a173-03cf-4010-9870-de9da3287c0f.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/913c79e089b849929e25efb86820de41/40bcb615-ff1e-4c61-b1b0-7b497887322e_thumb_001_HD.jpg",مرتضی کاظمیان: هدف اصلی رژه «جانفدایان» ارعاب شهروندان معترض است
-https://daq1pvcuhj77l.cloudfront.net/1/913c79e089b849929e25efb86820de41/hls/40bcb615-ff1e-4c61-b1b0-7b497887322e.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2ef04b866bd8497882b2dc4ff8d69152/a43cfe2a-24a6-476f-bad3-5a3b6a24c278_thumb_001_HD.jpg",نتانیاهو: هدف اسرائیل سرنگونی جمهوری اسلامی و نابودی حزب‌الله و حماس است
-https://daq1pvcuhj77l.cloudfront.net/1/2ef04b866bd8497882b2dc4ff8d69152/hls/a43cfe2a-24a6-476f-bad3-5a3b6a24c278.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/68f74466630a41ff80d5268909ea0049/ece6c74e-d580-424e-8c58-82bfa884f442_thumb_001_HD.jpg",حسین آقایی: بازسازی طالقان ۲ را باید در کنار دیگر تحرکات جمهوری اسلامی بررسی کرد
 https://daq1pvcuhj77l.cloudfront.net/1/68f74466630a41ff80d5268909ea0049/hls/ece6c74e-d580-424e-8c58-82bfa884f442.m3u8
