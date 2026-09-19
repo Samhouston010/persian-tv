@@ -952,6 +952,18 @@ def _fill_logo(extinf, logo_by_id):
         return extinf if lm.group(1) else _TVGLOGO_RE.sub(f'tvg-logo="{logo}"', extinf, count=1)
     return extinf.replace('tvg-id="', f'tvg-logo="{logo}" tvg-id="', 1)
 
+# Persiana Group's own channel logos are 1500-3000px SQUARES, which show up as a small square in
+# the middle of a wide Live TV tile. logos/persiana/<name>.png are the same artwork re-cut as
+# 2.4:1 rounded plates (brand colour + the mark and name enlarged) so they fill the tile like
+# Tubi's do. Only swapped when the file exists, so a new channel keeps its original logo.
+_PERSIANA_LOGO_RE = re.compile(r'https?://(?:www\.)?persianagroup\.tv/assets/logos/([a-z0-9-]+)\.png')
+_PERSIANA_WIDE = "https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/persiana/%s.png"
+def _wide_persiana_logo(extinf):
+    here = os.path.dirname(os.path.abspath(__file__))
+    return _PERSIANA_LOGO_RE.sub(
+        lambda m: _PERSIANA_WIDE % m.group(1) if os.path.exists(os.path.join(here, "logos", "persiana", m.group(1) + ".png")) else m.group(0),
+        extinf)
+
 def _channel_category(extinf, cat_by_id):
     m = _TVGID_RE.search(extinf)
     cats = cat_by_id.get(m.group(1).split("@")[0], []) if m else []
@@ -1292,6 +1304,7 @@ def main():
         for extinf, stream in entries:
             extinf = _patch_tele_logo(extinf, stream)
             extinf = _fill_logo(extinf, logo_by_id)
+            extinf = _wide_persiana_logo(extinf)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
