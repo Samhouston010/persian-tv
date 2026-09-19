@@ -1557,6 +1557,15 @@ https://aegis-cloudfront-1.tubi.video/36ef2f9d-7100-4c4d-b41a-dbf41ab7e461/playl
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://pb-2y9ox4r1fy550.akamaized.net/playlist.m3u8
 
+#EXTINF:-1 tvg-id="Yes.Network.us2" group-title="🏈 اسپرت" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/YES_Network_logo.svg/960px-YES_Network_logo.svg.png",Yes Network
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+http://23.237.104.106:8080/USA_YES_NETWORK/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/4u.png" group-title="ایران",4U TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
