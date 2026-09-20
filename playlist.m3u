@@ -1062,6 +1062,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2915,6 +2924,9 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/44505eb73fef4948a233aaf1fcab077b/5e5db8ef-b697-4459-976f-002df1d492da_thumb_001_HD.jpg",شاهزاده رضا پهلوی: برای سرنگونی رژیم و مدیریت دوره گذار، برنامه و سازمان‌دهی داریم
+https://daq1pvcuhj77l.cloudfront.net/1/44505eb73fef4948a233aaf1fcab077b/hls/5e5db8ef-b697-4459-976f-002df1d492da.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/30ca5d3f72b84f63a922bac6623a3f3c/04544489-75f8-4f72-9736-c1a52cbdd7af_thumb_001_HD.jpg",شاهزاده رضا پهلوی: مردم داخل ایران بار اصلی مبارزه برای آزادی را بر دوش دارند
 https://daq1pvcuhj77l.cloudfront.net/1/30ca5d3f72b84f63a922bac6623a3f3c/hls/04544489-75f8-4f72-9736-c1a52cbdd7af.m3u8
