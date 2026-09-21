@@ -1062,15 +1062,6 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2915,9 +2906,6 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4adc892913114158b174d90c36264684/d3b6ffb6-34a6-403e-89d7-e7081cfdbb32_thumb_001_HD.jpg",روسیه و اوکراین یکی از گسترده‌ترین حملات پهپادی متقابل را انجام دادند
-https://daq1pvcuhj77l.cloudfront.net/1/4adc892913114158b174d90c36264684/hls/d3b6ffb6-34a6-403e-89d7-e7081cfdbb32.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3389c2c082824091b1823e6d58deffb0/35c8533a-b562-4eb5-ac21-7815fc7af82f_thumb_001_HD.jpg",پگاه ملک‌محمدی: جنبش «زن، زندگی، آزادی» مبارزه مردم ایران را به یک مطالبه جهانی تبدیل کرد
 https://daq1pvcuhj77l.cloudfront.net/1/3389c2c082824091b1823e6d58deffb0/hls/35c8533a-b562-4eb5-ac21-7815fc7af82f.m3u8
