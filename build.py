@@ -1295,6 +1295,14 @@ def main():
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
     epg_url = "https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
     out = [f'#EXTM3U url-tvg="{epg_url}"', ""]
+    # channels the owner wants at the very top (top_channels.m3u: #EXTINF line, then its URL)
+    try:
+        _t = open("top_channels.m3u", encoding="utf-8").read().splitlines()
+        for _i, _l in enumerate(_t[:-1]):
+            if _l.startswith("#EXTINF") and _t[_i + 1].startswith("http"):
+                out.append(_l); out.append(_t[_i + 1]); out.append("")
+    except FileNotFoundError:
+        pass
     total = 0
     for group, url in SOURCES:
         text = fetch(url).decode("utf-8", errors="ignore")
