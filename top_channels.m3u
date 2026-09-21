@@ -1,0 +1,5 @@
+#EXTM3U
+# Channels listed here are put at the very top of playlist.m3u by build.py.
+# One channel = its #EXTINF line, then its URL on the next line.
+#EXTINF:-1 tvg-id="livecam" tvg-name="دوربین زنده" tvg-logo="https://147-224-130-108.nip.io/static/persiana-radio-logo.png" group-title="🎥 دوربین زنده",دوربین زنده
+https://hoktastream1.webcamera.pl/tv_cam_781381/tv_cam_781381.stream/chunks.m3u8
