@@ -1065,6 +1065,15 @@ https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -2882,6 +2891,15 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/070432c67e0f4862aa841b1b39a3967f/7bdc69f4-b045-42e5-aede-ba66eb7ef8cb_thumb_001_HD.jpg",لیلی از کرج: بعضی مسافرها بدنمان را لمس می‌کنند؛ پیشنهاد صیغه هم می‌دهند
+https://daq1pvcuhj77l.cloudfront.net/1/070432c67e0f4862aa841b1b39a3967f/hls/7bdc69f4-b045-42e5-aede-ba66eb7ef8cb.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c44e460fea504d9a91cf4d78e76af4a9/ecbdeeac-ccd7-4ea1-9a0d-6c76c453c359_thumb_001_HD.jpg",چطور با بستن سیم‌کارت زندگی مردم را ساقط می‌کنند؟
+https://daq1pvcuhj77l.cloudfront.net/1/c44e460fea504d9a91cf4d78e76af4a9/hls/ecbdeeac-ccd7-4ea1-9a0d-6c76c453c359.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/869311c485a445dab8bb10305a4eb94c/4da87b75-ec1a-43fb-ab51-f1ea0807a34f_thumb_001_HD.jpg",خلاصه‌ای از شیوهٔ حکمرانی جمهوری اسلامی؛ گمرک برای ۱۲۸ نوع مشروب الکلی قیمت تعیین کرد
+https://daq1pvcuhj77l.cloudfront.net/1/869311c485a445dab8bb10305a4eb94c/hls/4da87b75-ec1a-43fb-ab51-f1ea0807a34f.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3887ba482c0648868ca5dbba022dd9fe/659aee03-05e3-4165-abb1-6723bc05d29a_thumb_001_HD.jpg",اختلاف واشینگتن و کی‌یف بر سر حمله به زیرساخت‌های انرژی روسیه
 https://daq1pvcuhj77l.cloudfront.net/1/3887ba482c0648868ca5dbba022dd9fe/hls/659aee03-05e3-4165-abb1-6723bc05d29a.m3u8
