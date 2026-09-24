@@ -1033,6 +1033,25 @@ FAS_LANG_EXTRA = [
     ("Tin TV", "https://i.imgur.com/hMqGs94.png", "https://tulixcdn.akamaized.net/tintv6/tintv/tintv/playlist.m3u8"),
 ]
 
+# Owner's permanent group moves (channel name -> group), applied to the final playlist whatever source the
+# channel comes from (parsatv / iptv-org / ...), so the daily rebuild never puts it back. 2026-09-24.
+GROUP_MOVES = {
+    "Iran Wire TV": "📰 خبر",
+    "Setareh TV": "📰 خبر",
+}
+
+
+def _apply_group_moves(lines):
+    out = []
+    for line in lines:
+        if line.startswith("#EXTINF"):
+            target = GROUP_MOVES.get(line.rsplit(",", 1)[-1].strip())
+            if target:
+                line = re.sub(r'group-title="[^"]*"', f'group-title="{target}"', line, count=1)
+        out.append(line)
+    return out
+
+
 def fetch_iran_org(cat_by_id, logo_by_id):
     """Iran channels from iptv-org/iptv — re-fetched and re-checked every build,
     so channels iptv-org adds show up automatically and ones that stop loading drop out.
@@ -1476,6 +1495,7 @@ def main():
         iran_file.append(extinf); iran_file.append(_AF_NORMAL); iran_file.append(stream); iran_file.append("")
     with open("ایران/ایران.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(iran_file))
+    out = _apply_group_moves(out)
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write("\n".join(out))
     print(f"Total: {total}", flush=True)
