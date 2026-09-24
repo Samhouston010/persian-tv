@@ -816,7 +816,8 @@ NEWS_CHANNELS = [
     _ch("Al Jazeera English",    _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     _ch("Al Jazeera Arabic",     _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
     _ch("Sky News Arabia",       _L+"/world-middle-east/sky-news-arabia-mea.png", "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
-    _ch("Al Arabiya",            _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
+    _ch("Al Arabiya",            _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8"),
+    _ch("Al Arabiya English",    _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
     _ch("Al Hadath",             _L+"/united-arab-emirates/al-arabiya-al-hadath-ae.png", "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
     # ponytail: Al Mayadeen has no replacement in tv-logo/tv-logos either; iptv-org's own logo instead
     _ch("Al Mayadeen",           "https://i.imgur.com/GtQOKeW.png",              "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8"),
