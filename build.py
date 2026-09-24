@@ -835,7 +835,7 @@ NEWS_CHANNELS = [
     _ch("TRT Arabi"             , "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-arabi-tr.png", "https://tv-trtarabi.medya.trt.com.tr/master.m3u8"),
     _ch("Al Araby TV"           , "https://i.imgur.com/YMqWEe4.png", "https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8"),
     _ch("Al Ghad"               , "https://i.imgur.com/ga6NXb9.png", "https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8"),
-    _ch("Al Masirah (شبکه‌ی حوثی‌ها)", "https://i.imgur.com/V055t5e.png", "https://live.cdnbridge.tv/Almasirah/Almasirah_all/playlist.m3u8"),
+    _ch("Al Masirah Mubasher (شبکه‌ی حوثی‌ها)", "https://i.imgur.com/V055t5e.png", "https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8"),
     _ch("Al Manar (شبکه\u200cی حزب\u200cالله)", "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-manar-lb.png", "https://edge.fastpublish.me/live/index.m3u8"),
     _ch("Al Ekhbariya"          , "https://i.imgur.com/WcRlHQm.png", "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8"),
     _ch("Roya TV"               , "https://i.imgur.com/WX80rty.png", "https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8"),
