@@ -815,7 +815,7 @@ NEWS_CHANNELS = [
     # ─── عربی ───────────────────────────────────────────────────────────────
     _ch("Al Jazeera English",    _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
     # 2026-09-24 owner: famous English news channels missing (iptv-org, tested)
-    _ch("ABC News Live", "https://i.imgur.com/BrW7gk8.png", "https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8"),
+    _ch("ABC News Australia", "https://i.imgur.com/BrW7gk8.png", "https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8"),
     _ch("NBC News NOW", "https://i.imgur.com/JZt2qh5.png", "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99984003"),
     _ch("TRT World", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/960px-TRT_World.svg.png", "https://tv-trtworld.medya.trt.com.tr/master.m3u8"),
     _ch("i24NEWS English", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png", "https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8"),
@@ -852,7 +852,7 @@ NEWS_CHANNELS = [
     # URL itself returns a valid-looking HLS master (200, #EXTM3U) from here, so this is
     # likely a device/session-specific Pluto/Samsung-TVPlus auth quirk, not a dead link —
     # the generic health check below can't catch it.
-    # _ch("ABC News Live",       _P+"6508be683a0d700008c534e4/colorLogoPNG.png", "https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8"),
+    # _ch("ABC News Australia",       _P+"6508be683a0d700008c534e4/colorLogoPNG.png", "https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8"),
     # ─── اروپا ───────────────────────────────────────────────────────────────
     _ch("DW English",            "https://www.dw.com/images/icons/favicon-540x540.png", "https://i.mjh.nz/.r/dw-news.m3u8"),
     _ch("Euronews",              _P+"5ca1da6c593a5d78f0e7edce/colorLogoPNG.png", "https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8"),
