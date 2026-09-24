@@ -814,6 +814,14 @@ NEWS_CHANNELS = [
     # سیمای آزادی: dynamic, see load_simay_live() — refreshed every 4h so a rotated CDN URL doesn't go dead
     # ─── عربی ───────────────────────────────────────────────────────────────
     _ch("Al Jazeera English",    _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8"),
+    # 2026-09-24 owner: famous English news channels missing (iptv-org, tested)
+    _ch("ABC News Live", "https://i.imgur.com/BrW7gk8.png", "https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8"),
+    _ch("NBC News NOW", "https://i.imgur.com/JZt2qh5.png", "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99984003"),
+    _ch("TRT World", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/960px-TRT_World.svg.png", "https://tv-trtworld.medya.trt.com.tr/master.m3u8"),
+    _ch("i24NEWS English", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png", "https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8"),
+    _ch("Newsmax", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Newsmax_logo.svg/960px-Newsmax_logo.svg.png", "https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8"),
+    _ch("CNA", "https://i.imgur.com/awIDugE.png", "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8"),
+    _ch("Arirang TV", "https://i.imgur.com/kk2MdNC.png", "https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8"),
     _ch("Al Jazeera Arabic",     _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
     _ch("Sky News Arabia",       _L+"/world-middle-east/sky-news-arabia-mea.png", "https://live-stream.skynewsarabia.com/c-horizontal-channel/horizontal-stream/index.m3u8"),
     _ch("Al Arabiya",            _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8"),
