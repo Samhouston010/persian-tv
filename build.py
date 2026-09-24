@@ -819,6 +819,18 @@ NEWS_CHANNELS = [
     _ch("Al Arabiya",            _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8"),
     _ch("Al Arabiya English",    _L+"/united-arab-emirates/al-arabiya-ae.png",   "https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8"),
     _ch("Al Hadath",             _L+"/united-arab-emirates/al-arabiya-al-hadath-ae.png", "https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8"),
+    # 2026-09-24 owner: "همه را برام بیار" -- Arabic news channels, streams tested (playlist + segment) from home
+    _ch("France 24 Arabic"      , "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/france-24-fr.png", "https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8"),
+    _ch("DW Arabic"             , "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/germany/dw-de.png", "https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/master.m3u8"),
+    _ch("Asharq News"           , "https://i.imgur.com/bqRC3sl.png", "https://live-news.asharq.com/asharq.m3u8"),
+    _ch("Al Jazeera Mubasher"   , "https://i.imgur.com/DfJI4t5.png", "https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8"),
+    _ch("TRT Arabi"             , "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-arabi-tr.png", "https://tv-trtarabi.medya.trt.com.tr/master.m3u8"),
+    _ch("Al Araby TV"           , "https://i.imgur.com/YMqWEe4.png", "https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8"),
+    _ch("Al Ghad"               , "https://i.imgur.com/ga6NXb9.png", "https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8"),
+    _ch("Al Masirah (شبکه\u200cی حوثی\u200cها)", "https://i.imgur.com/V055t5e.png", "https://live.cdnbridge.tv/Almasirah/Almasirah_all/playlist.m3u8"),
+    _ch("Al Manar (شبکه\u200cی حزب\u200cالله)", "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-manar-lb.png", "https://edge.fastpublish.me/live/index.m3u8"),
+    _ch("Al Ekhbariya"          , "https://i.imgur.com/WcRlHQm.png", "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8"),
+    _ch("Roya TV"               , "https://i.imgur.com/WX80rty.png", "https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8"),
     # ponytail: Al Mayadeen has no replacement in tv-logo/tv-logos either; iptv-org's own logo instead
     _ch("Al Mayadeen",           "https://i.imgur.com/GtQOKeW.png",              "https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8"),
     # ─── انگلیسی/بریتانیا ───────────────────────────────────────────────────
