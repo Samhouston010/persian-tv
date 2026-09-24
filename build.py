@@ -828,6 +828,7 @@ NEWS_CHANNELS = [
     _ch("Al Araby TV"           , "https://i.imgur.com/YMqWEe4.png", "https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8"),
     _ch("Al Ghad"               , "https://i.imgur.com/ga6NXb9.png", "https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8"),
     _ch("Al Masirah (شبکه\u200cی حوثی\u200cها)", "https://i.imgur.com/V055t5e.png", "https://live.cdnbridge.tv/Almasirah/Almasirah_all/playlist.m3u8"),
+    _ch("Al Masirah Mubasher (شبکه‌ی حوثی‌ها)", "https://i.imgur.com/V055t5e.png", "https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8"),
     _ch("Al Manar (شبکه\u200cی حزب\u200cالله)", "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-manar-lb.png", "https://edge.fastpublish.me/live/index.m3u8"),
     _ch("Al Ekhbariya"          , "https://i.imgur.com/WcRlHQm.png", "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8"),
     _ch("Roya TV"               , "https://i.imgur.com/WX80rty.png", "https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8"),
@@ -1006,6 +1007,24 @@ IRAN_ORG_URL_OVERRIDES = {
     "Persiana Cinema": "https://cinehls.persiana.live/hls/stream.m3u8",
     "Persiana Travel": "https://ptravelhls.persiana.live/hls/stream.m3u8",
 }
+
+# 2026-09-24 owner: "every Persian-language channel I do not have, into ایران" -- from iptv-org languages/fas.m3u,
+# de-duplicated against the whole playlist (incl. Persian names), streams tested; alive-checked every build.
+FAS_LANG_EXTRA = [
+    ("4Kurd", "", "https://4kuhls.persiana.live/hls/stream.m3u8"),
+    ("Al-Mahdi TV", "https://i.imgur.com/S1YM83i.png", "https://iptv.almahditv.com/almahditv/playlist.m3u8"),
+    ("Atrina TV", "", "https://atrihls.wns.live/hls/stream.m3u8"),
+    ("Bravo Farsi TV", "https://i.ibb.co/yynxRTS/Bravo-Farsi.jpg", "https://bravoohls.wns.live/hls/stream.m3u8"),
+    ("Channel One", "https://i.imgur.com/igskUo0.png", "https://pemirateshls.persiana.live/hls/stream.m3u8"),
+    ("EPlanet TV", "", "https://eplhls.wns.live/hls/stream.m3u8"),
+    ("Iran Nama", "", "https://iran613hls.wns.live/hls/stream.m3u8"),
+    ("Iran Press", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg/960px-%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg", "https://live.presstv.ir/hls/presstv_5_482/index.m3u8"),
+    ("IraneFarda TV", "https://i.imgur.com/ixgcgZY.png", "https://iranefardalive.com/stream/live.m3u8"),
+    ("Marjaeyat TV Persian", "https://i.imgur.com/fCj05f0.png", "https://livefa.marjaeyattv.com/mtv_fa/playlist.m3u8"),
+    ("NewFlix", "", "https://newfhls.wns.live/hls/stream.m3u8"),
+    ("Nour TV", "https://upload.wikimedia.org/wikipedia/en/8/8c/Nourtv_logo.jpg", "https://cdn.bestream.io:19360/elfaro4/elfaro4.m3u8"),
+    ("Tin TV", "https://i.imgur.com/hMqGs94.png", "https://tulixcdn.akamaized.net/tintv6/tintv/tintv/playlist.m3u8"),
+]
 
 def fetch_iran_org(cat_by_id, logo_by_id):
     """Iran channels from iptv-org/iptv — re-fetched and re-checked every build,
@@ -1413,6 +1432,12 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(parsatv_extra)
     print(f"Iran (parsatv.com): {len(parsatv_extra)} channels", flush=True)
+    fas_extra = _alive([(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
+                        for name, logo, stream in FAS_LANG_EXTRA], "Iran (Persian-language extra)")
+    for extinf, stream in fas_extra:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(fas_extra)
+    print(f"Iran (Persian-language extra): {len(fas_extra)} channels", flush=True)
     gem_tv = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="\U0001f48e جم تی‌وی",{name}', stream)
               for name, logo, stream in GEM_TV_CHANNELS]
     for extinf, stream in gem_tv:
