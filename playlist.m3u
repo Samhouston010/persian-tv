@@ -1182,6 +1182,15 @@ https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/YMqWEe4.png",Al Araby TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/ga6NXb9.png",Al Ghad
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
