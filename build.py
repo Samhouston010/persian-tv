@@ -655,21 +655,21 @@ PARSATV_MOVIE_EXTRA = [
 ]
 
 MUSIC_CHANNELS = [
-    _musch("PMC Royale",                    "",  "https://pmcrohls.wns.live/hls/stream.m3u8"),
+    _musch("PMC Royale",                    "https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/pmcroyale.png",  "https://pmcrohls.wns.live/hls/stream.m3u8"),
     _musch("PMC (Backup)",                  "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/pmc.default.svg", "https://pmchls.wns.live/hls/stream.m3u8"),
     _musch("T2 TV",                         "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://t2hls.wns.live/hls/stream.m3u8"),
     _musch("4U TV",                         "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/4utv.default.png", "https://hls.4utv.live/hls/stream.m3u8"),
     _musch("Radio Javan TV",                "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/radiojavan.default.svg", "https://rjtvhls.wns.live/hls/stream.m3u8"),
     _musch("Avang TV",                      "https://www.parsatv.com/index_files/channels/avang.png", "https://hls.avang.live/hls/stream.m3u8"),
-    _musch("Navahang TV",                   "",  "https://hls.navahang.live/hls/stream.m3u8"),
+    _musch("Navahang TV",                   "https://i.imgur.com/YteKXJy.png",  "https://hls.navahang.live/hls/stream.m3u8"),
     _musch("Sun Music",                     "https://raw.githubusercontent.com/picons/picons/master/build-source/logos/sunmusic.default.png", "https://hls.sunmusic.live/hls/stream.m3u8"),
     _musch("Music Channel",                 "http://media.boni-records.com/logo.png", "http://media.boni-records.com/index.m3u8"),
     _musch("Music ON TV", "https://www.lyngsat-logo.com/logo/tv/mm/music_on_tv.png", "https://stream01.willfonk.com/live_playlist.m3u8?cid=CS325&r=FHD&ccode=JP&m=d0:20:20:04:35:cc&t=0d6938cb3dcf4b79848bc1753a59daf1"),
     _musch("DELUXE MUSIC",                  "https://i.imgur.com/E65GQN9.png", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8"),
-    _musch("DELUXE MUSIC DANCE BY KONTOR",  "", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8"),
-    _musch("DELUXE MUSIC RAP",              "", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8"),
+    _musch("DELUXE MUSIC DANCE BY KONTOR",  "https://i.imgur.com/E65GQN9.png", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.m3u8"),
+    _musch("DELUXE MUSIC RAP",              "https://i.imgur.com/E65GQN9.png", "https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8"),
     _musch("Zerouno Tv Music",              "https://i.imgur.com/r74lqW8.png", "https://5f22d76e220e1.streamlock.net/zerounotvmusic/zerounotvmusic/playlist.m3u8"),
-    _musch("BIZ Music",                     "", "https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8"),
+    _musch("BIZ Music",                     "https://i.ibb.co/DfsCJwk/Uz-biz-music-5462.jpg", "https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8"),
 ]
 
 
@@ -702,7 +702,7 @@ def _alive(entries, label, workers=12):
 # Logo CDN: github.com/tv-logo/tv-logos (PNG, no hotlink block)
 _EC_LOGO = "https://upload.wikimedia.org/wikipedia/commons/c/c9/English_Club_TV_logo.png"
 _EC_CHANNELS = [
-    ("English Club TV HD", "https://dash2.antik.sk/live/test_ectv_hd_1200/playlist.m3u8"),
+    ("English Club TV HD", "https://dash.antik.sk/live/test_ectv_hd_1200/playlist.m3u8"),
     ("English Club TV SD", "https://stream8.cinerama.uz/1442/tracks-v1a1/mono.m3u8"),
 ]
 
@@ -956,7 +956,7 @@ MANUAL_LOGO_OVERRIDES = {
     "KhabarbinTV.ir": f"{_LOGOS}/khabarbin.png",
     "SetarehTV.uk":   f"{_LOGOS}/setarehtv.png",
     "ZedTV.ir":       f"{_LOGOS}/zedtvpersian.jpg",
-    # GoldStar.ir: no logo found anywhere (parsatv.com, iptv-org, lyngsat all came up empty)
+    "GoldStar.ir":    "https://i.imgur.com/4ySO71h.png",  # iptv-org GoldstarTV.de (2026-09-26)
 }
 
 def _fill_logo(extinf, logo_by_id):
