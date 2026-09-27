@@ -1452,6 +1452,15 @@ https://hls.navahang.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://hls.sunmusic.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="http://media.boni-records.com/logo.png",Music Channel
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+http://media.boni-records.com/index.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3125,6 +3134,9 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7e5d99c4097049dfb9a0c86ddc97b49d/0b4dfa96-ef74-4adb-a75f-2f141eb9e227_thumb_001_HD.jpg",سیامک جوادی: چین جمهوری اسلامی را شریک راهبردی خود نمی‌داند
+https://daq1pvcuhj77l.cloudfront.net/1/7e5d99c4097049dfb9a0c86ddc97b49d/hls/0b4dfa96-ef74-4adb-a75f-2f141eb9e227.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53b3539696804289af765e3be7a65147/2a89b3f0-eea4-4c98-8642-b5555b8b3187_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، شنبه ۴ مهر
 https://daq1pvcuhj77l.cloudfront.net/1/53b3539696804289af765e3be7a65147/hls/2a89b3f0-eea4-4c98-8642-b5555b8b3187.m3u8
