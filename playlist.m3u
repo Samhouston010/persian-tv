@@ -2901,6 +2901,15 @@ https://t2hls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://nl.livekadeh.com/hls2/alwilayah_tv.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/ps4Gtj0.png" tvg-id="AssiratTV.ir@SD",Assirat TV (576p)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://softverse.b-cdn.net/Assirat/assiratobs/playlist.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/JWXs7csN/en.png" tvg-id="IranJewishTV.ir@SD",Iran Jewish TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -3116,15 +3125,6 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/005eb9433c1c499bb94fa318ae689ceb/17db08f5-12c4-43e0-9c64-fa02e271e133_thumb_001_HD.jpg",شکست شروط هفت‌گانه مجتبی خامنه‌ای با ادعای ابرقدرتی جهان؛ احتمال حمله پیش‌دستانه سپاه
-https://daq1pvcuhj77l.cloudfront.net/1/005eb9433c1c499bb94fa318ae689ceb/hls/17db08f5-12c4-43e0-9c64-fa02e271e133.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3c5f6231cef4460fbdc0cce91afe6d69/7c61dc57-736b-47f2-8cf1-289a6708f8a9_thumb_001_HD.jpg",نامه عجیب و غریب سپاه به مردم آمریکا
-https://daq1pvcuhj77l.cloudfront.net/1/3c5f6231cef4460fbdc0cce91afe6d69/hls/7c61dc57-736b-47f2-8cf1-289a6708f8a9.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fe9150e184b64bbb9cd75407322d014b/f1822b79-07f8-4243-8b76-ce8f9dc28e0b_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/fe9150e184b64bbb9cd75407322d014b/hls/f1822b79-07f8-4243-8b76-ce8f9dc28e0b.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/97d9434cfeb049fba93f4d68041a6cc0/b20d6f36-b0dc-4bb3-b7e5-6ddb0bebf205_thumb_001_HD.jpg",جاناتان سایح: پیمان ابراهیم از عادی‌سازی به همکاری امنیتی رسیده است
 https://daq1pvcuhj77l.cloudfront.net/1/97d9434cfeb049fba93f4d68041a6cc0/hls/b20d6f36-b0dc-4bb3-b7e5-6ddb0bebf205.m3u8
