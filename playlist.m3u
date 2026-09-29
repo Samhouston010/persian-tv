@@ -1182,6 +1182,15 @@ https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/YMqWEe4.png",Al Araby TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.kwikmotion.com/alaraby1live/alaraby_abr/playlist.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/ga6NXb9.png",Al Ghad
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1199,6 +1208,15 @@ https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-manar-lb.png",Al Manar (شبکه‌ی حزب‌الله)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://edge.fastpublish.me/live/index.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/WcRlHQm.png",Al Ekhbariya
 #EXTVLCOPT:network-caching=2000
@@ -3107,54 +3125,6 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/744f74c34f4c46968ea7c1383bb18eec/e904538d-42c0-43c3-95b2-0fab828cce15_thumb_001_HD.jpg",مراد ویسی: مجتبی خامنه‌ای نسبت به جایگاه جمهوری اسلامی دچار توهم است
-https://daq1pvcuhj77l.cloudfront.net/1/744f74c34f4c46968ea7c1383bb18eec/hls/e904538d-42c0-43c3-95b2-0fab828cce15.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/241c08ddf8f74c67a91b8b97a9c7daca/4685e531-f275-4aa8-82b7-e9740cffd2af_thumb_001_HD.jpg",علی صدرزاده: نتانیاهو با سفر به ابوظبی می‌خواهد از فشار هشدارهای پیش از هفتم اکتبر بکاهد
-https://daq1pvcuhj77l.cloudfront.net/1/241c08ddf8f74c67a91b8b97a9c7daca/hls/4685e531-f275-4aa8-82b7-e9740cffd2af.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/971ef0f0186b4568a4a006eafc3bd0c8/b96635a6-9b63-464f-acfe-a5c926d86cb4_thumb_001_HD.jpg",ارغوان رضایی، سرمربی تنیسورهای زن ایران در بازی‌های آسیایی
-https://daq1pvcuhj77l.cloudfront.net/1/971ef0f0186b4568a4a006eafc3bd0c8/hls/b96635a6-9b63-464f-acfe-a5c926d86cb4.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ff295d3565bd428f9ded6dd3b5e82f20/765cd074-91e3-4257-9bda-f3b813146201_thumb_001_HD.jpg",اعلام ابرقدرتی مجتبی خامنه‌ای از مخفیگاه!
-https://daq1pvcuhj77l.cloudfront.net/1/ff295d3565bd428f9ded6dd3b5e82f20/hls/765cd074-91e3-4257-9bda-f3b813146201.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9886d14e357a4b87a99ba1cca5c34713/b232ffa9-ff12-4abc-a2a7-c13ae538e326_thumb_001_HD.jpg",العربی الجدید: عاملان حمله به خط لوله عربستان از ایران وارد عراق شده بودند
-https://daq1pvcuhj77l.cloudfront.net/1/9886d14e357a4b87a99ba1cca5c34713/hls/b232ffa9-ff12-4abc-a2a7-c13ae538e326.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/185b8215baef4275a965c100d4f8b90d/c4b099d0-73a9-4967-b3ec-392928df08ba_thumb_001_HD.jpg",دیدار عراقچی با میانجی‌گران در نیویورک
-https://daq1pvcuhj77l.cloudfront.net/1/185b8215baef4275a965c100d4f8b90d/hls/c4b099d0-73a9-4967-b3ec-392928df08ba.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a7b081e66134410d96445b4e51775753/6c4085ac-1d7b-4d20-90d1-70c45113b1af_thumb_001_HD.jpg",نخستین طلای وزنه‌برداری پس از ۸ سال برای ایران
-https://daq1pvcuhj77l.cloudfront.net/1/a7b081e66134410d96445b4e51775753/hls/6c4085ac-1d7b-4d20-90d1-70c45113b1af.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ee2729a1c6da43c184c0fa7e39d6ef15/cd5bb9c0-b417-4f94-8f8d-f3299dfdc6df_thumb_001_HD.jpg",چشم‌انداز: اعلام ابرقدرتی مجتبی خامنه‌ای از مخفیگاه!
-https://daq1pvcuhj77l.cloudfront.net/1/ee2729a1c6da43c184c0fa7e39d6ef15/hls/cd5bb9c0-b417-4f94-8f8d-f3299dfdc6df.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/53b0d5b8bc674d1c85899d6b54039b4b/78bacef6-d1c6-4364-93f4-6f37396a20cd_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/53b0d5b8bc674d1c85899d6b54039b4b/hls/78bacef6-d1c6-4364-93f4-6f37396a20cd.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c70c11bd3ace43f8b41f0b315b836c62/89b4b440-8b5b-44aa-9758-576e0484fb36_thumb_001_HD.jpg",گمانه‌زنی درباره نقش جمهوری اسلامی در حمله به پایگاه آمریکا در بریتانیا
-https://daq1pvcuhj77l.cloudfront.net/1/c70c11bd3ace43f8b41f0b315b836c62/hls/89b4b440-8b5b-44aa-9758-576e0484fb36.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9b88ca08a1c54c579b37708f63777464/c09b0646-7bf4-4967-89c0-33ff3f1d1287_thumb_001_HD.jpg",دیدار عراقچی با میانجی‌گران مذاکرات تهران و واشینگتن در نیویورک
-https://daq1pvcuhj77l.cloudfront.net/1/9b88ca08a1c54c579b37708f63777464/hls/c09b0646-7bf4-4967-89c0-33ff3f1d1287.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3cdf01b1d0c94515a36477b43c7f220b/f8a23361-1afe-47bb-a453-01882229ec26_thumb_001_HD.jpg",فرزین ندیمی: روند عبور نفتکش‌ها از تنگه هرمز از دست جمهوری اسلامی خارج شده است
-https://daq1pvcuhj77l.cloudfront.net/1/3cdf01b1d0c94515a36477b43c7f220b/hls/f8a23361-1afe-47bb-a453-01882229ec26.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cf1958928f8f495280008224d44a6c4e/a4a0ad4e-7432-4430-b419-22cda8aedeae_thumb_001_HD.jpg",از گهواره تا گور، بازار دست‌‌ دوم تا کجا پیش رفته؟
-https://daq1pvcuhj77l.cloudfront.net/1/cf1958928f8f495280008224d44a6c4e/hls/a4a0ad4e-7432-4430-b419-22cda8aedeae.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/637d7341cb494e0082d62f41bc574ef1/87d573b0-773e-454a-be17-f9e8238e7842_thumb_001_HD.jpg",اخبار شبانگاهی | دوشنبه ۶ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/637d7341cb494e0082d62f41bc574ef1/hls/87d573b0-773e-454a-be17-f9e8238e7842.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f9c4cb60d6d04f1d9350505fa8069d4e/c3dd0076-daf7-4f74-b4e0-c0c9b042f2a2_thumb_001_HD.jpg",ارائه پروژه شکوفایی ایران در پارلمان اتحادیه اروپا
-https://daq1pvcuhj77l.cloudfront.net/1/f9c4cb60d6d04f1d9350505fa8069d4e/hls/c3dd0076-daf7-4f74-b4e0-c0c9b042f2a2.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/76f82a309f58483caac5085f7423e0e0/83a834b2-00d7-4cb5-b121-f69d69f6a34d_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: افشای هویت عامل اطلاعات سپاه پاسداران در سرقت پول نفت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/76f82a309f58483caac5085f7423e0e0/hls/83a834b2-00d7-4cb5-b121-f69d69f6a34d.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aed20f4ec42c4766ac4ac0a46ece76a2/d9180bf0-0e55-4e1f-9c28-67e7783f7ce7_thumb_001_HD.jpg",اقتصاد و بازار: افزایش عبور نفت از تنگه هرمز؛ دلار در آستانه ۲۴۵ هزار تومان
 https://daq1pvcuhj77l.cloudfront.net/1/aed20f4ec42c4766ac4ac0a46ece76a2/hls/d9180bf0-0e55-4e1f-9c28-67e7783f7ce7.m3u8
