@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: '3.11'
       - run: python build.py
+        env:
+          TELEWEBION_PROXY_TOKEN: ${{ secrets.TELEWEBION_PROXY_TOKEN }}
       - run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
