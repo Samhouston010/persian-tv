@@ -1395,9 +1395,10 @@ def main():
             extinf = _patch_tele_logo(extinf, stream)
             extinf = _fill_logo(extinf, logo_by_id)
             extinf = _wide_persiana_logo(extinf)
-            # 2026-10-01 (owner, same day): tried the trimming proxy, preferred the direct feed's higher
-            # quality + rarer freezes over the capped/stable one -- reverted. _rewrite_telewebion() stays
-            # defined (not deleted) in case this is ever revisited.
+            # 2026-10-01: briefly reverted this, thinking the proxy was the problem -- real-device logcat
+            # then showed the DIRECT 1800-segment playlist itself taking 0.5-2.8s per fetch even without the
+            # proxy, which is what was actually starving the player into 240p/freezing. Re-enabled.
+            extinf, stream = _rewrite_telewebion(extinf, stream)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
