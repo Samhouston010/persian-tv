@@ -1,8 +1,5 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/Samhouston010/persian-tv/master/epg.xml.gz"
 
-#EXTINF:-1 tvg-id="livecam" tvg-name="دوربین زنده" tvg-logo="https://147-224-130-108.nip.io/static/persiana-radio-logo.png" group-title="🎥 دوربین زنده",دوربین زنده
-https://hoktastream1.webcamera.pl/tv_cam_781381/tv_cam_781381.stream/chunks.m3u8
-
 #EXTINF:-1 tvg-id="family" tvg-name="Family" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/persiana/family.png" group-title="📺 پرشیانا",Family
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -1487,15 +1484,6 @@ https://sdn-global-live-streaming-packager-cache.3qsdn.com/64733/64733_264_live.
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
-
-#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.ibb.co/DfsCJwk/Uz-biz-music-5462.jpg",BIZ Music
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://stream8.cinerama.uz/1212/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="Keshet 12" tvg-name="Keshet 12" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/israel-tv@main/logos/keshet12.png" group-title="📡 اسرائیل",Keshet 12
 #EXTVLCOPT:network-caching=2000
@@ -3090,6 +3078,45 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
 
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/feeace87d84542c9944458c779cbdc7d/d2a41c54-dbb4-44b2-9e92-6c094495dbd8_thumb_001_HD.jpg",برنامه ورزشکاران ایرانی در بیستمین دوره بازی‌های آسیایی ناگویا در جمعه ۱۰ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/feeace87d84542c9944458c779cbdc7d/hls/d2a41c54-dbb4-44b2-9e92-6c094495dbd8.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d7904ee341b74b0eb0c76f5369693a1a/846bae22-ab40-4c8f-9ad9-9ee17a19da38_thumb_001_HD.jpg",صعود دشوار تیم والیبال ایران به نیمه‌نهایی بازی‌های آسیایی
+https://daq1pvcuhj77l.cloudfront.net/1/d7904ee341b74b0eb0c76f5369693a1a/hls/846bae22-ab40-4c8f-9ad9-9ee17a19da38.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d648e2579084f389e91604bef6ab004/2f51dee0-3eac-4e39-9738-6e7f7fc29dae_thumb_001_HD.jpg",رضا علیپور در سنگ‌نوردی سرعت بازی‌های آسیایی ناگویا نقره گرفت
+https://daq1pvcuhj77l.cloudfront.net/1/7d648e2579084f389e91604bef6ab004/hls/2f51dee0-3eac-4e39-9738-6e7f7fc29dae.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/59f347a9670f441aad68f31bb17484fc/c5726296-d163-4712-9232-213ba6fdebb0_thumb_001_HD.jpg",تجمع مخالفان جمهوری اسلامی همزمان با رقابت‌های کشتی در ناگویا
+https://daq1pvcuhj77l.cloudfront.net/1/59f347a9670f441aad68f31bb17484fc/hls/c5726296-d163-4712-9232-213ba6fdebb0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/98c61f18c95a4b33bacbf1dae7108941/064cc94c-766c-49c1-acb4-6a46b68a42fe_thumb_001_HD.jpg",مدال طلای علیرضا عبدولی در بازی‌های آسیایی ناگویا
+https://daq1pvcuhj77l.cloudfront.net/1/98c61f18c95a4b33bacbf1dae7108941/hls/064cc94c-766c-49c1-acb4-6a46b68a42fe.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cc82f07760eb4587be048386fb9f967c/15d2925c-6ee4-4e94-af0c-77a6f2677479_thumb_001_HD.jpg",دوازدهمین طلای ایران در کشتی فرنگی بازی‌های آسیایی ناگویا
+https://daq1pvcuhj77l.cloudfront.net/1/cc82f07760eb4587be048386fb9f967c/hls/15d2925c-6ee4-4e94-af0c-77a6f2677479.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ba62c121a107441a8087eeb174d937bf/8bbebe44-9219-49bd-90c8-31d2fbf9b7b3_thumb_001_HD.jpg",جزییات تازه از حادثه پرواز فلای‌دبی
+https://daq1pvcuhj77l.cloudfront.net/1/ba62c121a107441a8087eeb174d937bf/hls/8bbebe44-9219-49bd-90c8-31d2fbf9b7b3.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ab868512f6374ddca2209f7a6ad48c23/4ceb8368-35bf-4a96-a66e-7e0ae8bc646e_thumb_001_HD.jpg",نقش مقام‌های حکومت در تخریب‌ آثار تاریخی ایران
+https://daq1pvcuhj77l.cloudfront.net/1/ab868512f6374ddca2209f7a6ad48c23/hls/4ceb8368-35bf-4a96-a66e-7e0ae8bc646e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e1f2aba2bf6c4c169f63dd75aa6c93d4/ae43fc1c-d20b-4c26-9a97-dc41ab86b420_thumb_001_HD.jpg",روایت مخاطبان ایران‌اینترنشنال از ناتوانی در پرداخت هزینه‌های دندان‌پزشکی
+https://daq1pvcuhj77l.cloudfront.net/1/e1f2aba2bf6c4c169f63dd75aa6c93d4/hls/ae43fc1c-d20b-4c26-9a97-dc41ab86b420.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/65bbe9399e9542a6a0a6712ff474815e/d92936db-4e50-425f-a315-7d679a63fad4_thumb_001_HD.jpg",خلبان هندی زخمی فلای‌دبی زمینه مهار مهاجم و نجات سرنشینان را فراهم کرد
+https://daq1pvcuhj77l.cloudfront.net/1/65bbe9399e9542a6a0a6712ff474815e/hls/d92936db-4e50-425f-a315-7d679a63fad4.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aeb6e30010274d0093becd7c2c019736/ccb61c20-69f8-4423-ba38-a7094e4c0d21_thumb_001_HD.jpg",معصومه طاهرخانی: ابزارهای بانک مرکزی برای مهار رشد دلار کارایی ندارند
+https://daq1pvcuhj77l.cloudfront.net/1/aeb6e30010274d0093becd7c2c019736/hls/ccb61c20-69f8-4423-ba38-a7094e4c0d21.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/48da2f86c54b489db6c9cb1e57208cf5/b3165521-52fa-4a64-8e3a-5fcf26105af5_thumb_001_HD.jpg",اخبار نیمروزی | پنج‌شنبه ۹ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/48da2f86c54b489db6c9cb1e57208cf5/hls/b3165521-52fa-4a64-8e3a-5fcf26105af5.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6d96e0f2230a4d609fda66d3ea13389b/9958f636-91f7-4a68-b43b-c9ae73b57c85_thumb_001_HD.jpg",واشینگتن‌پست: سپاه بر حمایت از گروه‌های کوچک‌تر شبه‌نظامی در عراق تمرکز کرده است
+https://daq1pvcuhj77l.cloudfront.net/1/6d96e0f2230a4d609fda66d3ea13389b/hls/9958f636-91f7-4a68-b43b-c9ae73b57c85.m3u8
+
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c7761ec79d3a4d419d38a6ce07f84069/1de83906-58c9-427b-a522-92b3201667e9_thumb_001_HD.jpg",اتحادیه اروپا بررسی بازگرداندن پناهجویان را در دستور کار قرار داد
 https://daq1pvcuhj77l.cloudfront.net/1/c7761ec79d3a4d419d38a6ce07f84069/hls/1de83906-58c9-427b-a522-92b3201667e9.m3u8
 
@@ -3101,9 +3128,6 @@ https://daq1pvcuhj77l.cloudfront.net/1/529a43955914425090c2c7e61a02397c/hls/56c8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5a02634398014c95a3925a725d5043a4/6a8b7aee-9cad-4b07-8dc3-86b8fbd73152_thumb_001_HD.jpg",ساختار سرکوب خیزش زن، زندگی، آزادی
 https://daq1pvcuhj77l.cloudfront.net/1/5a02634398014c95a3925a725d5043a4/hls/6a8b7aee-9cad-4b07-8dc3-86b8fbd73152.m3u8
-
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fb6276f3847c4473a4e4a8a5f7ef4d51/86237531-1996-4a18-adb5-4fd9ac6ef863_thumb_001_HD.jpg",گزارش‌ها از تغییر تاکتیک سپاه هم‌زمان با توقف فعالیت نظامی کتائب حزب‌الله در عراق
-https://daq1pvcuhj77l.cloudfront.net/1/fb6276f3847c4473a4e4a8a5f7ef4d51/hls/86237531-1996-4a18-adb5-4fd9ac6ef863.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b4965ac8ee904ede982db398b69b9b91/f1ed6751-798d-4165-acd1-7f64574d3644_thumb_001_HD.jpg",گزارش رسیده از نرسیدن کتاب‌های درسی و حضور نیروهای نظامی و بسیج در مدارس
 https://daq1pvcuhj77l.cloudfront.net/1/b4965ac8ee904ede982db398b69b9b91/hls/f1ed6751-798d-4165-acd1-7f64574d3644.m3u8
