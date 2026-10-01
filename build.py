@@ -601,6 +601,10 @@ EPG_SOURCES = [
     "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",  # re-enabled 2026-09-05
+    # 2026-10-01: real Telewebion programme titles (tvg-id IRIB1.ir.. matches the تلوبیون group's
+    # <channel> elements from sepehr.xml.gz above) -- unlike that source, this one has actual titles
+    # for "شبکه یک" too, not just generic time blocks. Cron every 30 min on the Oracle server.
+    "https://147-224-130-108.nip.io/static/telewebion_epg.xml.gz",
 ]
 
 GROUP_RE = re.compile(r'group-title="[^"]*"')
@@ -789,6 +793,26 @@ def _patch_tele_logo(extinf, stream):
     if not logo:
         return extinf
     return re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{logo}"', extinf)
+
+# 2026-10-01 (owner: "اون پلی لیست هم فریز داره"): sepehr.m3u's تلوبیون entries are a direct
+# ncdn.telewebion.ir live playlist -- 1800 segments (~325 KB) re-polled every 2 s, too heavy for a
+# weak link (root cause fixed the same day for Persiana's own server, see
+# persiana-overlay/tw_proxy.py on the Oracle box). Route them through that same trimming proxy
+# instead, and add catchup="shift" so players that support it (TiviMate, GSE) can time-shift into
+# the last 2 days via tw_proxy's own utc-aware /tw/<ch>/master.m3u8 route.
+# Token is a dedicated public-playlist device token (not the owner's own device token), read from the
+# TELEWEBION_PROXY_TOKEN repo secret (GitHub Actions env var) -- never written into this source file.
+_TELE_PROXY_TOKEN = os.environ.get("TELEWEBION_PROXY_TOKEN", "")
+_TELE_PROXY = "https://147-224-130-108.nip.io/overlay/tw/%s/master.m3u8?t=" + _TELE_PROXY_TOKEN
+
+def _rewrite_telewebion(extinf, stream):
+    if not _TELE_PROXY_TOKEN:
+        return extinf, stream   # secret not configured yet -- leave the direct ncdn link as-is
+    m = _TELE_SLUG_RE.search(stream)
+    if not m or "ncdn.telewebion.ir" not in stream:
+        return extinf, stream
+    tagged = re.sub(r"^#EXTINF:-1", '#EXTINF:-1 catchup="shift" catchup-days="2"', extinf, count=1)
+    return tagged, _TELE_PROXY % m.group(1)
 
 _S = "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
 _SU = "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
@@ -1371,6 +1395,7 @@ def main():
             extinf = _patch_tele_logo(extinf, stream)
             extinf = _fill_logo(extinf, logo_by_id)
             extinf = _wide_persiana_logo(extinf)
+            extinf, stream = _rewrite_telewebion(extinf, stream)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
