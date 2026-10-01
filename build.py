@@ -1395,7 +1395,9 @@ def main():
             extinf = _patch_tele_logo(extinf, stream)
             extinf = _fill_logo(extinf, logo_by_id)
             extinf = _wide_persiana_logo(extinf)
-            extinf, stream = _rewrite_telewebion(extinf, stream)
+            # 2026-10-01 (owner, same day): tried the trimming proxy, preferred the direct feed's higher
+            # quality + rarer freezes over the capped/stable one -- reverted. _rewrite_telewebion() stays
+            # defined (not deleted) in case this is ever revisited.
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
         # English Club only in تلوبیون group (once)
