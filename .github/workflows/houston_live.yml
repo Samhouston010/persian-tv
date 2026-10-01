@@ -21,6 +21,8 @@ jobs:
         run: python simay_live.py
       - name: Rebuild playlist
         run: python build.py
+        env:
+          TELEWEBION_PROXY_TOKEN: ${{ secrets.TELEWEBION_PROXY_TOKEN }}
       - name: Commit
         run: |
           git config user.name "GitHub Actions"
