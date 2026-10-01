@@ -601,11 +601,8 @@ EPG_SOURCES = [
     "https://raw.githubusercontent.com/Samhouston010/persiana-tv-epg/main/persiana.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.xml.gz",
     "https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr_vod.xml.gz",  # re-enabled 2026-09-05
-    # 2026-10-01: real Telewebion programme titles (tvg-id IRIB1.ir.. matches the تلوبیون group's
-    # <channel> elements from sepehr.xml.gz above) -- unlike that source, this one has actual titles
-    # for "شبکه یک" too, not just generic time blocks. Cron every 30 min on the Oracle server.
-    "https://147-224-130-108.nip.io/static/telewebion_epg.xml.gz",
 ]
+# (Telewebion's real programme titles are built straight from its public API by telewebion_epg_tree() below.)
 
 GROUP_RE = re.compile(r'group-title="[^"]*"')
 
@@ -784,6 +781,7 @@ _TELE_LOGO = {
     "tv1plus":        _SL+"logo/1.png",
 }
 _TELE_SLUG_RE = re.compile(r"telewebion\.ir/([^/]+)/live/")
+_TW_WORKER = os.environ.get("TW_WORKER", "https://tw-relay.samhouston010.workers.dev").rstrip("/")
 
 def _patch_tele_logo(extinf, stream):
     m = _TELE_SLUG_RE.search(stream)
@@ -802,18 +800,6 @@ def _patch_tele_logo(extinf, stream):
 # the last 2 days via tw_proxy's own utc-aware /tw/<ch>/master.m3u8 route.
 # Token is a dedicated public-playlist device token (not the owner's own device token), read from the
 # TELEWEBION_PROXY_TOKEN repo secret (GitHub Actions env var) -- never written into this source file.
-_TELE_PROXY_TOKEN = os.environ.get("TELEWEBION_PROXY_TOKEN", "")
-_TELE_PROXY = "https://147-224-130-108.nip.io/overlay/tw/%s/master.m3u8?t=" + _TELE_PROXY_TOKEN
-
-def _rewrite_telewebion(extinf, stream):
-    if not _TELE_PROXY_TOKEN:
-        return extinf, stream   # secret not configured yet -- leave the direct ncdn link as-is
-    m = _TELE_SLUG_RE.search(stream)
-    if not m or "ncdn.telewebion.ir" not in stream:
-        return extinf, stream
-    tagged = re.sub(r"^#EXTINF:-1", '#EXTINF:-1 catchup="shift" catchup-days="2"', extinf, count=1)
-    return tagged, _TELE_PROXY % m.group(1)
-
 _S = "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
 _SU = "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
 _P = "https://images.pluto.tv/channels/"
@@ -844,6 +830,18 @@ NEWS_CHANNELS = [
     _ch("TRT World", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/960px-TRT_World.svg.png", "https://tv-trtworld.medya.trt.com.tr/master.m3u8"),
     _ch("i24NEWS English", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/960px-LOGO_i24NEWS.png", "https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8"),
     _ch("Newsmax", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Newsmax_logo.svg/960px-Newsmax_logo.svg.png", "https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8"),
+    # 2026-10-01 owner: OAN Plus (all 3 working sources, tested) permanently in the news group
+    _ch("OAN Plus (Xumo)", "https://image.xumo.com/v1/channels/channel/99951404/168x168.png?type=color_onBlack", "https://dbrb49pjoymg4.cloudfront.net/10001/99951404/hls/playlist.m3u8?includeAssetTags=true&ads.xumo_channelId=99951404&ads.xumo_streamId=99951404"),
+    _ch("OAN Plus (TCL)", "https://image.xumo.com/v1/channels/channel/99951404/168x168.png?type=color_onBlack", "https://amgx0019-amagicontentplu-oneamericanews-tcl-ideo-toha9.amagi.tv/playlist/amgx0019-amagicontentplu-oneamericanews-tcl-ideo/playlist.m3u8"),
+    _ch("One America News (OAN)", "https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s83953_dark_360w_270h.png", "https://a-cdn.klowdtv.com/live1/oan_720p/chunks.m3u8"),
+    # 2026-10-01 owner: more news channels of the same family as OAN (US conservative news/opinion), all tested live
+    _ch("Real America's Voice", "https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s116186_dark_360w_270h.png", "https://2-fss-2.streamhoster.com/pl_118/206858-4404454-1/playlist.m3u8"),
+    _ch("Real America's Voice (LG)", "https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s116186_dark_360w_270h.png", "https://wurlperformanceonemedia.global.transmit.live/hls/69d93e1344d5f8fbce12e874/v1/p1media_americasvoice_1/lg_us/latest/main/hls/AVWurlTRCABR.m3u8"),
+    _ch("Salem News Channel", "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US3700004Y0_20260421T133623SQUARE.png", "https://jmp2.uk/stvp-US3700004Y0"),
+    _ch("The Daily Wire TV", "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US1700030R0_20260915T035257SQUARE.png", "https://jmp2.uk/stvp-US1700030R0"),
+    _ch("Newsmax 2", "https://d3bd0tgyk368z1.cloudfront.net/resized_images/NWSMX/resized_419198510ebc161698dfa13f3349a70d2b8ee490d24358cc3cdc763e86aebcb2_censoredlosingourfirstfreedomsjpg_400_225.png", "https://amg00217-newsmax-amg00217c3-lg-us-4270.playouts.now.amagi.tv/playlist/amg00217-newsmaxmediafast-newsmaxottall-lgus/playlist.m3u8"),
+    _ch("NTD News", "https://images-0.rakuten.tv/storage/global-live-channel/translation/artwork/78d97b3f-db30-4818-b662-91787f23985a.jpeg", "https://amg17596-ntdtv-amg17596c1-rakuten-gb-6741.playouts.now.amagi.tv/playlist/amg17596-newtangdynastytelevision-ntdtv-rakutengb/playlist.m3u8"),
+    _ch("The Hill", "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/US3300008FX_20260421T133803SQUARE.png", "https://linear-1178.frequency.stream/dist/lg-us/1178/hls/master/playlist.m3u8"),
     _ch("CNA", "https://i.imgur.com/awIDugE.png", "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8"),
     _ch("Arirang TV", "https://i.imgur.com/kk2MdNC.png", "https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8"),
     _ch("Al Jazeera Arabic",     _L+"/united-kingdom/aljazeera-uk.png",          "https://live-hls-apps-aja-fa.getaj.net/AJA/01.m3u8"),
@@ -872,7 +870,10 @@ NEWS_CHANNELS = [
     # ─── آمریکا ──────────────────────────────────────────────────────────────
     _ch("CNN",                   _S+"GBBD8000016N_20260609T043642SQUARE.png",    "https://jmp2.uk/stvp-GBBD8000016N"),
     _ch("CNBC",                  _S+"GBBD3600001NO_20260317T034210SQUARE.png",   "https://jmp2.uk/stvp-GBBD3600001NO"),
-    _ch("Bloomberg TV+",         _P+"54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png", "https://jmp2.uk/plu-54ff7ba69222cb1c2624c584.m3u8"),
+    # 2026-10-01 owner: the Pluto (jmp2.uk/plu-...) Bloomberg showed only the logo on his devices (same Pluto quirk as the
+    # ABC News Australia note below); replaced by Bloomberg's own official stream + the Samsung TV Plus feed (both tested).
+    _ch("Bloomberg TV",          _P+"54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png", "https://www.bloomberg.com/media-manifest/streams/us.m3u8"),
+    _ch("Bloomberg TV+ (Samsung)", _P+"54ff7ba69222cb1c2624c584/colorLogoPNG_1756948295813.png", "https://jmp2.uk/stvp-USAJ3400011A8"),
     # ponytail: removed by user request 2026-07-01 — reported not playing in TiviMate.
     # URL itself returns a valid-looking HLS master (200, #EXTM3U) from here, so this is
     # likely a device/session-specific Pluto/Samsung-TVPlus auth quirk, not a dead link —
@@ -880,7 +881,8 @@ NEWS_CHANNELS = [
     # _ch("ABC News Australia",       _P+"6508be683a0d700008c534e4/colorLogoPNG.png", "https://jmp2.uk/plu-6508be683a0d700008c534e4.m3u8"),
     # ─── اروپا ───────────────────────────────────────────────────────────────
     _ch("DW English",            "https://www.dw.com/images/icons/favicon-540x540.png", "https://i.mjh.nz/.r/dw-news.m3u8"),
-    _ch("Euronews",              _P+"5ca1da6c593a5d78f0e7edce/colorLogoPNG.png", "https://jmp2.uk/plu-5ca1da6c593a5d78f0e7edce.m3u8"),
+    # 2026-10-01 owner: Pluto Euronews showed only the logo -> Tubi's Euronews feed instead (tested)
+    _ch("Euronews",              _P+"5ca1da6c593a5d78f0e7edce/colorLogoPNG.png", "https://live-manifest.production-public.tubi.io/live/c841471d-dc14-43fb-9ba5-c266e7edcce4/playlist.m3u8"),
     _ch("France 24",             _S+"GBBD1100002L5_20250107T030646SQUARE.png",   "https://jmp2.uk/stvp-GBBD1100002L5"),
     _ch("BFM TV",                _S+"CH500001V2_20251209T125744SQUARE.png",      "https://jmp2.uk/stvp-CH500001V2"),
     # ─── روسیه/چین ───────────────────────────────────────────────────────────
@@ -1339,6 +1341,62 @@ def extract(text, group=None):
         i += 1
 
 
+def telewebion_epg_tree():
+    """Real Telewebion programme titles (also for "شبکه یک") from Telewebion's own anonymous API; tvg-id and channel slug come
+    from the تلوبیون source playlist. Replaces the file the owner's server used to publish. Returns an <tv> element (empty on failure)."""
+    import datetime, json, urllib.parse, urllib.request
+    from concurrent.futures import ThreadPoolExecutor
+    root = ET.Element("tv")
+    try:
+        lines = fetch("https://raw.githubusercontent.com/Samhouston010/sepehr-irib-epg/main/sepehr.m3u").decode("utf-8", errors="ignore").split(chr(10))
+        chmap = {}
+        for i, ln in enumerate(lines):
+            if ln.startswith("#EXTINF"):
+                tid = re.search(r'tvg-id="([^"]+)"', ln)
+                for nxt in lines[i + 1:i + 6]:
+                    m = re.search(r"telewebion\.(?:ir|net)/([a-z0-9_]+)/live/", nxt)
+                    if m:
+                        if tid:
+                            chmap[tid.group(1)] = m.group(1)
+                        break
+        now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+        d1, d2 = (now - datetime.timedelta(days=2)).date(), (now + datetime.timedelta(days=1)).date()
+        hdr = {"User-Agent": "Telewebion-AndroidTV-2.3.5(135)-TELEWEBION_TV-_release", "X-APP-VERSION": "135", "X-OS": "AndroidTV"}
+
+        def one(item):
+            tid, slug = item
+            q = urllib.parse.urlencode({"ChannelDescriptor": slug, "IsClip": "false", "FromDate": d1, "ToDate": d2, "First": 300, "Offset": 0})
+            try:
+                req = urllib.request.Request("https://gateway.telewebion.net/kandoo/channel/getChannelEpisodesByDate/?" + q, headers=hdr)
+                return tid, json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))["body"]["queryChannel"][0]["episodes"]
+            except Exception:  # noqa: BLE001
+                return tid, []
+        with ThreadPoolExecutor(8) as ex:
+            results = list(ex.map(one, chmap.items()))
+        n = 0
+        for tid, eps in results:
+            for e in sorted(eps, key=lambda e: e["started_at"]):
+                try:
+                    a = datetime.datetime.strptime(e["started_at"][:19], "%Y-%m-%dT%H:%M:%S")
+                    z = datetime.datetime.strptime(e["ended_at"][:19], "%Y-%m-%dT%H:%M:%S")
+                except Exception:  # noqa: BLE001
+                    continue
+                p = e.get("program") or {}
+                title = (p.get("title") or "").strip() or (e.get("title") or "").strip()
+                sub = (e.get("title") or "").strip()
+                if not title or z <= a:
+                    continue
+                pr = ET.SubElement(root, "programme", start=a.strftime("%Y%m%d%H%M%S") + " +0000", stop=z.strftime("%Y%m%d%H%M%S") + " +0000", channel=tid)
+                ET.SubElement(pr, "title", lang="fa").text = title
+                if sub and sub != title:
+                    ET.SubElement(pr, "sub-title", lang="fa").text = sub
+                n += 1
+        print(f"Telewebion EPG (public API): {len(chmap)} channels, {n} programmes", flush=True)
+    except Exception as ex:  # noqa: BLE001
+        print("Telewebion EPG skipped:", ex, flush=True)
+    return root
+
+
 def build_epg(extra_trees=()):
     root = ET.Element("tv")
     seen = set()
@@ -1371,7 +1429,7 @@ def main():
     print("Aparat VOD: disabled", flush=True)
     arte, arte_epg = [], None  # ponytail: temporarily disabled by user request 2026-07-11
     print("ARTE VOD: disabled", flush=True)
-    build_epg(extra_trees=[])
+    build_epg(extra_trees=[telewebion_epg_tree()])
     cat_by_id, logo_by_id = load_iptvorg_meta()
     logo_by_id.update(MANUAL_LOGO_OVERRIDES)
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
@@ -1386,6 +1444,7 @@ def main():
     except FileNotFoundError:
         pass
     total = 0
+    _tw_direct_rows = []
     for group, url in SOURCES:
         text = fetch(url).decode("utf-8", errors="ignore")
         entries = list(extract(text, group))
@@ -1399,8 +1458,21 @@ def main():
             # bytes) were never proxied either way -- only the playlist text was -- so this toggle alone
             # was never going to fix the remaining stutter; it's Telewebion's own edge throughput to him
             # that night (~50KB/s on one segment, confirmed via logcat), external, not fixable here.
+            # 2026-10-01: go straight to the .net host. ncdn.telewebion.ir 301s there anyway (one wasted hop) and its
+            # TLS certificate is REVOKED (Windows/schannel players refuse it); .net works everywhere. After the logo
+            # patch on purpose -- _TELE_SLUG_RE keys on "telewebion.ir".
+            stream = stream.replace("https://ncdn.telewebion.ir/", "https://ncdn.telewebion.net/")
+            # 2026-10-01: live channels via the owner's free Cloudflare Worker relay (trimmed playlist + cached segments,
+            # source: Desktop\Telewebion_Fix\worker\worker.js). Free plan = 100k requests/day (~27 viewer-hours/day for
+            # everyone together); set TW_WORKER="" in the build environment to fall back to the direct .net links.
+            direct_stream = stream
+            if _TW_WORKER:
+                stream = re.sub(r"https://ncdn\.telewebion\.net/([a-z0-9_]+)/live/playlist\.m3u8",
+                                _TW_WORKER + r"/tw/\1/master.m3u8", stream)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
+            if stream != direct_stream:   # escape hatch: same channel, plain direct link, in its own group (Worker quota can run out)
+                _tw_direct_rows.append((re.sub(r'group-title="[^"]*"', 'group-title="📡 تلوبیون (مستقیم)"', extinf), direct_stream))
         # English Club only in تلوبیون group (once)
         ec_count = 0
         if group and "تلوبیون" in group:
@@ -1421,6 +1493,9 @@ def main():
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group or url}: {len(entries)} channels{label}", flush=True)
+    for _x, _s in _tw_direct_rows:        # the escape-hatch group of plain direct Telewebion links (see above)
+        out.append(_x); out.append(_AF_TELE); out.append(_s); out.append("")
+    total += len(_tw_direct_rows)
     # سیمای آزادی right under Iran International (first 2 entries), not appended at the end
     news = _alive(NEWS_CHANNELS[:2], "News") + load_simay_live() + _alive(NEWS_CHANNELS[2:], "News")
     for extinf, stream in news:
