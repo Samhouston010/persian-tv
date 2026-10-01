@@ -1397,6 +1397,64 @@ def telewebion_epg_tree():
     return root
 
 
+_TW_VOD_MAIN = ("tv1", "tv2", "tv3", "tv4", "tehran", "irinn", "ifilm", "jahanbin")   # channels that get VOD catch-up rows
+_TW_VOD_MARK = "تلوبیون Catch-up VOD"
+_TW_VOD_PER_CHANNEL = 40
+
+
+def telewebion_catchup_rows(tele_rows):
+    """tele_rows: [(extinf, slug)] of the Telewebion live channels. -> list of (extinf, url): the recent, already-aired programmes of
+    each main channel as individual playable entries (group "تلوبیون Catch-up VOD: <channel>"), through the Cloudflare Worker's archive route.
+    Programme list comes from Telewebion's own anonymous API at build time."""
+    import datetime, json, urllib.parse, urllib.request
+    from concurrent.futures import ThreadPoolExecutor
+    if not _TW_WORKER:
+        return []
+    names = {}
+    for ex, slug in tele_rows:
+        if slug in _TW_VOD_MAIN and slug not in names:
+            nm = ex.rsplit(",", 1)[-1].strip()
+            lg = re.search(r'tvg-logo="([^"]*)"', ex)
+            names[slug] = (nm, lg.group(1) if lg else "")
+    now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+    d1, d2 = (now - datetime.timedelta(days=2)).date(), (now + datetime.timedelta(days=1)).date()
+    hdr = {"User-Agent": "Telewebion-AndroidTV-2.3.5(135)-TELEWEBION_TV-_release", "X-APP-VERSION": "135", "X-OS": "AndroidTV"}
+
+    def one(slug):
+        q = urllib.parse.urlencode({"ChannelDescriptor": slug, "IsClip": "false", "FromDate": d1, "ToDate": d2, "First": 300, "Offset": 0})
+        try:
+            req = urllib.request.Request("https://gateway.telewebion.net/kandoo/channel/getChannelEpisodesByDate/?" + q, headers=hdr)
+            return slug, json.loads(urllib.request.urlopen(req, timeout=30).read().decode("utf-8"))["body"]["queryChannel"][0]["episodes"]
+        except Exception:  # noqa: BLE001
+            return slug, []
+    rows = []
+    tz = datetime.timedelta(hours=3, minutes=30)
+    with ThreadPoolExecutor(4) as ex:
+        results = list(ex.map(one, [s for s in _TW_VOD_MAIN if s in names]))
+    for slug, eps in results:
+        n = 0
+        for e in sorted(eps, key=lambda e: e["started_at"], reverse=True):
+            try:
+                a = datetime.datetime.strptime(e["started_at"][:19], "%Y-%m-%dT%H:%M:%S")
+                z = datetime.datetime.strptime(e["ended_at"][:19], "%Y-%m-%dT%H:%M:%S")
+            except Exception:  # noqa: BLE001
+                continue
+            if z > now or (z - a).total_seconds() < 120 or n >= _TW_VOD_PER_CHANNEL:   # only programmes that have finished airing
+                continue
+            p = e.get("program") or {}
+            title = ((p.get("title") or "").strip() or (e.get("title") or "").strip()).replace(",", "،").replace('"', "'")
+            sub = (e.get("title") or "").strip().replace(",", "،").replace('"', "'")
+            if not title:
+                continue
+            n += 1
+            img = ("https://static.telewebion.net/episodeImages/%s/default" % e["image"]) if e.get("image") else names[slug][1]
+            rows.append(('#EXTINF:-1 tvg-logo="%s" group-title="%s: %s",%s%s \u2022 %s' % (
+                img, _TW_VOD_MARK, names[slug][0], title, (" - " + sub) if sub and sub != title else "", (a + tz).strftime("%m/%d %H:%M")),
+                "%s/tw/a/%s/%s/master.m3u8" % (_TW_WORKER, slug, e["EpisodeID"])))
+    print(f"Telewebion catch-up VOD rows: {len(rows)}", flush=True)
+    return rows
+
+
 def build_epg(extra_trees=()):
     root = ET.Element("tv")
     seen = set()
@@ -1445,6 +1503,7 @@ def main():
         pass
     total = 0
     _tw_direct_rows = []
+    _tw_live_rows = []
     for group, url in SOURCES:
         text = fetch(url).decode("utf-8", errors="ignore")
         entries = list(extract(text, group))
@@ -1471,6 +1530,9 @@ def main():
                                 _TW_WORKER + r"/tw/\1/master.m3u8", stream)
             af = _AF_TELE if "telewebion" in stream else _AF_NORMAL
             out.append(extinf); out.append(af); out.append(stream); out.append("")
+            _m_tw = re.search(r"/tw/([a-z0-9_]+)/master[.]m3u8", stream)
+            if _m_tw and _TW_WORKER and stream.startswith(_TW_WORKER):
+                _tw_live_rows.append((extinf, _m_tw.group(1)))
             if stream != direct_stream:   # escape hatch: same channel, plain direct link, in its own group (Worker quota can run out)
                 _tw_direct_rows.append((re.sub(r'group-title="[^"]*"', 'group-title="📡 تلوبیون (مستقیم)"', extinf), direct_stream))
         # English Club only in تلوبیون group (once)
@@ -1493,6 +1555,9 @@ def main():
         total += len(entries) + ec_count
         label = f" (+{ec_count} extra)" if ec_count else ""
         print(f"{group or url}: {len(entries)} channels{label}", flush=True)
+    for _x, _s in telewebion_catchup_rows(_tw_live_rows):      # VOD catch-up: recent programmes of the main channels
+        out.append(_x); out.append(_AF_TELE); out.append(_s); out.append("")
+        total += 1
     for _x, _s in _tw_direct_rows:        # the escape-hatch group of plain direct Telewebion links (see above)
         out.append(_x); out.append(_AF_TELE); out.append(_s); out.append("")
     total += len(_tw_direct_rows)
