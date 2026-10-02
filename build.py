@@ -172,6 +172,24 @@ GEM_TV_CHANNELS = [
     ("GEM Pixel", f"{GEM_LOGO_BASE}/icon_27.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Pixel2%2Fplaylist.m3u8"),
     ("GEM Food", f"{GEM_LOGO_BASE}/icon_9.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520FOOD2%2Fplaylist.m3u8"),
     ("GEM Entertainment", "https://www.parsatv.com/index_files/channels/gementertainment.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Entertainment_%2Fplaylist.m3u8"),
+    ("GEM Documentary", f"{GEM_LOGO_BASE}/icon_14.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FIR%2520-%2520GEM%2520Documentary%2Fplaylist.m3u8"),
+    ("GEM Nature", f"{GEM_LOGO_BASE}/icon_25.png", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FGem-Nature%2Fplaylist.m3u8"),
+]
+
+# user request 2026-10-02: HD Network 3 / Varzesh (adabmedia.com, found via parsatv.com iframes), T2 TV siblings,
+# Persiana Sports -- each in its own group so the daily rebuild keeps them
+HD_EXTRA = [
+    ("📡 تلوبیون", "شبکه سه (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3test.m3u8"),
+    ("📡 تلوبیون", "شبکه سه (HD - پشتیبان)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3.m3u8"),
+    ("📡 تلوبیون", "شبکه ورزش (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png", "https://cp11.adabmedia.com/hls2/varzeshtest.m3u8"),
+    ("ایران", "T2 Movies", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8"),
+    ("ایران", "T2 America", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/T2America/index-0.m3u8"),
+    ("ایران", "T2 International", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/T2International/index-0.m3u8"),
+    ("ایران", "Ekran Movies", "", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/EkranMovies/index-0.m3u8"),
+    ("⚽ ورزشی", "Persiana Sports 1", "", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FPersiana%2520Sports%2Fplaylist.m3u8"),
+    ("⚽ ورزشی", "Persiana Sports 2", "", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FPersiana%2520Sports2%2Fplaylist.m3u8"),
+    ("⚽ ورزشی", "Persiana Sports 3", "", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FPersiana%2520Sports3%2Fplaylist.m3u8"),
+    ("⚽ ورزشی", "Persiana Sports 4", "", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FPersiana%2520Sports4%2Fplaylist.m3u8"),
 ]
 
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
@@ -1005,6 +1023,24 @@ NEWS_CHANNELS = [
     _ch("India Today",           _SU+"INBC2800005X4_20260623T015135SQUARE.png",  "https://jmp2.uk/stvp-INBC2800005X4"),
     _ch("NDTV 24X7",             _SU+"INBC2800001D8_20260623T015302SQUARE.png",  "https://jmp2.uk/stvp-INBC2800001D8"),
     _ch("NHK World Full HD",     _L+"/international/nhk-world-hd-int.png",       "https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8"),
+    # user request 2026-10-02: Arabic news channels from the ALMehdaly list (alive-checked by _alive like the rest)
+    _ch('alhadath AUTO', '', 'https://shls-hadath-prod-dub.shahid.net/out/v1/0e1a306399c346faac4226aa0858f99b/index.m3u8'),
+    _ch('Asharq News Channel', 'https://raw.github.com/ALMehdaly/picon/TV/AsharqNews.png', 'https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8'),
+    _ch('Al Arabiya FHD', 'https://raw.github.com/ALMehdaly/picon/TV/AlArabiya.png', 'https://live.alarabiya.net/alarabiapublish/alarabiya_1080p/chunks.m3u8'),
+    _ch('Sky News Arabia', 'https://raw.github.com/ALMehdaly/picon/TV/SkyNewsArabia.png', 'https://stream.skynewsarabia.com/ott/ott.m3u8'),
+    _ch('Al Jazeera HD', 'https://i.imgur.com/DMg5VRh.png', 'https://live-hls-aja-ak.getaj.net/AJA/index.m3u8'),
+    _ch('Al Jazeera HD', 'https://i.imgur.com/DMg5VRh.png', 'https://live-hls-web-aja-gcp.thehlive.com/AJA/index.m3u8'),
+    _ch('Al Jazeera 2 HD', 'https://i.imgur.com/DMg5VRh.png', 'https://live-hls-web-aja2-gcp.thehlive.com/AJA2/index.m3u8'),
+    _ch('Al Jazeera Mubasher HD', 'https://i.imgur.com/LK875fY.png', 'https://live-hls-web-ajm.getaj.net/AJM/index.m3u8'),
+    _ch('BBC Arabic HD', 'https://i.imgur.com/3EKvZCD.png', 'https://vs-hls-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/t=3840/v=pv14/b=5070016/main.m3u8'),
+    _ch('AL Mashhad HD', 'https://i.imgur.com/MNB0ppx.png', 'https://fastly.live.brightcove.com/6385343550112/ap-south-1/6313884884001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaWR2d3RnLmVncmVzcy5qYXYzemwiLCJhY2NvdW50X2lkIjoiNjMxMzg4NDg4NDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MzEzODg0ODg0MDAxIl0sImp0aSI6IjYzODUzNDM1NTAxMTIifQ.OXCUOblTM-ZkjiyDxPav01or3H6GE5cbGOp1qXlLERk/playlist-hls-dvr.m3u8'),
+    _ch('RT Arabic HD', 'https://i.imgur.com/gwvFJyj.png', 'https://rt-arb.rttv.com/live/rtarab/playlist.m3u8'),
+    _ch('DW Arabia HD', 'https://i.imgur.com/lRUGXdU.png', 'https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/stream05/streamPlaylist.m3u8'),
+    _ch('CNBC Arabiya', 'https://raw.github.com/ALMehdaly/picon/TV/CNBCArabiya.png', 'https://cnbc-live.akamaized.net/cnbc/master.m3u8'),
+    _ch('AL Arabiya Business', 'https://raw.github.com/ALMehdaly/picon/TV/ALArabiyaBusiness.png', 'https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8'),
+    _ch('Al Arabiya HD  sh', 'https://i.imgur.com/Ue2VZLn.png', 'https://shd-gcp-live.lg.mncdn.com/live/bitmovin-alarabiya/7f90de73d777d04f3dada92f90d35c44/index.m3u8'),
+    _ch('Al Hadath HD sh', 'https://i.imgur.com/rZy3Sxq.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-hadath/2ff87ec4c2f3ede35295a20637d9f8fd/index.m3u8'),
+    _ch('BBC news skygo', 'https://i.imgur.com/vSz2WEp.png', 'https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8'),
 ]
 
 
@@ -1769,6 +1805,11 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(gem_tv)
     print(f"GEM TV: {len(gem_tv)} channels", flush=True)
+    hd_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{grp}",{name}', stream) for grp, name, logo, stream in HD_EXTRA]
+    for extinf, stream in hd_extra:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(hd_extra)
+    print(f"HD extra: {len(hd_extra)} channels", flush=True)
     iran_org = fetch_iran_org(cat_by_id, logo_by_id)
     for extinf, stream in iran_org:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
