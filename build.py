@@ -804,6 +804,85 @@ _S = "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/
 _SU = "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
 _P = "https://images.pluto.tv/channels/"
 
+# 2026-10-02: DRM-free channels from the owner-supplied ALMehdaly/AHMED lists (clearkey/DRM entries skipped), only those answering HTTP 200.
+ARABIC_CHANNELS = [
+    ('Asharq News Channel', 'https://raw.github.com/ALMehdaly/picon/TV/AsharqNews.png', 'https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8'),
+    ('Al Arabiya FHD', 'https://raw.github.com/ALMehdaly/picon/TV/AlArabiya.png', 'https://live.alarabiya.net/alarabiapublish/alarabiya_1080p/chunks.m3u8'),
+    ('Sky News Arabia', 'https://raw.github.com/ALMehdaly/picon/TV/SkyNewsArabia.png', 'https://stream.skynewsarabia.com/ott/ott.m3u8'),
+    ('Al Jazeera HD', 'https://i.imgur.com/DMg5VRh.png', 'https://live-hls-aja-ak.getaj.net/AJA/index.m3u8'),
+    ('Al Jazeera HD', 'https://i.imgur.com/DMg5VRh.png', 'https://live-hls-web-aja-gcp.thehlive.com/AJA/index.m3u8'),
+    ('Al Jazeera 2 HD', 'https://i.imgur.com/DMg5VRh.png', 'https://live-hls-web-aja2-gcp.thehlive.com/AJA2/index.m3u8'),
+    ('Al Jazeera Mubasher HD', 'https://i.imgur.com/LK875fY.png', 'https://live-hls-web-ajm.getaj.net/AJM/index.m3u8'),
+    ('BBC Arabic HD', 'https://i.imgur.com/3EKvZCD.png', 'https://vs-hls-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/t=3840/v=pv14/b=5070016/main.m3u8'),
+    ('AL Mashhad HD', 'https://i.imgur.com/MNB0ppx.png', 'https://fastly.live.brightcove.com/6385343550112/ap-south-1/6313884884001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaWR2d3RnLmVncmVzcy5qYXYzemwiLCJhY2NvdW50X2lkIjoiNjMxMzg4NDg4NDAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MzEzODg0ODg0MDAxIl0sImp0aSI6IjYzODUzNDM1NTAxMTIifQ.OXCUOblTM-ZkjiyDxPav01or3H6GE5cbGOp1qXlLERk/playlist-hls-dvr.m3u8'),
+    ('RT Arabic HD', 'https://i.imgur.com/gwvFJyj.png', 'https://rt-arb.rttv.com/live/rtarab/playlist.m3u8'),
+    ('DW Arabia HD', 'https://i.imgur.com/lRUGXdU.png', 'https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/stream05/streamPlaylist.m3u8'),
+    ('Kuwait News', 'https://raw.github.com/ALMehdaly/picon/TV/KuwaitNews.png', 'https://kwtsplta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist_b8000000_t64MTA4MHA=.m3u8'),
+    ('CNBC Arabiya', 'https://raw.github.com/ALMehdaly/picon/TV/CNBCArabiya.png', 'https://cnbc-live.akamaized.net/cnbc/master.m3u8'),
+    ('AL Arabiya Business', 'https://raw.github.com/ALMehdaly/picon/TV/ALArabiyaBusiness.png', 'https://live.alarabiya.net/alarabiapublish/aswaaq.smil/playlist.m3u8'),
+    ('Al Arabiya HD  sh', 'https://i.imgur.com/Ue2VZLn.png', 'https://shd-gcp-live.lg.mncdn.com/live/bitmovin-alarabiya/7f90de73d777d04f3dada92f90d35c44/index.m3u8'),
+    ('Al Hadath HD sh', 'https://i.imgur.com/rZy3Sxq.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-hadath/2ff87ec4c2f3ede35295a20637d9f8fd/index.m3u8'),
+    ('BBC news skygo', 'https://i.imgur.com/vSz2WEp.png', 'https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8'),
+    ('Saudi TV HD', 'https://i.imgur.com/LCp0hUL.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-saudi-tv/2ad66056b51fd8c1b624854623112e43/index.m3u8'),
+    ('Saudi ALAAN', 'https://imgur.com/sEOjApe.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-ksa-now/71ed3aa814c643306c0a8bc4fcc7d17f/index.m3u8'),
+    ('SBC HD', 'https://i.imgur.com/xngS0N1.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-sbc/90e09c0c28db26435799b4a14892a167/index.m3u8'),
+    ('Thikrayat HD', 'https://i.imgur.com/KNx4V2X.png', 'https://thikrayat-tv-prod-dub-enc.edgenextcdn.net/out/v1/ef87956651694f4ba2ccc16e852dbb95/index.m3u8'),
+    ('Al Thaqafeya HD', 'https://i.imgur.com/OzLfkl4.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-thaqafeyyah/28c0d2a20dbf1dc049ce15d3973f494b/index.m3u8'),
+    ('MBC1 m', 'https://raw.github.com/ALMehdaly/picon/TV/MBC1.png', 'https://shd-gcp-live.lg.mncdn.com/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8'),
+    ('MBC Bollywood HD', 'https://i.imgur.com/qEAgd1p.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8'),
+    ('Wanasah HD', 'https://i.imgur.com/mCJ8GAA.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-wanasah/13e82ea6232fa647c43b26e8a41f173d/index.m3u8'),
+    ('MBC Gaming', 'https://raw.github.com/ALMehdaly/picon/TV/MBCgaming.png', 'https://shls-live-enc.edgenextcdn.net/out/v1/8ae5c35ffc5247a58e71a5c86dd31ad6/index.m3u8'),
+    ('Bigtime+', 'https://raw.github.com/ALMehdaly/picon/TV/Bigtime+.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/index.m3u8'),
+    ('SHAHID LIVE 4 HD', 'https://shahid.mbc.net/mediaObject/shahidlogo/light/Shahid_logo_light/original/Shahid_logo_light.png?height=178&width=auto&croppingPoint=mc&type=webp', 'https://live-event-4-enc.edgenextcdn.net/out/v1/de16bd22e8854f80b0a6cd6815bacc14/index.m3u8'),
+    ('Al Wousta from Al Dhaid HD', 'https://i.imgur.com/OK3yj5F.png', 'https://svs.itworkscdn.net/alwoustalive/alwoustatv.smil/playlist.m3u8'),
+    ('Sharqiya from Kalba HD', 'https://i.imgur.com/LDJASwK.png', 'https://svs.itworkscdn.net/kablatvlive/kabtv1.smil/playlist.m3u8'),
+    ('Qatar TV HD', 'https://i.imgur.com/SAcokdv.png', 'https://qatartv.akamaized.net/hls/live/20000609/qtv1/master.m3u8'),
+    ('Qatar 2 HD', 'https://i.imgur.com/SI0P46a.png', 'https://qatartv.akamaized.net/hls/live/20000611/qtv2/master.m3u8'),
+    ('Al Rayyan HD', 'https://i.imgur.com/0Mngts9.png', 'https://alrayyancdn.vidgyor.com/pub-noalrayy3pwz0l/liveabr/pub-noalrayy3pwz0l/live_1080p/chunks_dvr.m3u8'),
+    ('Al Rayyan Al Qadeem HD', 'https://i.imgur.com/qf0ibZ2.png', 'https://alrayyancdn.vidgyor.com/pub-nooldraybinbdh/liveabr/pub-nooldraybinbdh/live_1080p/chunks_dvr.m3u8'),
+    ('Oman TV General', 'https://i.imgur.com/aksGvQq.png', 'https://partneta.cdn.mgmlcdn.com/omantv/smil:omantv.stream.smil/chunklist_b4500000.m3u8'),
+    ('Alrai HD', 'https://i.imgur.com/h9UwGar.png', 'https://svs.itworkscdn.net/alraitvlive/alraitv.smil/playlist.m3u8'),
+    ('Bahrain HD', 'https://i.imgur.com/Gbra6fM.png', 'https://5c7b683162943.streamlock.net/live/ngrp:bahraintvmain_all/playlist.m3u8'),
+    ('ZooMoo HD', 'https://i.imgur.com/246vm7R.png', 'https://zoomoo-samsungau.amagi.tv/playlist1080p.m3u8'),
+    ('FIFA+', 'https://i.imgur.com/JeUlOGA.png', 'https://shls-live-enc.edgenextcdn.net/out/v1/b0e399f5d80a4f5a84167830f4baea38/index.m3u8'),
+    ('Oman TV Sport HD', 'https://i.imgur.com/JeUlOGA.png', 'https://partneta.cdn.mgmlcdn.com/omsport/smil:omsport.stream.smil/chunklist_b4500000.m3u8'),
+    ('Bahrain Sports 1 HD', 'https://i.imgur.com/pGR9hI7.png', 'https://5c7b683162943.streamlock.net/live/ngrp:sportsone_all/playlist.m3u8'),
+    ('alrai', '', 'https://svs.itworkscdn.net/alraitvlive/alraitv.smil/alraitv_source_chunks.m3u8'),
+    ('alhadath', '', 'https://shls-hadath-prod-dub.shahid.net/out/v1/0e1a306399c346faac4226aa0858f99b/index.m3u8'),
+    ('Sharjah TV 2', '', 'https://svs.itworkscdn.net/smc2live/smc2tv.smil/playlist.m3u8'),
+    ('aljazeera', '', 'https://live-hls-web-aja.getaj.net/AJA/index.m3u8'),
+    ('alarabiya', '', 'https://av.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8'),
+    ('skynews arabia', '', 'https://stream.skynewsarabia.com/hls/sna.m3u8'),
+    ('FR 24 AR', '', 'https://static.france24.com/live/F24_AR_HI_HLS/live_web.m3u8'),
+    ('almayaden', '', 'https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/gmswf.m3u8'),
+    ('abc news live', '', 'https://abcnews-streams.akamaized.net/hls/live/2023569/abcnews10/master.m3u8'),
+    ('abc news live', '', 'https://abcnews-streams.akamaized.net/hls/live/2023569-b/abcnews10/master.m3u8'),
+    ('France 24 en', '', 'https://static.france24.com/live/F24_EN_HI_HLS/live_web.m3u8'),
+    ('mtv LEB', '', 'https://clvod.itworkscdn.net/mtvvod/smil:itwfcdn/mtvlebanon/1140335-WL1815w9C601Qf6.smil/playlist.m3u8'),
+    ('DW en', '', 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8'),
+    ('DW ar', '', 'https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8'),
+    ('DW it', '', 'https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8'),
+    ('DW gr', '', 'https://dwamdstream105.akamaized.net/hls/live/2015531/dwstream105/index.m3u8'),
+    ('DW gr 2', '', 'https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8'),
+    ('DW en FHD', '', 'https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream05/streamPlaylist.m3u8'),
+    ('DW it FHD', '', 'https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream05/streamPlaylist.m3u8'),
+    ('Al Sharqiya', '', 'http://ns8.indexforce.com:1935/home/mystream/playlist.m3u8'),
+    ('Qatar 2 HD', '', 'https://qatartv.akamaized.net/hls/live/2026574/qtv2/master.m3u8'),
+    ('Qatar 2 HD b', '', 'https://qatartv.akamaized.net/hls/live/2026574-b/qtv2/master.m3u8'),
+    ('alarabiya FM', '', 'https://fm.alarabiya.net/fm/myStream/playlist.m3u8'),
+    ('FR 24 AR', '', 'http://static.france24.com/live/F24_AR_LO_HLS/live_web.m3u8'),
+    ('BLOOMBERG  HD', '', 'https://liveprodeuwest.akamaized.net/eu1/Channel-EUTVqvs-AWS-ireland-1/Source-EUTVqvs-1000-1_live.m3u8'),
+    ('BBC FOOD', '', 'https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5fb5844bf5514d0007945bda/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=rokuChannel&deviceMake=rokuChannel&deviceDNT=1&advertisingId=channel&embedPartner=rokuChannel&appName=rokuchannel&is_lat=1&bmodel=bm1&content=channel&platform=web&tags=ROKU_CONTENT_TAGS&coppa=false&content_type=livefeed&rdid=channel&genre=ROKU_ADS_CONTENT_GENRE&content_rating=ROKU_ADS_CONTENT_RATING&studio_id=viacom&channel_id=channel'),
+    ('alrayyan', '', 'https://svs.itworkscdn.net/alrayyanlive/alrayyan.smil/playlist.m3u8'),
+    ('alrayyan qadeem', '', 'https://svs.itworkscdn.net/alrayyanqadeemlive/alrayyanqadeem.smil/playlist.m3u8'),
+    ('OTV', '', 'https://svs.itworkscdn.net/otvlebanonlive/otv.smil/playlist.m3u8'),
+    ('SYRIA TV', '', 'https://svs.itworkscdn.net/syriatvlive/syriatv.smil/playlist.m3u8'),
+    ('BLOOMBERG TV', '', 'http://ciner.daioncdn.net/bloomberght/bloomberght_720p.m3u8'),
+    ('Redbull TV', '', 'https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8'),
+    ('aljazeera FHD', '', 'https://live-hls-web-aja.getaj.net/AJA/01.m3u8'),
+    ('KSA thikrayat-tv', 'https://shahid.mbc.net/mediaObject/2828a599-b458-433a-ad8e-0c26114c7cf4?height=auto&width=288&croppingPoint=&version=1&type=avif', 'https://shd-gcp-live.lg.mncdn.com/live/bitmovin-thikrayat/8cfa8fe0c96275735745b89c683b27e3/index.m3u8'),
+]
+
 MBC_HD_CHANNELS = [
     ('MBC 1', 'https://i.imgur.com/CiA3plN.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8'),
     ('MBC 4', 'https://i.imgur.com/BcXASJp.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8'),
@@ -1616,6 +1695,10 @@ def main():
         out.append(_AF_NORMAL); out.append(_u); out.append("")
     total += len(MBC_HD_CHANNELS)
     print(f"MBC HD: {len(MBC_HD_CHANNELS)} channels", flush=True)
+    for _n, _lg, _u in ARABIC_CHANNELS:
+        out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="📺 عربی",%s' % (_n, _lg, _n))
+        out.append(_AF_NORMAL); out.append(_u); out.append("")
+    total += len(ARABIC_CHANNELS)
     houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
     print("Houston: disabled", flush=True)
     music = _alive(MUSIC_CHANNELS, "Music")
