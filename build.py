@@ -804,6 +804,19 @@ _S = "https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/
 _SU = "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/"
 _P = "https://images.pluto.tv/channels/"
 
+MBC_HD_CHANNELS = [
+    ('MBC 1', 'https://i.imgur.com/CiA3plN.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8'),
+    ('MBC 4', 'https://i.imgur.com/BcXASJp.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8'),
+    ('MBC 5', 'https://i.imgur.com/fRWaDyF.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-5/ee6b000cee0629411b666ab26cb13e9b/index.m3u8'),
+    ('MBC Drama', 'https://i.imgur.com/g5PWnqp.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-drama/2c28a458e2f3253e678b07ac7d13fe71/index.m3u8'),
+    ('MBC Masr', 'https://i.imgur.com/o2elx0u.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr/956eac069c78a35d47245db6cdbb1575/index.m3u8'),
+    ('MBC Masr 2', 'https://i.imgur.com/KHo7Gtn.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-2/754931856515075b0aabf0e583495c68/index.m3u8'),
+    ('MBC Masr Drama', 'https://media0070.elcinema.com/tvguide/1399_1.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-masr-drama/567b703c19ede6598222de81b0e4508b/index.m3u8'),
+    ('MBC Mood', 'https://shahid.mbc.net/mediaObject/c2b6a882-458b-446e-b0fe-f97f7992149a?height=auto&width=144&croppingPoint=&version=1&type=png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-mood/78367bf48ccdba501d0d014a10c21031/index.m3u8'),
+    ('MBC Iraq', 'https://i.imgur.com/D0LxiPE.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-iraq/e38c44b1b43474e1c39cb5b90203691e/index.m3u8'),
+    ('MBC+ Drama', 'https://i.imgur.com/lxWdjXG.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8'),
+]
+
 CRIME_CHANNELS = [
     ('JAIL', 'https://images.sr.roku.com/idType/roku-trc/context/trc/id/645518dc5f92519688baed84d025b14e/https%3A%2F%2Fimage.roku.com%2Fbh-uploads%2Fproduction%2FinfoHUDLogo%2F1709832057729_JAIL_IMAGE_HUD_2_Meela_Hice.png', 'https://jmp2.uk/rok-645518dc5f92519688baed84d025b14e.m3u8'),
     ('60 Days in Jail', 'https://images-2.rakuten.tv/storage/global-live-channel/translation/artwork/df8c7463-dc5c-4301-9b03-0307c17a37fb.jpeg', 'https://3f73a77a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiXzYwRGF5c0luSU5UTF9ITFM/playlist.m3u8?ads.amznbrmid=&ads.amznregion=&ads.amznslots=&ads.app_bundle=com.rakutentv.web&ads.app_store_url=rakuten.tv&ads.app_version=&ads.brand_name=&ads.content_categories=IAB1&ads.content_genre=crime&ads.content_livestream=0&ads.device_lmt=0&ads.device_make=chrome&ads.device_model=GENERIC&ads.device_type=web&ads.device_year=1970&ads.env=prod&ads.extra_eids=&ads.gam_correlator=283910008697892&ads.gdpr_consent=&ads.ifa_type=ppid&ads.inv_partner_domain=rakuten.tv&ads.ip=185.164.139.44&ads.market=uk&ads.network_name=RakutenTV&ads.nonce=&ads.os_language=&ads.placement=1&ads.player_height=1080&ads.player_width=1920&ads.pod_type=playerpage_midroll&ads.ppid=e3dd2658-e93a-4cee-9d4b-27200826a904&ads.prodq=1&ads.rating=15&ads.rtv_content_id=7169&ads.rtv_content_language=en&ads.rtvid=271858&ads.streaming_id=75a18b19-fdec-421e-a90f-b89dc7f2e12b&ads.tivo_devcountry=&ads.tivo_devmakedate=&ads.tivo_mvpd=&ads.tivo_platform=&ads.tivo_usid=&ads.tivo_uxloc=&ads.user_type=visitor&ads.wurl_channel_id=2077'),
@@ -1596,6 +1609,13 @@ def main():
         out.append(_AF_NORMAL); out.append(_u); out.append("")
     total += len(CRIME_CHANNELS)
     print(f"Crime: {len(CRIME_CHANNELS)} channels", flush=True)
+    # 2026-10-02: MBC channels that ship WITHOUT DRM on MBC's own CDN (public HLS, 1080p, open from the US). MBC 2 / MBC Max are
+    # DRM-locked (clearkey) and are NOT included. Group «MBC HD» is a plain group, no liveness filter (the CDN answers GitHub runners too).
+    for _n, _lg, _u in MBC_HD_CHANNELS:
+        out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="MBC HD",%s' % (_n, _lg, _n))
+        out.append(_AF_NORMAL); out.append(_u); out.append("")
+    total += len(MBC_HD_CHANNELS)
+    print(f"MBC HD: {len(MBC_HD_CHANNELS)} channels", flush=True)
     houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
     print("Houston: disabled", flush=True)
     music = _alive(MUSIC_CHANNELS, "Music")
