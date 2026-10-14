@@ -1287,6 +1287,15 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv1/0x16cfa7be/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv1/0x16cfa781/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e5d84d0d-37a4-4c0d-9360-494a9c23b9b5/default" group-title="تلوبیون Catch-up VOD: شبکه دو",عصر خانواده - 22 مهر 1405 • 10/14 21:33
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16cfda3e/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/307bece9-82da-4c46-8280-363c6ac0453a/default" group-title="تلوبیون Catch-up VOD: شبکه دو",روایت حضور - 22 مهر 1405 • 10/14 18:03
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -1628,6 +1637,15 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16cfa0a4/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16cfa0a0/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/a103ffcd-abb7-470a-b725-9d665038af3f/default" group-title="تلوبیون Catch-up VOD: شبکه سه",لیگ برتر 05-06 - خیبر خرم‌آباد - پرسپولیس • 10/14 20:34
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16cfd9a9/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/b15ca427-276c-4a1e-992e-4b756516b1d2/default" group-title="تلوبیون Catch-up VOD: شبکه سه",جان فدا - 22 مهر 1405 • 10/14 19:46
 #EXTVLCOPT:network-caching=8000
@@ -1980,14 +1998,32 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16cfa66e/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16cfa612/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/aeb4f70b-9a94-4815-809e-d8a942071ac3/default" group-title="تلوبیون Catch-up VOD: شبکه سه",سلام صبح بخیر 1405 - 20 مهر 1405 • 10/12 11:26
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/c12039d9-fdda-431f-aa10-370d438cfa73/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",استاد تمام - 22 مهر 1405 • 10/14 22:36
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16cfa3c5/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16cfdb36/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/23993235-112e-40bc-88bd-a7487aeb9a54/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",برنامه اجتماعی (شبکه 4) - یکی از ما - 22 مهر 1405 • 10/14 22:20
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16cfd9dd/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/7e9573ce-e0ea-4b91-bff8-5b33dcf3d3a9/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",برنامه مذهبی (شبکه 4) - محرمان محراب - 22 مهر 1405 • 10/14 21:38
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16cfd962/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/3cc034d8-1f79-44c0-b8ba-a9acd5b147d8/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",برنامه اجتماعی (شبکه 4) - پرچم گردانی- تهران - میدان ولیعصر - 22 مهر 1405 • 10/14 19:21
 #EXTVLCOPT:network-caching=8000
@@ -2295,6 +2331,69 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16cfa098/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16cfa094/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/f7a168f4-8904-44ce-bb09-0e4efd1408bb/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",در شهر 1405 (شبکه تهران) - وجب به وجب - 22 مهر 1405 • 10/14 23:18
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfdaa2/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/fb7b7c92-23a5-4d7c-b59f-c00061d183da/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",داستان یک شهر - قسمت 9 • 10/14 22:32
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfda96/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/101b80da-1093-47b2-89f7-b989d5234c51/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",نماهنگ (شبکه تهران) - ستون امن - 22 مهر 1405 • 10/14 21:49
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfd8c6/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/a66eca3f-ad30-4af2-8de0-4dedb621548d/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",خبرنگار مردمی ، شصت و پنج ثانیه - تجمعات مردمی در ساوجبلاغ - 22 مهر 1405 • 10/14 21:46
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfd8c2/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/903a91af-05a2-4a3d-ac71-83544ebdcbe3/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",جان فدا - 22 مهر 1405 • 10/14 21:36
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfd8bd/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/4eeb42dc-c98f-4443-ac57-782c87d864ee/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",خبرنگار مردمی - گشت نظارت بر سلامت مواد غذایی - 22 مهر 1405 • 10/14 21:04
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfd7c2/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/1d45d74a-0fd7-4c1f-80dc-55582e4024c0/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",به خانه بر می گردیم 1405 - 22 مهر 1405 • 10/14 19:46
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfd7a3/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/c85c7b98-4273-4496-834b-50b8c0ddf891/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",گزارش 5 - جشن ازدواج دانشجویی - 22 مهر 1405 • 10/14 19:23
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -2592,23 +2691,95 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfa787/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfa289/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/104acab6-45c0-4009-b9e3-e57c74f391ae/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",شهر امن - 20 مهر 1405 • 10/12 09:59
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/209fa1bc-5634-43c5-a447-11dd61f4c153/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 19:00 - 22 مهر 1405 • 10/14 22:30
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfa0f8/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd9f5/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/4e4fb230-5c18-4bfa-86c5-e3ad0e787d37/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",گزارش 5 - چشم اندازهای حیات وحش آفریقا - 20 مهر 1405 • 10/12 05:34
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/5bcac5f4-bd94-406b-aede-27a9679608ea/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",روی خط خبر - 22 مهر 1405 • 10/14 22:13
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16cfa082/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd9f1/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e48874f2-cd68-40f0-abdd-49c9f8f38d0f/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",خبر اقتصادی - 22 مهر 1405 • 10/14 22:00
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd95b/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/d6fdf3e0-3b4c-4bae-83eb-4a3a69c0e586/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",مستند خبر - 22 مهر 1405 • 10/14 21:43
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd946/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/4280e64f-5132-40b9-bc8b-d2dc6708d0dd/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",درنگ - ممنوعیت حجاب در آذربایجان - 22 مهر 1405 • 10/14 21:40
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd8b1/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/74432221-d0b4-4725-9d61-077069eae6f8/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 18:00 (خبر) - 22 مهر 1405 • 10/14 21:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd8a3/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/3f8cf733-93ea-4395-bf1a-b207ae48e17e/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ورزشی ساعت 17:۴۵ (خبر) - 22 مهر 1405 • 10/14 21:15
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd897/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/d3639567-47c3-4110-8dae-a66207c77296/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",صف اول (خبر) - 22 مهر 1405 • 10/14 20:39
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd7d9/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/747615ef-b115-47c7-b133-d94615133230/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 17:00 (خبر) - 22 مهر 1405 • 10/14 20:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd777/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/86ae1eea-5730-4416-9904-98c405df33f1/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",شامات (خبر) - 22 مهر 1405 • 10/14 20:05
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfd6f1/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/46c63042-fd9b-4c36-955f-27beefd16b07/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 16:30 - 22 مهر 1405 • 10/14 20:00
 #EXTVLCOPT:network-caching=8000
@@ -2880,95 +3051,50 @@ https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfccc9/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfccc5/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e5e5c747-5384-40d6-96b5-14d9cf3e9a5e/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت  7:30 (خبر) - 22 مهر 1405 • 10/14 10:58
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e122e5e0-6962-4dac-8df7-0ec4ebbbd6d6/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",شما و آی فیلم (سری جدید) - 22 مهر 1405 • 10/14 23:19
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfccbf/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/ifilm/0x16cfda81/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/a2567bbc-f7f8-4156-b9ac-532b11a02017/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",سلام خبرنگار (خبر) - 22 مهر 1405 - مهدی ضیایی • 10/14 10:39
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/59d3aacc-c705-4cf4-a32d-fbccf56ff84f/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",نوار زرد - قسمت 16 • 10/14 22:30
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc84/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/ifilm/0x16cfda7c/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/350ce5ae-d690-43b1-8b33-58b4ae34fdf7/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 7:00 (خبر) - 22 مهر 1405 • 10/14 10:30
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/40fc0c4f-87df-44fe-84fe-aa3f15a0b3a7/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",زندگی از نو - قسمت 12 • 10/14 21:30
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc80/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/ifilm/0x16cfd971/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/048d8fd9-3f96-40b2-ba1f-cce1194f8a2d/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 6:00 (خبر) - 22 مهر 1405 • 10/14 09:30
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/c22a5d2f-78f5-4a3b-9ea8-1d536a5432f3/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",کمربندها را ببندیم - قسمت 60 • 10/14 20:32
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc7c/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/ifilm/0x16cfd7e7/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/99d7e69a-9573-45b0-9cc4-5ef3ce7f4842/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 5:00 - 22 مهر 1405 • 10/14 08:30
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/2b2cf0c0-c9fc-4ffc-8f0a-c51b4dec2ceb/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",آژانس دوستی - قسمت 25 • 10/14 19:30
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc78/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/6995450a-e0aa-48de-9721-0997d2df144c/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 4:00 - 22 مهر 1405 • 10/14 07:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc74/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/76640130-0265-4c42-a58b-09d3793fce2f/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 3:00 (خبر) - 22 مهر 1405 • 10/14 06:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc6b/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/c74fa6f1-25ec-4b8a-aba9-050f77e84700/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 2:00 (خبر) - 22 مهر 1405 • 10/14 05:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc63/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/45da55a7-5802-49cc-ae7c-55a6e508812f/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 1:00 - 22 مهر 1405 • 10/14 04:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcc03/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/38f2cf3c-40d5-4cbe-97a2-644dc12d55c8/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 24:00 (خبر) - 22 مهر 1405 • 10/14 03:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cfcbcc/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/ifilm/0x16cfd6fe/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/140b0e3d-0fee-4841-9960-72c7b9f7d4a0/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",شما و آی فیلم (سری جدید) - ۲۱ مهر ۱۴۰۵ • 10/14 03:21
 #EXTVLCOPT:network-caching=8000
@@ -4418,6 +4544,15 @@ https://edge.fastpublish.me/live/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9cfba7473a686a06/index.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/WX80rty.png",Roya TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
@@ -7515,155 +7650,167 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/465c16f36a3240709a89a433adc3d6c2/7c95ca85-b169-4617-b9b5-cd71bd2ecfcd_thumb_001_HD.jpg",اولتیماتوم سیاسی و اخطار بی‌سابقه ۳۰ کشور جهان به حکومت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/465c16f36a3240709a89a433adc3d6c2/hls/7c95ca85-b169-4617-b9b5-cd71bd2ecfcd.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f46cf1bf46f64372a3ba98037ec40ed0/176fa284-0972-4176-8df1-95d3ed9161c3_thumb_001_HD.jpg",شمارش معکوس برای حمله مجدد آمریکا و اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/f46cf1bf46f64372a3ba98037ec40ed0/hls/176fa284-0972-4176-8df1-95d3ed9161c3.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e5591d0983b34052a340316ed04a51b2/195c1464-a2ce-42e7-9266-01391b673145_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
-https://daq1pvcuhj77l.cloudfront.net/1/e5591d0983b34052a340316ed04a51b2/hls/195c1464-a2ce-42e7-9266-01391b673145.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d4f5a24c0f874fa8902f36c49c2d75c4/7bf4192c-95d6-4b32-a3d7-dc16e132d30a_thumb_001_HD.jpg",چشم‌انداز: شمارش معکوس برای حمله مجدد آمریکا و اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/d4f5a24c0f874fa8902f36c49c2d75c4/hls/7bf4192c-95d6-4b32-a3d7-dc16e132d30a.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c33ea1c849fa4fe39cd21c6cbfdb3b30/d9d75c8e-dff6-471b-9609-177e6896435f_thumb_001_HD.jpg",اولتیماتوم سیاسی و اخطار بی‌سابقه ۳۰ کشور جهان به حکومت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/c33ea1c849fa4fe39cd21c6cbfdb3b30/hls/d9d75c8e-dff6-471b-9609-177e6896435f.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/11b0f3f2e48944ebb758cd89bbaac3be/a8d0f2ea-c1fd-4645-8947-96b838f43889_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/11b0f3f2e48944ebb758cd89bbaac3be/hls/a8d0f2ea-c1fd-4645-8947-96b838f43889.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0921d72f0898454d839d56b460e6f54b/80635fb2-7364-463b-b0be-afa9114c7f34_thumb_001_HD.jpg",علیرضا نامور حقیقی: تهران با تشدید تنش به‌دنبال افزایش هزینه برای آمریکا و منطقه است
-https://daq1pvcuhj77l.cloudfront.net/1/0921d72f0898454d839d56b460e6f54b/hls/80635fb2-7364-463b-b0be-afa9114c7f34.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b2e621a3b4db425fa579e2fb896bd841/03227804-3ebc-4dda-925a-3d58ee518e4d_thumb_001_HD.jpg",جزییات کمک ۲۰۰ میلیون دلاری جمهوری‌اسلامی به حزب‌الله
+https://daq1pvcuhj77l.cloudfront.net/1/b2e621a3b4db425fa579e2fb896bd841/hls/03227804-3ebc-4dda-925a-3d58ee518e4d.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cbfece6ada0c4fc7a043b1dcccbd6da1/70d14c7a-030f-41b9-801b-80151521b04c_thumb_001_HD.jpg",ترامپ: آمریکا بسیار زود درباره جمهوری اسلامی تصمیم‌گیری می‌کند
-https://daq1pvcuhj77l.cloudfront.net/1/cbfece6ada0c4fc7a043b1dcccbd6da1/hls/70d14c7a-030f-41b9-801b-80151521b04c.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2907a3172f8a41368fc86b973583457f/97860f84-3d3f-4e5d-b4b0-b09721f73ad2_thumb_001_HD.jpg",فرزین ندیمی: جنگ سوم میان ایران و اسرائیل بسیار نزدیک است
+https://daq1pvcuhj77l.cloudfront.net/1/2907a3172f8a41368fc86b973583457f/hls/97860f84-3d3f-4e5d-b4b0-b09721f73ad2.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/33a329fbe47b4a1b9eb4e03470074b54/1b12e56f-f9fc-47a6-89f9-f229a333b53b_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، سه‌شنبه ۲۱ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/33a329fbe47b4a1b9eb4e03470074b54/hls/1b12e56f-f9fc-47a6-89f9-f229a333b53b.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2dd78b4648604e989f6ce20ee35e7c6c/6df88662-b821-4832-9ab6-5a433f33fb55_thumb_001_HD.jpg",نتانیاهو: در دو سال آینده حکومت ایران را سرنگون خواهیم کرد 
+https://daq1pvcuhj77l.cloudfront.net/1/2dd78b4648604e989f6ce20ee35e7c6c/hls/6df88662-b821-4832-9ab6-5a433f33fb55.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f0b3c3c3554c41a2b1ef44d0454994ed/c0a8ed6b-5900-40de-8d23-191c1e2800b8_thumb_001_HD.jpg",کاهش مصرف غذاهای فوق‌فرآوری‌شده خطر دیابت نوع دو را تا ۵۰ درصد کم می‌کند
-https://daq1pvcuhj77l.cloudfront.net/1/f0b3c3c3554c41a2b1ef44d0454994ed/hls/c0a8ed6b-5900-40de-8d23-191c1e2800b8.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/862aeb678f244809a463da2208fd0622/4536e3ab-5646-4739-8c39-983387ccb6f3_thumb_001_HD.jpg",تیتراول با نیوشا صارمی، چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/862aeb678f244809a463da2208fd0622/hls/4536e3ab-5646-4739-8c39-983387ccb6f3.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0c39207d87704dd48224a9ad58d0e85d/4dcaa761-ad7d-4dff-85f6-1ac0732d17a8_thumb_001_HD.jpg",اقتصاد و بازار: رکود تورمی بی‌سابقه‌ اقتصاد ایران؛ مسیر متفاوت نرخ دولتی و آزاد ارز
-https://daq1pvcuhj77l.cloudfront.net/1/0c39207d87704dd48224a9ad58d0e85d/hls/4dcaa761-ad7d-4dff-85f6-1ac0732d17a8.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f793bfed55814e408fdd100502e3212a/f9670588-4215-4ec7-821b-df1a8780e4b3_thumb_001_HD.jpg",اقتصاد و بازار: وضعیت بحرانی تولید و صادرات نفت ایران؛ کالابرگ و افزایش نرخ دولتی ارز
+https://daq1pvcuhj77l.cloudfront.net/1/f793bfed55814e408fdd100502e3212a/hls/f9670588-4215-4ec7-821b-df1a8780e4b3.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/aca0b39e163f40f9b3242b900395b36b/9d0303e4-2168-438e-bac4-324846bdb6e1_thumb_001_HD.jpg",گزارش روز مجتبا پورمحسن: افشای هویت فرمانده جدید یگان ترور سپاه بعد از ضربه موساد
-https://daq1pvcuhj77l.cloudfront.net/1/aca0b39e163f40f9b3242b900395b36b/hls/9d0303e4-2168-438e-bac4-324846bdb6e1.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d16b3028de0842de92d767ffec640489/aa9da91a-46fe-4fd2-a717-8e4cafca285a_thumb_001_HD.jpg",برگزاری چهارمین جلسه دادگاه مهران محققی، متهم به حمله با خودرو به معترضان ایرانی در کانادا
+https://daq1pvcuhj77l.cloudfront.net/1/d16b3028de0842de92d767ffec640489/hls/aa9da91a-46fe-4fd2-a717-8e4cafca285a.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6fb3e07310a247a09d849254a7538ea5/b9a0d181-af47-4b30-b22b-e1c84b80234f_thumb_001_HD.jpg",افشای هویت فرمانده جدید یگان ترور سپاه پاسداران؛ احیای واحد ۸۴۰ پس از ضربات موساد
-https://daq1pvcuhj77l.cloudfront.net/1/6fb3e07310a247a09d849254a7538ea5/hls/b9a0d181-af47-4b30-b22b-e1c84b80234f.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/15587038901d450f83f924740b37e252/7875120e-e899-4dbc-af48-ef115ca9ef80_thumb_001_HD.jpg",منچسترسیتی میزبان پاری‌سن‌ژرمن در لیگ قهرمانان اروپا
+https://daq1pvcuhj77l.cloudfront.net/1/15587038901d450f83f924740b37e252/hls/7875120e-e899-4dbc-af48-ef115ca9ef80.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/49d155f5ae53444dbe2327b7525f7d47/09ce3fce-1af8-46da-90d6-2d0672d2faf6_thumb_001_HD.jpg",افشای هویت فرمانده جدید یگان ترور سپاه پاسداران؛ احیای واحد ۸۴۰ پس از ضربات موساد
-https://daq1pvcuhj77l.cloudfront.net/1/49d155f5ae53444dbe2327b7525f7d47/hls/09ce3fce-1af8-46da-90d6-2d0672d2faf6.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a5fc33912e2b47ba82805125bcedac24/6b07a79d-d143-434f-9820-4162f6434c58_thumb_001_HD.jpg",گزارش روز با مجتبا پورمحسن: توافق ترامپ و نتانیاهو بر سر زمان حمله به ایران
+https://daq1pvcuhj77l.cloudfront.net/1/a5fc33912e2b47ba82805125bcedac24/hls/6b07a79d-d143-434f-9820-4162f6434c58.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0cfc5a433209433ab73dfc570e103b5d/51b2ad4e-f015-4575-9f85-096c678c09a2_thumb_001_HD.jpg",اخبار شبانگاهی | سه‌شنبه ۲۱ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/0cfc5a433209433ab73dfc570e103b5d/hls/51b2ad4e-f015-4575-9f85-096c678c09a2.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1752da58fc0c43e498500daa52e82106/84396c0b-53db-433f-920f-a92be3c73001_thumb_001_HD.jpg",پایان صبر ترامپ در برابر جمهوری اسلامی؛ نتانیاهو از تاریخ حمله به ایران و سرنگونی رژیم گفت
+https://daq1pvcuhj77l.cloudfront.net/1/1752da58fc0c43e498500daa52e82106/hls/84396c0b-53db-433f-920f-a92be3c73001.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/667d521c41ae4f45bb5ccb83b8d2d216/50515e72-7327-4eb3-86b6-261071ab946e_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲۱ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/667d521c41ae4f45bb5ccb83b8d2d216/hls/50515e72-7327-4eb3-86b6-261071ab946e.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7f90223009d147b8af46fa6fb1a91e3b/b026aa2e-3277-40c9-a043-e83beffe80cc_thumb_001_HD.jpg",اخبار شبانگاهی | چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/7f90223009d147b8af46fa6fb1a91e3b/hls/b026aa2e-3277-40c9-a043-e83beffe80cc.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4e7e5f7532a748d382ed6681ac0fd4cb/e93667ea-1d68-4dde-85b6-07c51b093308_thumb_001_HD.jpg",بی‌توجهی صنایع خوزستان به استخدام نیروهای بومی و گسترش فقر در این استان
-https://daq1pvcuhj77l.cloudfront.net/1/4e7e5f7532a748d382ed6681ac0fd4cb/hls/e93667ea-1d68-4dde-85b6-07c51b093308.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0fa9c562e69342ba9d65747951c52a78/7babcf6d-9dd6-4eef-b378-4d24905a9353_thumb_001_HD.jpg",دونالد ترامپ از احتمال اقدام شدیدتر علیه جمهوری اسلامی خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/0fa9c562e69342ba9d65747951c52a78/hls/7babcf6d-9dd6-4eef-b378-4d24905a9353.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/91d5730136a34680a1b9b4271e133601/c298469d-d870-400a-9990-9ac86a1164dd_thumb_001_HD.jpg",ارتباط سامانه مروج کودک‌همسری و همسریابی با چهره‌های نزدیک به قالیباف و مجتبی خامنه‌ای
-https://daq1pvcuhj77l.cloudfront.net/1/91d5730136a34680a1b9b4271e133601/hls/c298469d-d870-400a-9990-9ac86a1164dd.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/32cf3f2ab13646dabceb22abee9ae70a/4168ead7-4556-4c62-bba1-51e8503053ad_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/32cf3f2ab13646dabceb22abee9ae70a/hls/4168ead7-4556-4c62-bba1-51e8503053ad.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/30cfe83e5e8d4c518dc4f8993d4b7c83/8b2c27ef-3eb5-47e0-9377-3028005f0764_thumb_001_HD.jpg",واکنش رسانه‌های نوردیک به فعالیت‌های امنیتی جمهوری اسلامی در اروپا
-https://daq1pvcuhj77l.cloudfront.net/1/30cfe83e5e8d4c518dc4f8993d4b7c83/hls/8b2c27ef-3eb5-47e0-9377-3028005f0764.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1a0617c230994257a548dd6ca4066b8d/82a40aa8-02b3-4303-97f1-3c79e72162be_thumb_001_HD.jpg",آغاز محاکمه متهم پرونده انفجار خطوط لوله نورد استریم در هامبورگ
+https://daq1pvcuhj77l.cloudfront.net/1/1a0617c230994257a548dd6ca4066b8d/hls/82a40aa8-02b3-4303-97f1-3c79e72162be.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fd4759dc6bde4b0981470aa9b7566237/875d18ae-13cb-416c-a2b3-103e89ec22a0_thumb_001_HD.jpg",بریتانیا درباره تهدیدهای امنیتی جمهوری اسلامی هشدار داد
-https://daq1pvcuhj77l.cloudfront.net/1/fd4759dc6bde4b0981470aa9b7566237/hls/875d18ae-13cb-416c-a2b3-103e89ec22a0.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c041299eff804b2181a7fb0691c310f9/27e2d7e0-d36c-4dc2-9252-5b2194c06abf_thumb_001_HD.jpg",افزایش حملات مسلحانه علیه جمهوری اسلامی در سیستان و بلوچستان
+https://daq1pvcuhj77l.cloudfront.net/1/c041299eff804b2181a7fb0691c310f9/hls/27e2d7e0-d36c-4dc2-9252-5b2194c06abf.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bbb5ee13ce1e49b0ae702fe986f389e1/c8d5e187-372d-439f-bede-8432f4f04556_thumb_001_HD.jpg",واکنش کاربران شبکه‌های اجتماعی به اظهارات حجت‌الله عبدالملکی درباره بحران اقتصادی ایران
-https://daq1pvcuhj77l.cloudfront.net/1/bbb5ee13ce1e49b0ae702fe986f389e1/hls/c8d5e187-372d-439f-bede-8432f4f04556.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/64ace0929d0b4d3ca65e708ff63a6518/02ab9e6e-fbe9-4ee6-a6bb-836438ccfc37_thumb_001_HD.jpg",افزایش فشار بر خانواده‌های دادخواه؛ سنگ مزار سامان دلارام شکسته شد
+https://daq1pvcuhj77l.cloudfront.net/1/64ace0929d0b4d3ca65e708ff63a6518/hls/02ab9e6e-fbe9-4ee6-a6bb-836438ccfc37.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5348bddc3b334c029fb829b4b9ab5170/90156f31-7b45-4359-8627-3201996526e3_thumb_001_HD.jpg",حذف بیش از نیمی از مردم از طرح افزایش اعتبار کالابرگ الکترونیکی
-https://daq1pvcuhj77l.cloudfront.net/1/5348bddc3b334c029fb829b4b9ab5170/hls/90156f31-7b45-4359-8627-3201996526e3.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1ea7f4b8570b4b12837e36e101be3f26/db0b1c7c-29df-41ba-b44c-867d0ac0968f_thumb_001_HD.jpg",گمانه‌زنی‌ها درباره احتمال حملات جمهوری اسلامی و نیروهای نیابتی‌اش به اسرائیل
+https://daq1pvcuhj77l.cloudfront.net/1/1ea7f4b8570b4b12837e36e101be3f26/hls/db0b1c7c-29df-41ba-b44c-867d0ac0968f.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b1501494c6394675b94c9facf92a8384/0f037445-94f9-45d2-8b91-ded254e5e560_thumb_001_HD.jpg",دستور بانک مرکزی ایران برای محدود کردن خدمات بانکی به پنج صرافی بزرگ رمزارز
-https://daq1pvcuhj77l.cloudfront.net/1/b1501494c6394675b94c9facf92a8384/hls/0f037445-94f9-45d2-8b91-ded254e5e560.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/59b0c6cb91bc498498b757946b5227f5/95efe52c-47b3-40b9-b3a0-9ebe6a0c9d4a_thumb_001_HD.jpg",واکنش کاربران شبکه‌های اجتماعی به اعدام علی‌سینا مصطفوی
+https://daq1pvcuhj77l.cloudfront.net/1/59b0c6cb91bc498498b757946b5227f5/hls/95efe52c-47b3-40b9-b3a0-9ebe6a0c9d4a.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3fe69fd6a28f48fc9f92c14434c94277/0c5b0ec8-9812-4ba0-a91e-59f88a843af0_thumb_001_HD.jpg",جزییات تازه از درگیری نیروهای سپاه پاسداران و افراد مسلح در سیستان‌وبلوچستان
-https://daq1pvcuhj77l.cloudfront.net/1/3fe69fd6a28f48fc9f92c14434c94277/hls/0c5b0ec8-9812-4ba0-a91e-59f88a843af0.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cca314894b0449d1999c0be0db31c30d/4eceb276-edac-4ed0-97a1-a7a76cdbf3d7_thumb_001_HD.jpg",دفاعیات متهم به اقدام امنیتی علیه خبرنگاران ایران‌اینترنشنال در دادگاه لندن
+https://daq1pvcuhj77l.cloudfront.net/1/cca314894b0449d1999c0be0db31c30d/hls/4eceb276-edac-4ed0-97a1-a7a76cdbf3d7.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/12a3f827c3704470940f7105fac31f46/50ad154c-17bc-427d-ac14-b0ec7253e632_thumb_001_HD.jpg",تاکید ترامپ بر تاثیر نداشتن انتخابات میان‌دوره‌ای آمریکا بر رویکردش در جنگ با ایران
-https://daq1pvcuhj77l.cloudfront.net/1/12a3f827c3704470940f7105fac31f46/hls/50ad154c-17bc-427d-ac14-b0ec7253e632.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ceae44f6db464072b6e3d107dad31d05/19fc88be-0f54-4e26-afde-65598dad3c8a_thumb_001_HD.jpg",علی شیرازی: حملات به حسن روحانی ریشه در اختلاف بر سر مذاکره با آمریکا دارد
+https://daq1pvcuhj77l.cloudfront.net/1/ceae44f6db464072b6e3d107dad31d05/hls/19fc88be-0f54-4e26-afde-65598dad3c8a.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fd179e411f764256a55374f33c0c7cd1/18b793ac-7883-4176-9508-8b9babb01e0d_thumb_001_HD.jpg",هشدار صدراعظم آلمان به جمهوری اسلامی و حوثی‌ها برای پایان دادن به تنش‌ها 
-https://daq1pvcuhj77l.cloudfront.net/1/fd179e411f764256a55374f33c0c7cd1/hls/18b793ac-7883-4176-9508-8b9babb01e0d.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8b0c86bd3da7471688fce12be1ed2115/d66e6577-7c5d-44eb-b43c-27fb54fef792_thumb_001_HD.jpg",تایید وضعیت بحرانی فروش نفت ایران از سوی معاون پزشکیان
+https://daq1pvcuhj77l.cloudfront.net/1/8b0c86bd3da7471688fce12be1ed2115/hls/d66e6577-7c5d-44eb-b43c-27fb54fef792.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e78374e506824c1fa5da7d784abb8f3f/729a6607-537d-4ca9-8005-87d26e986b03_thumb_001_HD.jpg",هفته دوم لیگ نخبگان آسیا؛ استقلال به دومین پیروزی پیاپی رسید، تراکتور مساوی کرد
-https://daq1pvcuhj77l.cloudfront.net/1/e78374e506824c1fa5da7d784abb8f3f/hls/729a6607-537d-4ca9-8005-87d26e986b03.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c941ecd2e54c4edb9ddb2de48ecdb3ee/5654f9e2-a039-4a7c-a5bf-14a9c765497f_thumb_001_HD.jpg",پیروزی بارسلونا در استانبول؛ گالاتاسارای ۲۵۰ میلیون لیر از هواداران درآمد کسب کرد
+https://daq1pvcuhj77l.cloudfront.net/1/c941ecd2e54c4edb9ddb2de48ecdb3ee/hls/5654f9e2-a039-4a7c-a5bf-14a9c765497f.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/6d71848d60734feab8e650e986d4a0d5/4298a10a-b148-4858-877e-93bac241436e_thumb_001_HD.jpg",انتخابات اسرائیل؛ آینده سیاسی نتانیاهو در ابهام 
-https://daq1pvcuhj77l.cloudfront.net/1/6d71848d60734feab8e650e986d4a0d5/hls/4298a10a-b148-4858-877e-93bac241436e.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/80b91985e0364f699e13ee298b38b6bd/53d8dd83-8828-4352-b73e-238d09aa7ad0_thumb_001_HD.jpg",دیدار پرسپولیس و خیبر به یاد اکبر حمزه‌حسینی؛ هواداری که عاشق هر دو تیم بود
+https://daq1pvcuhj77l.cloudfront.net/1/80b91985e0364f699e13ee298b38b6bd/hls/53d8dd83-8828-4352-b73e-238d09aa7ad0.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/700b144c59624bb1b52e9adc8de90a85/f302d837-77db-48b4-a375-f86f455531a2_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، سه‌شنبه ۲۱ مهر با مجتبی هاشمی
-https://daq1pvcuhj77l.cloudfront.net/1/700b144c59624bb1b52e9adc8de90a85/hls/f302d837-77db-48b4-a375-f86f455531a2.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ca1bec9b22224579a0bffa4207ff92dd/9abd27d3-a5e8-4667-afda-e151eddd3e29_thumb_001_HD.jpg",اخبار نیمروزی | چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/ca1bec9b22224579a0bffa4207ff92dd/hls/9abd27d3-a5e8-4667-afda-e151eddd3e29.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7d672de87e584eab8f50b70e7c57b7e8/cf1cda24-b197-4ee3-abbb-0c2f243f2c39_thumb_001_HD.jpg",قاضی‌زاده: جمهوری اسلامی می‌تواند از طولانی شدن جنگ برای بازیابی توان خود استفاده کند
-https://daq1pvcuhj77l.cloudfront.net/1/7d672de87e584eab8f50b70e7c57b7e8/hls/cf1cda24-b197-4ee3-abbb-0c2f243f2c39.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e5ec41a780d24b27875a59acc517ba6d/e1baa20b-fc80-44d4-980a-631b2dd15337_thumb_001_HD.jpg",انتشار تصاویر مزار علیرضا رئیسی؛ مردم محلی محل دفن او را به خانواده‌اش اطلاع دادند
+https://daq1pvcuhj77l.cloudfront.net/1/e5ec41a780d24b27875a59acc517ba6d/hls/e1baa20b-fc80-44d4-980a-631b2dd15337.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8fae78386cb54a588222ab5191b2082f/421e43db-b7af-45aa-8f20-13694f360aca_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲۱ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/8fae78386cb54a588222ab5191b2082f/hls/421e43db-b7af-45aa-8f20-13694f360aca.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2e86743be70b4a76b42dd0b76ca8c595/6ef42e2a-e9d4-42a9-853a-fc5f61e9d415_thumb_001_HD.jpg",کشته شدن دو عضو نیروهای نظامی جمهوری اسلامی در حملات مسلحانه در سیستان‌وبلوچستان
+https://daq1pvcuhj77l.cloudfront.net/1/2e86743be70b4a76b42dd0b76ca8c595/hls/6ef42e2a-e9d4-42a9-853a-fc5f61e9d415.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a5c2676b553d4214b2e075bd09f16284/2b6b989c-3c0f-49a0-aee3-c793d5241478_thumb_001_HD.jpg",گزارش هاآرتص از تلاش نتانیاهو برای مشارکت اسرائیل در عملیات نظامی علیه حوثی‌های یمن
-https://daq1pvcuhj77l.cloudfront.net/1/a5c2676b553d4214b2e075bd09f16284/hls/2b6b989c-3c0f-49a0-aee3-c793d5241478.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0ff018117be743c28b982b2fee4c7870/9376e353-6880-4077-96b3-742a6ea09de4_thumb_001_HD.jpg",مروری بر روزنامه‌های ایران، چهارشنبه ۲۲ مهر با مجتبی هاشمی
+https://daq1pvcuhj77l.cloudfront.net/1/0ff018117be743c28b982b2fee4c7870/hls/9376e353-6880-4077-96b3-742a6ea09de4.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c5046d2365de4a5fa8a82e23e11edfe6/912ff332-25c5-439e-9dbc-09d8f0e42aa0_thumb_001_HD.jpg",ادامه اعتراضات دانش‌آموزی در فرانسه همزمان با واکنش حکومت ایران
-https://daq1pvcuhj77l.cloudfront.net/1/c5046d2365de4a5fa8a82e23e11edfe6/hls/912ff332-25c5-439e-9dbc-09d8f0e42aa0.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/55e1872e20c44a8089a88de2bf1da175/4320b92d-40a5-4c57-a279-fef420d62331_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/55e1872e20c44a8089a88de2bf1da175/hls/4320b92d-40a5-4c57-a279-fef420d62331.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2af2311b306943c28cacfe0876d8d62c/3afbe81c-ebb0-4bb5-a9c6-003984b4ce82_thumb_001_HD.jpg",روایت مخاطبان ایران‌اینترنشنال از گرانی، رکود کسب‌وکارها و پرداخت نشدن بیمه بیکاری
-https://daq1pvcuhj77l.cloudfront.net/1/2af2311b306943c28cacfe0876d8d62c/hls/3afbe81c-ebb0-4bb5-a9c6-003984b4ce82.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/391b1675842944b1b1a51a033e02e1f8/de5f6783-4d53-4a4d-98cd-046064695cf6_thumb_001_HD.jpg",علی‌حسین قاضی‌زاده: جمهوری اسلامی برای افزایش قیمت نفت دامنه حملات خود را گسترش می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/391b1675842944b1b1a51a033e02e1f8/hls/de5f6783-4d53-4a4d-98cd-046064695cf6.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/66eee90da74143718f2b1ef7aac85f03/ceec2744-dee1-4d16-a846-48b81ce9cb58_thumb_001_HD.jpg",سی‌ودو کشور جهان نقش احتمالی سپاه در طرح حمله به پایگاه فرفورد را محکوم کردند
-https://daq1pvcuhj77l.cloudfront.net/1/66eee90da74143718f2b1ef7aac85f03/hls/ceec2744-dee1-4d16-a846-48b81ce9cb58.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d9db05e43842440eb036da0924557f98/8d211f13-355e-43e2-8687-52106c4141b9_thumb_001_HD.jpg",گفت‌وگوی ترامپ و نتانیاهو درباره حمله نظامی گسترده جدید به جمهوری اسلامی
+https://daq1pvcuhj77l.cloudfront.net/1/d9db05e43842440eb036da0924557f98/hls/8d211f13-355e-43e2-8687-52106c4141b9.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/70fd9fe9993f43d9995a33ae336ae53f/9a8f9ac6-b876-48cf-91f6-244e4af3a37a_thumb_001_HD.jpg",درگیری سنگین سپاه پاسداران با افراد مسلح در کوه‌های تفتان
-https://daq1pvcuhj77l.cloudfront.net/1/70fd9fe9993f43d9995a33ae336ae53f/hls/9a8f9ac6-b876-48cf-91f6-244e4af3a37a.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a031e41ccf60428986fce36696800f4f/bf144092-bb90-4ebd-8b3a-c3fa56b15fbd_thumb_001_HD.jpg",انتقاد زلنسکی از متحدان غربی به‌دلیل ندادن هشدار درباره حملات موشکی روسیه
+https://daq1pvcuhj77l.cloudfront.net/1/a031e41ccf60428986fce36696800f4f/hls/bf144092-bb90-4ebd-8b3a-c3fa56b15fbd.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5224682c228841f5a12fbe7aff9f3cbd/54d677f6-9d9f-4538-81d6-66d9ed9620c9_thumb_001_HD.jpg",استقرار نیروهای ویژه در میمه پس از سرکوب اعتراض‌ها به تغییر نام در این شهرستان
-https://daq1pvcuhj77l.cloudfront.net/1/5224682c228841f5a12fbe7aff9f3cbd/hls/54d677f6-9d9f-4538-81d6-66d9ed9620c9.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b4d7aeea66504adc91c5d58429778593/257478d9-45cf-43ed-8714-adfa52cb4c70_thumb_001_HD.jpg",مرتضی کاظمیان: ایران در برابر جنگی سرنوشت‌ساز قرار دارد
+https://daq1pvcuhj77l.cloudfront.net/1/b4d7aeea66504adc91c5d58429778593/hls/257478d9-45cf-43ed-8714-adfa52cb4c70.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/dbf1deb675fe447e848cc17a710238b4/04b46981-7c24-4fde-a464-f5655e4e696e_thumb_001_HD.jpg",اتحادیه اروپا بزرگ‌ترین بسته تحریمی علیه صنایع نظامی روسیه را اعمال کرد
-https://daq1pvcuhj77l.cloudfront.net/1/dbf1deb675fe447e848cc17a710238b4/hls/04b46981-7c24-4fde-a464-f5655e4e696e.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/2cc0350e6a964c4289474278539913c9/acdbb3d6-fced-4469-946c-57b5b7fd54e5_thumb_001_HD.jpg",روایت مخاطبان ایران‌اینترنشنال درباره بهره‌کشی از معلمان و کادر درمان با حقوق ناچیز
+https://daq1pvcuhj77l.cloudfront.net/1/2cc0350e6a964c4289474278539913c9/hls/acdbb3d6-fced-4469-946c-57b5b7fd54e5.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a29e1c9934df4e3597cc8c8a24f47353/cd66d64b-4401-4ea1-8ee6-0e1319c75dca_thumb_001_HD.jpg",پاکستان و ترکیه حملات حوثی‌ها به عربستان را محکوم کردند
-https://daq1pvcuhj77l.cloudfront.net/1/a29e1c9934df4e3597cc8c8a24f47353/hls/cd66d64b-4401-4ea1-8ee6-0e1319c75dca.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/5c49f53b1966468297a60db8db80de99/6313cbc1-312c-42a7-a3dc-adef55a988a0_thumb_001_HD.jpg",علی‌سینا مصطفوی با اتهام تلاش برای بازگشت شاهزاده رضا پهلوی به ایران اعدام شد
+https://daq1pvcuhj77l.cloudfront.net/1/5c49f53b1966468297a60db8db80de99/hls/6313cbc1-312c-42a7-a3dc-adef55a988a0.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3b15c05b8f1e460d903f845fa1f99288/68d0c9e9-6129-4c4e-8b17-beffd1bc0e1e_thumb_001_HD.jpg",روح‌الله رحیم‌پور: مهار حوثی‌ها برای اسرائیل اهمیت امنیتی و اقتصادی دارد
-https://daq1pvcuhj77l.cloudfront.net/1/3b15c05b8f1e460d903f845fa1f99288/hls/68d0c9e9-6129-4c4e-8b17-beffd1bc0e1e.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/bc8f619f529a4bf9854788551073cdbb/8d28296e-001c-4d89-98a4-8dd26738d3f2_thumb_001_HD.jpg",نفت ایران از مدار قدرت سپاه تا منافع چین
+https://daq1pvcuhj77l.cloudfront.net/1/bc8f619f529a4bf9854788551073cdbb/hls/8d28296e-001c-4d89-98a4-8dd26738d3f2.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e896f9aa90d949a9b452aa92773f5dca/bbfd470e-10de-45e5-aae7-101bd26392d4_thumb_001_HD.jpg",مرتضی کاظمیان: ترامپ همچنان به دنبال توافق با بخشی از حاکمیت جمهوری اسلامی است
-https://daq1pvcuhj77l.cloudfront.net/1/e896f9aa90d949a9b452aa92773f5dca/hls/bbfd470e-10de-45e5-aae7-101bd26392d4.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f51008d56371408f894d424e7109f57b/ab61bd7f-f19b-4a65-a62c-8ddc02ac22af_thumb_001_HD.jpg",واتیکان از ابتلا پاپ لئو چهاردهم به سرطان ریه خبر داد
+https://daq1pvcuhj77l.cloudfront.net/1/f51008d56371408f894d424e7109f57b/hls/ab61bd7f-f19b-4a65-a62c-8ddc02ac22af.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/708072fcb9474bddb25232801f2f2fa2/4041a0c9-9981-490f-89e7-27b2b58a376b_thumb_001_HD.jpg",محکومیت اقدامات خشونت‌آمیز و سایبری جمهوری اسلامی از سوی ۳۲ کشور
-https://daq1pvcuhj77l.cloudfront.net/1/708072fcb9474bddb25232801f2f2fa2/hls/4041a0c9-9981-490f-89e7-27b2b58a376b.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/abdd9d253d96413eb54e684ec3890d94/3192664e-8262-430a-b9e3-d66f7db3d371_thumb_001_HD.jpg",برگزاری نمایشگاه «رویاها در گسست» با آثار افشین ناغونی در لندن
+https://daq1pvcuhj77l.cloudfront.net/1/abdd9d253d96413eb54e684ec3890d94/hls/3192664e-8262-430a-b9e3-d66f7db3d371.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b6eba4b94cc74d8ea576248365b94b95/0e5bd85f-cb36-45df-8624-2a738aab850f_thumb_001_HD.jpg",اخبار بامدادی | سه‌شنبه ۲۱ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/b6eba4b94cc74d8ea576248365b94b95/hls/0e5bd85f-cb36-45df-8624-2a738aab850f.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3dcef5a2255f479cbc03571eaf2349cd/05e976b7-814f-476d-8cdd-d31625fd230a_thumb_001_HD.jpg",حوثی‌ها با قطعات چینی موشکی پیشرفته می‌سازند
+https://daq1pvcuhj77l.cloudfront.net/1/3dcef5a2255f479cbc03571eaf2349cd/hls/05e976b7-814f-476d-8cdd-d31625fd230a.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e01184c27f2946e28febb5f73c62b291/c376b87f-6900-4c86-96a6-c8fd649b6548_thumb_001_HD.jpg",بازرسی خانه ایلهان عمر، نماینده دموکرات آمریکا در ارتباط با تحقیقات مدارک مهاجرتی
-https://daq1pvcuhj77l.cloudfront.net/1/e01184c27f2946e28febb5f73c62b291/hls/c376b87f-6900-4c86-96a6-c8fd649b6548.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/399f85fbf2ec461ea0340624c9b36fca/7be8186a-56b6-4844-bbc3-0699771af0d0_thumb_001_HD.jpg",ترامپ احتمال درخواست کمک از ترکیه برای حمایت از عربستان را مطرح کرد
+https://daq1pvcuhj77l.cloudfront.net/1/399f85fbf2ec461ea0340624c9b36fca/hls/7be8186a-56b6-4844-bbc3-0699771af0d0.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4f36ba981a6549a7bef559443120eb78/a918e085-db40-4f41-9fa3-3c411df11997_thumb_001_HD.jpg",شهرام خلدی: احتمال همکاری نظامی اسرائیل و عربستان علیه حوثی‌ها وجود دارد
-https://daq1pvcuhj77l.cloudfront.net/1/4f36ba981a6549a7bef559443120eb78/hls/a918e085-db40-4f41-9fa3-3c411df11997.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f3af246b64ed45d2b8b8bb329f2e91fe/35baad98-246b-4581-ae0c-31687a64775e_thumb_001_HD.jpg",محمدجواد اکبرین: ائتلاف عربی و ارتش یمن دست برتر را در برابر حوثی‌ها دارند
+https://daq1pvcuhj77l.cloudfront.net/1/f3af246b64ed45d2b8b8bb329f2e91fe/hls/35baad98-246b-4581-ae0c-31687a64775e.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f80ad867ff6f484f95f349ea775b9b46/ea1ec022-c636-4d13-96b6-3d9903d1947e_thumb_001_HD.jpg",صادق بیگدلی: ترامپ با حفظ فشار نظامی و اقتصادی به‌دنبال تغییر موازنه قدرت در تهران است
-https://daq1pvcuhj77l.cloudfront.net/1/f80ad867ff6f484f95f349ea775b9b46/hls/ea1ec022-c636-4d13-96b6-3d9903d1947e.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/fdb05667153e462a9c29b70b7b6c670f/0e70d372-86f3-4f62-a494-2a647310327b_thumb_001_HD.jpg",احمد علوی: دستمزد کارگران فقط یک‌پنجم هزینه واقعی زندگی را پوشش می‌دهد
+https://daq1pvcuhj77l.cloudfront.net/1/fdb05667153e462a9c29b70b7b6c670f/hls/0e70d372-86f3-4f62-a494-2a647310327b.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/3cc18ea31d4a48baa3fdb7d32901f95a/c0368d5a-1090-4c49-a4d2-cb44a085c1c3_thumb_001_HD.jpg",افزایش اختلاف تهران و واشینگتن همزمان با ادامه بحث توافق
-https://daq1pvcuhj77l.cloudfront.net/1/3cc18ea31d4a48baa3fdb7d32901f95a/hls/c0368d5a-1090-4c49-a4d2-cb44a085c1c3.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/02ea8d3f677d40fcb3ae5d9697d680ac/416584e9-d3d3-43ab-b9df-b082e101194d_thumb_001_HD.jpg",آر جی میته، بازیگر سریال «بریکینگ بد»، در ۳۴ سالگی درگذشت
+https://daq1pvcuhj77l.cloudfront.net/1/02ea8d3f677d40fcb3ae5d9697d680ac/hls/416584e9-d3d3-43ab-b9df-b082e101194d.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/c488e4b241c6401f9505fd7e9e721b5c/af8ef61b-38dc-4499-a5e2-2dffd5e8d159_thumb_001_HD.jpg",سرخط خبرهای سه‌شنبه ۲۱ مهر
-https://daq1pvcuhj77l.cloudfront.net/1/c488e4b241c6401f9505fd7e9e721b5c/hls/af8ef61b-38dc-4499-a5e2-2dffd5e8d159.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/a46330ba654649528bcc871ad9227524/266f0076-915d-4a20-ae7a-e43629a04564_thumb_001_HD.jpg",اخبار بامدادی | چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/a46330ba654649528bcc871ad9227524/hls/266f0076-915d-4a20-ae7a-e43629a04564.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/d0e42385118d477d8f45db997142ec4e/94c83d54-3834-4f99-873b-734b8bc7e1fe_thumb_001_HD.jpg",ساختار مخفی جمهوری اسلامی برای ربایش و ترور مخالفان
-https://daq1pvcuhj77l.cloudfront.net/1/d0e42385118d477d8f45db997142ec4e/hls/94c83d54-3834-4f99-873b-734b8bc7e1fe.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/8d22802eeb1b4d8ead111c20949e7bae/f5684ee2-5866-48ce-aa00-fa1233396642_thumb_001_HD.jpg",سرخط خبرهای چهارشنبه ۲۲ مهر
+https://daq1pvcuhj77l.cloudfront.net/1/8d22802eeb1b4d8ead111c20949e7bae/hls/f5684ee2-5866-48ce-aa00-fa1233396642.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/0e564cd9f7c541f0bf2efc9fc0072a19/bfd918af-5476-449b-ad2d-b524aafc0f74_thumb_001_HD.jpg",نخست‌وزیر بریتانیا: طرح حمله به پایگاه فرفورد به دستور سپاه انجام شد
-https://daq1pvcuhj77l.cloudfront.net/1/0e564cd9f7c541f0bf2efc9fc0072a19/hls/bfd918af-5476-449b-ad2d-b524aafc0f74.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/57a995528c624f8583983b9aa61e8b35/aa117c8b-795c-48a5-add1-db4cdbb1c668_thumb_001_HD.jpg",نمایش فیلم «خانه دوست اینجاست» در جشنواره فیلم لندن
+https://daq1pvcuhj77l.cloudfront.net/1/57a995528c624f8583983b9aa61e8b35/hls/aa117c8b-795c-48a5-add1-db4cdbb1c668.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e53f7af5d2244dd1b8ae85fffeb3f522/0ef65958-bf9e-400d-9822-f55e42bb6ca9_thumb_001_HD.jpg",آیدین پناهی: کاهش تزریق گاز می‌تواند تولید نفت ایران را برای سال‌ها کاهش دهد
-https://daq1pvcuhj77l.cloudfront.net/1/e53f7af5d2244dd1b8ae85fffeb3f522/hls/0ef65958-bf9e-400d-9822-f55e42bb6ca9.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/9bf455f2f186428bac36030857276a6f/46b7fb9f-eb55-43d7-a7aa-a104685ba0df_thumb_001_HD.jpg",ترانه رحیمی، معترض محکوم به اعدام، در زندان از دریافت غذا محروم شد
+https://daq1pvcuhj77l.cloudfront.net/1/9bf455f2f186428bac36030857276a6f/hls/46b7fb9f-eb55-43d7-a7aa-a104685ba0df.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/98866ac0e0f642d8955d3bc3871418c2/26681821-f76d-4b9e-b54b-f106066a9cdd_thumb_001_HD.jpg",کامیار بهرنگ: دعوای جلیلی و پزشکیان بر سر میراث خامنه‌ای است
-https://daq1pvcuhj77l.cloudfront.net/1/98866ac0e0f642d8955d3bc3871418c2/hls/26681821-f76d-4b9e-b54b-f106066a9cdd.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ae00355d32ce484a96506a479302868c/0ecdd53d-051f-4c81-8e97-d74a37aeccb6_thumb_001_HD.jpg",نوید محبی: احتمال حملات سنگین آمریکا و اسرائیل به جمهوری اسلامی افزایش یافته است
+https://daq1pvcuhj77l.cloudfront.net/1/ae00355d32ce484a96506a479302868c/hls/0ecdd53d-051f-4c81-8e97-d74a37aeccb6.m3u8
 
-#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/30fad5462eb74779a71d2ee82f96214f/50360575-8680-46e0-a56b-e02f2e4cdf5b_thumb_001_HD.jpg",احمد باطبی: ضعف تجهیزات و نفوذ انسانی امنیت جمهوری اسلامی را آسیب‌پذیر کرده است
-https://daq1pvcuhj77l.cloudfront.net/1/30fad5462eb74779a71d2ee82f96214f/hls/50360575-8680-46e0-a56b-e02f2e4cdf5b.m3u8
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/ab937bae0a6b4022af705b76961367f4/bbba5de3-00b5-4c38-9c3c-8d9cb176848d_thumb_001_HD.jpg",شهرام خلدی: ایدئولوژی انقلابی جمهوری اسلامی دیگر توان بسیج نیروهایش را ندارد
+https://daq1pvcuhj77l.cloudfront.net/1/ab937bae0a6b4022af705b76961367f4/hls/bbba5de3-00b5-4c38-9c3c-8d9cb176848d.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/4a32ab6860f94760b561f491e80692f1/22c675ad-07a1-432c-9645-1d6f43c7c189_thumb_001_HD.jpg",شایان سمیعی: ترور در نگاه فرماندهی جمهوری اسلامی ابزاری کنارگذاشتنی نیست
+https://daq1pvcuhj77l.cloudfront.net/1/4a32ab6860f94760b561f491e80692f1/hls/22c675ad-07a1-432c-9645-1d6f43c7c189.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/65de9c1277e34ad1946c9f6ac344a626/77b5e32f-3de8-408b-ab94-82bfee7421d0_thumb_001_HD.jpg",رضا عرب: فشار نظامی و اقتصادی آمریکا اهرم‌های منطقه‌ای جمهوری اسلامی را تضعیف کرده است
+https://daq1pvcuhj77l.cloudfront.net/1/65de9c1277e34ad1946c9f6ac344a626/hls/77b5e32f-3de8-408b-ab94-82bfee7421d0.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/56025cbed98b4718bf0ec67b1842824d/06d47375-befa-40af-b7b3-9a6dc9a35873_thumb_001_HD.jpg",ترامپ گزینه نظامی علیه جمهوری اسلامی را جدی‌تر از قبل بررسی می‌کند
+https://daq1pvcuhj77l.cloudfront.net/1/56025cbed98b4718bf0ec67b1842824d/hls/06d47375-befa-40af-b7b3-9a6dc9a35873.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7b9d9fb2c2194f98b72f65522d1bf4f2/0fc8fc6b-a9e9-4aff-b054-88fc697f44c0_thumb_001_HD.jpg",تشدید درگیری عربستان سعودی و حوثی‌ها هم‌زمان با افزایش فشار بر واشینگتن
+https://daq1pvcuhj77l.cloudfront.net/1/7b9d9fb2c2194f98b72f65522d1bf4f2/hls/0fc8fc6b-a9e9-4aff-b054-88fc697f44c0.m3u8
 
 #EXTINF:-1 tvg-id="sepehrvod348978" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۸
 #EXTVLCOPT:network-caching=2000
