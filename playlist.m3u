@@ -2628,15 +2628,6 @@ https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cff7c0/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cff79d/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/a5c9a845-8173-49ff-9ed2-b977a903374d/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",روی خط خبر - هفدهمین اجلاس کشورهای عضو کنوانسیون تنوع زیستی - 24 مهر 1405 • 10/16 14:12
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cff720/master.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/06c2f0d9-6723-481d-8290-c52b93140a5a/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت  10:30 - 24 مهر 1405 • 10/16 14:00
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -2672,6 +2663,15 @@ https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cff692/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cff65a/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/728d2669-4f1a-4a12-9985-fe0eb4929194/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",نبرد هرمز - 24 مهر 1405 - حسین حاجی • 10/16 12:40
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16cff647/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/dc91a532-6ccd-40a4-a3f9-04b0ee32ef1a/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",شما و آی فیلم (سری جدید) - 24 مهر 1405 • 10/17 03:25
 #EXTVLCOPT:network-caching=8000
@@ -4085,15 +4085,6 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
@@ -7296,95 +7287,185 @@ https://daq1pvcuhj77l.cloudfront.net/1/666a7aeddc8e4b3a885190188c41ff2b/hls/64bd
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/25f99780936d4cdc84a7a2beadff31dc/103676ed-a922-41ea-8608-ab2478d70616_thumb_001_HD.jpg",ارتش آمریکا استفاده از قدرتمندترین بمب غیرهسته‌ای خود علیه جمهوری اسلامی را بررسی می‌کند
 https://daq1pvcuhj77l.cloudfront.net/1/25f99780936d4cdc84a7a2beadff31dc/hls/103676ed-a922-41ea-8608-ab2478d70616.m3u8
 
-#EXTINF:-1 tvg-id="sepehrvod348978" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۸
+#EXTINF:-1 tvg-id="sepehrvod315645" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7332.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] کاپیتان مورتن و ملکه عنکبوتی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348978
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/315645
 
-#EXTINF:-1 tvg-id="sepehrvod348977" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۷
+#EXTINF:-1 tvg-id="sepehrvod315120" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7213.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] هواپیماها: مامور نجات و آتش نشانی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348977
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/315120
 
-#EXTINF:-1 tvg-id="sepehrvod348976" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۶
+#EXTINF:-1 tvg-id="sepehrvod313876" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7333.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] چیپ و دیل: تکاوران نجات
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348976
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/313876
 
-#EXTINF:-1 tvg-id="sepehrvod348975" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۵
+#EXTINF:-1 tvg-id="sepehrvod313874" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7335.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] دور از درخت
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348975
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/313874
 
-#EXTINF:-1 tvg-id="sepehrvod348974" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۴
+#EXTINF:-1 tvg-id="sepehrvod313873" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7336.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] فینیک
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348974
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/313873
 
-#EXTINF:-1 tvg-id="sepehrvod348973" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۳
+#EXTINF:-1 tvg-id="sepehrvod109886" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/ya1170.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] هواپیماها
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348973
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/109886
 
-#EXTINF:-1 tvg-id="sepehrvod348972" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۲
+#EXTINF:-1 tvg-id="sepehrvod109840" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/ya1166.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] محمد زکریای رازی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348972
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/109840
 
-#EXTINF:-1 tvg-id="sepehrvod348971" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8164.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",دوریت کوچولو قسمت ۰۱
+#EXTINF:-1 tvg-id="sepehrvod83371" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/yae1003.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] دهکده فانوس ها
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/348971
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/83371
 
-#EXTINF:-1 tvg-id="sepehrvod334644" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7752.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",بی جانشین
+#EXTINF:-1 tvg-id="sepehrvod83364" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/yae1002.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] خرس قهرمان
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/334644
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/83364
 
-#EXTINF:-1 tvg-id="sepehrvod329906" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh6074.jpg" group-title="🎬 سپهر VOD - فیلم سینمایی",سریع و خشن ۷
+#EXTINF:-1 tvg-id="sepehrvod29453" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4644.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] در جستجوی دوری
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/329906
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/29453
+
+#EXTINF:-1 tvg-id="sepehrvod26871" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4633.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] دایناسوری از اقیانوس
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/26871
+
+#EXTINF:-1 tvg-id="sepehrvod26870" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4632.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] چگونه اژدهاتون رو آموزش بدید
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/26870
+
+#EXTINF:-1 tvg-id="sepehrvod17751" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4467.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] کارآگاه کونان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17751
+
+#EXTINF:-1 tvg-id="sepehrvod17734" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4456.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] افسانه شهر قالی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17734
+
+#EXTINF:-1 tvg-id="sepehrvod17721" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4452.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] مورچه ای به نام زی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17721
+
+#EXTINF:-1 tvg-id="sepehrvod17719" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4449.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] فوتبال دستی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17719
+
+#EXTINF:-1 tvg-id="sepehrvod17718" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4448.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] دور دنیا در ۵۰ سال
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17718
+
+#EXTINF:-1 tvg-id="sepehrvod17677" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4361.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] پانزده گربه بازیگوش
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17677
+
+#EXTINF:-1 tvg-id="sepehrvod17519" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4305.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] دوستان عجیب
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17519
+
+#EXTINF:-1 tvg-id="sepehrvod17494" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh4078.jpg" group-title="🎬 سپهر VOD",[کودک و نوجوان] دوست من برنارد
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17494
 
 #EXTINF:-1 tvg-id="sepehrvod4540" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/4540.jpg" group-title="🎬 سپهر VOD",[مرکز صدا و سیما] آوازهای مادرم
 #EXTVLCOPT:network-caching=2000
@@ -7476,95 +7557,185 @@ https://sepehr-vod-proxy.samhouston010.workers.dev/play/4257
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sepehr-vod-proxy.samhouston010.workers.dev/play/3981
 
-#EXTINF:-1 tvg-id="sepehrvod17166" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh3968.jpg" group-title="🎬 سپهر VOD",[مستند] نابودی
+#EXTINF:-1 tvg-id="sepehrvod351060" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh4207.jpg" group-title="🎬 سپهر VOD",[مذهبی] روایت یک خبرنگار - رویداد ملّی «ایران همدل»
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/17166
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351060
 
-#EXTINF:-1 tvg-id="sepehrvod16569" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/na10018.jpg" group-title="🎬 سپهر VOD",[مستند] زندانی ایرلندی
+#EXTINF:-1 tvg-id="sepehrvod351059" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh4206.jpg" group-title="🎬 سپهر VOD",[مذهبی] خیابان کشوردوست - مراسم عید میلاد پیامبر اعظم(ص) و امام صادق(ع)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/16569
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351059
 
-#EXTINF:-1 tvg-id="sepehrvod7887" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7887.png" group-title="🎬 سپهر VOD",[مستند] قزوین - محیط زیست
+#EXTINF:-1 tvg-id="sepehrvod351050" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7201.jpg" group-title="🎬 سپهر VOD",[مذهبی] پاسخ به پنج دروغ
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7887
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351050
 
-#EXTINF:-1 tvg-id="sepehrvod7886" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7886.png" group-title="🎬 سپهر VOD",[مستند] قزوین - ابنیه تاریخی قزوین - کلیسا
+#EXTINF:-1 tvg-id="sepehrvod351049" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7200.jpg" group-title="🎬 سپهر VOD",[مذهبی] مثبت ۱۰۰ ثانیه - شکستن گردن جواهر علمی اسرائیل
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7886
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351049
 
-#EXTINF:-1 tvg-id="sepehrvod7885" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7885.png" group-title="🎬 سپهر VOD",[مستند] قزوین - روستای هیر - برداشت زغال اخته
+#EXTINF:-1 tvg-id="sepehrvod351048" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7199.jpg" group-title="🎬 سپهر VOD",[مذهبی] خیلی خب، به همین خیال باش!
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7885
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351048
 
-#EXTINF:-1 tvg-id="sepehrvod7884" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7884.png" group-title="🎬 سپهر VOD",[مستند] قزوین
+#EXTINF:-1 tvg-id="sepehrvod351047" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7198.jpg" group-title="🎬 سپهر VOD",[مذهبی] علم ترور شدنی نیست
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7884
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351047
 
-#EXTINF:-1 tvg-id="sepehrvod7883" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7883.png" group-title="🎬 سپهر VOD",[مستند] قزوین - شهر الموت - روستای اوان
+#EXTINF:-1 tvg-id="sepehrvod351046" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7197.jpg" group-title="🎬 سپهر VOD",[مذهبی] «خط دیدار» قهرمانان و مدال‌آوران ورزشی و المپیادهای علمی جهانی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7883
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351046
 
-#EXTINF:-1 tvg-id="sepehrvod7882" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7882.png" group-title="🎬 سپهر VOD",[مستند] قزوین - بازار وزیر مجموعه صدرالسلطنه
+#EXTINF:-1 tvg-id="sepehrvod351045" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7196.jpg" group-title="🎬 سپهر VOD",[مذهبی] «پنجره»ای به دیدار قهرمانان و مدال‌آوران ورزشی و المپیادهای علمی جهانی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7882
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351045
 
-#EXTINF:-1 tvg-id="sepehrvod7881" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7881.png" group-title="🎬 سپهر VOD",[مستند] قزوین - نهم شهریور روز قزوین
+#EXTINF:-1 tvg-id="sepehrvod351044" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7195.jpg" group-title="🎬 سپهر VOD",[مذهبی] نمای دوم - صهیونیست‌ها مأیوسند؛ رئیس‌جمهور آمریکا رفت به آنها روحیه بدهد
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7881
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351044
 
-#EXTINF:-1 tvg-id="sepehrvod7880" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/7880.png" group-title="🎬 سپهر VOD",[مستند] قزوین - باغ پرندگان
+#EXTINF:-1 tvg-id="sepehrvod351043" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/fh7194.jpg" group-title="🎬 سپهر VOD",[مذهبی] «پنجره»ای به لحظه ورود رهبر انقلاب با ضرب مرشد و اجرای حرکات ورزش زورخانه‌ای
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/7880
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/351043
+
+#EXTINF:-1 tvg-id="sepehrvod17240" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۱۴
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17240
+
+#EXTINF:-1 tvg-id="sepehrvod17239" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۱۳
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17239
+
+#EXTINF:-1 tvg-id="sepehrvod17238" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۱۲
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17238
+
+#EXTINF:-1 tvg-id="sepehrvod17237" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۱۱
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17237
+
+#EXTINF:-1 tvg-id="sepehrvod17236" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۱۰
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17236
+
+#EXTINF:-1 tvg-id="sepehrvod17235" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۹
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17235
+
+#EXTINF:-1 tvg-id="sepehrvod17234" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۸
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17234
+
+#EXTINF:-1 tvg-id="sepehrvod17233" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۷
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17233
+
+#EXTINF:-1 tvg-id="sepehrvod17232" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۶
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17232
+
+#EXTINF:-1 tvg-id="sepehrvod17231" tvg-logo="" group-title="🎬 سپهر VOD",[مناسبتی] مرد میدان ۵
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/17231
 
 #EXTINF:-1 tvg-id="sepehrvod347187" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh8038.jpg" group-title="🎬 سپهر VOD",[مسابقات و سرگرمی] امیر پارسی - جواد انصافی ۵۱
 #EXTVLCOPT:network-caching=2000
@@ -7656,92 +7827,542 @@ https://sepehr-vod-proxy.samhouston010.workers.dev/play/347034
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sepehr-vod-proxy.samhouston010.workers.dev/play/347033
 
-#EXTINF:-1 tvg-id="sepehrvod6158" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6158.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۱۸
+#EXTINF:-1 tvg-id="sepehrvod1022" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1022.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - ثمرات عزاداری
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6158
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1022
 
-#EXTINF:-1 tvg-id="sepehrvod6157" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6157.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۱۷
+#EXTINF:-1 tvg-id="sepehrvod1021" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1021.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - صاحبان قلم
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6157
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1021
 
-#EXTINF:-1 tvg-id="sepehrvod6156" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6156.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۵
+#EXTINF:-1 tvg-id="sepehrvod1020" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1020.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - شکوفایی علمی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6156
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1020
 
-#EXTINF:-1 tvg-id="sepehrvod6155" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6155.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۳
+#EXTINF:-1 tvg-id="sepehrvod1019" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1019.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - شهادت طلبی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6155
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1019
 
-#EXTINF:-1 tvg-id="sepehrvod6154" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6154.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۲
+#EXTINF:-1 tvg-id="sepehrvod1018" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1018.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - شناخت ویژگی های امیر المومنین
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6154
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1018
 
-#EXTINF:-1 tvg-id="sepehrvod6153" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6153.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۱۴
+#EXTINF:-1 tvg-id="sepehrvod1017" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1017.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - شجاعت روحانی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6153
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1017
 
-#EXTINF:-1 tvg-id="sepehrvod6152" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6152.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۱۱
+#EXTINF:-1 tvg-id="sepehrvod1016" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1016.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - سیره پیامبر (ص)
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6152
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1016
 
-#EXTINF:-1 tvg-id="sepehrvod6151" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6151.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۹
+#EXTINF:-1 tvg-id="sepehrvod1015" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1015.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - سرمایه جوانی
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6151
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1015
 
-#EXTINF:-1 tvg-id="sepehrvod6150" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6150.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۸
+#EXTINF:-1 tvg-id="sepehrvod1014" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1014.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - زن کامل انسان کامل
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6150
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1014
 
-#EXTINF:-1 tvg-id="sepehrvod6149" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/6149.png" group-title="🎬 سپهر VOD",[نماهنگ] بهارنارنج ۷
+#EXTINF:-1 tvg-id="sepehrvod1013" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1013.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - زمینه سازی برای موعود
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://sepehr-vod-proxy.samhouston010.workers.dev/play/6149
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1013
+
+#EXTINF:-1 tvg-id="sepehrvod1012" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1012.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - ویژگی های تعلیم و تربیت
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1012
+
+#EXTINF:-1 tvg-id="sepehrvod1011" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1011.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - ولایت فقیه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1011
+
+#EXTINF:-1 tvg-id="sepehrvod1010" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1010.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - ولایت الهی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1010
+
+#EXTINF:-1 tvg-id="sepehrvod1009" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1009.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - سیره انبیاء
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1009
+
+#EXTINF:-1 tvg-id="sepehrvod1008" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1008.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظیفه اهل قلم
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1008
+
+#EXTINF:-1 tvg-id="sepehrvod1007" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1007.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظایف حوزه علمیه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1007
+
+#EXTINF:-1 tvg-id="sepehrvod1006" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1006.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وحدت کلمه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1006
+
+#EXTINF:-1 tvg-id="sepehrvod1005" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1005.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظیفه شناسی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1005
+
+#EXTINF:-1 tvg-id="sepehrvod1004" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1004.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظایف منتظران
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1004
+
+#EXTINF:-1 tvg-id="sepehrvod1003" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1003.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظایف معلمین و اساتید
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1003
+
+#EXTINF:-1 tvg-id="sepehrvod1002" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1002.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظایف شوراها
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1002
+
+#EXTINF:-1 tvg-id="sepehrvod1001" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1001.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وظایف بانوان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1001
+
+#EXTINF:-1 tvg-id="sepehrvod1000" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/1000.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وحدت کلمه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/1000
+
+#EXTINF:-1 tvg-id="sepehrvod999" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/999.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وحدت حوزه و دانشگاه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/999
+
+#EXTINF:-1 tvg-id="sepehrvod998" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/998.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - وابستگی به مادیات
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/998
+
+#EXTINF:-1 tvg-id="sepehrvod997" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/997.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - نوصیه به گویندگان و نویسندگان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/997
+
+#EXTINF:-1 tvg-id="sepehrvod996" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/996.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - توطیه علیه وحدت
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/996
+
+#EXTINF:-1 tvg-id="sepehrvod995" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/995.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - توطیه ایجاد یأس
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/995
+
+#EXTINF:-1 tvg-id="sepehrvod994" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/994.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تهذیب نفس
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/994
+
+#EXTINF:-1 tvg-id="sepehrvod993" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/993.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تعهد مربیان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/993
+
+#EXTINF:-1 tvg-id="sepehrvod992" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/992.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تعلیم و تربیت
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/992
+
+#EXTINF:-1 tvg-id="sepehrvod991" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/991.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تزکیه نفس
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/991
+
+#EXTINF:-1 tvg-id="sepehrvod990" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/990.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تربیت معنوی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/990
+
+#EXTINF:-1 tvg-id="sepehrvod989" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/989.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تربیت فطری
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/989
+
+#EXTINF:-1 tvg-id="sepehrvod988" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/988.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تربیت ربانی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/988
+
+#EXTINF:-1 tvg-id="sepehrvod987" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/987.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - تربیت الهی و تربیت مادی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/987
+
+#EXTINF:-1 tvg-id="sepehrvod986" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/986.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - روشن بینی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/986
+
+#EXTINF:-1 tvg-id="sepehrvod985" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/985.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رمز پیروزی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/985
+
+#EXTINF:-1 tvg-id="sepehrvod984" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/984.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رمز تعالی جامعه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/984
+
+#EXTINF:-1 tvg-id="sepehrvod983" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/983.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رمز تعالی انسانها
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/983
+
+#EXTINF:-1 tvg-id="sepehrvod982" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/982.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رشد روحانی بانوان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/982
+
+#EXTINF:-1 tvg-id="sepehrvod981" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/981.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رسالت پاسدار
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/981
+
+#EXTINF:-1 tvg-id="sepehrvod980" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/980.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رسالت مربیان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/980
+
+#EXTINF:-1 tvg-id="sepehrvod979" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/979.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رسالت روحانیت
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/979
+
+#EXTINF:-1 tvg-id="sepehrvod978" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/978.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رسالت حوزه علمیه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/978
+
+#EXTINF:-1 tvg-id="sepehrvod977" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/977.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رسالت انبیاء
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/977
+
+#EXTINF:-1 tvg-id="sepehrvod976" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/976.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - رحمت واسعه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/976
+
+#EXTINF:-1 tvg-id="sepehrvod975" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/975.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - راه نجات
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/975
+
+#EXTINF:-1 tvg-id="sepehrvod974" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/974.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - راه رهایی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/974
+
+#EXTINF:-1 tvg-id="sepehrvod973" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/973.png" group-title="🎬 سپهر VOD",[کلام بزرگان] آب و آیینه - راه رهایی
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/973
+
+#EXTINF:-1 tvg-id="sepehrvod324893" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7697.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] راه زندگی استاد خزایی طب سنتی جلسه دوم
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/324893
+
+#EXTINF:-1 tvg-id="sepehrvod321825" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7529.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] راه زندگی دکتر قنبری جلسه پنجم
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/321825
+
+#EXTINF:-1 tvg-id="sepehrvod316397" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/sh7463.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] حقیقت یا مَجاز با حضور سرکار خانم ذبیح پور
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/316397
+
+#EXTINF:-1 tvg-id="sepehrvod5953" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5953.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] دستاورد های چهل ساله زنجان ۶
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5953
+
+#EXTINF:-1 tvg-id="sepehrvod5952" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5952.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] دستاورد های چهل ساله زنجان ۲
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5952
+
+#EXTINF:-1 tvg-id="sepehrvod5951" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5951.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] سفر بهانه تو بود
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5951
+
+#EXTINF:-1 tvg-id="sepehrvod5950" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5950.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] دستاورد های چهل ساله کرمانشاه
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5950
+
+#EXTINF:-1 tvg-id="sepehrvod5949" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5949.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] دستاورد های چهل ساله همدان
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5949
+
+#EXTINF:-1 tvg-id="sepehrvod5948" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5948.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] دستاورد های چهل ساله زنجان ۵
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5948
+
+#EXTINF:-1 tvg-id="sepehrvod5947" tvg-logo="https://lb-cdn.sepehrtv.ir/img/vod/vod-poster/5947.jpg" group-title="🎬 سپهر VOD",[شبکه‌های اختصاصی] دستاورد های چهل ساله زنجان ۴
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sepehr-vod-proxy.samhouston010.workers.dev/play/5947
