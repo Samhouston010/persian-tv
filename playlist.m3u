@@ -2340,6 +2340,51 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16d00562/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16d0054a/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/da01a133-94e0-4043-a7dd-470b7e5865b5/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",تریبون آزاد - 27 مهر 1405 - بخش1 • 10/19 16:40
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d03ca6/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/34e41266-522a-4b7f-9f9b-627ae3ba0e21/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",تا نیایش 1405 - 27 مهر 1405 • 10/19 15:50
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d03ca0/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/8f1470a4-ef87-4863-adf4-a2c9f4e5970d/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",خانه های نور - 27 مهر 1405 • 10/19 15:31
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d03ad4/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/75f5f491-7776-42b3-a03f-66d6d50d9a74/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",سلام تهران 1405 - 27 مهر 1405 • 10/19 10:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d037bc/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/7d559ecb-68e0-4a18-9e01-903c072390c6/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",شهر امن - 27 مهر 1405 • 10/19 09:56
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d036b5/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/76ac907b-e439-4108-90f4-2b7b3b34e15e/default" group-title="تلوبیون Catch-up VOD: شبکه پنج (تهران)",گزارش 5 - چهل و سومین جشنواره فیلم کوتاه تهران - 26  مهر 1405 • 10/19 03:24
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -4419,15 +4464,6 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8
 
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
-
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -4589,6 +4625,15 @@ https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://shls-hadath-prod-dub.shahid.net/out/v1/0e1a306399c346faac4226aa0858f99b/index.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.github.com/ALMehdaly/picon/TV/AsharqNews.png",Asharq News Channel
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.github.com/ALMehdaly/picon/TV/AlArabiya.png",Al Arabiya FHD
 #EXTVLCOPT:network-caching=2000
@@ -5768,6 +5813,312 @@ http://185.121.1.163:8083/Khatlon/index.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://185.121.1.163:8083/FootballHD/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Aqlvoy" tvg-logo="https://i.imgur.com/ekF5cAi.png" group-title="ازبکستان",Aqlvoy
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1205/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BIZ Cinema" tvg-logo="https://biztv.uz/static/media/biz-cinema.286b83dc.png" group-title="ازبکستان",BIZ Cinema
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BIZ Music" tvg-logo="https://i.ibb.co/DfsCJwk/Uz-biz-music-5462.jpg" group-title="ازبکستان",BIZ Music
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="BIZ TV" tvg-logo="https://biztv.uz/static/media/logo.5f993187.png" group-title="ازبکستان",BIZ TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Bolajon" tvg-logo="https://i.imgur.com/s7o0ifu.png" group-title="ازبکستان",Bolajon
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1007/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Cheksiz TV" tvg-logo="https://i.imgur.com/f7hHmmR.jpeg" group-title="ازبکستان",Cheksiz TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://fl.biztv.media/cheksiz_tv_480_unif7hujidth7f4du83jrhuid3k94j8hfj8d93eubych8eju93n4ubt/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Dasturxon TV" tvg-logo="https://i.imgur.com/APM2ej5.jpeg" group-title="ازبکستان",Dasturxon TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1206/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Dunyo bo'ylab" tvg-logo="https://i.imgur.com/KArB5U6.png" group-title="ازبکستان",Dunyo bo'ylab
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1006/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Farg'ona MTRK" tvg-logo="https://i.imgur.com/RYjQOfo.jpeg" group-title="ازبکستان",Farg'ona MTRK
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1458/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="FTV" tvg-logo="https://i.imgur.com/7lpISyN.jpg" group-title="ازبکستان",FTV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1018/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Futbol TV" tvg-logo="https://i.ibb.co/h1gQSkbB/Futbol-TV.png" group-title="ازبکستان",Futbol TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+http://stream3.cinerama.uz/1010/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Kinoteatr" tvg-logo="https://i.imgur.com/emH1BgC.png" group-title="ازبکستان",Kinoteatr
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1009/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Madaniyat va ma'rifat" tvg-logo="https://i.imgur.com/eeNLXCP.png" group-title="ازبکستان",Madaniyat va ma'rifat
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1005/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Mahalla" tvg-logo="https://i.imgur.com/GtABiJI.png" group-title="ازبکستان",Mahalla
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1013/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Makon TV" tvg-logo="https://i.imgur.com/vCc0ED1.png" group-title="ازبکستان",Makon TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1497/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Milliy" tvg-logo="https://i.imgur.com/v4FBm26.png" group-title="ازبکستان",Milliy
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1014/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MiMi TV" tvg-logo="https://i.imgur.com/NmQglPa.png" group-title="ازبکستان",MiMi TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://fl.biztv.media/MiMiTV_720/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Muz TV Uzbekistan" tvg-logo="https://s8.vcdn.biz/static/f/6010782281/image.jpg" group-title="ازبکستان",Muz TV Uzbekistan
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1063/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="MY5" tvg-logo="https://i.imgur.com/bjlzu5k.png" group-title="ازبکستان",MY5
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1217/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Navo" tvg-logo="https://i.imgur.com/7dZ64y9.png" group-title="ازبکستان",Navo
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1008/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Navoiy MTRK" tvg-logo="https://i.imgur.com/qa4VlYh.png" group-title="ازبکستان",Navoiy MTRK
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1460/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Nurafshon TV" tvg-logo="https://i.imgur.com/MMdNyBU.jpeg" group-title="ازبکستان",Nurafshon TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1220/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="O'zbekiston 24" tvg-logo="https://i.imgur.com/VRFhKbw.png" group-title="ازبکستان",O'zbekiston 24
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1011/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="O'zbekiston" tvg-logo="https://i.imgur.com/QUIIhTD.png" group-title="ازبکستان",O'zbekiston
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1001/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="O'zbekiston Tarixi" tvg-logo="https://i.imgur.com/iTTd3Ir.png" group-title="ازبکستان",O'zbekiston Tarixi
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1209/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Qaraqalpaqstan" tvg-logo="https://i.imgur.com/G3qrUJh.png" group-title="ازبکستان",Qaraqalpaqstan
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1467/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Renessans TV" tvg-logo="https://i.imgur.com/cVlcqCX.png" group-title="ازبکستان",Renessans TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1221/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Sevimli TV" tvg-logo="https://i.imgur.com/iMwzRlr.png" group-title="ازبکستان",Sevimli TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1017/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Sport" tvg-logo="https://i.imgur.com/2WJE9CM.png" group-title="ازبکستان",Sport
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1004/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Taraqqiyot TV" tvg-logo="https://i.imgur.com/V3rtPEl.jpg" group-title="ازبکستان",Taraqqiyot TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1204/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Toshkent" tvg-logo="https://i.imgur.com/Z9R4nZg.png" group-title="ازبکستان",Toshkent
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1003/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="UzReport TV" tvg-logo="https://i.imgur.com/Bch2RHc.jpg" group-title="ازبکستان",UzReport TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1015/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Yoshlar" tvg-logo="https://i.imgur.com/s4xfUSx.png" group-title="ازبکستان",Yoshlar
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1002/tracks-v1a1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-name="Zo'r TV" tvg-logo="https://i.imgur.com/NuzyhVM.png" group-title="ازبکستان",Zo'r TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/pmcroyale.png",PMC Royale
 #EXTVLCOPT:network-caching=2000

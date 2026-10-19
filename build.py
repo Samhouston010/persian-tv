@@ -920,6 +920,45 @@ TAJIKISTAN_CHANNELS = [
     ('Futbol', 'https://i.imgur.com/RngmCDn.png', 'http://185.121.1.163:8083/FootballHD/index.m3u8'),
 ]
 
+# owner 2026-10-19: all 34 from iptv-org's country list confirmed live (200/301/302, real HLS) via cinerama.uz /
+# biztv.media -- no dead ones to drop this time, unlike Tajikistan.
+UZBEKISTAN_CHANNELS = [
+    ('Aqlvoy', 'https://i.imgur.com/ekF5cAi.png', 'https://stream8.cinerama.uz/1205/tracks-v1a1/mono.m3u8'),
+    ('BIZ Cinema', 'https://biztv.uz/static/media/biz-cinema.286b83dc.png', 'https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8'),
+    ('BIZ Music', 'https://i.ibb.co/DfsCJwk/Uz-biz-music-5462.jpg', 'https://fl.biztv.media/music_720_QAKpGmVUjaPApCNjpsgBxrdqNihAkl/index.m3u8'),
+    ('BIZ TV', 'https://biztv.uz/static/media/logo.5f993187.png', 'https://fl.biztv.media/biz_tv_720_uni8jhub4h8fub4idejswh8dh3j94finbu4nidj39inwsj92in3d/index.m3u8'),
+    ('Bolajon', 'https://i.imgur.com/s7o0ifu.png', 'https://stream8.cinerama.uz/1007/playlist.m3u8'),
+    ('Cheksiz TV', 'https://i.imgur.com/f7hHmmR.jpeg', 'https://fl.biztv.media/cheksiz_tv_480_unif7hujidth7f4du83jrhuid3k94j8hfj8d93eubych8eju93n4ubt/tracks-v1a1/mono.m3u8'),
+    ('Dasturxon TV', 'https://i.imgur.com/APM2ej5.jpeg', 'https://stream8.cinerama.uz/1206/tracks-v1a1/playlist.m3u8'),
+    ("Dunyo bo'ylab", 'https://i.imgur.com/KArB5U6.png', 'https://stream8.cinerama.uz/1006/tracks-v1a1/playlist.m3u8'),
+    ("Farg'ona MTRK", 'https://i.imgur.com/RYjQOfo.jpeg', 'https://stream8.cinerama.uz/1458/tracks-v1a1/mono.m3u8'),
+    ('FTV', 'https://i.imgur.com/7lpISyN.jpg', 'https://stream8.cinerama.uz/1018/playlist.m3u8'),
+    ('Futbol TV', 'https://i.ibb.co/h1gQSkbB/Futbol-TV.png', 'http://stream3.cinerama.uz/1010/tracks-v1a1/mono.m3u8'),
+    ('Kinoteatr', 'https://i.imgur.com/emH1BgC.png', 'https://stream8.cinerama.uz/1009/tracks-v1a1/playlist.m3u8'),
+    ("Madaniyat va ma'rifat", 'https://i.imgur.com/eeNLXCP.png', 'https://stream8.cinerama.uz/1005/tracks-v1a1/playlist.m3u8'),
+    ('Mahalla', 'https://i.imgur.com/GtABiJI.png', 'https://stream8.cinerama.uz/1013/tracks-v1a1/playlist.m3u8'),
+    ('Makon TV', 'https://i.imgur.com/vCc0ED1.png', 'https://stream8.cinerama.uz/1497/tracks-v1a1/mono.m3u8'),
+    ('Milliy', 'https://i.imgur.com/v4FBm26.png', 'https://stream8.cinerama.uz/1014/tracks-v1a1/playlist.m3u8'),
+    ('MiMi TV', 'https://i.imgur.com/NmQglPa.png', 'https://fl.biztv.media/MiMiTV_720/playlist.m3u8'),
+    ('Muz TV Uzbekistan', 'https://s8.vcdn.biz/static/f/6010782281/image.jpg', 'https://stream8.cinerama.uz/1063/tracks-v1a1/mono.m3u8'),
+    ('MY5', 'https://i.imgur.com/bjlzu5k.png', 'https://stream8.cinerama.uz/1217/tracks-v1a1/playlist.m3u8'),
+    ('Navo', 'https://i.imgur.com/7dZ64y9.png', 'https://stream8.cinerama.uz/1008/tracks-v1a1/playlist.m3u8'),
+    ('Navoiy MTRK', 'https://i.imgur.com/qa4VlYh.png', 'https://stream8.cinerama.uz/1460/tracks-v1a1/mono.m3u8'),
+    ('Nurafshon TV', 'https://i.imgur.com/MMdNyBU.jpeg', 'https://stream8.cinerama.uz/1220/tracks-v1a1/mono.m3u8'),
+    ("O'zbekiston 24", 'https://i.imgur.com/VRFhKbw.png', 'https://stream8.cinerama.uz/1011/tracks-v1a1/playlist.m3u8'),
+    ("O'zbekiston", 'https://i.imgur.com/QUIIhTD.png', 'https://stream8.cinerama.uz/1001/tracks-v1a1/playlist.m3u8'),
+    ("O'zbekiston Tarixi", 'https://i.imgur.com/iTTd3Ir.png', 'https://stream8.cinerama.uz/1209/tracks-v1a1/playlist.m3u8'),
+    ('Qaraqalpaqstan', 'https://i.imgur.com/G3qrUJh.png', 'https://stream8.cinerama.uz/1467/playlist.m3u8'),
+    ('Renessans TV', 'https://i.imgur.com/cVlcqCX.png', 'https://stream8.cinerama.uz/1221/tracks-v1a1/playlist.m3u8'),
+    ('Sevimli TV', 'https://i.imgur.com/iMwzRlr.png', 'https://stream8.cinerama.uz/1017/tracks-v1a1/playlist.m3u8'),
+    ('Sport', 'https://i.imgur.com/2WJE9CM.png', 'https://stream8.cinerama.uz/1004/tracks-v1a1/mono.m3u8'),
+    ('Taraqqiyot TV', 'https://i.imgur.com/V3rtPEl.jpg', 'https://stream8.cinerama.uz/1204/tracks-v1a1/mono.m3u8'),
+    ('Toshkent', 'https://i.imgur.com/Z9R4nZg.png', 'https://stream8.cinerama.uz/1003/tracks-v1a1/playlist.m3u8'),
+    ('UzReport TV', 'https://i.imgur.com/Bch2RHc.jpg', 'https://stream8.cinerama.uz/1015/tracks-v1a1/playlist.m3u8'),
+    ('Yoshlar', 'https://i.imgur.com/s4xfUSx.png', 'https://stream8.cinerama.uz/1002/tracks-v1a1/playlist.m3u8'),
+    ("Zo'r TV", 'https://i.imgur.com/NuzyhVM.png', 'https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8'),
+]
+
 MBC_HD_CHANNELS = [
     ('MBC 1', 'https://i.imgur.com/CiA3plN.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8'),
     ('MBC 4', 'https://i.imgur.com/BcXASJp.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8'),
@@ -1759,6 +1798,11 @@ def main():
         out.append(_AF_NORMAL); out.append(_u); out.append("")
     total += len(TAJIKISTAN_CHANNELS)
     print(f"Tajikistan: {len(TAJIKISTAN_CHANNELS)} channels", flush=True)
+    for _n, _lg, _u in UZBEKISTAN_CHANNELS:
+        out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="ازبکستان",%s' % (_n, _lg, _n))
+        out.append(_AF_NORMAL); out.append(_u); out.append("")
+    total += len(UZBEKISTAN_CHANNELS)
+    print(f"Uzbekistan: {len(UZBEKISTAN_CHANNELS)} channels", flush=True)
     houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
     print("Houston: disabled", flush=True)
     music = _alive(MUSIC_CHANNELS, "Music")
