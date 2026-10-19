@@ -901,6 +901,25 @@ ARABIC_CHANNELS = [
     ('KSA thikrayat-tv', 'https://shahid.mbc.net/mediaObject/2828a599-b458-433a-ad8e-0c26114c7cf4?height=auto&width=288&croppingPoint=&version=1&type=avif', 'https://shd-gcp-live.lg.mncdn.com/live/bitmovin-thikrayat/8cfa8fe0c96275735745b89c683b27e3/index.m3u8'),
 ]
 
+# owner 2026-10-19: these two (TMT, Ilm va Tabiat) are dead on the mirror host that serves the rest (404) and the
+# official https://live.teleradiocom.tj/ domain is unreachable (TLS handshake times out from both this PC and the
+# Oracle server) -- 12 of the state broadcaster's 14 channels confirmed live via the http mirror, not liveness-filtered
+# here (same reasoning as CRIME_CHANNELS/MBC_HD_CHANNELS: GitHub runner IPs may answer differently than real devices).
+TAJIKISTAN_CHANNELS = [
+    ('Tojikiston', 'https://i.imgur.com/sEXCFNk.png', 'http://185.121.1.163:8083/Tojikiston/index.m3u8'),
+    ('Dushanbe HD', 'https://i.imgur.com/WWPIziG.png', 'http://185.121.1.163:8083/DushanbeHD/index.m3u8'),
+    ('Jahonnamo', 'https://i.imgur.com/ffqdD8W.png', 'http://185.121.1.163:8083/Jahonnamo/index.m3u8'),
+    ('Safina', 'https://i.imgur.com/Ho2vKZJ.png', 'http://185.121.1.163:8083/Safina/index.m3u8'),
+    ('Sinamo', 'https://i.imgur.com/W2qz5a4.png', 'http://185.121.1.163:8083/Sinamo/index.m3u8'),
+    ('Sugd', 'https://i.imgur.com/YzkwTHb.png', 'http://185.121.1.163:8083/Sugd/index.m3u8'),
+    ('Kulob', 'https://i.imgur.com/AFgEYFp.png', 'http://185.121.1.163:8083/Kulob/index.m3u8'),
+    ('Bahoriston', 'https://i.imgur.com/Dacai5z.png', 'http://185.121.1.163:8083/Bahoriston/index.m3u8'),
+    ('Sayohi', 'https://i.imgur.com/lAkMrtr.png', 'http://185.121.1.163:8083/Sayohi/index.m3u8'),
+    ('Badakhshon', 'https://i.imgur.com/iK6AmkZ.png', 'http://185.121.1.163:8083/Badakhshon/index.m3u8'),
+    ('Khatlon', 'https://i.imgur.com/X4xVpBj.png', 'http://185.121.1.163:8083/Khatlon/index.m3u8'),
+    ('Futbol', 'https://i.imgur.com/RngmCDn.png', 'http://185.121.1.163:8083/FootballHD/index.m3u8'),
+]
+
 MBC_HD_CHANNELS = [
     ('MBC 1', 'https://i.imgur.com/CiA3plN.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8'),
     ('MBC 4', 'https://i.imgur.com/BcXASJp.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8'),
@@ -1735,6 +1754,11 @@ def main():
         out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="📺 عربی",%s' % (_n, _lg, _n))
         out.append(_AF_NORMAL); out.append(_u); out.append("")
     total += len(ARABIC_CHANNELS)
+    for _n, _lg, _u in TAJIKISTAN_CHANNELS:
+        out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="تاجیکستان",%s' % (_n, _lg, _n))
+        out.append(_AF_NORMAL); out.append(_u); out.append("")
+    total += len(TAJIKISTAN_CHANNELS)
+    print(f"Tajikistan: {len(TAJIKISTAN_CHANNELS)} channels", flush=True)
     houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
     print("Houston: disabled", flush=True)
     music = _alive(MUSIC_CHANNELS, "Music")

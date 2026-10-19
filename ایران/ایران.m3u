@@ -693,14 +693,14 @@ https://iptv.mihantv.com/mihantv/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tv.iraniancongress.com/stream/tv.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Press_TV_logo.svg/960px-Press_TV_logo.svg.png" tvg-id="PressTVFrench.ir@SD",Press TV French (1080p)
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Press_TV_logo.svg/960px-Press_TV_logo.svg.png" tvg-id="PressTV.ir@SD",Press TV
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
+https://live.presstv.co.uk/hls/presstv.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/TmqComb.png" tvg-id="VoATVPersian.us@SD",VOA Persian
 #EXTVLCOPT:network-caching=2000
@@ -828,6 +828,15 @@ https://live.presstv.co.uk/hls/ifilmar_4_482/index.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.presstv.co.uk/hls/ifilmen_4_482/index.m3u8
 
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" tvg-id="iFilmPersian.ir@SD",iFilm Persian
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://live.presstv.co.uk/hls/ifilmfa.m3u8
+
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/afrafilm.jpg" tvg-id="AfraFilm.ir@SD",Afra Film
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -846,7 +855,7 @@ https://afrafhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://cafefhls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 group-title="ایران" tvg-id="GoldStar.ir@SD",Gold Star
+#EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/4ySO71h.png" tvg-id="GoldStar.ir@SD",Gold Star
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
@@ -863,24 +872,6 @@ https://moviethls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://gcinemahls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/homeplus.jpg" tvg-id="HomePlus.ir@SD",Home Plus
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://homeplushls.wns.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/icc.png" tvg-id="ICCplus.us@SD",ICC Plus (1080p)
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://icchls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://cdn.jsdelivr.net/gh/Samhouston010/persian-tv@master/logos/metafilm.jpg" tvg-id="MetaFilmTV.ir@SD",Meta Film TV
 #EXTVLCOPT:network-caching=2000
@@ -917,6 +908,15 @@ https://slonehls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://sltwohls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="ایران" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/5/5a/POOYA_tv_2.png" tvg-id="PooyaTV.ir@SD",Pooya TV
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tgn.bozztv.com/eshgtv-dvrfl05/gin-iribpooya/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/LctanF8.png" tvg-id="AFNTV.ir@SD",AFN TV
 #EXTVLCOPT:network-caching=2000
@@ -1106,15 +1106,6 @@ https://komhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://ptravelhls.persiana.live/hls/stream.m3u8
-
-#EXTINF:-1 group-title="ایران" tvg-logo="https://i.ibb.co/GW4cMfc/cafe-trade-tv.png" tvg-id="CafeTradeTV.ir@SD",Cafe Trade TV
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://cafetradehls.wns.live/hls/stream.m3u8
 
 #EXTINF:-1 group-title="ایران" tvg-logo="https://i.imgur.com/gROQqFD.png" tvg-id="AsilTV.ir@SD",Asil TV (576p)
 #EXTVLCOPT:network-caching=2000
