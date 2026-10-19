@@ -959,6 +959,72 @@ UZBEKISTAN_CHANNELS = [
     ("Zo'r TV", 'https://i.imgur.com/NuzyhVM.png', 'https://stream8.cinerama.uz/1016/tracks-v1a1/mono.m3u8'),
 ]
 
+# owner 2026-10-19: Kazakhstan -- most of kaztrk.kz/fs.uplink.kz 403'd on plain curl (token/IP-locked, Referer/UA didn't
+# help either), dropped. Kept only the 18 that returned a real 200 (several duplicated via the unauthenticated
+# stream.mcquack.net mirror).
+KAZAKHSTAN_CHANNELS = [
+    ('31 Kanal', 'https://31.kz/noimage.png', 'http://stream.mcquack.net/388/index.m3u8'),
+    ('Abai TV', 'https://i.imgur.com/Nw2R7Dq.png', 'https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8'),
+    ('Alau TV', 'https://i.imgur.com/gK6ZRzp.png', 'https://otv.wotom.net/alau/stream.m3u8'),
+    ('Astana TV', 'https://upload.wikimedia.org/wikipedia/en/7/7b/Astana_TV_Logo.png', 'http://stream.mcquack.net/28/index.m3u8'),
+    ('Balapan HD', 'https://vote.rtrk.kz/img/balapan-logo.png', 'https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8'),
+    ('Channel 7 (Kazakhstan)', 'https://i.imgur.com/LebKU09.png', 'http://stream.mcquack.net/27/index.m3u8'),
+    ('Jibek Joly HD', 'https://i.imgur.com/SqyXtgK.png', 'https://stream.qazcdn.net/ex6r514/jjtv/playlist.m3u8'),
+    ('KTK', 'https://i.imgur.com/BurrNTo.png', 'http://stream.mcquack.net/26/index.m3u8'),
+    ('KTK HD', 'https://i.imgur.com/BurrNTo.png', 'http://89.218.30.37/ktklive/live.hq/playlist.m3u8'),
+    ('NTK', 'https://i.imgur.com/hHSCH4L.png', 'http://stream.mcquack.net/389/index.m3u8'),
+    ('Qazaqstan', 'https://i.imgur.com/oI8g396.png', 'https://fs.uplink.kz/qazaqstan/mono.m3u8?token=onlinetv'),
+    ('Qazaqstan HD', 'https://i.imgur.com/oI8g396.png', 'http://stream.mcquack.net/71/index.m3u8'),
+    ('Qazaqstan International', 'https://cdn.qazaqstan.tv/qazaqstan.png?w=420&h=196&format=png&resize=aspectfill&g=centeralt=', 'https://stream8.cinerama.uz/1431/tracks-v1a1/mono.m3u8'),
+    ('Rika TV', 'https://i.imgur.com/KJHWZ3B.png', 'https://live-rikatv.cdnvideo.ru/rikatv/rikatv_tcode.sdp/playlist.m3u8'),
+    ('Silk Way', 'https://i.imgur.com/SJNDksF.png', 'https://hlspackager.akamaized.net/live/DB/SILKWAY/SILKWAY/SILKWAY.m3u8'),
+    ('Silk Way Cinema', 'https://www.cableman.ru/sites/default/files/Silk-way-CINEMA.png', 'https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8'),
+    ('TDK 42', 'https://i.imgur.com/iVhdcS7.png', 'https://live-tdk42kz.cdnvideo.ru/tdk42kz/tdk42kz_720.smil/playlist.m3u8'),
+    ('Ulytau', 'https://i.imgur.com/jTL6TvC.png', 'https://ulytau.tv/hls/master.m3u8'),
+]
+
+# owner 2026-10-19: Mongolia -- almost entirely DASH (.mpd) from skygo.mn (Media3/ExoPlayer, which this app uses,
+# auto-detects DASH by extension, same as HLS). All confirmed 200 on the manifest URL. Dropped one 404 (DreamTV) and
+# one mislabeled French entry (TV5Monde) that iptv-org listed under .mn by mistake.
+MONGOLIA_CHANNELS = [
+    ('AsianBox', 'https://www.mongolsat.mn/assets/img/channel/910.png', 'https://cdn4.skygo.mn/live/disk1/AsianBOX/DASH-FTA/AsianBOX.mpd'),
+    ('Bloomberg TV Mongolia', 'https://www.mongolsat.mn/assets/img/channel/44.png', 'https://cdn4.skygo.mn/live/disk1/BloombergMon/DASH-FTA/BloombergMon.mpd'),
+    ('C1', 'https://www.mongolsat.mn/assets/img/channel/11.png', 'https://cdn4.skygo.mn/live/disk1/C1/DASH-FTA/C1.mpd'),
+    ('Central TV (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/7.png', 'https://cdn4.skygo.mn/live/disk1/Ekh_Oron/DASH-FTA/Ekh_Oron.mpd'),
+    ('Channel 11 (Mongolia)', 'https://i.imgur.com/GztOajC.png', 'https://cdn4.skygo.mn/live/disk1/Channel11/DASH-FTA/Channel11.mpd'),
+    ('Cinema (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/914.png', 'https://cdn4.skygo.mn/live/disk1/CinemaTV/DASH-FTA/CinemaTV.mpd'),
+    ('CNBC Mongolia', 'https://cnbc.mn/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F07.5c42b114.png&w=828&q=75', 'https://cdn4.skygo.mn/live/disk1/CNBC/HLSv3-FTA/CNBC.m3u8'),
+    ('Eagle News', 'https://www.mongolsat.mn/assets/img/channel/13.png', 'https://cdn4.skygo.mn/live/disk1/Eagle/DASH-FTA/Eagle.mpd'),
+    ('Edutainment TV', 'https://www.mongolsat.mn/assets/img/channel/8.png', 'https://cdn4.skygo.mn/live/disk1/Education/DASH-FTA/Education.mpd'),
+    ('ETV (Mongolia)', 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/ETV_Mongolia_logo.png/960px-ETV_Mongolia_logo.png', 'https://cdn4.skygo.mn/live/disk1/ETV/DASH-FTA/ETV.mpd'),
+    ('Global TV (Mongolia)', 'https://i.imgur.com/Es5FX4z.png', 'https://cdn4.skygo.mn/live/disk1/GlobalTV/DASH-FTA/GlobalTV.mpd'),
+    ('GTV (Mongolia)', 'https://i.imgur.com/z18PSIo.png', 'https://cdn4.skygo.mn/live/disk1/GTV/DASH-FTA/GTV.mpd'),
+    ('Malchin TV', 'https://www.mongolsat.mn/assets/img/channel/12.png', 'https://cdn4.skygo.mn/live/disk1/Malchin/DASH-FTA/Malchin.mpd'),
+    ('MN+', 'https://new.skytel.mn/uploads/channel/mn-676145a957d06.jpeg', 'https://cdn4.skygo.mn/live/disk1/MNplus91/HLSv3-FTA/MNplus91.m3u8'),
+    ('MNB', 'https://i.imgur.com/RdRd0to.png', 'https://cdn4.skygo.mn/live/disk1/MNB/DASH-FTA/MNB.mpd'),
+    ('MNB Mongoliin Medee', 'https://www.mongolsat.mn/assets/img/channel/21.png', 'https://cdn4.skygo.mn/live/disk1/MNB2/DASH-FTA/MNB2.mpd'),
+    ('MNB Sport', 'https://i.imgur.com/z854PC3.png', 'https://live.mnb.mn/hls/mnb_sport.stream.m3u8'),
+    ('MNB World', 'https://www.mongolsat.mn/assets/img/channel/22.png', 'https://cdn4.skygo.mn/live/disk1/MNB_World/DASH-FTA/MNB_World.mpd'),
+    ('Mongolian News Channel', 'https://www.mongolsat.mn/assets/img/channel/25.png', 'https://cdn4.skygo.mn/live/disk1/MNCTV/DASH-FTA/MNCTV.mpd'),
+    ('MovieBox', 'https://www.mongolsat.mn/assets/img/channel/909.png', 'https://cdn4.skygo.mn/live/disk1/Moviebox/DASH-FTA/Moviebox.mpd'),
+    ('NTV (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/10.png', 'https://cdn4.skygo.mn/live/disk1/NTVHD/DASH-FTA/NTVHD.mpd'),
+    ('ONTV', 'https://i.imgur.com/EzODUBO.png', 'https://cdn4.skygo.mn/live/disk1/ONTV/DASH-FTA/ONTV.mpd'),
+    ('Parliament TV (Mongolia)', 'https://i.imgur.com/OD7YKuz.jpeg', 'https://cdn4.skygo.mn/live/disk1/Parlament/DASH-FTA/Parlament.mpd'),
+    ('SBN', 'https://www.mongolsat.mn/assets/img/channel/14.png', 'https://cdn4.skygo.mn/live/disk1/SBN/DASH-FTA/SBN.mpd'),
+    ('Seven Channel', 'https://i.imgur.com/9Ld5ATz.png', 'https://xykt-fix.github.io/liveh42-syhtv-mn/7Channel_HD/03.m3u8'),
+    ('Soyon Gegeeruulegch TV', 'https://i.imgur.com/iBZVvtW.png', 'https://cdn4.skygo.mn/live/disk1/SoyonGegeeruulegch/DASH-FTA/SoyonGegeeruulegch.mpd'),
+    ('Star TV (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/15.png', 'https://cdn4.skygo.mn/live/disk1/Star/DASH-FTA/Star.mpd'),
+    ('Suld TV', 'https://www.mongolsat.mn/assets/img/channel/20.png', 'https://cdn4.skygo.mn/live/disk1/SuldTV/DASH-FTA/SuldTV.mpd'),
+    ('TenGer TV', 'https://www.mongolsat.mn/assets/img/channel/17.png', 'https://cdn4.skygo.mn/live/disk1/VTV/DASH-FTA/VTV.mpd'),
+    ('TM TV (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/19.png', 'https://cdn4.skygo.mn/live/disk1/TM/DASH-FTA/TM.mpd'),
+    ('TV5', 'https://www.mongolsat.mn/assets/img/channel/6.png', 'https://cdn4.skygo.mn/live/disk1/TV5HD/DASH-FTA/TV5HD.mpd'),
+    ('TV8 (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/18.png', 'https://cdn4.skygo.mn/live/disk1/TV8HD/DASH-FTA/TV8HD.mpd'),
+    ('TV9 (Mongolia)', 'https://www.mongolsat.mn/assets/img/channel/9.png', 'https://cdn4.skygo.mn/live/disk1/TV9HD/DASH-FTA/TV9HD.mpd'),
+    ('TV 25', 'https://www.mongolsat.mn/assets/img/channel/5.png', 'https://cdn4.skygo.mn/live/disk1/MN25/DASH-FTA/MN25.mpd'),
+    ('UBS', 'https://i.imgur.com/dIRMYYd.png', 'https://cdn4.skygo.mn/live/disk1/UBSHD/DASH-FTA/UBSHD.mpd'),
+    ('Ulzii TV', 'https://www.mongolsat.mn/assets/img/channel/28.png', 'https://cdn4.skygo.mn/live/disk1/UlziiTV/DASH-FTA/UlziiTV.mpd'),
+]
+
 MBC_HD_CHANNELS = [
     ('MBC 1', 'https://i.imgur.com/CiA3plN.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-1/15cf99af5de54063fdabfefe66adc075/index.m3u8'),
     ('MBC 4', 'https://i.imgur.com/BcXASJp.png', 'https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-4/24f134f1cd63db9346439e96b86ca6ed/index.m3u8'),
@@ -1803,6 +1869,16 @@ def main():
         out.append(_AF_NORMAL); out.append(_u); out.append("")
     total += len(UZBEKISTAN_CHANNELS)
     print(f"Uzbekistan: {len(UZBEKISTAN_CHANNELS)} channels", flush=True)
+    for _n, _lg, _u in KAZAKHSTAN_CHANNELS:
+        out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="قزاقستان",%s' % (_n, _lg, _n))
+        out.append(_AF_NORMAL); out.append(_u); out.append("")
+    total += len(KAZAKHSTAN_CHANNELS)
+    print(f"Kazakhstan: {len(KAZAKHSTAN_CHANNELS)} channels", flush=True)
+    for _n, _lg, _u in MONGOLIA_CHANNELS:
+        out.append('#EXTINF:-1 tvg-id="" tvg-name="%s" tvg-logo="%s" group-title="مغولستان",%s' % (_n, _lg, _n))
+        out.append(_AF_NORMAL); out.append(_u); out.append("")
+    total += len(MONGOLIA_CHANNELS)
+    print(f"Mongolia: {len(MONGOLIA_CHANNELS)} channels", flush=True)
     houston = []  # ponytail: temporarily disabled by user request 2026-07-11 -- too crowded
     print("Houston: disabled", flush=True)
     music = _alive(MUSIC_CHANNELS, "Music")
