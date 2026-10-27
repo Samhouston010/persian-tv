@@ -1620,6 +1620,15 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16d0bfaa/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16d0bfa3/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/f928d3b8-26e2-41de-90c2-49530c95041f/default" group-title="تلوبیون Catch-up VOD: شبکه سه",فوتبال برتر 05-06 - فوتبال برتر  - 4 آبان 1405 • 10/27 02:13
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d0f422/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/5bd29c43-99b9-46a9-9436-8edb3357bf17/default" group-title="تلوبیون Catch-up VOD: شبکه سه",میداندار - 4 آبان 1405 - بخش 2 • 10/27 01:47
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -1970,15 +1979,6 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d0bfeb/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d0bfe6/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/8d5ff898-f934-46ba-bad6-b52f49ba9df4/default" group-title="تلوبیون Catch-up VOD: شبکه سه",ضیافت دوست 1405 - 3 آبان 1405 • 10/25 07:32
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d0bfe2/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e6f77afc-de96-4370-9509-956a5415452d/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",پرچم دار - 4 آبان 1405 - بخش 7 • 10/27 03:24
 #EXTVLCOPT:network-caching=8000
@@ -2646,6 +2646,51 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d0c017/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d0c01e/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/aa8d4325-bb69-4fce-a5eb-48e2d03b25c2/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 4:00 - ۵ آبان ۱۴۰۵ • 10/27 07:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0f43d/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/b786cd39-50b6-40dc-b56b-9103b4e80c5e/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 3:00 (خبر) - ۵ آبان ۱۴۰۵ • 10/27 06:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0f433/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/3f412beb-0ce6-480d-8d4c-f87518bf3ba0/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 2:00 (خبر) - ۵ آبان ۱۴۰۵ • 10/27 05:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0f3e5/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/3ebd7260-9175-4cb3-aaae-8f9114000dbd/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 1:00 - ۵ آبان ۱۴۰۵ • 10/27 04:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0f37c/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/b590e987-33e4-4cca-8edf-c2035e950f63/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 24:00 (خبر) - ۵ آبان ۱۴۰۵ • 10/27 03:29
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0f347/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/27ba65f7-954c-4914-a54c-13f0f33e1548/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",گزارش (خبر) - تجمع اعتراضی در برابر سفارت آمریکا در توکیو - ۴ آبان ۱۴۰۵ • 10/27 03:25
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -2960,51 +3005,6 @@ https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0e217/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0e1f4/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/89bf23c4-3688-478a-9c2e-64a021f62bf8/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 12:00 - ۴ آبان ۱۴۰۵ • 10/26 15:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0e19f/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/18474668-3796-430b-a582-a5d9b9b48a6e/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",روی خط خبر - نشست خبری سخنگوی وزارت امور خارجه - ۴ آبان ۱۴۰۵ • 10/26 14:16
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0e130/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/6f00beb6-c7a4-4149-b759-ee28d05f52ae/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت  10:30 - ۴ آبان ۱۴۰۵ • 10/26 14:00
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0df3c/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/70ecbe0f-403c-472a-8c23-b1be68d877b5/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",نگاهی به مطبوعات - ۴ آبان ۱۴۰۵ • 10/26 13:39
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0dea8/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/698b3135-d44c-41f0-b0d4-f46a19472c98/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 10:00 - ۴ آبان ۱۴۰۵ • 10/26 13:30
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d0ddf0/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/33940442-b491-4e2c-ae65-ec2e7d62b15c/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",قصه های تبیان - دیوار به دیوار • 10/27 02:30
 #EXTVLCOPT:network-caching=8000
@@ -4409,6 +4409,15 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8
+
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
@@ -8423,6 +8432,24 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/294c79ca976e469f9b9ae7b9a085d834/0b82505c-7afe-40e1-a4f8-6cd209f36744_thumb_001_HD.jpg",فرشته پزشک: جمهوری اسلامی روی نتایج انتخابات آمریکا و اسرائیل حساب اشتباه باز کرده است
+https://daq1pvcuhj77l.cloudfront.net/1/294c79ca976e469f9b9ae7b9a085d834/hls/0b82505c-7afe-40e1-a4f8-6cd209f36744.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b39054fbe31b4726a8e092786aaeec34/a873f8a4-60b7-41ce-905f-4503767f7959_thumb_001_HD.jpg",اسکات بسنت به مردم ایران: مالیات ندهید و برای زمستان سوخت ذخیره کنید
+https://daq1pvcuhj77l.cloudfront.net/1/b39054fbe31b4726a8e092786aaeec34/hls/a873f8a4-60b7-41ce-905f-4503767f7959.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7f3e24b6acd048a29dab1e3be5dc26e2/1e646969-72a4-4ccc-88cf-cff4e2a7cc17_thumb_001_HD.jpg",گفت‌وگوی ویژه با اسکات بسنت، وزیر خزانه‌داری آمریکا
+https://daq1pvcuhj77l.cloudfront.net/1/7f3e24b6acd048a29dab1e3be5dc26e2/hls/1e646969-72a4-4ccc-88cf-cff4e2a7cc17.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/678102ab4a1842ea9aa2ec33f4393166/30ef0db3-19c9-4b17-951b-71e9ab782442_thumb_001_HD.jpg",چشم‌انداز: سران نظامی و امنیتی پاکستان، عربستان و ترکیه در تهران چه می‌کنند؟
+https://daq1pvcuhj77l.cloudfront.net/1/678102ab4a1842ea9aa2ec33f4393166/hls/30ef0db3-19c9-4b17-951b-71e9ab782442.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/b2707dd4020645eab48de728e7d03311/116b1191-b334-4982-8fcb-f84cbbdba6b1_thumb_001_HD.jpg",۲۴ با فرداد فرحزاد
+https://daq1pvcuhj77l.cloudfront.net/1/b2707dd4020645eab48de728e7d03311/hls/116b1191-b334-4982-8fcb-f84cbbdba6b1.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/e9112bcb1aeb4ff8bf7d18aa21cdf788/963898e7-cfa0-403f-803e-bcd5543ad858_thumb_001_HD.jpg",سران نظامی و امنیتی پاکستان، عربستان و ترکیه در تهران چه می‌کنند؟
+https://daq1pvcuhj77l.cloudfront.net/1/e9112bcb1aeb4ff8bf7d18aa21cdf788/hls/963898e7-cfa0-403f-803e-bcd5543ad858.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1cc6dbb3a9c140bab206a8de51dac1ec/2c779dcf-a6f5-416a-be09-4faae9b6c906_thumb_001_HD.jpg",تیتر اول با نیوشا صارمی، دوشنبه ۴ آبان
 https://daq1pvcuhj77l.cloudfront.net/1/1cc6dbb3a9c140bab206a8de51dac1ec/hls/2c779dcf-a6f5-416a-be09-4faae9b6c906.m3u8
