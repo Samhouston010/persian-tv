@@ -192,6 +192,80 @@ HD_EXTRA = [
     ("⚽ ورزشی", "Persiana Sports 4", "", f"{GEM_PROXY_BASE}https%3A%2F%2Fgg.hls2.xyz%2Flive%2FPersiana%2520Sports4%2Fplaylist.m3u8"),
 ]
 
+# user request 2026-10-29: Telewebion direct (no proxy) "ابوریحان" edge bouquet,
+# pulled via ParsiFlix same as the Persiana Lite live-TV playlist added 2026-10-28.
+# tvg-id reuses the same IRIB*.ir scheme as the sepehr.m3u-sourced "📡 تلوبیون" group above,
+# so these ride the existing telewebion_epg_tree() EPG for free.
+ABURAIHAN_EXTRA = [
+    ("IRIB1.ir", "شبکه یک", "https://cdn.farsifilix-images.legamart.com/uploads/3009368f-2b92-4450-9eca-6cd7a41353e6.png", "https://live-aburayhan1113.telewebion.ir/ek/tv1/live/1080p/index.m3u8"),
+    ("IRIB2.ir", "شبکه دو", "https://cdn.farsifilix-images.legamart.com/uploads/ff1b746e-5737-429d-af10-c6e855b353aa.png", "https://live-aburayhan1113.telewebion.ir/ek/tv2/live/1080p/index.m3u8"),
+    ("IRIB3.ir", "شبکه سه", "https://cdn.farsifilix-images.legamart.com/uploads/5a4a1f6a-8fb6-434d-a284-4890491047ab.png", "https://live-aburayhan1105.telewebion.ir/ek/tv3/live/1080p/index.m3u8"),
+    ("IRIB4.ir", "شبکه چهار", "https://cdn.farsifilix-images.legamart.com/uploads/2f0fb872-6da4-4090-a81b-23f4234026e4.png", "https://live-aburayhan1104.telewebion.ir/ek/tv4/live/576p/index.m3u8"),
+    ("IRIBTehran.ir", "شبکه تهران", "https://cdn.farsifilix-images.legamart.com/uploads/dec3a52a-1940-409e-a63a-43595ca126b6.png", "https://live-aburayhan1104.telewebion.ir/ek/tehran/live/576p/index.m3u8"),
+    ("IRINN.ir", "شبکه خبر", "https://cdn.farsifilix-images.legamart.com/uploads/c47c3e39-15cb-41f1-b5da-610a45251fed.png", "https://live-aburayhan1105.telewebion.ir/ek/irinn/live/1080p/index.m3u8"),
+    ("Nasim.ir", "شبکه نسیم", "https://cdn.farsifilix-images.legamart.com/uploads/56eafff6-38d6-4931-8504-e1c46440fb6b.png", "https://live-aburayhan1109.telewebion.ir/ek/nasim/live/1080p/index.m3u8"),
+    ("ifilm.ir", "شبکه ifilm", "https://cdn.farsifilix-images.legamart.com/uploads/8c63d2cb-4a7e-41b5-985f-d6490c3c4dc8.png", "https://live-aburayhan1113.telewebion.ir/ek/ifilm/live/1080p/index.m3u8"),
+    ("VarzeshTV.ir", "شبکه ورزش", "https://cdn.farsifilix-images.legamart.com/uploads/73c5a1f2-3bb6-459e-a889-a961a384abcc.png", "https://live-aburayhan1107.telewebion.ir/ek/varzesh/live/1080p/index.m3u8"),
+    ("Faratar.ir", "فراتر", "https://cdn.farsifilix-images.legamart.com/channels/73ad1be0-306b-4f95-9bbc-d86abdf747d8.png", "https://live-aburayhan1109.telewebion.ir/ek/faratar/live/1080p/index.m3u8"),
+    ("Hdtest.ir", "تماشا", "", "https://live-aburayhan1113.telewebion.ir/ek/hdtest/live/1080p/index.m3u8"),
+    ("Pooya.ir", "پویا", "", "https://live-aburayhan1113.telewebion.ir/ek/pooya/live/1080p/index.m3u8"),
+    ("Namayesh.ir", "نمایش", "", "https://live-aburayhan1113.telewebion.ir/ek/namayesh/live/1080p/index.m3u8"),
+    ("Mostanad.ir", "مستند", "", "https://live-aburayhan1113.telewebion.ir/ek/mostanad/live/1080p/index.m3u8"),
+    ("Quran.ir", "قرآن", "", "https://live-aburayhan1113.telewebion.ir/ek/quran/live/1080p/index.m3u8"),
+    ("Amouzesh.ir", "آموزش", "", "https://live-aburayhan1113.telewebion.ir/ek/amouzesh/live/576p/index.m3u8"),
+    ("Salamat.ir", "سلامت", "", "https://live-aburayhan1113.telewebion.ir/ek/salamat/live/576p/index.m3u8"),
+    ("Ofogh.ir", "افق", "", "https://live-aburayhan1113.telewebion.ir/ek/ofogh/live/1080p/index.m3u8"),
+    ("Omid.ir", "امید", "", "https://live-aburayhan1113.telewebion.ir/ek/omid/live/1080p/index.m3u8"),
+    ("Irinn2.ir", "خبر 2", "", "https://live-aburayhan1113.telewebion.ir/ek/irinn2/live/1080p/index.m3u8"),
+    ("Azarbayjangharbi.ir", "آذربایجان غربی", "", "https://live-aburayhan1113.telewebion.ir/ek/azarbayjangharbi/live/576p/index.m3u8"),
+    ("Sahand.ir", "سهند", "", "https://live-aburayhan1113.telewebion.ir/ek/sahand/live/1080p/index.m3u8"),
+    ("Alborz.ir", "البرز", "", "https://live-aburayhan1113.telewebion.ir/ek/alborz/live/1080p/index.m3u8"),
+    ("Esfahan.ir", "اصفهان", "", "https://live-aburayhan1113.telewebion.ir/ek/esfahan/live/576p/index.m3u8"),
+    ("Sabalan.ir", "سبلان", "", "https://live-aburayhan1113.telewebion.ir/ek/sabalan/live/576p/index.m3u8"),
+    ("Ilam.ir", "ایلام", "", "https://live-aburayhan1113.telewebion.ir/ek/ilam/live/576p/index.m3u8"),
+    ("Bushehr.ir", "بوشهر", "", "https://live-aburayhan1113.telewebion.ir/ek/bushehr/live/576p/index.m3u8"),
+    ("Jahanbin.ir", "جهانبین", "", "https://live-aburayhan1113.telewebion.ir/ek/jahanbin/live/576p/index.m3u8"),
+    ("Abadan.ir", "آبادان", "", "https://live-aburayhan1113.telewebion.ir/ek/abadan/live/1080p/index.m3u8"),
+    ("Khorasanrazavi.ir", "خراسان رضوی", "", "https://live-aburayhan1113.telewebion.ir/ek/khorasanrazavi/live/1080p/index.m3u8"),
+    ("Atrak.ir", "اترک", "", "https://live-aburayhan1113.telewebion.ir/ek/atrak/live/576p/index.m3u8"),
+    ("Khalijefars.ir", "خلیج فارس", "", "https://live-aburayhan1113.telewebion.ir/ek/khalijefars/live/576p/index.m3u8"),
+    ("Khoozestan.ir", "خوزستان", "", "https://live-aburayhan1113.telewebion.ir/ek/khoozestan/live/576p/index.m3u8"),
+    ("Eshragh.ir", "اشراق", "", "https://live-aburayhan1113.telewebion.ir/ek/eshragh/live/1080p/index.m3u8"),
+    ("Semnan.ir", "سمنان", "", "https://live-aburayhan1113.telewebion.ir/ek/semnan/live/576p/index.m3u8"),
+    ("Hamoon.ir", "هامون", "", "https://live-aburayhan1113.telewebion.ir/ek/hamoon/live/1080p/index.m3u8"),
+    ("Fars.ir", "فارس", "", "https://live-aburayhan1113.telewebion.ir/ek/fars/live/1080p/index.m3u8"),
+    ("Qazvin.ir", "قزوین", "", "https://live-aburayhan1113.telewebion.ir/ek/qazvin/live/1080p/index.m3u8"),
+    ("Noor.ir", "نور", "", "https://live-aburayhan1113.telewebion.ir/ek/noor/live/1080p/index.m3u8"),
+    ("Aflak.ir", "لرستان", "", "https://live-aburayhan1113.telewebion.ir/ek/aflak/live/576p/index.m3u8"),
+    ("Kerman.ir", "کرمان", "", "https://live-aburayhan1113.telewebion.ir/ek/kerman/live/1080p/index.m3u8"),
+    ("Zagros.ir", "زاگرس", "", "https://live-aburayhan1113.telewebion.ir/ek/zagros/live/576p/index.m3u8"),
+    ("Dena.ir", "دنا", "", "https://live-aburayhan1113.telewebion.ir/ek/dena/live/576p/index.m3u8"),
+    ("Kish.ir", "کیش", "", "https://live-aburayhan1113.telewebion.ir/ek/kish/live/576p/index.m3u8"),
+    ("Sabz.ir", "گلستان", "", "https://live-aburayhan1113.telewebion.ir/ek/sabz/live/576p/index.m3u8"),
+    ("Baran.ir", "باران", "", "https://live-aburayhan1113.telewebion.ir/ek/baran/live/1080p/index.m3u8"),
+    ("Kordestan.ir", "کردستان", "", "https://live-aburayhan1113.telewebion.ir/ek/kordestan/live/1080p/index.m3u8"),
+    ("Taban.ir", "یزد", "", "https://live-aburayhan1113.telewebion.ir/ek/taban/live/576p/index.m3u8"),
+    ("Tabarestan.ir", "تبرستان", "", "https://live-aburayhan1113.telewebion.ir/ek/tabarestan/live/576p/index.m3u8"),
+    ("Aftab.ir", "آفتاب", "", "https://live-aburayhan1113.telewebion.ir/ek/aftab/live/576p/index.m3u8"),
+    ("Mahabad.ir", "مهاباد", "", "https://live-aburayhan1113.telewebion.ir/ek/mahabad/live/1080p/index.m3u8"),
+    ("Sina.ir", "همدان", "", "https://live-aburayhan1113.telewebion.ir/ek/sina/live/1080p/index.m3u8"),
+    ("Khavaran.ir", "خاوران", "", "https://live-aburayhan1113.telewebion.ir/ek/khavaran/live/1080p/index.m3u8"),
+    ("Tv1plus.ir", "مثبت یک", "", "https://live-aburayhan1113.telewebion.ir/ek/tv1plus/live/1080p/index.m3u8"),
+    ("Labbayk.ir", "لبیک", "", "https://live-aburayhan1113.telewebion.ir/ek/labbayk/live/720p/index.m3u8"),
+    ("Razavi.ir", "رضوی", "", "https://live-aburayhan1113.telewebion.ir/ek/razavi/live/720p/index.m3u8"),
+    ("Velayat.ir", "ولایت", "", "https://live-aburayhan1113.telewebion.ir/ek/velayat/live/720p/index.m3u8"),
+    ("Karoon.ir", "کارون", "", "https://live-aburayhan1113.telewebion.ir/ek/karoon/live/576p/index.m3u8"),
+    ("Sport1.ir", "تلوبیون اسپرت 1", "", "https://live-aburayhan1113.telewebion.ir/ek/sport1/live/1080p/index.m3u8"),
+    ("Sport2.ir", "تلوبیون اسپرت 2", "", "https://live-aburayhan1113.telewebion.ir/ek/sport2/live/1080p/index.m3u8"),
+    ("Sport3.ir", "تلوبیون اسپرت 3", "", "https://live-aburayhan1113.telewebion.ir/ek/sport3/live/1080p/index.m3u8"),
+    ("Basij.ir", "بسیج", "", "https://live-aburayhan1113.telewebion.ir/ek/basij/live/720p/index.m3u8"),
+    ("Nesfejahan.ir", "نصف جهان", "", "https://live-aburayhan1113.telewebion.ir/ek/nesfejahan/live/720p/index.m3u8"),
+    ("Kawthar.ir", "الکوثر", "", "https://live-aburayhan1113.telewebion.ir/ek/kawthar/live/576p/index.m3u8"),
+    ("Presstv.ir", "پرس تی‌وی", "", "https://live-aburayhan1113.telewebion.ir/ek/presstv/live/576p/index.m3u8"),
+    ("Negarestan.ir", "نگارستان", "", "https://live-aburayhan1113.telewebion.ir/ek/negarestan/live/1080p/index.m3u8"),
+    ("Caspian.ir", "کاسپین", "", "https://live-aburayhan1113.telewebion.ir/ek/caspian/live/1080p/index.m3u8"),
+]
+
 # user request 2026-07-11: pulled out of "ایران" (iptv-org) group -- its alive-check flags
 # these dead intermittently under load -- and moved to end of پرشیانا instead
 _PERSIANA_EXTRA = [
@@ -1954,6 +2028,12 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(hd_extra)
     print(f"HD extra: {len(hd_extra)} channels", flush=True)
+    aburaihan_extra = [(f'#EXTINF:-1 tvg-id="{tvgid}" tvg-name="{name}" tvg-logo="{logo}" group-title="\U0001f4e1 تلوبیون ابوریحان",{name}', stream)
+                       for tvgid, name, logo, stream in ABURAIHAN_EXTRA]
+    for extinf, stream in aburaihan_extra:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(aburaihan_extra)
+    print(f"Telewebion Aburaihan: {len(aburaihan_extra)} channels", flush=True)
     iran_org = fetch_iran_org(cat_by_id, logo_by_id)
     for extinf, stream in iran_org:
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
