@@ -927,6 +927,15 @@ https://dash.antik.sk/live/test_ectv_hd_1200/playlist.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://stream8.cinerama.uz/1442/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/5b7ba5cb-71f4-4a66-9918-e7b44aac8dd3/default" group-title="تلوبیون Catch-up VOD: شبکه یک",تسبیح صبا 1405 - 15 آبان 1405 • 11/06 08:03
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv1/0x16d1e616/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/45a0e40a-dc53-4e8e-b6cb-30caa7525c1e/default" group-title="تلوبیون Catch-up VOD: شبکه یک",سپیده - 14 آبان 1405 • 11/06 02:52
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -1278,15 +1287,6 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv1/0x16d1c1ba/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv1/0x16d1bfb5/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/cae8fcb9-2068-4088-b39e-402c35df96f9/default" group-title="تلوبیون Catch-up VOD: شبکه یک",اخبار ساعت 8:00 (شبکه ۱) - 13 آبان 1405 • 11/04 11:29
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tv1/0x16d1bd46/master.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e2afc9c6-8fda-4c36-93fd-8af0ad5abdbc/default" group-title="تلوبیون Catch-up VOD: شبکه دو",زمانه - 14 آبان 1405 • 11/06 01:49
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -1556,6 +1556,33 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16d1bf33/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv2/0x16d1bf09/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/f8685b58-5819-43c3-8339-5a8c4dc3131a/default" group-title="تلوبیون Catch-up VOD: شبکه سه",وطن من - 15 آبان 1405 • 11/06 09:14
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1e590/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/6c475be5-395a-4638-955a-b60420c132a1/default" group-title="تلوبیون Catch-up VOD: شبکه سه",ضیافت دوست 1405 - 15 آبان 1405 • 11/06 07:45
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1e584/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e10eeb92-58b6-4e9f-892f-7585a8be56e8/default" group-title="تلوبیون Catch-up VOD: شبکه سه",مخاطب خاص 1405 - 14 آبان 1405 • 11/06 03:02
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1e57c/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/89b55972-8ff0-42ad-8b37-5a8eaa2332ab/default" group-title="تلوبیون Catch-up VOD: شبکه سه",پانتولیگ (فصل ششم) - 14 آبان 1405 • 11/06 02:00
 #EXTVLCOPT:network-caching=8000
@@ -1890,32 +1917,14 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1c25b/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1c1bc/master.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/ba1ad378-47fe-4334-98dd-a069c24552f8/default" group-title="تلوبیون Catch-up VOD: شبکه سه",اذان و نماز (شبکه ۳) - 13 آبان 1405 - بخش 1 • 11/04 15:13
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/d5da4f78-bc02-4ae4-8c31-417bddb12674/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",انقلاب دوم - قسمت 14 • 11/06 03:35
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
 #EXTVLCOPT:http-continuous=true
 #KODIPROP:inputstream=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1c18b/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/8e7da51b-408a-4292-9c1c-157f23a4c384/default" group-title="تلوبیون Catch-up VOD: شبکه سه",طبیب 1405 - 13 آبان 1405 • 11/04 14:18
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1c0ba/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/95d2acc0-b216-40ca-bcc0-bd6d753f70ce/default" group-title="تلوبیون Catch-up VOD: شبکه سه",برنامه اجتماعی (شبکه 3) - ویژه برنامه 13 آبان - 13 آبان 1405 • 11/04 13:07
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/tv3/0x16d1bfe6/master.m3u8
+https://tw-relay.samhouston010.workers.dev/tw/a/tv4/0x16d1e589/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/84c4f5cd-56b2-4589-a417-30a11fecf05c/default" group-title="تلوبیون Catch-up VOD: شبکه چهار",مان - 14 آبان 1405 • 11/06 02:03
 #EXTVLCOPT:network-caching=8000
@@ -2448,6 +2457,42 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d1bc27/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d1bbcd/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/7adc90c8-42a0-4257-a06d-143fd647489c/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 5:00 - 15 آبان 1405 • 11/06 08:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1e577/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/84147db0-58a1-4732-81c8-9f5da0e083fc/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 4:00 - 15 آبان 1405 • 11/06 07:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1e573/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/29b24ad5-9ad1-44dd-a0cf-87c9636df330/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 3:00 (خبر) - 15 آبان 1405 • 11/06 06:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1e548/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/4da80d63-26b3-4f62-baea-d9a087793cae/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 2:00 (خبر) - 15 آبان 1405 • 11/06 05:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1e4f8/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/ecf2531f-bd03-45a0-a607-bcb13250bc78/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 1:00 - 15 آبان 1405 • 11/06 04:30
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -2771,42 +2816,6 @@ https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1d78f/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1d745/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/07f87d90-ce6d-46f5-8836-fafe481be4df/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",نظرخوان - 14 آبان 1405 • 11/05 13:23
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1d6d9/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/943c1b24-439c-485b-aa24-c565094525fd/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",گزارش (خبر) - اعتراف اجباری - 14 آبان 1405 • 11/05 13:18
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1d6d0/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/b47bcc98-34d7-483c-b78d-cb70e9b7715e/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",گزارش (خبر) - پیشرو - 14 آبان 1405 • 11/05 13:11
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1d6b8/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/1d2128d3-d4d9-4b86-82c1-b66c0abb103c/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ورزشی ساعت 9:30 - 14 آبان 1405 • 11/05 13:00
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d1d67e/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/80edeff0-4087-41d3-b4b0-b5484a8d33f4/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",شما و آی فیلم (سری جدید) - 14 آبان 1405 • 11/06 03:07
 #EXTVLCOPT:network-caching=8000
@@ -4131,6 +4140,15 @@ https://eazyvwqssi.erbvr.com/alghadtv/alghadtv.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live2.cdnbridge.tv/AlmasirahMubasher/Mubasher_All/playlist.m3u8
 
+#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/lebanon/al-manar-lb.png",Al Manar (شبکه‌ی حزب‌الله)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://edge.fastpublish.me/live/index.m3u8
+
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/WcRlHQm.png",Al Ekhbariya
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -4148,15 +4166,6 @@ https://shd-gcp-live.edgenextcdn.net/live/bitmovin-al-ekhbaria/297b3ef1cd0633ad9
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://live.kwikmotion.com/royatvpublic/royatv.smil/playlist.m3u8
-
-#EXTINF:-1 group-title="📰 خبر" tvg-logo="https://i.imgur.com/GtQOKeW.png",Al Mayadeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 
 #EXTINF:-1 group-title="📰 خبر" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89542_dark_360w_270h.png",BBC World News
 #EXTVLCOPT:network-caching=2000
@@ -8765,6 +8774,15 @@ https://setarehhls.wns.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://zedhls.wns.live/hls/stream.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/f281168543fe45bd850cd781464b445a/434ccd31-28a1-439c-844a-26b8de36a0e9_thumb_001_HD.jpg",شاهزاده رضا پهلوی: بر پیمانم با شما برای آزادی ایران ایستاده‌ام
+https://daq1pvcuhj77l.cloudfront.net/1/f281168543fe45bd850cd781464b445a/hls/434ccd31-28a1-439c-844a-26b8de36a0e9.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/cb4f23c221a648f49a129690888c6b44/60f3042d-e964-473b-9521-99ecf7c03c0e_thumb_001_HD.jpg",ترامپ: با وجود نارضایتی‌ها، هگست را در سمتش حفظ می‌کنم
+https://daq1pvcuhj77l.cloudfront.net/1/cb4f23c221a648f49a129690888c6b44/hls/60f3042d-e964-473b-9521-99ecf7c03c0e.m3u8
+
+#EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/7f7e428ac68e4036b1ca223b8db82feb/2cd2ca51-ff7b-4799-9193-e4435954e258_thumb_001_HD.jpg",روح‌الله رحیم‌پور: سفر رضایی به مسکو نشانه انزوای راهبردی مجتبی خامنه‌ای است
+https://daq1pvcuhj77l.cloudfront.net/1/7f7e428ac68e4036b1ca223b8db82feb/hls/2cd2ca51-ff7b-4799-9193-e4435954e258.m3u8
 
 #EXTINF:-1 group-title="📹 ایران اینترنشنال VOD" tvg-logo="https://daq1pvcuhj77l.cloudfront.net/1/1831064d918a4615b9b4b75b7d7fc9ea/172e8619-5f95-4b0c-93cc-7b6979a57a57_thumb_001_HD.jpg",تجمع سه‌روزه خانواده‌های ایرانی در کانادا در اعتراض به مشکلات اقامتی سربازان پیشین سپاه
 https://daq1pvcuhj77l.cloudfront.net/1/1831064d918a4615b9b4b75b7d7fc9ea/hls/172e8619-5f95-4b0c-93cc-7b6979a57a57.m3u8
