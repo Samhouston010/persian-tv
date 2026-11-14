@@ -1877,6 +1877,49 @@ SWEDEN_TEST = [  # (name, stream)
 ]
 
 
+# user request 2026-11-13: the 79.127.207.193 restream (Zurich; Arena/Art/SuperSport/KSport/Tring/Eurosport/ORF/HRT, from
+# KaneenApp/NeuroSources) -- server was down when added, kept WITHOUT an alive check so the owner can see/try them.
+ARENA_TEST = [  # (name, stream)
+    ("Arena Premium 1 HD", "http://79.127.207.193:80/ArenaPremium1HD/playlist.m3u8"),
+    ("Arena Premium 2 HD", "http://79.127.207.193:80/ArenaPremium2HD/playlist.m3u8"),
+    ("Arena Premium 3 HD", "http://79.127.207.193:80/ArenaPremium3HD/playlist.m3u8"),
+    ("Arena Sport 1 HD", "http://79.127.207.193:80/ArenaSport1HD/playlist.m3u8"),
+    ("Arena Sport 2 HD", "http://79.127.207.193:80/ArenaSport2HD/playlist.m3u8"),
+    ("Arena Sport 3 HD", "http://79.127.207.193:80/ArenaSport3HD/playlist.m3u8"),
+    ("Arena Sport 4 HD", "http://79.127.207.193:80/ArenaSport4HD/playlist.m3u8"),
+    ("Arena Sport 5 HD", "http://79.127.207.193:80/ArenaSport5HD/playlist.m3u8"),
+    ("Arena Sport 6 HD", "http://79.127.207.193:80/ArenaSport6HD/playlist.m3u8"),
+    ("Arena Sport 7 HD", "http://79.127.207.193:80/ArenaSport7HD/playlist.m3u8"),
+    ("Arena Sport 8 HD", "http://79.127.207.193:80/ArenaSport8HD/playlist.m3u8"),
+    ("Arena Sport 9 HD", "http://79.127.207.193:80/ArenaSport9HD/playlist.m3u8"),
+    ("Arena Sport 10 HD", "http://79.127.207.193:80/ArenaSport10HD/playlist.m3u8"),
+    ("Super Sport 1", "http://79.127.207.193:80/Supersport1/playlist.m3u8"),
+    ("Super Sport 2", "http://79.127.207.193:80/Supersport2/playlist.m3u8"),
+    ("Super Sport 3", "http://79.127.207.193:80/Supersport3/playlist.m3u8"),
+    ("Super Sport 4", "http://79.127.207.193:80/Supersport4/playlist.m3u8"),
+    ("Super Sport 5", "http://79.127.207.193:80/Supersport5/playlist.m3u8"),
+    ("Super Sport 6", "http://79.127.207.193:80/Supersport6/playlist.m3u8"),
+    ("Super Sport 7", "http://79.127.207.193:80/Supersport7/playlist.m3u8"),
+    ("Super Sport 2", "http://79.127.207.193/Supersport2/playlist.m3u8"),
+    ("Super Sport 3", "http://79.127.207.193/Supersport3/playlist.m3u8"),
+    ("Super Sport 4", "http://79.127.207.193/Supersport4/playlist.m3u8"),
+    ("Super Sport 5", "http://79.127.207.193/Supersport5/playlist.m3u8"),
+    ("Super Sport 6", "http://79.127.207.193/Supersport6/playlist.m3u8"),
+    ("Tring Sport 1", "http://79.127.207.193:80/TringSport1HD/playlist.m3u8"),
+    ("Tring Sport 2", "http://79.127.207.193:80/TringSport2HD/playlist.m3u8"),
+    ("KSport 1 HD", "http://79.127.207.193:80/KSport1/playlist.m3u8"),
+    ("KSport 2 HD", "http://79.127.207.193:80/KSport2/playlist.m3u8"),
+    ("KSport 3 HD", "http://79.127.207.193:80/KSport3/playlist.m3u8"),
+    ("KSport 4 HD", "http://79.127.207.193:80/KSport4/playlist.m3u8"),
+    ("Art Sport 1 HD", "http://79.127.207.193:80/ArtSport1HD/playlist.m3u8"),
+    ("Art Sport 2 HD", "http://79.127.207.193:80/ArtSport2/playlist.m3u8"),
+    ("Art Sport 3 HD", "http://79.127.207.193:80/ArtSport3/playlist.m3u8"),
+    ("Art Sport 4 HD", "http://79.127.207.193:80/ArtSport4/playlist.m3u8"),
+    ("Art Sport 5 HD", "http://79.127.207.193:80/ArtSport5/playlist.m3u8"),
+    ("Art Sport 6 HD", "http://79.127.207.193:80/ArtSport6/playlist.m3u8"),
+]
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -2232,6 +2275,9 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(sweden)
     print(f"Sweden test: {len(sweden)} channels", flush=True)
+    for name, stream in ARENA_TEST:  # no alive check on purpose (see ARENA_TEST)
+        out.append(f'#EXTINF:-1 group-title="{TEST_GROUP}",{name} (Arena server)'); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(ARENA_TEST)
     # user request 2026-07-12: new parsatv.com channels go at the top of ایران, iptv-org after
     parsatv_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
                       for name, logo, stream in PARSATV_IRAN_EXTRA]
