@@ -1781,6 +1781,102 @@ def au_epg_tree(ids):
     return root
 
 
+# user request 2026-11-13: everything the IRIB hunt found (Sweden restream 185.9.2.18 = 47 channels, mostly Arabic; IRIB world
+# service on live.presstv.co.uk (US); adabmedia.com (Tehran); other working hits from public m3u files) in one test folder.
+TEST_GROUP = "سوید تست"
+SWEDEN_TEST = [  # (name, stream)
+    ("Sweden 1", "http://185.9.2.18/chid_1/index.m3u8"),
+    ("Sweden 27", "http://185.9.2.18/chid_27/index.m3u8"),
+    ("Sweden 144 - Al Sharqiya HD", "http://185.9.2.18/chid_144/index.m3u8"),
+    ("Sweden 146 - Al Arabiya", "http://185.9.2.18/chid_146/index.m3u8"),
+    ("Sweden 205", "http://185.9.2.18/chid_205/index.m3u8"),
+    ("Sweden 218", "http://185.9.2.18/chid_218/index.m3u8"),
+    ("Sweden 247", "http://185.9.2.18/chid_247/index.m3u8"),
+    ("Sweden 282", "http://185.9.2.18/chid_282/index.m3u8"),
+    ("Sweden 283", "http://185.9.2.18/chid_283/index.m3u8"),
+    ("Sweden 285", "http://185.9.2.18/chid_285/index.m3u8"),
+    ("Sweden 286", "http://185.9.2.18/chid_286/index.m3u8"),
+    ("Sweden 288", "http://185.9.2.18/chid_288/index.m3u8"),
+    ("Sweden 290", "http://185.9.2.18/chid_290/index.m3u8"),
+    ("Sweden 299", "http://185.9.2.18/chid_299/index.m3u8"),
+    ("Sweden 312", "http://185.9.2.18/chid_312/index.m3u8"),
+    ("Sweden 327 - LBC", "http://185.9.2.18/chid_327/index.m3u8"),
+    ("Sweden 347", "http://185.9.2.18/chid_347/index.m3u8"),
+    ("Sweden 352", "http://185.9.2.18/chid_352/index.m3u8"),
+    ("Sweden 367", "http://185.9.2.18/chid_367/index.m3u8"),
+    ("Sweden 372", "http://185.9.2.18/chid_372/index.m3u8"),
+    ("Sweden 374 - MBC 1", "http://185.9.2.18/chid_374/index.m3u8"),
+    ("Sweden 375 - MBC 2", "http://185.9.2.18/chid_375/index.m3u8"),
+    ("Sweden 376 - MBC 3", "http://185.9.2.18/chid_376/index.m3u8"),
+    ("Sweden 377 - MBC 4", "http://185.9.2.18/chid_377/index.m3u8"),
+    ("Sweden 378", "http://185.9.2.18/chid_378/index.m3u8"),
+    ("Sweden 379", "http://185.9.2.18/chid_379/index.m3u8"),
+    ("Sweden 382", "http://185.9.2.18/chid_382/index.m3u8"),
+    ("Sweden 387", "http://185.9.2.18/chid_387/index.m3u8"),
+    ("Sweden 391 - Al Jadeed", "http://185.9.2.18/chid_391/index.m3u8"),
+    ("Sweden 423", "http://185.9.2.18/chid_423/index.m3u8"),
+    ("Sweden 455", "http://185.9.2.18/chid_455/index.m3u8"),
+    ("Sweden 516", "http://185.9.2.18/chid_516/index.m3u8"),
+    ("Sweden 521", "http://185.9.2.18/chid_521/index.m3u8"),
+    ("Sweden 597", "http://185.9.2.18/chid_597/index.m3u8"),
+    ("Sweden 615", "http://185.9.2.18/chid_615/index.m3u8"),
+    ("Sweden 616 - ON E", "http://185.9.2.18/chid_616/index.m3u8"),
+    ("Sweden 659 - Al Hayat", "http://185.9.2.18/chid_659/index.m3u8"),
+    ("Sweden 680", "http://185.9.2.18/chid_680/index.m3u8"),
+    ("Sweden 706", "http://185.9.2.18/chid_706/index.m3u8"),
+    ("Sweden 741", "http://185.9.2.18/chid_741/index.m3u8"),
+    ("Sweden 742", "http://185.9.2.18/chid_742/index.m3u8"),
+    ("Sweden 743", "http://185.9.2.18/chid_743/index.m3u8"),
+    ("Sweden 845", "http://185.9.2.18/chid_845/index.m3u8"),
+    ("Sweden 926 - IRINN (شبکه خبر)", "http://185.9.2.18/chid_926/index.m3u8"),
+    ("Sweden 1126", "http://185.9.2.18/chid_1126/index.m3u8"),
+    ("Sweden 1235", "http://185.9.2.18/chid_1235/index.m3u8"),
+    ("Sweden 1289 - Al Nahar", "http://185.9.2.18/chid_1289/index.m3u8"),
+    ("iFilm Persian (presstv.co.uk)", "https://live.presstv.co.uk/hls/ifilmfa_4_482/index.m3u8"),
+    ("iFilm 2 (presstv.co.uk)", "https://live.presstv.co.uk/hls/ifilm2_4_482/index.m3u8"),
+    ("iFilm Arabic (presstv.co.uk)", "https://live.presstv.co.uk/hls/ifilmar_4_482/index.m3u8"),
+    ("iFilm English (presstv.co.uk)", "https://live.presstv.co.uk/hls/ifilmen_4_482/index.m3u8"),
+    ("Press TV (presstv.co.uk)", "https://live.presstv.co.uk/hls/presstv_4_482/index.m3u8"),
+    ("Hispan TV (presstv.co.uk)", "https://live.presstv.co.uk/hls/hispantv_4_482/index.m3u8"),
+    ("شبکه ورزش (adabmedia)", "https://cp11.adabmedia.com/hls2/varzeshtest.m3u8"),
+    ("شبکه سه (adabmedia)", "https://cp11.adabmedia.com/hls2/tv3test.m3u8"),
+    ("شبکه سه پشتیبان (adabmedia)", "https://cp11.adabmedia.com/hls2/tv3.m3u8"),
+    ("Persiana Sports (adabmedia)", "https://cp11.adabmedia.com/hls2/persiana.m3u8"),
+    ("beIN Sports 1 (adabmedia)", "https://cp11.adabmedia.com/hls2/bein1.m3u8"),
+    ("Mahua Khabar (1080p) (cdn.ottlive.co.in)", "https://cdn.ottlive.co.in/mahuakhabar/index.m3u8"),
+    ("Khabar Fast (576p) (d2gvyg6lvauoko.cloudfront.net)", "https://d2gvyg6lvauoko.cloudfront.net/230226/khabarfast/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b"),
+    ("Pratham Khabar 24x7 (576p) (livelegitpro.in)", "https://livelegitpro.in/hls2/newstime/index.m3u8"),
+    ("Har Khabar (576p) (samitaorigin.tangotv.in)", "https://samitaorigin.tangotv.in/HARKHABAR/SAMITAORIGIN/index.m3u8"),
+    ("Hindi Khabar (1080p) (stream.ottlive.co.in)", "https://stream.ottlive.co.in/hindikhabar/index.m3u8"),
+    ("Aaj Ki Khabar (1080p) (vglivessai.akamaized.net)", "https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/a65577ae-f9df-4ba8-bcb5-bcd1f04d06cb/index.m3u8"),
+    ("پرشیانا مستند (scihls.persiana.live)", "https://scihls.persiana.live/hls/stream.m3u8"),
+    ("امید جاودان (livestream.5centscdn.com)", "https://livestream.5centscdn.com/pwocchurchweb1/cebac1e921182acff008ab1222f0c916.sdp/playlist.m3u8"),
+    ("Omid e Iran TV (oitnhls.wns.live)", "https://oitnhls.wns.live/hls/stream.m3u8"),
+    ("Holy Quran 106.1 (185.105.4.106)", "http://185.105.4.106:1935/live/radio-106-1/playlist.m3u8"),
+    ("QURAN TV ksa (46.245.160.224)", "http://46.245.160.224/mekke/mekke/chunklist_w581447799.m3u8"),
+    ("Quran tv (46.245.160.224)", "http://46.245.160.224/mekke/mekke/gmswf.m3u8"),
+    ("BAHRAIN QURAN (5c7b683162943.streamlock.net)", "https://5c7b683162943.streamlock.net/live/ngrp:bahrainquran_all/playlist.m3u8"),
+    ("Bahrain Quran(480p) (5c7b683162943.streamlock.net)", "https://5c7b683162943.streamlock.net:443/live/ngrp:bahrainquran_all/chunklist_w1461721754_b978000.m3u8"),
+    ("QURAN (cdn-globecast.akamaized.net)", "https://cdn-globecast.akamaized.net/live/eds/saudi_quran/hls_roku/index.m3u8"),
+    ("The Holy Quran  by Sheikh Mahmoud Al-Hus (jazzgroove.org)", "https://jazzgroove.org/jazzgroove-mix-2.m3u"),
+    ("Alquran (1080p) (ktvlive.online)", "https://ktvlive.online/stream/hls/ch1.m3u8"),
+    ("SHARJAH QURAN (live.kwikmotion.com)", "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/playlist.m3u8"),
+    ("Holy Quran Radio (1080p) (live.kwikmotion.com)", "https://live.kwikmotion.com/sbrksaquranradiolive/srpksaquranradio/playlist.m3u8"),
+    ("Sharjah Radio Quran (1080p) (live.kwikmotion.com)", "https://live.kwikmotion.com/smcquranlive/quranradiolive/playlist.m3u8"),
+    ("QURAN (m.live.net.sa)", "http://m.live.net.sa:1935/live/quran/playlist.m3u8"),
+    ("Al Quran Al Kareem TV (720p) (m.live.net.sa)", "http://m.live.net.sa:1935/live/quran/gmswf.m3u8"),
+    ("Saudi Quran Live (m.live.net.sa)", "http://m.live.net.sa:1935/live/quran/quran.m3u8"),
+    ("MMN HD Quran (mmn.mypsx.net)", "http://mmn.mypsx.net:1935/live/mmnhdquran/playlist.m3u8"),
+    ("Quran Program Oman   إذاعة-القرآن-الكريم (partwota.cdn.mgmlcdn.com)", "https://partwota.cdn.mgmlcdn.com/quranrdoorg/quranrdo.stream_aac/chunklist.m3u8"),
+    ("Iqraa Quran (1080p) (playlist.fasttvcdn.com)", "https://playlist.fasttvcdn.com/pl/dlkqw1ftuvuuzkcb4pxdcg/Iqraafasttv2/playlist.m3u8"),
+    ("Qatar Television The Holy Quran (qatartv.akamaized.net)", "https://qatartv.akamaized.net/hls/live/20000612/qtvquran/master1080p.m3u8"),
+    ("Qatar TV The Holy Quran (1080p) (qatartv.akamaized.net)", "https://qatartv.akamaized.net/hls/live/20000612/qtvquran/master.m3u8"),
+    ("RadyoHome - Kur’an Arapça (Quran Arabic) (ssl4.radyotvonline.com)", "https://ssl4.radyotvonline.com/radyohome/kuranarapca.stream_aac/chunklist_w1487243334.m3u8"),
+    ("Holy Quran Radio Nablus (720p) (streaming.zaytonatube.com)", "http://streaming.zaytonatube.com:8080/holyquran/holyquran/video.m3u8"),
+    ("Quran (vodzong.mjunoon.tv)", "https://vodzong.mjunoon.tv:8087/streamtest/SaudiQuran-142/playlist.m3u8"),
+]
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -2131,6 +2227,11 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(au)
     print(f"Australia: {len(au)} channels", flush=True)
+    sweden = _alive([(f'#EXTINF:-1 group-title="{TEST_GROUP}",{name}', stream) for name, stream in SWEDEN_TEST], "Sweden test")
+    for extinf, stream in sweden:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(sweden)
+    print(f"Sweden test: {len(sweden)} channels", flush=True)
     # user request 2026-07-12: new parsatv.com channels go at the top of ایران, iptv-org after
     parsatv_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
                       for name, logo, stream in PARSATV_IRAN_EXTRA]

@@ -1,0 +1,29 @@
+name: IRIB Hunt
+
+# Searches public m3u files on GitHub + big IPTV lists for IRIB/Telewebion channels on NON-Telewebion servers,
+# tests every link down to a video segment, and commits the report (irib_hunt.tsv). Report only: the playlist is untouched.
+on:
+  schedule:
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python irib_hunt.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add irib_hunt.tsv
+          git diff --cached --quiet || git commit -m "IRIB hunt $(date -u +%Y-%m-%d)"
+          git push
