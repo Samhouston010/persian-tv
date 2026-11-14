@@ -2556,6 +2556,15 @@ https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d293ec/master.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/tehran/0x16d298d1/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/6deac164-4755-4bdf-8384-f7fa824ddae6/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 3:00 (خبر) - ۲۳ آبان ۱۴۰۵ • 11/14 06:30
+#EXTVLCOPT:network-caching=8000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d2bfa9/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e9d2dd18-7c9b-4dd2-a126-961473375a34/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",اخبار ساعت 2:00 (خبر) - ۲۳ آبان ۱۴۰۵ • 11/14 05:30
 #EXTVLCOPT:network-caching=8000
 #EXTVLCOPT:http-reconnect=true
@@ -2906,15 +2915,6 @@ https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d2afeb/master.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d2af98/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/e9b5859c-7802-43bd-94d1-cdc9ba7fde4a/default" group-title="تلوبیون Catch-up VOD: شبکه خبر",نبرد هرمز - 22 آبان 1405 - حسین حاجی • 11/13 12:41
-#EXTVLCOPT:network-caching=8000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://tw-relay.samhouston010.workers.dev/tw/a/irinn/0x16d2af96/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.telewebion.net/episodeImages/38de8d4f-4866-4128-93b6-1567b71728a3/default" group-title="تلوبیون Catch-up VOD: آی‌فیلم",بزم آخر - قسمت 3 • 11/14 02:30
 #EXTVLCOPT:network-caching=8000
@@ -6543,6 +6543,15 @@ https://hls.sunmusic.live/hls/stream.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 http://media.boni-records.com/index.m3u8
 
+#EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+
 #EXTINF:-1 group-title="🎵 موسیقی" tvg-logo="https://i.imgur.com/E65GQN9.png",DELUXE MUSIC DANCE BY KONTOR
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -7002,15 +7011,6 @@ https://i.mjh.nz/.r/10-cheapseats.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://i.mjh.nz/.r/10-adultanimation.m3u8
 
-#EXTINF:-1 tvg-id="mjh-10-becker" tvg-logo="https://10.com.au/ip/s3/2023/06/28/e0449ed804aaacb1de64f87d94912dd3-1246030.png?image-profile=logo" group-title="🇦🇺 استرالیا",Becker
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://i.mjh.nz/.r/10-becker.m3u8
-
 #EXTINF:-1 tvg-id="mjh-10-aussiedramapopup" tvg-logo="https://10.com.au/ip/s3/2023/01/24/082f00086b990e915cd774644d67484c-1213111.png?image-profile=logo" group-title="🇦🇺 استرالیا",Rush
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -7146,15 +7146,6 @@ https://i.mjh.nz/.r/10-spongebobsquarepants.m3u8
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://i.mjh.nz/.r/10-nicktoons-90s.m3u8
 
-#EXTINF:-1 tvg-id="mjh-10-nickteen" tvg-logo="https://10.com.au/ip/s3/2024/06/04/ecc540be818b29d753e036e046028a27-1318595.png?image-profile=logo" group-title="🇦🇺 استرالیا",NickTeen
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://i.mjh.nz/.r/10-nickteen.m3u8
-
 #EXTINF:-1 tvg-id="mjh-abc-kids" tvg-logo="https://i.mjh.nz/.images/abc-kids.png" group-title="🇦🇺 استرالیا",ABC Kids
 #EXTVLCOPT:network-caching=2000
 #EXTVLCOPT:http-reconnect=true
@@ -7235,15 +7226,6 @@ https://i.mjh.nz/.r/10-diagnosismurder.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://i.mjh.nz/.r/10-forty-eight-hours.m3u8
-
-#EXTINF:-1 tvg-id="mjh-10-ghosthunters" tvg-logo="https://10.com.au/ip/s3/2024/02/20/6a0f5d5002748886ee7b1936f996a304-1298978.png?image-profile=logo" group-title="🇦🇺 استرالیا",Ghost Hunters
-#EXTVLCOPT:network-caching=2000
-#EXTVLCOPT:http-reconnect=true
-#EXTVLCOPT:http-continuous=true
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=hls
-#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
-https://i.mjh.nz/.r/10-ghosthunters.m3u8
 
 #EXTINF:-1 tvg-id="mjh-10-grahamnorton" tvg-logo="https://10.com.au/ip/s3/2023/07/12/bcb38e1591564d24894210f4abd02423-1248623.png?image-profile=logo" group-title="🇦🇺 استرالیا",The Graham Norton Show
 #EXTVLCOPT:network-caching=2000
@@ -8198,6 +8180,60 @@ https://cp11.adabmedia.com/hls2/tv3.m3u8
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
 https://cp11.adabmedia.com/hls2/varzeshtest.m3u8
+
+#EXTINF:-1 tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون (مستقیم)",شبکه ورزش (HD)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cp11.adabmedia.com/hls2/varzeshtest.m3u8
+
+#EXTINF:-1 tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="📡 تلوبیون (مستقیم)",شبکه سه (HD)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cp11.adabmedia.com/hls2/tv3test.m3u8
+
+#EXTINF:-1 tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="📡 تلوبیون (مستقیم)",شبکه سه (HD - پشتیبان)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cp11.adabmedia.com/hls2/tv3.m3u8
+
+#EXTINF:-1 tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png" group-title="📡 تلوبیون ابوریحان",شبکه ورزش (HD)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cp11.adabmedia.com/hls2/varzeshtest.m3u8
+
+#EXTINF:-1 tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="📡 تلوبیون ابوریحان",شبکه سه (HD)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cp11.adabmedia.com/hls2/tv3test.m3u8
+
+#EXTINF:-1 tvg-logo="https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png" group-title="📡 تلوبیون ابوریحان",شبکه سه (HD - پشتیبان)
+#EXTVLCOPT:network-caching=2000
+#EXTVLCOPT:http-reconnect=true
+#EXTVLCOPT:http-continuous=true
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#KODIPROP:inputstream.adaptive.stream_selection_type=adaptive
+https://cp11.adabmedia.com/hls2/tv3.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.parsatv.com/index_files/channels/t2tv.jpg" group-title="ایران",T2 Movies
 #EXTVLCOPT:network-caching=2000
