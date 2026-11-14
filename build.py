@@ -1917,6 +1917,11 @@ ARENA_TEST = [  # (name, stream)
     ("Art Sport 4 HD", "http://79.127.207.193:80/ArtSport4/playlist.m3u8"),
     ("Art Sport 5 HD", "http://79.127.207.193:80/ArtSport5/playlist.m3u8"),
     ("Art Sport 6 HD", "http://79.127.207.193:80/ArtSport6/playlist.m3u8"),
+    ("Eurosport 1 HD", "http://79.127.207.193:80/Eurosport1HD/playlist.m3u8"),
+    ("Eurosport 2 HD", "http://79.127.207.193:80/Eurosport2HD/playlist.m3u8"),
+    ("ORF 2", "http://79.127.207.193/ORF2/playlist.m3u8"),
+    ("HRT International", "http://79.127.207.193/HRTint/playlist.m3u8"),
+    ("RK TV (adult)", "http://79.127.207.193:80/RealityKings/playlist.m3u8"),
 ]
 
 
