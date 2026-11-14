@@ -1659,6 +1659,120 @@ def fetch_ted_direct(workers=20):
 
 
 
+# user request 2026-11-13: Australian channels (same 53 as the Persiana playlist Worker's AU_EXTRA), from matthuisman's
+# i.mjh.nz redirector links. Each was frame-checked from a US IP that day; Channel 9 x7 / Seven / SBS are geo-locked and
+# 10 Drama / 10 Comedy fail on their AES key outside Australia, so they are left out. _au_alive() re-checks every build.
+AU_GROUP = "🇦🇺 استرالیا"
+AU_CHANNELS = [  # (name, logo, stream, tvg-id)
+    ("ABC TV", "https://i.mjh.nz/.images/abc-nsw.png", "https://c.mjh.nz/abc-nsw.m3u8", "mjh-abc-nsw"),
+    ("ausbiz", "https://i.mjh.nz/.images/auto-ausbiz-fast-b12203.png", "https://i.mjh.nz/.r/ausbiz-fast.m3u8", "mjh-ausbiz-fast"),
+    ("Seinfeld", "https://imageresizer.static9.net.au/yKlUxIHgYC5cpCmL1DYpRCQ6w4o=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F04%2F585342%2Fgroup-61657.png", "https://i.mjh.nz/.r/seinfeld-fast.m3u8", "mjh-seinfeld-fast"),
+    ("9Crime", "https://imageresizer.static9.net.au/OwBWBtMcLMF5vBP09k6w4LneJQM=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F04%2F585343%2Fgroup-61566.png", "https://i.mjh.nz/.r/9crime-fast.m3u8", "mjh-9crime-fast"),
+    ("The Block 24/7", "https://imageresizer.static9.net.au/Mj-NaVq7oZgtzt2bf55lkLIfyuQ=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F08%2F623508%2Ftheblock_squircle.png", "https://i.mjh.nz/.r/the-block-247-fast.m3u8", "mjh-the-block-247-fast"),
+    ("Taronga 24/7", "https://imageresizer.static9.net.au/HvEyaXfq57tpzSGiLjqejGDiyA8=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2026%2F06%2F779914%2Ftaronga_squircle.png", "https://i.mjh.nz/.r/taronga-247-fast.m3u8", "mjh-taronga-247-fast"),
+    ("9Mystery&Paranormal", "https://imageresizer.static9.net.au/1l9r5t0Fkyry61l_5eKpIxtv0SE=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2025%2F04%2F685323%2Fmp_squircle.png", "https://i.mjh.nz/.r/9mysteryparanormal-fast.m3u8", "mjh-9mysteryparanormal-fast"),
+    ("Married At First Sight", "https://imageresizer.static9.net.au/OCF69HZLp4AWm0cGB8bvgx4U8mQ=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F04%2F585176%2Fsquircle_mafs.png", "https://i.mjh.nz/.r/married-at-first-sight-fast.m3u8", "mjh-married-at-first-sight-fast"),
+    ("Dance Moms 24/7", "https://imageresizer.static9.net.au/OKBRw5HKp9hAAVX3XM-A1HrVRug=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F04%2F585178%2Fsquircle_dancemoms.png", "https://i.mjh.nz/.r/dance-moms-247-fast.m3u8", "mjh-dance-moms-247-fast"),
+    ("LMN", "https://imageresizer.static9.net.au/GfA3WNoMOfZbJOqJeq-UrX5nsdk=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F12%2F658518%2Fgroup-61484.png", "https://i.mjh.nz/.r/lmn-fast.m3u8", "mjh-lmn-fast"),
+    ("H2", "https://imageresizer.static9.net.au/OxADVUkSO8Xp2ATCSJmMsa0gcDE=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2025%2F04%2F684622%2Fh2_squircle.png", "https://i.mjh.nz/.r/h2-fast.m3u8", "mjh-h2-fast"),
+    ("60 Minutes Australia", "https://imageresizer.static9.net.au/kufGcZyXI7lNm32WrMV86xPNAnk=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F04%2F585173%2Fsquircle_60mins.png", "https://i.mjh.nz/.r/60-minutes-australia-fast.m3u8", "mjh-60-minutes-australia-fast"),
+    ("Thank God You're Here", "https://10.com.au/ip/s3/2025/08/19/9cde4af8ad28a81defc2e020775ff74f-1390978.png?image-profile=logo", "https://i.mjh.nz/.r/10-thankgodyourehere.m3u8", "mjh-10-thankgodyourehere"),
+    ("True Stories", "https://10.com.au/ip/s3/2022/09/22/bf31efb3f5efe008cc774909b0cef282-1181809.png?image-profile=logo", "https://i.mjh.nz/.r/10-true-stories.m3u8", "mjh-10-true-stories"),
+    ("The Only Way Is Essex", "https://10.com.au/ip/s3/2024/10/21/644463c986545838587c1b800be3da68-1345463.png?image-profile=logo", "https://i.mjh.nz/.r/10-theonlywayisessex.m3u8", "mjh-10-theonlywayisessex"),
+    ("MasterChef", "https://10.com.au/ip/s3/2022/09/02/3fff1b47f7c01770b7f0f319770d5362-1177252.png?image-profile=logo", "https://i.mjh.nz/.r/10-masterchef.m3u8", "mjh-10-masterchef"),
+    ("MTV Ridiculousness", "https://10.com.au/ip/s3/2024/02/19/6a7d740896d031b59c9d33d0e6dff544-1298686.png?image-profile=logo", "https://i.mjh.nz/.r/10-mtvridiculousness.m3u8", "mjh-10-mtvridiculousness"),
+    ("Have You Been Paying Attention?", "https://10.com.au/ip/s3/2024/12/17/20963e84ceedc64212b60c21c883e5c4-1356262.png?image-profile=logo", "https://i.mjh.nz/.r/10-haveyoubeenpayingattention.m3u8", "mjh-10-haveyoubeenpayingattention"),
+    ("The Cheap Seats", "https://10.com.au/ip/s3/2025/08/08/47006754904d1d36520e76157ecbfb41-1390280.png?image-profile=logo", "https://i.mjh.nz/.r/10-cheapseats.m3u8", "mjh-10-cheapseats"),
+    ("Adult Animation", "https://10.com.au/ip/s3/2024/03/21/fb3a87d8a0126b81727106f43c2a2aef-1304705.png?image-profile=logo", "https://i.mjh.nz/.r/10-adultanimation.m3u8", "mjh-10-adultanimation"),
+    ("Becker", "https://10.com.au/ip/s3/2023/06/28/e0449ed804aaacb1de64f87d94912dd3-1246030.png?image-profile=logo", "https://i.mjh.nz/.r/10-becker.m3u8", "mjh-10-becker"),
+    ("Rush", "https://10.com.au/ip/s3/2023/01/24/082f00086b990e915cd774644d67484c-1213111.png?image-profile=logo", "https://i.mjh.nz/.r/10-aussiedramapopup.m3u8", "mjh-10-aussiedramapopup"),
+    ("Prisoner: Cell Block H", "https://10.com.au/ip/s3/2022/09/26/b6430b0f79d6b4c9fc5c6ea295bbae03-1182444.png?image-profile=logo", "https://i.mjh.nz/.r/10-prisoner-cell-block-h.m3u8", "mjh-10-prisoner-cell-block-h"),
+    ("Next Top Model", "https://10.com.au/ip/s3/2026/08/04/7b46b0620b6c96c6afcd7c47bf356f79-1448048.png?image-profile=logo", "https://i.mjh.nz/.r/10-nexttopmodel.m3u8", "mjh-10-nexttopmodel"),
+    ("World Of Survivor", "https://10.com.au/ip/s3/2024/09/24/6a7955dee63fad795d40332b9cfbf8ce-1340644.png?image-profile=logo", "https://i.mjh.nz/.r/10-world-of-survivor.m3u8", "mjh-10-world-of-survivor"),
+    ("MTV The Shores", "https://10.com.au/ip/s3/2023/07/11/3901f5c4522a0c36cfed8630ab781a5e-1248401.png?image-profile=logo", "https://i.mjh.nz/.r/10-mtv-the-shores.m3u8", "mjh-10-mtv-the-shores"),
+    ("Embarrassing Bodies", "https://10.com.au/ip/s3/2024/10/21/f315a8cda9494cc30e29fdba87430ff8-1345391.png?image-profile=logo", "https://i.mjh.nz/.r/10-embarrassing-bodies.m3u8", "mjh-10-embarrassing-bodies"),
+    ("Medical Emergency", "https://10.com.au/ip/s3/2023/06/28/115b6796134f1e983f41c224c31cc7c9-1246084.png?image-profile=logo", "https://i.mjh.nz/.r/10-medical-emergency.m3u8", "mjh-10-medical-emergency"),
+    ("Crime Time", "https://10.com.au/ip/s3/2024/09/25/c27b803a4128c5b097cd3a23e1be973c-1341004.png?image-profile=logo", "https://i.mjh.nz/.r/10-crime-time.m3u8", "mjh-10-crime-time"),
+    ("Crime Hunters", "https://10.com.au/ip/s3/2024/03/06/cb69de15e7b8989a218ad25b7f6547ef-1301820.png?image-profile=logo", "https://i.mjh.nz/.r/10-crime-hunters.m3u8", "mjh-10-crime-hunters"),
+    ("Anthony Bourdain: Parts Unknown", "https://10.com.au/ip/s3/2025/05/26/cbf83588f02110ded81566ecc62e2f0e-1380501.png?image-profile=logo", "https://i.mjh.nz/.r/10-anthonybourdain.m3u8", "mjh-10-anthonybourdain"),
+    ("Wildest", "https://10.com.au/ip/s3/2026/04/28/230f46ab9b55bdb4f98a00f616d8b0a2-1424324.png?image-profile=logo", "https://i.mjh.nz/.r/10-wildest.m3u8", "mjh-10-wildest"),
+    ("Thriller Movies", "https://10.com.au/ip/s3/2024/04/01/86e45216ee9df7d873e393dccb379d94-1306209.png?image-profile=logo", "https://i.mjh.nz/.r/10-seasonalmovies.m3u8", "mjh-10-seasonalmovies"),
+    ("Nick Jr Club", "https://10.com.au/ip/s3/2024/06/06/d14509f218578984e3a6f6f34f0ee12c-1319009.png?image-profile=logo", "https://i.mjh.nz/.r/10-nick-jr.m3u8", "mjh-10-nick-jr"),
+    ("SpongeBob SquarePants", "https://10.com.au/ip/s3/2024/05/27/ee4d9694aa3f7a2fe97b6f18aa773b88-1316803.png?image-profile=logo", "https://i.mjh.nz/.r/10-spongebobsquarepants.m3u8", "mjh-10-spongebobsquarepants"),
+    ("NickToons 90s", "https://10.com.au/ip/s3/2024/06/07/a1aaf63737e7d2076759dd850b58471a-1319376.png?image-profile=logo", "https://i.mjh.nz/.r/10-nicktoons-90s.m3u8", "mjh-10-nicktoons-90s"),
+    ("NickTeen", "https://10.com.au/ip/s3/2024/06/04/ecc540be818b29d753e036e046028a27-1318595.png?image-profile=logo", "https://i.mjh.nz/.r/10-nickteen.m3u8", "mjh-10-nickteen"),
+    ("ABC Kids", "https://i.mjh.nz/.images/abc-kids.png", "https://c.mjh.nz/abc-kids.m3u8", "mjh-abc-kids"),
+    ("ABC Entertains", "https://cdn.iview.abc.net.au/thumbs/256/6_Entertains_C-1054_iview_LivestreamOn_2000x2000_new.png", "https://c.mjh.nz/abc-me.m3u8", "mjh-abc-me"),
+    ("ABC NEWS", "https://i.mjh.nz/.images/abc-news.png", "https://c.mjh.nz/abc-news.m3u8", "mjh-abc-news"),
+    ("GOOD.", "https://i.mjh.nz/.images/good-dot.png", "https://c.mjh.nz/good-dot.m3u8", "mjh-good-dot"),
+    ("Christmas Movies", "https://10.com.au/ip/s3/2025/11/24/9e410ae2839bab3195b8faa894027f1e-1401189.png?image-profile=logo", "https://i.mjh.nz/.r/10-christmasmovies.m3u8", "mjh-10-christmasmovies"),
+    ("COPS", "https://10.com.au/ip/s3/2025/03/30/6fadf0873ac36ecacdc63ed8bba4cf3d-1371071.png?image-profile=logo", "https://i.mjh.nz/.r/10-cops.m3u8", "mjh-10-cops"),
+    ("Dallas Cowboy Cheerleaders: Making The Team", "https://10.com.au/ip/s3/2026/10/13/0908d845bb84c3146f50501d394ca2a6-1466626.png?image-profile=logo", "https://i.mjh.nz/.r/10-dallascheerleaders.m3u8", "mjh-10-dallascheerleaders"),
+    ("Diagnosis Murder", "https://10.com.au/ip/s3/2023/06/28/5f85fc3d794a167630b935cb639abcc3-1246005.png?image-profile=logo", "https://i.mjh.nz/.r/10-diagnosismurder.m3u8", "mjh-10-diagnosismurder"),
+    ("48 Hours", "https://10.com.au/ip/s3/2023/06/28/7dd910de29f31095b69e17f1da8f3f0e-1245997.png?image-profile=logo", "https://i.mjh.nz/.r/10-forty-eight-hours.m3u8", "mjh-10-forty-eight-hours"),
+    ("Ghost Hunters", "https://10.com.au/ip/s3/2024/02/20/6a0f5d5002748886ee7b1936f996a304-1298978.png?image-profile=logo", "https://i.mjh.nz/.r/10-ghosthunters.m3u8", "mjh-10-ghosthunters"),
+    ("The Graham Norton Show", "https://10.com.au/ip/s3/2023/07/12/bcb38e1591564d24894210f4abd02423-1248623.png?image-profile=logo", "https://i.mjh.nz/.r/10-grahamnorton.m3u8", "mjh-10-grahamnorton"),
+    ("NickToons", "https://10.com.au/ip/s3/2024/06/04/f2f7c4166d8450351c2ae5d8b28c769e-1318512.png?image-profile=logo", "https://i.mjh.nz/.r/10-nicktoons.m3u8", "mjh-10-nicktoons"),
+    ("Sitcom Central", "https://10.com.au/ip/s3/2026/11/03/9b6127d5c344faf363a70b45ecbe827f-1470465.png?image-profile=logo", "https://i.mjh.nz/.r/10-sitcomcentral.m3u8", "mjh-10-sitcomcentral"),
+    ("Undercover Boss", "https://10.com.au/ip/s3/2024/10/21/45e53866fa7cd6757ddf34e52e7a9262-1345397.png?image-profile=logo", "https://i.mjh.nz/.r/10-undercoverboss.m3u8", "mjh-10-undercoverboss"),
+    ("Al Jazeera", "https://i.mjh.nz/.images/al-jazeera.png", "https://i.mjh.nz/.r/al-jazeera.m3u8", "mjh-al-jazeera"),
+    ("Bloomberg TV", "https://i.mjh.nz/.images/bloomberg-tv.png", "https://i.mjh.nz/.r/bloomberg-tv.m3u8", "mjh-bloomberg-tv"),
+]
+AU_EPG = "https://i.mjh.nz/au/all/epg.xml.gz"
+
+
+def _au_alive(url):
+    """Deeper than _shallow_alive: master -> variant -> newest segment (+ its AES key) must all answer 200.
+    ponytail: a shallow master check passes geo-locked channels (their master is public, the segments/keys 403/404)."""
+    import urllib.parse
+    try:
+        for _ in range(2):  # master -> variant (or variant -> itself)
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                url, body = r.geturl(), r.read().decode("utf-8", errors="ignore")
+            if not body.startswith("#EXTM3U"):
+                return False
+            uris = [l for l in body.splitlines() if l and not l.startswith("#")]
+            if "#EXT-X-STREAM-INF" not in body:
+                break
+            url = urllib.parse.urljoin(url, uris[0])
+        if not uris:
+            return False
+        keys = re.findall(r'#EXT-X-KEY:.*?URI="([^"]+)"', body)
+        for u in ([keys[-1]] if keys else []) + [uris[-1]]:
+            req = urllib.request.Request(urllib.parse.urljoin(url, u), headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=10) as r:
+                if not r.read(1024):
+                    return False
+        return True
+    except Exception:
+        return False
+
+
+def fetch_au():
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        ok = list(pool.map(lambda c: _au_alive(c[2]) or _au_alive(c[2]), AU_CHANNELS))  # one retry: ad pods / slow CDNs fail now and then
+    dead = [c[0] for c, alive in zip(AU_CHANNELS, ok) if not alive]
+    if dead:
+        print(f"Australia: dropped dead/geo-locked — {', '.join(dead)}", flush=True)
+    return [(f'#EXTINF:-1 tvg-id="{tid}" tvg-logo="{logo}" group-title="{AU_GROUP}",{name}', stream)
+            for (name, logo, stream, tid), alive in zip(AU_CHANNELS, ok) if alive]
+
+
+def au_epg_tree(ids):
+    """Only the guide of the Australian channels we list (the full AU guide is several MB)."""
+    root = ET.Element("tv")
+    try:
+        tree = ET.fromstring(gzip.decompress(fetch(AU_EPG)).decode("utf-8", errors="ignore"))
+    except Exception as e:
+        print(f"AU EPG failed: {e}", flush=True)
+        return root
+    for el in tree:
+        if el.get("id" if el.tag == "channel" else "channel") in ids:
+            root.append(el)
+    return root
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -1833,7 +1947,7 @@ def main():
     print("Aparat VOD: disabled", flush=True)
     arte, arte_epg = [], None  # ponytail: temporarily disabled by user request 2026-07-11
     print("ARTE VOD: disabled", flush=True)
-    build_epg(extra_trees=[telewebion_epg_tree()])
+    build_epg(extra_trees=[telewebion_epg_tree(), au_epg_tree({c[3] for c in AU_CHANNELS})])
     cat_by_id, logo_by_id = load_iptvorg_meta()
     logo_by_id.update(MANUAL_LOGO_OVERRIDES)
     print(f"iptv-org meta: {len(cat_by_id)} channels, {len(logo_by_id)} logos", flush=True)
@@ -2004,6 +2118,11 @@ def main():
         out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
     total += len(roku_us)
     print(f"Roku US News/Sports: {len(roku_us)} channels", flush=True)
+    au = fetch_au()
+    for extinf, stream in au:
+        out.append(extinf); out.append(_AF_NORMAL); out.append(stream); out.append("")
+    total += len(au)
+    print(f"Australia: {len(au)} channels", flush=True)
     # user request 2026-07-12: new parsatv.com channels go at the top of ایران, iptv-org after
     parsatv_extra = [(f'#EXTINF:-1 tvg-logo="{logo}" group-title="ایران",{name}', stream)
                       for name, logo, stream in PARSATV_IRAN_EXTRA]
