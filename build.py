@@ -182,6 +182,14 @@ HD_EXTRA = [
     ("📡 تلوبیون", "شبکه سه (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3test.m3u8"),
     ("📡 تلوبیون", "شبکه سه (HD - پشتیبان)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3.m3u8"),
     ("📡 تلوبیون", "شبکه ورزش (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png", "https://cp11.adabmedia.com/hls2/varzeshtest.m3u8"),
+    # user request 2026-11-13: the adabmedia.com HD feeds are not Telewebion servers, so they keep playing when Telewebion's
+    # own feeds drop -- copied into the other two Telewebion folders too.
+    ("📡 تلوبیون (مستقیم)", "شبکه ورزش (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png", "https://cp11.adabmedia.com/hls2/varzeshtest.m3u8"),
+    ("📡 تلوبیون (مستقیم)", "شبکه سه (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3test.m3u8"),
+    ("📡 تلوبیون (مستقیم)", "شبکه سه (HD - پشتیبان)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3.m3u8"),
+    ("📡 تلوبیون ابوریحان", "شبکه ورزش (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/VarzeshTV300.png", "https://cp11.adabmedia.com/hls2/varzeshtest.m3u8"),
+    ("📡 تلوبیون ابوریحان", "شبکه سه (HD)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3test.m3u8"),
+    ("📡 تلوبیون ابوریحان", "شبکه سه (HD - پشتیبان)", "https://lb-cdn.sepehrtv.ir/img/channel/logo/tv3-min.png", "https://cp11.adabmedia.com/hls2/tv3.m3u8"),
     ("ایران", "T2 Movies", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/T2Movies/index-0.m3u8"),
     ("ایران", "T2 America", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/T2America/index-0.m3u8"),
     ("ایران", "T2 International", "https://www.parsatv.com/index_files/channels/t2tv.jpg", "https://spf-onetv-9i4j.mycfwrkr.workers.dev/?url=https://ca-rt.onetv.app/T2International/index-0.m3u8"),
