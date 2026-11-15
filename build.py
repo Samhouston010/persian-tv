@@ -1725,10 +1725,9 @@ AU_CHANNELS = [  # (name, logo, stream, tvg-id)
     ("Undercover Boss", "https://10.com.au/ip/s3/2024/10/21/45e53866fa7cd6757ddf34e52e7a9262-1345397.png?image-profile=logo", "https://i.mjh.nz/.r/10-undercoverboss.m3u8", "mjh-10-undercoverboss"),
     ("Al Jazeera", "https://i.mjh.nz/.images/al-jazeera.png", "https://i.mjh.nz/.r/al-jazeera.m3u8", "mjh-al-jazeera"),
     ("Bloomberg TV", "https://i.mjh.nz/.images/bloomberg-tv.png", "https://i.mjh.nz/.r/bloomberg-tv.m3u8", "mjh-bloomberg-tv"),
-    # user request 2026-11-15 («بدون محدودیت جغرافیایی پیدا کن»): GitHub hunt, real frame from a US IP. 10 Drama / 10 Comedy through
-    # Google DAI (the i.mjh.nz copies above fail on their AES key outside AU); Sky Racing 1/2 through a public Wowza relay.
-    ("10 Drama", "", "https://dai.google.com/ssai/event/hTGpTa27ToagDXu0722vdA/master.m3u8", "dai-10drama"),
-    ("10 Comedy", "", "https://dai.google.com/ssai/event/V6NokbM8Ra2uKqcQj1uWaA/master.m3u8", "dai-10comedy"),
+    # user request 2026-11-15 («بدون محدودیت جغرافیایی پیدا کن»): GitHub hunt, real frame from a US IP -> Sky Racing 1/2 (public Wowza
+    # relay). Seven / 9 / 10 / 10 Drama / 10 Comedy copies found there all need an AES key that 403/404s outside Australia (the frames
+    # that came through were unencrypted Google DAI ad pods), so none of them is geo-free.
     ("Sky Racing 1", "", "https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8", "skyracing1"),
     ("Sky Racing 2", "", "https://636ffd31f0e12.streamlock.net/RacingStream2/RacingStream2/playlist.m3u8", "skyracing2"),
 ]
