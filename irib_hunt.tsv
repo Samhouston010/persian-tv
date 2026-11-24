@@ -1,7 +1,209 @@
 channel	name	result	location	host	url	source
-khabar	IRINN	OK 1389KB	SE Stockholm | AS62020 Net Sat AB	185.9.2.18	http://185.9.2.18/chid_926/index.m3u8	raw.githubusercontent.com
-omid	Omid e Iran TV	OK 872KB	FR Roubaix | AS16276 OVH SAS	oitnhls.wns.live	https://oitnhls.wns.live/hls/stream.m3u8	iptv-org.github.io
-ifilm	iFilm 2	FAIL 404		live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilm2.m3u8	iptv-org.github.io
+ifilm	iFilm 2	OK 765KB	US Ashburn | AS21245 MEDIANOVA INTERNET HIZ	live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilm2_4_482/index.m3u8	shayanline/iptv-iran
+ifilm	iFilm Arabic	OK 835KB	US Ashburn | AS21245 MEDIANOVA INTERNET HIZ	live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilmar_4_482/index.m3u8	shayanline/iptv-iran
+ifilm	iFilm English	OK 787KB	US Ashburn | AS21245 MEDIANOVA INTERNET HIZ	live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilmen_4_482/index.m3u8	shayanline/iptv-iran
+ifilm	iFilm | آی‌فیلم	OK 525KB	US Ashburn | AS21245 MEDIANOVA INTERNET HIZ	live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilmfa_4_482/index.m3u8	shayanline/iptv-iran
+khabar	IRINN	OK 1386KB	SE Stockholm | AS62020 Net Sat AB	185.9.2.18	http://185.9.2.18/chid_926/index.m3u8	raw.githubusercontent.com
+mostanad	پرشیانا مستند	OK 989KB	FR Roubaix | AS16276 OVH SAS	scihls.persiana.live	https://scihls.persiana.live/hls/stream.m3u8	shayanline/iptv-iran
+omid	Omid Javedan	OK 1177KB	US Ashburn | AS398465 Rackdog, LLC	livestream.5centscdn.com	https://livestream.5centscdn.com/pwocchurchweb1/cebac1e921182acff008ab1222f0c916.sdp/playlist.m3u8	shayanline/iptv-iran
+omid	Omid e Iran TV	OK 870KB	FR Roubaix | AS16276 OVH SAS	oitnhls.wns.live	https://oitnhls.wns.live/hls/stream.m3u8	iptv-org.github.io
+pooya	Pooya TV	OK 1133KB	US Atlanta | AS7219 Tulix Systems, Inc.	tgn.bozztv.com	https://tgn.bozztv.com/eshgtv-dvrfl05/gin-iribpooya/tracks-v1a1/mono.m3u8	kilirushi/iptv
+amouzesh	IRIB AMOOZESH	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_AMOOZESH/IRIB_AMOOZESH.m3u8	xldrx/kodi-persian-contents
+amouzesh	IRIB Amoozesh	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_iribamoozesh_800kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+amouzesh	Amouzesh TV	FAIL 403		dvrfl05.bozztv.com	http://dvrfl05.bozztv.com/gin-iribamoozesh/index.m3u8	mnbz-sol/iptv-org
+amouzesh	IRIB Amouzesh	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/21971	eklins/FDTV
+amouzesh	IR: IRIB Amouzesh	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/21971	eklins/FDTV
+amouzesh	Amouzesh	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226151/index.m3u8	spookyhost1/yarr-stremio
+amouzesh	IRIB Amoozesh	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226151/1.m3u8	aria-tv/aria
+amouzesh	IRIB Amouzesh (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/amoozesh/amoozesh.m3u8	zaeboba/portable_config
+ifilm	IR: IRIB IFILM PERSIAN	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53301.ts	gambler65/kongresi1908
+ifilm	IR: IRIB IFILM TV 1	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53339.ts	gambler65/kongresi1908
+ifilm	AR:LBN-IFILM	FAIL URLError		5a61de8ed719d.streamlock.net	https://5a61de8ed719d.streamlock.net:1443/ifilmlive/smil:ifilmar.smil/chunklist_w1513410362_b944100_slen.m3u8	kilirushi/iptv
+ifilm	iFilm Arabic	FAIL URLError		5a61de8ed719d.streamlock.net	https://5a61de8ed719d.streamlock.net:1443/ifilmlive/smil:ifilmar.smil/chunklist_w1973189296_b944100_slen.m3u8	igorpetrenko3690/IGOR_IPTV
+ifilm	iFilm Persian	FAIL URLError		5a61de8ed719d.streamlock.net	https://5a61de8ed719d.streamlock.net:1443/ifilmlive/smil:ifilmtv.smil/chunklist_w205801397_b944100_slen.m3u8	igorpetrenko3690/IGOR_IPTV
+ifilm	iFilm	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IFILM/IFILM.m3u8	xldrx/kodi-persian-contents
+ifilm	iFILM English	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_ifilmenglish_800kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+ifilm	iFilm 2	FAIL URLError		cdnlive.presstv.ir	https://cdnlive.presstv.ir/ifilmlive/smil:ifilm2.smil/playlist.m3u8	iptv-o114/iptv
+ifilm	iFilm Arabic	FAIL URLError		cdnlive.presstv.ir	https://cdnlive.presstv.ir/ifilmlive/smil:ifilmar.smil/playlist.m3u8	iptv-o114/iptv
+ifilm	iFilm English	FAIL URLError		cdnlive.presstv.ir	https://cdnlive.presstv.ir/ifilmlive/smil:ifilmen.smil/playlist.m3u8	iptv-o114/iptv
+ifilm	iFilm Persian	FAIL URLError		cdnlive.presstv.ir	https://cdnlive.presstv.ir/ifilmlive/smil:ifilmfa.smil/playlist.m3u8	iptv-o114/iptv
+ifilm	iFilm Arabic (720p) [Not 24/7]	FAIL URLError		cdnlive.presstv.ir	https://cdnlive.presstv.ir/cdnlive/smil:ifilmarcdn.smil/playlist.m3u8	BahyOsama/dinurunn
+ifilm	AR   LBN Ifilm TV	FAIL 403		go.justflix.tv	http://go.justflix.tv:80/gurulocal/internalconnect/24126	gambler65/kongresi1908
+ifilm	IRIB IFilm	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/285237	eklins/FDTV
+ifilm	IR: IRIB IFilm	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/285237	eklins/FDTV
+ifilm	iFilm	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226842/index.m3u8	spookyhost1/yarr-stremio
+ifilm	Ifilm Farsi	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226842/1.m3u8	aria-tv/aria
+ifilm	iFilm Persian (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/ifilm/ifilm.m3u8	zaeboba/portable_config
+ifilm	iFilm 2	FAIL TimeoutError		live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilm2.m3u8	iptv-org.github.io
 ifilm	iFilm Arabic	FAIL 404		live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilmar.m3u8	iptv-org.github.io
 ifilm	iFilm English	FAIL 404		live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilmen.m3u8	iptv-org.github.io
 ifilm	iFilm	FAIL 404		live.presstv.co.uk	https://live.presstv.co.uk/hls/ifilmfa.m3u8	raw.githubusercontent.com
+ifilm	iFILM Arabic (720p)	FAIL 403		live.presstv.com	https://live.presstv.com/ifilmlive/smil:ifilmar.smil/playlist.m3u8	swswsw101/iptv
+ifilm	iFILM Persian 1 (720p)	FAIL 403		live.presstv.com	https://live.presstv.com/ifilmlive/smil:ifilmtv.smil/playlist.m3u8	swswsw101/iptv
+ifilm	iFilm Arabic	FAIL URLError		live.presstv.ir	https://live.presstv.ir/hls/ifilmar.m3u8	spikeneedles/colab-media-link-extractor
+ifilm	iFilm Persian	FAIL URLError		live.presstv.ir	https://live.presstv.ir/hls/ifilmfa.m3u8	spikeneedles/colab-media-link-extractor
+ifilm	iFilm 2	FAIL URLError		live.presstv.ir	https://live.presstv.ir/hls/ifilm2.m3u8	spookyhost1/yarr-stremio
+ifilm	iFilm English	FAIL URLError		live.presstv.ir	https://live.presstv.ir/hls/ifilmen.m3u8	spookyhost1/yarr-stremio
+ifilm	iFILM Arabic (720p)	FAIL URLError		live.presstv.ir	https://live.presstv.ir/ifilmlive/smil:ifilmar.smil/playlist.m3u8	BahyOsama/dinurunn
+ifilm	IRN★iFilm [Not 24/7]	FAIL URLError		live.presstv.ir	https://live.presstv.ir/ifilmlive/smil:ifilmtv.smil/playlist.m3u8	eklins/FDTV
+ifilm	iFilm em árabe | Irã	FAIL URLError		live.presstv.ir	https://live.presstv.ir/ifilmlive/smil:ifilmar.smil/chunklist.m3u8	helenfernanda/gratis
+ifilm	iFILM English	FAIL 403		live1.presstv.com	https://live1.presstv.com/live/ifilmen.m3u8	swswsw101/iptv
+ifilm	iFILM Persian 2	FAIL 403		live1.presstv.com	https://live1.presstv.com/live/ifilm2.m3u8	swswsw101/iptv
+ifilm	iFilm 2 (480p)	FAIL URLError		live1.presstv.ir	https://live1.presstv.ir/live/ifilm2.m3u8	zaeboba/portable_config
+ifilm	iFilm Arabic (720p) [Not 24/7]	FAIL URLError		live1.presstv.ir	https://live1.presstv.ir/live/ifilmar.m3u8	ql-fa/A
+ifilm	iFilm English (480p)	FAIL URLError		live1.presstv.ir	https://live1.presstv.ir/live/ifilmen.m3u8	ql-fa/A
+ifilm	iFilm em inglês | Irã	FAIL URLError		live1.presstv.ir	https://live1.presstv.ir/live/ifilmen_360p/index.m3u8	helenfernanda/gratis
+ifilm	iFILM Arabic	FAIL 403		live2.presstv.com	https://live2.presstv.com/ifilmlive/smil:ifilmar.smil/chunklist_w1579167097_b644100_slen.m3u8	nsm-lab/iptv
+ifilm	iFILM Persian 1	FAIL 403		live2.presstv.com	https://live2.presstv.com/ifilmlive/smil:ifilmtv.smil/playlist.m3u8	nsm-lab/iptv
+ifilm	iFilm English	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-ifilmeng/index.m3u8	mnbz-sol/iptv-org
+ifilm	|IR| iFilm Arab	FAIL not-hls		login.lionboxtv.xyz	http://login.lionboxtv.xyz:80/worldofiptv12@1/9qXpU47NGc@1/14483	gambler65/kongresi1908
+ifilm	iFILM English	FAIL ConnectionResetError		mn-nl.mncdn.com	http://mn-nl.mncdn.com/ifilm/smil:ifilmen.smil/chunklist_b1096000.m3u8	nsm-lab/iptv
+ifilm	iFILM English	FAIL ConnectionResetError		mn-nl.mncdn.com	http://mn-nl.mncdn.com/ifilm/smil:ifilmen.smil/index.m3u8	nsm-lab/iptv
+ifilm	iFILM Persian 2	FAIL ConnectionResetError		mn-nl.mncdn.com	http://mn-nl.mncdn.com/ifilm/smil:ifilmfa2.smil/chunklist_b1096000.m3u8	nsm-lab/iptv
+ifilm	iFILM Persian 2	FAIL ConnectionResetError		mn-nl.mncdn.com	http://mn-nl.mncdn.com/ifilm/smil:ifilmfa2.smil/index.m3u8	nsm-lab/iptv
+ifilm	iFilm Persian	FAIL ConnectionResetError		mn-nl.mncdn.com	http://mn-nl.mncdn.com/ifilm/smil:ifilmfa.smil/index.m3u8	smgrey/Countries
+jamejam	Jame Jam 1	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/JAME_JAM_TV_NETWORK_1/JAME_JAM_TV_NETWORK_1.m3u8	xldrx/kodi-persian-contents
+jamejam	IRIB Jamejam 2	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/296427	eklins/FDTV
+jamejam	IRIB Jamejam 3	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/296428	eklins/FDTV
+jamejam	IRIB Jamejam 1	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/5443	eklins/FDTV
+jamejam	IR: IRIB Jamejam 1	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/5443	eklins/FDTV
+jamejam	IR: IRIB Jamejam 2	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/296427	eklins/FDTV
+jamejam	IR: IRIB Jamejam 3	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/296428	eklins/FDTV
+khabar	IRINN	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRINN/IRINN.m3u8	xldrx/kodi-persian-contents
+khabar	IRIB IRINN	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/169124	eklins/FDTV
+khabar	IR: IRIB IRINN	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/169124	eklins/FDTV
+khabar	IR: IRIB News Plus	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/296701	eklins/FDTV
+khabar	IRINN 2 (576p) [Not 24/7]	FAIL 403		lb-cdn.sepehrtv.ir	https://lb-cdn.sepehrtv.ir/securelive3/irinn2sd/irinn2sd.m3u8	zaeboba/portable_config
+khabar	IRINN2	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221227020/index.m3u8	Romaxa55/world_ip_tv
+khabar	IRINN	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226142/index.m3u8	spookyhost1/yarr-stremio
+khabar	IRINN	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226142/1.m3u8	aria-tv/aria
+khabar	IRINN (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/irinn/irinn.m3u8	zaeboba/portable_config
+khabar	IRINN	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-irinn/index.m3u8	mnbz-sol/iptv-org
+mostanad	IRIB MOSTANAD	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_MOSTANAD/IRIB_MOSTANAD.m3u8	xldrx/kodi-persian-contents
+mostanad	IRIB Mostanad	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/296418	eklins/FDTV
+mostanad	IR: IRIB Mostanad	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/296418	eklins/FDTV
+mostanad	Mostanad	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226901/index.m3u8	spookyhost1/yarr-stremio
+mostanad	IRIB Mostanad	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226901/1.m3u8	aria-tv/aria
+mostanad	IRIB Mostanad (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/mostanad/mostanad.m3u8	zaeboba/portable_config
+mostanad	IRIB Mostanad	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-iribmostanad/index.m3u8	mnbz-sol/iptv-org
+namayesh	IRIB NAMAYESH	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_NAMAYESH/IRIB_NAMAYESH.m3u8	xldrx/kodi-persian-contents
+namayesh	IRIB Namayesh	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/21949	eklins/FDTV
+namayesh	IR: IRIB Namayesh	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/21949	eklins/FDTV
+namayesh	Namayesh	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226148/index.m3u8	Romaxa55/world_ip_tv
+namayesh	IRIB Namayesh	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226148/1.m3u8	aria-tv/aria
+namayesh	IRIB Namayesh (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/namayesh/namayesh.m3u8	zaeboba/portable_config
+nasim	IRIB Nasim	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_NASIM/IRIB_NASIM.m3u8	xldrx/kodi-persian-contents
+nasim	IRIB NASIM	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_iribnasim_900kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+nasim	IRIB Nasim	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/49660	eklins/FDTV
+nasim	IR: IRIB Nasim	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/49660	eklins/FDTV
+nasim	Nasim	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226653/index.m3u8	spookyhost1/yarr-stremio
+nasim	IRIB Nasim	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226653/1.m3u8	aria-tv/aria
+nasim	IRIB Nasim (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/nasim/nasim.m3u8	zaeboba/portable_config
+nasim	Nasim	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-irib5/index.m3u8	mnbz-sol/iptv-org
+ofogh	IRIB OFOGH	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_iribofogh_900kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+ofogh	IRIB Ofogh	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/182303	eklins/FDTV
+ofogh	IR: IRIB Ofogh	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/182303	eklins/FDTV
+ofogh	Ofogh	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226143/index.m3u8	Romaxa55/world_ip_tv
+ofogh	IRIB Ofogh	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226143/1.m3u8	aria-tv/aria
+omid	Omid Javedan	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/18660	eklins/FDTV
+omid	IR: IRIB Omid	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/296422	eklins/FDTV
+omid	IR: Omid Javedan	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/18660	eklins/FDTV
+omid	Omid	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226159/index.m3u8	Romaxa55/world_ip_tv
+omid	IRIB Omid	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226159/1.m3u8	aria-tv/aria
+omid	Omid Javedan	FAIL 404		livestream.5centscdn.com	http://livestream.5centscdn.com/shaditv/23abe62a446fc05ce0a6c810f4045308.sdp/chunks.m3u8	nsm-lab/iptv
+omid	Omid Javedan	FAIL 404		livestream.5centscdn.com	http://livestream.5centscdn.com/shaditv/23abe62a446fc05ce0a6c810f4045308.sdp/index.m3u8	smgrey/Countries
+omid	Omid Javedan	FAIL 404		livestream.5centscdn.com	https://livestream.5centscdn.com/shaditv/23abe62a446fc05ce0a6c810f4045308.sdp/playlist.m3u8	jura00/Syria
+pooya	IRIB Pooya	FAIL URLError		185.37.52.131	http://185.37.52.131:3001/m3u8/314/hd?auth=UqzVRdELM2ve4ZLI1waiENF1Ysgq&amp.m3u8	smgrey/Countries
+pooya	IRIB POOYA	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/POOYA_TV/POOYA_TV.m3u8	xldrx/kodi-persian-contents
+pooya	Pooya TV	FAIL 403		dvrfl05.bozztv.com	http://dvrfl05.bozztv.com/gin-iribpooya/index.m3u8	mnbz-sol/iptv-org
+pooya	IRIB Pooya	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/64957	eklins/FDTV
+pooya	IR: IRIB Pooya	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/64957	eklins/FDTV
+pooya	Pooya & Nahal	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226145/index.m3u8	spookyhost1/yarr-stremio
+pooya	IRIB Pooya & Nahal (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/pooya/pooya.m3u8	ql-fa/A
+quran	IRIB Quran	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226144/1.m3u8	aria-tv/aria
+razavi	IRIB Khorasanrazavi	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/285280	eklins/FDTV
+razavi	IR: IRIB Khorasanrazavi	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/285280	eklins/FDTV
+salamat	IR: IRIB SALAMAT TV	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53378.ts	gambler65/kongresi1908
+salamat	Salamat Tube	FAIL URLError		51.158.116.146	http://51.158.116.146/hls/stream.m3u8	jura00/Syria
+salamat	IRIB SALAMAT	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_SALAMAT/IRIB_SALAMAT.m3u8	xldrx/kodi-persian-contents
+salamat	IRIB Salamat	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/56823	eklins/FDTV
+salamat	IR: IRIB Salamat	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/56823	eklins/FDTV
+salamat	Salamat	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226152/index.m3u8	spookyhost1/yarr-stremio
+salamat	IRIB Salamat	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226152/1.m3u8	aria-tv/aria
+salamat	IRIB Salamat (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/salamat/salamat.m3u8	zaeboba/portable_config
+salamat	Salamat TV	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-iribsalamat/index.m3u8	mnbz-sol/iptv-org
+shoma	IRIB SHOMA	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_SHOMA/IRIB_SHOMA.m3u8	xldrx/kodi-persian-contents
+shoma	IR: IRIB Shoma	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/64952	eklins/FDTV
+tamasha	IRIB Tamasha	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/64949	eklins/FDTV
+tamasha	IR: IRIB Tamasha	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/64949	eklins/FDTV
+tamasha	Tamasha	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226879/index.m3u8	Romaxa55/world_ip_tv
+tamasha	IRIB Tamasha	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226879/1.m3u8	aria-tv/aria
+tamasha	IRIB Tamasha (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/tamasha/tamasha.m3u8	zaeboba/portable_config
+tv1	IR: IRIB TV 1 HD	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53368.ts	gambler65/kongresi1908
+tv1	IRIB1	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_TV1/IRIB_TV1.m3u8	xldrx/kodi-persian-contents
+tv1	IRIB 1	FAIL URLError		af.ayas.ir	https://af.ayas.ir/hls2/tv1.m3u8	Skhooshe/iptv
+tv1	IRIB TV1	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_irib1_900kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+tv1	IRIB 1	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/5492	eklins/FDTV
+tv1	IR: IRIB 1	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/5492	eklins/FDTV
+tv1	IRIB1	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226637/index.m3u8	spookyhost1/yarr-stremio
+tv1	IRIB1 (720p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/tv1/tv1.m3u8	zaeboba/portable_config
+tv1	IRIB 1	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-irib1/index.m3u8	mnbz-sol/iptv-org
+tv1	IRIB TV1	FAIL URLError		stream2.removie.raha.af	https://stream2.removie.raha.af/live/smil:iribtv1.smil/chunklist_w1989776299_b1500000.m3u8	aria-tv/aria
+tv2	IR: IRIB TV 2 HD	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53300.ts	gambler65/kongresi1908
+tv2	IRIB2	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_TV2/IRIB_TV2.m3u8	xldrx/kodi-persian-contents
+tv2	IRIB 2	FAIL URLError		af.ayas.ir	https://af.ayas.ir/hls2/tv2.m3u8	Skhooshe/iptv
+tv2	IRIB TV2	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_irib2_900kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+tv2	IRIB 2	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/5387	eklins/FDTV
+tv2	IR: IRIB 2	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/5387	eklins/FDTV
+tv2	IRIB2	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226176/index.m3u8	spookyhost1/yarr-stremio
+tv2	IRIB2 (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/tv2/tv2.m3u8	zaeboba/portable_config
+tv2	IRIB 2	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-irib2/index.m3u8	mnbz-sol/iptv-org
+tv3	IR: IRIB TV 3 HD	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53346.ts	gambler65/kongresi1908
+tv3	IR: IRIB TV 3	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53250.ts	gambler65/kongresi1908
+tv3	IRIB3	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_TV3/IRIB_TV3.m3u8	xldrx/kodi-persian-contents
+tv3	IRIB3 (480p)	FAIL URLError		af.ayas.ir	https://af.ayas.ir/hls2/tv3.m3u8	zaeboba/portable_config
+tv3	IRIB 3	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/5386	eklins/FDTV
+tv3	IR: IRIB 3	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/5386	eklins/FDTV
+tv3	IR: IRIB 3 satellite	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/296739	eklins/FDTV
+tv3	IRIB3 (1080p)	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226868/index.m3u8	spookyhost1/yarr-stremio
+tv3	IRIB 3	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-irib3/index.m3u8	mnbz-sol/iptv-org
+tv3	IRIB TV3	FAIL URLError		livetv.persianleague.com	https://livetv.persianleague.com/live/tv3/chunks.m3u8	nsm-lab/iptv
+tv3	IRIB TV3	FAIL URLError		livetv.persianleague.com	https://livetv.persianleague.com/live/tv3/playlist.m3u8	jura00/Syria
+tv3	IRIB TV3	FAIL URLError		stream2.removie.raha.af	https://stream2.removie.raha.af/live/smil:iribtv3.smil/chunklist_w1848100321_b1500000.m3u8	aria-tv/aria
+tv4	IR: IRIB TV 4 HD	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53367.ts	gambler65/kongresi1908
+tv4	IRIB4	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_TV4/IRIB_TV4.m3u8	xldrx/kodi-persian-contents
+tv4	IRIB TV4	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_irib4_900kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+tv4	IRIB 4	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/56814	eklins/FDTV
+tv4	IR: IRIB 4	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/56814	eklins/FDTV
+tv4	IRIB4	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226140/index.m3u8	spookyhost1/yarr-stremio
+tv4	IRIB TV4	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226140/1.m3u8	aria-tv/aria
+tv4	IRIB4 (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/tv4/tv4.m3u8	zaeboba/portable_config
+tv4	IRIB 4	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-irib4/index.m3u8	mnbz-sol/iptv-org
+tv5	IR: IRIB TV 5 HD	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53338.ts	gambler65/kongresi1908
+tv5	IRN★Tehran TV 24	FAIL 404		51.210.227.132	http://51.210.227.132/hls/stream.m3u8	eklins/FDTV
+tv5	IRIB5	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/IRIB_TV5/IRIB_TV5.m3u8	xldrx/kodi-persian-contents
+tv5	IRIB TV5	FAIL 404		bozztv.com	https://bozztv.com/36bay2/gin/giniko_irib5_900kb_36bay2/tracks-v1a1/mono.m3u8	nsm-lab/iptv
+tv5	IRIB 5	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/56817	eklins/FDTV
+tv5	IR: IRIB 5	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/56817	eklins/FDTV
+tv5	IRIB5 Tehran TV	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226141/index.m3u8	spookyhost1/yarr-stremio
+tv5	IRIB5 (540p)	FAIL TimeoutError		live.aionet.ir	https://live.aionet.ir/hls/tv5/tv5.m3u8	zaeboba/portable_config
+tv5	Tehran TV	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/dvrfl05/gin-iribnasim/index.m3u8	mnbz-sol/iptv-org
+varzesh	IR: IRIB VARZESH HD	FAIL 404		1.qqtv.nl	http://1.qqtv.nl:8080/live/qqtv2qqtv2/UTibNqVKFI2/53344.ts	gambler65/kongresi1908
+varzesh	Varzesh TV 4	FAIL URLError		163.172.138.186	http://163.172.138.186/hls/stream.m3u8	jura00/Syria
+varzesh	Varzesh TV 3	FAIL URLError		51.15.236.137	http://51.15.236.137/hls/stream.m3u8	jura00/Syria
+varzesh	Varzesh TV 2	FAIL URLError		51.158.176.190	http://51.158.176.190/hls/stream.m3u8	jura00/Syria
+varzesh	Varzesh TV	FAIL URLError		51.158.66.44	http://51.158.66.44/hls/stream.m3u8	jura00/Syria
+varzesh	IRN★Persiana Varzesh	FAIL 404		51.210.199.16	http://51.210.199.16/hls/stream.m3u8	eklins/FDTV
+varzesh	VARZESH TV SPORT IR	FAIL URLError		63.237.48.3	http://63.237.48.3/ios/VARZESH_TV/VARZESH_TV.m3u8	nsm-lab/iptv
+varzesh	IRIB Varzesh	FAIL URLError		cdn1.live.irib.ir	http://cdn1.live.irib.ir:1935/channel-live/smil:varzesh.smil/chunklist_b307200_slFa.m3u8	zhangdamao520/IPTV
+varzesh	IRIB Varzesh TV	FAIL URLError		iptvmedia.live	http://iptvmedia.live:8080/F19591/d7d02309/5381	eklins/FDTV
+varzesh	IR: IRIB Varzesh TV	FAIL 400		kuchini.site	http://kuchini.site:8080/tomstme300/tomasarenatelegramme300/5381	eklins/FDTV
+varzesh	Varzesh TV	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226845/index.m3u8	spookyhost1/yarr-stremio
+varzesh	IRIB Varzesh (Backup)	FAIL 404		lenz.splus.ir	https://lenz.splus.ir/PLTV/88888888/224/3221226845/1.m3u8	aria-tv/aria
+varzesh	IRIB Varzesh (1080p)	FAIL 403		live.aionet.ir	https://live.aionet.ir/hls/varzesh/varzesh.m3u8	zaeboba/portable_config
+varzesh	Varzesh TV	FAIL URLError		live20.bozztv.com	https://live20.bozztv.com/trn03/gin-iribvarzesh/index.m3u8	mnbz-sol/iptv-org
+varzesh	IRIB Varzesh	FAIL URLError		livetv.persianleague.com	https://livetv.persianleague.com/live/varzesh/chunks.m3u8	nsm-lab/iptv
+varzesh	IRIB Varzesh	FAIL URLError		livetv.persianleague.com	https://livetv.persianleague.com/live/varzesh/playlist.m3u8	jura00/Syria
+varzesh	GEM Sport | جم ورزش	FAIL 403		steep-wildflower-284d.nhhwkiszzzvcuojxdo.workers.dev	https://steep-wildflower-284d.nhhwkiszzzvcuojxdo.workers.dev/?url=https://gg.hls2.xyz/live/IR+-+GEM+Sport/chunks.m3u8	shayanline/iptv-iran
+varzesh	Varzesh TV (480p)	FAIL URLError		stream.sainaertebat.com	https://stream.sainaertebat.com/hls2/varzeshtest.m3u8	mnbz-sol/iptv-org
+varzesh	IRIB Varzesh	FAIL URLError		stream2.removie.raha.af	https://stream2.removie.raha.af/live/smil:irvarzeshtv.smil/chunklist_w206723439_b1500000.m3u8	aria-tv/aria
